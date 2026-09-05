@@ -107,6 +107,31 @@ Concept total: **1,120–1,540 km**. With the optional loops below, an *Ultra* v
 * **Sea people**: the Bajo at Wuring.
 * **Fire**: the volcanoes, and Kelimutu's lakes as the resting place of souls in Lio belief.
 
+## Status after the first computation (September 2026)
+
+The pipeline has now routed the concept over the real track network (`pipeline/route_candidates.py`,
+remote cost profile, every one of the 37 anchors found on the network). First honest numbers, all
+still `concept` status and unscouted:
+
+| Variant | Length | Climbing (10 m threshold) | Unpaved | Hike-a-bike estimate |
+|---|---|---|---|---|
+| Traverse, network-routed | ~1,340 km | ~32,800 m | 59% | ~45 km |
+| Ultra, network-routed (loops as currently defined) | ~1,390 km | ~35,900 m | 68% | ~45 km |
+
+What this tells the route designer:
+
+* The Traverse lands inside its 1,120–1,540 km target without any forcing. The climbing figure
+  (about 24 m per km) is plausible for Flores roads and tracks; the figures computed on the
+  hand-sketched corridors are not meaningful and the app marks them as such.
+* The Ultra loops as sketched (Manggarai Timur interior, Bola coast) add only ~50 km, far less than the
+  120–250 km this page hoped for. To reach 1,600–1,900 km the Ultra needs genuinely new anchors: for
+  example a north-coast excursion Riung → Mbay by the coast *and* the plateau, an Inerie full circuit, a
+  Kelimutu–Egon ridge link, or a Lembata/Adonara epilogue by ferry. Add anchors to `routes.json`, rerun the
+  candidate generator, and the numbers update.
+* The track-and-path share of most computed pairs is still low (0–25%): the network in OpenStreetMap
+  knows the roads far better than the farmers' paths. The remoteness layer in scout mode shows where
+  mapped tracks exist; where the map is empty, only feet on the ground will tell.
+
 ## Open questions for the first scouting season (priority order)
 
 1. Is there a continuous rideable/walkable corridor Reo → Pota → Riung along or near the north coast,

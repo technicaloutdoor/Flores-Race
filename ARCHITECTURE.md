@@ -121,6 +121,7 @@ Flores-Race/
 │   ├── fetch_dem.py, dem.py     SRTM tiles and an elevation sampler
 │   ├── fetch_boundaries.py      geoBoundaries regencies
 │   ├── fetch_naturalearth.py    context layers
+│   ├── crosscheck_gazetteer.py  offline coordinate check against Overture names
 │   ├── build_network.py         routable graph + classification + remoteness index
 │   ├── route_candidates.py      k alternatives between consecutive anchors, per cost profile
 │   ├── build_profiles.py        elevation profiles and stats for segments and routes
@@ -177,6 +178,7 @@ anywhere without GDAL. Every stage is a CLI with `--out`, idempotent, and caches
 | `fetch_overture.py` | Overture S3 (latest release), bbox | GeoJSONL per type: segments, connectors, places, land (peaks), water, division areas | Reads GeoParquet over HTTPS with row-group pruning on the `bbox` column, so a whole-island extract is hundreds of MB, not the planet. OSM-derived, ODbL. |
 | `fetch_dem.py` + `dem.py` | AWS terrain tiles (`skadi/*.hgt.gz`) | 8 SRTM 1-arc-second tiles; a `DEM` sampler with bilinear interpolation across tiles | Tiles include bathymetry; sample values below 0 are clamped to 0 on land profiles. |
 | `fetch_boundaries.py` | geoBoundaries ADM2 | the 8 Flores regencies | CC BY 4.0. Used for outlines, per-regency stats and the island mask. |
+| `crosscheck_gazetteer.py` | `data/nodes.geojson`, `data/pois.geojson` + Overture places, peaks, water, village polygons + DEM | a markdown/JSON report: best independent match per feature, distance, verdict (`confirmed`, `plausible`, `suspect`, `wrong`, `unmatched`), elevation check | Offline second opinion on every curated coordinate; needs no web access. Run it after every curation pass and before upgrading a feature to `verified`. |
 | `build_network.py` | Overture segments + connectors + DEM | a routable graph (nodes = connectors, edges = segment pieces) with per-edge: length, class, surface, grade, remoteness index | Remoteness = distance to nearest primary/secondary road and to nearest place; used both for styling and for routing cost. |
 | `route_candidates.py` | graph + `data/nodes.geojson` + `data/routes.json` anchor order | up to k candidate LineStrings per consecutive anchor pair per cost profile | Profiles: `remote` (prefer track/path, forbid trunk, heavy penalty on primary), `rideable` (prefer unpaved but rideable, penalise footway/path), `direct`. Alternatives via iterative edge penalisation. Written as `status: concept`, `geometry_source: overture-route` segments for scouts to accept, edit or reject; never overwrite a segment a human has touched. |
 | `build_profiles.py` | segments + DEM | `profiles.json` (distance/elevation arrays), and `stats` filled into each segment: length, ascent, descent, min/max elevation, % unpaved | Ascent uses a smoothing window to avoid SRTM noise inflating climbing numbers. |
