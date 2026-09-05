@@ -17,7 +17,10 @@ export const MAX_BOUNDS: [[number, number], [number, number]] = [
 ];
 
 /** MapLibre demo glyphs. Reachable from a real browser; blocked in this build sandbox — that is
- * expected (see BRIEF "Sandbox network reality"), not a bug. Labels simply won't render here. */
+ * expected (see BRIEF "Sandbox network reality"), not a bug. MapLibre GL JS falls back to
+ * rendering common Latin codepoints locally when a glyph range fails to fetch, so labels still
+ * show up here too (with the browser's own font, not 'Open Sans Semibold'); this URL only matters
+ * for coverage this local fallback can't provide (e.g. non-Latin scripts). */
 const GLYPHS_URL = 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf';
 
 export interface CreateMapOptions {

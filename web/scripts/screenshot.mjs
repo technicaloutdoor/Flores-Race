@@ -21,6 +21,13 @@ const VIEWPORTS = [
   { name: 'mobile', width: 390, height: 844 },
 ];
 
+// r-traverse is visible in every mode (its `audience` includes stakeholder, scout and public — see
+// data/routes.json), so selecting it exercises the sidebar's route-stats-and-sections view in all
+// three screenshots. The `sel` id is the first segment of that route's ordered `segments` list, so
+// the inspector (and the elevation profile) always has something real to draw.
+const ROUTE_ID = 'r-traverse';
+const SEL_ID = 's-labuan-bajo-sano-nggoang-a';
+
 // Expected in this build sandbox (BRIEF "Sandbox network reality"): tile servers, MapLibre demo
 // glyphs, and our own network.geojson.gz (deliberately absent from the fixture) all fail to load.
 const IGNORE_PATTERNS = [
@@ -83,7 +90,7 @@ async function main() {
           errors.push(`pageerror: ${err.message ?? String(err)}`);
         });
 
-        const url = `${baseURL}#mode=${mode}&base=none&z=8&c=121.4,-8.6`;
+        const url = `${baseURL}#mode=${mode}&base=none&z=8&c=121.4,-8.6&route=${ROUTE_ID}&sel=${SEL_ID}`;
         await page.goto(url, { waitUntil: 'load' });
         await page.waitForFunction(() => window.__mapIdle !== undefined, undefined, {
           timeout: 15000,

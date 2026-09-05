@@ -432,17 +432,23 @@ export interface POICategoryMeta {
   icon: string; // icon key, no emoji
 }
 
+// `icon` doubles as the source string for `categoryInitials()` (map/layers.ts): it splits on '-'
+// and keeps the first letter of each part, so every value here must stay distinct *after* that
+// transform, not just as a string — "village" and "viewpoint" both reduce to "V" even though the
+// words differ. Hyphenate a category's icon key (e.g. "trad-village") when the plain word would
+// collide with another category's initial(s); a stakeholder needs a hazard marker to look
+// different from a heritage marker on the map.
 export const POI_CATEGORY_META: Record<POICategory, POICategoryMeta> = {
   volcano: { label: 'Volcano', icon: 'volcano' },
   'crater-lake': { label: 'Crater Lake', icon: 'crater-lake' },
   lake: { label: 'Lake', icon: 'lake' },
-  'traditional-village': { label: 'Traditional Village', icon: 'village' },
+  'traditional-village': { label: 'Traditional Village', icon: 'trad-village' },
   beach: { label: 'Beach', icon: 'beach' },
   'hot-spring': { label: 'Hot Spring', icon: 'hot-spring' },
-  waterfall: { label: 'Waterfall', icon: 'waterfall' },
+  waterfall: { label: 'Waterfall', icon: 'water-fall' },
   cave: { label: 'Cave', icon: 'cave' },
-  heritage: { label: 'Heritage', icon: 'heritage' },
-  viewpoint: { label: 'Viewpoint', icon: 'viewpoint' },
+  heritage: { label: 'Heritage', icon: 'cultural-heritage' },
+  viewpoint: { label: 'Viewpoint', icon: 'view-point' },
   market: { label: 'Market', icon: 'market' },
   port: { label: 'Port', icon: 'port' },
   airport: { label: 'Airport', icon: 'airport' },

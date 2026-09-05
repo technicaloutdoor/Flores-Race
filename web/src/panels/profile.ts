@@ -31,8 +31,11 @@ interface Boundary {
 export function render(container: HTMLElement, ctx: PanelContext): void {
   container.replaceChildren();
 
+  // Public mode never shows a single segment's own profile — its name and status would leak detail
+  // the inspector already withholds ("Segment and node detail is not shown in public mode."); fall
+  // through to the coarse whole-route profile instead, same as when nothing is selected.
   const selection = ctx.state.selection;
-  if (selection?.type === 'segment') {
+  if (selection?.type === 'segment' && ctx.state.mode !== 'public') {
     const segment = ctx.getSegment(selection.id);
     if (!segment) {
       container.appendChild(el('h2', undefined, 'Profile'));

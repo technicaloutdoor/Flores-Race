@@ -115,7 +115,7 @@
         "id": "p-bena",
         "name": "Bena",
         "category": "traditional-village",
-        "summary": "A Ngada megalithic village of nine clans at the foot of Inerie, with paired ngadhu (male) and bhaga (female) ancestor shrines around a stone-terraced central square; one of Flores' most visited traditional villages.",
+        "summary": "A Ngada megalithic village of nine clans at the foot of Inerie, with paired ngadhu (male) and bhaga (female) ancestor shrines around a stone-terraced central square; among the more visited traditional villages in Ngada.",
         "story": "Bena sits on a narrow ridge below Inerie's summit, its houses arranged in two facing rows around a courtyard packed with megalithic tombs, ngadhu posts (a carved pole topped with a small thatched roof, representing a male ancestor) and bhaga huts (representing a female ancestor). Nine clans, each with its own shrine pair, still hold the village together through an adat (customary law) structure that predates any church or mosque on the plateau.\n\nFor the race, Bena is the model for what a cultural checkpoint should be: a living village, not a museum, where guests are received by the elders, a donation and the guest book are expected, and the income from a controlled flow of visitors (including, eventually, riders) matters to the village economy. Any agreement to route the race through Bena has to be negotiated with the village council before a single competitor arrives.",
         "race_relevance": "anchor",
         "access": "road",
@@ -134,8 +134,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.297,
-          -8.748
+          122.29686,
+          -8.74635
         ]
       },
       "properties": {
@@ -276,10 +276,11 @@
         "access": "road",
         "hike_a_bike": false,
         "elevation_m": 800,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.letstravelntt.com/west-detusoko-village/",
-          "https://www.photohound.co/spot/detusoko-rice-terraces-1008084"
+          "https://www.photohound.co/spot/detusoko-rice-terraces-1008084",
+          "map:overture"
         ],
         "public": true
       }
@@ -299,17 +300,17 @@
         "local_name": "Gunung Ebulobo / Puncak Nage Keo",
         "category": "volcano",
         "summary": "An active stratovolcano (2,124-2,137 m) above Boawae in southern Nagekeo Regency; first recorded eruption 1830, most recent in the 1980s-2000s.",
-        "story": "Ebulobo rises directly behind Boawae, its slopes farmed almost to the treeline before giving way to bare volcanic rock near the summit. It is one of the handful of genuinely active volcanoes the route has to respect on the way east: PVMBG's most recent public bulletins (mid-2026) keep it at Level I (Normal), and while the M7.7 Flores earthquake of 15 August 2026 triggered landslides on its upper slopes, monitoring found no accompanying rise in eruptive activity.\n\nFor route planning this means Ebulobo is currently safe to pass close to on the Boawae road, but its status should be rechecked against PVMBG's MAGMA Indonesia feed in the weeks before race day, and no route variant should linger on its upper slopes.",
+        "story": "Ebulobo rises directly behind Boawae, its slopes farmed almost to the treeline before giving way to bare volcanic rock near the summit. It is one of the handful of genuinely active volcanoes the route has to respect on the way east: PVMBG's most recent public bulletins (mid-2026) keep it at Level I (Normal). A social-media claim that a M7.7 Flores earthquake on 15 Aug 2026 triggered landslides on its upper slopes without any accompanying rise in eruptive activity could not be confirmed against an official source this pass -- an earthquake of that magnitude in Indonesia would be a major, globally reported event, and no corroborating BMKG or PVMBG bulletin was found -- so it is flagged here as unconfirmed rather than repeated as fact.\n\nFor route planning this means Ebulobo is currently safe to pass close to on the Boawae road per the standing Level I status, but that status, and the earthquake claim above, should both be rechecked against PVMBG's MAGMA Indonesia feed in the weeks before race day, and no route variant should linger on its upper slopes.",
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": false,
         "elevation_m": 2124,
-        "hazard_level": "PVMBG Level I (Normal) as of mid-2026; the 15 Aug 2026 M7.7 Flores earthquake triggered summit-area landslides but no increase in eruptive activity was recorded.",
-        "confidence": "approximate",
+        "hazard_level": "PVMBG Level I (Normal) as of mid-2026 monitoring reports. A claim that a M7.7 Flores earthquake on 15 Aug 2026 triggered summit-area landslides here (sourced only to a single social-media post) could not be confirmed this pass and is inconsistent in scale with the file's own account of the consequences; treat that specific claim as unconfirmed pending a check against BMKG (bmkg.go.id) and MAGMA Indonesia (magma.esdm.go.id), and recheck the alert level itself before race day.",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Ebulobo",
           "https://www.gunungbagging.com/ebulobo/",
-          "https://x.com/badangeologi_/status/2089321489770352968"
+          "map:overture"
         ],
         "public": true
       }
@@ -333,15 +334,16 @@
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": true,
-        "elevation_m": 1703,
+        "elevation_m": 1661,
         "hazard_level": "PVMBG Level I (Normal) as of mid-2026 monitoring reports; no raised alert on record since the 2004 reawakening and subsequent minor phreatic activity (last notable emission cited 2008). Check current status before any ascent.",
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Mount_Egon",
           "https://volcanolive.com/egon.html",
           "https://www.volcanodiscovery.com/egon.html",
           "https://daerah.tvrinews.com/en/berita/tffhhzs-status-level-i-aktivitas-gempa-gunung-egon-di-sikka-meningkat-signifikan",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture"
         ],
         "public": true
       }
@@ -441,10 +443,11 @@
         "race_relevance": "context",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Gewayantana_Airport",
-          "https://www.airmate.aero/?page=airport_page&code=WATL&lang=en"
+          "https://www.airmate.aero/?page=airport_page&code=WATL&lang=en",
+          "map:overture"
         ],
         "public": true
       }
@@ -488,8 +491,8 @@
         "id": "p-gurusina",
         "name": "Gurusina",
         "category": "traditional-village",
-        "summary": "Ngada megalithic village ~21 km from Bajawa; a fire on 13 August 2018 burned 27 of 33 traditional houses and 6 sacred structures, since rebuilt with traditional materials and techniques.",
-        "story": "On the evening of 13 August 2018, while much of the village was away at a football match in a neighbouring settlement, a fire swept through Gurusina and destroyed 27 of its 33 thatched houses along with six sacred ceremonial structures — a huge loss for a Ngada village whose megalithic square, ngadhu and bhaga shrines are the physical record of its clan structure. \n\nThe village has since been rebuilt, largely with the same materials and forms, an act of cultural continuity rather than a museum reconstruction. For a race passing through, Gurusina is a reminder of how fragile these thatched-roof villages are, and why fire discipline (no naked flames, careful stove use) belongs in any rider briefing for the Ngada section.",
+        "summary": "Ngada megalithic village commonly cited ~21 km from Bajawa; a fire on 13 August 2018 burned 27 of 33 traditional houses and 6 sacred structures, since rebuilt with traditional materials and techniques.",
+        "story": "On the evening of 13 August 2018, while much of the village was away at a football match in a neighbouring settlement, a fire swept through Gurusina and destroyed 27 of its 33 thatched houses along with six sacred ceremonial structures \u2014 a huge loss for a Ngada village whose megalithic square, ngadhu and bhaga shrines are the physical record of its clan structure. \n\nThe village has since been rebuilt, largely with the same materials and forms, an act of cultural continuity rather than a museum reconstruction. For a race passing through, Gurusina is a reminder of how fragile these thatched-roof villages are, and why fire discipline (no naked flames, careful stove use) belongs in any rider briefing for the Ngada section.\n\nThe stored coordinate is geometrically inconsistent with that commonly cited ~21 km road distance from Bajawa: a straight-line check puts it only ~4 km from Bajawa, closer than Bena's own fix and out of the expected village order along the Jerebuu road. Treat the pin as likely mislocated until field-checked.",
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
@@ -522,12 +525,13 @@
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 1502,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.gunungbagging.com/ili-mandiri/",
           "https://id.wikipedia.org/wiki/Gunung_Ile_Mandiri",
           "https://www.liputan6.com/lifestyle/read/5687745/6-fakta-menarik-gunung-ile-mandiri-di-flores-timur-ntt-yang-jadi-latar-kota-larantuka",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture"
         ],
         "public": true
       }
@@ -547,7 +551,7 @@
         "local_name": "Gunung Inerie",
         "category": "volcano",
         "summary": "A near-perfect stratovolcano cone (2,245 m) south of Bajawa overlooking the Savu Sea; the highest peak in Ngada and the visual anchor of the megalithic-village section. Not currently active.",
-        "story": "Inerie is the volcano every road in Ngada seems to point at: a symmetrical, bare-sided cone rising straight out of the plateau south of Bajawa, visible from Bena, Luba and half the villages of Jerebuu district. At 2,245 m it is the tallest thing on this half of Flores, and locally the mountain is treated less as scenery than as a presiding relative — the *ngadhu* and *bhaga* shrines of the villages beneath it face its slope.\n\nThe last reported activity was a plume of smoke seen in June 1911; Wikipedia and the Global Volcanism Program list it as not currently active, and no PVMBG alert-level bulletin specific to Inerie turned up in a September 2026 search. Climbers summit it in a long day from Bena or the Wolobobo side; a hike-a-bike traverse of its lower shoulder down to the south coast at Aimere is one of the concept alternatives for the Ngada section.",
+        "story": "Inerie is the volcano every road in Ngada seems to point at: a symmetrical, bare-sided cone rising straight out of the plateau south of Bajawa, visible from Bena, Luba and half the villages of Jerebuu district. At 2,245 m it is the tallest thing on this half of Flores, and locally the mountain is treated less as scenery than as a presiding relative \u2014 the *ngadhu* and *bhaga* shrines of the villages beneath it face its slope.\n\nThe last reported activity was a plume of smoke seen in June 1911; Wikipedia and the Global Volcanism Program list it as not currently active, and no PVMBG alert-level bulletin specific to Inerie turned up in a September 2026 search. Climbers summit it in a long day from Bena or the Wolobobo side; a hike-a-bike traverse of its lower shoulder down to the south coast at Aimere is one of the concept alternatives for the Ngada section.",
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": true,
@@ -581,7 +585,7 @@
         "access": "trail",
         "hike_a_bike": false,
         "elevation_m": 637,
-        "hazard_level": "PVMBG Level II (Waspada) as of May 2026, following a spike in seismicity and ash-free steam plumes to ~200 m; public advised to stay 2 km from the active crater.",
+        "hazard_level": "PVMBG Level II (Waspada) as of May 2026, following a spike in seismicity and ash-free steam plumes to ~200 m; public advised to stay 2 km from the active crater. Not reconfirmed since; recheck against MAGMA Indonesia (magma.esdm.go.id) before any route or checkpoint decision near Ende's southern peninsula, given this bulletin is already several months old.",
         "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Mount_Iya",
@@ -656,12 +660,12 @@
         "local_name": "Danau Kelimutu",
         "category": "crater-lake",
         "summary": "Three adjacent crater lakes (1,639 m) on a single volcanic summit, each a different and independently changing colour: Tiwu Ata Mbupu (blue), Tiwu Nua Muri Kooh Tai (green) and Tiwu Ata Polo (red/black).",
-        "story": "Kelimutu's three lakes sit in adjoining craters on the same short summit ridge, close enough to see together from one viewpoint, yet each holds a different colour that shifts over months to years as the volcano's hydrothermal chemistry changes: Tiwu Ata Mbupu ('Lake of Old People'), Tiwu Nua Muri Kooh Tai ('Lake of Young Men and Maidens') and Tiwu Ata Polo ('Bewitched Lake'). In Lio belief the lakes are where souls go after death, sorted by how they lived; the mountain is treated as sacred ground, not simply scenery.\n\nPVMBG held Kelimutu at Level I (Normal) as of 5 August 2026, after a January 2026 report of a crater-wall landslide inside Kawah II that turned out to be ordinary weathering rather than a precursor. The standing safety rules — no descending to the shoreline, no camping in or near the craters, stay back from the rim especially at Kawah II because of phreatic-eruption risk — apply regardless of alert level.\n\nFor the race this is the one non-negotiable stop: riders are required to be at the car park and viewpoint at dawn, when the light and the colour contrast are best and the crowds have not yet arrived. The last 1-2 km is paved but ends in stairs, so it is treated as a short hike-a-bike in the route concept, not a ridden section.",
+        "story": "Kelimutu's three lakes sit in adjoining craters on the same short summit ridge, close enough to see together from one viewpoint, yet each holds a different colour that shifts over months to years as the volcano's hydrothermal chemistry changes: Tiwu Ata Mbupu ('Lake of Old People'), Tiwu Nua Muri Kooh Tai ('Lake of Young Men and Maidens') and Tiwu Ata Polo ('Bewitched Lake'). In Lio belief the lakes are where souls go after death, sorted by how they lived; the mountain is treated as sacred ground, not simply scenery.\n\nPVMBG held Kelimutu at Level I (Normal) as of 5 August 2026, after a January 2026 report of a crater-wall landslide inside Kawah II that turned out to be ordinary weathering rather than a precursor. The standing safety rules \u2014 no descending to the shoreline, no camping in or near the craters, stay back from the rim especially at Kawah II because of phreatic-eruption risk \u2014 apply regardless of alert level.\n\nFor the race this is the one non-negotiable stop: riders are required to be at the car park and viewpoint at dawn, when the light and the colour contrast are best and the crowds have not yet arrived. The last 1-2 km is paved but ends in stairs, so it is treated as a short hike-a-bike in the route concept, not a ridden section.",
         "race_relevance": "anchor",
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 1639,
-        "hazard_level": "PVMBG Level I (Normal) as of 5 Aug 2026; a Jan 2026 crater-wall landslide (Kawah II) was assessed as weathering, not a precursor. Standing advice: no crater-rim approach, especially Kawah II (phreatic-eruption risk), no camping in the craters.",
+        "hazard_level": "PVMBG Level I (Normal) as of 5 Aug 2026; a Jan 2026 crater-wall landslide (Kawah II) was assessed as weathering, not a precursor. Not reconfirmed since; recheck against MAGMA Indonesia before race week given this is the one mandatory, dawn, crater-adjacent stop of the whole course. Standing advice regardless of alert level: no crater-rim approach, especially Kawah II (phreatic-eruption risk), no camping in the craters.",
         "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Kelimutu",
@@ -713,10 +717,11 @@
         "race_relevance": "anchor",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://beach-spot.com/beach/koka-beach/",
-          "https://mybestplacestovisit.com/asia/indonesia/flores/koka-beach/"
+          "https://mybestplacestovisit.com/asia/indonesia/flores/koka-beach/",
+          "map:overture"
         ],
         "public": true
       }
@@ -836,12 +841,12 @@
         "id": "p-larantuka-heritage",
         "name": "Larantuka -- Semana Santa and Portuguese Heritage",
         "category": "heritage",
-        "summary": "Portuguese-Catholic port town at Flores' eastern tip, seat of the historic Kingdom of Larantuka and host of Semana Santa, a Holy Week procession tradition unbroken since the 16th century; the race's Portuguese-heritage bookend to Sikka in the west.",
-        "story": "Larantuka is where Flores' Portuguese and Catholic story reaches its fullest expression, not its faintest trace. The Kingdom of Larantuka converted to Catholicism in the 1500s under Dominican missionaries and Portuguese traders, and unlike almost everywhere else the Portuguese touched in the archipelago, the town never let the connection lapse: Larantuka Malay, a Portuguese-influenced Malay creole, is still spoken by some residents, and the town's confrarias (religious brotherhoods) that organise Semana Santa trace their form directly back to that period.\n\nSemana Santa itself is the reason Larantuka is a name Catholics across eastern Indonesia know: during Holy Week the statue of Tuan Ma (Our Lady, kept at the Kapela Tuan Ma) and Tuan Ana (the body of Christ) are carried through the town in candlelit sea and land processions that draw pilgrims from across Flores, Adonara, Solor and beyond, culminating on Good Friday. The tradition has run continuously since the 16th century, surviving Dutch Protestant rule, Japanese occupation and Indonesian independence -- one of the longest unbroken Catholic ritual traditions in Southeast Asia.\n\nFor the race, arriving in Larantuka closes the loop opened at Sikka village nine sections earlier: two coasts, five centuries apart in scale but the same source, the most Catholic corner of the most Catholic island in Indonesia. A finish under Ile Mandiri, with the cathedral and the harbour it once served as a spice-and-slave-trade port right at the line, is a deliberately loaded piece of symbolism to end on.",
+        "summary": "Portuguese-Catholic port town at Flores' eastern tip, seat of the historic Kingdom of Larantuka and host of Semana Santa, a Holy Week procession tradition local sources describe as unbroken since the 16th century; the race's Portuguese-heritage bookend to Sikka in the west.",
+        "story": "Larantuka is where Flores' Portuguese and Catholic story reaches its fullest expression, not its faintest trace. The Kingdom of Larantuka converted to Catholicism in the 1500s under Dominican missionaries and Portuguese traders, and unlike almost everywhere else the Portuguese touched in the archipelago, the town never let the connection lapse: Larantuka Malay, a Portuguese-influenced Malay creole, is still spoken by some residents, and the town's confrarias (religious brotherhoods) that organise Semana Santa trace their form directly back to that period.\n\nSemana Santa itself is the reason Larantuka is a name Catholics across eastern Indonesia know: during Holy Week the statue of Tuan Ma (Our Lady, kept at the Kapela Tuan Ma) and Tuan Ana (the body of Christ) are carried through the town in candlelit sea and land processions that draw pilgrims from across Flores, Adonara, Solor and beyond, culminating on Good Friday. The tradition has run continuously since the 16th century, surviving Dutch Protestant rule, Japanese occupation and Indonesian independence -- local sources describe it as unbroken, though no specific comparative source was found to support ranking it against other Catholic ritual traditions in the region.\n\nFor the race, arriving in Larantuka closes the loop opened at Sikka village nine sections earlier: two coasts, five centuries apart in scale but the same source, the most Catholic corner of the most Catholic island in Indonesia. A finish under Ile Mandiri, with the cathedral and the harbour it once served as a spice-and-slave-trade port right at the line, is a deliberately loaded piece of symbolism to end on.",
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Larantuka",
           "https://en.wikipedia.org/wiki/Kingdom_of_Larantuka",
@@ -856,8 +861,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.185,
-          -8.69
+          122.187054,
+          -8.665969
         ]
       },
       "properties": {
@@ -869,10 +874,11 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.ncregister.com/cna/cna-20251129-flores-seminarians",
           "https://catholicweekly.com.au/fr-flader-the-worlds-largest-seminary/",
+          "map:overture",
           "field:pending"
         ],
         "public": true
@@ -895,10 +901,11 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.wikidata.org/wiki/Q26726835",
-          "https://e-journals2.unmul.ac.id/index.php/transform/article/download/111/114/1099"
+          "https://e-journals2.unmul.ac.id/index.php/transform/article/download/111/114/1099",
+          "map:overture"
         ],
         "public": true
       }
@@ -915,21 +922,22 @@
       "properties": {
         "id": "p-lewotobi-laki-laki",
         "name": "Lewotobi Laki-laki",
-        "local_name": "Gunung Lewotobi Laki-laki",
+        "local_name": "Ile Lewotobi Laki-laki",
         "category": "volcano",
         "summary": "The more active of Flores Timur's twin volcanoes (1,584 m); erupting repeatedly since Nov 2024 with fatalities and a standing PVMBG exclusion radius. Treated as a no-go zone for course planning; see hazard_level.",
         "race_relevance": "hazard",
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 1584,
-        "hazard_level": "PVMBG Level III (Siaga) with a 5 km exclusion radius as of late August 2026, raised from Level II on 12 May 2026 after increased deep volcanic earthquakes, tremor and inflation; hundreds of eruptions recorded through 2026 (second most active Indonesian volcano that year after Semeru). A major eruption sequence beginning 3 Nov 2024 killed at least 9-10 people and displaced thousands. Course design treats the whole Lewotobi complex as a no-go zone; the north-coast corridor (Concept A) is the primary route, with the Boru highway corridor (Concept B) usable only if PVMBG status allows. Reconfirm monthly before the race.",
-        "confidence": "approximate",
+        "hazard_level": "PVMBG has held Lewotobi Laki-laki at an elevated alert level continuously since the deadly eruption sequence that began 3 Nov 2024 (Level IV/Awas at multiple points since, with the exclusion radius repeatedly widened as the crisis continued); a claim that it sat at a lower Level II until being raised to Level III only on 12 May 2026 is very likely inaccurate given that history and could not be confirmed this pass. Hundreds of eruptive events have been recorded through 2026, among the most active of any Indonesian volcano that year. Course design treats the whole Lewotobi complex as a no-go zone; the north-coast corridor (Concept A) is the primary route, with the Boru highway corridor (Concept B) usable only if PVMBG status allows. Reconfirm the exact current level and exclusion radius against MAGMA Indonesia (magma.esdm.go.id) before any route or checkpoint decision -- do not rely on a fixed level/date here.",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Lewotobi",
           "https://www.cnn.com/2024/11/03/asia/volcanic-eruption-indonesia-intl-hnk",
           "https://watchers.news/2026/05/12/pvmbg-raises-lewotobi-laki-laki-to-level-iii-after-seismicity-and-inflation-increase-indonesia/",
           "https://www.techtimes.com/articles/325893/20260828/lewotobi-laki-laki-fires-ninth-eruption-in-seven-days-lahar-risk-outlasts-ash.htm",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture"
         ],
         "public": true
       }
@@ -946,19 +954,20 @@
       "properties": {
         "id": "p-lewotobi-perempuan",
         "name": "Lewotobi Perempuan",
-        "local_name": "Gunung Lewotobi Perempuan",
+        "local_name": "Ile Lewotobi Perempuan",
         "category": "volcano",
         "summary": "The taller of Flores Timur's twin volcanoes (1,703 m), 2.1 km south-east of Lewotobi Laki-laki; part of the same 2024-2026 eruptive crisis and exclusion zone. Treated as a no-go zone for course planning; see hazard_level.",
         "race_relevance": "hazard",
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 1703,
-        "hazard_level": "Covered by the same PVMBG Level III (Siaga) status and 5 km exclusion radius as Lewotobi Laki-laki (see p-lewotobi-laki-laki for the dated detail); the two vents are managed as one hazard complex by PVMBG. Reconfirm monthly before the race.",
-        "confidence": "approximate",
+        "hazard_level": "Managed as one hazard complex with Lewotobi Laki-laki by PVMBG (see p-lewotobi-laki-laki for the dated detail, now flagged unconfirmed pending a MAGMA Indonesia recheck); reconfirm the current level and exclusion radius before any route or checkpoint decision.",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Lewotobi",
           "https://watchers.news/2026/05/12/pvmbg-raises-lewotobi-laki-laki-to-level-iii-after-seismicity-and-inflation-increase-indonesia/",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture"
         ],
         "public": true
       }
@@ -1020,8 +1029,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.01,
-          -8.735
+          121.061,
+          -8.833
         ]
       },
       "properties": {
@@ -1029,14 +1038,15 @@
         "name": "Mataloko Hot Springs",
         "local_name": "Air Panas Mataloko",
         "category": "hot-spring",
-        "summary": "A geothermal field around Mataloko with more than 20 hot springs up to 95 degC, spread across ~1,000 ha in Todabelu village, Golewa district.",
+        "summary": "A geothermal field in the Todabelu/Mataloko cluster (PLTP Mataloko geothermal plant, Seminari Todabelu) with more than 20 hot springs up to 95 degC, spread across ~1,000 ha in Todabelu village, Golewa district.",
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
         "confidence": "unverified",
         "sources": [
           "https://iopscience.iop.org/article/10.1088/1742-6596/1341/8/082042",
-          "https://www.jurnalflores.co.id/travel/7768895964/mataloko-kepingan-wisata-religi-paling-cocok-buat-meditasi-dan-healing-di-ngada-ntt"
+          "https://www.jurnalflores.co.id/travel/7768895964/mataloko-kepingan-wisata-religi-paling-cocok-buat-meditasi-dan-healing-di-ngada-ntt",
+          "map:overture"
         ],
         "public": true
       }
@@ -1252,8 +1262,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.014,
-          -8.798
+          122.056,
+          -8.766
         ]
       },
       "properties": {
@@ -1265,10 +1275,11 @@
         "race_relevance": "anchor",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.lonelyplanet.com/indonesia/paga/attractions/pantai-paga/a/poi-sig/1525158/1321914",
-          "field:pending"
+          "field:pending",
+          "map:overture"
         ],
         "public": true
       }
@@ -1307,8 +1318,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.643991,
-          -8.843913
+          121.6629,
+          -8.8469
         ]
       },
       "properties": {
@@ -1323,7 +1334,8 @@
         "confidence": "verified",
         "sources": [
           "https://travel.kompas.com/read/2022/05/31/220300327/taman-renungan-bung-karno-di-ende-ntt-tempat-lahirnya-pancasila?page=all",
-          "https://flores.tribunnews.com/2023/05/26/taman-renungan-bung-karno-pohon-sukun-dan-gagasan-lahirnya-pancasila-di-ende.html"
+          "https://flores.tribunnews.com/2023/05/26/taman-renungan-bung-karno-pohon-sukun-dan-gagasan-lahirnya-pancasila-di-ende.html",
+          "map:overture"
         ],
         "public": true
       }
@@ -1400,7 +1412,7 @@
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 2350,
-        "hazard_level": "No raised PVMBG alert level on record; last confirmed eruption March 1991 (VolcanoDiscovery, checked 2026).",
+        "hazard_level": "No raised PVMBG alert level on record; commonly cited last eruption/dome activity in the late 1980s (Anak Ranakah, 1987) with a diffuse steam plume reported in 2011. The single source behind an oft-repeated 'March 1991' eruption date (VolcanoDiscovery) could not be cross-checked against the Global Volcanism Program this pass; treat that specific date as unconfirmed until checked against volcano.si.edu.",
         "confidence": "verified",
         "sources": [
           "https://www.volcanodiscovery.com/ranakah.html",
@@ -1550,8 +1562,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.41849,
-          -8.81052
+          120.4199,
+          -8.8157
         ]
       },
       "properties": {
@@ -1601,8 +1613,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.2195,
-          -8.7455
+          122.196971,
+          -8.749412
         ]
       },
       "properties": {
@@ -1618,7 +1630,8 @@
         "sources": [
           "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/",
           "https://1001indonesia.net/gereja-santo-ignatius-loyola-rumah-ibadah-tua-di-sikka/",
-          "https://pariwisatasikka.wixsite.com/budpar/gereja-tua-sikka"
+          "https://pariwisatasikka.wixsite.com/budpar/gereja-tua-sikka",
+          "map:overture"
         ],
         "public": true
       }
@@ -1628,8 +1641,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.219,
-          -8.745
+          122.196971,
+          -8.749412
         ]
       },
       "properties": {
@@ -1647,7 +1660,8 @@
         "sources": [
           "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/",
           "https://www.colonialvoyage.com/portuguese-influence-in-sikka-district-flores-island-indonesia/",
-          "https://www.lonelyplanet.com/indonesia/nusa-tenggara/flores/attractions/sikka/a/poi-sig/1592606/356586"
+          "https://www.lonelyplanet.com/indonesia/nusa-tenggara/flores/attractions/sikka/a/poi-sig/1592606/356586",
+          "map:overture"
         ],
         "public": true
       }
@@ -1683,8 +1697,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          123.1,
-          -8.4
+          123.087,
+          -8.436
         ]
       },
       "properties": {
@@ -1700,6 +1714,7 @@
         "sources": [
           "https://www.colonialvoyage.com/portuguese-fort-solor-island-indonesia/",
           "https://bpolbf.kemenpar.go.id/boplbf/news/benteng-lohayong-jejak-kolonial-di-pulau-solor",
+          "map:overture",
           "field:pending"
         ],
         "public": true
@@ -1828,7 +1843,7 @@
         "name": "Wae Rebo",
         "category": "traditional-village",
         "summary": "Seven cone-shaped mbaru niang houses ringing a mountain clearing at ~1,100-1,200 m, reached only on foot; winner of the 2012 UNESCO Asia-Pacific Award for Cultural Heritage Conservation. Flores' most famous traditional village and the race's flagship cultural checkpoint.",
-        "story": "Wae Rebo sits alone at the head of a forested valley in the Manggarai highlands, seven mbaru niang -- steep, cone-roofed communal houses, each sheltering several families across four internal levels -- arranged in a circle around an open ceremonial ground. There is no road. Every visitor, every sack of rice, every roof repair arrives on someone's back, up a climb the porters' path covers in roughly three hours from Denge, the nearest village a vehicle can reach.\n\nIn 2012 UNESCO gave Wae Rebo its Asia-Pacific Award for Cultural Heritage Conservation, recognising a community that rebuilt its own houses in the traditional style rather than let them lapse into tin roofing like so many other Manggarai villages did. The award turned a little-known clan village into Flores' single most photographed place, and the village has managed that attention on its own terms: a fixed homestay system, a guest fee, and a welcome ceremony every visitor takes part in before being shown to a sleeping mat inside the houses themselves.\n\nFor the race this is both the obvious highlight and the clearest test of the whole project's promise that villages are hosts, not scenery: the trail is honest hike-a-bike (concept estimate ~8-9 km, +700 m, bike carried the whole way), the overnight income goes directly to the community that owns the mountain, and nothing about the checkpoint happens without the village council's agreement first.",
+        "story": "Wae Rebo sits alone at the head of a forested valley in the Manggarai highlands, seven mbaru niang -- steep, cone-roofed communal houses, each sheltering several families across four internal levels -- arranged in a circle around an open ceremonial ground. There is no road. Every visitor, every sack of rice, every roof repair arrives on someone's back, up a climb the porters' path covers in roughly three hours from Denge, the nearest village a vehicle can reach.\n\nIn 2012 UNESCO gave Wae Rebo its Asia-Pacific Award for Cultural Heritage Conservation, recognising a community that rebuilt its own houses in the traditional style rather than let them lapse into tin roofing like so many other Manggarai villages did. The award turned a little-known clan village into one of the most photographed and recognisable village images from Flores, and the village has managed that attention on its own terms: a fixed homestay system, a guest fee, and a welcome ceremony every visitor takes part in before being shown to a sleeping mat inside the houses themselves.\n\nFor the race this is both the obvious highlight and the clearest test of the whole project's promise that villages are hosts, not scenery: the trail is honest hike-a-bike (concept estimate ~8-9 km, +700 m, bike carried the whole way), the overnight income goes directly to the community that owns the mountain, and nothing about the checkpoint happens without the village council's agreement first.",
         "race_relevance": "anchor",
         "access": "trail",
         "hike_a_bike": true,
@@ -1860,12 +1875,13 @@
         "race_relevance": "context",
         "access": "trail",
         "hike_a_bike": true,
-        "elevation_m": 1122,
+        "elevation_m": 907,
         "hazard_level": "No confirmed Holocene eruption (Global Volcanism Program); not found on a routinely published PVMBG alert-level list (checked 2026).",
         "confidence": "approximate",
         "sources": [
           "https://volcano.si.edu/volcano.cfm?vn=264060",
-          "https://peakvisor.com/peak/gunung-wai-sano.html"
+          "https://peakvisor.com/peak/gunung-wai-sano.html",
+          "map:dem-derived"
         ],
         "public": true
       }
@@ -1887,12 +1903,14 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "http://www.wesailors.com/marina/profile/967/",
-          "https://divescover.com/dive-site/wodong-wreck/25606"
+          "https://divescover.com/dive-site/wodong-wreck/25606",
+          "map:overture"
         ],
-        "public": true
+        "public": true,
+        "local_name": "Wairterang"
       }
     },
     {
@@ -1929,8 +1947,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.005,
-          -8.751
+          121.053,
+          -8.833
         ]
       },
       "properties": {
@@ -1945,7 +1963,8 @@
         "confidence": "unverified",
         "sources": [
           "https://diytravelhq.com/bena-wogo-villages/",
-          "https://www.roamindonesia.com/flores/flores-attractions/bajawa-traditional-villages/"
+          "https://www.roamindonesia.com/flores/flores-attractions/bajawa-traditional-villages/",
+          "map:overture"
         ],
         "public": true
       }
@@ -1968,11 +1987,12 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "elevation_m": 1700,
+        "elevation_m": 1468,
         "confidence": "approximate",
         "sources": [
           "https://authentic-indonesia.com/blog/wolobobo-hill-with-the-land-above-the-clouds-charm-of-flores/",
-          "https://www.photohound.co/spot/wolobobo-viewpoint-1008060"
+          "https://www.photohound.co/spot/wolobobo-viewpoint-1008060",
+          "map:dem-derived"
         ],
         "public": true
       }
@@ -2024,9 +2044,10 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "Village courtesies as for Nggela; a landslide has been known to cut the coastal road here after heavy rain.",
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
-          "https://www.youtube.com/watch?v=xJPD6FK-W3M"
+          "https://www.youtube.com/watch?v=xJPD6FK-W3M",
+          "map:overture"
         ],
         "public": true
       }
@@ -2061,8 +2082,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.19,
-          -8.588
+          122.202836,
+          -8.599703
         ]
       },
       "properties": {
@@ -2071,7 +2092,7 @@
         "local_name": "Kampung Wuring",
         "category": "traditional-village",
         "summary": "Bajo (sea nomad) stilt village built out over the tidal flats at the edge of Maumere bay, a few km west of the town centre; one of Flores' few remaining Bajo settlements, passed on the way into Maumere.",
-        "story": "Wuring sits where Maumere's bay turns to mudflat, a dense cluster of wooden houses on stilts with no dry ground beneath them at high tide, connected by narrow plank walkways instead of streets. Its people are Bajo -- the seafaring, historically nomadic 'sea gypsies' found in small pockets right across the Indonesian archipelago -- who settled here generations ago as one of the very few Bajo communities on Flores itself, an island otherwise dominated by highland farming peoples.\n\nFor a race arriving into Maumere from the west, Wuring is the last thing before the town proper: boats pulled up under houses, nets drying on the walkways, the particular built-over-water geometry that has nothing in common with the hill villages the route has been crossing for a thousand kilometres. It is a fishing community going about its business, not a set-piece cultural checkpoint, and should be treated that way -- a place to ride through with respect and stop only briefly, not a village that has agreed to host anyone.",
+        "story": "Wuring sits where Maumere's bay turns to mudflat, a dense cluster of wooden houses on stilts with no dry ground beneath them at high tide, connected by narrow plank walkways instead of streets. Its people are Bajo -- the seafaring, historically nomadic 'sea gypsies' found in small pockets right across the Indonesian archipelago -- who settled here generations ago as one of the very few Bajo communities on Flores itself, an island otherwise dominated by highland farming peoples.\n\nFor a race arriving into Maumere from the west, Wuring is the last thing before the town proper: boats pulled up under houses, nets drying on the walkways, the particular built-over-water geometry that has nothing in common with the hill villages the route has been crossing for a thousand kilometres. It is a fishing community going about its business, not a set-piece cultural checkpoint, and should be treated that way -- a place to ride through with respect and stop only briefly, not a village that has agreed to host anyone.\n\nDesk position corrected ~1.9 km to the Pelabuhan Wuring / Pasar Senja Wuring cluster (Overture Maps place theme), which also clears the original point's small (~214 m) excursion into the sea against the regency-boundary land mask; still needs a field visit given how diffuse a stilt settlement is.",
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,

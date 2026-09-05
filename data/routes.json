@@ -100,7 +100,7 @@
     "id": "r-ultra",
     "name": "Ultra",
     "tagline": "The Traverse plus the Manggarai Timur interior, the Bola coast loop, and the Inerie circuit",
-    "description": "An extended variant for stakeholders and scouts weighing a longer, more remote course: it trades the direct Liang Bua→Reo→Pota corridor for the unscouted Ruteng→Borong→Elar→Pota interior of Manggarai Timur (+120-160 km per the route concept, using the upper end here), adds the Maumere→Bola→Watublapi south-coast loop before Egon (+50-70 km, upper end used), and swaps the Inerie shoulder traverse for a full circuit of the mountain (+40-60 km, upper end used). Every added kilometre here is even less scouted than the Traverse; treat this as a distance ceiling to test appetite for, not a proposal ready for a village agreement.",
+    "description": "An extended variant for stakeholders and scouts weighing a longer, more remote course: it trades the direct Liang Bua→Reo→Pota corridor for the unscouted Ruteng→Borong→Elar→Pota interior of Manggarai Timur, adds the Maumere→Bola→Watublapi south-coast loop before Egon, and swaps the Inerie shoulder traverse for a full circuit of the mountain. A geometry defect in the original concept-sketch vertices for five of these loop segments (they wandered 30-60 km through unrelated terrain before snapping back to the real endpoint) made the loops look like they added the route concept's stated +120-160 km / +50-70 km / +40-60 km; corrected to plausible corridors between their real endpoints, they add roughly +19 km, +37 km and +1 km instead. Every added kilometre here is even less scouted than the Traverse; treat this as a distance ceiling to test appetite for, not a proposal ready for a village agreement.",
     "audience": [
       "stakeholder",
       "scout"
@@ -186,9 +186,9 @@
     ],
     "status": "concept",
     "target_km_range": [
-      1600,
-      1900
+      1150,
+      1350
     ],
-    "notes": "Sketch total computed from the current concept-sketch segments falls close to but just under the low end of this target range (see the course-design report); the shortfall is reported honestly rather than closed by inventing distance beyond what docs/route-concept.md states. A fourth optional loop named in the concept (Riung→Mbay by the coast and the Bajawa plateau, +60-90 km) is not yet built as segments here because it revisits both the coast and the plateau rather than offering a simple point-to-point alternative; it remains a candidate for a future revision of this route."
+    "notes": "A geometry-verification pass found five of this route's loop-only segments (s-ruteng-borong-a, s-borong-elar-a, s-elar-pota-a, s-bena-aimere-b, s-maumere-bola-a, s-bola-watublapi-a) had concept-sketch vertices that wandered 30-60 km through unrelated terrain before snapping back to the real endpoint -- a shared sketch/generation defect, not a deliberate long detour. Once redrawn to a plausible corridor (1.3-2.5x the straight-line distance between the segment's own endpoints) between the real endpoints, the route's total dropped from a previously-computed 1573.5 km to about 1189 km: lower than before, not higher, because the buggy geometry happened to be long, not because real distance was removed. target_km_range is lowered to [1150,1350] to match what the corrected geometry actually supports, rather than left at the original [1600,1900], which assumed docs/route-concept.md's +120-160 km / +50-70 km / +40-60 km loop estimates -- those aren't achievable while every segment also stays within a geodesically plausible corridor (see each loop segment's own open_questions for the arithmetic). Reaching 1600+ km honestly would need either a genuinely new loop (the Riung→Mbay by the coast and the Bajawa plateau option below, still not built as segments) or accepting less plausible, longer-corridor geometry than the verification pass allows; docs/route-concept.md's loop-distance estimates should be revisited. A fourth optional loop named in the concept (Riung→Mbay by the coast and the Bajawa plateau, +60-90 km) is not yet built as segments here because it revisits both the coast and the plateau rather than offering a simple point-to-point alternative; it remains a candidate for a future revision of this route."
   }
 ]

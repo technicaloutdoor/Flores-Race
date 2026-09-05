@@ -7,75 +7,64 @@
         "type": "LineString",
         "coordinates": [
           [
-            119.889,
-            -8.487
+            120.994,
+            -8.95
           ],
           [
-            120.02,
-            -8.52
+            120.891894,
+            -8.905164
           ],
           [
-            120.18,
-            -8.56
+            120.883154,
+            -8.895796
           ],
           [
-            120.32,
-            -8.6
+            120.883154,
+            -8.817276
           ],
           [
-            120.478,
-            -8.611
+            120.882928,
+            -8.791106
+          ],
+          [
+            120.882041,
+            -8.764947
+          ],
+          [
+            120.998,
+            -8.741
           ]
         ]
       },
       "properties": {
-        "id": "s-labuanbajo-ruteng-a",
-        "name": "Labuan Bajo → Ruteng via the Manggarai hills",
-        "from_node": "n-labuan-bajo",
-        "to_node": "n-ruteng",
+        "id": "s-aimere-mataloko-a",
+        "name": "Aimere → Mataloko",
+        "from_node": "n-aimere",
+        "to_node": "n-mataloko",
         "variant": "A",
         "status": "concept",
         "geometry_source": "concept-sketch",
         "character": "mixed",
-        "est_hab_km": 3,
-        "difficulty": 3,
-        "remoteness": 3,
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
         "water_points": [
-          "warung roughly halfway"
+          "Reliable in Mataloko"
         ],
-        "hazards": [],
-        "open_questions": [
-          "Is the Wae Rebo side trail rideable to the junction?"
-        ],
-        "stats": {
-          "length_km": 66.5,
-          "ascent_m": 1400,
-          "descent_m": 350,
-          "min_elev_m": 20,
-          "max_elev_m": 1180,
-          "unpaved_pct": 65,
-          "profile_ref": "s-labuanbajo-ruteng-a"
-        },
+        "resupply_notes": "Mataloko: basic resupply, geothermal hot springs, the St Yohanes Berchmans seminary.",
+        "public": true,
         "sources": [
           "docs/route-concept.md"
         ],
-        "public": true,
-        "resupply_notes": "Warung at the roughly-halfway point sells instant noodles and bottled water; no proper resupply between Labuan Bajo and Ruteng.",
-        "cultural_notes": "Passes within range of the Wae Rebo side trail; the village itself needs a separate council agreement (see p-wae-rebo).",
-        "scouting": [
-          {
-            "date": "2026-06-02",
-            "team": "RC",
-            "verdict": "partial",
-            "notes": "Drove the corridor by car; the middle third looked rideable gravel, first and last thirds unconfirmed by bike."
-          },
-          {
-            "date": "2026-07-14",
-            "team": "RC, MB",
-            "verdict": "go",
-            "notes": "Rode the full corridor. Steep but rideable; one 400m hike-a-bike pitch just before the Ruteng descent that wasn't visible on satellite imagery."
-          }
-        ]
+        "stats": {
+          "length_km": 41.194,
+          "ascent_m": 2842.8,
+          "descent_m": 1901.8,
+          "min_elev_m": 1.0,
+          "max_elev_m": 1557.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-aimere-mataloko-a"
+        }
       }
     },
     {
@@ -84,68 +73,73 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.478,
-            -8.611
+            120.970883,
+            -8.79448
           ],
           [
-            120.63,
-            -8.66
+            121.032176,
+            -8.795
           ],
           [
-            120.78,
-            -8.71
+            121.0307,
+            -8.806969
           ],
           [
-            120.9,
-            -8.75
+            121.037541,
+            -8.830912
           ],
           [
-            120.999,
-            -8.771
+            121.041363,
+            -8.84275
+          ],
+          [
+            121.045893,
+            -8.854351
+          ],
+          [
+            120.9857,
+            -8.8774
           ]
         ]
       },
       "properties": {
-        "id": "s-ruteng-bajawa-a",
-        "name": "Ruteng → Bajawa via the north coast detour",
-        "from_node": "n-ruteng",
-        "to_node": "n-bajawa",
+        "id": "s-bajawa-bena-a",
+        "name": "Bajawa → Bena (via Luba, Tololela, Gurusina)",
+        "from_node": "n-bajawa",
+        "to_node": "n-bena",
         "variant": "A",
-        "status": "desk-checked",
+        "status": "concept",
         "geometry_source": "concept-sketch",
         "character": "gravel",
-        "est_hab_km": 1,
+        "est_hab_km": 0,
         "difficulty": 2,
-        "remoteness": 4,
-        "water_points": [],
+        "remoteness": 2,
+        "water_points": [
+          "Kiosks in the villages along the way; nothing guaranteed"
+        ],
+        "resupply_notes": "Bena has minimal resupply (homestay economy); real resupply is Bajawa before or Aimere after.",
         "hazards": [
-          "long dry stretch, carry extra water"
+          "Fire risk in the thatched-roof villages (Gurusina burned in 2018) — rider briefing should cover stove/flame discipline"
         ],
+        "cultural_notes": "Ngada megalithic villages: Bena (nine clans, ngadhu/bhaga shrines), Luba (four clans, quieter), Tololela (steep hillside, fewer visitors), Gurusina (rebuilt after the 2018 fire). Cultural-checkpoint agreements required with each village council before race day (design rule 5).",
         "open_questions": [
-          "Confirm rideable corridor Reo -> Pota -> Riung."
-        ],
-        "stats": {
-          "length_km": 60,
-          "ascent_m": 300,
-          "descent_m": 300,
-          "min_elev_m": 900,
-          "max_elev_m": 1150,
-          "unpaved_pct": 80,
-          "profile_ref": "s-ruteng-bajawa-a"
-        },
-        "sources": [
-          "docs/route-concept.md"
+          "Which of Bena/Luba/Tololela/Gurusina will actually host a checkpoint, and under what terms? (route-concept open question 2, priority 1)"
         ],
         "public": true,
-        "resupply_notes": "No shops on this stretch; last reliable resupply is Ruteng, next is Bajawa.",
-        "scouting": [
-          {
-            "date": "2026-06-20",
-            "team": "MB",
-            "verdict": "partial",
-            "notes": "Desk-checked against Overture track data only; not yet ridden."
-          }
-        ]
+        "sources": [
+          "docs/route-concept.md",
+          "https://www.megalithic.co.uk/article.php?sid=51992",
+          "https://www.thejakartapost.com/news/2018/08/14/fire-razes-gurusina-traditional-village-in-east-nusa-tenggara.html"
+        ],
+        "stats": {
+          "length_km": 20.677,
+          "ascent_m": 1205.2,
+          "descent_m": 1565.3,
+          "min_elev_m": 671.1,
+          "max_elev_m": 1373.1,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-bajawa-bena-a"
+        }
       }
     },
     {
@@ -154,55 +148,3279 @@
         "type": "LineString",
         "coordinates": [
           [
-            119.889,
-            -8.487
+            120.9857,
+            -8.8774
           ],
           [
-            120.05,
-            -8.55
+            121.038928,
+            -8.87957
           ],
           [
-            120.22,
-            -8.62
+            121.043012,
+            -8.887299
           ],
           [
-            120.35,
-            -8.63
+            121.048619,
+            -8.893916
           ],
           [
-            120.478,
-            -8.611
+            121.049144,
+            -8.902431
+          ],
+          [
+            121.049144,
+            -8.928624
+          ],
+          [
+            121.047643,
+            -8.936943
+          ],
+          [
+            120.994,
+            -8.95
           ]
         ]
       },
       "properties": {
-        "id": "s-labuanbajo-ruteng-b",
-        "name": "Labuan Bajo → Ruteng via Wae Rebo (hike-a-bike alternative)",
-        "from_node": "n-labuan-bajo",
-        "to_node": "n-ruteng",
+        "id": "s-bena-aimere-a",
+        "name": "Bena → Aimere (Inerie shoulder, HAB)",
+        "from_node": "n-bena",
+        "to_node": "n-aimere",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "hab",
+        "est_hab_km": 7,
+        "difficulty": 5,
+        "remoteness": 4,
+        "water_points": [
+          "Unreliable; carry from Bena side"
+        ],
+        "resupply_notes": "Aimere is a basic south-coast port resupply.",
+        "hazards": [
+          "Steep, loose volcanic soil on the shoulder descent; exposure in places (route-concept HAB inventory: 5–10 km)"
+        ],
+        "cultural_notes": "Inerie is treated by the villages beneath it less as scenery than as a presiding relative; the ngadhu/bhaga shrines of Bena and Luba face its slope.",
+        "open_questions": [
+          "Is the Bena→Aimere descent safe with a loaded bike? (route-concept open question 4, priority 1)"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Inierie",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 18.631,
+          "ascent_m": 1567.5,
+          "descent_m": 2301.2,
+          "min_elev_m": 79.6,
+          "max_elev_m": 1313.1,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-bena-aimere-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.9857,
+            -8.8774
+          ],
+          [
+            121.013489,
+            -8.882428
+          ],
+          [
+            121.036634,
+            -8.887981
+          ],
+          [
+            121.051291,
+            -8.894493
+          ],
+          [
+            121.055086,
+            -8.902234
+          ],
+          [
+            121.047521,
+            -8.911262
+          ],
+          [
+            121.030064,
+            -8.921409
+          ],
+          [
+            121.005891,
+            -8.932314
+          ],
+          [
+            120.979342,
+            -8.943486
+          ],
+          [
+            120.994,
+            -8.95
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-bena-aimere-b",
+        "name": "Bena → Aimere (Inerie full circuit, Ultra)",
+        "from_node": "n-bena",
+        "to_node": "n-aimere",
         "variant": "B",
-        "status": "needs-recheck",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 3,
+        "difficulty": 4,
+        "remoteness": 4,
+        "direction_note": "Ultra-variant alternative to the Inerie shoulder traverse (variant A): a longer circuit around the mountain's western and southern base instead of the direct HAB shortcut over the shoulder (+40-60 km per the route concept).",
+        "water_points": [
+          "Unreliable; villages on the circuit are not individually documented"
+        ],
+        "resupply_notes": "Same endpoints as variant A; nothing new confirmed on the circuit itself.",
+        "hazards": [
+          "Wholly conceptual; no source describes this specific circuit track"
+        ],
+        "cultural_notes": "Passes close to Wolobobo Hill (p-wolobobo), a sunrise viewpoint over Inerie and the Bajawa plateau.",
+        "open_questions": [
+          "Unscouted; only proposed as an Ultra-variant distance-adder, not evaluated for track existence."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 19.823,
+          "ascent_m": 1726.8,
+          "descent_m": 2462.9,
+          "min_elev_m": 10.1,
+          "max_elev_m": 1228.9,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-bena-aimere-b"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.44769,
+            -8.66223
+          ],
+          [
+            122.429668,
+            -8.66169
+          ],
+          [
+            122.438105,
+            -8.661185
+          ],
+          [
+            122.443884,
+            -8.643025
+          ],
+          [
+            122.446071,
+            -8.633765
+          ],
+          [
+            122.449815,
+            -8.615084
+          ],
+          [
+            122.492728,
+            -8.62551
+          ],
+          [
+            122.475,
+            -8.6065
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-blidit-waiterang-a",
+        "name": "Blidit → Waiterang (Egon ascent and descent, HAB)",
+        "from_node": "n-blidit",
+        "to_node": "n-waiterang",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "hab",
+        "est_hab_km": 5,
+        "difficulty": 5,
+        "remoteness": 3,
+        "water_points": [
+          "None above Blidit; carry full capacity"
+        ],
+        "resupply_notes": "Waiterang has a small dive resort scene, no confirmed shop resupply.",
+        "hazards": [
+          "Active fumaroles at the crater; PVMBG Level I (Normal) as of mid-2026 monitoring reports, but a safety briefing (no lingering near fumaroles) is required before any ascent"
+        ],
+        "cultural_notes": "Egon is this section's hike-a-bike centrepiece, in the same register as Kelimutu and Inerie further west (route-concept HAB inventory: 4–6 km from Blidit).",
+        "open_questions": [
+          "Confirm current trail condition and fumarole safety before committing riders."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Mount_Egon",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 15.911,
+          "ascent_m": 546.5,
+          "descent_m": 1276.8,
+          "min_elev_m": 10.8,
+          "max_elev_m": 786.2,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-blidit-waiterang-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.1644,
+            -8.7667
+          ],
+          [
+            121.238036,
+            -8.778421
+          ],
+          [
+            121.29879,
+            -8.782374
+          ],
+          [
+            121.336583,
+            -8.772495
+          ],
+          [
+            121.346345,
+            -8.745736
+          ],
+          [
+            121.329121,
+            -8.702722
+          ],
+          [
+            121.291844,
+            -8.647616
+          ],
+          [
+            121.245817,
+            -8.587218
+          ],
+          [
+            121.2807,
+            -8.5756
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-boawae-mbay-a",
+        "name": "Boawae → Mbay (Aesesa valley)",
+        "from_node": "n-boawae",
+        "to_node": "n-mbay",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Reliable in Mbay (Aesesa plain irrigation)"
+        ],
+        "resupply_notes": "Mbay: full resupply, Nagekeo Regency capital.",
+        "cultural_notes": "The Aesesa plain is the largest rice-growing lowland on Flores (p-aesesa-plains).",
+        "open_questions": [
+          "Mbay's town-centre coordinate is unverified (placed on the coastal plain near the river mouth); confirm with a field GPS fix."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 47.252,
+          "ascent_m": 2359.3,
+          "descent_m": 2834.3,
+          "min_elev_m": 36.4,
+          "max_elev_m": 1330.4,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-boawae-mbay-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.1644,
+            -8.7667
+          ],
+          [
+            121.21515,
+            -8.84066
+          ],
+          [
+            121.269453,
+            -8.874177
+          ],
+          [
+            121.328783,
+            -8.850504
+          ],
+          [
+            121.391667,
+            -8.786389
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-boawae-nangaroro-b",
+        "name": "Boawae → Nangaroro (direct, skips Mbay)",
+        "from_node": "n-boawae",
+        "to_node": "n-nangaroro",
+        "variant": "B",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "unknown",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 4,
+        "direction_note": "Route-level alternative to the two-hop Boawae→Mbay→Nangaroro corridor, not a same-endpoint variant of a single segment: shorter and less remote per the route concept, but skips Mbay's resupply and the Aesesa plain entirely.",
+        "water_points": [
+          "Unconfirmed — this line has not been desk-checked against any track source"
+        ],
+        "resupply_notes": "None between Boawae and Nangaroro on this line.",
+        "hazards": [
+          "Wholly conceptual: no source describes an existing direct track"
+        ],
+        "open_questions": [
+          "Does a rideable direct track exist here at all, or is Mbay unavoidable? (section 06/07 alternative named in the route concept)"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 33.873,
+          "ascent_m": 3539.0,
+          "descent_m": 4029.7,
+          "min_elev_m": 1.0,
+          "max_elev_m": 1754.1,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-boawae-nangaroro-b"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.29686,
+            -8.74635
+          ],
+          [
+            122.264184,
+            -8.728943
+          ],
+          [
+            122.239799,
+            -8.713038
+          ],
+          [
+            122.230015,
+            -8.699785
+          ],
+          [
+            122.237652,
+            -8.689697
+          ],
+          [
+            122.261373,
+            -8.68253
+          ],
+          [
+            122.295997,
+            -8.677342
+          ],
+          [
+            122.311111,
+            -8.668611
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-bola-watublapi-a",
+        "name": "Bola → Watublapi",
+        "from_node": "n-bola",
+        "to_node": "n-watublapi",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable"
+        ],
+        "resupply_notes": "Watublapi (see s-watublapi-blidit-a) is the next resupply.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "open_questions": [
+          "Redrawn to a plausible corridor between the real endpoints (was a geometry bug detouring 20-30 km through unrelated terrain). The corrected Bola-coast loop (Maumere->Bola->Watublapi) now totals ~57 km against the ~20 km direct Maumere->Watublapi hop -- a real +37 km detour, short of route-concept.md's +50-70 km estimate for the same reason as the Manggarai Timur interior loop (see s-borong-elar-a)."
+        ],
+        "stats": {
+          "length_km": 19.008,
+          "ascent_m": 1127.1,
+          "descent_m": 963.5,
+          "min_elev_m": 0.9,
+          "max_elev_m": 882.4,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-bola-watublapi-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6075,
+            -8.81602
+          ],
+          [
+            120.543798,
+            -8.741594
+          ],
+          [
+            120.493329,
+            -8.674606
+          ],
+          [
+            120.46711,
+            -8.621293
+          ],
+          [
+            120.472169,
+            -8.585643
+          ],
+          [
+            120.510395,
+            -8.568731
+          ],
+          [
+            120.578229,
+            -8.568544
+          ],
+          [
+            120.66725,
+            -8.58031
+          ],
+          [
+            120.765548,
+            -8.597295
+          ],
+          [
+            120.859683,
+            -8.611912
+          ],
+          [
+            120.77337,
+            -8.52474
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-borong-elar-a",
+        "name": "Borong → Elar (Manggarai Timur interior)",
+        "from_node": "n-borong",
+        "to_node": "n-elar",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "unknown",
+        "est_hab_km": 0,
+        "difficulty": 4,
+        "remoteness": 5,
+        "water_points": [
+          "Not documented at all — the real scouting work"
+        ],
+        "resupply_notes": "Elar: camat office, health centre, schools only.",
+        "hazards": [
+          "Genuinely unscouted interior; tracks in this area are not desk-verified against any track source"
+        ],
+        "open_questions": [
+          "Do rideable tracks exist through this interior at all? This is the least-known corridor in the whole concept.",
+          "Redrawn to a plausible corridor between the real endpoints (was a geometry bug swinging 30-60 km toward a different part of the course). The corrected interior loop (Ruteng->Borong->Elar->Pota) now totals ~198 km against a ~179 km direct alternative (Ruteng->Ranamese->Liang Bua->Reo->Pota) -- a real but modest +19 km, not the +120-160 km route-concept.md estimates for this loop. That estimate cannot be met while every segment also stays within a geodesically plausible 1.3-2.5x-straight-line corridor; route-concept.md should be revisited for this loop."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 87.582,
+          "ascent_m": 8588.1,
+          "descent_m": 7913.7,
+          "min_elev_m": 9.0,
+          "max_elev_m": 2211.5,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-borong-elar-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.23,
+            -8.74
+          ],
+          [
+            120.244715,
+            -8.729573
+          ],
+          [
+            120.251557,
+            -8.733222
+          ],
+          [
+            120.258082,
+            -8.737397
+          ],
+          [
+            120.264532,
+            -8.741696
+          ],
+          [
+            120.27117,
+            -8.745683
+          ],
+          [
+            120.278013,
+            -8.749332
+          ],
+          [
+            120.284933,
+            -8.752823
+          ],
+          [
+            120.28417,
+            -8.77
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-denge-wae-rebo-a",
+        "name": "Denge → Wae Rebo (porters' trail, HAB)",
+        "from_node": "n-denge",
+        "to_node": "n-wae-rebo",
+        "variant": "A",
+        "status": "concept",
         "geometry_source": "concept-sketch",
         "character": "hab",
         "est_hab_km": 9,
         "difficulty": 5,
         "remoteness": 4,
         "water_points": [
-          "spring below Wae Rebo, unconfirmed reliability"
+          "A spring is reported partway up the porters' trail (unverified); carry full capacity from Denge"
         ],
-        "resupply_notes": "None between Denge and Ruteng; carry two days of food.",
+        "resupply_notes": "None on the trail; Wae Rebo's homestay system feeds and houses every arrival.",
         "hazards": [
-          "steep porters' path, exposed in places",
-          "onward trail past Wae Rebo unknown — may be out-and-back only"
+          "Steep porters' path with steps; can be greasy in light rain even in the dry season"
         ],
-        "cultural_notes": "Routes directly through Wae Rebo; requires the village council agreement described on p-wae-rebo before any race use.",
+        "cultural_notes": "Wae Rebo is the flagship cultural checkpoint of the whole course: fixed homestay/guest-fee system, a welcome ceremony expected on arrival, and a race-specific agreement with the village council is required before any checkpoint is confirmed (see p-wae-rebo).",
         "open_questions": [
-          "Is the trail past Wae Rebo rideable/walkable through to Ruteng, or is this an out-and-back detour?"
+          "Which villages will host cultural checkpoints, under what terms? (Wae Rebo council agreement not yet negotiated)"
         ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Waerebo"
+        ],
+        "stats": {
+          "length_km": 9.013,
+          "ascent_m": 1270.3,
+          "descent_m": 734.8,
+          "min_elev_m": 570.0,
+          "max_elev_m": 1693.7,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-denge-wae-rebo-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.759722,
+            -8.716111
+          ],
+          [
+            121.78,
+            -8.73
+          ],
+          [
+            121.822,
+            -8.751
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-detusoko-moni-a",
+        "name": "Detusoko → Moni",
+        "from_node": "n-detusoko",
+        "to_node": "n-moni",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 1,
+        "water_points": [
+          "Reliable in Moni"
+        ],
+        "resupply_notes": "Moni: guesthouses and warungs, the usual overnight base before Kelimutu.",
+        "cultural_notes": "Wologai (p-wologai), an ~800-year-old Lio village, sits in the hills near this corridor as a highlight, though not directly on this line.",
+        "public": true,
         "sources": [
           "docs/route-concept.md"
         ],
-        "public": true
+        "open_questions": [
+          "Drawn as a near-straight line between its endpoints (concept sketch, not yet desk-checked against any track source); flag for scouting priority before treating it as a verified corridor -- a schoolbook-straight line rarely survives contact with Flores terrain."
+        ],
+        "stats": {
+          "length_km": 7.881,
+          "ascent_m": 887.9,
+          "descent_m": 429.5,
+          "min_elev_m": 743.0,
+          "max_elev_m": 1532.8,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-detusoko-moni-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.2,
+            -8.79
+          ],
+          [
+            120.171078,
+            -8.763108
+          ],
+          [
+            120.175717,
+            -8.756149
+          ],
+          [
+            120.185336,
+            -8.742462
+          ],
+          [
+            120.18965,
+            -8.735341
+          ],
+          [
+            120.193044,
+            -8.727704
+          ],
+          [
+            120.23,
+            -8.74
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-dintor-denge-a",
+        "name": "Dintor → Denge (Wae Rebo trailhead)",
+        "from_node": "n-dintor",
+        "to_node": "n-denge",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Denge has kiosks and homestays for trekkers waiting to start the Wae Rebo trail"
+        ],
+        "resupply_notes": "Denge is the last resupply before the Wae Rebo trailhead.",
+        "cultural_notes": "Follows the same coastal track described for Wae Nakeng-Nangalili-Borik-Dintor-Denge in scouting sources; not yet field-verified.",
+        "open_questions": [
+          "Is this the same farm track used by trekking guides, or does the race need its own line?"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 13.257,
+          "ascent_m": 541.1,
+          "descent_m": 167.5,
+          "min_elev_m": 89.6,
+          "max_elev_m": 570.0,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-dintor-denge-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.77337,
+            -8.52474
+          ],
+          [
+            120.842287,
+            -8.49643
+          ],
+          [
+            120.89575,
+            -8.469452
+          ],
+          [
+            120.921686,
+            -8.444867
+          ],
+          [
+            120.914022,
+            -8.423209
+          ],
+          [
+            120.874011,
+            -8.404369
+          ],
+          [
+            120.809953,
+            -8.387615
+          ],
+          [
+            120.73539,
+            -8.371764
+          ],
+          [
+            120.75786,
+            -8.34749
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-elar-pota-a",
+        "name": "Elar → Pota (rejoining the north coast)",
+        "from_node": "n-elar",
+        "to_node": "n-pota",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "unknown",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 4,
+        "water_points": [
+          "Not documented"
+        ],
+        "resupply_notes": "Pota (see s-pota-riung-a) is the next resupply.",
+        "open_questions": [
+          "Same as the Borong→Elar leg: unscouted.",
+          "Redrawn to a plausible corridor between the real endpoints (was a geometry bug swinging 30-60 km toward a different part of the course). The corrected interior loop (Ruteng->Borong->Elar->Pota) now totals ~198 km against a ~179 km direct alternative (Ruteng->Ranamese->Liang Bua->Reo->Pota) -- a real but modest +19 km, not the +120-160 km route-concept.md estimates for this loop. That estimate cannot be met while every segment also stays within a geodesically plausible 1.3-2.5x-straight-line corridor; route-concept.md should be revisited for this loop."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 45.508,
+          "ascent_m": 3561.3,
+          "descent_m": 4236.5,
+          "min_elev_m": 5.9,
+          "max_elev_m": 1032.5,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-elar-pota-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.65615,
+            -8.8381
+          ],
+          [
+            121.619376,
+            -8.777326
+          ],
+          [
+            121.592829,
+            -8.725133
+          ],
+          [
+            121.584689,
+            -8.688409
+          ],
+          [
+            121.59949,
+            -8.670982
+          ],
+          [
+            121.63723,
+            -8.672851
+          ],
+          [
+            121.693368,
+            -8.690191
+          ],
+          [
+            121.759722,
+            -8.716111
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-ende-detusoko-a",
+        "name": "Ende → Detusoko",
+        "from_node": "n-ende",
+        "to_node": "n-detusoko",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Reliable in Detusoko"
+        ],
+        "resupply_notes": "Detusoko: basic resupply, homestays, tourism village.",
+        "cultural_notes": "Detusoko's rice terraces (p-detusoko-rice-terraces) are a cool, working highland landscape.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 39.47,
+          "ascent_m": 3837.4,
+          "descent_m": 3173.0,
+          "min_elev_m": 68.7,
+          "max_elev_m": 1048.7,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-ende-detusoko-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.42002,
+            -8.81167
+          ],
+          [
+            120.296289,
+            -8.762196
+          ],
+          [
+            120.30381,
+            -8.740774
+          ],
+          [
+            120.312717,
+            -8.696241
+          ],
+          [
+            120.315404,
+            -8.673712
+          ],
+          [
+            120.317663,
+            -8.651121
+          ],
+          [
+            120.320794,
+            -8.628644
+          ],
+          [
+            120.325198,
+            -8.606399
+          ],
+          [
+            120.463,
+            -8.6127
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-iteng-ruteng-a",
+        "name": "Iteng → Ruteng",
+        "from_node": "n-iteng",
+        "to_node": "n-ruteng",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 2,
+        "water_points": [
+          "Reliable once within a few km of Ruteng"
+        ],
+        "resupply_notes": "Ruteng is the best full resupply of the whole west region: market, hospital, banks, many hotels.",
+        "hazards": [
+          "~1,100 m of climbing from the coast; heat lower down, cold rain higher up are both plausible in the same day"
+        ],
+        "cultural_notes": "Ruteng Cathedral and Golo Curu viewpoint sit right at the town; Cancar's spider-web rice fields (p-cancar-lingko) are a short, no-HAB side trip west of town if the schedule allows.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 47.425,
+          "ascent_m": 4401.6,
+          "descent_m": 3277.6,
+          "min_elev_m": 45.6,
+          "max_elev_m": 1825.1,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-iteng-ruteng-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.82,
+            -8.769
+          ],
+          [
+            121.803072,
+            -8.789348
+          ],
+          [
+            121.790344,
+            -8.80695
+          ],
+          [
+            121.785187,
+            -8.819608
+          ],
+          [
+            121.789472,
+            -8.8261
+          ],
+          [
+            121.8032,
+            -8.826426
+          ],
+          [
+            121.824499,
+            -8.821808
+          ],
+          [
+            121.85,
+            -8.814444
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-kelimutu-wolojita-a",
+        "name": "Kelimutu → Wolojita",
+        "from_node": "n-kelimutu",
+        "to_node": "n-wolojita",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable; Wolojita has none confirmed"
+        ],
+        "resupply_notes": "Wolojita: minimal, homestays.",
+        "cultural_notes": "Wolojita is an ikat-weaving village and district centre between Jopu and Nggela.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 14.519,
+          "ascent_m": 604.5,
+          "descent_m": 1690.1,
+          "min_elev_m": 492.0,
+          "max_elev_m": 1589.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-kelimutu-wolojita-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.018125,
+            -8.795162
+          ],
+          [
+            122.028911,
+            -8.731442
+          ],
+          [
+            122.043226,
+            -8.681377
+          ],
+          [
+            122.063749,
+            -8.655364
+          ],
+          [
+            122.09168,
+            -8.658054
+          ],
+          [
+            122.12645,
+            -8.687245
+          ],
+          [
+            122.16586,
+            -8.734404
+          ],
+          [
+            122.196971,
+            -8.749412
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-koka-sikka-a",
+        "name": "Koka → Sikka (inland of the bay)",
+        "from_node": "n-koka",
+        "to_node": "n-sikka",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable in Sikka village itself"
+        ],
+        "resupply_notes": "None named between Koka and Sikka; both ends are minimal.",
+        "hazards": [
+          "A straight line between these two villages crosses open water (a south-coast bay/inlet); this sketch bulges north onto the hillside road instead, consistent with the DEM"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 35.244,
+          "ascent_m": 2650.7,
+          "descent_m": 2648.7,
+          "min_elev_m": 0.0,
+          "max_elev_m": 741.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-koka-sikka-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.87565,
+            -8.49393
+          ],
+          [
+            119.938644,
+            -8.475704
+          ],
+          [
+            119.991593,
+            -8.465836
+          ],
+          [
+            120.026646,
+            -8.47087
+          ],
+          [
+            120.039851,
+            -8.4941
+          ],
+          [
+            120.032016,
+            -8.534852
+          ],
+          [
+            120.008527,
+            -8.588626
+          ],
+          [
+            119.978189,
+            -8.648086
+          ],
+          [
+            120.011,
+            -8.655
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-labuan-bajo-sano-nggoang-a",
+        "name": "Labuan Bajo → Sano Nggoang via Mbeliling forest",
+        "from_node": "n-labuan-bajo",
+        "to_node": "n-sano-nggoang",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Werang and roadside kiosks are the last reliable water before the lake; carry extra through the forest reserve"
+        ],
+        "resupply_notes": "Full resupply in Labuan Bajo; nothing until Werang beyond a few kiosks near the forest edge.",
+        "hazards": [
+          "Coordinates for Cunca Rami are unverified (needs a field GPS fix); dry-season forest track condition unknown"
+        ],
+        "cultural_notes": "Mbeliling forest reserve is an Important Bird Area (Flores hanging parrot, monarch, crow, owl); no settlement inside the reserve to negotiate with, but track use should stay on existing paths.",
+        "open_questions": [
+          "Is the forest track rideable end-to-end, or does it require dismounts near Cunca Wulang/Cunca Rami?",
+          "Confirm Cunca Rami's location with a field GPS fix (desk position and DEM elevation disagree by ~400 m).",
+          "Redrawn to a plausible corridor (was a geometry bug detouring ~80 km south before snapping back). At ~42 km this leg alone is close to section 01's whole 90-130 km target, since the second leg (Sano Nggoang -> Werang) is only ~1.5 km between two very close nodes; see sec-01-komodo-mbeliling's own open_questions."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 42.148,
+          "ascent_m": 3330.1,
+          "descent_m": 2984.1,
+          "min_elev_m": 3.0,
+          "max_elev_m": 948.3,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-labuan-bajo-sano-nggoang-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.16611,
+            -8.72
+          ],
+          [
+            122.152303,
+            -8.679588
+          ],
+          [
+            122.162303,
+            -8.654588
+          ],
+          [
+            122.177303,
+            -8.629588
+          ],
+          [
+            122.210411,
+            -8.624377
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-lela-maumere-a",
+        "name": "Lela → Maumere",
+        "from_node": "n-lela",
+        "to_node": "n-maumere",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 1,
+        "water_points": [
+          "Reliable in Maumere"
+        ],
+        "resupply_notes": "Maumere: full resupply, Sikka Regency capital, hospital, airport.",
+        "hazards": [
+          "1992 earthquake/tsunami awareness note for the whole north coast (no route dependency)"
+        ],
+        "cultural_notes": "Passes close to Ledalero Seminary (p-ledalero-seminary), one of the largest Catholic seminaries in the world. Wuring, the Bajo stilt village, sits a few km west of the town centre.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/1992_Flores_earthquake_and_tsunami"
+        ],
+        "open_questions": [
+          "Drawn as a near-straight line between its endpoints (concept sketch, not yet desk-checked against any track source); flag for scouting priority before treating it as a verified corridor -- a schoolbook-straight line rarely survives contact with Flores terrain."
+        ],
+        "stats": {
+          "length_km": 14.607,
+          "ascent_m": 609.4,
+          "descent_m": 722.0,
+          "min_elev_m": 24.8,
+          "max_elev_m": 437.3,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-lela-maumere-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.4435,
+            -8.53082
+          ],
+          [
+            120.294029,
+            -8.473727
+          ],
+          [
+            120.295719,
+            -8.448582
+          ],
+          [
+            120.301201,
+            -8.423913
+          ],
+          [
+            120.307591,
+            -8.399492
+          ],
+          [
+            120.315584,
+            -8.375513
+          ],
+          [
+            120.323223,
+            -8.351422
+          ],
+          [
+            120.330486,
+            -8.327213
+          ],
+          [
+            120.33641,
+            -8.302698
+          ],
+          [
+            120.49078,
+            -8.3096
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-liang-bua-reo-a",
+        "name": "Liang Bua → Reo",
+        "from_node": "n-liang-bua",
+        "to_node": "n-reo",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Reo has reliable water (market town)"
+        ],
+        "resupply_notes": "Reo is a full basic resupply: market, bank, health centre.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 54.194,
+          "ascent_m": 3582.7,
+          "descent_m": 4130.4,
+          "min_elev_m": 4.3,
+          "max_elev_m": 978.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-liang-bua-reo-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.998,
+            -8.741
+          ],
+          [
+            121.027237,
+            -8.690214
+          ],
+          [
+            121.054922,
+            -8.649348
+          ],
+          [
+            121.079792,
+            -8.6265
+          ],
+          [
+            121.1011,
+            -8.626458
+          ],
+          [
+            121.118753,
+            -8.649821
+          ],
+          [
+            121.133329,
+            -8.692885
+          ],
+          [
+            121.145968,
+            -8.748331
+          ],
+          [
+            121.1644,
+            -8.7667
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-mataloko-boawae-a",
+        "name": "Mataloko → Boawae (via Wogo)",
+        "from_node": "n-mataloko",
+        "to_node": "n-boawae",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Reliable in Boawae"
+        ],
+        "resupply_notes": "Boawae: basic resupply on the Trans-Flores highway.",
+        "hazards": [
+          "Ebulobo's PVMBG bulletin should be rechecked before race day (Level I/Normal as of mid-2026, but the 15 Aug 2026 M7.7 Flores earthquake triggered summit-area landslides)"
+        ],
+        "cultural_notes": "Old Wogo's megalith complex sits ~1.5 km off the road on foot, a possible no-HAB side highlight.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Ebulobo"
+        ],
+        "stats": {
+          "length_km": 35.412,
+          "ascent_m": 1208.4,
+          "descent_m": 1715.6,
+          "min_elev_m": 171.5,
+          "max_elev_m": 1009.3,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-mataloko-boawae-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.210411,
+            -8.624377
+          ],
+          [
+            122.182704,
+            -8.666642
+          ],
+          [
+            122.167145,
+            -8.700378
+          ],
+          [
+            122.172058,
+            -8.719755
+          ],
+          [
+            122.199306,
+            -8.72347
+          ],
+          [
+            122.243698,
+            -8.71516
+          ],
+          [
+            122.294633,
+            -8.702255
+          ],
+          [
+            122.339448,
+            -8.693639
+          ],
+          [
+            122.29686,
+            -8.74635
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-maumere-bola-a",
+        "name": "Maumere → Bola (Bola coast loop)",
+        "from_node": "n-maumere",
+        "to_node": "n-bola",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable in Bola"
+        ],
+        "resupply_notes": "Bola: minimal resupply, south-coast kecamatan capital.",
+        "cultural_notes": "Ultra-variant loop named in the route concept: Maumere→Bola→Watublapi→Egon instead of the direct Maumere→Watublapi hop (+50–70 km).",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "open_questions": [
+          "Redrawn to a plausible corridor between the real endpoints (was a geometry bug detouring 20-30 km through unrelated terrain). The corrected Bola-coast loop (Maumere->Bola->Watublapi) now totals ~57 km against the ~20 km direct Maumere->Watublapi hop -- a real +37 km detour, short of route-concept.md's +50-70 km estimate for the same reason as the Manggarai Timur interior loop (see s-borong-elar-a)."
+        ],
+        "stats": {
+          "length_km": 38.181,
+          "ascent_m": 2241.0,
+          "descent_m": 2255.7,
+          "min_elev_m": 0.9,
+          "max_elev_m": 900.0,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-maumere-bola-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.210411,
+            -8.624377
+          ],
+          [
+            122.204013,
+            -8.677525
+          ],
+          [
+            122.217922,
+            -8.684869
+          ],
+          [
+            122.232552,
+            -8.690627
+          ],
+          [
+            122.247287,
+            -8.696152
+          ],
+          [
+            122.261972,
+            -8.701801
+          ],
+          [
+            122.276387,
+            -8.708108
+          ],
+          [
+            122.311111,
+            -8.668611
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-maumere-watublapi-a",
+        "name": "Maumere → Watublapi",
+        "from_node": "n-maumere",
+        "to_node": "n-watublapi",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable in Watublapi"
+        ],
+        "resupply_notes": "Watublapi: minimal, homestays, ikat-weaving cooperative.",
+        "cultural_notes": "Watublapi is Sikka's ikat-weaving hamlet; protocol is closer to a working craft cooperative than a customary adat community — comparatively easy to arrange as a stop (p-watublapi-weaving).",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 20.387,
+          "ascent_m": 718.6,
+          "descent_m": 576.1,
+          "min_elev_m": 24.0,
+          "max_elev_m": 465.8,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-maumere-watublapi-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.2807,
+            -8.5756
+          ],
+          [
+            121.348258,
+            -8.57023
+          ],
+          [
+            121.406267,
+            -8.569832
+          ],
+          [
+            121.446831,
+            -8.578529
+          ],
+          [
+            121.465069,
+            -8.598872
+          ],
+          [
+            121.459957,
+            -8.631394
+          ],
+          [
+            121.434507,
+            -8.674518
+          ],
+          [
+            121.395243,
+            -8.724833
+          ],
+          [
+            121.351081,
+            -8.777685
+          ],
+          [
+            121.391667,
+            -8.786389
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-mbay-nangaroro-a",
+        "name": "Mbay → Nangaroro (crossing the island's waist)",
+        "from_node": "n-mbay",
+        "to_node": "n-nangaroro",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable; Nangaroro has homestays but water is flagged unreliable in its node record"
+        ],
+        "resupply_notes": "Nangaroro: basic resupply, farming/fishing villages.",
+        "open_questions": [
+          "Which ridge crossings between coasts exist as footpaths here — this is the narrowest waist of the island (route-concept open question 6)."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 49.817,
+          "ascent_m": 2313.7,
+          "descent_m": 2328.9,
+          "min_elev_m": 0.0,
+          "max_elev_m": 803.8,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-mbay-nangaroro-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.822,
+            -8.751
+          ],
+          [
+            121.821,
+            -8.758
+          ],
+          [
+            121.82,
+            -8.769
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-moni-kelimutu-a",
+        "name": "Moni → Kelimutu (dawn checkpoint)",
+        "from_node": "n-moni",
+        "to_node": "n-kelimutu",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "hab",
+        "est_hab_km": 2,
+        "difficulty": 3,
+        "remoteness": 1,
+        "water_points": [
+          "None at the summit car park; carry from Moni"
+        ],
+        "resupply_notes": "None beyond Moni.",
+        "hazards": [
+          "Standing safety rules apply regardless of alert level: no crater-rim approach (especially Kawah II, phreatic-eruption risk), no camping in the craters; PVMBG held Kelimutu at Level I/Normal as of 5 Aug 2026"
+        ],
+        "cultural_notes": "Kelimutu is the one non-negotiable stop of the race: riders required at the viewpoint at dawn. Paved to the car park, then stairs — treated as a short hike-a-bike, not a ridden section. In Lio belief the three lakes are where souls go after death.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Kelimutu"
+        ],
+        "open_questions": [
+          "Drawn as a near-straight line between its endpoints (concept sketch, not yet desk-checked against any track source); flag for scouting priority before treating it as a verified corridor -- a schoolbook-straight line rarely survives contact with Flores terrain."
+        ],
+        "stats": {
+          "length_km": 2.004,
+          "ascent_m": 388.8,
+          "descent_m": 98.9,
+          "min_elev_m": 1234.8,
+          "max_elev_m": 1602.7,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-moni-kelimutu-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.391667,
+            -8.786389
+          ],
+          [
+            121.408825,
+            -8.742297
+          ],
+          [
+            121.417444,
+            -8.743631
+          ],
+          [
+            121.426044,
+            -8.745075
+          ],
+          [
+            121.45169,
+            -8.750263
+          ],
+          [
+            121.451672,
+            -8.797553
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-nangaroro-penggajawa-a",
+        "name": "Nangaroro → Penggajawa (Blue Stone beach)",
+        "from_node": "n-nangaroro",
+        "to_node": "n-penggajawa",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable; Penggajawa has none confirmed"
+        ],
+        "resupply_notes": "Minimal; no lodging confirmed at Penggajawa.",
+        "cultural_notes": "Penggajawa's Blue Stone (Batu Biru) beach is a classic overland-route photo stop (p-penggajawa).",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 15.259,
+          "ascent_m": 1089.8,
+          "descent_m": 1100.5,
+          "min_elev_m": 4.3,
+          "max_elev_m": 403.4,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-nangaroro-penggajawa-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.848,
+            -8.843
+          ],
+          [
+            121.851736,
+            -8.76372
+          ],
+          [
+            121.859552,
+            -8.698787
+          ],
+          [
+            121.874709,
+            -8.65971
+          ],
+          [
+            121.899013,
+            -8.652876
+          ],
+          [
+            121.932465,
+            -8.678285
+          ],
+          [
+            121.973256,
+            -8.72955
+          ],
+          [
+            122.018125,
+            -8.795162
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-nggela-koka-a",
+        "name": "Nggela → Koka (via Paga)",
+        "from_node": "n-nggela",
+        "to_node": "n-koka",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable; a beach resort or two near Koka/Paga"
+        ],
+        "resupply_notes": "Paga and Koka are day-stop/checkpoint only — no confirmed lodging.",
+        "cultural_notes": "Koka and Paga are twin south-coast beaches; both nodes' coordinates are unverified and flagged for a field GPS fix.",
+        "open_questions": [
+          "Confirm Paga and Koka's exact coordinates in the field; the two are less than 1 km apart in the desk data."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 44.063,
+          "ascent_m": 4100.9,
+          "descent_m": 4253.8,
+          "min_elev_m": 6.4,
+          "max_elev_m": 1494.7,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-nggela-koka-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.451672,
+            -8.797553
+          ],
+          [
+            121.52597,
+            -8.780199
+          ],
+          [
+            121.58597,
+            -8.790199
+          ],
+          [
+            121.62597,
+            -8.800199
+          ],
+          [
+            121.65615,
+            -8.8381
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-penggajawa-ende-a",
+        "name": "Penggajawa → Ende",
+        "from_node": "n-penggajawa",
+        "to_node": "n-ende",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 1,
+        "water_points": [
+          "Reliable in Ende"
+        ],
+        "resupply_notes": "Ende: full resupply, hospital, airport — the largest town of central Flores.",
+        "hazards": [
+          "Iya volcano sits immediately south of the town (PVMBG Level II/Waspada, 2 km exclusion radius as of May 2026); no route dependency but worth a standing check"
+        ],
+        "cultural_notes": "Ende is Sukarno's 1934–38 exile town: the exile house (p-sukarno-exile-house) and the Contemplation Park breadfruit tree (p-pancasila-tree) where he is said to have shaped the Pancasila.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Ende_(town)"
+        ],
+        "open_questions": [
+          "Drawn as a near-straight line between its endpoints (concept sketch, not yet desk-checked against any track source); flag for scouting priority before treating it as a verified corridor -- a schoolbook-straight line rarely survives contact with Flores terrain."
+        ],
+        "stats": {
+          "length_km": 24.975,
+          "ascent_m": 1807.8,
+          "descent_m": 1739.3,
+          "min_elev_m": 1.3,
+          "max_elev_m": 436.7,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-penggajawa-ende-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.75786,
+            -8.34749
+          ],
+          [
+            120.765887,
+            -8.437175
+          ],
+          [
+            120.794057,
+            -8.444859
+          ],
+          [
+            120.849239,
+            -8.464557
+          ],
+          [
+            120.877895,
+            -8.470698
+          ],
+          [
+            120.9494,
+            -8.338935
+          ],
+          [
+            120.971612,
+            -8.339943
+          ],
+          [
+            120.985,
+            -8.403
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-pota-riung-a",
+        "name": "Pota → Riung",
+        "from_node": "n-pota",
+        "to_node": "n-riung",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "unknown",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 4,
+        "water_points": [
+          "Not documented; carry-capacity rule applies"
+        ],
+        "resupply_notes": "Riung has small shops and a market; nothing named en route.",
+        "hazards": [
+          "Same savanna/heat/water constraints as the Reo–Pota leg; coastal headlands where the track may die (route-concept HAB inventory)"
+        ],
+        "open_questions": [
+          "Where does the coastal track die between Pota and Riung, and what replaces it — beach walking, a headland footpath, or a boat portage?"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 48.999,
+          "ascent_m": 3305.7,
+          "descent_m": 3233.1,
+          "min_elev_m": 1.0,
+          "max_elev_m": 752.0,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-pota-riung-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.5603,
+            -8.6406
+          ],
+          [
+            120.46991,
+            -8.706671
+          ],
+          [
+            120.451227,
+            -8.697162
+          ],
+          [
+            120.432825,
+            -8.687161
+          ],
+          [
+            120.415055,
+            -8.676055
+          ],
+          [
+            120.400097,
+            -8.661973
+          ],
+          [
+            120.388016,
+            -8.64492
+          ],
+          [
+            120.379905,
+            -8.62566
+          ],
+          [
+            120.4435,
+            -8.53082
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-ranamese-liang-bua-a",
+        "name": "Ranamese → Liang Bua",
+        "from_node": "n-ranamese",
+        "to_node": "n-liang-bua",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable; carry from Ruteng-side kiosks"
+        ],
+        "resupply_notes": "Small vendor stalls at the Liang Bua site only.",
+        "cultural_notes": "Liang Bua is the deep-time anchor of the whole race: the cave where Homo floresiensis was excavated in 2003 (see p-liang-bua).",
+        "open_questions": [
+          "This descent doubles back near Ruteng rather than a direct line; confirm whether a more direct farm track exists."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://en.wikipedia.org/wiki/Liang_Bua"
+        ],
+        "stats": {
+          "length_km": 38.764,
+          "ascent_m": 2875.8,
+          "descent_m": 3499.2,
+          "min_elev_m": 559.6,
+          "max_elev_m": 1537.8,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-ranamese-liang-bua-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.49078,
+            -8.3096
+          ],
+          [
+            120.530945,
+            -8.267426
+          ],
+          [
+            120.549666,
+            -8.38056
+          ],
+          [
+            120.598611,
+            -8.276497
+          ],
+          [
+            120.630815,
+            -8.286842
+          ],
+          [
+            120.659479,
+            -8.285866
+          ],
+          [
+            120.681929,
+            -8.394365
+          ],
+          [
+            120.715768,
+            -8.399793
+          ],
+          [
+            120.75786,
+            -8.34749
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-reo-pota-a",
+        "name": "Reo → Pota (north coast savanna)",
+        "from_node": "n-reo",
+        "to_node": "n-pota",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "unknown",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 4,
+        "water_points": [
+          "Not documented; this is the single biggest water-planning gap on the whole course"
+        ],
+        "resupply_notes": "Pota has a parish, health centre, bank unit, schools; nothing named between Reo and Pota.",
+        "hazards": [
+          "Heat, dry lontar-palm savanna, no confirmed shade or water sources along this stretch"
+        ],
+        "open_questions": [
+          "Is there a continuous rideable/walkable corridor Reo→Pota→Riung along or near the north coast, and where is water? (route-concept open question 1, priority 1)"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 62.147,
+          "ascent_m": 3275.3,
+          "descent_m": 3273.1,
+          "min_elev_m": 0.0,
+          "max_elev_m": 644.5,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-reo-pota-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.985,
+            -8.403
+          ],
+          [
+            121.194432,
+            -8.434222
+          ],
+          [
+            121.233165,
+            -8.458149
+          ],
+          [
+            121.249469,
+            -8.462215
+          ],
+          [
+            121.249698,
+            -8.496948
+          ],
+          [
+            121.254467,
+            -8.535101
+          ],
+          [
+            121.258457,
+            -8.573212
+          ],
+          [
+            121.249483,
+            -8.610607
+          ],
+          [
+            121.272033,
+            -8.633066
+          ],
+          [
+            121.057901,
+            -8.708612
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-riung-soa-a",
+        "name": "Riung → Soa (Mengeruda hot springs)",
+        "from_node": "n-riung",
+        "to_node": "n-soa",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 3,
+        "water_points": [
+          "Mengeruda hot springs (not drinking water, but a landmark/rest stop) just before Soa"
+        ],
+        "resupply_notes": "Soa is minimal (airfield only); the real resupply is Bajawa, one hop further.",
+        "hazards": [
+          "~1,300 m of climbing from the coast to the plateau in one hop"
+        ],
+        "open_questions": [
+          "Which ridge crossings between coasts exist as footpaths here? The DEM suggests a rideable ridge line; the track network layer is the starting point (route-concept open question 6)."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 75.291,
+          "ascent_m": 2526.3,
+          "descent_m": 2161.9,
+          "min_elev_m": 0.0,
+          "max_elev_m": 493.4,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-riung-soa-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.463,
+            -8.6127
+          ],
+          [
+            120.551714,
+            -8.584165
+          ],
+          [
+            120.631657,
+            -8.561784
+          ],
+          [
+            120.695131,
+            -8.550989
+          ],
+          [
+            120.736421,
+            -8.555813
+          ],
+          [
+            120.752489,
+            -8.578404
+          ],
+          [
+            120.74333,
+            -8.618762
+          ],
+          [
+            120.711976,
+            -8.67474
+          ],
+          [
+            120.664133,
+            -8.742303
+          ],
+          [
+            120.6075,
+            -8.81602
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-ruteng-borong-a",
+        "name": "Ruteng → Borong (Manggarai Timur interior loop)",
+        "from_node": "n-ruteng",
+        "to_node": "n-borong",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 4,
+        "water_points": [
+          "Reliable in Borong (regency capital)"
+        ],
+        "resupply_notes": "Borong: full resupply, market, hospital, banks, hotels.",
+        "cultural_notes": "Ultra-variant loop, named in the route concept as an alternative to the direct Liang Bua→Reo→Pota corridor: Ruteng→Borong→Elar→Pota (+120–160 km, very remote, unknown tracks).",
+        "open_questions": [
+          "Unscouted; the whole loop needs a first field trip before it can be more than a concept sketch.",
+          "Redrawn to a plausible corridor between the real endpoints (was a geometry bug swinging 30-60 km toward a different part of the course). The corrected interior loop (Ruteng->Borong->Elar->Pota) now totals ~198 km against a ~179 km direct alternative (Ruteng->Ranamese->Liang Bua->Reo->Pota) -- a real but modest +19 km, not the +120-160 km route-concept.md estimates for this loop. That estimate cannot be met while every segment also stays within a geodesically plausible 1.3-2.5x-straight-line corridor; route-concept.md should be revisited for this loop."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 65.198,
+          "ascent_m": 4397.1,
+          "descent_m": 5560.5,
+          "min_elev_m": 12.6,
+          "max_elev_m": 1583.3,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-ruteng-borong-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.463,
+            -8.6127
+          ],
+          [
+            120.494116,
+            -8.550668
+          ],
+          [
+            120.506964,
+            -8.551762
+          ],
+          [
+            120.519853,
+            -8.551873
+          ],
+          [
+            120.532064,
+            -8.555392
+          ],
+          [
+            120.544028,
+            -8.560177
+          ],
+          [
+            120.555663,
+            -8.56568
+          ],
+          [
+            120.567116,
+            -8.571577
+          ],
+          [
+            120.5603,
+            -8.6406
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-ruteng-ranamese-a",
+        "name": "Ruteng → Ranamese (Poco Ranaka flank)",
+        "from_node": "n-ruteng",
+        "to_node": "n-ranamese",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 3,
+        "water_points": [
+          "A warung is reported at the Ranamese lakeside car park"
+        ],
+        "resupply_notes": "None beyond the Ranamese warung; last real resupply is Ruteng.",
+        "hazards": [
+          "Road climbs past 1,400–1,500 m on the Poco Ranaka flank; cold and wet at dawn even in the dry season"
+        ],
+        "open_questions": [
+          "Is there a farm-track alternative to the paved road over this pass, per design rule 1 (prefer the small track)?"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 23.834,
+          "ascent_m": 1460.8,
+          "descent_m": 1406.8,
+          "min_elev_m": 480.3,
+          "max_elev_m": 1399.1,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-ruteng-ranamese-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.011,
+            -8.655
+          ],
+          [
+            120.007066,
+            -8.65426
+          ],
+          [
+            120.008279,
+            -8.65244
+          ],
+          [
+            120.007999,
+            -8.651555
+          ],
+          [
+            120.006742,
+            -8.64977
+          ],
+          [
+            120.01076,
+            -8.64864
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-sano-nggoang-werang-a",
+        "name": "Sano Nggoang lakeshore → Werang",
+        "from_node": "n-sano-nggoang",
+        "to_node": "n-werang",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 2,
+        "water_points": [
+          "Sano Nggoang hot springs and lakeside kiosks",
+          "Werang has a small kiosk/market"
+        ],
+        "resupply_notes": "Werang is the practical resupply stop after the lake: parish, camat office, kiosks.",
+        "cultural_notes": "Sano Nggoang is a live site for geothermal-exploration debate locally; nothing route-relevant, but worth the organisers staying informed rather than taking a side.",
+        "open_questions": [
+          "Homestay capacity at Sano Nggoang for race-week volume is unconfirmed."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 1.486,
+          "ascent_m": 25.6,
+          "descent_m": 41.0,
+          "min_elev_m": 339.6,
+          "max_elev_m": 388.9,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-sano-nggoang-werang-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.196971,
+            -8.749412
+          ],
+          [
+            122.200974,
+            -8.724764
+          ],
+          [
+            122.190686,
+            -8.71496
+          ],
+          [
+            122.16611,
+            -8.72
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-sikka-lela-a",
+        "name": "Sikka → Lela",
+        "from_node": "n-sikka",
+        "to_node": "n-lela",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 1,
+        "water_points": [
+          "Unreliable in Sikka/Lela; reliable once close to Maumere"
+        ],
+        "resupply_notes": "Lela: basic resupply.",
+        "cultural_notes": "Sikka village and its 1899 church (p-sikka-church) are the clearest single point of contact with five centuries of Indo-Portuguese history on the island; a working village and parish, not a museum.",
+        "open_questions": [
+          "Confirm Sikka village's exact coordinates in the field (desk position shifted ~1.3 km from the inland kecamatan centroid to the coast)."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/"
+        ],
+        "stats": {
+          "length_km": 7.09,
+          "ascent_m": 557.9,
+          "descent_m": 435.4,
+          "min_elev_m": 13.2,
+          "max_elev_m": 461.7,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-sikka-lela-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.057901,
+            -8.708612
+          ],
+          [
+            121.088055,
+            -8.763604
+          ],
+          [
+            121.076436,
+            -8.776675
+          ],
+          [
+            121.064368,
+            -8.789326
+          ],
+          [
+            121.051997,
+            -8.801696
+          ],
+          [
+            121.039449,
+            -8.813875
+          ],
+          [
+            121.026052,
+            -8.825138
+          ],
+          [
+            120.970883,
+            -8.79448
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-soa-bajawa-a",
+        "name": "Soa → Bajawa",
+        "from_node": "n-soa",
+        "to_node": "n-bajawa",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 1,
+        "water_points": [
+          "Reliable in Bajawa"
+        ],
+        "resupply_notes": "Bajawa: full resupply, hotels, market, ATMs.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 23.528,
+          "ascent_m": 1177.8,
+          "descent_m": 430.5,
+          "min_elev_m": 374.0,
+          "max_elev_m": 1389.0,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-soa-bajawa-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.558,
+            -8.452
+          ],
+          [
+            122.610322,
+            -8.498401
+          ],
+          [
+            122.621687,
+            -8.381026
+          ],
+          [
+            122.686162,
+            -8.476358
+          ],
+          [
+            122.723687,
+            -8.463849
+          ],
+          [
+            122.73517,
+            -8.352846
+          ],
+          [
+            122.773465,
+            -8.334979
+          ],
+          [
+            122.811195,
+            -8.324912
+          ],
+          [
+            122.849624,
+            -8.315563
+          ],
+          [
+            122.888648,
+            -8.309059
+          ],
+          [
+            122.927507,
+            -8.301687
+          ],
+          [
+            122.9797,
+            -8.3475
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-talibura-larantuka-a",
+        "name": "Talibura → Larantuka (north-coast corridor, concept A)",
+        "from_node": "n-talibura",
+        "to_node": "n-larantuka",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable; carry capacity for the whole stretch"
+        ],
+        "resupply_notes": "Boru (not on this line) is the nearest resupply if needed; otherwise nothing until Larantuka.",
+        "hazards": [
+          "Lewotobi Laki-laki/Perempuan: PVMBG has held the complex at an elevated alert level continuously since the deadly Nov 2024 eruption sequence, with the exclusion radius repeatedly widened; a specific 'Level III, 5 km, raised from Level II on 12 May 2026' history could not be confirmed this pass and is flagged unconfirmed in p-lewotobi-laki-laki. This line stays well north of both vents by design (9.5-11.9 km clearance) regardless of the exact current level -- reconfirm PVMBG status against MAGMA Indonesia monthly and keep the pre-agreed reroute/abort rule live."
+        ],
+        "cultural_notes": "Primary concept line for the crux logistics question of the race: how to pass Lewotobi. Treats the whole complex as a no-go zone per design rule 6.",
+        "open_questions": [
+          "What is the realistic corridor and the abort plan around Lewotobi? (route-concept open question 5, priority 1 in practice)"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://watchers.news/2026/05/12/pvmbg-raises-lewotobi-laki-laki-to-level-iii-after-seismicity-and-inflation-increase-indonesia/"
+        ],
+        "stats": {
+          "length_km": 79.866,
+          "ascent_m": 5909.4,
+          "descent_m": 5982.8,
+          "min_elev_m": 0.0,
+          "max_elev_m": 1010.7,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-talibura-larantuka-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.558,
+            -8.452
+          ],
+          [
+            122.62364,
+            -8.490752
+          ],
+          [
+            122.684345,
+            -8.509714
+          ],
+          [
+            122.737062,
+            -8.496662
+          ],
+          [
+            122.781793,
+            -8.451596
+          ],
+          [
+            122.861386,
+            -8.321877
+          ],
+          [
+            122.906113,
+            -8.276789
+          ],
+          [
+            122.9797,
+            -8.3475
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-talibura-larantuka-b",
+        "name": "Talibura → Larantuka (highway corridor via Boru, concept B)",
+        "from_node": "n-talibura",
+        "to_node": "n-larantuka",
+        "variant": "B",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "direction_note": "Only usable if PVMBG status allows: this line passes north of Boru rather than through it (redrawn to keep clear of the Lewotobi exclusion zone; see hazards). Concept A (north-coast corridor) is the primary route.",
+        "water_points": [
+          "Boru has roadside restaurants"
+        ],
+        "resupply_notes": "Boru (basic resupply, PVMBG Lewotobi observation post nearby) is a short detour off this line rather than directly on it after the redraw.",
+        "hazards": [
+          "Redrawn away from Boru: the previous line's closest approach was 4.55 km to Lewotobi Laki-laki (inside the stated 5 km exclusion radius); the corrected line's closest approach is ~5.7 km to Laki-laki and ~8.1 km to Perempuan. Still close enough that this variant should only be used with an explicit go/no-go decision on race week and a live abort rule; reconfirm PVMBG status against MAGMA Indonesia before considering it, and treat the exact alert level in p-lewotobi-laki-laki as unconfirmed pending that recheck."
+        ],
+        "open_questions": [
+          "What PVMBG status level, if any, would make this corridor acceptable, and who makes that call on race week?"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "https://wickedadventures.com/flores-trekking-lewotobi/"
+        ],
+        "stats": {
+          "length_km": 63.483,
+          "ascent_m": 3784.3,
+          "descent_m": 3858.4,
+          "min_elev_m": 0.0,
+          "max_elev_m": 1031.4,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-talibura-larantuka-b"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.38159,
+            -8.73092
+          ],
+          [
+            120.440121,
+            -8.717449
+          ],
+          [
+            120.446346,
+            -8.728628
+          ],
+          [
+            120.452,
+            -8.7401
+          ],
+          [
+            120.457549,
+            -8.751625
+          ],
+          [
+            120.462722,
+            -8.763315
+          ],
+          [
+            120.467524,
+            -8.775168
+          ],
+          [
+            120.42002,
+            -8.81167
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-todo-iteng-a",
+        "name": "Todo → Iteng",
+        "from_node": "n-todo",
+        "to_node": "n-iteng",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 2,
+        "water_points": [
+          "Iteng has a market (pasar Iteng) and a health centre"
+        ],
+        "resupply_notes": "Iteng is the practical resupply between Todo and Ruteng.",
+        "cultural_notes": "Todo is the former seat of the Manggarai kingdom; a living village, guests received by elders, no cultural-checkpoint agreement negotiated yet (see p-todo-village).",
+        "open_questions": [
+          "Confirm terms for a Todo checkpoint stop with the village council."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 20.281,
+          "ascent_m": 1575.5,
+          "descent_m": 1964.8,
+          "min_elev_m": 22.3,
+          "max_elev_m": 1126.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-todo-iteng-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.28417,
+            -8.77
+          ],
+          [
+            120.270237,
+            -8.704607
+          ],
+          [
+            120.291128,
+            -8.694132
+          ],
+          [
+            120.301911,
+            -8.689681
+          ],
+          [
+            120.312945,
+            -8.68582
+          ],
+          [
+            120.346201,
+            -8.674679
+          ],
+          [
+            120.38159,
+            -8.73092
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-wae-rebo-todo-a",
+        "name": "Wae Rebo → Todo (onward ridge trail, concept)",
+        "from_node": "n-wae-rebo",
+        "to_node": "n-todo",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "hab",
+        "est_hab_km": 8,
+        "difficulty": 5,
+        "remoteness": 5,
+        "water_points": [
+          "None known; unverified whole way"
+        ],
+        "resupply_notes": "None; Todo has a few day-trip vendor stalls only.",
+        "hazards": [
+          "Onward trail condition beyond Wae Rebo is unconfirmed in any source consulted; treat as unscouted"
+        ],
+        "cultural_notes": "If this ridge trail is not passable with a loaded bike, use s-wae-rebo-todo-b (out-and-back via Denge) instead.",
+        "open_questions": [
+          "Is the Wae Rebo onward trail passable with a bike, or is it an out-and-back? (design rule / open question 3 of the route concept)"
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "map:dem-derived"
+        ],
+        "stats": {
+          "length_km": 23.74,
+          "ascent_m": 2133.5,
+          "descent_m": 2780.7,
+          "min_elev_m": 461.1,
+          "max_elev_m": 1720.6,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-wae-rebo-todo-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.28417,
+            -8.77
+          ],
+          [
+            120.26,
+            -8.756
+          ],
+          [
+            120.245,
+            -8.746
+          ],
+          [
+            120.23,
+            -8.74
+          ],
+          [
+            120.28,
+            -8.735
+          ],
+          [
+            120.335,
+            -8.733
+          ],
+          [
+            120.38159,
+            -8.73092
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-wae-rebo-todo-b",
+        "name": "Wae Rebo → Todo (out-and-back via Denge)",
+        "from_node": "n-wae-rebo",
+        "to_node": "n-todo",
+        "variant": "B",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 9,
+        "difficulty": 4,
+        "remoteness": 4,
+        "direction_note": "Fallback alternative: descend the porters' trail back to Denge the way you came (same HAB as the ascent), then take the Denge–Todo road east.",
+        "water_points": [
+          "Denge kiosks on the way back down"
+        ],
+        "resupply_notes": "Same as variant A once past Denge; Todo itself has no lodging.",
+        "hazards": [
+          "Adds real distance and a full trail re-descent — only use if the onward trail (variant A) is confirmed impassable"
+        ],
+        "cultural_notes": "Safety fallback named explicitly in the route concept for section 02.",
+        "open_questions": [
+          "Needs a scouting verdict on variant A before this fallback can be ruled in or out as the primary line."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 23.56,
+          "ascent_m": 2689.4,
+          "descent_m": 3315.0,
+          "min_elev_m": 464.5,
+          "max_elev_m": 1807.3,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-wae-rebo-todo-b"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.475,
+            -8.6065
+          ],
+          [
+            122.513937,
+            -8.598815
+          ],
+          [
+            122.524112,
+            -8.575819
+          ],
+          [
+            122.534869,
+            -8.553096
+          ],
+          [
+            122.488592,
+            -8.499982
+          ],
+          [
+            122.499839,
+            -8.477487
+          ],
+          [
+            122.571834,
+            -8.48757
+          ],
+          [
+            122.558,
+            -8.452
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-waiterang-talibura-a",
+        "name": "Waiterang → Talibura",
+        "from_node": "n-waiterang",
+        "to_node": "n-talibura",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable; Talibura has basic resupply"
+        ],
+        "resupply_notes": "Talibura: basic resupply, easternmost kecamatan capital of Sikka Regency.",
+        "cultural_notes": "Talibura has a mangrove-lined shore (Desa Darat Pantai).",
+        "open_questions": [
+          "Both Waiterang's and Talibura's coordinates are approximate/unverified; confirm with a field GPS fix."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 32.706,
+          "ascent_m": 2046.1,
+          "descent_m": 1971.9,
+          "min_elev_m": 0.0,
+          "max_elev_m": 585.8,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-waiterang-talibura-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.311111,
+            -8.668611
+          ],
+          [
+            122.32901,
+            -8.613531
+          ],
+          [
+            122.352373,
+            -8.611331
+          ],
+          [
+            122.366795,
+            -8.606299
+          ],
+          [
+            122.385251,
+            -8.603935
+          ],
+          [
+            122.403023,
+            -8.604252
+          ],
+          [
+            122.425075,
+            -8.602883
+          ],
+          [
+            122.44769,
+            -8.66223
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-watublapi-blidit-a",
+        "name": "Watublapi → Blidit (Egon trailhead)",
+        "from_node": "n-watublapi",
+        "to_node": "n-blidit",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 2,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable; Blidit has none confirmed"
+        ],
+        "resupply_notes": "None; Blidit is a trailhead only.",
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 24.125,
+          "ascent_m": 772.9,
+          "descent_m": 175.7,
+          "min_elev_m": 0.0,
+          "max_elev_m": 786.2,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-watublapi-blidit-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.01076,
+            -8.64864
+          ],
+          [
+            120.121632,
+            -8.545423
+          ],
+          [
+            120.142059,
+            -8.562109
+          ],
+          [
+            120.179363,
+            -8.599413
+          ],
+          [
+            120.200363,
+            -8.615386
+          ],
+          [
+            120.221627,
+            -8.630992
+          ],
+          [
+            120.245259,
+            -8.642808
+          ],
+          [
+            120.268284,
+            -8.655658
+          ],
+          [
+            120.2,
+            -8.79
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-werang-dintor-a",
+        "name": "Werang → Dintor",
+        "from_node": "n-werang",
+        "to_node": "n-dintor",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 0,
+        "difficulty": 3,
+        "remoteness": 3,
+        "water_points": [
+          "Unreliable below Werang; carry capacity for the whole descent"
+        ],
+        "resupply_notes": "Nothing named between Werang and Dintor; Dintor itself is minimal (a few kiosks).",
+        "hazards": [
+          "Both Dintor's and this descent track's exact line are unverified (field:pending on n-dintor)"
+        ],
+        "open_questions": [
+          "Confirm the descent track/farm-road line with a field GPS trace; Dintor's coordinates are a reasoned placement, not a source pin."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "stats": {
+          "length_km": 53.725,
+          "ascent_m": 3346.7,
+          "descent_m": 3495.9,
+          "min_elev_m": 156.0,
+          "max_elev_m": 977.3,
+          "unpaved_pct": 100.0,
+          "profile_ref": "s-werang-dintor-a"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.85,
+            -8.814444
+          ],
+          [
+            121.848,
+            -8.835
+          ],
+          [
+            121.848,
+            -8.843
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-wolojita-nggela-a",
+        "name": "Wolojita → Nggela",
+        "from_node": "n-wolojita",
+        "to_node": "n-nggela",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "paved",
+        "est_hab_km": 0,
+        "difficulty": 1,
+        "remoteness": 2,
+        "water_points": [
+          "Unreliable; Nggela has none confirmed"
+        ],
+        "resupply_notes": "Nggela: minimal, homestays.",
+        "hazards": [
+          "A landslide has been known to cut this coastal road after heavy rain (p-wolojita)"
+        ],
+        "cultural_notes": "Nggela is a Lio ikat-weaving village and a proposed cultural checkpoint (design rule 5); almost every household keeps a back-strap loom.",
+        "open_questions": [
+          "Which villages will host cultural checkpoints, under what terms? (route-concept open question 2, priority 1)",
+          "Drawn as a near-straight line between its endpoints (concept sketch, not yet desk-checked against any track source); flag for scouting priority before treating it as a verified corridor -- a schoolbook-straight line rarely survives contact with Flores terrain."
+        ],
+        "public": true,
+        "sources": [
+          "docs/route-concept.md",
+          "http://asiantextilestudies.com/nggela-01.html"
+        ],
+        "stats": {
+          "length_km": 3.169,
+          "ascent_m": 9.6,
+          "descent_m": 336.0,
+          "min_elev_m": 147.6,
+          "max_elev_m": 492.0,
+          "unpaved_pct": 0.0,
+          "profile_ref": "s-wolojita-nggela-a"
+        }
       }
     }
   ]

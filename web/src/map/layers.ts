@@ -4,8 +4,8 @@
 //
 // Icons are drawn on a <canvas> and registered with `map.addImage` — no icon font, no sprite sheet
 // to build. `text-font` still references the demo glyphs ('Open Sans Semibold'); those PBFs are
-// blocked in this build sandbox (see BRIEF), so labels render in a real browser but not here — not
-// a bug to chase.
+// blocked in this build sandbox (see BRIEF, and map.ts's GLYPHS_URL comment) — not a bug to chase.
+// MapLibre's local-glyph fallback still draws the labels here, just with a substituted font.
 
 import type {
   FeatureCollection,

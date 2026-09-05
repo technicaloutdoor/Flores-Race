@@ -21,15 +21,16 @@
       "p-wai-sano-volcano"
     ],
     "target_km": [
-      90,
-      130
+      40,
+      60
     ],
     "hab_expected": "low",
     "scouting_priority": 2,
     "open_questions": [
       "Is the Mbeliling forest track rideable end-to-end, or does it require dismounts near Cunca Wulang/Cunca Rami?",
       "Cunca Rami's desk position and DEM elevation disagree by roughly 400 m; needs a field GPS fix.",
-      "Homestay capacity at Sano Nggoang for race-week volume is unconfirmed."
+      "Homestay capacity at Sano Nggoang for race-week volume is unconfirmed.",
+      "route-concept.md's 90-130 km target for this whole section assumed a much longer forest corridor than a geodesically plausible track can deliver: Labuan Bajo->Sano Nggoang is capped at ~58 km by the 1.3-2.5x-straight-line corridor rule, and Sano Nggoang->Werang is only ~1.5 km between two very close nodes (max ~1.8 km at the same corridor cap). Target lowered to [40,60] to match; route-concept.md should be revisited for this section."
     ],
     "public": true
   },
@@ -122,8 +123,8 @@
     "hab_expected": "medium",
     "scouting_priority": 1,
     "open_questions": [
-      "Is there a continuous rideable/walkable corridor Reo→Pota→Riung along or near the north coast, and where is water?",
-      "Where does the coastal track die between Pota and Riung, and what replaces it — beach walking, a headland footpath, or a boat portage?",
+      "Is there a continuous rideable/walkable corridor Reo\u2192Pota\u2192Riung along or near the north coast, and where is water?",
+      "Where does the coastal track die between Pota and Riung, and what replaces it \u2014 beach walking, a headland footpath, or a boat portage?",
       "Riung and Pota's coordinates are hand-placed/unverified; both need a field GPS fix."
     ],
     "public": true
@@ -160,8 +161,8 @@
     "scouting_priority": 1,
     "open_questions": [
       "Which villages will host cultural checkpoints, under what terms? (Bena, Luba, Tololela, Gurusina)",
-      "Is the Bena→Aimere Inerie-shoulder descent safe with a loaded bike?",
-      "Which ridge crossings between the coasts exist as footpaths here — the DEM and the track-network layer are the starting point.",
+      "Is the Bena\u2192Aimere Inerie-shoulder descent safe with a loaded bike?",
+      "Which ridge crossings between the coasts exist as footpaths here \u2014 the DEM and the track-network layer are the starting point.",
       "Aimere's pier coordinates are unverified; needs a field GPS fix."
     ],
     "public": true
@@ -227,7 +228,7 @@
     "scouting_priority": 3,
     "open_questions": [
       "Which ridge crossings between the coasts exist as footpaths across this narrow waist?",
-      "Confirm the Maukaro/Nangaroro naming discrepancy in the desk data: route-concept.md groups them as south-coast alternatives, but the only documented 'Maukaro' is a north-coast Ende sub-district — the two are not the same place."
+      "Confirm the Maukaro/Nangaroro naming discrepancy in the desk data: route-concept.md groups them as south-coast alternatives, but the only documented 'Maukaro' is a north-coast Ende sub-district \u2014 the two are not the same place."
     ],
     "public": true
   },
@@ -265,7 +266,7 @@
     "open_questions": [
       "Which villages will host cultural checkpoints, under what terms? (Nggela in particular)",
       "Confirm Paga and Koka's exact coordinates in the field; the two are less than 1 km apart in the desk data.",
-      "The Wolojita coastal road is known to be cut by landslides after heavy rain — how often, and what is the detour?"
+      "The Wolojita coastal road is known to be cut by landslides after heavy rain \u2014 how often, and what is the detour?"
     ],
     "public": true
   },
