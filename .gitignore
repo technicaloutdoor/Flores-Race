@@ -1,0 +1,45 @@
+# --- Node / web ---
+node_modules/
+web/dist/
+web/.vite/
+*.local
+npm-debug.log*
+pnpm-debug.log*
+
+# --- Python / pipeline ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Pipeline caches and raw downloads (large, reproducible; never commit) ---
+.cache/
+pipeline/.cache/
+raw/
+*.hgt
+*.hgt.gz
+*.parquet
+*.tif
+*.tiff
+
+# --- Generated web data bundle is produced by `pipeline/build_web_data.py`.
+#     Small generated files ARE committed so GitHub Pages can deploy without
+#     running the pipeline; large ones are ignored here and rebuilt in CI.
+web/public/data/network.geojson
+web/public/data/network.geojson.gz
+web/public/data/*.pmtiles
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Playwright / test output ---
+test-results/
+playwright-report/
+screenshots/

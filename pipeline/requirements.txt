@@ -1,0 +1,4 @@
+requests>=2.31
+pyarrow>=14
+shapely>=2.0
+pyproj>=3.6
