@@ -1,0 +1,413 @@
+{
+  "topic_id": "sec-09",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Sikka village and the Old Church of St Ignatius Loyola",
+      "data_ids": [
+        "p-sikka-village",
+        "p-sikka-church"
+      ],
+      "what_it_is": "A small seaside fishing village on Flores' south coast, seat of the pre-colonial Sikka kingdom and site of a narrow wooden Baroque/Renaissance-style Catholic church (Gereja Tua Sikka) completed in 1899.",
+      "why_it_matters": "This is the single clearest physical trace of five centuries of Indo-Portuguese contact on Flores' south coast: a kingdom whose rulers converted to Catholicism under Portuguese and Dominican influence in the 16th-17th centuries and kept real local authority into the 20th, long after the Portuguese themselves were pushed out by the Dutch. The church blends European Baroque form with local ikat-motif interior decoration and teak shipped from Java, a visible fusion story in a single small building. It is quieter and much less visited than Larantuka's Semana Santa at the race's eastern finish, giving the brochure a second, understated Portuguese-heritage beat rather than a repeat of the same story.",
+      "history_culture": "Sikka gave its name to the whole regency and to the Ximenes da Silva royal line, descendants of whom still live in the area -- living proof of old Portuguese-Sikkanese intermarriage. Every Good Friday the village holds Logu Senhor, a procession in which a crucifix said to be an heirloom of the Da Silva kings is carried through the village; local belief holds the relic wards off plague and disease. Sikka weavers produce some of Flores' most elaborate ikat: dark natural-dye palettes (black, brown, blue/blue-black) carrying motifs such as okukirei (sailors, boats, shrimp, crabs, from the sub-ethnic group's seafaring ancestors) and mawarani (a rose pattern reserved for daughters of the Sikka royal house), alongside later Portuguese/Dutch-influenced motifs -- flower bouquets, deer, lions.",
+      "practical": {
+        "altitude_m": "sea level (coastal village)",
+        "access": "on the paved south-coast road between Koka and Lela/Maumere; road quality in this stretch is reported generally good with occasional roadworks",
+        "fees_protocol": "working village and active parish, not a museum: greet before photographing, treat the church and old royal graves with the courtesy expected at any active place of worship; no fixed guest-fee system found, a small courtesy donation at the church is customary",
+        "sleep": "no confirmed lodging found in the village itself; day-stop on the way between Koka and Maumere, which has full accommodation",
+        "water_resupply": "small village warungs likely for basic supplies; not confirmed as a reliable resupply point -- treat as a cultural stop, carry water from Maumere or Koka side",
+        "best_time": "daytime for the church visit; Good Friday for Logu Senhor if the race calendar and a Holy Week date ever coincide (unlikely given the race's dry-season window)",
+        "hazards": "none specific beyond standard village-riding courtesy (dogs, foot traffic, narrow lanes)"
+      },
+      "facts": [
+        {
+          "fact": "The Sikka kingdom's rulers converted to Catholicism under Portuguese and Dominican influence in the 16th-17th centuries and retained real local authority into the 20th century, after Portugal had ceded the area to the Dutch (1859).",
+          "source_urls": [
+            "repo:data/pois.geojson#p-sikka-village",
+            "https://en.wikipedia.org/wiki/Kingdom_of_Sikka",
+            "https://www.colonialvoyage.com/portuguese-influence-in-sikka-district-flores-island-indonesia/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The Old Sikka Church (Gereja St. Ignatius Loyola) was built starting 1896 and officially opened/used on 24 December 1899, in a Renaissance/Baroque style with local ikat-motif interior decoration; roughly 150 m3 of teak was shipped from Java for its construction.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-sikka-church",
+            "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/",
+            "https://1001indonesia.net/gereja-santo-ignatius-loyola-rumah-ibadah-tua-di-sikka/",
+            "https://komodopadartour.com/2025/11/18/chatolic-old-curch-in-sikka-village-of-maumere-as-one-of-the-portuguese-inheritance-on-flores-island-especially-in-sikka/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Sources disagree on the name and even the order of the priest credited alongside the Sikka raja with building the church: the repo and one source name a Dutch/Jesuit priest called Yohanes Engbers / \"Joannes Engbersen, S.J.\"; another names a different priest, \"J.F. Lecocq D'armanddaville\". Treat the builder's exact identity as unresolved rather than settled.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-sikka-church",
+            "https://www.indonesiana.id/read/161807/langgam-kultur-eropa-dan-flores-pada-gereja-st-ignatius-loyola-sikka"
+          ],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "Every Good Friday, Sikka holds \"Logu Senhor\": a crucifix said to be a Da Silva-king heirloom is processed through the village, with a local belief that it wards off epidemic disease.",
+          "source_urls": [
+            "https://jesuits.id/wp-content/uploads/2025/10/INTERNOS-OCTOBER-ENG-2025-1_compressed.pdf",
+            "https://komodopadartour.com/2025/11/18/chatolic-old-curch-in-sikka-village-of-maumere-as-one-of-the-portuguese-inheritance-on-flores-island-especially-in-sikka/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Sikka ikat weaving is known for elaborate, dark-palette motifs including okukirei (sailors/boats/shrimp/crab, referencing the Sikkanese sub-ethnic group's seafaring ancestry) and mawarani (a rose motif traditionally reserved for daughters of the Sikka royal house), alongside later Portuguese/Dutch-influenced floral and animal motifs.",
+          "source_urls": [
+            "https://www.goodnewsfromindonesia.id/2016/05/24/mengikat-kebanggaan-negeri-dengan-kain-ikat-flores",
+            "https://www.thejakartapost.com/travel/2016/05/22/exploring-flores-heritage-of-weaving-tenun-ikat.html"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "wooden church facade of St Ignatius Loyola with its steep Baroque-influenced roofline",
+        "carved/painted ikat-motif interior details inside the church",
+        "old royal graves or Da Silva-family memorials near the church",
+        "fishing boats pulled up on the village shoreline with the church visible behind",
+        "a weaver at a backstrap loom working a dark-palette Sikka ikat cloth"
+      ],
+      "commons_search_terms": [
+        "Sikka Flores church",
+        "Gereja Tua Sikka",
+        "St Ignatius Loyola church Sikka",
+        "Sikka ikat tenun",
+        "Kingdom of Sikka Flores"
+      ]
+    },
+    {
+      "name": "Lela",
+      "data_ids": [
+        "p-lela"
+      ],
+      "what_it_is": "A south-coast kecamatan capital between Sikka village and Maumere, a secondary historic seat of the same Catholic mission that runs through Sikka village.",
+      "why_it_matters": "Lela extends the Portuguese-Catholic heritage thread along the route without repeating Sikka's story beat for beat, and works as a natural resupply/overnight link on the final approach into Maumere. A large Marian pilgrimage statue reported in the wider Sikka area (Bukit Nilo / \"Bunda Maria Segala Bangsa\", ~19 m tall on a hilltop) shows how active Catholic devotional life still is in this part of Flores, though its exact position relative to Lela itself needs field confirmation.",
+      "history_culture": "Lela's role as a secondary mission seat sits inside the same 16th-17th century Portuguese/Dominican missionary expansion that produced Sikka's church; it is not as architecturally distinctive as Sikka but shares the regional Catholic identity. A large hilltop Mary statue (reported as ~19 m tall, ~28 m including its base, built 2005, in \"Nilo village\" within Sikka Regency) is described in tourism sources as a pilgrimage and viewpoint site; this research could not confirm whether \"Nilo\" sits inside Lela kecamatan or a neighbouring one -- flagged as an open question rather than asserted as a route landmark.",
+      "practical": {
+        "altitude_m": "coastal/low hills, not sourced precisely",
+        "access": "on the paved south-coast road, between Sikka village and Maumere",
+        "fees_protocol": "ordinary town courtesy; no specific protocol found beyond the general Catholic-mission-town register that applies across this section",
+        "sleep": "plausible overnight/resupply link per the route concept; no specific guesthouse confirmed by this research",
+        "water_resupply": "kecamatan capital, so basic shops/warungs expected; not independently confirmed",
+        "best_time": "daytime",
+        "hazards": "none specific found"
+      },
+      "facts": [
+        {
+          "fact": "Lela is a secondary seat of the historic Sikka Catholic mission and a kecamatan capital on the south coast between Sikka village and Maumere.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-lela",
+            "https://www.wikidata.org/wiki/Q26726835"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A ~19 m tall (about 28 m including its hilltop base) copper-clad statue of \"Bunda Maria Segala Bangsa\" (Mary of All Nations), built in 2005, stands on a hill (Bukit Nilo/Bukit Keling Nilo) in Nilo village within Sikka Regency and is promoted as a pilgrimage and scenic viewpoint site.",
+          "source_urls": [
+            "https://indonesiakaya.com/pustaka-indonesia/bukit-kling-nilo-destinasi-ziarah-dan-panorama-alam-flores/",
+            "https://travel.kompas.com/read/2022/12/03/141500327/bukit-nilo-lokasi-patung-bunda-maria-segala-bangsa-setinggi-28-meter"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "the tall Mary statue on its hilltop against the sea, if confirmed reachable from the route",
+        "roadside Catholic shrines/crosses typical of this stretch",
+        "the south-coast road itself curving between Sikka and Lela"
+      ],
+      "commons_search_terms": [
+        "Lela Sikka Flores",
+        "Bukit Nilo Maria statue",
+        "Bunda Maria Segala Bangsa Sikka"
+      ]
+    },
+    {
+      "name": "Ledalero Seminary",
+      "data_ids": [
+        "p-ledalero-seminary"
+      ],
+      "what_it_is": "St Paul's Major Seminary (Seminari Tinggi St. Paulus Ledalero), a hilltop Catholic seminary about 9 km inland from Maumere, founded in 1937 by the Divine Word Missionaries (Societas Verbi Divini, SVD).",
+      "why_it_matters": "It is one of the largest Catholic seminaries in the world and a striking marker of just how deeply and durably Catholic this end of Flores is -- a scale and density of religious life that a rider crossing from the animist/Catholic-syncretic highlands further west will notice immediately on arrival at Maumere.",
+      "history_culture": "Founded in 1937, Ledalero has formed close to 1,500 SVD missionary priests over its history, with roughly 500 SVD priests reported serving in more than 70 countries. Flores as a whole hosts several seminaries clustered around Maumere (SVD, Somascan, Rogationist, Vocationist and Carmelite among them), making the island a significant global exporter of Catholic clergy relative to its size.",
+      "practical": {
+        "altitude_m": "hilltop, elevation not sourced",
+        "access": "paved road, about 9 km inland from Maumere",
+        "fees_protocol": "active seminary and place of formation; visits should be arranged/courteous, not treated as a general tourist site -- no specific public visiting protocol was confirmed by this research",
+        "sleep": "Maumere town, a short ride away, has full accommodation",
+        "water_resupply": "Maumere town nearby for full resupply",
+        "best_time": "daytime",
+        "hazards": "none specific found"
+      },
+      "facts": [
+        {
+          "fact": "Ledalero seminary was founded in 1937 by the Divine Word Missionaries (SVD) on a hilltop about 9 km from Maumere, and has trained close to 1,500 SVD missionary priests, of whom roughly 500 are reported serving in more than 70 countries.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-ledalero-seminary",
+            "https://www.ncregister.com/cna/cna-20251129-flores-seminarians",
+            "https://catholicweekly.com.au/fr-flader-the-worlds-largest-seminary/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Whether Ledalero has a public museum open to visitors (sometimes referenced in older Flores tourist literature as an anthropology/archaeology museum) could not be confirmed within this research's search budget.",
+          "source_urls": [],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": [
+        "the seminary's hilltop buildings and grounds",
+        "seminarians or clergy in daily seminary life (only with explicit permission, given it is an active institution)",
+        "wide view from the seminary hill back toward Maumere and the coast"
+      ],
+      "commons_search_terms": [
+        "Ledalero seminary Flores",
+        "Seminari Tinggi St Paulus Ledalero",
+        "SVD Divine Word Missionaries Flores"
+      ]
+    },
+    {
+      "name": "Maumere -- town and gateway",
+      "data_ids": [
+        "p-frans-seda-airport"
+      ],
+      "what_it_is": "The capital of Sikka Regency and the largest town on the eastern half of Flores, the section's finish and the course's main resupply hub on this stretch: airport, hospital, market.",
+      "why_it_matters": "Maumere is the first true full-service town since Ende/Bajawa many days back for a rider on the traverse route, and the natural place for a rest day, kit fixes, medical access and crew logistics before the final, harder section east to Larantuka.",
+      "history_culture": "Maumere is named in some tourism material as East Flores' dive hub as well as its transport hub; its airport is named for Frans Seda (1926-2009), a Maumere-born former Indonesian finance minister. The town's Catholic identity (also visible in the nearby Ledalero seminary) sits alongside a working port and market economy.",
+      "practical": {
+        "altitude_m": "sea level",
+        "access": "eastern terminus of this stretch of the Trans-Flores highway, paved and generally reported in good condition with occasional roadworks",
+        "fees_protocol": "ordinary town; no special protocol",
+        "sleep": "full range of guesthouses/hotels expected in a regency capital (not individually catalogued here)",
+        "water_resupply": "full resupply: market (pasar), shops, likely pharmacies; a dedicated bicycle shop was not confirmed by this research -- riders should assume spare parts/specialist bike service may be limited and carry accordingly",
+        "best_time": "any time; a natural rest-day stop",
+        "hazards": "standard town traffic; see also the 1992 earthquake/tsunami history as island-wide context, not a route dependency"
+      },
+      "facts": [
+        {
+          "fact": "Sikka Regency (capital Maumere) had a population of about 346,614 as of mid-2024.",
+          "source_urls": [
+            "https://en.wikipedia.org/wiki/Sikka_Regency"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Frans Seda Airport (IATA MOF) is about 5 km from Maumere town centre, named for Frans Seda (1926-2009), a Maumere-born former Indonesian finance minister; as of this research it was served by NAM Air and Wings Air with routes to Kupang, Labuan Bajo and Makassar.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-frans-seda-airport",
+            "https://en.wikipedia.org/wiki/Frans_Xavier_Seda_Airport"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Maumere's main public hospital is RSUD Dr. TC Hillers, on Jl. Wairklau, Kota Uneng, Alok, Maumere -- described in expat/traveller sources as the best medical facility in East Flores.",
+          "source_urls": [
+            "https://floreshomestay.org/healthcare/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "A dedicated bicycle shop in Maumere could not be confirmed by this research; general markets and small shops exist, but riders should not assume specialist bike parts or service are available.",
+          "source_urls": [],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": [
+        "Maumere's waterfront/harbour with fishing and cargo boats",
+        "the market (pasar) in full activity",
+        "Frans Seda airport building/apron",
+        "town streets giving a sense of scale as the largest town of the eastern half of the island"
+      ],
+      "commons_search_terms": [
+        "Maumere Flores",
+        "Frans Seda Airport Maumere",
+        "Maumere harbour Flores",
+        "Sikka Regency Indonesia"
+      ]
+    },
+    {
+      "name": "Maumere -- 1992 earthquake and tsunami",
+      "data_ids": [
+        "p-maumere-1992"
+      ],
+      "what_it_is": "The historical memory of the 12 December 1992 earthquake and tsunami that devastated Maumere and the surrounding north coast.",
+      "why_it_matters": "It is the single most significant natural-hazard event in this end of Flores' recent history and useful brochure/briefing context: the town's comparatively young building stock is a direct legacy, December 12 is still marked locally, and the same fault system underlies a standing earthquake/tsunami awareness note the route concept already carries for the whole north coast (a context note, not a route dependency).",
+      "history_culture": "At 5:30 a.m. local time on 12 December 1992, a shallow, high-magnitude thrust earthquake off Flores' north coast triggered tsunami waves that reached shore within minutes; run-ups of over 20 m have been reported on the small offshore island of Babi. An estimated 2,000-2,500 people died across the affected coast (roughly half from the waves rather than the shaking), and about 18,000 houses were destroyed. Maumere, the largest town in the affected area, took the worst of it and was substantially rebuilt afterward.",
+      "practical": {
+        "altitude_m": "sea level (event applies to the coastal town)",
+        "access": "n/a -- historical/context topic, not a physical site to visit",
+        "fees_protocol": "n/a",
+        "sleep": "n/a",
+        "water_resupply": "n/a",
+        "best_time": "n/a",
+        "hazards": "context only: no route dependency, but the rider manual should carry an earthquake/tsunami awareness note for the whole north coast per the route concept's hazard table"
+      },
+      "facts": [
+        {
+          "fact": "On 12 December 1992 a magnitude ~7.7-7.8 earthquake off Flores' north coast and the tsunamis it triggered killed an estimated 2,000-2,500 people and destroyed about 18,000 houses; tsunami run-up on Babi island offshore has been reported at over 20 m.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-maumere-1992",
+            "https://en.wikipedia.org/wiki/1992_Flores_earthquake_and_tsunami",
+            "https://sejarah.dibi.bnpb.go.id/artikel/gempa-flores-1992-dari-lindu-ke-lintas-generasi/98",
+            "https://ui.adsabs.harvard.edu/abs/1993EOSTr..74..369Y/abstract"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "period/archival imagery of the 1992 disaster (public-domain sources only, treat as historical/memorial content, not a photo-op)",
+        "Maumere's rebuilt townscape as the quiet, present-day legacy of the event"
+      ],
+      "commons_search_terms": [
+        "1992 Flores earthquake",
+        "1992 Flores tsunami Maumere",
+        "Babi Island tsunami 1992"
+      ]
+    },
+    {
+      "name": "Wuring",
+      "data_ids": [
+        "p-wuring"
+      ],
+      "what_it_is": "A Bajo (and, per some sources, mixed Bajo/Bugis) stilt fishing village built out over Maumere bay's tidal flats, a few kilometres west of the Maumere town centre, on the way into town.",
+      "why_it_matters": "It is one of the very few Bajo (\"sea nomad\") settlements on an island otherwise dominated by highland farming peoples, and its built-over-water geometry -- wooden houses on stilts linked by plank walkways instead of streets -- is visually unlike anything else on the traverse. It is a working fishing community rather than a curated cultural stop, which the brochure should present honestly: ride through with respect, not as a checkpoint.",
+      "history_culture": "Wuring's residents are described in different sources as Bajo specifically, or as a mixed Bugis-and-Bajo community -- both are seafaring peoples found in small pockets across the Indonesian archipelago, and this research could not fully resolve the exact ethnic composition; it is one of Flores' few remaining settlements of either group. Life centres on fishing: boats pulled up under houses, nets drying on the walkways. Visitor accounts describe villagers as welcoming despite limited shared language, with children in particular keen to be photographed; Bahasa Indonesia (rather than English) is the practical common language.",
+      "practical": {
+        "altitude_m": "sea level / tidal (built over water)",
+        "access": "on the paved road a few km west of Maumere town centre, on the way in from the west",
+        "fees_protocol": "a working fishing community on narrow shared walkways, not a checkpoint: ride slowly, ask before photographing people or the insides of houses, dress modestly, and treat it as a place to pass through respectfully rather than a village that has agreed to host visitors",
+        "sleep": "Maumere town, a short distance away, has full accommodation",
+        "water_resupply": "Maumere town nearby for full resupply",
+        "best_time": "daytime, low tide likely gives the clearest view of the stilt structures (not independently confirmed)",
+        "hazards": "narrow plank walkways if dismounting to walk through; otherwise ride the road past/through with care for foot traffic"
+      },
+      "facts": [
+        {
+          "fact": "Wuring is a stilt village built over Maumere bay's tidal flats a few km west of the town centre, inhabited by Bajo people and, per some sources, also Bugis people -- among the very few such settlements on Flores, an island otherwise dominated by highland farming peoples.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-wuring",
+            "https://almiratrip.com/explore-wuring-a-fishing-village-on-east-of-flores-island/",
+            "https://www.duniart.com/wuring/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Visitor accounts describe Wuring residents as welcoming with limited shared language beyond Indonesian, and note that speaking Indonesian and dressing modestly are appreciated.",
+          "source_urls": [
+            "https://lesscarmorelife.com/2025/03/08/the-other-side-of-flores-island-indonesia/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "rows of stilt houses over the tidal flat with plank walkways",
+        "fishing boats moored beneath the houses",
+        "nets drying on the walkways",
+        "wide view of the village against Maumere bay"
+      ],
+      "commons_search_terms": [
+        "Wuring Flores",
+        "Wuring stilt village Maumere",
+        "Bajo village Flores"
+      ]
+    },
+    {
+      "name": "Koka Beach",
+      "data_ids": [
+        "p-koka-beach"
+      ],
+      "what_it_is": "A pair of pale-sand, turquoise-water coves separated by a small headland on Flores' south coast, in Wolowiro village, Paga district -- one of the most photographed beaches on the island and the section's opening anchor.",
+      "why_it_matters": "It gives the section's opening a genuine scenic high point -- a widely used image of Flores' south coast -- immediately before the route turns inland to the Portuguese-heritage villages, a strong visual contrast for the brochure between spectacular coastline and quiet cultural history.",
+      "history_culture": "Not a historic site in itself; its cultural significance for the brochure is mainly as a striking, well-known coastal image bracketing the section's Portuguese-heritage villages inland.",
+      "practical": {
+        "altitude_m": "sea level",
+        "access": "reached via a roughly 2 km unpaved/dirt spur road off the Trans-Flores highway at Wolowiro, through cocoa-tree forest; reported firm and passable in dry season, slower in shoulder season; the spur is reported to be a private access road with up to two toll checkpoints charging small fees (reported in the range of roughly IDR 5,000-20,000 depending on vehicle type) -- whether cyclists are charged, and at what rate, was not confirmed",
+        "fees_protocol": "no cultural protocol beyond ordinary beach courtesy; see the access-road toll note above",
+        "sleep": "no lodging confirmed at the beach itself; Maumere (further east) or villages along the highway are the realistic overnight options",
+        "water_resupply": "not confirmed as a resupply point; treat as unsupported and carry water for the spur and return",
+        "best_time": "dry season (the race's window); daylight for both photography and safe riding of the unpaved spur",
+        "hazards": "unpaved spur road surface; remote/unsupported for water; standard swimming-current caution if anyone swims"
+      },
+      "facts": [
+        {
+          "fact": "Koka Beach sits in Wolowiro village, Paga district, roughly 48 km from Maumere by road, and consists of twin sand coves divided by a headland.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-koka-beach",
+            "https://komodo-travel.com/blog/koka-beach-flores/",
+            "https://beach-spot.com/beach/koka-beach/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Access is via a roughly 2 km unpaved spur off the Trans-Flores highway at Wolowiro through cocoa-tree forest; the spur is reported as a private road with up to two toll checkpoints (small per-vehicle fees).",
+          "source_urls": [
+            "https://komodo-travel.com/blog/koka-beach-flores/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "the twin coves and dividing headland from an elevated vantage",
+        "pale sand and turquoise water close-up",
+        "the unpaved spur road through cocoa forest",
+        "a rider on the beach access road as an adventure-travel image"
+      ],
+      "commons_search_terms": [
+        "Koka Beach Flores",
+        "Pantai Koka",
+        "Paga Flores beach"
+      ]
+    },
+    {
+      "name": "Paga Beach (context: adjacent section anchor)",
+      "data_ids": [
+        "p-paga-beach"
+      ],
+      "what_it_is": "A white-sand bay directly beside the Trans-Flores highway, roughly 50-60 km from Maumere, that the route-concept document assigns as the arrival point on the south coast at the end of the preceding Kelimutu/Lio section (section 8), not this section.",
+      "why_it_matters": "It fell inside this research's bounding-box scan of Sikka-area POIs because it sits close to Koka along the same stretch of coast, but per docs/route-concept.md it belongs narratively to the previous section. Included here only for completeness and to flag the boundary, not as a sec-09 highlight to build brochure copy around.",
+      "history_culture": "See the previous section's material for its role in the course narrative; no additional sec-09-specific research was done on it here.",
+      "practical": {
+        "altitude_m": "sea level",
+        "access": "directly beside the Trans-Flores highway, no spur road needed",
+        "fees_protocol": "not researched for this section",
+        "sleep": "not researched for this section",
+        "water_resupply": "not researched for this section",
+        "best_time": "not researched for this section",
+        "hazards": "not researched for this section"
+      },
+      "facts": [
+        {
+          "fact": "Paga Beach is described in the route concept as the course's arrival point on the south coast at the end of the Kelimutu/Lio section (section 8), roughly 50-60 km from Maumere, directly beside the Trans-Flores highway.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-paga-beach",
+            "repo:docs/route-concept.md"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [],
+      "commons_search_terms": [
+        "Paga Beach Flores",
+        "Pantai Paga"
+      ]
+    }
+  ],
+  "narrative_notes": "The section's shape holds up well against the sources: a scenic coastal opener (Koka), a short inland loop to reach the strongest Portuguese-heritage site on the whole traverse (Sikka village and its 1899 church, with Logu Senhor and distinctive ikat as extra colour), a secondary mission town (Lela, with a possibly-nearby but unconfirmed Marian pilgrimage statue at Bukit Nilo), and a full-resupply finish at Maumere with two further threads worth carrying in the brochure text: the world-scale Ledalero seminary just inland, and the sobering 1992 earthquake/tsunami history as context rather than a route stop. Wuring on the final approach is correctly treated in the data as a living community to ride through, not a checkpoint -- the search results reinforce that register (welcoming but modest-dress, ask-before-photographing norms) while also raising a possible Bugis/Bajo ethnic-composition nuance worth a field check. Paga Beach and Bola South Coast both surfaced in the bounding-box scan but belong to the adjacent sections 8 and 10 respectively per route-concept.md; Paga got a stub entry for completeness, Bola was left out entirely as clearly out of scope. General Trans-Flores road-condition chatter (paved, generally good, occasional roadworks/landslide delay elsewhere) was found but nothing specific enough to the Koka-Sikka-Lela-Maumere stretch itself to add as a hard fact beyond what is already in the practical fields above; no source-backed detail on water resupply beyond Maumere's own full-resupply status was found, so those fields are left as reasoned advisories rather than facts.",
+  "corrections_to_data": [
+    "p-sikka-church: the priest credited alongside the Sikka raja for building the church has at least two conflicting names across sources (\"Yohanes Engbers\"/\"Joannes Engbersen, S.J.\" vs. \"J.F. Lecocq D'armanddaville\"); consider softening the summary/story to note the builder's identity is not settled, or adding a source that resolves it.",
+    "p-wuring: at least one source describes the community as mixed Bugis-and-Bajo rather than Bajo alone; worth a field check before asserting a single ethnicity in the story field.",
+    "Bukit Nilo (Mary of All Nations statue, ~19 m tall, built 2005, on a hill in \"Nilo village\", Sikka Regency) is not currently a POI in data/pois.geojson; if the route ever passes near it, it could be worth adding, but this research could not confirm its position relative to Lela specifically -- needs a field/map check before treating it as a route anchor.",
+    "p-koka-beach: sources describe the spur road as a private toll road with up to two paid checkpoints; worth confirming in the field whether/how much cyclists are charged, since this affects the section's practical logistics note."
+  ],
+  "open_questions": [
+    "Does Ledalero seminary have a public museum (older tourist literature sometimes references one), and if so is it open to outside visitors?",
+    "Is there a dedicated bicycle shop or reliable spare-parts source in Maumere, or should the rider manual assume none and plan spares accordingly?",
+    "Where exactly is Bukit Nilo (the Mary of All Nations statue) relative to Lela and the route corridor -- same kecamatan, or a different one requiring a detour?",
+    "Are cyclists charged the same toll as motorbikes/cars on Koka Beach's private access spur, and is the fee per person or per bike?",
+    "The two open questions already logged in data/sections.json for sec-09 (Sikka village's exact field coordinates, and whether a courtesy donation is sufficient vs. a formal parish arrangement for a scheduled race stop) remain unresolved by desk research and need a field visit."
+  ]
+}

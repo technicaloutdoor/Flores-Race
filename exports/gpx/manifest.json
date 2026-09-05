@@ -1,0 +1,1464 @@
+{
+  "generated": "2026-09-05",
+  "routes": [
+    {
+      "id": "r-traverse-remote",
+      "name": "Traverse (network-routed)",
+      "file": "flores-race-traverse.gpx",
+      "points": 17220,
+      "length_km": 1331.0,
+      "ascent_m": 32841,
+      "descent_m": 32852,
+      "min_elev_m": 1,
+      "max_elev_m": 1707,
+      "unpaved_pct": 59.4,
+      "hike_a_bike_km_est": 45.5,
+      "remoteness_index_weighted": 2.67,
+      "segments": 37,
+      "sketch_segments": 0,
+      "gaps": [],
+      "file_with_pois": "flores-race-traverse-with-pois.gpx",
+      "waypoints": 95,
+      "legs": [
+        {
+          "segment": "s-labuan-bajo-sano-nggoang-b",
+          "start_km": 0.0,
+          "length_km": 81.41,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sano-nggoang-werang-b",
+          "start_km": 81.41,
+          "length_km": 20.23,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-werang-dintor-b",
+          "start_km": 101.64,
+          "length_km": 78.299,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-dintor-denge-b",
+          "start_km": 179.939,
+          "length_km": 6.481,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-denge-wae-rebo-b",
+          "start_km": 186.42,
+          "length_km": 7.289,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wae-rebo-todo-c",
+          "start_km": 193.709,
+          "length_km": 52.798,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-todo-iteng-b",
+          "start_km": 246.507,
+          "length_km": 19.775,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-iteng-ruteng-b",
+          "start_km": 266.283,
+          "length_km": 41.867,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ruteng-ranamese-b",
+          "start_km": 308.15,
+          "length_km": 25.235,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ranamese-liang-bua-b",
+          "start_km": 333.384,
+          "length_km": 37.907,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-liang-bua-reo-b",
+          "start_km": 371.291,
+          "length_km": 54.327,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-reo-pota-b",
+          "start_km": 425.618,
+          "length_km": 51.972,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-pota-riung-b",
+          "start_km": 477.589,
+          "length_km": 50.267,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-riung-soa-b",
+          "start_km": 527.856,
+          "length_km": 66.076,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-soa-bajawa-b",
+          "start_km": 593.932,
+          "length_km": 18.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bajawa-bena-b",
+          "start_km": 612.892,
+          "length_km": 13.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bena-aimere-c",
+          "start_km": 626.853,
+          "length_km": 29.667,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-aimere-mataloko-b",
+          "start_km": 656.519,
+          "length_km": 46.984,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mataloko-boawae-b",
+          "start_km": 703.503,
+          "length_km": 31.65,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-boawae-mbay-b",
+          "start_km": 735.153,
+          "length_km": 62.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mbay-nangaroro-b",
+          "start_km": 797.598,
+          "length_km": 55.435,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nangaroro-penggajawa-b",
+          "start_km": 853.033,
+          "length_km": 10.87,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-penggajawa-ende-b",
+          "start_km": 863.903,
+          "length_km": 40.259,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ende-detusoko-b",
+          "start_km": 904.162,
+          "length_km": 42.757,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-detusoko-moni-b",
+          "start_km": 946.92,
+          "length_km": 25.487,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-moni-kelimutu-b",
+          "start_km": 972.406,
+          "length_km": 10.109,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-kelimutu-wolojita-b",
+          "start_km": 982.515,
+          "length_km": 19.148,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wolojita-nggela-b",
+          "start_km": 1001.663,
+          "length_km": 7.398,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nggela-koka-b",
+          "start_km": 1009.061,
+          "length_km": 44.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-koka-sikka-b",
+          "start_km": 1053.506,
+          "length_km": 55.371,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sikka-lela-b",
+          "start_km": 1108.877,
+          "length_km": 10.389,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-lela-maumere-b",
+          "start_km": 1119.266,
+          "length_km": 20.871,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-maumere-watublapi-b",
+          "start_km": 1140.137,
+          "length_km": 29.349,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-watublapi-blidit-b",
+          "start_km": 1169.486,
+          "length_km": 41.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-blidit-waiterang-b",
+          "start_km": 1210.932,
+          "length_km": 14.795,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-waiterang-talibura-b",
+          "start_km": 1225.726,
+          "length_km": 9.765,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-talibura-larantuka-c",
+          "start_km": 1235.491,
+          "length_km": 95.502,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        }
+      ]
+    },
+    {
+      "id": "r-ultra-remote",
+      "name": "Ultra (network-routed)",
+      "file": "flores-race-ultra.gpx",
+      "points": 18529,
+      "length_km": 1381.5,
+      "ascent_m": 35913,
+      "descent_m": 35923,
+      "min_elev_m": 1,
+      "max_elev_m": 1707,
+      "unpaved_pct": 67.8,
+      "hike_a_bike_km_est": 45.4,
+      "remoteness_index_weighted": 2.96,
+      "segments": 37,
+      "sketch_segments": 0,
+      "gaps": [],
+      "legs": [
+        {
+          "segment": "s-labuan-bajo-sano-nggoang-b",
+          "start_km": 0.0,
+          "length_km": 81.41,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sano-nggoang-werang-b",
+          "start_km": 81.41,
+          "length_km": 20.23,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-werang-dintor-b",
+          "start_km": 101.64,
+          "length_km": 78.299,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-dintor-denge-b",
+          "start_km": 179.939,
+          "length_km": 6.481,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-denge-wae-rebo-b",
+          "start_km": 186.42,
+          "length_km": 7.289,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wae-rebo-todo-c",
+          "start_km": 193.709,
+          "length_km": 52.798,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-todo-iteng-b",
+          "start_km": 246.507,
+          "length_km": 19.775,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-iteng-ruteng-b",
+          "start_km": 266.283,
+          "length_km": 41.867,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ruteng-borong-b",
+          "start_km": 308.15,
+          "length_km": 65.108,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-borong-elar-b",
+          "start_km": 373.258,
+          "length_km": 81.651,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-elar-pota-b",
+          "start_km": 454.909,
+          "length_km": 57.053,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-pota-riung-b",
+          "start_km": 511.961,
+          "length_km": 50.267,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-riung-soa-b",
+          "start_km": 562.229,
+          "length_km": 66.076,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-soa-bajawa-b",
+          "start_km": 628.304,
+          "length_km": 18.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bajawa-bena-b",
+          "start_km": 647.264,
+          "length_km": 13.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bena-aimere-c",
+          "start_km": 661.225,
+          "length_km": 29.667,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-aimere-mataloko-b",
+          "start_km": 690.891,
+          "length_km": 46.984,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mataloko-boawae-b",
+          "start_km": 737.875,
+          "length_km": 31.65,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-boawae-mbay-b",
+          "start_km": 769.525,
+          "length_km": 62.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mbay-nangaroro-b",
+          "start_km": 831.97,
+          "length_km": 55.435,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nangaroro-penggajawa-b",
+          "start_km": 887.405,
+          "length_km": 10.87,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-penggajawa-ende-b",
+          "start_km": 898.275,
+          "length_km": 40.259,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ende-detusoko-b",
+          "start_km": 938.534,
+          "length_km": 42.757,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-detusoko-moni-b",
+          "start_km": 981.292,
+          "length_km": 25.487,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-moni-kelimutu-b",
+          "start_km": 1006.779,
+          "length_km": 10.109,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-kelimutu-wolojita-b",
+          "start_km": 1016.887,
+          "length_km": 19.148,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wolojita-nggela-b",
+          "start_km": 1036.035,
+          "length_km": 7.398,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nggela-koka-b",
+          "start_km": 1043.433,
+          "length_km": 44.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-koka-sikka-b",
+          "start_km": 1087.878,
+          "length_km": 55.371,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sikka-lela-b",
+          "start_km": 1143.249,
+          "length_km": 10.389,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-lela-maumere-b",
+          "start_km": 1153.638,
+          "length_km": 20.871,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-maumere-bola-b",
+          "start_km": 1174.509,
+          "length_km": 35.415,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bola-watublapi-b",
+          "start_km": 1209.924,
+          "length_km": 10.033,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-watublapi-blidit-b",
+          "start_km": 1219.957,
+          "length_km": 41.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-blidit-waiterang-b",
+          "start_km": 1261.402,
+          "length_km": 14.795,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-waiterang-talibura-b",
+          "start_km": 1276.197,
+          "length_km": 9.765,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-talibura-larantuka-c",
+          "start_km": 1285.961,
+          "length_km": 95.502,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        }
+      ]
+    },
+    {
+      "id": "r-ultra-plus",
+      "name": "Ultra+ (network-routed, Inerie circuit)",
+      "file": "flores-race-ultra-plus.gpx",
+      "points": 18593,
+      "length_km": 1386.5,
+      "ascent_m": 35768,
+      "descent_m": 35779,
+      "min_elev_m": 1,
+      "max_elev_m": 1707,
+      "unpaved_pct": 67.2,
+      "hike_a_bike_km_est": 37.0,
+      "remoteness_index_weighted": 2.96,
+      "segments": 39,
+      "sketch_segments": 0,
+      "gaps": [],
+      "legs": [
+        {
+          "segment": "s-labuan-bajo-sano-nggoang-b",
+          "start_km": 0.0,
+          "length_km": 81.41,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sano-nggoang-werang-b",
+          "start_km": 81.41,
+          "length_km": 20.23,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-werang-dintor-b",
+          "start_km": 101.64,
+          "length_km": 78.299,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-dintor-denge-b",
+          "start_km": 179.939,
+          "length_km": 6.481,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-denge-wae-rebo-b",
+          "start_km": 186.42,
+          "length_km": 7.289,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wae-rebo-todo-c",
+          "start_km": 193.709,
+          "length_km": 52.798,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-todo-iteng-b",
+          "start_km": 246.507,
+          "length_km": 19.775,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-iteng-ruteng-b",
+          "start_km": 266.283,
+          "length_km": 41.867,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ruteng-borong-b",
+          "start_km": 308.15,
+          "length_km": 65.108,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-borong-elar-b",
+          "start_km": 373.258,
+          "length_km": 81.651,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-elar-pota-b",
+          "start_km": 454.909,
+          "length_km": 57.053,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-pota-riung-b",
+          "start_km": 511.961,
+          "length_km": 50.267,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-riung-soa-b",
+          "start_km": 562.229,
+          "length_km": 66.076,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-soa-bajawa-b",
+          "start_km": 628.304,
+          "length_km": 18.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bajawa-bena-b",
+          "start_km": 647.264,
+          "length_km": 13.96,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bena-gurusina-a",
+          "start_km": 661.225,
+          "length_km": 5.071,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-gurusina-sewowoto-a",
+          "start_km": 666.296,
+          "length_km": 14.113,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sewowoto-aimere-a",
+          "start_km": 680.409,
+          "length_km": 15.503,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-aimere-mataloko-b",
+          "start_km": 695.912,
+          "length_km": 46.984,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mataloko-boawae-b",
+          "start_km": 742.896,
+          "length_km": 31.65,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-boawae-mbay-b",
+          "start_km": 774.546,
+          "length_km": 62.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-mbay-nangaroro-b",
+          "start_km": 836.991,
+          "length_km": 55.435,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nangaroro-penggajawa-b",
+          "start_km": 892.426,
+          "length_km": 10.87,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-penggajawa-ende-b",
+          "start_km": 903.296,
+          "length_km": 40.259,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-ende-detusoko-b",
+          "start_km": 943.555,
+          "length_km": 42.757,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-detusoko-moni-b",
+          "start_km": 986.312,
+          "length_km": 25.487,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-moni-kelimutu-b",
+          "start_km": 1011.799,
+          "length_km": 10.109,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-kelimutu-wolojita-b",
+          "start_km": 1021.908,
+          "length_km": 19.148,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-wolojita-nggela-b",
+          "start_km": 1041.056,
+          "length_km": 7.398,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-nggela-koka-b",
+          "start_km": 1048.454,
+          "length_km": 44.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-koka-sikka-b",
+          "start_km": 1092.898,
+          "length_km": 55.371,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-sikka-lela-b",
+          "start_km": 1148.27,
+          "length_km": 10.389,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-lela-maumere-b",
+          "start_km": 1158.659,
+          "length_km": 20.871,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-maumere-bola-b",
+          "start_km": 1179.53,
+          "length_km": 35.415,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-bola-watublapi-b",
+          "start_km": 1214.945,
+          "length_km": 10.033,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-watublapi-blidit-b",
+          "start_km": 1224.978,
+          "length_km": 41.445,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-blidit-waiterang-b",
+          "start_km": 1266.423,
+          "length_km": 14.795,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-waiterang-talibura-b",
+          "start_km": 1281.217,
+          "length_km": 9.765,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        },
+        {
+          "segment": "s-talibura-larantuka-c",
+          "start_km": 1290.982,
+          "length_km": 95.502,
+          "geometry_source": "overture-route",
+          "route_profile": "remote"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-01-komodo-mbeliling",
+      "order": 1,
+      "title": "Komodo gate and the Mbeliling forest",
+      "from_node": "n-labuan-bajo",
+      "to_node": "n-werang",
+      "file": "sections/flores-race-s01-komodo-gate-and-the-mbeliling-forest.gpx",
+      "points": 1386,
+      "start_km": 0.0,
+      "end_km": 101.6,
+      "hab_expected": "low",
+      "target_km": [
+        40,
+        60
+      ],
+      "length_km": 101.6,
+      "ascent_m": 3368,
+      "descent_m": 3049,
+      "min_elev_m": 5,
+      "max_elev_m": 943,
+      "unpaved_pct": 75.1,
+      "hike_a_bike_km_est": 2.8,
+      "remoteness_index_weighted": 2.2,
+      "segments": 2,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-02-wae-rebo-south-coast",
+      "order": 2,
+      "title": "Wae Rebo and the south coast of Manggarai",
+      "from_node": "n-werang",
+      "to_node": "n-iteng",
+      "file": "sections/flores-race-s02-wae-rebo-and-the-south-coast-of-manggarai.gpx",
+      "points": 2049,
+      "start_km": 101.6,
+      "end_km": 266.3,
+      "hab_expected": "high",
+      "target_km": [
+        100,
+        140
+      ],
+      "length_km": 164.7,
+      "ascent_m": 4151,
+      "descent_m": 4447,
+      "min_elev_m": 9,
+      "max_elev_m": 1237,
+      "unpaved_pct": 67.6,
+      "hike_a_bike_km_est": 11.1,
+      "remoteness_index_weighted": 4.05,
+      "segments": 5,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-03-manggarai-highlands",
+      "order": 3,
+      "title": "Manggarai highlands",
+      "from_node": "n-iteng",
+      "to_node": "n-liang-bua",
+      "file": "sections/flores-race-s03-manggarai-highlands.gpx",
+      "points": 1371,
+      "start_km": 266.3,
+      "end_km": 371.4,
+      "hab_expected": "medium",
+      "target_km": [
+        90,
+        130
+      ],
+      "length_km": 105.1,
+      "ascent_m": 3342,
+      "descent_m": 2845,
+      "min_elev_m": 44,
+      "max_elev_m": 1707,
+      "unpaved_pct": 64.3,
+      "hike_a_bike_km_est": 0.1,
+      "remoteness_index_weighted": 2.56,
+      "segments": 3,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-04-north-coast",
+      "order": 4,
+      "title": "The forgotten north coast",
+      "from_node": "n-liang-bua",
+      "to_node": "n-riung",
+      "file": "sections/flores-race-s04-the-forgotten-north-coast.gpx",
+      "points": 1971,
+      "start_km": 371.4,
+      "end_km": 528.0,
+      "hab_expected": "medium",
+      "target_km": [
+        150,
+        200
+      ],
+      "length_km": 156.6,
+      "ascent_m": 2335,
+      "descent_m": 2868,
+      "min_elev_m": 5,
+      "max_elev_m": 943,
+      "unpaved_pct": 29.0,
+      "hike_a_bike_km_est": 0,
+      "remoteness_index_weighted": 1.68,
+      "segments": 3,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-05-ngada-inerie",
+      "order": 5,
+      "title": "Ngada: megaliths under Inerie",
+      "from_node": "n-riung",
+      "to_node": "n-aimere",
+      "file": "sections/flores-race-s05-ngada-megaliths-under-inerie.gpx",
+      "points": 1695,
+      "start_km": 528.0,
+      "end_km": 656.8,
+      "hab_expected": "high",
+      "target_km": [
+        120,
+        170
+      ],
+      "length_km": 128.8,
+      "ascent_m": 3280,
+      "descent_m": 3288,
+      "min_elev_m": 10,
+      "max_elev_m": 1238,
+      "unpaved_pct": 41.2,
+      "hike_a_bike_km_est": 9.2,
+      "remoteness_index_weighted": 3.08,
+      "segments": 4,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-06-ebulobo-nagekeo",
+      "order": 6,
+      "title": "Ebulobo and the Nagekeo plains",
+      "from_node": "n-aimere",
+      "to_node": "n-mbay",
+      "file": "sections/flores-race-s06-ebulobo-and-the-nagekeo-plains.gpx",
+      "points": 1678,
+      "start_km": 656.8,
+      "end_km": 797.9,
+      "hab_expected": "low",
+      "target_km": [
+        110,
+        150
+      ],
+      "length_km": 141.1,
+      "ascent_m": 3342,
+      "descent_m": 3320,
+      "min_elev_m": 10,
+      "max_elev_m": 1362,
+      "unpaved_pct": 59.8,
+      "hike_a_bike_km_est": 8.5,
+      "remoteness_index_weighted": 3.0,
+      "segments": 3,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-07-blue-stone-coast",
+      "order": 7,
+      "title": "The blue-stone coast to Ende",
+      "from_node": "n-mbay",
+      "to_node": "n-ende",
+      "file": "sections/flores-race-s07-the-blue-stone-coast-to-ende.gpx",
+      "points": 1346,
+      "start_km": 797.9,
+      "end_km": 904.5,
+      "hab_expected": "low",
+      "target_km": [
+        120,
+        160
+      ],
+      "length_km": 106.6,
+      "ascent_m": 2093,
+      "descent_m": 2054,
+      "min_elev_m": 1,
+      "max_elev_m": 665,
+      "unpaved_pct": 72.0,
+      "hike_a_bike_km_est": 0.1,
+      "remoteness_index_weighted": 2.52,
+      "segments": 3,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-08-kelimutu-lio",
+      "order": 8,
+      "title": "Kelimutu and the Lio country",
+      "from_node": "n-ende",
+      "to_node": "n-koka",
+      "file": "sections/flores-race-s08-kelimutu-and-the-lio-country.gpx",
+      "points": 2469,
+      "start_km": 904.5,
+      "end_km": 1053.9,
+      "hab_expected": "medium",
+      "target_km": [
+        130,
+        170
+      ],
+      "length_km": 149.4,
+      "ascent_m": 4704,
+      "descent_m": 4765,
+      "min_elev_m": 9,
+      "max_elev_m": 1581,
+      "unpaved_pct": 53.8,
+      "hike_a_bike_km_est": 3.0,
+      "remoteness_index_weighted": 1.86,
+      "segments": 6,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-09-sikka-portuguese",
+      "order": 9,
+      "title": "Sikka and the Portuguese south",
+      "from_node": "n-koka",
+      "to_node": "n-maumere",
+      "file": "sections/flores-race-s09-sikka-and-the-portuguese-south.gpx",
+      "points": 1148,
+      "start_km": 1053.9,
+      "end_km": 1140.6,
+      "hab_expected": "low",
+      "target_km": [
+        60,
+        90
+      ],
+      "length_km": 86.7,
+      "ascent_m": 2447,
+      "descent_m": 2431,
+      "min_elev_m": 5,
+      "max_elev_m": 785,
+      "unpaved_pct": 80.2,
+      "hike_a_bike_km_est": 3.8,
+      "remoteness_index_weighted": 1.88,
+      "segments": 3,
+      "sketch_segments": 0,
+      "gaps": []
+    },
+    {
+      "id": "sec-10-egon-far-east",
+      "order": 10,
+      "title": "Egon and the far east",
+      "from_node": "n-maumere",
+      "to_node": "n-larantuka",
+      "file": "sections/flores-race-s10-egon-and-the-far-east.gpx",
+      "points": 2116,
+      "start_km": 1140.6,
+      "end_km": 1331.5,
+      "hab_expected": "high",
+      "target_km": [
+        150,
+        200
+      ],
+      "length_km": 190.9,
+      "ascent_m": 3776,
+      "descent_m": 3785,
+      "min_elev_m": 1,
+      "max_elev_m": 891,
+      "unpaved_pct": 66.2,
+      "hike_a_bike_km_est": 6.8,
+      "remoteness_index_weighted": 3.18,
+      "segments": 5,
+      "sketch_segments": 0,
+      "gaps": []
+    }
+  ],
+  "options": [
+    {
+      "id": "opt-manggarai-timur-interior",
+      "name": "Manggarai Timur interior loop",
+      "kind": "loop",
+      "sections": [
+        3,
+        4
+      ],
+      "summary": "Ruteng to the south coast at Borong, the unscouted Elar interior, back to the north coast at Pota; skips Ranamese, Liang Bua and Reo.",
+      "file": "options/opt-manggarai-timur-interior.gpx",
+      "points": 3274,
+      "segments": [
+        "s-ruteng-borong-b",
+        "s-borong-elar-b",
+        "s-elar-pota-b"
+      ],
+      "replaces": [
+        "s-ruteng-ranamese-b",
+        "s-ranamese-liang-bua-b",
+        "s-liang-bua-reo-b",
+        "s-reo-pota-b"
+      ],
+      "option": {
+        "length_km": 203.9,
+        "ascent_m": 5450,
+        "descent_m": 6617,
+        "min_elev_m": 8,
+        "max_elev_m": 1646,
+        "unpaved_pct": 95.5,
+        "hike_a_bike_km_est": 0,
+        "remoteness_index_weighted": 3.64,
+        "segments": 3,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 169.5,
+        "ascent_m": 3062,
+        "descent_m": 4230,
+        "min_elev_m": 6,
+        "max_elev_m": 1354,
+        "unpaved_pct": 40.5,
+        "hike_a_bike_km_est": 0.1,
+        "remoteness_index_weighted": 1.85,
+        "segments": 4,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": 34.4,
+      "delta_ascent_m": 2388
+    },
+    {
+      "id": "opt-bola-coast",
+      "name": "Bola south-coast loop",
+      "kind": "loop",
+      "sections": [
+        10
+      ],
+      "summary": "Maumere to the Bola coast on the south side of the Sikka isthmus before climbing back to Watublapi and Egon.",
+      "file": "options/opt-bola-coast.gpx",
+      "points": 565,
+      "segments": [
+        "s-maumere-bola-b",
+        "s-bola-watublapi-b"
+      ],
+      "replaces": [
+        "s-maumere-watublapi-b"
+      ],
+      "option": {
+        "length_km": 45.5,
+        "ascent_m": 1332,
+        "descent_m": 906,
+        "min_elev_m": 11,
+        "max_elev_m": 503,
+        "unpaved_pct": 93.4,
+        "hike_a_bike_km_est": 0,
+        "remoteness_index_weighted": 3.44,
+        "segments": 2,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 29.4,
+        "ascent_m": 649,
+        "descent_m": 223,
+        "min_elev_m": 12,
+        "max_elev_m": 451,
+        "unpaved_pct": 77.0,
+        "hike_a_bike_km_est": 0,
+        "remoteness_index_weighted": 2.0,
+        "segments": 1,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": 16.1,
+      "delta_ascent_m": 683
+    },
+    {
+      "id": "opt-inerie-circuit",
+      "name": "Inerie full circuit via Gurusina and the Sewowoto coast",
+      "kind": "loop",
+      "sections": [
+        5
+      ],
+      "summary": "Round the whole cone: Bena to the rebuilt village of Gurusina, down the wild south flank to the sea at Sewowoto (Ena Bhara beach), then the coast road west to Aimere. Network-routed; the middle leg has the maximum remoteness index and is unscouted.",
+      "file": "options/opt-inerie-circuit.gpx",
+      "points": 454,
+      "segments": [
+        "s-bena-gurusina-a",
+        "s-gurusina-sewowoto-a",
+        "s-sewowoto-aimere-a"
+      ],
+      "replaces": [
+        "s-bena-aimere-c"
+      ],
+      "option": {
+        "length_km": 34.8,
+        "ascent_m": 421,
+        "descent_m": 1237,
+        "min_elev_m": 10,
+        "max_elev_m": 845,
+        "unpaved_pct": 20.4,
+        "hike_a_bike_km_est": 0.4,
+        "remoteness_index_weighted": 3.96,
+        "segments": 3,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 29.8,
+        "ascent_m": 566,
+        "descent_m": 1382,
+        "min_elev_m": 10,
+        "max_elev_m": 1117,
+        "unpaved_pct": 40.5,
+        "hike_a_bike_km_est": 8.8,
+        "remoteness_index_weighted": 4.0,
+        "segments": 1,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": 5.0,
+      "delta_ascent_m": -145
+    },
+    {
+      "id": "opt-wae-rebo-out-and-back",
+      "name": "Wae Rebo out-and-back",
+      "kind": "alternative",
+      "sections": [
+        2
+      ],
+      "summary": "If the onward trail from Wae Rebo cannot be done with a bike: climb to the village, descend the same path to Denge, then ride the remote-profile road to Todo.",
+      "file": "options/opt-wae-rebo-out-and-back.gpx",
+      "points": 871,
+      "segments": [
+        "s-denge-wae-rebo-b",
+        "s-denge-wae-rebo-b",
+        "s-denge-todo-a"
+      ],
+      "replaces": [
+        "s-denge-wae-rebo-b",
+        "s-wae-rebo-todo-c"
+      ],
+      "option": {
+        "length_km": 60.2,
+        "ascent_m": 2018,
+        "descent_m": 2045,
+        "min_elev_m": 9,
+        "max_elev_m": 1237,
+        "unpaved_pct": 60.7,
+        "hike_a_bike_km_est": 10.2,
+        "remoteness_index_weighted": 5.0,
+        "segments": 3,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 60.1,
+        "ascent_m": 2018,
+        "descent_m": 2045,
+        "min_elev_m": 9,
+        "max_elev_m": 1237,
+        "unpaved_pct": 60.7,
+        "hike_a_bike_km_est": 10.2,
+        "remoteness_index_weighted": 5.0,
+        "segments": 2,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": 0.1,
+      "delta_ascent_m": 0
+    },
+    {
+      "id": "opt-boawae-nangaroro-direct",
+      "name": "Boawae to Nangaroro direct",
+      "kind": "alternative",
+      "sections": [
+        6,
+        7
+      ],
+      "summary": "Skip Mbay and the Aesesa plain: cross from Boawae straight over to the south coast at Nangaroro. Shorter and less remote; a bad-weather or time-limit fallback.",
+      "file": "options/opt-boawae-nangaroro-direct.gpx",
+      "points": 788,
+      "segments": [
+        "s-boawae-nangaroro-c"
+      ],
+      "replaces": [
+        "s-boawae-mbay-b",
+        "s-mbay-nangaroro-b"
+      ],
+      "option": {
+        "length_km": 48.8,
+        "ascent_m": 1151,
+        "descent_m": 1628,
+        "min_elev_m": 17,
+        "max_elev_m": 977,
+        "unpaved_pct": 97.1,
+        "hike_a_bike_km_est": 0,
+        "remoteness_index_weighted": 3.0,
+        "segments": 1,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 117.9,
+        "ascent_m": 2284,
+        "descent_m": 2760,
+        "min_elev_m": 16,
+        "max_elev_m": 796,
+        "unpaved_pct": 74.9,
+        "hike_a_bike_km_est": 0.1,
+        "remoteness_index_weighted": 3.0,
+        "segments": 2,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": -69.1,
+      "delta_ascent_m": -1133
+    },
+    {
+      "id": "opt-south-coast-aimere-nangaroro",
+      "name": "South coast direct: Aimere to Nangaroro",
+      "kind": "alternative",
+      "sections": [
+        6,
+        7
+      ],
+      "summary": "Stay on the remote south coast of Ngada and Nagekeo instead of climbing back to the plateau: drops Mataloko, Ebulobo, Boawae and Mbay. High remoteness, heavy climbing per kilometre, water unknown.",
+      "file": "options/opt-south-coast-aimere-nangaroro.gpx",
+      "points": 1443,
+      "segments": [
+        "s-aimere-nangaroro-a"
+      ],
+      "replaces": [
+        "s-aimere-mataloko-b",
+        "s-mataloko-boawae-b",
+        "s-boawae-mbay-b",
+        "s-mbay-nangaroro-b"
+      ],
+      "option": {
+        "length_km": 102.3,
+        "ascent_m": 2150,
+        "descent_m": 2146,
+        "min_elev_m": 8,
+        "max_elev_m": 880,
+        "unpaved_pct": 71.5,
+        "hike_a_bike_km_est": 0.1,
+        "remoteness_index_weighted": 4.0,
+        "segments": 1,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 196.6,
+        "ascent_m": 4505,
+        "descent_m": 4501,
+        "min_elev_m": 10,
+        "max_elev_m": 1362,
+        "unpaved_pct": 66.4,
+        "hike_a_bike_km_est": 8.5,
+        "remoteness_index_weighted": 3.0,
+        "segments": 4,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": -94.3,
+      "delta_ascent_m": -2355
+    },
+    {
+      "id": "opt-lewotobi-corridor",
+      "name": "Lewotobi southern corridor via Boru",
+      "kind": "alternative",
+      "sections": [
+        10
+      ],
+      "summary": "South of the Lewotobi twins through Boru on and around the Trans-Flores corridor. Only usable if the volcano's alert level and exclusion radius allow it on race day; the north-coast line stays the primary.",
+      "file": "options/opt-lewotobi-corridor.gpx",
+      "points": 1320,
+      "segments": [
+        "s-talibura-boru-a",
+        "s-boru-larantuka-a"
+      ],
+      "replaces": [
+        "s-talibura-larantuka-c"
+      ],
+      "option": {
+        "length_km": 117.6,
+        "ascent_m": 1812,
+        "descent_m": 1804,
+        "min_elev_m": 1,
+        "max_elev_m": 410,
+        "unpaved_pct": 54.1,
+        "hike_a_bike_km_est": 0.9,
+        "remoteness_index_weighted": 2.42,
+        "segments": 2,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "replaced": {
+        "length_km": 95.6,
+        "ascent_m": 1246,
+        "descent_m": 1238,
+        "min_elev_m": 1,
+        "max_elev_m": 294,
+        "unpaved_pct": 62.5,
+        "hike_a_bike_km_est": 6.4,
+        "remoteness_index_weighted": 3.0,
+        "segments": 1,
+        "sketch_segments": 0,
+        "gaps": []
+      },
+      "delta_km": 22.0,
+      "delta_ascent_m": 566
+    }
+  ],
+  "notes": []
+}

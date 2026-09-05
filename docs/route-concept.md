@@ -132,6 +132,34 @@ What this tells the route designer:
   knows the roads far better than the farmers' paths. The remoteness layer in scout mode shows where
   mapped tracks exist; where the map is empty, only feet on the ground will tell.
 
+## Status after the brochure session (September 2026)
+
+The course now exists as importable GPX (`exports/gpx/`) and as an illustrated brochure
+(`docs/brochure/`). Numbers below come from `exports/gpx/manifest.json` (routed geometry, SRTM,
+10 m threshold) and supersede the table above where they differ:
+
+| Variant | Length | Climbing | Unpaved | Hike-a-bike estimate |
+|---|---|---|---|---|
+| Traverse, network-routed | ~1,331 km | ~32,800 m | 59% | ~46 km |
+| Ultra (Manggarai Timur interior + Bola coast) | ~1,382 km | ~35,900 m | 68% | ~45 km |
+| Ultra+ (Ultra + Inerie full circuit) | ~1,387 km | ~35,800 m | 67% | ~37 km |
+
+Optional tracks now routed over the network and exported on their own (option vs. the main-course
+stretch it replaces): Manggarai Timur interior loop (204 vs 170 km), Bola south-coast loop (46 vs 29 km),
+Inerie full circuit via Gurusina and the Sewowoto coast (35 vs 30 km; two new anchors `n-gurusina`,
+`n-sewowoto`), Wae Rebo out-and-back with the Denge → Todo road (60 vs 60 km), Boawae → Nangaroro
+direct (49 vs 118 km), south coast direct Aimere → Nangaroro (102 vs 197 km), Lewotobi southern
+corridor via Boru (118 vs 96 km). Two ideas were computed and set aside: a Kelimutu → Egon highland
+link (120–163 km, 4,700–7,300 m, drops the Lio villages, the beaches, Sikka and Maumere) and the paved
+Riung → Mbay coast road (48 km, remoteness index 1). The "Nangaroro/Maukaro" wording in section 07 is
+a labelling error: Maukaro is a north-coast sub-district of Ende.
+
+Hazard status recorded with dates in `data/pois.geojson`: Lewotobi Laki-laki at PVMBG Level III with a
+5 km exclusion radius as of the week of 27 Aug–2 Sep 2026; a M7.7 earthquake on 15 Aug 2026 north of
+Ende (47+ dead, landslides in the summit areas of Ebulobo, Kelimutu and Anak Ranakah per Badan Geologi);
+the Reo–Pota–Riung corridor on emergency water trucking in August 2026. All to be re-checked before
+any planning milestone.
+
 ## Open questions for the first scouting season (priority order)
 
 1. Is there a continuous rideable/walkable corridor Reo → Pota → Riung along or near the north coast,

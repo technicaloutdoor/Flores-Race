@@ -1,0 +1,1374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flores Race — Course concept brochure · September 2026</title>
+<style>
+@font-face{font-family:"Playfair Display";font-weight:400;font-style:normal;src:url("fonts/playfair-display-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:400;font-style:italic;src:url("fonts/playfair-display-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:700;font-style:normal;src:url("fonts/playfair-display-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:900;font-style:normal;src:url("fonts/playfair-display-latin-900-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;src:url("fonts/inter-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url("fonts/inter-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url("fonts/inter-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:700;src:url("fonts/inter-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:500;src:url("fonts/barlow-condensed-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:600;src:url("fonts/barlow-condensed-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:700;src:url("fonts/barlow-condensed-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400;font-style:normal;src:url("fonts/source-serif-4-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400;font-style:italic;src:url("fonts/source-serif-4-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:600;font-style:normal;src:url("fonts/source-serif-4-latin-600-normal.woff2") format("woff2")}
+
+:root{
+  --ink:#1c1a17; --ink-2:#4a4640; --stone:#7a746b; --line:#d9d2c5; --paper:#fbf8f2; --sand:#efe6d6;
+  --verm:#c8102e; --teal:#1b998b; --amber:#e09f3e; --violet:#6f4a8e; --moss:#6b8e23; --slate:#4a6fa5; --rust:#9c4a1a;
+  --display:"Playfair Display",Georgia,serif; --serif:"Source Serif 4",Georgia,serif; --sans:"Inter",Helvetica,Arial,sans-serif; --cond:"Barlow Condensed","Inter",sans-serif;
+}
+@page{size:A4;margin:14mm 13mm 17mm 13mm;
+  @bottom-left{content:"Flores Race · Course concept brochure · September 2026";font:7.5pt/1 var(--sans);color:#8a837a}
+  @bottom-right{content:counter(page);font:8pt/1 var(--cond);color:#8a837a}
+}
+@page cover{margin:0; @bottom-left{content:none} @bottom-right{content:none}}
+@page opener{margin:0; @bottom-left{content:none} @bottom-right{content:none}}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink);font:10.2pt/1.45 var(--serif);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+p{margin:0 0 .75em;orphans:3;widows:3}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:700;line-height:1.08;color:var(--ink)}
+h2{font-size:26pt;letter-spacing:-.01em;margin-bottom:5mm}
+h3{font-size:15pt;margin:5mm 0 2mm}
+h4{font-family:var(--sans);font-weight:700;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--verm);margin:0 0 1.5mm}
+.kicker{font:600 8pt/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+.lede{font:italic 13pt/1.35 var(--display);color:var(--ink-2);margin:0 0 4mm}
+.small{font:8pt/1.4 var(--sans);color:var(--stone)}
+.page{break-before:page}
+.avoid{break-inside:avoid}
+img{max-width:100%;display:block}
+.rule{border:0;border-top:.6pt solid var(--line);margin:4mm 0}
+.num{font-family:var(--cond);font-weight:700;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font:8.6pt/1.3 var(--sans)}
+th{text-align:left;font:600 7.4pt/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--stone);padding:1.4mm 1.5mm;border-bottom:.8pt solid var(--ink)}
+td{padding:1.5mm 1.5mm;border-bottom:.5pt solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--cond);font-size:9.5pt;font-weight:600;font-variant-numeric:tabular-nums}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm}
+.wide-narrow{display:grid;grid-template-columns:1.55fr 1fr;gap:7mm}
+
+/* cover */
+.cover{page:cover;position:relative;width:210mm;height:297mm;overflow:hidden;background:#141311;color:#fff;break-after:page}
+.cover img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.92}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,17,.15) 0%,rgba(20,19,17,.05) 35%,rgba(20,19,17,.72) 70%,rgba(20,19,17,.96) 100%)}
+.cover .text{position:absolute;left:16mm;right:16mm;bottom:20mm}
+.cover .kicker{color:#f2c9a0}
+.cover h1{font-size:64pt;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:.95;margin:3mm 0 4mm}
+.cover .sub{font:italic 15pt/1.3 var(--display);color:#f3ede3;max-width:150mm}
+.cover .tag{font:10pt/1.45 var(--serif);color:#d8d0c2;max-width:160mm;margin-top:5mm}
+.cover .band{position:absolute;left:16mm;right:16mm;top:14mm;display:flex;justify-content:space-between;font:600 8pt/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#f3ede3}
+.cover .status{position:absolute;left:16mm;right:16mm;bottom:9mm;font:7.5pt/1.3 var(--sans);color:#a79f92}
+
+/* stats tiles */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:2.5mm;margin:4mm 0}
+.tile{background:var(--sand);padding:2.5mm 3mm;border-radius:1mm}
+.tile .v{font:700 20pt/1 var(--cond);color:var(--ink)}
+.tile .l{font:600 7pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--stone);margin-top:1mm}
+
+/* rules list */
+.rules{counter-reset:r;margin:2mm 0 0;padding:0;list-style:none;columns:2;column-gap:7mm}
+.rules li{break-inside:avoid;margin-bottom:3mm;padding-left:9mm;position:relative;font-size:9.4pt}
+.rules li::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:0;top:-.5mm;font:700 15pt/1 var(--cond);color:var(--verm)}
+.rules b{font-family:var(--sans);font-weight:700;font-size:9pt;display:block}
+
+/* figures */
+figure{margin:0}
+figcaption{font:8pt/1.35 var(--sans);color:var(--stone);margin-top:1.5mm}
+.map{border:.5pt solid var(--line)}
+.optmap{max-height:104mm;width:auto;max-width:100%;margin:0 auto}
+.legend{display:flex;flex-wrap:wrap;gap:2mm 5mm;font:7.8pt/1.2 var(--sans);color:var(--ink-2);margin:2mm 0}
+.legend span::before{content:"";display:inline-block;width:8mm;height:0;border-top:2.2pt solid var(--c);margin-right:1.5mm;vertical-align:middle}
+.legend span.dash::before{border-top-style:dashed}
+
+/* section opener */
+.opener{page:opener;width:210mm;height:297mm;overflow:hidden;break-before:page;break-after:page;position:relative;background:#fff}
+.opener .head{background:var(--ink);color:#fff;padding:9mm 13mm 6mm;height:38mm;box-sizing:border-box;position:relative}
+.opener .head .no{position:absolute;right:13mm;top:6mm;font:700 40pt/1 var(--cond);color:var(--verm)}
+.opener .head .kicker{color:#cbbfae}
+.opener .head h2{color:#fff;font-size:24pt;margin:2mm 0 1.5mm;max-width:160mm}
+.opener .head .sub{font:italic 10.5pt/1.3 var(--display);color:#e6ded2;max-width:165mm}
+.opener .body{padding:5mm 13mm 0}
+.opener .anchors{font:600 8pt/1.3 var(--sans);letter-spacing:.06em;color:var(--ink-2);margin-bottom:3mm}
+.opener .strip{display:grid;grid-template-columns:repeat(6,1fr);gap:2mm;margin:3mm 0 2.5mm}
+.opener .strip div{background:var(--sand);padding:1.6mm 2.5mm;border-radius:.8mm}
+.opener .strip .v{font:700 14pt/1 var(--cond)}
+.opener .strip .l{font:600 6.5pt/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-top:.8mm}
+.opener .attrib{position:absolute;left:13mm;right:13mm;bottom:7mm;font:7pt/1.3 var(--sans);color:#a09889;display:flex;justify-content:space-between}
+
+/* section body */
+.sec-body .story{font-size:10pt}
+.sec-body .story p:first-of-type::first-letter{font:900 34pt/.8 var(--display);float:left;margin:1.5mm 2mm 0 0;color:var(--verm)}
+.side{background:var(--sand);padding:4mm 4.5mm;border-radius:1mm;font:8.6pt/1.4 var(--sans)}
+.side h4{margin-top:0}
+.side dl{margin:0}
+.side dt{font-weight:700;margin-top:2.2mm;color:var(--ink)}
+.side dd{margin:0;color:var(--ink-2)}
+.qs{margin:3mm 0 0;padding-left:4.5mm;font:9pt/1.4 var(--sans);color:var(--ink-2)}
+.qs li{margin-bottom:1.2mm}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:5mm}
+.places.two-up{grid-template-columns:repeat(2,1fr)}
+.place{break-inside:avoid}
+.place img{width:100%;aspect-ratio:1/1;object-fit:cover;border:.5pt solid var(--line)}
+.place.wide img{aspect-ratio:3/2}
+.place h5{font:700 9.5pt/1.2 var(--sans);margin:2mm 0 1mm}
+.place p{font:8.6pt/1.4 var(--serif);color:var(--ink-2);margin:0}
+.place .meta{font:7pt/1.3 var(--sans);color:var(--stone);margin-top:1mm}
+.opt-callout{border-left:2.5pt solid var(--c);padding:1.5mm 0 1.5mm 3.5mm;margin:3mm 0;font:8.8pt/1.4 var(--sans)}
+.opt-callout b{color:var(--c)}
+
+/* options */
+.opt-head{display:flex;align-items:baseline;gap:4mm;border-bottom:2pt solid var(--c);padding-bottom:2mm;margin-bottom:3mm}
+.opt-head h3{margin:0;font-size:17pt}
+.opt-head .kind{font:600 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.cmp{width:100%}
+.cmp td:first-child{color:var(--stone);font-weight:600}
+.cmp .opt{color:var(--c)}
+.cmp .main{color:var(--verm)}
+.considered{background:var(--sand);padding:4mm 5mm;border-radius:1mm;margin-top:5mm;font:9pt/1.45 var(--serif)}
+.considered h4{margin-top:0}
+
+/* hazards */
+.haz th,.haz td{font-size:8.2pt}
+.haz td:first-child{font-weight:700}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:4mm 6mm;margin-top:3mm}
+.card{break-inside:avoid;font:9pt/1.45 var(--serif)}
+.card b{font-family:var(--sans);font-size:9pt;display:block;margin-bottom:.8mm}
+.thread{display:grid;grid-template-columns:38mm 1fr;gap:4mm;padding:2.5mm 0;border-bottom:.5pt solid var(--line);break-inside:avoid}
+.thread .t{font:700 10pt/1.2 var(--display)}
+.thread .w{font:7.5pt/1.3 var(--sans);color:var(--stone);margin-top:.8mm}
+.thread p{margin:0;font-size:9.4pt}
+ol.etq{padding-left:5mm;font:9.2pt/1.45 var(--serif)}
+ol.etq li{margin-bottom:1.5mm}
+.list td:first-child{font-weight:700;width:30mm;font-size:8pt}
+.list td{font-size:8.2pt;line-height:1.35}
+
+/* photos appendix */
+.shot{break-inside:avoid;padding:1.6mm 0;border-bottom:.5pt solid var(--line);font:7.4pt/1.3 var(--sans)}
+.shot b{display:block;font-size:8pt}
+.places-page .place.wide img{aspect-ratio:3/2}
+.places-page .opt-callout{font-size:8.2pt;margin:2mm 0}
+.shot .terms{color:var(--stone)}
+.gpx td{font-family:var(--sans);font-size:8.2pt}
+code{font:8pt/1.3 "JetBrains Mono",Menlo,monospace;background:var(--sand);padding:0 .8mm;border-radius:.6mm}
+.toc{columns:2;column-gap:8mm;font:9pt/1.55 var(--sans);margin-top:3mm}
+.toc div{display:flex;justify-content:space-between;border-bottom:.4pt dotted var(--line);break-inside:avoid}
+.toc .n{color:var(--stone);white-space:nowrap;margin-left:2mm}
+.placeholder{background:repeating-linear-gradient(45deg,#f1ece3 0 6px,#e8e1d4 6px 12px);border:.5pt dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--stone);font:8.5pt var(--sans);text-align:center;padding:4mm}
+</style>
+</head>
+<body>
+
+
+<section class="cover">
+  <img class="bg" src="img/sat/inerie-bena.jpg" alt="">
+  <div class="shade"></div>
+  <div class="band"><span>Course concept brochure · September 2026</span><span>Concept · unscouted</span></div>
+  <div class="text">
+    <div class="kicker">West to east · single stage · self-supported</div>
+    <h1>Flores Race</h1>
+    <div class="sub">A self-supported traverse of the island of fire, Labuan Bajo to Larantuka</div>
+    <div class="tag">Across Flores on farmers&#39; tracks, over the volcanic spine and back to both coasts: a course concept in ten sections, with its optional loops, its hazards and the villages that will host it.</div>
+    <div class="tag" style="margin-top:3mm;font-family:var(--cond);font-size:12pt;color:#f2c9a0">
+      <span class="num">1,331 km</span> &nbsp;·&nbsp; <span class="num">+32,841 m</span> &nbsp;·&nbsp; <span class="num">59%</span> unpaved &nbsp;·&nbsp; <span class="num">10</span> sections &nbsp;·&nbsp; <span class="num">5</span> cultural checkpoints
+    </div>
+  </div>
+  <div class="status">Concept status. Every line in this document is routed over the mapped track network and has not yet been ridden or scouted by the team. It is a proposal for stakeholders and for the first scouting season, not a decision. Cover: Inerie and the Ngada villages, Copernicus Sentinel-2.</div>
+</section>
+
+
+<section class="page">
+  <div class="kicker">The concept</div>
+  <h2>The idea in one page</h2>
+  <div class="two">
+    <div><p>Flores is only about 360 kilometres long, but it is a wall of volcanoes with two coasts. The paved Trans-Flores highway needs roughly twice that distance to cross it because it has to. A race that keeps leaving the highway to climb over the spine on farmers&#39; tracks, drop to a forgotten coast and climb back again reaches well over 1,300 kilometres and more than 30,000 metres of climbing, most of it unpaved and a meaningful share of it on foot with the bike.</p><p>The course runs west to east, from Labuan Bajo, the Komodo gateway with international flights and a sunset harbour, to Larantuka, the Portuguese-Catholic town under Ile Mandiri at the island&#39;s eastern tip. West to east because the dry-season wind blows from the east-south-east, so riders earn every kilometre, and because the island&#39;s story reads that way: from Komodo and the Manggarai highlands to Ngada&#39;s megalithic villages, the Lio country around Kelimutu, the ikat weavers of Sikka and the Catholic east.</p><p>The format is borrowed deliberately from the Silk Road Mountain Race: one stage, fixed route, no outside support, mandatory checkpoints, a time limit of about two weeks, a dry-season window from late June to September. Some checkpoints are cultural: riders sign in at a village that has agreed to host the race, and the village earns from it. That agreement is the point, not a detail.</p></div>
+    <div>
+      <h4>Design rules for the course</h4>
+      <ol class="rules" style="columns:1">
+        <li><b>Prefer the small track</b>A farm track, a cattle path across savanna or a village-to-village footpath over a ridge always beats a paved road, even a scenic one.</li><li><b>Touch both coasts, repeatedly</b>Every section that can cross the spine, does. The island is narrow; the course uses that.</li><li><b>Hike-a-bike is a feature, and it is honest</b>Where the bike is carried, the section says for how many kilometres, and scouts will have walked it.</li><li><b>Every section has a reason</b>A volcano, a village, a beach, a piece of history. If a stretch has no story, it is a link, and links are kept short.</li><li><b>Villages are hosts, not scenery</b>Wae Rebo, Bena, Gurusina, Luba, Tololela, Wologai, Nggela and the others receive guests with protocol. No rider passes before the village council has agreed; where agreement is not possible, the route goes around.</li><li><b>Respect the hazard zones</b>Active volcanoes define exclusion radii the route honours on race day, with a pre-agreed reroute and an abort rule.</li><li><b>Resupply is sparse but never impossible</b>No rider should be more than about 120 kilometres from food and water. The north coast and the Nagekeo interior need particular care.</li>
+      </ol>
+    </div>
+  </div>
+  <hr class="rule">
+  <h4>In this brochure</h4>
+  <div class="toc">
+    <div><span>The course at a glance</span><span class="n">overview map, numbers, profile</span></div>
+    <div><span>Riding it on Ride with GPS</span><span class="n">GPX files and import</span></div>
+    <div><span>01 · Komodo gate and the Mbeliling forest</span><span class="n">km 0–102</span></div><div><span>02 · Wae Rebo and the south coast of Manggarai</span><span class="n">km 102–266</span></div><div><span>03 · Manggarai highlands</span><span class="n">km 266–371</span></div><div><span>04 · The forgotten north coast</span><span class="n">km 371–528</span></div><div><span>05 · Ngada: megaliths under Inerie</span><span class="n">km 528–657</span></div><div><span>06 · Ebulobo and the Nagekeo plains</span><span class="n">km 657–798</span></div><div><span>07 · The blue-stone coast to Ende</span><span class="n">km 798–904</span></div><div><span>08 · Kelimutu and the Lio country</span><span class="n">km 904–1,054</span></div><div><span>09 · Sikka and the Portuguese south</span><span class="n">km 1,054–1,141</span></div><div><span>10 · Egon and the far east</span><span class="n">km 1,141–1,332</span></div>
+    <div><span>Optional loops and alternatives</span><span class="n">7 options</span></div>
+    <div><span>Hazards and constraints</span><span class="n">dated volcano statuses</span></div>
+    <div><span>Cultural threads and protocol</span><span class="n">how to arrive as a guest</span></div>
+    <div><span>Logistics</span><span class="n">airports, ferries, hubs</span></div>
+    <div><span>Photographs to source</span><span class="n">shot-list per place</span></div>
+    <div><span>Data, method and sources</span><span class="n"></span></div>
+  </div>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Labuan Bajo → Larantuka</div>
+  <h2>The course at a glance</h2>
+  <p>Ten narrative sections chain 37 anchors from the Komodo gateway to the Portuguese east. The numbers below are computed from the routed geometry with SRTM elevation, the pipeline&#39;s smoothing and a 10-metre climbing threshold; they will move once scouts bring back GPS tracks, and Ride with GPS will show slightly different climbing figures from its own terrain model.</p>
+  <figure class="avoid">
+    <img class="map" src="img/maps/overview.jpg" alt="Overview map of the course">
+    <div class="legend"><span style="--c:var(--verm)">Main course</span><span class="dash" style="--c:#1b998b">Manggarai Timur interior loop</span><span class="dash" style="--c:#e09f3e">Bola south-coast loop</span><span class="dash" style="--c:#6f4a8e">Inerie full circuit via Gurusina and the Sewowoto coast</span><span class="dash" style="--c:#6b8e23">Wae Rebo out-and-back</span><span class="dash" style="--c:#4a6fa5">Boawae to Nangaroro direct</span><span class="dash" style="--c:#9c4a1a">South coast direct: Aimere to Nangaroro</span><span class="dash" style="--c:#b5179e">Lewotobi southern corridor via Boru</span></div>
+  </figure>
+  <div class="tiles">
+    <div class="tile"><div class="v">1,331</div><div class="l">km, main course</div></div>
+    <div class="tile"><div class="v">+32,841</div><div class="l">m climbing</div></div>
+    <div class="tile"><div class="v">59%</div><div class="l">unpaved (estimate)</div></div>
+    <div class="tile"><div class="v">≈46</div><div class="l">km hike-a-bike est.</div></div>
+    <div class="tile"><div class="v">1,382</div><div class="l">km Ultra</div></div>
+    <div class="tile"><div class="v">1,386</div><div class="l">km Ultra+</div></div>
+  </div>
+  <table class="avoid">
+    <thead><tr><th>#</th><th>Section</th><th>Anchors</th><th class="n">km</th><th class="n">Climb m</th><th class="n">Course km</th><th>Hike-a-bike</th><th>Cultural checkpoints</th></tr></thead>
+    <tbody>
+    
+      <tr><td class="num">01</td><td><b>Komodo gate and the Mbeliling forest</b></td><td class="small">Labuan Bajo → Mbeliling forest → Sano Nggoang → Werang</td><td class="n">102</td><td class="n">3,368</td><td class="n">0–102</td><td>low</td><td class="small">–</td></tr>
+    
+      <tr><td class="num">02</td><td><b>Wae Rebo and the south coast of Manggarai</b></td><td class="small">Werang → Dintor → Denge → Wae Rebo (hike-a-bike) → Todo → Iteng</td><td class="n">165</td><td class="n">4,151</td><td class="n">102–266</td><td>high</td><td class="small">Wae Rebo</td></tr>
+    
+      <tr><td class="num">03</td><td><b>Manggarai highlands</b></td><td class="small">Iteng → Ruteng → Ranamese / Poco Ranaka → Liang Bua</td><td class="n">105</td><td class="n">3,342</td><td class="n">266–371</td><td>medium</td><td class="small">–</td></tr>
+    
+      <tr><td class="num">04</td><td><b>The forgotten north coast</b></td><td class="small">Liang Bua → Reo → Pota → Riung</td><td class="n">157</td><td class="n">2,335</td><td class="n">371–528</td><td>medium</td><td class="small">–</td></tr>
+    
+      <tr><td class="num">05</td><td><b>Ngada: megaliths under Inerie</b></td><td class="small">Riung → Soa (Mengeruda hot springs) → Bajawa → Bena → Aimere</td><td class="n">129</td><td class="n">3,280</td><td class="n">528–657</td><td>high</td><td class="small">Bena</td></tr>
+    
+      <tr><td class="num">06</td><td><b>Ebulobo and the Nagekeo plains</b></td><td class="small">Aimere → Mataloko / Wogo → Boawae → Mbay</td><td class="n">141</td><td class="n">3,342</td><td class="n">657–798</td><td>low</td><td class="small">–</td></tr>
+    
+      <tr><td class="num">07</td><td><b>The blue-stone coast to Ende</b></td><td class="small">Mbay → Nangaroro → Penggajawa → Ende</td><td class="n">107</td><td class="n">2,093</td><td class="n">798–904</td><td>low</td><td class="small">–</td></tr>
+    
+      <tr><td class="num">08</td><td><b>Kelimutu and the Lio country</b></td><td class="small">Ende → Detusoko → Moni → Kelimutu → Wolojita → Nggela → Koka</td><td class="n">149</td><td class="n">4,704</td><td class="n">904–1,054</td><td>medium</td><td class="small">Kelimutu, Nggela, Koka</td></tr>
+    
+      <tr><td class="num">09</td><td><b>Sikka and the Portuguese south</b></td><td class="small">Koka → Sikka village → Lela → Maumere</td><td class="n">87</td><td class="n">2,447</td><td class="n">1,054–1,141</td><td>low</td><td class="small">Koka</td></tr>
+    
+      <tr><td class="num">10</td><td><b>Egon and the far east</b></td><td class="small">Maumere → Watublapi → Egon (Blidit) → Waiterang → Talibura → north of Lewotobi → Larantuka</td><td class="n">191</td><td class="n">3,776</td><td class="n">1,141–1,332</td><td>high</td><td class="small">–</td></tr>
+    
+    </tbody>
+    <tfoot><tr><td></td><td><b>Traverse</b></td><td></td><td class="n">1,331</td><td class="n">32,841</td><td></td><td></td><td></td></tr></tfoot>
+  </table>
+  <figure class="avoid" style="margin-top:4mm">
+    <img src="img/profiles/r-traverse-remote.png" alt="Elevation profile of the main course">
+    <figcaption>Elevation profile of the main course, SRTM, smoothed. Lowest point sea level, highest 1,707 m.</figcaption>
+  </figure>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Working with the course</div>
+  <h2>Riding it on Ride with GPS</h2>
+  <div class="two">
+    <div><p>The whole course exists as GPX files in the repository, under exports/gpx: the main traverse (with and without points of interest), the Ultra and Ultra+ variants, one file per section and one per optional loop or alternative. Ride with GPS imports them directly and keeps every farm track exactly as routed; it recomputes elevation, surface and cue sheet from its own data.</p><p>Import is two minutes per file: open the route planner (ridewithgps.com/routes/new), click Import in the Route panel, choose Upload File, pick a GPX, Add to Planner, name it, set it private while the course is a concept, Save. Put everything in a collection called Flores Race so the team finds it in one place. The dashboard&#39;s Upload page takes several files at once; choose Save as Route, not Add to My Activities.</p><p>The maps in this brochure are rendered by the project&#39;s own pipeline from the same data (SRTM relief, roads and coastline from OpenStreetMap via Overture Maps). They are not planner screenshots: the environment this brochure was produced in could not reach Ride with GPS. Once the routes are in the planner, its screenshots can complement these maps; the geometry is identical.</p></div>
+    <div>
+      <h4>Files in exports/gpx</h4>
+      <table class="gpx">
+        <thead><tr><th>File</th><th class="n">km</th><th class="n">Climb m</th></tr></thead>
+        <tbody>
+        <tr><td><code>flores-race-traverse.gpx</code><br><code>flores-race-traverse-with-pois.gpx</code></td><td class="n">1,331</td><td class="n">32,841</td></tr><tr><td><code>flores-race-ultra.gpx</code></td><td class="n">1,382</td><td class="n">35,913</td></tr><tr><td><code>flores-race-ultra-plus.gpx</code></td><td class="n">1,386</td><td class="n">35,768</td></tr>
+        <tr><td><code>sections/…</code> one file per section (10)</td><td class="n"></td><td class="n"></td></tr>
+        <tr><td><code>options/…</code> one file per option (7)</td><td class="n"></td><td class="n"></td></tr>
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:3mm">Every file carries the anchors (and, where noted, points of interest) as waypoints with their cumulative kilometre, resupply, water and sleep status. Regenerate with <code>python3 pipeline/export_gpx.py</code>. Full instructions: <code>docs/ridewithgps.md</code>.</p>
+    </div>
+  </div>
+  
+  <figure class="avoid" style="margin-top:6mm">
+    <img src="img/sat/flores-mosaic.jpg" alt="Flores from orbit" style="width:100%;aspect-ratio:3.45/1;object-fit:cover;border:.5pt solid var(--line)">
+    <figcaption>Flores from orbit, west to east: about 360 kilometres of volcanoes between two coasts. Copernicus Sentinel-2 composite of the least cloudy dry-season scenes of 2025 and 2026.</figcaption>
+  </figure>
+  
+</section>
+
+
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">01</div>
+    <div class="kicker">Section 01 · km 0 to 102</div>
+    <h2>Komodo gate and the Mbeliling forest</h2>
+    <div class="sub">Leaving the tourist town for the first farm tracks</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Labuan Bajo → Mbeliling forest → Sano Nggoang → Werang</div>
+    <img class="map" src="img/maps/sec-01.jpg" alt="Map of section 1">
+    <div class="strip">
+      <div><div class="v">102</div><div class="l">km</div></div>
+      <div><div class="v">+3,368</div><div class="l">m climb</div></div>
+      <div><div class="v">−3,049</div><div class="l">m descent</div></div>
+      <div><div class="v">943</div><div class="l">m high point</div></div>
+      <div><div class="v">75%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">low</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-01-komodo-mbeliling.png" alt="Elevation profile of section 1">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 01 · Komodo gate and the Mbeliling forest</div>
+  <p class="lede">The race starts in the one place every rider already half-knows, and turns its back on it within a few kilometres.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Labuan Bajo is dragons, dive boats and an international airport: the busiest harbour in the region, fully geared, expensive in August. The course leaves the waterfront and climbs into the Mbeliling forest reserve, roughly 15,000 hectares of Important Bird Area rising to about 1,275 metres, the highest ground in West Manggarai. It holds all four birds found only on Flores: the Flores hanging parrot, the Flores monarch, the Flores crow and the Flores scops owl. This is the unglamorous, verifiable version of remote, and it is the first test of the course&#39;s first rule: the farm track through the forest rather than the highway that skirts it.</p><p>Two waterfalls give the section its texture. Cunca Wulang is a river canyon with deep pools and cliff-jumping spots near Wersawe, about 30 kilometres from town, run informally by the village for a small fee: spectacular and easy, no dismount needed. Cunca Rami, a 30-metre fall deep in the forest near Wae Lolos, is a real jungle hike-a-bike whose exact position the desk data itself admits is unresolved, with local sources and the terrain model disagreeing by 400 metres of altitude. That is precisely why this section opens the first scouting season.</p><p>The payoff is Sano Nggoang: an elliptical caldera lake at about 750 metres, reported as the largest crater lake in East Nusa Tenggara and among the deepest volcanic lakes anywhere, with solfataras and hot springs steaming on its south-eastern shore below the 903-metre Wai Sano volcano. Most Komodo visitors never see it. The section ends eight kilometres north at Werang, the sub-district capital: a parish church, a boarding school, a police post, a handful of kiosks. The first honest resupply of the race.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable only in Labuan Bajo. Unreliable at the lake and in Werang; carry from the start.</dd>
+        <dt>Resupply</dt><dd>Full in Labuan Bajo (supermarkets, ATMs, the region&#39;s only hospital). Kiosks in Werang. Nothing on the forest track.</dd>
+        <dt>Sleep</dt><dd>Hotels in Labuan Bajo; small homestays at the lake and in Werang, capacity for a race field unconfirmed; an ecolodge in the Mbeliling landscape.</dd>
+        <dt>Protocol</dt><dd>No cultural checkpoint in this section. Village-collected fees at the waterfalls (reported IDR 30,000 to 100,000 at Cunca Wulang depending on guiding).</dd>
+        <dt>Hazards</dt><dd>River pools and cliff jumps at Cunca Wulang (informal site, no lifeguard); geothermal features at the lake are not bathing spots; a documented saltwater-crocodile fatality on West Manggarai&#39;s coast means no wading in estuaries.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 01 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/sano-nggoang.jpg" alt="Sano Nggoang and Wai Sano">
+      <h5>Sano Nggoang and Wai Sano</h5>
+      <p>The caldera lake from orbit: the ellipse of dark water inside the Wai Sano complex. The lakeshore village of Wae Sano has been the centre of a contested geothermal project since Flores was designated a national geothermal priority; two international financiers withdrew over consent failures with the Indigenous Manggarai community. The race should know this and take no side.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 9 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/labuan-bajo-bay.jpg" alt="Labuan Bajo bay">
+      <h5>Labuan Bajo bay</h5>
+      <p>The start line: harbour, liveaboards, the airport on the hill. Dry season here runs May to September; August is the driest and the busiest month.</p>
+      <div class="meta">Sentinel-2 · 2026-07-12 · 18 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/komodo-gateway.jpg" alt="The Komodo gateway">
+      <h5>The Komodo gateway</h5>
+      <p>Context, not course: Komodo and Rinca lie a boat ride west. The national park moved to a daily visitor quota with mandatory pre-booking in 2026; it is the reason the start town is crowded, and the reason its name carries.</p>
+      <div class="meta">Sentinel-2 · 2026-07-12 · 30 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Is the Mbeliling forest track rideable end to end, or does it need dismounts near the two waterfalls?</li><li>Fix Cunca Rami&#39;s position by GPS: desk position and terrain elevation disagree by about 400 metres.</li><li>Homestay capacity at Sano Nggoang and Werang for race-week volume.</li></ul>
+    </div>
+    <div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">02</div>
+    <div class="kicker">Section 02 · km 102 to 266</div>
+    <h2>Wae Rebo and the south coast of Manggarai</h2>
+    <div class="sub">The flagship cultural checkpoint, reached the only way it can be</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Werang → Dintor → Denge → Wae Rebo (hike-a-bike) → Todo → Iteng</div>
+    <img class="map" src="img/maps/sec-02.jpg" alt="Map of section 2">
+    <div class="strip">
+      <div><div class="v">165</div><div class="l">km</div></div>
+      <div><div class="v">+4,151</div><div class="l">m climb</div></div>
+      <div><div class="v">−4,447</div><div class="l">m descent</div></div>
+      <div><div class="v">1,237</div><div class="l">m high point</div></div>
+      <div><div class="v">68%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">high</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-02-wae-rebo-south-coast.png" alt="Elevation profile of section 2">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 02 · Wae Rebo and the south coast of Manggarai</div>
+  <p class="lede">No road has ever reached Wae Rebo. Every visitor arrives the way the village&#39;s own rice and roof thatch do: on foot.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>From Werang the course drops off the plateau to a stretch of south coast almost no visitor sees. Dintor is a white-sand beach village in Satar Ruwuk with Pulau Mules offshore and no services; Denge, a few kilometres inland, is the last village a vehicle reaches and the trekkers&#39; staging post, with a rice-field homestay of about nine rooms. Beyond Denge everything moves on foot or on someone&#39;s back.</p><p>The Wae Rebo trail is about eight kilometres and 700 metres of climbing through rainforest, two and a half to three hours for a trekker, considerably more with a loaded bike. At the top stand seven cone-roofed mbaru niang around a ceremonial ground at about 1,100 to 1,200 metres: five floors of wood, bamboo and palm thatch built without nails, rebuilt by the community in the traditional form rather than in tin, which won the village UNESCO&#39;s Asia-Pacific Award for Cultural Heritage Conservation in 2012. Oral tradition names a founder, Empo Maro, who came from Minangkabau in Sumatra guided by a dream. Visitors are received with the Wae Lu&#39;u welcome ceremony, sleep inside the houses and pay a set contribution; roughly IDR 350,000 for an overnight package and a IDR 50,000 ceremony donation are the figures currently reported, and there is no visitor quota. None of that can simply be inherited by a race: the village council&#39;s agreement is the precondition for this checkpoint.</p><p>The onward trail from Wae Rebo towards Todo is the section&#39;s open question; no public trekking source describes it, and every visitor account goes back down to Denge. The course therefore carries an out-and-back alternative. Todo, reached by road, is where Manggarai tradition places the seat of its old kingdom and its oldest standing mbaru niang, the drum house Niang Todo: the same architecture as Wae Rebo, with the origin story attached, and elders who receive guests with a guest book and a small donation. The section ends at Iteng, the Satar Mese sub-district capital on the coast: a market, a parish, a health centre, the first real food after two remote days.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Unreliable throughout. Denge and Wae Rebo have water for guests, not for a field of riders; carry full capacity from Werang.</dd>
+        <dt>Resupply</dt><dd>Minimal: kiosks in Denge and Dintor, nothing on the trail, a market at Iteng.</dd>
+        <dt>Sleep</dt><dd>Homestays in Denge and inside the mbaru niang at Wae Rebo (by agreement); nothing at Dintor or Todo; Iteng unconfirmed.</dd>
+        <dt>Protocol</dt><dd>Cultural checkpoint. Welcome ceremony, guest book, set contributions; photography of interiors and ceremonies by permission. A race-specific agreement with the council is required before a single rider passes.</dd>
+        <dt>Hazards</dt><dd>Steep, slippery porters&#39; path with steps; landslides after rain; heat on the coast, cold at the village at night.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 02 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/wae-rebo-valley.jpg" alt="The Wae Rebo valley">
+      <h5>The Wae Rebo valley</h5>
+      <p>Forest, ridges and the clearing at the head of the valley. The seven houses are said to stand for the seven peaks around them. The trail is landslide-prone in the wet season; 2025 and 2026 traveller reports describe intermittent closures and bamboo-bridge repairs.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 6 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/todo-village.jpg" alt="Todo">
+      <h5>Todo</h5>
+      <p>A short climb off the Ruteng road. No hike-a-bike here; the deep-history counterweight to the trek.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 5 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Is the Wae Rebo onward trail passable with a loaded bike, or is the out-and-back the default?</li><li>Terms and timing of a Wae Rebo checkpoint and a Todo visit with the village councils.</li><li>Field GPS fixes for Dintor and Denge; both are still desk placements.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#6b8e23"><b>Wae Rebo out-and-back</b> — If the onward trail from Wae Rebo cannot be done with a bike: climb to the village, descend the same path to Denge, then ride the remote-profile road to Todo. <span class="num">60 km</span> instead of <span class="num">60 km</span> (+0 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">03</div>
+    <div class="kicker">Section 03 · km 266 to 371</div>
+    <h2>Manggarai highlands</h2>
+    <div class="sub">From a warm coast to a cold cathedral town, the island&#39;s roof and its oldest human story</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Iteng → Ruteng → Ranamese / Poco Ranaka → Liang Bua</div>
+    <img class="map" src="img/maps/sec-03.jpg" alt="Map of section 3">
+    <div class="strip">
+      <div><div class="v">105</div><div class="l">km</div></div>
+      <div><div class="v">+3,342</div><div class="l">m climb</div></div>
+      <div><div class="v">−2,845</div><div class="l">m descent</div></div>
+      <div><div class="v">1,707</div><div class="l">m high point</div></div>
+      <div><div class="v">64%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">medium</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-03-manggarai-highlands.png" alt="Elevation profile of section 3">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 03 · Manggarai highlands</div>
+  <p class="lede">Roughly 1,100 metres of climbing separate the coast at Iteng from Ruteng&#39;s cool air, and the section only gets higher from there.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Ruteng sits at about 1,200 metres: a compact, walkable Catholic hill town of red roofs and rice terraces, sixteen to twenty-four degrees, the best full resupply of the whole west (a central market, a hospital, banks, many homestays). Its cathedral, consecrated in 2002, seats 2,500; the Golo Curu hill above the town carries a Marian grotto and the panorama. On the most Catholic island of Indonesia&#39;s most Catholic province, this is where the contrast with the customary-law villages just behind the riders is sharpest.</p><p>A short detour west of town, the Cancar rice fields resolve from a viewing hill into a spider&#39;s web. This is lingko, the Manggarai communal land system: a field divided outward from a centre point, the lodok, into wedges whose width reflects each family&#39;s standing, with planting and harvest rites at the centre. It is the one spectacular view on the whole course that costs no hike-a-bike at all, for a fee of a few thousand rupiah and a ten-minute walk.</p><p>South-east of Ruteng rises the roof of Flores: Poco Mandasawu, the island&#39;s highest point at about 2,370 metres, and Poco Ranaka with its 1987 lava dome Anak Ranakah, inside the 32,000-hectare Ruteng Nature Recreation Park. The course skirts this massif on the way to Ranamese, a small, 21-metre-deep crater lake at 1,220 metres with a warung at the car park: the highest and coldest rest stop of the race, with the Cunca Rede waterfall a short trail away. Then it descends north to Liang Bua, a single wide limestone chamber where, in September 2003, a joint Indonesian-Australian team found the near-complete skeleton of a one-metre-tall human relative, Homo floresiensis. A 2016 re-dating put the youngest bones at 60,000 to 100,000 years, and at Mata Menge in the So&#39;a basin the lineage reaches back about 700,000 years. The cave is still used by the local community for ceremonies; a guide meets visitors at the entrance, and a small museum shows casts.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable in Ruteng; unreliable at Iteng, Ranamese and Liang Bua. Nothing on the massif.</dd>
+        <dt>Resupply</dt><dd>Full in Ruteng. A warung at Ranamese. Minimal at Liang Bua.</dd>
+        <dt>Sleep</dt><dd>Hotels and homestays in Ruteng (Hobbit Hill homestay is on the road towards Liang Bua); nothing at the lake or the cave.</dd>
+        <dt>Protocol</dt><dd>Liang Bua is a working heritage and ceremonial site: follow the guide, no touching the excavation. Cancar viewpoint fee reported at IDR 15,000 to 30,000.</dd>
+        <dt>Hazards</dt><dd>Sustained climb from sea level to 1,200 metres in heat, then cold and cloud at altitude; exposed volcanic trail if the massif is crossed on foot.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 03 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/lingko-cancar.jpg" alt="The Cancar lingko">
+      <h5>The Cancar lingko</h5>
+      <p>The spider-web fields from orbit. Sources put Cancar 17 to 25 kilometres from Ruteng; the viewing hill stands beside a telecoms tower.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 4 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/ruteng-highlands.jpg" alt="Ruteng">
+      <h5>Ruteng</h5>
+      <p>The highland capital on the Trans-Flores. Full resupply, RSUD Ruteng hospital, many homestays; cool nights.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 10 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/ranamese-lake.jpg" alt="Ranamese">
+      <h5>Ranamese</h5>
+      <p>Five hectares of still water at 1,220 metres, sixteen kilometres from Ruteng. The only resupply between Ruteng and Liang Bua is the warung here.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 4 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/liang-bua.jpg" alt="Liang Bua">
+      <h5>Liang Bua</h5>
+      <p>The valley of the hobbit cave, fourteen kilometres north-west of Ruteng. Entrance fees are reported inconsistently (IDR 30,000 to 80,000); confirm on the ground.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 4 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Is there a farm-track alternative to the paved road over the Ranamese pass?</li><li>A more direct track between Ranamese and Liang Bua than the current chain, which doubles back near Ruteng?</li><li>Which summit elevations to print for Poco Mandasawu and Poco Ranaka: sources conflict by up to 200 metres.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#1b998b"><b>Manggarai Timur interior loop</b> — Ruteng to the south coast at Borong, the unscouted Elar interior, back to the north coast at Pota; skips Ranamese, Liang Bua and Reo. <span class="num">204 km</span> instead of <span class="num">170 km</span> (+34 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">04</div>
+    <div class="kicker">Section 04 · km 371 to 528</div>
+    <h2>The forgotten north coast</h2>
+    <div class="sub">Savanna, lontar palms, small ports, and the water question that will define the race</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Liang Bua → Reo → Pota → Riung</div>
+    <img class="map" src="img/maps/sec-04.jpg" alt="Map of section 4">
+    <div class="strip">
+      <div><div class="v">157</div><div class="l">km</div></div>
+      <div><div class="v">+2,335</div><div class="l">m climb</div></div>
+      <div><div class="v">−2,868</div><div class="l">m descent</div></div>
+      <div><div class="v">943</div><div class="l">m high point</div></div>
+      <div><div class="v">29%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">medium</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-04-north-coast.png" alt="Elevation profile of section 4">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 04 · The forgotten north coast</div>
+  <p class="lede">Dry, hot, sparsely populated and beautiful: the section the concept names as its defining unknown.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Reo is an old north-coast market town with a mosque and a church side by side, a bank, a health centre and a Dutch-era cannon on the hill above the bay; its working harbour, Kedindi, a few kilometres west at the river mouth, is talked of as the province&#39;s next big export port. Local history traces the first settlement to the Bima sultanate&#39;s traders; under the Dutch, the Manggarai resistance leader Motang Rua was shipped through Reo into exile. It is the last full resupply before the driest stretch of the course.</p><p>East of Reo the coast becomes lontar-palm savanna and wide bays with almost nobody in them. The desk data called this corridor undocumented; current sources say a road exists the whole way, paved from Ruteng to Reo and Pota, then rough, potholed and periodically cut by landslides between Pota and Riung via Buntal, Golo Lijung and Dampek. The honest open question is not whether a track exists but how good it is with a loaded bike, and above all where the water is. In August 2026 the district was under an emergency dry-season water-trucking operation covering Pota, Nangambaur, Golo Lijun and posts across Sambi Rampas and Borong. Water here is not a hypothesis; it is the constraint.</p><p>Pota, the Sambi Rampas sub-district capital, is the midpoint and the junction where the Manggarai Timur interior loop rejoins the coast. Riung is the reward: a small fishing port at the gate of the Seventeen Islands Marine Park, more than twenty coral islets reached by hired boat, with a colony of thousands of flying foxes that lifts off Pulau Ontoloe at dusk, snorkelling over reef, and half a dozen simple guesthouses. Park entrance is reported at about IDR 100,000; a day boat for a small group around IDR 400,000 per person.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>The constraint of the race. Reliable in Reo only; unreliable at Pota and Riung; villages between were on emergency trucking in August 2026. Mandatory carry capacity; planned water points only if unavoidable.</dd>
+        <dt>Resupply</dt><dd>Basic in Reo and Pota (kiosks, health posts), basic in Riung with guesthouse kitchens. Nothing in between.</dd>
+        <dt>Sleep</dt><dd>A homestay in Reo; nothing confirmed at Pota; several guesthouses in Riung (reported IDR 150,000 to 350,000).</dd>
+        <dt>Protocol</dt><dd>No cultural checkpoint. Marine park fee if riders take a boat. Mosque and church etiquette in Reo.</dd>
+        <dt>Hazards</dt><dd>Heat and dehydration; rough, landslide-prone road east of Pota; river mouths and mangroves are crocodile country, no wading at dawn or dusk.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 04 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/pota-savanna.jpg" alt="The savanna between Reo and Pota">
+      <h5>The savanna between Reo and Pota</h5>
+      <p>Bays, dry riverbeds and palm savanna from orbit. Early departures, shade at midday and a mandatory water-carry rule belong to this section.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 14 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/reo-north-coast.jpg" alt="Reo and the Kedindi harbour">
+      <h5>Reo and the Kedindi harbour</h5>
+      <p>The Wae Reo river mouth and the port. Paved road south to Ruteng; an active, not sleepy, waterfront.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 12 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/riung-17-islands.jpg" alt="Riung and the Seventeen Islands">
+      <h5>Riung and the Seventeen Islands</h5>
+      <p>Islets, reef and mangrove north of the village. The Timor monitor lizard lives here; a locally named larger monitor, the mbou, is reported at Torong Padang, thinly sourced.</p>
+      <div class="meta">Sentinel-2 · 2025-09-22 · 18 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Ride the Pota to Riung road end to end: rideable as a continuous line, or portage sections?</li><li>Where exactly is water between Reo and Riung in August, and which villages can host a water point?</li><li>Which island carries the flying-fox colony: Ontoloe per current sources, Tembang per the curated data?</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#1b998b"><b>Manggarai Timur interior loop</b> — Ruteng to the south coast at Borong, the unscouted Elar interior, back to the north coast at Pota; skips Ranamese, Liang Bua and Reo. <span class="num">204 km</span> instead of <span class="num">170 km</span> (+34 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">05</div>
+    <div class="kicker">Section 05 · km 528 to 657</div>
+    <h2>Ngada: megaliths under Inerie</h2>
+    <div class="sub">Cultural checkpoints under a near-perfect volcano</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Riung → Soa (Mengeruda hot springs) → Bajawa → Bena → Aimere</div>
+    <img class="map" src="img/maps/sec-05.jpg" alt="Map of section 5">
+    <div class="strip">
+      <div><div class="v">129</div><div class="l">km</div></div>
+      <div><div class="v">+3,280</div><div class="l">m climb</div></div>
+      <div><div class="v">−3,288</div><div class="l">m descent</div></div>
+      <div><div class="v">1,238</div><div class="l">m high point</div></div>
+      <div><div class="v">41%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">high</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-05-ngada-inerie.png" alt="Elevation profile of section 5">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 05 · Ngada: megaliths under Inerie</div>
+  <p class="lede">The villages beneath Inerie orient their ancestor shrines towards its slope. The mountain is a presiding relative, not scenery.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>From the coast at Riung the course climbs to the Bajawa plateau, eleven hundred metres up, with a stop halfway that riders will remember: the Mengeruda hot springs at Soa, warm river pools in a jungle valley near the airstrip, ticketed at a few thousand rupiah and open eight to six. Bajawa itself is a cool highland capital with a market, hotels and ATMs, the last full service before four days of minimal-service villages. Wolobobo hill above the town is the plateau&#39;s best sunrise: mist pooling below, Inerie&#39;s silhouette, Ebulobo far to the east on a clear morning.</p><p>Nineteen kilometres south, Bena is the reference image of Ngada culture: two rows of thatched houses on a narrow ridge framing a stone-terraced square of megalithic tombs and paired ngadhu and bhaga, a carved post for each clan&#39;s male ancestor and a small thatched house for the female one, nine pairs for nine clans. Guests sign a book and leave a donation (IDR 10,000 to 25,000 is commonly cited). Luba, a few hundred metres away, has four clans and carved animal motifs and far fewer visitors; Tololela, on a steep hillside at 650 metres, is where travellers actually sleep in the village; Gurusina, on Inerie&#39;s south-eastern flank, was rebuilt in traditional materials after a fire on 13 August 2018 destroyed 27 of its 33 houses while the village watched a football match. Each has its own council, and each checkpoint needs its own agreement. Reba, the Ngada new-year festival of yams and ancestors, runs from late December into January: spectacular, and outside the race window.</p><p>Inerie is 2,245 metres, the highest peak in Ngada, dormant since a smoke plume in 1911, and climbed from Watumeze in three to four hours over loose scree with no shade and more than 1,500 metres of gain. The main course crosses its shoulder from Bena down to the coast at Aimere, five to ten kilometres of steep, loose hike-a-bike that nobody has yet done with a loaded bike. The Inerie full circuit is the alternative: Bena, Gurusina, the wild southern slope down to the sea at Sewowoto, then the coast road west. Aimere closes the section as a working port: the ferry to Sumba and Kupang, and household stills turning lontar palm sap into arak over open fires.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable in Bajawa and Soa; unreliable in every village under the volcano and at Aimere.</dd>
+        <dt>Resupply</dt><dd>Full in Bajawa. Minimal in Bena, Luba, Tololela, Gurusina; basic in Aimere.</dd>
+        <dt>Sleep</dt><dd>Hotels in Bajawa; homestays reported at Tololela and Gurusina, Bena may be day-visit only; homestay at Aimere.</dd>
+        <dt>Protocol</dt><dd>Cultural checkpoints. Greet the elders first, guest book, donation, ask before photographing people or houses, no naked flames near thatch. Council agreements required for Bena, Luba, Tololela and Gurusina.</dd>
+        <dt>Hazards</dt><dd>Loose volcanic scree and exposure on the Inerie shoulder; cloud builds by mid-morning; no water on the mountain; fire risk in thatched villages.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 05 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/inerie-bena.jpg" alt="Inerie and Bena">
+      <h5>Inerie and Bena</h5>
+      <p>The cone from orbit, Bena and Luba on the ridge to its north-east, Gurusina on the south-eastern flank, the sea to the south. The shrines in every village square face the slope.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 16 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/soa-mengeruda.jpg" alt="Soa and the Mengeruda springs">
+      <h5>Soa and the Mengeruda springs</h5>
+      <p>The Soa basin, the Turelelo airstrip and the warm river at Piga. Also the region of the Mata Menge fossil site, where the Homo floresiensis lineage reaches back about 700,000 years.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 8 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/aimere-coast.jpg" alt="The Aimere coast">
+      <h5>The Aimere coast</h5>
+      <p>Lontar groves, the ferry port, the arak coast. The exact pier position still needs a field fix.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 10 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Is the Bena-side Inerie shoulder descent safe with a loaded bike?</li><li>Which villages will host checkpoints, under what terms, and does Bena offer beds at all?</li><li>The Sewowoto coast and the Gurusina descent for the full-circuit option: rideable, walkable, water?</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#6f4a8e"><b>Inerie full circuit via Gurusina and the Sewowoto coast</b> — Round the whole cone: Bena to the rebuilt village of Gurusina, down the wild south flank to the sea at Sewowoto (Ena Bhara beach), then the coast road west to Aimere. Network-routed; the middle leg has the maximum remoteness index and is unscouted. <span class="num">35 km</span> instead of <span class="num">30 km</span> (+5 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">06</div>
+    <div class="kicker">Section 06 · km 657 to 798</div>
+    <h2>Ebulobo and the Nagekeo plains</h2>
+    <div class="sub">A steaming seminary, a live volcano farmed to the treeline, and the island&#39;s rice bowl</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Aimere → Mataloko / Wogo → Boawae → Mbay</div>
+    <img class="map" src="img/maps/sec-06.jpg" alt="Map of section 6">
+    <div class="strip">
+      <div><div class="v">141</div><div class="l">km</div></div>
+      <div><div class="v">+3,342</div><div class="l">m climb</div></div>
+      <div><div class="v">−3,320</div><div class="l">m descent</div></div>
+      <div><div class="v">1,362</div><div class="l">m high point</div></div>
+      <div><div class="v">60%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">low</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-06-ebulobo-nagekeo.png" alt="Elevation profile of section 6">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 06 · Ebulobo and the Nagekeo plains</div>
+  <p class="lede">Back up to the plateau, round the cone of Ebulobo, and down the Aesesa valley to the north coast.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Mataloko is the section&#39;s postcard: a whitewashed colonial-era minor seminary, St Yohanes Berchmans, silhouetted against the steam of a geothermal field of more than twenty hot springs, fumaroles and mud pools across a thousand hectares. The springs are a real rider amenity; the geothermal plant behind them, operating since 1998, is also a live local-goodwill issue in the surrounding villages, which is worth knowing before any checkpoint or filming near it. Wogo, a sealed side road away, has nine ngadhu-bhaga pairs in a U-shaped compound and, a kilometre&#39;s walk further, the abandoned original site of old Wogo where megalithic tombs still stand in the grass and still serve ceremonies.</p><p>Boawae sits directly on the north-western slope of Ebulobo, an active 2,124-metre stratovolcano first recorded erupting in 1830, monitored from an observation post at Ekowolo, farmed almost to the treeline. A summit hike from Mulakoli takes about two hours of forest and a final scramble, with a village-mandated guide. Boawae is also the home of Etu, Nagekeo&#39;s ceremonial one-handed boxing, fought in palm-fibre gloves as part of the harvest-thanksgiving cycle in June and July: a living ritual, not a show, and one whose dates may fall inside the race window.</p><p>The Aesesa valley then opens into the largest rice plain of Flores, irrigated, flat and hot, and Mbay, the Nagekeo capital, with hotels and the last certain full resupply before the waist crossing. Its port, Marapokot, eight kilometres north, runs ferries to Palue and towards Maumere. Two alternatives shorten this section: straight from Boawae over to the south coast at Nangaroro, or the whole way along the remote south coast from Aimere to Nangaroro, skipping the plateau altogether.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable at Mataloko, Boawae and Mbay; unreliable at Aimere and between the villages.</dd>
+        <dt>Resupply</dt><dd>Basic at Mataloko and Boawae; full at Mbay.</dd>
+        <dt>Sleep</dt><dd>Guesthouse at Mataloko, homestay at Boawae, hotels at Mbay (reported IDR 150,000 to 250,000).</dd>
+        <dt>Protocol</dt><dd>Wogo: council permission for a group visit, modest contribution. The seminary is a working institution: ask before photographing inside its grounds. Etu is attended only with adat consent.</dd>
+        <dt>Hazards</dt><dd>Ebulobo alert level (Level I as of the last public bulletins found) and earthquake aftershock advisories to be re-checked before race week; scalding ground at the geothermal field; heat on the shadeless plain.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 06 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/ebulobo-boawae.jpg" alt="Ebulobo and Boawae">
+      <h5>Ebulobo and Boawae</h5>
+      <p>The cone from orbit, the town on its shoulder, the Trans-Flores at its foot. A magnitude 7.7 earthquake on 15 August 2026 triggered landslides near the summit, per Indonesia&#39;s geological agency, with no rise in volcanic activity.</p>
+      <div class="meta">Sentinel-2 · 2025-09-22 · 12 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/mbay-aesesa-plain.jpg" alt="Mbay and the Aesesa plain">
+      <h5>Mbay and the Aesesa plain</h5>
+      <p>The rice bowl of the island: irrigation channels, causeways between paddies, the coast beyond. Nagekeo as a whole is dry; the plain is the exception.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 14 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Ridge-crossing footpaths between the coasts in Nagekeo: the real scouting work of this section.</li><li>Mbay&#39;s town-centre coordinate is still a desk estimate.</li><li>Exact Etu dates for the race year, and whether the race should meet or avoid them.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#4a6fa5"><b>Boawae to Nangaroro direct</b> — Skip Mbay and the Aesesa plain: cross from Boawae straight over to the south coast at Nangaroro. Shorter and less remote; a bad-weather or time-limit fallback. <span class="num">49 km</span> instead of <span class="num">118 km</span> (-69 km). See the options chapter.</div>
+      
+      <div class="opt-callout" style="--c:#9c4a1a"><b>South coast direct: Aimere to Nangaroro</b> — Stay on the remote south coast of Ngada and Nagekeo instead of climbing back to the plateau: drops Mataloko, Ebulobo, Boawae and Mbay. High remoteness, heavy climbing per kilometre, water unknown. <span class="num">102 km</span> instead of <span class="num">197 km</span> (-94 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">07</div>
+    <div class="kicker">Section 07 · km 798 to 904</div>
+    <h2>The blue-stone coast to Ende</h2>
+    <div class="sub">Across the island&#39;s waist to a beach made of turquoise pebbles and the town where a republic was imagined</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Mbay → Nangaroro → Penggajawa → Ende</div>
+    <img class="map" src="img/maps/sec-07.jpg" alt="Map of section 7">
+    <div class="strip">
+      <div><div class="v">107</div><div class="l">km</div></div>
+      <div><div class="v">+2,093</div><div class="l">m climb</div></div>
+      <div><div class="v">−2,054</div><div class="l">m descent</div></div>
+      <div><div class="v">665</div><div class="l">m high point</div></div>
+      <div><div class="v">72%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">low</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-07-blue-stone-coast.png" alt="Elevation profile of section 7">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 07 · The blue-stone coast to Ende</div>
+  <p class="lede">The narrowest part of Flores is short on the map and hard on the ground.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>The crossing from the north-coast plain at Mbay to Nangaroro on the south coast is the least verified link of the whole course: a computed candidate over the island&#39;s waist, mostly unpaved, with about 1,700 metres of climbing packed into fifty-odd kilometres, and no source that confirms the specific line. It is scouting-priority terrain, not a confirmed road. Nangaroro itself is a farming and fishing district of grey-stone beaches; a homestay, unreliable water, and the last bed before Ende.</p><p>Twenty-five kilometres before Ende comes the section&#39;s headline: Penggajawa, a beach made not of sand but of smooth blue-green volcanic pebbles, called Batu Biru or Batu Hijau depending on whether they are wet. Local accounts differ on whether the stones come down the rivers from the mountains or up from the seafloor; what is certain is that residents hand-sort them to size for a small export trade, without machinery. Nobody sleeps here; it is a stop and a photograph.</p><p>Ende is the largest town of central Flores, about 90,000 people under the 637-metre Iya volcano, with a hospital, an airport, hotels, the Mbongawani market where traders wear woven sarongs, and the strongest history hook of the middle course. Sukarno lived here in Dutch-imposed exile from January 1934 to 1938, in a plain 1927 house on Jalan Perwira that has been a museum since 1954, its meditation room and library largely unchanged, free entry by donation. On the seafront a five-branched breadfruit tree, planted in 1980 to replace the original, marks where he is said to have worked out the five principles of the Pancasila while looking at the sea. Full resupply, and the gateway to the signature section.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable at Mbay and Ende only. Carry for the waist crossing.</dd>
+        <dt>Resupply</dt><dd>Full at both ends; basic at Nangaroro; nothing at Penggajawa.</dd>
+        <dt>Sleep</dt><dd>Hotels at Mbay and Ende; homestay at Nangaroro; nothing at Penggajawa.</dd>
+        <dt>Protocol</dt><dd>None specific. The exile house is open 08:00 to 16:00; donation box.</dd>
+        <dt>Hazards</dt><dd>Unverified track on the crossing; heat on the exposed coast road; Iya&#39;s alert level to be checked before any decision on the southern peninsula.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 07 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/penggajawa-blue-stone.jpg" alt="Penggajawa">
+      <h5>Penggajawa</h5>
+      <p>The blue-stone coast between Nangapanda and Ende from orbit; the Bajawa to Ende road hugs the shore. The stones show their colour best wet.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 8 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/ende-iya.jpg" alt="Ende under Iya">
+      <h5>Ende under Iya</h5>
+      <p>The town, its airport and the southern peninsula with Iya&#39;s crater. PVMBG held Iya at Level II with a two-kilometre stay-away radius through at least June 2026 after a rise to Level III in late 2024.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 10 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Ridge-crossing footpaths across the Mbay to Nangaroro waist: ground truth needed.</li><li>Which line to Nangaroro: over the waist from Mbay, direct from Boawae, or the south coast from Aimere?</li><li>Water and beds at Nangaroro and Penggajawa for a race field.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#4a6fa5"><b>Boawae to Nangaroro direct</b> — Skip Mbay and the Aesesa plain: cross from Boawae straight over to the south coast at Nangaroro. Shorter and less remote; a bad-weather or time-limit fallback. <span class="num">49 km</span> instead of <span class="num">118 km</span> (-69 km). See the options chapter.</div>
+      
+      <div class="opt-callout" style="--c:#9c4a1a"><b>South coast direct: Aimere to Nangaroro</b> — Stay on the remote south coast of Ngada and Nagekeo instead of climbing back to the plateau: drops Mataloko, Ebulobo, Boawae and Mbay. High remoteness, heavy climbing per kilometre, water unknown. <span class="num">102 km</span> instead of <span class="num">197 km</span> (-94 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">08</div>
+    <div class="kicker">Section 08 · km 904 to 1,054</div>
+    <h2>Kelimutu and the Lio country</h2>
+    <div class="sub">The signature section: adat villages, rice terraces, three coloured lakes at dawn, the weavers, the white beaches</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Ende → Detusoko → Moni → Kelimutu → Wolojita → Nggela → Koka</div>
+    <img class="map" src="img/maps/sec-08.jpg" alt="Map of section 8">
+    <div class="strip">
+      <div><div class="v">149</div><div class="l">km</div></div>
+      <div><div class="v">+4,704</div><div class="l">m climb</div></div>
+      <div><div class="v">−4,765</div><div class="l">m descent</div></div>
+      <div><div class="v">1,581</div><div class="l">m high point</div></div>
+      <div><div class="v">54%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">medium</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-08-kelimutu-lio.png" alt="Elevation profile of section 8">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 08 · Kelimutu and the Lio country</div>
+  <p class="lede">The only place on the course where riders are required to stop. In Lio belief it is where souls go.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Out of Ende the road climbs past Wolotopo, a Lio village stepped up a steep hillside above the sea where households still weave and keep their ceremonial houses, into cool highland farmland. The Detusoko terraces at 800 metres are compared with Ubud&#39;s and see a fraction of the visitors; Wologai, higher still at about 1,045 metres, is an 800-year-old circular village around a stepped stone ceremonial ground, rebuilt in traditional form after a 2012 fire, where elders receive guests with betel and a guest book and the annual Nggua Ria thanksgiving is still held. Moni, one road of homestays and warungs at the foot of the mountain, is where riders sleep before the dawn climb.</p><p>Kelimutu&#39;s three crater lakes sit at 1,639 metres on one summit inside a 5,300-hectare national park: Tiwu Ata Mbupu, the lake of the old people; the middle lake of young men and maidens; Tiwu Ata Polo, the bewitched lake. Each shifts colour independently over months as the hydrothermal chemistry changes; in July 2026 all three were shades of green. The Lio hold that the lakes sort the dead by how they lived, and every 14 August the mosalaki process to the rim for Pati Ka, feeding the ancestral spirits with red rice, pork, betel, tobacco and palm wine before a circle dance. The park opens at five in the morning; the foreign entrance fee is reported at IDR 150,000 on weekdays and 225,000 at weekends. Standing rules apply regardless of alert level: no approach to the rims, above all at the middle crater, no camping, dawn only. PVMBG recorded a rise in the middle lake&#39;s temperature through June 2026 and a January 2026 wall slide, and kept the volcano at Level I; the status is re-checked the week before the race, never assumed.</p><p>South of the mountain the course drops through the Lio weaving villages. Jopu and Wolojita share the back-strap loom tradition but now mostly dye with chemicals; Nggela, on a coastal ridge at 180 metres reached by a single-track road, is the village that defines Lio ikat, almost every household at a loom, its cloth collected internationally, and even here truly natural morinda-root dyeing, a two-year process, is rare and demonstrated rather than routine. Nggela is a named cultural checkpoint in the concept and needs council agreement like Wae Rebo. The section ends on white sand: Koka&#39;s twin coves below Wolowiro, two kilometres of unpaved spur through cocoa forest with a small private toll, and Paga&#39;s simple beachside warungs on the highway.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable at Ende, Detusoko and Moni; unreliable at Nggela and Koka. Carry from Moni for the weaving villages.</dd>
+        <dt>Resupply</dt><dd>Full at Ende; basic at Detusoko and Moni (last reliable before the coast); minimal at Wolojita and Nggela; warungs at Koka and Paga.</dd>
+        <dt>Sleep</dt><dd>Guesthouses in Moni (limited, book ahead in season); homestays at Detusoko, Wolojita and Nggela; nothing at the summit or the beaches.</dd>
+        <dt>Protocol</dt><dd>Mandatory dawn stop at Kelimutu; national park fee. Wolotopo, Wologai and Nggela are adat villages: accompanied visits, betel or donation, guest book, council agreement for a checkpoint.</dd>
+        <dt>Hazards</dt><dd>Volcanic gas and crater-wall instability at Kelimutu; cold and wind before dawn; landslides on the Wolojita coast road; the final approach to the lakes is stairs, carried not ridden.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 08 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/kelimutu-lakes.jpg" alt="The three lakes">
+      <h5>The three lakes</h5>
+      <p>Kelimutu from orbit: the two adjoining craters and the third apart, the summit road and car park below. Colours in this image are those of one dry-season day; they change.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 5 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/detusoko-terraces.jpg" alt="Detusoko">
+      <h5>Detusoko</h5>
+      <p>Terraced paddies, a small river and a suspension bridge on the Ende to Moni road, about 20 kilometres short of Moni.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 5 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/nggela-coast.jpg" alt="Nggela&#39;s coast">
+      <h5>Nggela&#39;s coast</h5>
+      <p>The ridge village and its single-track road above the south coast. The Wolojita coast road is known to be cut by landslides after heavy rain; frequency unknown.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 8 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/koka-beach.jpg" alt="Koka">
+      <h5>Koka</h5>
+      <p>The twin coves and their headland, about 48 kilometres west of Maumere. The private access spur charges small fees at up to two checkpoints; whether cyclists pay is unconfirmed.</p>
+      <div class="meta">Sentinel-2 · 2026-07-11 · 6 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Checkpoint agreements, above all with Nggela.</li><li>How often the Wolojita coast road is cut, and the detour.</li><li>Field coordinates for Paga and Koka; a landslide-free line between the weaving villages and the beaches.</li></ul>
+    </div>
+    <div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">09</div>
+    <div class="kicker">Section 09 · km 1,054 to 1,141</div>
+    <h2>Sikka and the Portuguese south</h2>
+    <div class="sub">A wooden church from 1899, a kingdom that kept its rajas, and the town the sea rebuilt</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Koka → Sikka village → Lela → Maumere</div>
+    <img class="map" src="img/maps/sec-09.jpg" alt="Map of section 9">
+    <div class="strip">
+      <div><div class="v">87</div><div class="l">km</div></div>
+      <div><div class="v">+2,447</div><div class="l">m climb</div></div>
+      <div><div class="v">−2,431</div><div class="l">m descent</div></div>
+      <div><div class="v">785</div><div class="l">m high point</div></div>
+      <div><div class="v">80%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">low</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-09-sikka-portuguese.png" alt="Elevation profile of section 9">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 09 · Sikka and the Portuguese south</div>
+  <p class="lede">The quiet older half of the Portuguese story that the finish town will complete.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Sikka village gave its name to the regency and to a royal line, the Ximenes da Silva, whose descendants still live here: a kingdom whose rulers converted under Portuguese and Dominican influence in the sixteenth and seventeenth centuries and kept real authority into the twentieth, long after Portugal ceded the coast to the Dutch in 1859. Its wooden church of St Ignatius Loyola, begun in 1896 and first used for Mass on Christmas Eve 1899, blends a European Baroque form with ikat-motif interior decoration and teak shipped from Java. Every Good Friday the village carries a crucifix said to be a royal heirloom through the streets in the Logu Senhor procession. Sikka weavers make some of the island&#39;s most elaborate ikat, dark palettes with sailors, boats, shrimp and crabs from a seafaring ancestry.</p><p>Lela, the next sub-district capital along the coast, is a secondary seat of the same mission and a natural link into Maumere; a nineteen-metre Mary of All Nations statue stands on a hill in the area, its exact position relative to the route still to be confirmed. Nine kilometres inland from Maumere, on a hilltop, is Ledalero: St Paul&#39;s Major Seminary, founded in 1937 by the Divine Word Missionaries, one of the largest Catholic seminaries in the world, which has formed close to 1,500 missionary priests.</p><p>Maumere is the largest town of eastern Flores and the section&#39;s finish: airport, the TC Hillers hospital, market, hotels, a natural rest day before the hardest logistics of the race. At half past five in the morning on 12 December 1992 a magnitude 7.7 earthquake off the north coast sent tsunami waves ashore within minutes, killing about 2,000 people, some 700 of them on Babi island where the run-up reached 26 metres. The town&#39;s young building stock is that legacy. On the way in, Wuring is a Bajo, or mixed Bajo and Bugis, village built on stilts over the tidal flats, plank walkways instead of streets, boats under the houses: a working community to ride through slowly and respectfully, not a checkpoint.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable at Maumere; unreliable at Koka, Sikka and Lela.</dd>
+        <dt>Resupply</dt><dd>Warungs at Koka and Paga; basic at Lela; full at Maumere.</dd>
+        <dt>Sleep</dt><dd>Homestay at Sikka; hotels at Maumere.</dd>
+        <dt>Protocol</dt><dd>Active parish and royal graves at Sikka: greet before photographing, courtesy donation at the church. Ledalero is a working seminary. Wuring: ride slowly, ask before photographing, dress modestly.</dd>
+        <dt>Hazards</dt><dd>Coastal heat; town traffic in Maumere; earthquake and tsunami awareness for the whole north coast.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 09 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/sikka-lela.jpg" alt="Sikka and Lela">
+      <h5>Sikka and Lela</h5>
+      <p>The south-coast curve between the two mission villages. The road is generally good; no lodging confirmed in Sikka itself.</p>
+      <div class="meta">Sentinel-2 · 2026-06-29 · 8 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/maumere-wuring.jpg" alt="Maumere and Wuring">
+      <h5>Maumere and Wuring</h5>
+      <p>The bay, the town, the stilt village on the western flats, Frans Seda airport to the east. No dedicated bicycle shop was found anywhere on Flores; carry spares.</p>
+      <div class="meta">Sentinel-2 · 2026-06-29 · 12 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>Any bicycle spares or mechanic in Maumere?</li><li>Position of Bukit Nilo relative to Lela and the route.</li><li>Whether cyclists pay the Koka access toll, and how much.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#e09f3e"><b>Bola south-coast loop</b> — Maumere to the Bola coast on the south side of the Sikka isthmus before climbing back to Watublapi and Egon. <span class="num">46 km</span> instead of <span class="num">29 km</span> (+16 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="opener">
+  <div class="head">
+    <div class="no num">10</div>
+    <div class="kicker">Section 10 · km 1,141 to 1,332</div>
+    <h2>Egon and the far east</h2>
+    <div class="sub">Weavers, an active crater, a mangrove coast, the crux of the race and a finish under an ancestral mountain</div>
+  </div>
+  <div class="body">
+    <div class="anchors">Maumere → Watublapi → Egon (Blidit) → Waiterang → Talibura → north of Lewotobi → Larantuka</div>
+    <img class="map" src="img/maps/sec-10.jpg" alt="Map of section 10">
+    <div class="strip">
+      <div><div class="v">191</div><div class="l">km</div></div>
+      <div><div class="v">+3,776</div><div class="l">m climb</div></div>
+      <div><div class="v">−3,785</div><div class="l">m descent</div></div>
+      <div><div class="v">891</div><div class="l">m high point</div></div>
+      <div><div class="v">66%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">high</div><div class="l">hike-a-bike</div></div>
+    </div>
+    <img src="img/profiles/sec-10-egon-far-east.png" alt="Elevation profile of section 10">
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section 10 · Egon and the far east</div>
+  <p class="lede">Spectacular and dangerous are the same fact here. The route is designed around it.</p>
+  <div class="wide-narrow">
+    <div class="story"><p>Eighteen kilometres south-east of Maumere, Watublapi is the most arrangeable cultural stop of the whole course: not an adat village to be petitioned but a weavers&#39; cooperative, Sanggar Bliran Sina, founded in the 1980s with the help of a German priest, now more than forty members who spin local cotton, dye it with indigo and morinda from their gardens, tie the resist patterns and weave on back-strap looms, and welcome groups with dance and music by arrangement. Buying cloth is how a visiting group says thank you.</p><p>Egon is the far east&#39;s hike-a-bike: an active volcano of about 1,661 to 1,703 metres, sources disagree, with an acid crater lake and fumaroles, climbed from an unsigned trailhead beyond Blidit at about 790 metres, roughly four hours up through forest onto bare slopes and four down. It reawakened in 2004, forcing 7,000 people off its flanks, and has been quiet at Level I since; a river hot spring five kilometres along the access road is the reward for those who do not summit. Then the black-sand coast at Waiterang and Wodong, small dive resorts and Pulau Babi offshore, and Talibura, a mangrove-fringed village that is the last basic resupply before the longest push of the race.</p><p>Lewotobi Laki-laki, 1,584 metres, and Lewotobi Perempuan, 1,703 metres, two kilometres apart, have been in violent eruption since 3 November 2024, when the first eruption of the crisis killed nine or ten people and displaced more than 10,000. The alert reached the maximum Level IV more than once, most recently in September 2025; in 2026 alone MAGMA Indonesia logged 778 eruptions by late August, the second most active volcano in the country. Ash has repeatedly closed Maumere&#39;s airport and blanketed the Trans-Flores through Talibura. As of the last week of August 2026 PVMBG held Level III with a five-kilometre exclusion radius and standing lahar warnings for named rivers. The course therefore stays on the north coast, well outside the radius, and treats the highway corridor via Boru as an alternative to be opened only by a race-week go/no-go decision against the live bulletin, with an abort rule agreed in advance. Larantuka is the finish: a Portuguese-Catholic port converted in the 1500s, where the Confreria has run the Semana Santa processions for more than four hundred years, carrying the Tuan Ma statue, found on the beach around 1510, from its chapel to the Reinha Rosari cathedral each Holy Week, and where some residents still speak a Portuguese-influenced Malay creole. Above it stands Ile Mandiri, 1,502 metres, the ancestral mountain of the old kingdom, four to five hours from Riang Kemie: the optional sting in the tail, if it can be shown safe after two weeks of racing.</p></div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>Reliable at Maumere and Larantuka only; unreliable at Watublapi, Blidit, Waiterang and Talibura; nothing mapped between Talibura and Larantuka on the north-coast line. Full carry for the last leg.</dd>
+        <dt>Resupply</dt><dd>Full at both ends; minimal at Watublapi and Blidit; basic at Talibura.</dd>
+        <dt>Sleep</dt><dd>Homestay at Watublapi; dive cottages at Waiterang; nothing at Blidit or Talibura; hotels at Larantuka.</dd>
+        <dt>Protocol</dt><dd>Watublapi: arrange the visit in advance, ask before photographing, buy cloth. Egon: guide or GPS track effectively required. Larantuka: church courtesy; Semana Santa itself falls at Easter, outside the race window.</dd>
+        <dt>Hazards</dt><dd>Lewotobi exclusion radius and lahars in named river corridors; ash on the highway; fumaroles at Egon&#39;s rim; heat and no water on the long coastal leg; very steep ground on Ile Mandiri.</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section 10 · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    
+    <figure class="place wide">
+      <img src="img/sat/lewotobi-twins.jpg" alt="The Lewotobi twins">
+      <h5>The Lewotobi twins</h5>
+      <p>Laki-laki and Perempuan from orbit, with fresh deposits and the villages on their flanks. No part of the course approaches them; any photography is long-range from the coast. Status re-checked monthly and in race week.</p>
+      <div class="meta">Sentinel-2 · 2026-08-05 · 14 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/egon-crater.jpg" alt="Egon&#39;s crater">
+      <h5>Egon&#39;s crater</h5>
+      <p>The crater and its lake above Blidit; the north-coast highway at Waigete below. An entry or parking fee is charged locally; the amount was not confirmed.</p>
+      <div class="meta">Sentinel-2 · 2025-09-02 · 8 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+    <figure class="place wide">
+      <img src="img/sat/larantuka-ile-mandiri.jpg" alt="Larantuka and Ile Mandiri">
+      <h5>Larantuka and Ile Mandiri</h5>
+      <p>The finish town on the strait, Adonara across the water, the cone behind. Ferries to Adonara, Solor, Lembata and Kupang; Gewayantana airport about fifteen kilometres out.</p>
+      <div class="meta">Sentinel-2 · 2026-06-01 · 14 km box · contains modified Copernicus Sentinel data</div>
+    </figure>
+    
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0"><li>The realistic corridor past Lewotobi, the reroute and the abort rule, checked against PVMBG every month.</li><li>Water and any resupply between Talibura and Larantuka on the north-coast line.</li><li>Whether an Ile Mandiri finale can be done safely at the end of a race.</li></ul>
+    </div>
+    <div>
+      <h4>Options touching this section</h4>
+      
+      <div class="opt-callout" style="--c:#e09f3e"><b>Bola south-coast loop</b> — Maumere to the Bola coast on the south side of the Sikka isthmus before climbing back to Watublapi and Egon. <span class="num">46 km</span> instead of <span class="num">29 km</span> (+16 km). See the options chapter.</div>
+      
+      <div class="opt-callout" style="--c:#b5179e"><b>Lewotobi southern corridor via Boru</b> — South of the Lewotobi twins through Boru on and around the Trans-Flores corridor. Only usable if the volcano&#39;s alert level and exclusion radius allow it on race day; the north-coast line stays the primary. <span class="num">118 km</span> instead of <span class="num">96 km</span> (+22 km). See the options chapter.</div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="page">
+  <div class="kicker">Beyond the main line</div>
+  <h2>Optional loops and alternatives</h2>
+  <div class="two">
+    <div><p>The main course is one line. Around it the data carries seven optional pieces, each routed over the same track network and each with the same honesty label: concept, unscouted. Two of them make the Ultra variant; one more makes the Ultra+. The rest are alternatives for a scouting verdict, a village decision, a volcano or a time limit. For each option the map shows the option in its own colour and the main-course stretch it would replace in dashed vermilion, and the table gives the derived numbers side by side.</p><p>The concept document hoped the loops would add 120 to 250 kilometres. Routed honestly between their real endpoints they add far less; the numbers below are the ones that count.</p></div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th>Option</th><th>Kind</th><th class="n">km</th><th class="n">Climb</th><th class="n">Replaces km</th><th class="n">Δ km</th></tr></thead>
+        <tbody>
+        <tr><td style="color:#1b998b;font-weight:700">Manggarai Timur interior loop</td><td>loop</td><td class="n">204</td><td class="n">5,450</td><td class="n">170</td><td class="n">+34</td></tr><tr><td style="color:#e09f3e;font-weight:700">Bola south-coast loop</td><td>loop</td><td class="n">46</td><td class="n">1,332</td><td class="n">29</td><td class="n">+16</td></tr><tr><td style="color:#6f4a8e;font-weight:700">Inerie full circuit via Gurusina and the Sewowoto coast</td><td>loop</td><td class="n">35</td><td class="n">421</td><td class="n">30</td><td class="n">+5</td></tr><tr><td style="color:#6b8e23;font-weight:700">Wae Rebo out-and-back</td><td>alternative</td><td class="n">60</td><td class="n">2,018</td><td class="n">60</td><td class="n">+0</td></tr><tr><td style="color:#4a6fa5;font-weight:700">Boawae to Nangaroro direct</td><td>alternative</td><td class="n">49</td><td class="n">1,151</td><td class="n">118</td><td class="n">-69</td></tr><tr><td style="color:#9c4a1a;font-weight:700">South coast direct: Aimere to Nangaroro</td><td>alternative</td><td class="n">102</td><td class="n">2,150</td><td class="n">197</td><td class="n">-94</td></tr><tr><td style="color:#b5179e;font-weight:700">Lewotobi southern corridor via Boru</td><td>alternative</td><td class="n">118</td><td class="n">1,812</td><td class="n">96</td><td class="n">+22</td></tr>
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:2mm">Ultra = main course with the Manggarai Timur interior and Bola coast loops (1,382 km, +35,913 m). Ultra+ adds the Inerie full circuit (1,386 km, +35,768 m).</p>
+    </div>
+  </div>
+  <div class="considered avoid">
+    <h4>Considered and not offered</h4>
+    <p><b>A Kelimutu to Egon highland link.</b> Computes at 120 to 163 kilometres with 4,700 to 7,300 metres of climbing and would drop the Lio weaving villages, the Paga and Koka beaches, Sikka and Maumere. It contradicts the cultural priority, so it is recorded in the data and not offered.</p><p><b>Riung to Mbay along the north coast.</b> Computes at 48 kilometres with the lowest remoteness index on the course: a paved main road. No adventure value on its own; it would only make sense inside a re-ordered Ngada section.</p><p><b>An Adonara or Lembata epilogue by ferry.</b> Named in the concept as a way to reach 1,600 kilometres or more. Ferries from Larantuka to Adonara, Solor and Lembata exist and are unreliable; not built as segments, and not on Flores.</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#1b998b"><span class="kind">loop · sections 3, 4</span><h3>Manggarai Timur interior loop</h3></div>
+  <img class="map optmap" src="img/maps/opt-manggarai-timur-interior.jpg" alt="Map of option Manggarai Timur interior loop">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#1b998b">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> Ruteng to the south coast at Borong, the unscouted Elar interior, back to the north coast at Pota; skips Ranamese, Liang Bua and Reo.</p>
+      <p><b>Why.</b> Borong is a full-service regency capital on the south coast; Elar&#39;s sub-district has a forest lake with eight satellites, the Tetes Tana waterfall, Puncatiti weaving and cattle savanna; and the Elar to Pota link is the least-known stretch in the whole concept. It swaps the highland lake at Ranamese, the Liang Bua cave and the port of Reo for the interior of Manggarai Timur.</p>
+      <p><b>When.</b> For the Ultra. Only after scouts have ridden Borong to Elar to Pota; no source addresses the Elar to Pota stretch at all.</p>
+      <p><b>Risks.</b> The same August 2026 water emergency reached posts in Borong sub-district; Elar has minimal resupply and no confirmed beds.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#1b998b;color:#1b998b">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">204 km</td><td class="n">170 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+5,450 m</td><td class="n">+3,062 m</td></tr>
+          <tr><td>High point</td><td class="n">1,646 m</td><td class="n">1,354 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">96%</td><td class="n">40%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0 km</td><td class="n">0.1 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">3.64</td><td class="n">1.85</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">3 (0)</td><td class="n">4 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-manggarai-timur-interior.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-manggarai-timur-interior.gpx</code> · segments s-ruteng-borong-b, s-borong-elar-b, s-elar-pota-b</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#e09f3e"><span class="kind">loop · sections 10</span><h3>Bola south-coast loop</h3></div>
+  <img class="map optmap" src="img/maps/opt-bola-coast.jpg" alt="Map of option Bola south-coast loop">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#e09f3e">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> Maumere to the Bola coast on the south side of the Sikka isthmus before climbing back to Watublapi and Egon.</p>
+      <p><b>Why.</b> A quieter, far less documented coast on the south side of the Sikka isthmus before climbing to Watublapi and Egon. Bola is itself a weaving village, with the Watu Krus stone cross on its seafront.</p>
+      <p><b>When.</b> For the Ultra, or for any edition that wants one more coast before the far east.</p>
+      <p><b>Risks.</b> Unscouted road, minimal resupply, unreliable water at Bola.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#e09f3e;color:#e09f3e">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">46 km</td><td class="n">29 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+1,332 m</td><td class="n">+649 m</td></tr>
+          <tr><td>High point</td><td class="n">503 m</td><td class="n">451 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">93%</td><td class="n">77%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0 km</td><td class="n">0 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">3.44</td><td class="n">2.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">2 (0)</td><td class="n">1 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-bola-coast.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-bola-coast.gpx</code> · segments s-maumere-bola-b, s-bola-watublapi-b</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#6f4a8e"><span class="kind">loop · sections 5</span><h3>Inerie full circuit via Gurusina and the Sewowoto coast</h3></div>
+  <img class="map optmap" src="img/maps/opt-inerie-circuit.jpg" alt="Map of option Inerie full circuit via Gurusina and the Sewowoto coast">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#6f4a8e">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> Round the whole cone: Bena to the rebuilt village of Gurusina, down the wild south flank to the sea at Sewowoto (Ena Bhara beach), then the coast road west to Aimere. Network-routed; the middle leg has the maximum remoteness index and is unscouted.</p>
+      <p><b>Why.</b> Rounds the whole cone instead of crossing its shoulder: Bena to the rebuilt village of Gurusina, down the wild southern slope to the sea at Sewowoto, where waves spray through the rocks at Ena Bhara beach, then the coast road west to Aimere. Two more cultural stops and a coastal payoff, with far less estimated hike-a-bike than the shoulder.</p>
+      <p><b>When.</b> For the Ultra+, or as the main line if the shoulder descent proves unsafe with a loaded bike.</p>
+      <p><b>Risks.</b> The two legs south of Gurusina carry the maximum remoteness index in the data and nobody has scouted them; strong currents at the beach; no beds or water between Gurusina and Aimere.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#6f4a8e;color:#6f4a8e">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">35 km</td><td class="n">30 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+421 m</td><td class="n">+566 m</td></tr>
+          <tr><td>High point</td><td class="n">845 m</td><td class="n">1,117 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">20%</td><td class="n">40%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0.4 km</td><td class="n">8.8 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">3.96</td><td class="n">4.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">3 (0)</td><td class="n">1 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-inerie-circuit.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-inerie-circuit.gpx</code> · segments s-bena-gurusina-a, s-gurusina-sewowoto-a, s-sewowoto-aimere-a</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#6b8e23"><span class="kind">alternative · sections 2</span><h3>Wae Rebo out-and-back</h3></div>
+  <img class="map optmap" src="img/maps/opt-wae-rebo-out-and-back.jpg" alt="Map of option Wae Rebo out-and-back">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#6b8e23">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> If the onward trail from Wae Rebo cannot be done with a bike: climb to the village, descend the same path to Denge, then ride the remote-profile road to Todo.</p>
+      <p><b>Why.</b> If the onward trail from Wae Rebo cannot be done with a bike, riders climb to the village, return by the same path to Denge and ride the remote-profile road to Todo. Almost the same distance as the main line, the same village, honest about the trail.</p>
+      <p><b>When.</b> The default until scouts have walked the onward trail; every trekking account uses the Denge path both ways.</p>
+      <p><b>Risks.</b> Descending the steep porters&#39; steps with a loaded bike; timing the village welcome and the return in one day.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#6b8e23;color:#6b8e23">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">60 km</td><td class="n">60 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+2,018 m</td><td class="n">+2,018 m</td></tr>
+          <tr><td>High point</td><td class="n">1,237 m</td><td class="n">1,237 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">61%</td><td class="n">61%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">10.2 km</td><td class="n">10.2 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">5.0</td><td class="n">5.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">3 (0)</td><td class="n">2 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-wae-rebo-out-and-back.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-wae-rebo-out-and-back.gpx</code> · segments s-denge-wae-rebo-b, s-denge-wae-rebo-b, s-denge-todo-a</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#4a6fa5"><span class="kind">alternative · sections 6, 7</span><h3>Boawae to Nangaroro direct</h3></div>
+  <img class="map optmap" src="img/maps/opt-boawae-nangaroro-direct.jpg" alt="Map of option Boawae to Nangaroro direct">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#4a6fa5">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> Skip Mbay and the Aesesa plain: cross from Boawae straight over to the south coast at Nangaroro. Shorter and less remote; a bad-weather or time-limit fallback.</p>
+      <p><b>Why.</b> Cross from Boawae straight over the spine to the south coast at Nangaroro and skip Mbay and the Aesesa plain. Much shorter and less remote.</p>
+      <p><b>When.</b> A time-limit fallback, a heat or water contingency, or a shorter edition.</p>
+      <p><b>Risks.</b> Drops the rice plain and Mbay&#39;s full resupply; Nangaroro&#39;s water is unreliable at the far end.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#4a6fa5;color:#4a6fa5">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">49 km</td><td class="n">118 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+1,151 m</td><td class="n">+2,284 m</td></tr>
+          <tr><td>High point</td><td class="n">977 m</td><td class="n">796 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">97%</td><td class="n">75%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0 km</td><td class="n">0.1 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">3.0</td><td class="n">3.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">1 (0)</td><td class="n">2 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-boawae-nangaroro-direct.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-boawae-nangaroro-direct.gpx</code> · segments s-boawae-nangaroro-c</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#9c4a1a"><span class="kind">alternative · sections 6, 7</span><h3>South coast direct: Aimere to Nangaroro</h3></div>
+  <img class="map optmap" src="img/maps/opt-south-coast-aimere-nangaroro.jpg" alt="Map of option South coast direct: Aimere to Nangaroro">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#9c4a1a">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> Stay on the remote south coast of Ngada and Nagekeo instead of climbing back to the plateau: drops Mataloko, Ebulobo, Boawae and Mbay. High remoteness, heavy climbing per kilometre, water unknown.</p>
+      <p><b>Why.</b> Stay on the remote south coast of Ngada and Nagekeo from Aimere all the way to Nangaroro instead of climbing back to the plateau. High remoteness, roughly 36 metres of climbing per kilometre on tertiary and village roads, grey-stone beaches at Tonggo with coconut palms and thatched shelters.</p>
+      <p><b>When.</b> A coast-hugging variant for an edition that has already made the plateau&#39;s cultural stops on another day, or for a shorter race.</p>
+      <p><b>Risks.</b> Drops Mataloko, Wogo, Ebulobo, Boawae and Mbay, the section&#39;s whole volcano and highland-village content; weak resupply and unreliable water at both ends and nothing confirmed between.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#9c4a1a;color:#9c4a1a">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">102 km</td><td class="n">197 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+2,150 m</td><td class="n">+4,505 m</td></tr>
+          <tr><td>High point</td><td class="n">880 m</td><td class="n">1,362 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">72%</td><td class="n">66%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0.1 km</td><td class="n">8.5 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">4.0</td><td class="n">3.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">1 (0)</td><td class="n">4 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-south-coast-aimere-nangaroro.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-south-coast-aimere-nangaroro.gpx</code> · segments s-aimere-nangaroro-a</p>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="opt-head" style="--c:#b5179e"><span class="kind">alternative · sections 10</span><h3>Lewotobi southern corridor via Boru</h3></div>
+  <img class="map optmap" src="img/maps/opt-lewotobi-corridor.jpg" alt="Map of option Lewotobi southern corridor via Boru">
+  <div class="legend" style="margin-top:2mm"><span style="--c:#b5179e">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> South of the Lewotobi twins through Boru on and around the Trans-Flores corridor. Only usable if the volcano&#39;s alert level and exclusion radius allow it on race day; the north-coast line stays the primary.</p>
+      <p><b>Why.</b> The Trans-Flores corridor south of the twin volcanoes through Boru, the sub-district capital with roadside restaurants and a PVMBG observation post. Shorter to plan, longer as routed, and inside the zone that ash has closed repeatedly.</p>
+      <p><b>When.</b> Only if PVMBG&#39;s alert level and exclusion radius allow it on race day, decided in race week against the live bulletin, with the north-coast line as the primary and an abort rule agreed in advance.</p>
+      <p><b>Risks.</b> Everything that section 10 says about Lewotobi: eruptions, ash on the road, lahars in the river corridors, a radius that has been 4, 5 and 8 kilometres within a single year.</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:#b5179e;color:#b5179e">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">118 km</td><td class="n">96 km</td></tr>
+          <tr><td>Climbing</td><td class="n">+1,812 m</td><td class="n">+1,246 m</td></tr>
+          <tr><td>High point</td><td class="n">410 m</td><td class="n">294 m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">54%</td><td class="n">62%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">0.9 km</td><td class="n">6.4 km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">2.42</td><td class="n">3.0</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">2 (0)</td><td class="n">1 (0)</td></tr>
+        </tbody>
+      </table>
+      <img src="img/profiles/opt-lewotobi-corridor.png" alt="Elevation profile of the option" style="margin-top:3mm">
+      <p class="small">GPX: <code>exports/gpx/options/opt-lewotobi-corridor.gpx</code> · segments s-talibura-boru-a, s-boru-larantuka-a</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="page">
+  <div class="kicker">Safety</div>
+  <h2>Hazards and constraints</h2>
+  <p>Flores is volcanically and seismically alive, hot on its coasts and cold on its ridges, and it carries malaria. None of this argues against the race; all of it argues for dated information, pre-agreed rules and a medical plan. Volcano statuses below are the last confirmed as of early September 2026 and must be re-read from PVMBG and MAGMA Indonesia monthly and in race week.</p>
+  <table class="haz avoid">
+    <thead><tr><th>Volcano</th><th>Summit</th><th>Last confirmed status (dated)</th><th>Handling on the course</th></tr></thead>
+    <tbody><tr><td>Lewotobi Laki-laki / Perempuan</td><td class="num">1,584 / 1,703 m</td><td>Level III, 5 km exclusion, lahar warnings (27 Aug–2 Sep 2026); Level IV at times in 2024–2025; 778 eruptions in 2026 by 27 Aug</td><td>Section 10: no-go zone; north-coast corridor primary; Boru corridor gated by a race-week decision</td></tr><tr><td>Iya (Ende)</td><td class="num">637 m</td><td>Level II, 2 km stay-away radius (through June 2026); Level III Nov 2024 to Jan 2025</td><td>Section 7: no course dependency on the southern peninsula; re-check before Ende</td></tr><tr><td>Kelimutu</td><td class="num">1,639 m</td><td>Level I; middle-lake temperature rose 28 to 35 °C in June 2026; crater-wall slide Jan 2026 judged weathering</td><td>Section 8: mandatory dawn stop; no rim approach, no camping, regardless of level</td></tr><tr><td>Ebulobo</td><td class="num">2,124 m</td><td>Level I in the last public round-ups; summit-area landslides after the 15 Aug 2026 M7.7 earthquake, no rise in activity</td><td>Section 6: course rounds the base; summit is optional and guided</td></tr><tr><td>Egon</td><td class="num">1,661–1,703 m</td><td>Level I; reawakened 2004 (7,000 evacuated), last notable emission cited 2008</td><td>Section 10: optional hike-a-bike gated by status; no lingering at fumaroles</td></tr><tr><td>Inerie</td><td class="num">2,245 m</td><td>Not on active alert lists; last reported smoke 1911</td><td>Section 5: hazard is the loose, exposed hike-a-bike terrain, not eruption</td></tr><tr><td>Wai Sano</td><td class="num">903 m</td><td>No confirmed Holocene eruption; hot springs and solfataras active</td><td>Section 1: context only</td></tr><tr><td>Ile Mandiri</td><td class="num">1,502 m</td><td>Dormant, not actively monitored</td><td>Section 10: optional finale; steepness and fatigue are the hazard</td></tr><tr><td>Rokatenda (Palue)</td><td class="num">875 m</td><td>Episodic unrest, fatal eruption 2013; offshore</td><td>Context for the north coast; not on the course</td></tr></tbody>
+  </table>
+  <div class="cards"><div class="card"><b>Earthquakes and tsunami</b>The 12 December 1992 M7.7 earthquake and tsunami killed about 2,000 people around Maumere and on Babi island, with a 26-metre run-up at Riang-Kroko. On 15 August 2026 a M7.7 earthquake 68 kilometres north-north-west of Ende killed at least 47 people, damaged hundreds of houses in Nagekeo and produced more than 230 aftershocks; a tsunami warning was lifted the same day. Check road and bridge damage reports in Nagekeo before planning near Boawae; carry a tsunami awareness note for the whole north coast.</div><div class="card"><b>Water and heat</b>The north coast and the Nagekeo interior were on emergency water trucking in August 2026. Mandatory carry capacity, coasts ridden early and late, a heat-illness plan, planned water points only where unavoidable.</div><div class="card"><b>Malaria and dengue</b>East Nusa Tenggara is among Indonesia&#39;s highest-malaria provinces; Sikka regency was named among the concentrations in 2023, while several Flores districts hold elimination certificates. Prophylaxis advice from a travel clinic, repellent, nets at checkpoints, and symptom awareness in the briefing.</div><div class="card"><b>Season</b>Late June to September is the dry, cooler south-east monsoon; August is the driest month. Coastal nights around 19 to 20 °C, highland towns noticeably colder; Ruteng averages about 16 °C. Landslides carry from the wet season into early dry season on cut slopes.</div><div class="card"><b>Animals</b>Free-roaming village dogs everywhere on course (standard bikepacking advice, rabies pre-exposure vaccination to be considered). Saltwater crocodiles are documented on Flores&#39; coasts, including a fatality in West Manggarai: no wading or swimming at river mouths, mangroves or estuaries, especially at dawn and dusk. Komodo dragons are on the islands, not on the course.</div><div class="card"><b>Roads</b>The Trans-Flores is used only for short links and never at night in towns; ash has reduced visibility on it through Talibura, Ile Bura and Titehena during eruptive phases. Off the highway, road quality is often poor and better suited to motorbikes than cars, which is the point.</div></div>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Story and protocol</div>
+  <h2>Cultural threads and protocol</h2>
+  <p>The course is built to carry a handful of stories from one end of the island to the other. They are also the reason the race must arrive as a guest.</p>
+  <div class="thread"><div><div class="t">Deep time</div><div class="w">Liang Bua, Mata Menge</div></div><p>A one-metre-tall human relative excavated in 2003, dated to 60,000 to 100,000 years; and, in the So&#39;a basin, a jaw and teeth from about 700,000 years ago. Flores was an island of its own evolution long before anyone now living.</p></div><div class="thread"><div><div class="t">The megalithic present</div><div class="w">Bena, Luba, Tololela, Gurusina, Wogo; Wae Rebo, Todo; Cancar</div></div><p>Ngadhu and bhaga shrines, one pair per clan; conical mbaru niang houses; spider-web fields divided from a centre. Living social orders made visible in stone, thatch and rice.</p></div><div class="thread"><div><div class="t">Weaving</div><div class="w">Nggela, Jopu, Wolojita; Watublapi; Manggarai songke</div></div><p>Three living ikat traditions: Lio, Sikka and Manggarai. Back-strap looms, resist-tied thread, natural dyes where they survive (Watublapi still uses them; the coastal Lio villages mostly do not). Buying cloth is the honest way to support a village.</p></div><div class="thread"><div><div class="t">Fire and souls</div><div class="w">Kelimutu; every volcano on the route</div></div><p>The three lakes as the sorting place of the dead in Lio belief, fed every 14 August at Pati Ka. Ile Mandiri as the ancestor of the Larantuka kingdom. Inerie faced by every shrine beneath it.</p></div><div class="thread"><div><div class="t">Portugal and Rome</div><div class="w">Sikka, Lela, Ledalero, Larantuka, Solor</div></div><p>A Dominican stone fort on Solor in 1566; a wooden church at Sikka in 1899; a seminary at Ledalero that has formed 1,500 priests; five centuries of Semana Santa at Larantuka. More than four in five people on Flores are Catholic.</p></div><div class="thread"><div><div class="t">The republic</div><div class="w">Ende</div></div><p>Sukarno&#39;s exile years, 1934 to 1938, and the breadfruit tree where the Pancasila is said to have been shaped.</p></div><div class="thread"><div><div class="t">Combat as ritual</div><div class="w">Cancar and Manggarai (caci); Boawae (Etu)</div></div><p>Whip-and-shield fighting at the Penti harvest festival; one-handed boxing in palm-fibre gloves in the Nagekeo harvest cycle in June and July. Attended only by consent, never staged.</p></div><div class="thread"><div><div class="t">Sea people</div><div class="w">Wuring; the Bajo coast</div></div><p>A stilt village of Bajo and Bugis families over the tidal flats of Maumere bay, one of very few on an island of highland farmers.</p></div>
+  <h3>Arriving as a guest</h3>
+  <ol class="etq"><li>Arrive slowly and greet the elders or the head of the household before anything else; a checkpoint in a village exists because the council said yes.</li><li>Sign the guest book and leave the donation or contribution the village has set; where betel (sirih) is offered, accept it.</li><li>Ask before photographing people, house interiors, ceremonies or the shrines; some structures are restricted.</li><li>Dress modestly in villages and churches; no swimwear away from the beach.</li><li>No naked flames, stoves or smoking near thatched houses. Gurusina lost 27 houses in one evening in 2018; Wologai lost 22 in 2012.</li><li>Buy cloth, food and beds from the village itself; that income is the reason the race is welcome.</li><li>Working communities that have not agreed to host (Wuring, the seminaries, the geothermal villages) are passed through, quietly, not treated as checkpoints.</li></ol>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Getting there, getting out, getting help</div>
+  <h2>Logistics</h2>
+  <p>A thin, well-serviced spine of five small airports, one paved highway, six full-resupply towns with hospitals, and how quickly it thins once the course leaves it.</p>
+  <div class="two">
+    <div>
+      <h4>Airports</h4>
+      <table class="list"><tbody><tr><td>Labuan Bajo, Komodo (LBJ)</td><td>The start. Denpasar four to six times a day, Jakarta with five airlines, Lombok, Kuala Lumpur; Singapore service in flux in 2025–2026. The only hospital in West Manggarai is here (Siloam).</td></tr><tr><td>Ende, H. Hasan Aroeboesman (ENE)</td><td>Two kilometres from town; Wings Air to Kupang and Labuan Bajo. Mid-course medical evacuation point.</td></tr><tr><td>Bajawa, Turelelo-Soa (BJW)</td><td>Twenty-four kilometres north of Bajawa; flights to Kupang and Ende.</td></tr><tr><td>Maumere, Frans Seda (MOF)</td><td>Five kilometres from town; Wings Air and Nam Air to Kupang, Labuan Bajo, Makassar. Repeatedly closed by Lewotobi ash, once from July to December 2024.</td></tr><tr><td>Larantuka, Gewayantana (LKA)</td><td>About fifteen kilometres out; regional carriers from Kupang. Shares the eruption-driven suspensions.</td></tr></tbody></table>
+      <h4 style="margin-top:4mm">Ferries</h4>
+      <table class="list"><tbody><tr><td>Labuan Bajo – Sape (Sumbawa)</td><td>The classic overland link from Bali; current timetable not confirmed.</td></tr><tr><td>Aimere – Waingapu (Sumba) / Kupang</td><td>ASDP, Tuesdays and Fridays to Sumba per the curated data.</td></tr><tr><td>Mbay (Marapokot) – Palue / Kewapante</td><td>Small ASDP links along the north coast.</td></tr><tr><td>Larantuka – Adonara / Solor / Lewoleba / Kupang</td><td>KMP Ile Labalekan and KMP Ile Mandiri on multi-day rotations; cancellations happen. No direct ferry back to Labuan Bajo: onward travel from the finish is by air.</td></tr></tbody></table>
+    </div>
+    <div>
+      <h4>Resupply and medical hubs</h4>
+      <table class="list"><tbody><tr><td>Labuan Bajo</td><td>Full resupply, supermarkets, ATMs, Siloam hospital, motorbike mechanics; no bicycle shop found.</td></tr><tr><td>Ruteng</td><td>Full resupply, market, RSUD Ruteng, many homestays; cold nights at 1,200 m.</td></tr><tr><td>Bajawa</td><td>Full resupply, market, ATMs, regional hospital.</td></tr><tr><td>Ende</td><td>Full resupply, RSUD Ende, airport; bicycle dealers listed in directories on Jalan Kemakmuran and Jalan Kelimutu, unconfirmed.</td></tr><tr><td>Maumere</td><td>Full resupply, TC Hillers hospital, airport; motorbike repair, no bicycle shop confirmed.</td></tr><tr><td>Larantuka</td><td>Full resupply, RSUD Larantuka, airport, port.</td></tr></tbody></table>
+      <h4 style="margin-top:4mm">Money, phones, papers</h4>
+      <ul class="qs" style="margin-top:0"><li>Telkomsel has the most reliable coverage on Flores; Indosat is a cheaper second choice in towns.</li><li>ATMs in the six hub towns and a few sub-district capitals; cash everywhere else.</li><li>Visa on arrival about USD 35 for 30 days, with a 2026 increase proposed; Komodo park fees and quotas changed in 2026: quote current figures, not these.</li><li>Homestays and guesthouses in villages run roughly IDR 150,000 to 450,000 a night where they exist; book Moni ahead in season.</li></ul>
+      <h4 style="margin-top:4mm">Format</h4>
+      <table class="list"><tbody><tr><td>Reference</td><td>The Silk Road Mountain Race: about 2,050 km and 35,000 m of climbing in 2026, a 14-day limit, three staffed checkpoints, fully self-supported, a field of around 130.</td></tr><tr><td>Flores</td><td>One stage, fixed route, self-supported, mandatory checkpoints of which several are cultural, roughly two weeks, late June to September. The numbers on the following pages are the course&#39;s own, derived from the routed geometry.</td></tr></tbody></table>
+    </div>
+  </div>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Appendix</div>
+  <h2>Photographs to source</h2>
+  <p>The satellite imagery in this brochure is Copernicus Sentinel-2 data, chosen for the least cloud over each place in the 2025 and 2026 dry seasons. Ground photographs could not be gathered in the environment that produced this document (every photo host was unreachable), so each place below carries the subjects worth shooting and the search terms most likely to find openly licensed photographs on Wikimedia Commons or Flickr. Credit and licence must travel with every image used.</p>
+  <div class="three">
+    <div><div class="shot"><b>Labuan Bajo <span class="small">· section 01</span></b>harbour at sunset with liveaboard dive boats; riders and bikes at a start-line gathering with the bay behind them; airport arrivals / departures against hills; waterfront street market<div class="terms">Search: Labuan Bajo harbour · Labuan Bajo Flores sunset · Komodo Airport Labuan Bajo · Labuan Bajo waterfront</div></div><div class="shot"><b>Mbeliling forest <span class="small">· section 01</span></b>farm track cutting through cleared plots at the forest edge with the ridge behind; dense hill-forest canopy seen from a high point, mist in the valleys; a hanging parrot, monarch, crow or owl in the canopy; birders with scopes at dawn<div class="terms">Search: Mbeliling · Gunung Mbeliling · Wallace&#39;s hanging parrot · Flores monarch bird · Flores crow Corvus florensis</div></div><div class="shot"><b>Cunca Wulang canyon <span class="small">· section 01</span></b>turquoise canyon pool between sheer rock walls; a cliff jump into the pool; the approach trail through rice terraces; narrow river gorge with cascading water<div class="terms">Search: Cunca Wulang · Cunca Wulang waterfall · Cunca Wulang canyon Flores</div></div><div class="shot"><b>Cunca Rami waterfall <span class="small">· section 01</span></b>waterfall dropping into a forest pool between rock walls; the steep descending jungle trail; riders carrying bikes on the forest trail (hike-a-bike)<div class="terms">Search: Cunca Rami waterfall · Air Terjun Cunca Rami · Cunca Rami Flores</div></div><div class="shot"><b>Sano Nggoang crater lake and Wai Sano volcano <span class="small">· section 01</span></b>the whole elliptical lake from a high rim viewpoint at dawn; steam rising off a solfatara on the south-east shore; a canoe or fisherman on the still water; forested caldera rim silhouette<div class="terms">Search: Sano Nggoang · Danau Sano Nggoang · Wae Sano lake Flores · Sano Nggoang crater lake</div></div><div class="shot"><b>Werang <span class="small">· section 01</span></b>the parish church spire against highland hills; the boarding-school compound and schoolchildren; a roadside kiosk/warung; the farm track approach into the village<div class="terms">Search: Werang Flores · Gereja Santo Klaus Werang · Sano Nggoang Manggarai Barat</div></div><div class="shot"><b>Dintor <span class="small">· section 02</span></b>white-sand Pantai Dintor with Pulau Mules offshore; small fishing boats pulled up on the beach; the coastal dirt track hugging cliffs; coastal village life<div class="terms">Search: Pantai Dintor · Dintor beach Flores · Satar Ruwuk Manggarai · Pulau Mules</div></div><div class="shot"><b>Denge <span class="small">· section 02</span></b>rice-field homestay at dusk with highland backdrop; porters and guides loading gear for the trek; trailhead signage / Pos 1; rainforest canopy on the ascent<div class="terms">Search: Denge village Flores · Wae Rebo trek trailhead · Wae Rebo trail Denge</div></div><div class="shot"><b>Wae Rebo <span class="small">· section 02</span></b>the seven mbaru niang in morning mist, shot from the ridge overlook on arrival; the Wae Lu&#39;u welcome ceremony; interior of a mbaru niang (levels, sacred drum, hearth); weavers working on the veranda; porters carrying loads / bikes up the forest trail<div class="terms">Search: Wae Rebo · Waerebo village · mbaru niang · Wae Rebo Flores · Waerebo Manggarai</div></div><div class="shot"><b>Todo <span class="small">· section 02</span></b>Niang Todo exterior against the highland backdrop; village elders receiving guests / guest book ceremony; interior detail of the drum house (if permitted); the ridgeline view back toward Wae Rebo&#39;s mountains<div class="terms">Search: Kampung Todo Manggarai · Todo village Flores · Niang Todo · Manggarai traditional house</div></div><div class="shot"><b>Iteng (Satar Mese south coast) <span class="small">· section 02</span></b>pasar Iteng market stalls; south-coast beach at the village; the road climbing away from the coast toward the highlands; parish church<div class="terms">Search: Iteng Manggarai · Satar Mese Flores · Iteng village Flores</div></div><div class="shot"><b>Iteng / Satar Mese south coast <span class="small">· section 03</span></b>rice paddies and coastline near Iteng at dawn; the road switchbacking up out of the coastal plain toward the highlands; everyday village life -- market stalls, motorbikes, church<div class="terms">Search: Satar Mese Manggarai · Iteng Flores · Manggarai south coast rice terraces</div></div><div class="shot"><b>Ruteng (highland capital: cathedral, market, Golo Curu) <span class="small">· section 03</span></b>Golo Curu grotto with Ruteng and rice terraces below at golden hour; Ruteng Cathedral facade and plaza; the morning market -- produce stalls, colour, activity; cool-highland light contrasted with the hot coast just descended<div class="terms">Search: Ruteng Flores · Golo Curu · Katedral Ruteng · Pasar Ruteng · Ruteng cathedral Flores</div></div><div class="shot"><b>Cancar spider-web rice fields (Lingko Cara) <span class="small">· section 03</span></b>aerial/high-angle shot of the full spider-web pattern from the viewing hill; close-up of a lodok centre point and radiating paddy edges; farmers working the fields at ground level for scale/contrast with the aerial pattern<div class="terms">Search: Cancar rice field · Lingko Cara · spider web rice field Flores · lingko Manggarai</div></div><div class="shot"><b>Poco Mandasawu and Poco Ranaka massif <span class="small">· section 03</span></b>the massif skyline from the Ruteng-Ranamese road; hike-a-bike riders on an exposed volcanic trail with cloud below; Anak Ranakah&#39;s dome shape against the older Ranakah edifice<div class="terms">Search: Poco Mandasawu · Ranakah volcano · Poco Ranaka Flores · Gunung Ranaka</div></div><div class="shot"><b>Ranamese lake, Cunca Rede waterfall and the Ruteng Nature Recreation Park <span class="small">· section 03</span></b>still water of Ranamese lake with rainforest reflection, early morning mist; the warung at the car park -- the highest rest stop on the course; Cunca Rede falls dropping through dense forest<div class="terms">Search: Ranamese lake · Danau Ranamese · Cunca Rede waterfall · Taman Wisata Alam Ruteng · Golo Lusang</div></div><div class="shot"><b>Liang Bua cave <span class="small">· section 03</span></b>wide shot of the cave chamber&#39;s high ceiling and light shaft (cathedral-like interior); the marked excavation area/pit inside the cave; the small onsite museum&#39;s fossil-cast displays; a guide explaining the site to visitors at the entrance<div class="terms">Search: Liang Bua · Homo floresiensis · Liang Bua cave Flores · hobbit cave Flores</div></div><div class="shot"><b>Reo (old north-coast port) <span class="small">· section 04</span></b>fishing/cargo boats at the Wae Reo river-mouth port at golden hour; market stalls and the town&#39;s mosque/church side by side; the Dutch-era cannon on Puncak Gunung Batu overlooking the bay; savanna hills framing the harbour<div class="terms">Search: Reo Manggarai · Pelabuhan Reo · Reok Manggarai · Kedindi port Flores</div></div><div class="shot"><b>The Reo-Pota-Riung savanna corridor (the water constraint) <span class="small">· section 04</span></b>lontar (lontar/borassus) palms silhouetted on dry savanna hills; an empty coastal road disappearing into heat shimmer; dry riverbeds crossing the track; wide bay views from the savanna hills toward the sea<div class="terms">Search: Manggarai savanna · lontar palm Flores · Sambi Rampas · Trans Flores road</div></div><div class="shot"><b>Pota <span class="small">· section 04</span></b>the small parish church against savanna hills; fishing boats at the Pota shoreline; Telaga Teratai lake if accessible; village life -- market stalls, schoolkids, motorbikes on the coastal road<div class="terms">Search: Pota Sambi Rampas · Pota Manggarai Timur · Telaga Teratai Pota</div></div></div><div><div class="shot"><b>Riung and the Seventeen Islands Marine Park <span class="small">· section 04</span></b>flying foxes lifting off Pulau Ontoloe at dusk, silhouetted against the sky; aerial/boat-eye view of the scattered islets and turquoise water; snorkelers over reef near Pulau Tiga/Rutong/Tembang; the Riung pier and fishing boats at first light; white-sand islet beaches<div class="terms">Search: Riung 17 islands · Pulau Ontoloe · Taman Wisata 17 Pulau Riung · Riung Flores flying fox</div></div><div class="shot"><b>Manggarai Timur interior loop: Borong and Elar (Ultra alternative) <span class="small">· section 04</span></b>Rana Kulan forest lake and its smaller satellite lakes; Tetes Tana waterfall; Puncatiti weavers at a loom; Borong&#39;s south-coast harbour and rice terraces; Pantai Ligota beach near Compang Ndejing<div class="terms">Search: Borong Manggarai Timur · Rana Kulan Elar · Puncatiti tenun · Compang Ndejing</div></div><div class="shot"><b>Mengeruda Hot Spring (Soa) <span class="small">· section 05</span></b>Steaming pools in a jungle river valley; Riders soaking mid-climb with bikes parked streamside; Wide shot of the valley with Bajawa plateau escarpment behind<div class="terms">Search: Mengeruda hot spring · Soa hot spring Ngada · Air Panas Mengeruda Flores</div></div><div class="shot"><b>Bajawa <span class="small">· section 05</span></b>Market stalls with highland produce; Town rooftops with Inerie&#39;s cone behind; Morning mist over the plateau<div class="terms">Search: Bajawa Flores · Bajawa Ngada town · Bajawa market Indonesia</div></div><div class="shot"><b>Wolobobo Hill <span class="small">· section 05</span></b>Sunrise silhouette of Inerie from the platforms; Sea of mist below the ridge at dawn; Wooden walkway leading to the viewpoint<div class="terms">Search: Wolobobo Hill Bajawa · Bukit Wolobobo · Wolobobo viewpoint Flores</div></div><div class="shot"><b>Bena <span class="small">· section 05</span></b>Rows of thatched houses framing the ngadhu/bhaga square; Elder receiving guests at the entrance; Inerie&#39;s cone rising directly behind the village roofline<div class="terms">Search: Bena village Ngada · Bena traditional village Flores · Ngadhu bhaga Bena</div></div><div class="shot"><b>Luba <span class="small">· section 05</span></b>Carved animal-motif shrine detail; Quiet village lane with no other visitors; View back toward Bena&#39;s rooftops<div class="terms">Search: Luba village Ngada · Luba Bajawa Flores</div></div><div class="shot"><b>Tololela <span class="small">· section 05</span></b>Two facing rows of houses on the hillside; Villagers going about daily work, unposed; Terraced approach path up the hill<div class="terms">Search: Tololela village Ngada · Tololela Bajawa Flores</div></div><div class="shot"><b>Gurusina <span class="small">· section 05</span></b>Rebuilt thatched houses with fresh, unweathered roofing; Ngadhu/bhaga shrine pairs in the compound; View toward Inerie&#39;s summit from the village<div class="terms">Search: Kampung Adat Gurusina · Gurusina village Ngada · Gurusina fire traditional village</div></div><div class="shot"><b>Inerie (2,245 m) <span class="small">· section 05</span></b>Symmetrical cone at dawn from Wolobobo or Bena; Riders/hikers silhouetted on the scree slope; Summit view over the Savu Sea and Bajawa plateau; Ngadhu shrine post with Inerie behind it<div class="terms">Search: Inerie volcano Flores · Gunung Inerie · Mount Inerie Ngada</div></div><div class="shot"><b>Sewowoto (Ena Bhara beach) <span class="small">· section 05</span></b>Waves spraying through the water-blow rocks; White-sand beach with Inerie&#39;s slope rising inland; Fishing boats or motorboat approach from Waebela<div class="terms">Search: Ena Bhara Beach · Pantai Sewowoto · Pantai Waebela Ngada</div></div><div class="shot"><b>Aimere <span class="small">· section 05</span></b>Household arak still with smoke over an open fire; Lontar palm groves along the coast road; Ferry loading at the port, Sumba-bound<div class="terms">Search: Aimere Ngada · Pelabuhan Aimere · arak lontar Flores distillery</div></div><div class="shot"><b>Mbay to Nangaroro: crossing the island&#39;s waist <span class="small">· section 07</span></b>Aesesa rice plains near Mbay giving way to forested hills; the ridge crossing itself -- switchback dirt road with island-waist views to both coasts; descent to the south coast with the Savu Sea opening up<div class="terms">Search: Nagekeo Regency Flores · Mbay Flores Indonesia · Nangaroro</div></div><div class="shot"><b>Maukaro (naming clarification, not on this route) <span class="small">· section 07</span></b><div class="terms">Search: Maukaro Ende Regency</div></div><div class="shot"><b>Nangaroro <span class="small">· section 07</span></b>grey-stone beach with fishing boats; homestay life in a working farming/fishing village; coast road hugging the shoreline toward Nangapanda<div class="terms">Search: Nangaroro · Nagekeo Regency coast</div></div><div class="shot"><b>Nangapanda <span class="small">· section 07</span></b>fishing village daily life; coast road signage toward Ende<div class="terms">Search: Nangapanda Ende Regency</div></div><div class="shot"><b>Penggajawa Blue Stone Beach (Pantai Batu Biru / Batu Hijau) <span class="small">· section 07</span></b>close-up of wet blue-green pebbles catching light; wide shot of the pebble shoreline against the Savu Sea; a local hand-sorting stones for the export trade; cyclists/bikes posed on the pebble beach as an overland-route landmark shot<div class="terms">Search: Pantai Batu Biru Penggajawa · Pantai Batu Hijau Penggajawa · Blue Stone Beach Ende</div></div><div class="shot"><b>Ende (town) <span class="small">· section 07</span></b>Ende harbourfront with fishing boats and Iya volcano behind; Pasar Mbongawani market scene -- woven sarongs, local produce; town streets with Lio traditional weaving for sale; hospital/resupply infrastructure as a practical race-logistics image<div class="terms">Search: Ende Flores · Ende town Nusa Tenggara Timur · Pasar Mbongawani</div></div><div class="shot"><b>Iya volcano <span class="small">· section 07</span></b>Ende town with Iya&#39;s cone rising behind the harbour; the southern peninsula and exclusion-zone approach; steam/plume shot if conditions allow (respect the 2 km radius)<div class="terms">Search: Mount Iya · Gunung Iya Ende · Iya volcano Flores</div></div><div class="shot"><b>Sukarno&#39;s Exile House (Rumah Pengasingan Bung Karno) <span class="small">· section 07</span></b>the colonial-era house facade on Jalan Perwira; preserved interior -- meditation room, library corner; period photographs and personal effects on display<div class="terms">Search: Rumah Pengasingan Bung Karno Ende · Sukarno exile house Ende</div></div></div><div><div class="shot"><b>Bung Karno Contemplation Park / Pancasila breadfruit tree (Taman Renungan Bung Karno) <span class="small">· section 07</span></b>the five-branched breadfruit tree against the seafront; commemorative plaque/monument in the park; wide shot combining park, sea, and Iya&#39;s silhouette<div class="terms">Search: Taman Renungan Bung Karno · Pancasila tree Ende</div></div><div class="shot"><b>H. Hasan Aroeboesman Airport <span class="small">· section 07</span></b>small regional terminal building; aircraft on the apron with coastal backdrop<div class="terms">Search: H. Hasan Aroeboesman Airport · Ende Airport ENE</div></div><div class="shot"><b>Wolotopo (bonus: within section bbox, borders section 8) <span class="small">· section 07</span></b>hillside village architecture; ikat weaving in progress; ceremonial houses<div class="terms">Search: Wolotopo village Ende · Lio traditional village Flores</div></div><div class="shot"><b>Detusoko Rice Terraces <span class="small">· section 08</span></b>Terraced paddies in morning light with mist in the valley; Suspension bridge over the small river; Rider on the road with terraces falling away below; Farmers working the paddies (with consent)<div class="terms">Search: Detusoko rice terrace Flores · Sawah Detusoko · Detusoko Barat rice field</div></div><div class="shot"><b>Wologai <span class="small">· section 08</span></b>Aerial or elevated view of the circular house ring around the ceremonial terrace; Stone-terraced ceremonial ground detail; A rebuilt traditional house next to an older one, if distinguishable; Village elder greeting visitors at the entrance<div class="terms">Search: Kampung Adat Wologai · Wologai traditional village Flores · Wologai Ende circular village</div></div><div class="shot"><b>Moni <span class="small">· section 08</span></b>Moni&#39;s main street at dusk with guesthouse lights on; Riders loading up before a pre-dawn departure; Hidden hot spring, steam rising in cool highland air; Rice terraces visible from village edge<div class="terms">Search: Moni village Flores · Moni Ende Flores · Moni Kelimutu village</div></div><div class="shot"><b>Kelimutu National Park — the three lakes <span class="small">· section 08</span></b>Wide dawn shot of all three lakes together from the main viewpoint, empty of crowds; Close detail of one lake&#39;s mineral-stained shoreline and colour; Riders/bikes at the viewpoint at first light; Mist rising off the crater at sunrise; The stairs/final approach as a hike-a-bike moment<div class="terms">Search: Kelimutu crater lakes · Danau Kelimutu · Tiwu Ata Polo · Kelimutu National Park sunrise</div></div><div class="shot"><b>Jopu <span class="small">· section 08</span></b>Weaver tying resist patterns before dyeing; Finished ikat cloth hung to dry or displayed; Village street with looms visible on verandas<div class="terms">Search: Jopu village Flores · Jopu ikat weaving · Wolowaru Flores</div></div><div class="shot"><b>Wolojita <span class="small">· section 08</span></b>Market/district-centre street scene; Coastal road view showing exposure to landslide terrain; Weaver at work<div class="terms">Search: Wolojita Flores · Kecamatan Wolojita Ende · Wolojita ikat</div></div><div class="shot"><b>Nggela <span class="small">· section 08</span></b>Weaver demonstrating morinda-root dyeing; Finished ikat cloth with Nggela-specific motifs, displayed or worn; Village on its ridge with the coast visible below; The single-track access road through Jopu and Pora<div class="terms">Search: Nggela village Flores · Kampung Nggela ikat · Nggela weaving Ende</div></div><div class="shot"><b>Koka Beach and Paga Beach <span class="small">· section 08</span></b>Aerial or headland view of Koka&#39;s twin coves; Turquoise water and pale sand close-up; Riders arriving at the beach after the highland stages; Paga&#39;s simple beachside restaurants and highway frontage<div class="terms">Search: Koka Beach Flores · Pantai Koka · Paga Beach Flores · Paga Sikka Flores</div></div><div class="shot"><b>Sikka village and the Old Church of St Ignatius Loyola <span class="small">· section 09</span></b>wooden church facade of St Ignatius Loyola with its steep Baroque-influenced roofline; carved/painted ikat-motif interior details inside the church; old royal graves or Da Silva-family memorials near the church; fishing boats pulled up on the village shoreline with the church visible behind; a weaver at a backstrap loom working a dark-palette Sikka ikat cloth<div class="terms">Search: Sikka Flores church · Gereja Tua Sikka · St Ignatius Loyola church Sikka · Sikka ikat tenun · Kingdom of Sikka Flores</div></div><div class="shot"><b>Lela <span class="small">· section 09</span></b>the tall Mary statue on its hilltop against the sea, if confirmed reachable from the route; roadside Catholic shrines/crosses typical of this stretch; the south-coast road itself curving between Sikka and Lela<div class="terms">Search: Lela Sikka Flores · Bukit Nilo Maria statue · Bunda Maria Segala Bangsa Sikka</div></div><div class="shot"><b>Ledalero Seminary <span class="small">· section 09</span></b>the seminary&#39;s hilltop buildings and grounds; seminarians or clergy in daily seminary life (only with explicit permission, given it is an active institution); wide view from the seminary hill back toward Maumere and the coast<div class="terms">Search: Ledalero seminary Flores · Seminari Tinggi St Paulus Ledalero · SVD Divine Word Missionaries Flores</div></div><div class="shot"><b>Maumere -- town and gateway <span class="small">· section 09</span></b>Maumere&#39;s waterfront/harbour with fishing and cargo boats; the market (pasar) in full activity; Frans Seda airport building/apron; town streets giving a sense of scale as the largest town of the eastern half of the island<div class="terms">Search: Maumere Flores · Frans Seda Airport Maumere · Maumere harbour Flores · Sikka Regency Indonesia</div></div><div class="shot"><b>Wuring <span class="small">· section 09</span></b>rows of stilt houses over the tidal flat with plank walkways; fishing boats moored beneath the houses; nets drying on the walkways; wide view of the village against Maumere bay<div class="terms">Search: Wuring Flores · Wuring stilt village Maumere · Bajo village Flores</div></div><div class="shot"><b>Koka Beach <span class="small">· section 09</span></b>the twin coves and dividing headland from an elevated vantage; pale sand and turquoise water close-up; the unpaved spur road through cocoa forest; a rider on the beach access road as an adventure-travel image<div class="terms">Search: Koka Beach Flores · Pantai Koka · Paga Flores beach</div></div><div class="shot"><b>Paga Beach (context: adjacent section anchor) <span class="small">· section 09</span></b><div class="terms">Search: Paga Beach Flores · Pantai Paga</div></div><div class="shot"><b>Watublapi Ikat Weaving (Sanggar Bliran Sina) <span class="small">· section 10</span></b>Backstrap-loom weaving in progress, hands and thread in close-up; Skeins of naturally dyed cotton (indigo blue, morinda red/brown) drying or bundled; Finished ikat cloth patterns laid out or worn; A welcome dance/music performance; Wide shot of the hillside hamlet and its houses<div class="terms">Search: Watublapi ikat weaving · Sikka ikat tenun Watublapi · Bliran Sina Flores · ikat weaving Flores backstrap loom</div></div><div class="shot"><b>Mount Egon from Blidit (with Blidit hot spring) <span class="small">· section 10</span></b>Fumarole steam venting from the crater rim, riders/hikers at a safe distance; The acid crater lake from the summit; Hike-a-bike through forest on the lower trail; Wide shot of Egon&#39;s cone from the north-coast highway near Waigete; Blidit hot spring, steam rising off the river<div class="terms">Search: Gunung Egon · Mount Egon Flores volcano · Egon crater lake · Blidit hot spring Flores</div></div></div>
+  </div>
+</section>
+
+
+<section class="page">
+  <div class="kicker">Colophon</div>
+  <h2>Data, method and sources</h2>
+  <div class="two">
+    <div><h4>Data and method</h4><p style="font-size:9.2pt">Course geometry: data/segments.geojson and data/routes.json in the project repository, routed over the Overture Maps road network (OpenStreetMap-derived) with the remote cost profile; anchors from data/nodes.geojson; places from data/pois.geojson with their own confidence and sources.</p><p style="font-size:9.2pt">Elevation: SRTM 1 arc-second tiles (USGS), sampled every 50 m, median-and-mean smoothed, 10 m hysteresis threshold for climbing; bathymetry clamped to sea level.</p><p style="font-size:9.2pt">Maps: rendered by pipeline/render_brochure_maps.py; relief from SRTM, coastline, lakes and roads © OpenStreetMap contributors via Overture Maps.</p><p style="font-size:9.2pt">Imagery: contains modified Copernicus Sentinel data 2025–2026, processed by ESA; cloud-optimised GeoTIFFs from the AWS Open Data registry (Element 84).</p><p style="font-size:9.2pt">Desk research: a search pass in September 2026 over travel, news, official (PVMBG, MAGMA Indonesia, BNPB, USGS, GVP) and academic sources, recorded with confidence labels in the project&#39;s working files; volcano and earthquake facts are dated in the text.</p></div>
+    <div>
+      <h4>Caveats</h4><p style="font-size:9.2pt">Every segment is concept status. Distances and climbing will change with scouted GPS tracks; the climbing threshold is a design choice still to be calibrated.</p><p style="font-size:9.2pt">Track and path share on most computed pairs is low because OpenStreetMap knows Flores&#39; roads far better than its footpaths. The remoteness the course is after may exist where the map is empty; only feet on the ground will tell.</p><p style="font-size:9.2pt">Fees, opening hours and prices are those reported in 2025–2026 and are indicative.</p>
+      <h4 style="margin-top:4mm">Satellite scenes used</h4>
+      <p class="small">aimere-coast: S2A_51LTL_20260601_0_L2A (2026-06-01) · detusoko-terraces: S2A_51LUL_20260711_0_L2A (2026-07-11) · ebulobo-boawae: S2C_51LTL_20250922_0_L2A (2025-09-22) · egon-crater: S2C_51LVL_20250902_0_L2A (2025-09-02) · ende-iya: S2A_51LUL_20260601_0_L2A (2026-06-01) · flores-mosaic: S2A_50LRR_20260711_0_L2A, S2A_51LTL_20260601_0_L2A, S2A_51LTL_20260711_0_L2A, S2A_51LTL_20260810_0_L2A, S2A_51LUL_20260601_0_L2A, S2A_51LUL_20260711_0_L2A, S2A_51LUL_20260810_0_L2A, S2A_51LVL_20260601_1_L2A, S2A_51LVL_20260711_1_L2A, S2B_50LRR_20260607_0_L2A, S2B_50LRR_20260617_0_L2A, S2B_51LTL_20260704_0_L2A, S2B_51LTL_20260823_0_L2A, S2B_51LUL_20260823_0_L2A, S2B_51LVL_20260601_0_L2A, S2B_51LVL_20260704_0_L2A, S2C_50LRR_20250806_0_L2A, S2C_50LRR_20250905_1_L2A, S2C_50LRR_20260712_0_L2A, S2C_51LTL_20250922_0_L2A, S2C_51LUL_20260619_0_L2A, S2C_51LUL_20260818_0_L2A, S2C_51LVL_20260619_0_L2A, S2C_51LVL_20260629_0_L2A (2025-08-06) · inerie-bena: S2A_51LTL_20260711_0_L2A (2026-07-11) · kelimutu-lakes: S2A_51LUL_20260711_0_L2A (2026-07-11) · koka-beach: S2A_51LUL_20260711_0_L2A (2026-07-11) · komodo-gateway: S2C_50LRR_20260712_0_L2A (2026-07-12) · labuan-bajo-bay: S2C_50LRR_20260712_0_L2A (2026-07-12) · larantuka-ile-mandiri: S2B_51LVL_20260601_0_L2A (2026-06-01) · lewotobi-twins: S2C_51LVL_20260805_0_L2A (2026-08-05) · liang-bua: S2A_50LRR_20260711_0_L2A (2026-07-11) · lingko-cancar: S2A_50LRR_20260711_0_L2A (2026-07-11) · maumere-wuring: S2C_51LVL_20260629_0_L2A (2026-06-29) · mbay-aesesa-plain: S2A_51LUL_20260601_0_L2A (2026-06-01) · nggela-coast: S2A_51LUL_20260711_0_L2A (2026-07-11) · penggajawa-blue-stone: S2A_51LUL_20260601_0_L2A (2026-06-01) · pota-savanna: S2A_51LTL_20260601_0_L2A (2026-06-01) · ranamese-lake: S2A_50LRR_20260711_0_L2A (2026-07-11) · reo-north-coast: S2A_50LRR_20260711_0_L2A (2026-07-11) · riung-17-islands: S2C_51LTL_20250922_0_L2A (2025-09-22) · ruteng-highlands: S2A_50LRR_20260711_0_L2A (2026-07-11) · sano-nggoang: S2A_50LRR_20260711_0_L2A (2026-07-11) · sikka-lela: S2C_51LVL_20260629_0_L2A (2026-06-29) · soa-mengeruda: S2A_51LTL_20260711_0_L2A (2026-07-11) · todo-village: S2A_50LRR_20260711_0_L2A (2026-07-11) · wae-rebo-valley: S2A_50LRR_20260711_0_L2A (2026-07-11)</p>
+      <h4 style="margin-top:4mm">Repository</h4>
+      <p class="small">github.com/technicaloutdoor/Flores-Race — course data, pipeline, GPX exports, this brochure's source and the research files behind it (docs/brochure/research). Built 2026-09-05.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

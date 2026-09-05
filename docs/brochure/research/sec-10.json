@@ -1,0 +1,274 @@
+{
+  "topic_id": "sec-10",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Watublapi Ikat Weaving (Sanggar Bliran Sina)",
+      "data_ids": ["p-watublapi-weaving", "n-watublapi"],
+      "what_it_is": "A hillside hamlet about 18 km south-east of Maumere organised since the 1980s around Sanggar Bliran Sina, a weavers' cultural cooperative rather than a customary adat village council.",
+      "why_it_matters": "It is the race's most reliably arrangeable cultural checkpoint of the whole course: a working craft cooperative that welcomes groups for a demonstration, not a village that must be petitioned for an overnight stay. Riders see the full Sikka ikat process -- hand-spinning, natural dyeing, resist-tying, backstrap-loom weaving -- and the stop supports a specific, named community group rather than a generic tourist encounter.",
+      "history_culture": "Sanggar Bliran Sina was founded in the 1980s with the support of a German missionary priest (Pater Bollen) to preserve local dance, music and weaving; under later local leadership it grew into a cooperative of 40+ members who pool support for members' financial, education and health needs. Watublapi still uses hand-spun cotton and dyes made from garden plants (indigo, morinda root and others) rather than the industrial yarn and chemical dye many other Flores weaving villages have switched to, giving the cloth its local blue/yellow/red/brown/green palette. A dance and music welcome can be arranged alongside the weaving demonstration.",
+      "practical": {
+        "altitude_m": null,
+        "access": "Paved/graded road off the Maumere-Watublapi corridor; reachable by vehicle, no hike-a-bike.",
+        "fees_protocol": "Contact the cooperative in advance to arrange a weaving demonstration, lunch and a dance/music performance; ask before photographing weavers at work; a cloth purchase is the customary way to support the community and is generally expected of visiting groups. No confirmed fixed entrance fee found this pass -- treat any quoted figure as unverified until confirmed with the cooperative directly or in the field.",
+        "sleep": "n-watublapi: homestay",
+        "water_resupply": "n-watublapi: minimal resupply, water unreliable -- carry in from Maumere.",
+        "best_time": "Daytime demonstration hours; no seasonal restriction found.",
+        "hazards": "None specific; standard village-road riding."
+      },
+      "facts": [
+        {"fact": "Watublapi is roughly 18 km south-east of Maumere.", "source_urls": ["repo:data/pois.geojson#p-watublapi-weaving"], "confidence": "verified"},
+        {"fact": "Sanggar Bliran Sina was founded in the 1980s with the assistance of a German priest (Pater Bollen) and has grown into a cooperative of more than 40 members supporting each other on financial, education and health matters.", "source_urls": ["https://the-islands-of-indonesia.com/islands/east-nusa-tenggara/flores/watublai-village/"], "confidence": "likely"},
+        {"fact": "Watublapi weavers still use hand-spun local cotton and natural, garden-grown dyes rather than industrial yarn and chemical dyes.", "source_urls": ["https://the-islands-of-indonesia.com/islands/east-nusa-tenggara/flores/watublai-village/", "https://jurnal.larisma.or.id/index.php/JRIP/article/view/341"], "confidence": "verified"},
+        {"fact": "A weaving demonstration, lunch and dance/music performance can be arranged in advance by contacting the cooperative's local organiser directly.", "source_urls": ["https://the-islands-of-indonesia.com/islands/east-nusa-tenggara/flores/watublai-village/", "https://www.tourhq.com/tours/12392/full-day-watublapi-tour-with-live-cultural-performance"], "confidence": "likely"},
+        {"fact": "No specific, confirmed visitor fee for the cooperative was found in this search pass.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": [
+        "Backstrap-loom weaving in progress, hands and thread in close-up",
+        "Skeins of naturally dyed cotton (indigo blue, morinda red/brown) drying or bundled",
+        "Finished ikat cloth patterns laid out or worn",
+        "A welcome dance/music performance",
+        "Wide shot of the hillside hamlet and its houses"
+      ],
+      "commons_search_terms": ["Watublapi ikat weaving", "Sikka ikat tenun Watublapi", "Bliran Sina Flores", "ikat weaving Flores backstrap loom"]
+    },
+    {
+      "name": "Mount Egon from Blidit (with Blidit hot spring)",
+      "data_ids": ["p-egon", "n-blidit"],
+      "what_it_is": "An active stratovolcano (commonly cited 1,661-1,703 m depending on source) east of Maumere with an acid crater lake and fumaroles, climbed on foot from the trailhead beyond Blidit village; a river hot spring sits a short distance along the same access road.",
+      "why_it_matters": "This is the far-east section's hike-a-bike centrepiece, in the same register as Kelimutu and Inerie earlier on the course: a genuinely active volcano riders carry their bikes up, with a dramatic crater-lake payoff and a working safety brief (no lingering near fumaroles) built into the checkpoint. The nearby hot spring gives the section a second, low-effort reward for riders or support crews who don't summit.",
+      "history_culture": "Egon reawakened suddenly in 2004 with a phreatic eruption that forced roughly 7,000 people to evacuate its flanks; smaller unrest and ash emissions have recurred since. PVMBG's monitoring reports place it at Level I (Normal) as of mid-2026, with no raised alert since 2004 and the last notable emission commonly cited around 2008 -- but this should be reconfirmed against MAGMA Indonesia immediately before race week, not assumed static.",
+      "practical": {
+        "altitude_m": 1661,
+        "access": "By vehicle from Maumere via Waigete on the north-coast highway, then an ~8 km side road to Blidit village (trailhead starts beyond the last houses around 790 m, no signpost -- a local guide or GPS track is effectively required). On foot: forest trail opening onto volcanic upper slopes to the crater rim, roughly 4 hours up and 4 hours down reported by one independent hiker account (route-concept.md's own estimate is 4-6 km hike-a-bike one way).",
+        "fees_protocol": "A small entry/parking fee is charged locally (unconfirmed exact amount from this pass); no adat/village council protocol beyond the standard trailhead courtesy.",
+        "sleep": "n-blidit: none (day-trip trailhead only).",
+        "water_resupply": "n-blidit: no resupply, water unreliable -- carry in.",
+        "best_time": "Dry season, early morning start to avoid afternoon cloud/rain and to be off the crater before heat builds.",
+        "hazards": "Active fumaroles at the crater -- PVMBG rule against lingering near them; underground rumbling and visible steam/smoke are normal but should be treated as a live-volcano brief for riders, not a scenic curiosity. Reconfirm current PVMBG alert level before any ascent is scheduled."
+      },
+      "facts": [
+        {"fact": "Sources disagree on Egon's summit height by more than 40 m: 1,661 m (Wikipedia infobox, matching the DEM sample) versus 1,703 m (several volcano-monitoring sites).", "source_urls": ["repo:data/pois.geojson#p-egon"], "confidence": "verified"},
+        {"fact": "Egon reawakened in 2004, forcing the evacuation of roughly 7,000 people; PVMBG lists it at Level I (Normal) as of mid-2026 monitoring reports.", "source_urls": ["repo:data/pois.geojson#p-egon", "https://daerah.tvrinews.com/en/berita/tffhhzs-status-level-i-aktivitas-gempa-gunung-egon-di-sikka-meningkat-signifikan"], "confidence": "likely"},
+        {"fact": "The hike (crater viewing included) takes roughly 4 hours up and 4 hours down; the trailhead beyond Blidit village sits around 788-790 m and has no signpost, making a guide or GPS track effectively necessary.", "source_urls": ["http://thespicerouteend.com/travel-flores-hike-egon-volcano-maumere/"], "confidence": "likely"},
+        {"fact": "A river hot spring at Blidit is about 5 km along the same access road from Maumere and is commonly visited after the Egon hike.", "source_urls": ["https://javaisbeautiful.com/2019/05/30/pictures-mount-egon-and-blidit-waterfall-maumere-flores-ntt-indonesia/"], "confidence": "likely"},
+        {"fact": "An entry/parking fee is charged for Gunung Egon, per a locally-written cost guide, but the exact current amount was not independently confirmed this pass.", "source_urls": ["https://wiki.ambisius.com/gunung/gunung-egon/biaya-masuk-dan-parkir"], "confidence": "unverified"}
+      ],
+      "photo_subjects": [
+        "Fumarole steam venting from the crater rim, riders/hikers at a safe distance",
+        "The acid crater lake from the summit",
+        "Hike-a-bike through forest on the lower trail",
+        "Wide shot of Egon's cone from the north-coast highway near Waigete",
+        "Blidit hot spring, steam rising off the river"
+      ],
+      "commons_search_terms": ["Gunung Egon", "Mount Egon Flores volcano", "Egon crater lake", "Blidit hot spring Flores"]
+    },
+    {
+      "name": "Waiterang / Wodong Coast",
+      "data_ids": ["p-waiterang", "n-waiterang"],
+      "what_it_is": "A north-coast black-sand beach stretch (Waigete kecamatan, east of Maumere) with a small dive-resort scene and house-reef diving, on the corridor between Egon and Talibura.",
+      "why_it_matters": "It gives the section a genuine coastal decompression point between two demanding stops (Egon's summit and the Lewotobi crux beyond) -- black volcanic sand, warm water, and an offshore island (Pulau Babi) visible from shore, all reachable directly off the race route without a detour.",
+      "history_culture": "A modest, longstanding dive-tourism area rather than a historic site: a handful of small resorts and cottages (Wodong Beach Cottages, Ankermi/Happy Dive) have operated here for years, serving divers headed out to house reefs and the nearby islands.",
+      "practical": {
+        "altitude_m": 0,
+        "access": "Directly on/off the coastal road between Blidit's access road and Talibura; no hike-a-bike.",
+        "fees_protocol": "None specific; ordinary beach/resort courtesy.",
+        "sleep": "n-waiterang: guesthouse (small dive resorts/cottages).",
+        "water_resupply": "n-waiterang: minimal resupply, water unreliable -- carry capacity matters here.",
+        "best_time": "Daylight, any dry-season day; diving conditions best in calmer months.",
+        "hazards": "None specific beyond normal coastal-road riding and open water for anyone diving/snorkelling."
+      },
+      "facts": [
+        {"fact": "Waiterang/Wodong is a north-coast dive stretch east of Maumere in Waigete kecamatan with black-sand beaches, house-reef diving and a small resort scene.", "source_urls": ["repo:data/pois.geojson#p-waiterang"], "confidence": "verified"},
+        {"fact": "Small dive resorts/cottages in the area include Wodong Beach Cottages and Ankermi/Happy Dive Resort, both on black-sand beach near Maumere.", "source_urls": ["https://www.tripadvisor.com/Hotel_Review-g676343-d7137100-Reviews-Wodong_Beach_Cottages-Maumere_Flores_East_Nusa_Tenggara.html", "https://www.tripadvisor.co.nz/ShowUserReviews-g297729-d1547322-r139105109-Ankermi_Happy_Dive_Resort-Flores_East_Nusa_Tenggara.html"], "confidence": "verified"},
+        {"fact": "Pulau Babi and Pulau Besar, small islands offshore, are visible from the Waiterang/Wodong shore and are a common local dive/snorkel destination.", "source_urls": ["https://www.tripadvisor.co.nz/ShowUserReviews-g297729-d1547322-r139105109-Ankermi_Happy_Dive_Resort-Flores_East_Nusa_Tenggara.html"], "confidence": "likely"}
+      ],
+      "photo_subjects": [
+        "Black-sand beach with fishing boats",
+        "Coastal road with Egon's cone in the background",
+        "Pulau Babi silhouette offshore at sunset/sunrise",
+        "Small dive-resort bungalow on the beach"
+      ],
+      "commons_search_terms": ["Wodong beach Flores", "Waiterang beach Maumere", "Pulau Babi Flores", "black sand beach Flores"]
+    },
+    {
+      "name": "Talibura and the north-coast road to Larantuka",
+      "data_ids": ["p-talibura", "n-talibura", "s-waiterang-talibura-b", "s-talibura-larantuka-c"],
+      "what_it_is": "Talibura is the easternmost kecamatan capital of Sikka Regency, a mangrove-fringed coastal village (Desa Darat Pantai) on the Flores Sea; beyond it the course's primary line (Concept A) continues along the north coast toward Larantuka, staying well clear of the Lewotobi exclusion zone.",
+      "why_it_matters": "Talibura is the last reliable basic resupply before the course commits to the long, sparsely served run past Lewotobi to Larantuka, and the mangrove coast itself is a quiet, undocumented stretch worth a look. The 96 km Talibura-Larantuka leg (per the mapped network candidate) is the section's longest single push and its logistics -- water, road surface, timing relative to Lewotobi's status -- are the practical crux beneath the volcano crux.",
+      "history_culture": "No deep historical thread distinct from the general Sikka/Flores Timur coastal-fishing pattern was found this pass; its significance for the race is logistical and scenic (mangrove coast, gateway to Flores Timur) rather than cultural-heritage.",
+      "practical": {
+        "altitude_m": 0,
+        "access": "Road throughout; the Waiterang-Talibura leg is short (~10 km) and mostly paved, the Talibura-Larantuka leg is long (~96 km per the mapped network candidate) with a significant unpaved share.",
+        "fees_protocol": "None specific.",
+        "sleep": "n-talibura: none.",
+        "water_resupply": "n-talibura: basic resupply, water unreliable. No further reliable resupply is mapped between Talibura and Larantuka on Concept A -- carry capacity for the full leg.",
+        "best_time": "Early/late hours preferred on the exposed coastal stretch for heat management, per the route concept's general coastal-heat guidance.",
+        "hazards": "Concept A stays well outside the Lewotobi exclusion radius by design; the Trans-Flores highway sections used for this leg should be ridden with normal traffic caution. The Talibura-Boru highway link (used only if Concept B is selected) approaches within roughly 5.7-8 km of the Lewotobi vents -- see the Lewotobi entry."
+      },
+      "facts": [
+        {"fact": "Talibura is the easternmost kecamatan capital of Sikka Regency on the Flores Sea coast, with a mangrove-lined shore (Desa Darat Pantai).", "source_urls": ["repo:data/pois.geojson#p-talibura"], "confidence": "approximate"},
+        {"fact": "The mapped Waiterang-Talibura leg is about 10 km and mostly paved (unpaved share ~22%); the Talibura-Larantuka leg is about 96 km with roughly 62% unpaved surface, per the network-routed candidate.", "source_urls": ["repo:data/segments.geojson#s-waiterang-talibura-b", "repo:data/segments.geojson#s-talibura-larantuka-c"], "confidence": "likely"},
+        {"fact": "The Trans-Flores highway network is generally in good condition, but roads off the main highway are frequently in poor condition and better suited to motorcycle or 4WD than casual travel.", "source_urls": ["https://www.travel2flores.info/planning/transport/"], "confidence": "likely"}
+      ],
+      "photo_subjects": [
+        "Mangrove-lined coastline at Talibura",
+        "Fishing boats and the village waterfront",
+        "The long, quiet north-coast road with the sea on one side",
+        "Distant view of Lewotobi's twin cones from the coast road (from a safe distance)"
+      ],
+      "commons_search_terms": ["Talibura Sikka", "Flores north coast road", "mangrove Sikka Flores", "Trans-Flores highway"]
+    },
+    {
+      "name": "Lewotobi (Laki-laki and Perempuan) -- the crux hazard",
+      "data_ids": ["p-lewotobi-laki-laki", "p-lewotobi-perempuan", "n-boru"],
+      "what_it_is": "A twin-volcano complex in Flores Timur (Laki-laki 1,584 m, Perempuan 1,703 m, 2.1 km apart) in continuous, often violent eruption since 3 November 2024; the single hazard that defines this section's course design.",
+      "why_it_matters": "This is the 'crux logistics question of the entire race' named in both sections.json and route-concept.md: the whole Lewotobi complex is treated as a no-go zone, Concept A (the north-coast corridor through Waiterang/Talibura) is the primary route specifically to stay outside the exclusion radius, and Concept B (a highway corridor that comes within roughly 5.7-8 km of the vents, passing north of Boru village) is usable only with an explicit race-week go/no-go call against PVMBG's live status. No other single hazard on the course carries this much weight in the route decision.",
+      "history_culture": "Lewotobi Laki-laki's eruption sequence began 3 November 2024 with fatalities and mass displacement, and activity has continued at high intensity through 2026: PVMBG raised the alert to Level IV (Awas, the maximum level) more than once, most notably around 7 September 2025, and 2026 alone recorded 778 recorded eruptive events through 27 August, making it the second most active volcano in Indonesia that year (after Semeru). The alert level was eased to Level II with a 4 km exclusion zone in early 2026, then raised back to Level III with a 5 km zone on 12 May 2026 after renewed seismicity and ground deformation, and PVMBG was still holding Level III with the 5 km zone and lahar warnings for named river corridors as of late August 2026. Ash and debris have fallen well outside the formal danger zone in past events, reaching villages including Boru, Hewa and Watobuku, and residents of Nurabelen and other villages have been evacuated to Konga and Nileknoheng (some 12 km from the crater) during past crises; the Trans-Flores highway and regional air travel have both been disrupted by ash during major eruptive episodes.",
+      "practical": {
+        "altitude_m": 1584,
+        "access": "No-go zone for the race itself; relevant only as a routing constraint. Boru village (basic resupply, home to a PVMBG Lewotobi observation post) sits roughly 8 km from the vents and is a possible detour off the Concept B line, not on it after the route was redrawn away from the village.",
+        "fees_protocol": "N/A -- hazard exclusion zone, not a visitor site.",
+        "sleep": "N/A.",
+        "water_resupply": "Boru has basic resupply and roadside restaurants if Concept B is used and a detour into the village is made.",
+        "best_time": "N/A -- status-dependent, not season-dependent.",
+        "hazards": "Active eruption complex with a standing PVMBG exclusion radius (5 km as of the most recent confirmed status, historically as wide as 8 km during acute crises); repeated fatal/high-impact eruptions since Nov 2024; lahar risk in named river corridors persists after ash events; status must be reconfirmed against MAGMA Indonesia (magma.esdm.go.id) immediately before any route or checkpoint decision on race week, not assumed from this file."
+      },
+      "facts": [
+        {"fact": "The eruption sequence began 3 November 2024 with fatalities and mass evacuation.", "source_urls": ["repo:data/pois.geojson#p-lewotobi-laki-laki", "https://www.cnn.com/2024/11/03/asia/volcanic-eruption-indonesia-intl-hnk"], "confidence": "verified"},
+        {"fact": "PVMBG raised Lewotobi Laki-laki to Level IV (Awas), the highest alert level, around 7 September 2025.", "source_urls": ["https://watchers.news/2025/09/07/lewotobi-laki-laki-volcano-alert-raised-level-iv-indonesia/"], "confidence": "verified"},
+        {"fact": "Activity moderated enough by early 2026 for PVMBG to lower the alert to Level II with a 4 km exclusion zone, then raised it back to Level III with a 5 km zone on 12 May 2026 after increased seismicity and GNSS/tiltmeter-detected ground deformation.", "source_urls": ["https://watchers.news/2026/05/12/pvmbg-raises-lewotobi-laki-laki-to-level-iii-after-seismicity-and-inflation-increase-indonesia/"], "confidence": "likely"},
+        {"fact": "As of late August 2026, PVMBG was maintaining Level III, the 5 km exclusion zone, and lahar warnings for named river corridors; MAGMA Indonesia had recorded 778 eruptions from the volcano in 2026 through 27 August, the second-most-active Indonesian volcano that year.", "source_urls": ["https://www.techtimes.com/articles/325893/20260828/lewotobi-laki-laki-fires-ninth-eruption-in-seven-days-lahar-risk-outlasts-ash.htm"], "confidence": "likely"},
+        {"fact": "During a major June 2025 eruption episode, ash plumes reached up to 10,000 m, over 4,000 people were evacuated, ash fell on villages including Boru, Hewa and Watobuku, and the exclusion zone was temporarily expanded to 8 km; regional air travel was disrupted.", "source_urls": ["https://kansas.statenews.net/news/278391268/indonesias-mount-lewotobi-erupts-forcing-village-evacuations", "https://www.nbcnews.com/world/asia/volcanic-eruption-indonesia-forces-evacuations-flight-cancellations-rcna213667"], "confidence": "likely"},
+        {"fact": "Boru is a Wulanggitang kecamatan capital on the Trans-Flores highway roughly 8 km from the Lewotobi vents, with a handful of roadside restaurants and a PVMBG observation post nearby; the Concept B route was redrawn to pass north of the village rather than through it, closest approach now about 5.7 km to Laki-laki and 8.1 km to Perempuan.", "source_urls": ["repo:data/nodes.geojson#n-boru", "repo:data/segments.geojson#s-talibura-larantuka-b"], "confidence": "verified"}
+      ],
+      "photo_subjects": [
+        "Do NOT plan close-approach photography as part of the race route -- any imagery should come from safe, long-range vantage points or stock/press sources",
+        "Distant ash plume over the twin cones from a safe north-coast vantage",
+        "PVMBG observation post at Boru (exterior only, from the road)"
+      ],
+      "commons_search_terms": ["Lewotobi Laki-laki eruption", "Gunung Lewotobi", "Lewotobi volcano Flores Timur", "Wulanggitang Boru"]
+    },
+    {
+      "name": "Larantuka -- Semana Santa and Portuguese heritage",
+      "data_ids": ["p-larantuka-heritage", "p-larantuka-cathedral", "p-kapela-tuan-ma"],
+      "what_it_is": "The finish town at Flores' eastern tip: a Portuguese-Catholic port converted in the 1500s, seat of the historic Kingdom of Larantuka, home to the Reinha Rosari Cathedral and the Kapela Tuan Ma chapel, and host each Holy Week to the Semana Santa procession.",
+      "why_it_matters": "It closes the race's Portuguese-Catholic thread opened at Sikka village nine sections earlier, and is by far the most historically 'loaded' finish town on the course: five centuries of continuous Catholic-Portuguese ritual culture rather than a faint colonial trace. For the brochure it is the strongest single cultural story on the entire route -- a still-living tradition, not a museum piece.",
+      "history_culture": "The Kingdom of Larantuka converted to Catholicism in the 16th century under Dominican missionaries and Portuguese traders, and, unusually for the archipelago, never let the connection lapse: a Portuguese-influenced Malay creole (Larantuka Malay) is still spoken by some residents, and the confrarias (religious brotherhoods, from Portuguese 'confraria') that organise Semana Santa trace their form directly to that period, with roles inside the procession often hereditary within specific clans. The Tuan Ma statue (Our Lady of Sorrows) is said to have been found on Larantuka's beach by a boy in 1510; each Holy Week it and the Tuan Ana statue (the body of Christ) are carried from their respective chapels to the Reinha Rosari Cathedral and then in candlelit processions through the town, drawing pilgrims from Flores, Adonara, Solor and beyond, culminating on Good Friday. Local and regional sources describe the tradition as unbroken since the 16th century, though no comparative source was found ranking it against other Catholic ritual traditions regionally.",
+      "practical": {
+        "altitude_m": 0,
+        "access": "Road; finish town with full services. Gewayantana Airport (LKA) is about 15 km from town, served by regional carriers from Kupang. Ferries connect Larantuka to Adonara (frequent, short crossing), Solor, and onward to Lembata (about 3 hours, useful for a side-trip to Ile Ape volcano) and to Kupang via the wider Solor-Alor ferry network.",
+        "fees_protocol": "Ordinary town/church courtesy; Semana Santa itself (Holy Week, March/April) is a major pilgrimage event and would not coincide with a dry-season (June-September) race window in the same year, so it is a story to tell rather than an event riders would witness live.",
+        "sleep": "Finish town: hotels available (per n-larantuka being the finish node).",
+        "water_resupply": "Full resupply at the finish.",
+        "best_time": "Any time for the town and cathedral; Semana Santa itself is fixed to the Christian Holy Week calendar, outside the race's dry-season window.",
+        "hazards": "None specific beyond normal town traffic."
+      },
+      "facts": [
+        {"fact": "The Kingdom of Larantuka converted to Catholicism in the 1500s under Dominican missionaries and Portuguese traders, and Larantuka Malay, a Portuguese-influenced creole, is still spoken by some residents.", "source_urls": ["repo:data/pois.geojson#p-larantuka-heritage", "https://en.wikipedia.org/wiki/Kingdom_of_Larantuka"], "confidence": "verified"},
+        {"fact": "The Tuan Ma statue is said to have been found on Larantuka's beach by a boy in 1510; during Semana Santa it and the Tuan Ana statue are carried from their chapels to Reinha Rosari Cathedral and paraded through town in candlelit processions culminating on Good Friday.", "source_urls": ["https://florespristinetour.com/semana-santa-in-larantuka/", "https://larantukaflores.com/larantuka-semana-santa/"], "confidence": "likely"},
+        {"fact": "Semana Santa is organised by the Confraria (brotherhood), with roles inside the procession often hereditary within specific clans descended from the Larantuka Kingdom; sources describe the tradition as continuing with remarkable consistency for over 400 years.", "source_urls": ["https://discoverflores.guide/larantuka-easter-celebrations-portuguese-heritage-meets-indonesias-most-sacred-easter-celebrations/", "https://windonesia.com/article/five-centuries-of-semana-santa-in-larantuka"], "confidence": "likely"},
+        {"fact": "Gewayantana Airport (LKA) is about 15 km from Larantuka and served by regional airlines (Susi Air, TransNusa, Wings Air) from Kupang.", "source_urls": ["https://en.wikivoyage.org/wiki/Larantuka"], "confidence": "likely"},
+        {"fact": "Larantuka connects by ferry to Adonara, Solor and Alor, and onward (roughly 3 hours) to Lembata, whose Ile Ape volcano is a common side-trip.", "source_urls": ["https://www.travelfish.org/transport/indonesia/east_nusa_tenggara/flores/larantuka/all", "https://en.wikivoyage.org/wiki/Larantuka"], "confidence": "likely"}
+      ],
+      "photo_subjects": [
+        "Reinha Rosari Cathedral facade",
+        "Kapela Tuan Ma waterfront chapel",
+        "Larantuka harbour with fishing/ferry boats and Ile Mandiri behind",
+        "Archival/press imagery of a past Semana Santa candlelit procession (do not stage a re-enactment)",
+        "Town streets and the finish-line setting"
+      ],
+      "commons_search_terms": ["Larantuka Flores", "Semana Santa Larantuka", "Reinha Rosari Cathedral", "Kapela Tuan Ma", "Kingdom of Larantuka"]
+    },
+    {
+      "name": "Ile Mandiri (the finish backdrop and optional finale climb)",
+      "data_ids": ["p-ile-mandiri"],
+      "what_it_is": "A dormant, conical, forested volcano (commonly cited 1,502 m) rising directly behind Larantuka's harbour and cathedral -- the mountain in every photo of the town, and the subject of a proposed optional final hike-a-bike after the finish.",
+      "why_it_matters": "As a backdrop it gives Larantuka its single strongest photographic signature -- volcano, harbour, cathedral in one frame. As a proposed optional finale climb it would be the course's last 'sting in the tail', echoing the hike-a-bike ethic set at Wae Rebo, Kelimutu, Inerie and Egon, but only if it can be shown safe to schedule after roughly thirteen days of accumulated fatigue.",
+      "history_culture": "Local accounts describe Ile Mandiri as the ancestral mountain of the Larantuka kingdom ('our ancestor is Mount Ile Mandiri'), giving it a status closer to Kelimutu's significance to the Lio than a simple scenic viewpoint.",
+      "practical": {
+        "altitude_m": 1502,
+        "access": "Standard route climbs in about 4-5 hours from Riang Kemie village via the Leloba route.",
+        "fees_protocol": "No specific protocol found this pass beyond the ancestral-mountain status noted above; treat with the same respect as other named sacred peaks on the course until field-confirmed.",
+        "sleep": "N/A -- day climb from the finish town.",
+        "water_resupply": "N/A -- short climb from a full-service town.",
+        "best_time": "Dry season, early start.",
+        "hazards": "Very steep in places per the route concept's own inventory (3-5 km hike-a-bike); the open question the concept itself flags is whether it is safe to schedule at the end of a multi-day race rather than any objective hazard on the mountain itself."
+      },
+      "facts": [
+        {"fact": "Ile Mandiri's summit is commonly cited at 1,502 m (DEM-derived local peak ~1,469 m); reported elevations vary by 30-40 m across sources.", "source_urls": ["repo:data/pois.geojson#p-ile-mandiri"], "confidence": "verified"},
+        {"fact": "The standard route climbs in about 4-5 hours from Riang Kemie village via the Leloba route.", "source_urls": ["https://www.gunungbagging.com/ili-mandiri/"], "confidence": "likely"},
+        {"fact": "Local accounts describe Ile Mandiri as the ancestral mountain of the Larantuka kingdom.", "source_urls": ["https://www.liputan6.com/lifestyle/read/5687745/6-fakta-menarik-gunung-ile-mandiri-di-flores-timur-ntt-yang-jadi-latar-kota-larantuka"], "confidence": "likely"}
+      ],
+      "photo_subjects": [
+        "Ile Mandiri's cone rising behind Larantuka's cathedral and harbour (the signature shot)",
+        "Summit trail through forest",
+        "View from the summit down over Larantuka and the strait toward Adonara/Solor"
+      ],
+      "commons_search_terms": ["Gunung Ile Mandiri", "Ile Mandiri Larantuka", "Ili Mandiri volcano Flores"]
+    },
+    {
+      "name": "Ledalero Seminary",
+      "data_ids": ["p-ledalero-seminary"],
+      "what_it_is": "St Paul's Major Seminary, a hilltop Catholic seminary about 9 km inland from Maumere, founded in 1937 by the Divine Word Missionaries (SVD).",
+      "why_it_matters": "One of the largest Catholic seminaries in the world; a marker, alongside Ledalero-adjacent Ende's history and Larantuka's Semana Santa, of just how deep Catholic institutional presence runs at this end of Flores. A brief, easy waypoint that reinforces the section's religious-heritage thread without requiring a detour.",
+      "history_culture": "Founded 1937 by the Society of the Divine Word (SVD); functions today as a major formation seminary training priests from across the region.",
+      "practical": {
+        "altitude_m": null,
+        "access": "Road, ~9 km inland from Maumere; visitable from the road, no special access needed.",
+        "fees_protocol": "Respect it as a working religious institution -- no public visitor protocol confirmed this pass.",
+        "sleep": "N/A.",
+        "water_resupply": "N/A -- close to Maumere's full resupply.",
+        "best_time": "Any daylight hours.",
+        "hazards": "None."
+      },
+      "facts": [
+        {"fact": "St Paul's Major Seminary (Ledalero) was founded in 1937 by the Divine Word Missionaries and is described as one of the largest Catholic seminaries in the world.", "source_urls": ["repo:data/pois.geojson#p-ledalero-seminary"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["Seminary buildings on the hilltop", "Seminarians/campus grounds (with appropriate discretion and permission)"],
+      "commons_search_terms": ["Ledalero Seminary Flores", "Seminari Ledalero Maumere"]
+    },
+    {
+      "name": "Bola south coast (optional loop anchor)",
+      "data_ids": ["p-bola-coast", "n-bola"],
+      "what_it_is": "A south-coast kecamatan capital of Sikka Regency, about 24 km south-east of Maumere, anchoring the optional 'Bola south-coast loop' Ultra variant (Maumere -> Bola -> Watublapi -> Egon, +50-70 km per the route concept, +37 km once corrected for a geometry defect in the concept-sketch segments).",
+      "why_it_matters": "It is itself a weaving village and a quieter, far less documented stretch of coast than the well-known Paga/Koka beaches further west on the route -- exactly the kind of 'forgotten coast' detour the race's design rules favour, if the extra distance and unscouted track can be justified for the Ultra variant.",
+      "history_culture": "Bola sits on a hillside on Sikka's south-east shore; the seafront carries Watu Krus, a stone cross monument marking the area's past Christianisation. Like Watublapi, Bola is itself known for ikat weaving (tenun ikat).",
+      "practical": {
+        "altitude_m": 1,
+        "access": "Road; the optional loop segment Maumere-Bola-Watublapi is unscouted per the route concept and data notes.",
+        "fees_protocol": "None specific found; treat as an ordinary village stop pending field confirmation.",
+        "sleep": "n-bola: none.",
+        "water_resupply": "n-bola: minimal resupply, water unreliable.",
+        "best_time": "Daylight; coastal heat management applies as elsewhere.",
+        "hazards": "None specific; the segment itself is flagged as unscouted/less certain than the primary Traverse line."
+      },
+      "facts": [
+        {"fact": "Bola village sits on a hillside on Sikka's south-east coast, about 24 km from Maumere, and is itself a weaving village.", "source_urls": ["https://the-islands-of-indonesia.com/islands/east-nusa-tenggara/flores/watublai-village/"], "confidence": "likely"},
+        {"fact": "A stone cross monument, Watu Krus, stands on Bola's seafront as a marker of the area's past Christianisation.", "source_urls": ["https://the-islands-of-indonesia.com/islands/east-nusa-tenggara/flores/watublai-village/"], "confidence": "likely"},
+        {"fact": "The corrected Maumere-Bola-Watublapi loop totals roughly 57 km against a ~20 km direct Maumere-Watublapi hop -- a real detour of about +37 km, short of route-concept.md's original +50-70 km estimate, after a geometry-generation defect in the concept-sketch segments was fixed.", "source_urls": ["repo:data/segments.geojson#s-bola-watublapi-a", "repo:data/segments.geojson#s-maumere-bola-a"], "confidence": "verified"}
+      ],
+      "photo_subjects": [
+        "Bola's hillside village and seafront",
+        "Watu Krus stone cross monument",
+        "The quieter, undeveloped south coast around Bola",
+        "Local weavers at work, if arranged"
+      ],
+      "commons_search_terms": ["Bola Sikka Flores", "Bola village Flores coast", "Watu Krus Bola"]
+    }
+  ],
+  "narrative_notes": "The section's spine is a sequence of three very different registers: an easy, arrangeable craft encounter (Watublapi), a genuine active-volcano hike-a-bike (Egon), and a logistics-and-hazard crux (Lewotobi) that the brochure should treat honestly as a standing constraint rather than smooth over -- it is real adventure in the most literal sense, but it is also the one place on the course where 'spectacular' and 'dangerous' are the same fact. The finish at Larantuka is the strongest single cultural payoff on the whole route (five centuries of continuous Semana Santa tradition) and pairs naturally with Ile Mandiri as a visual bookend, whether or not the optional summit finale is adopted. Several POIs found within this section's bounding box (Sikka village, Sikka Old Church, Wuring, the 1992 Maumere earthquake/tsunami story, Frans Seda Airport, Lela) belong to section 9 (Sikka and the Portuguese south) per sections.json and were not duplicated here -- flagging in case the brochure's section boundary needs a cross-reference. Lewotobi's status is genuinely volatile and time-sensitive: every number here (alert level, exclusion radius, event counts) should be treated as a snapshot of the research pass, not a fact to print without a final MAGMA Indonesia check close to publication or race week.",
+  "corrections_to_data": [
+    "No changes needed to data/ recommended from this pass. Confirms rather than contradicts: p-egon's Level I / mid-2026 status, p-lewotobi-laki-laki's Level III / 5 km / 12 May 2026 timeline (independently found again this pass, with the added detail that Level II with a 4 km zone applied in early 2026 before the May escalation, and that 778 eruptive events were recorded through 27 Aug 2026), and the Bola-loop corrected-distance figures in segments.geojson all check out against fresh web sources.",
+    "Consider adding to p-egon or n-blidit: the Blidit river hot spring (~5 km along the same access road from Maumere, visited after the Egon hike) is not currently a data_ids entry of its own -- it may be worth a small poi if the brochure wants to feature it as a standalone practical/recovery stop.",
+    "Consider adding fields for Gewayantana Airport, Larantuka's ferry connections (Adonara/Solor/Lembata/Kupang), and Ile Mandiri's Riang Kemie/Leloba access route to n-larantuka or p-ile-mandiri if these logistics belong in the data model rather than only the brochure."
+  ],
+  "open_questions": [
+    "What is the current (race-week-proximate) PVMBG alert level and exact exclusion radius for Lewotobi, reconfirmed against MAGMA Indonesia rather than this research pass's snapshot?",
+    "Is there a confirmed, current entrance/parking fee for the Gunung Egon trailhead at Blidit?",
+    "Is there a confirmed cultural protocol or fee for a race group visiting Bola beyond the general village courtesy assumed here?",
+    "Would Semana Santa's fixed Holy Week date (outside the dry-season race window) ever intersect with a shifted race calendar, or is it purely a narrative reference for the brochure?",
+    "Field verification is still needed for Blidit, Waiterang and Talibura's coordinates (flagged approximate/unverified in sections.json's own open questions)."
+  ]
+}

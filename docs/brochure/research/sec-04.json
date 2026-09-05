@@ -1,0 +1,227 @@
+{
+  "topic_id": "sec-04",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Reo (old north-coast port)",
+      "data_ids": ["n-reo", "p-reo-port"],
+      "what_it_is": "A market town in Reok kecamatan, Manggarai Regency, on Flores' north coast: market, bank, health centre, mosque, church and one confirmed homestay. The working cargo/ferry harbour, Pelabuhan Kedindi, sits a few km west at the Wae Reo river mouth.",
+      "why_it_matters": "Reo is the last full resupply before the race's most remote, driest, hottest stretch, so it anchors the section's start both logistically and narratively. It is also an active, not sleepy, harbour: NTT provincial press repeatedly floats Kedindi as a candidate second-largest export port in the province, so riders pass a real working waterfront, not a museum piece.",
+      "history_culture": "Local history traces Reo's first settlement (Lawara/Ulu Wara) to forces from the Bima Sultanate who came to spread Islam and trade in spices. Under the Dutch, Reo's port served as an administration and transport link -- the Manggarai resistance leader Motang Rua was shipped through Reo into exile at Ende. A Dutch-era cannon still stands at Puncak Gunung Batu, the hill above the town.",
+      "practical": {
+        "altitude_m": "near sea level",
+        "access": "paved road from Ruteng (~60-90 km) and from Labuan Bajo; part of the Trans-Flores network",
+        "fees_protocol": "none noted; ordinary market town",
+        "sleep": "Reo Family Homestay (per repo data); no other lodging confirmed",
+        "water_resupply": "market, bank, health centre present; data marks water as reliable in town itself, though the wider Reok/Sambi Rampas area was under active dry-season emergency water-trucking as of August 2026",
+        "best_time": "early morning departure before the day heats up; dry season (Jun-Sep)",
+        "hazards": "heat; port/truck traffic on the harbour road"
+      },
+      "facts": [
+        {
+          "fact": "Reo/Reok sits on Flores' north coast about 60 km north of Ruteng; Pelabuhan Kedindi (the actual cargo/ferry port) is assessed by provincial officials as a candidate to become NTT's second-largest port after Kupang's Tenau.",
+          "source_urls": ["https://www.beritasatu.com/nusantara/879443/pelabuhan-kedindi-reo-dinilai-layak-jadi-pelabuhan-export-terbesar-kedua-di-ntt", "https://kupang.antaranews.com/berita/22372/pelabuhan-reo", "repo:data/nodes.geojson#n-reo"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Reo's port was used by the Dutch colonial administration for transport, including shipping the Manggarai resistance figure Motang Rua into exile via Reo to Ende; a Dutch-era cannon remains on Puncak Gunung Batu above the town.",
+          "source_urls": ["https://id.wikipedia.org/wiki/Reo,_Reok,_Manggarai", "https://www.congkasae.com/2025/04/sejarah-perjuangan-motang-rua-melawan.html"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The road Ruteng -> Reo -> Pota is described (2020s travel/news sources) as roughly 90 km, paved and in smooth/good condition -- an all-weather link, not a track.",
+          "source_urls": ["https://travel.kompas.com/read/2020/09/18/151200627/desa-pota-alternatif-tempat-wisata-melihat-komodo-di-flores?page=all"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "fishing/cargo boats at the Wae Reo river-mouth port at golden hour",
+        "market stalls and the town's mosque/church side by side",
+        "the Dutch-era cannon on Puncak Gunung Batu overlooking the bay",
+        "savanna hills framing the harbour"
+      ],
+      "commons_search_terms": ["Reo Manggarai", "Pelabuhan Reo", "Reok Manggarai", "Kedindi port Flores"]
+    },
+    {
+      "name": "The Reo-Pota-Riung savanna corridor (the water constraint)",
+      "data_ids": ["p-north-coast-savanna"],
+      "what_it_is": "Dry, lontar-palm savanna and bay country along Flores' little-visited north coast, forming the spine of the Trans-Flores northern route between Reo, Pota (Sambi Rampas kecamatan, Manggarai Timur) and Riung (Ngada). A mix of paved and unpaved/potholed track, hot and sparsely populated.",
+      "why_it_matters": "This is the section the whole race concept names as its defining unknown -- brochure-wise it is the purest 'real adventure' stretch: empty savanna, few visitors, spectacular bay views, and a genuine open question about water. Current reporting suggests the corridor is less blank than the concept assumed: it is part of a named, driveable route, though still rough and drought-prone.",
+      "history_culture": null,
+      "practical": {
+        "altitude_m": "near sea level to low hills",
+        "access": "Ruteng-Reo-Pota: paved, ~90 km; Pota-Riung: part of the Trans-Flores northern corridor via Buntal, Golo Lijung and Dampek, ~72 km total Riung-Reo, described as having unpaved sections and potholes, temporarily cut by a landslide in mid-2020s reporting",
+        "fees_protocol": "none",
+        "sleep": "none confirmed between Reo and Riung outside the port villages themselves",
+        "water_resupply": "unreliable -- confirmed by an active dry-season emergency response (Aug 2026): water tankers (mobil tangki air) and hydrant units were delivering to Pota, Nangambaur, Golo Lijun/Golo Lijung, Nangambaling and posts across Borong and Sambi Rampas kecamatan",
+        "best_time": "dry season (Jun-Sep); avoid mid-day heat; carry all water",
+        "hazards": "heat and dehydration; unpaved/pothole sections; river crossings that may run dry; landslide risk noted in wet-season reporting even on the nominal road"
+      },
+      "facts": [
+        {
+          "fact": "The stretch Riung -> Buntal -> Golo Lijung -> Pota -> Dampek -> Reo is given as about 72 km, naming three intermediate places not yet in repo data (Buntal, Golo Lijung, Dampek).",
+          "source_urls": ["https://travel.kompas.com/read/2022/09/25/104120127/jelajah-jalur-pantai-utara-flores-ntt-yang-punya-banyak-tempat-wisata"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "As of August 2026, an active dry-season water crisis and emergency trucking response covered exactly this corridor -- Desa Pota, Nangambaur, Golo Lijun, Nangambaling, and posts in Borong and Sambi Rampas kecamatan -- with damage also found in the Rana Mese water-supply pipeline serving Lamba Leda Utara.",
+          "source_urls": ["https://mataram.antaranews.com/berita/568125/kementerian-pu-perkuat-layanan-air-bersih-pengungsi-pulau-flores", "https://koran-jakarta.com/2026-08-30/kementerian-pekerjaan-umum-perkuat-layanan-air-bersih-untuk-pengungsi-pulau-flores"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The Pota-Riung road is part of the named Trans-Flores northern route and was reported cut for five days by a landslide in one mid-2020s report, implying it is a maintained route (subject to wet-season failure), not an unmapped track.",
+          "source_urls": ["https://www.infonasional.com/jalan-trans-flores-putus-longsor"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "lontar (lontar/borassus) palms silhouetted on dry savanna hills",
+        "an empty coastal road disappearing into heat shimmer",
+        "dry riverbeds crossing the track",
+        "wide bay views from the savanna hills toward the sea"
+      ],
+      "commons_search_terms": ["Manggarai savanna", "lontar palm Flores", "Sambi Rampas", "Trans Flores road"]
+    },
+    {
+      "name": "Pota",
+      "data_ids": ["n-pota"],
+      "what_it_is": "A north-coast port village, capital of Sambi Rampas kecamatan in Manggarai Timur: parish church, health centre, bank unit and schools. A small lake attraction, Telaga Teratai Pota, is mentioned in regional travel write-ups.",
+      "why_it_matters": "Pota is the midpoint anchor of the section's most exposed stretch and the point where the optional Manggarai Timur interior loop (via Borong and Elar) rejoins the direct north-coast line -- so it is both a resupply waypoint and a route-choice node.",
+      "history_culture": null,
+      "practical": {
+        "altitude_m": "near sea level",
+        "access": "paved from Ruteng via Reo (~90 km); rougher unpaved/potholed link east to Riung",
+        "fees_protocol": "none",
+        "sleep": "none confirmed",
+        "water_resupply": "unreliable per repo data; confirmed by the August 2026 emergency water-trucking response naming Desa Pota directly",
+        "best_time": "dry season, early-morning arrival/departure",
+        "hazards": "heat, isolation, water scarcity"
+      },
+      "facts": [
+        {
+          "fact": "Pota is the kecamatan capital of Sambi Rampas, Manggarai Timur, with a parish church, health centre, bank unit and schools; regional travel guides also mention the small Telaga Teratai lake as a local attraction.",
+          "source_urls": ["repo:data/nodes.geojson#n-pota", "https://travel.kompas.com/read/2020/09/18/151200627/desa-pota-alternatif-tempat-wisata-melihat-komodo-di-flores?page=all"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Desa Pota received emergency clean-water tanker deliveries during the August 2026 dry season, alongside Nangambaur and Golo Lijun.",
+          "source_urls": ["https://mataram.antaranews.com/berita/568125/kementerian-pu-perkuat-layanan-air-bersih-pengungsi-pulau-flores"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "the small parish church against savanna hills",
+        "fishing boats at the Pota shoreline",
+        "Telaga Teratai lake if accessible",
+        "village life -- market stalls, schoolkids, motorbikes on the coastal road"
+      ],
+      "commons_search_terms": ["Pota Sambi Rampas", "Pota Manggarai Timur", "Telaga Teratai Pota"]
+    },
+    {
+      "name": "Riung and the Seventeen Islands Marine Park",
+      "data_ids": ["n-riung", "p-seventeen-islands"],
+      "what_it_is": "A small fishing port and gateway village in Ngada Regency for the Seventeen Islands Marine Park (Taman Wisata Perairan Tujuh Belas Pulau) -- more than twenty coral islets reached by hired boat from the Riung pier, with a huge flying-fox colony, snorkelling and white-sand islets.",
+      "why_it_matters": "Riung is the brochure payoff at the end of the water-constrained section: a real 'discovered paradise' feel, thousands of flying foxes lifting off at dusk, turquoise water and reef, all reached by a short boat ride from a village most travellers still skip. It closes the section on spectacle after its hardest logistics.",
+      "history_culture": "The marine park is a designated nature-tourism reserve managed with a national-park-style entrance fee; local guides and homestays run the boat trade from Riung's small pier economy.",
+      "practical": {
+        "altitude_m": "near sea level",
+        "access": "road to Riung (unpaved/rough section from Pota per current reporting); boat only beyond the pier",
+        "fees_protocol": "reported national park entrance fee around IDR 100,000 per person (may or may not be bundled into boat-charter prices); no cultural checkpoint noted",
+        "sleep": "several budget guesthouses/homestays (Riung Guesthouse, Mentos Bungalows, Nirvana Bungalows, Pondok SVD and others), roughly IDR 150,000-350,000/night with simple breakfast",
+        "water_resupply": "unreliable per repo data despite guesthouse presence; confirm locally",
+        "best_time": "dry season; early boat departure for calmer water and best light on the flying-fox colony at dusk on the return, or dawn viewing",
+        "hazards": "sun/heat exposure on open boats; reef conservation (no touching coral, no collecting); coordinates for Riung itself are still hand-placed and need a field GPS fix"
+      },
+      "facts": [
+        {
+          "fact": "A day boat charter runs roughly IDR 400,000-1,500,000 depending on group size (per person about IDR 400,000 for 4-6 people including lunch and park entrance); a 2-day/1-night camping charter runs about IDR 2,000,000 for the boat.",
+          "source_urls": ["https://www.ourtasteforlife.com/riung-flores-17-islands/", "https://museumofwander.com/17-islands-marine-park-flores/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "A large flying-fox (fruit bat) colony -- reported as thousands of individuals, wingspan up to about 1.5 m -- roosts on Pulau Ontoloe, one of the park's stops; other islets (Pulau Tiga, Pulau Rutong, Pulau Tembang) are used for snorkelling.",
+          "source_urls": ["https://museumofwander.com/17-islands-marine-park-flores/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The Timor monitor lizard inhabits the park area; a locally-named, moderate-sized Komodo-dragon-like monitor called 'Mbou' is reported at Torong Padang in some seasons, but sourcing for this specific claim is thin.",
+          "source_urls": ["https://museumofwander.com/17-islands-marine-park-flores/"],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "Reported entrance fee to the 17 Islands park is about IDR 100,000 per visitor.",
+          "source_urls": ["https://www.lonelyplanet.com/thorntree/forums/asia-south-east-asia-islands-peninsula/indonesia/riung-17-islands-entry-fee"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "flying foxes lifting off Pulau Ontoloe at dusk, silhouetted against the sky",
+        "aerial/boat-eye view of the scattered islets and turquoise water",
+        "snorkelers over reef near Pulau Tiga/Rutong/Tembang",
+        "the Riung pier and fishing boats at first light",
+        "white-sand islet beaches"
+      ],
+      "commons_search_terms": ["Riung 17 islands", "Pulau Ontoloe", "Taman Wisata 17 Pulau Riung", "Riung Flores flying fox"]
+    },
+    {
+      "name": "Manggarai Timur interior loop: Borong and Elar (Ultra alternative)",
+      "data_ids": ["n-borong", "n-elar"],
+      "what_it_is": "The optional Ultra-variant loop: Ruteng -> Borong (south coast, capital of Manggarai Timur) -> Elar (interior kecamatan capital) -> back to the north coast at Pota, instead of the direct Liang Bua -> Reo -> Pota line. Adds an estimated 120-160 km over very remote, largely unscouted tracks.",
+      "why_it_matters": "Borong offers a genuine full-resupply reset (hospital, banks, hotels) mid-traverse that the direct coastal line lacks, and Elar's kecamatan holds real 'undiscovered Flores' material -- a crater-country lake, waterfalls and a weaving village -- but the Elar-Pota link is the least-known stretch in the whole course concept.",
+      "history_culture": "Elar kecamatan's Desa Wisata Rana Kulan is noted for a large lake (Danau Rana Kulan) plus eight smaller lakes in the forest and the Tetes Tana waterfall; the area is also linked to Puncatiti hand-woven ikat cloth and cattle-grazing savanna. Borong (Compang Ndejing tourism village nearby) has Pantai Ligota beach, rice terraces and trekking along the Waelaku watershed.",
+      "practical": {
+        "altitude_m": "Borong near sea level; Elar interior/higher, unconfirmed",
+        "access": "Ruteng-Borong is paved (south Trans-Flores corridor); an alternate route via Borong-Watunggong-Lengko Ajang to Pota is given as ~130 km / ~5 hours; Borong-Elar and Elar-Pota tracks are unscouted",
+        "fees_protocol": "none noted; village-level courtesy likely expected as anywhere in the interior",
+        "sleep": "Borong: hotels (e.g. Gloria Hotel Toka Borong); Elar: none confirmed",
+        "water_resupply": "Borong reliable/full; Elar unreliable, minimal resupply only; the same August 2026 dry-season emergency water response covered posts in Borong kecamatan",
+        "best_time": "dry season; this loop is explicitly a scouting-priority unknown, not a settled option",
+        "hazards": "unscouted tracks between Elar and Pota; heat; water uncertainty; genuinely remote with no rescue infrastructure implied"
+      },
+      "facts": [
+        {
+          "fact": "Borong is the capital of Manggarai Timur Regency: market, hospital, banks, bus terminal and hotels (e.g. Gloria Hotel Toka Borong).",
+          "source_urls": ["repo:data/nodes.geojson#n-borong", "https://en.wikipedia.org/wiki/Borong,_Flores"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Elar kecamatan (1 kelurahan, 14 desa) includes Desa Wisata Rana Kulan, known for a large forest lake plus eight smaller lakes and the Tetes Tana waterfall, and for Puncatiti hand-woven cloth and cattle-grazing savanna.",
+          "source_urls": ["https://travel.kompas.com/read/2022/10/02/190700527/12-desa-wisata-manggarai-timur-ntt-banyak-kekayaan-alam-dan-budaya?page=all"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "An alternate driving route from Borong via Watunggong and Lengko Ajang to Pota is about 130 km and roughly 5 hours.",
+          "source_urls": ["https://travel.kompas.com/read/2020/09/18/151200627/desa-pota-alternatif-tempat-wisata-melihat-komodo-di-flores?page=all"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Emergency dry-season water distribution in August 2026 also reached posts in Borong kecamatan, alongside Sambi Rampas and Pota.",
+          "source_urls": ["https://mataram.antaranews.com/berita/568125/kementerian-pu-perkuat-layanan-air-bersih-pengungsi-pulau-flores"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Rana Kulan forest lake and its smaller satellite lakes",
+        "Tetes Tana waterfall",
+        "Puncatiti weavers at a loom",
+        "Borong's south-coast harbour and rice terraces",
+        "Pantai Ligota beach near Compang Ndejing"
+      ],
+      "commons_search_terms": ["Borong Manggarai Timur", "Rana Kulan Elar", "Puncatiti tenun", "Compang Ndejing"]
+    }
+  ],
+  "narrative_notes": "The section's own framing ('no documented continuous track') is more pessimistic than what current open-web sources show: Ruteng-Reo-Pota is a plain paved 90 km road, and Pota-Riung, while rougher (unpaved, potholed, landslide-prone), is part of a named route with a given ~72 km distance and three intermediate place names (Buntal, Golo Lijung, Dampek) not yet in repo data. The genuine open question is less 'does a track exist' than 'is it good enough, and is water available on it' -- and 2026 reporting confirms the water problem is not hypothetical: an active dry-season emergency response was trucking water into Pota, Golo Lijun, Nangambaur, Nangambaling and posts in Borong/Sambi Rampas as of August 2026, which strongly supports keeping water status 'unreliable' for this whole corridor and even suggests race-week contingency planning for water drops. The interior Ultra loop (Borong-Elar) has real brochure material (Rana Kulan lakes, weaving) but the Elar-Pota link remains the least documented stretch of the whole course.",
+  "corrections_to_data": [
+    "Consider softening 'no documented continuous track' in the section story: multiple 2020s-2026 sources describe a driveable route the whole way (Ruteng-Reo-Pota paved ~90km; Pota-Riung ~72km via Buntal-Golo Lijung-Dampek, unpaved/potholed, part of the Trans-Flores northern corridor, periodically cut by landslides) -- a real but rough road exists; the honest open question is track quality and water, not existence.",
+  "p-seventeen-islands summary says flying foxes are 'on Pulau Tembang', but the sources found here consistently place the large flying-fox colony on Pulau Ontoloe and describe Pulau Tembang as a snorkelling stop -- worth checking which island the colony is actually on before repeating the claim in brochure copy.",
+    "Three place names appear in road-distance sources but are absent from data/nodes.geojson: Buntal, Golo Lijung (also spelled Golo Lijun), and Dampek, all between Pota and Reo/Riung -- candidates for intermediate nodes if the corridor gets scouted.",
+    "An active dry-season water crisis and emergency-trucking response (Aug 2026) covered Pota, Nangambaur, Golo Lijun, Nangambaling and posts in Borong/Sambi Rampas kecamatan -- current, first-hand confirmation of the 'unreliable' water tags already on n-pota, n-riung and the section's water-constraint framing."
+  ],
+  "open_questions": [
+    "Is the Pota-Riung unpaved/potholed road rideable by loaded bikes as a continuous line, or does it require walking/portage sections -- ground truth still needed despite it being a named, driveable route for motor vehicles.",
+    "Which island actually hosts the Seventeen Islands flying-fox colony -- Ontoloe (per open-web sources) or Tembang (per repo data) -- needs resolving before brochure copy repeats either claim as fact.",
+    "Is the Elar-Pota interior link (Manggarai Timur Ultra loop) rideable at all, or purely a foot corridor -- no source found addresses this stretch directly.",
+    "Riung's and Pota's coordinates remain hand-placed per existing repo notes and still need a field GPS fix.",
+    "Water-drop/resupply logistics for a race passing through an area under an active 2026 drought emergency deserves explicit safety planning, not just a 'carry water' note."
+  ]
+}

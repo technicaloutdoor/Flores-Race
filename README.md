@@ -103,6 +103,19 @@ The planner uses open data from the following sources:
 
 Each attribution is displayed in the web app's attribution control and recorded in the generated `web/public/data/meta.json`.
 
+## Course exports and brochure
+
+* `exports/gpx/` holds the course as GPX for Ride with GPS or any planner: the main traverse (plain
+  and with points of interest), the Ultra and Ultra+ variants, one file per section and one per
+  optional loop or alternative, with `manifest.json` carrying every derived number. Regenerate with
+  `python3 pipeline/export_gpx.py`; import instructions in [`docs/ridewithgps.md`](docs/ridewithgps.md).
+* `docs/brochure/flores-race-brochure.pdf` is the illustrated course concept brochure (maps rendered
+  from the project data, Sentinel-2 imagery of every key place, the ten sections, the optional tracks,
+  hazards, cultural protocol, logistics). Build it with `python3 pipeline/render_brochure_maps.py ...`
+  (maps and profiles) then `python3 pipeline/build_brochure.py` (HTML and PDF via Chromium). The
+  editorial text lives in `pipeline/brochure_content.py`; the desk research behind it, with sources and
+  confidence labels, in `docs/brochure/research/`.
+
 ## Links
 
 - **[`ARCHITECTURE.md`](ARCHITECTURE.md)** — The authoritative system design. Start here for an overview of audiences, design principles, the route model, and the pipeline stages.

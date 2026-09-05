@@ -1,0 +1,294 @@
+{
+  "topic_id": "sec-05",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Mengeruda Hot Spring (Soa)",
+      "data_ids": ["p-mengeruda-hot-spring", "n-soa"],
+      "what_it_is": "A cluster of warm-river pools in Piga village, Soa sub-district, about 18-23.5 km north of Bajawa near Soa airport -- the natural stopover on the climb from Riung up to the Bajawa plateau.",
+      "why_it_matters": "It is the one comfortable, low-effort stop on the section's biggest single climb (coast to ~1,100 m plateau), and a strong brochure image: steaming pools set in a river valley with jungle either side, reachable by road. For a rider it doubles as a legitimate recovery soak partway up the climb.",
+      "history_culture": "A community-managed bathing spot rather than a resort; fed by a naturally warm river rather than piped spring water, with simple changing facilities.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, ~18 km / 30 min from Bajawa by vehicle",
+        "fees_protocol": "Ticketed: domestic adult ~Rp 10,000, domestic child ~Rp 5,000, foreign visitor ~Rp 20,000; small extra fee for motorbike parking. Open daily 08:00-18:00 WITA.",
+        "sleep": "none on site",
+        "water_resupply": "none potable (hot river water only); resupply is at Soa or Bajawa",
+        "best_time": "any time within opening hours; likely quieter early morning",
+        "hazards": "wet, algae-slick stone around the pools; otherwise low-risk"
+      },
+      "facts": [
+        {
+          "fact": "The springs sit in Piga village, Soa sub-district, roughly 18-23.5 km from Bajawa town, close to Soa (Turelelo) airport.",
+          "source_urls": ["repo:data/nodes.geojson#n-soa", "https://floresexotictours.id/things-to-do/soa-hot-spring-ngada"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Entrance is ticketed: about Rp 10,000 for domestic adults, Rp 5,000 for domestic children, Rp 20,000 for foreign visitors, open daily 08:00-18:00 WITA.",
+          "source_urls": ["https://www.trip.com/travel-guide/attraction/mengeruda/soa-mengeruda-hot-spring-58291963/", "https://www.tripadvisor.com/FAQ_Answers-g297729-d3513934-t6446216-How_much_is_the_ticket_to_entry.html"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["Steaming pools in a jungle river valley", "Riders soaking mid-climb with bikes parked streamside", "Wide shot of the valley with Bajawa plateau escarpment behind"],
+      "commons_search_terms": ["Mengeruda hot spring", "Soa hot spring Ngada", "Air Panas Mengeruda Flores"]
+    },
+    {
+      "name": "Bajawa",
+      "data_ids": ["p-bajawa-town", "n-bajawa"],
+      "what_it_is": "Cool highland capital of Ngada Regency at roughly 1,100-1,300 m on the Trans-Flores highway, the region's full resupply point (hotels, market, ATMs) between the north coast and the megalithic villages to the south.",
+      "why_it_matters": "It is the section's only full-service town: the last hot shower, real bed, ATM and complete resupply before four days of minimal-service villages under Inerie. Its highland climate and market give it its own brochure identity -- cool air, produce stalls, volcano views on clear mornings -- distinct from the coastal towns bracketing the section.",
+      "history_culture": "Ngada people form the majority of the town's population; local cuisine leans on cool-climate, volcanic-soil produce and hearty preparations distinct from the coast. Bajawa is also the usual base for hiring an Inerie summit guide and for Reba festival season (see Bena entry).",
+      "practical": {
+        "altitude_m": 1100,
+        "access": "road, on the Trans-Flores highway; served by Soa (Turelelo) airport ~20-24 km away",
+        "fees_protocol": "none",
+        "sleep": "hotel (full range)",
+        "water_resupply": "reliable, full resupply",
+        "best_time": "year-round; noticeably cooler than the coast, bring warm layers for mornings",
+        "hazards": "none specific"
+      },
+      "facts": [
+        {
+          "fact": "Bajawa sits at roughly 1,100-1,300 m, giving it a mild, spring-like highland climate year-round with a distinct wet/dry season split.",
+          "source_urls": ["repo:data/nodes.geojson#n-bajawa", "https://travelsloth.de/en/bajawa-flores-indonesia/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Bajawa is the region's full resupply hub: hotels, a market, ATMs, on the Trans-Flores highway.",
+          "source_urls": ["repo:data/pois.geojson#p-bajawa-town"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["Market stalls with highland produce", "Town rooftops with Inerie's cone behind", "Morning mist over the plateau"],
+      "commons_search_terms": ["Bajawa Flores", "Bajawa Ngada town", "Bajawa market Indonesia"]
+    },
+    {
+      "name": "Wolobobo Hill",
+      "data_ids": ["p-wolobobo"],
+      "what_it_is": "A sunrise viewpoint hilltop with wooden walkways and platforms in Turekisa village, roughly 9-15 km from Bajawa, looking over Inerie's cone and the Bajawa plateau -- sometimes called 'the land above the clouds.'",
+      "why_it_matters": "It is the single best sunrise photograph available in the section without leaving the road network: golden light, mist pooling below, Inerie's silhouette and (on clear mornings) Ebulobo further east. A strong, low-effort brochure image close to the section's main resupply town.",
+      "history_culture": "A community-run viewpoint park rather than a formal reserve; access is a short drive plus a hike to the crater-rim top.",
+      "practical": {
+        "altitude_m": 1468,
+        "access": "road (~9.8 km / ~30 min drive from Bajawa) then a 30-45 minute walk to the top",
+        "fees_protocol": "informal local entry fee typical of community viewpoints (not separately confirmed)",
+        "sleep": "none on site; day/dawn visit from Bajawa",
+        "water_resupply": "none",
+        "best_time": "pre-dawn arrival; clouds typically build from mid-morning",
+        "hazards": "walking trail in the dark; otherwise low-risk"
+      },
+      "facts": [
+        {
+          "fact": "Wolobobo is reached by a roughly 30-minute drive from Bajawa followed by a 30-45 minute walk to the viewing platforms at the top, and is promoted as the area's best sunrise spot with views of Inerie and, on clear days, Ebulobo.",
+          "source_urls": ["https://authentic-indonesia.com/blog/the-charming-wolobobo-hill-ngada-flores/", "https://www.tripadvisor.com/Attraction_Review-g297730-d15197417-Reviews-Wolobobo_Hill-Bajawa_Flores_East_Nusa_Tenggara.html"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["Sunrise silhouette of Inerie from the platforms", "Sea of mist below the ridge at dawn", "Wooden walkway leading to the viewpoint"],
+      "commons_search_terms": ["Wolobobo Hill Bajawa", "Bukit Wolobobo", "Wolobobo viewpoint Flores"]
+    },
+    {
+      "name": "Bena",
+      "data_ids": ["p-bena", "n-bena"],
+      "what_it_is": "A Ngada megalithic village of nine clans on a narrow ridge at Inerie's foot, 19 km south of Bajawa, its two facing rows of thatched houses framing a stone-terraced square filled with tombs and paired ngadhu/bhaga ancestor shrines.",
+      "why_it_matters": "Bena is the section's cultural anchor and the most-visited traditional village in Ngada -- the reference image for the whole megalithic-village theme, and the model the race concept holds up for how a cultural checkpoint should work: a living village received on its own terms, not a museum stop.",
+      "history_culture": "Nine clans, each with its own ngadhu (a carved post with a small thatched roof, representing a male ancestor) and bhaga (a small thatched hut representing a female ancestor), set around a courtyard of megalithic tombs. Visitors sign a guest book and pay a small entry donation (commonly cited Rp 10,000-25,000) received by village elders; the takings support the village. One travel account describes Bena as run mainly as a day-visit destination rather than one offering organised overnight homestays -- worth checking against the repo's own 'homestay' tag before any race-day plan assumes riders can sleep in the village itself. Reba, the Ngada new-year thanksgiving festival centred on the yam (uwi) and ancestor veneration, is reported to begin in Bena on 27 December each year, with neighbouring villages (Gurusina, Langa, Nage, Wogo) following into January.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, 19 km south of Bajawa",
+        "fees_protocol": "Entry donation/ticket commonly cited at Rp 10,000-25,000 per person, guest book signing expected; a race checkpoint needs a prior agreement with the village adat council on numbers, timing and conduct.",
+        "sleep": "homestay per repo tag, but at least one source describes Bena as primarily day-visit -- flagged as an open question",
+        "water_resupply": "unreliable",
+        "best_time": "daytime visiting hours; Reba season (late Dec-Jan) adds festival colour but also crowds and closed-door ceremony days",
+        "hazards": "narrow stone paths; respect restricted/sacred structures"
+      },
+      "facts": [
+        {
+          "fact": "Bena houses nine clans around a stone-terraced square with paired ngadhu and bhaga shrines; entry involves a guest-book signature and a donation commonly cited at Rp 10,000-25,000.",
+          "source_urls": ["repo:data/pois.geojson#p-bena", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/flores/bajawa/1729", "http://thespicerouteend.com/travel-flores-bajawa-volcano-villages/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Reba, the Ngada thanksgiving/new-year festival centred on yams (uwi) and ancestor rites, is reported to start in Bena on 27 December, with Gurusina, Langa, Nage, Wogo and Beiposo following in January; the festival period broadly spans late December to February and varies by village.",
+          "source_urls": ["https://observerid.com/reba-traditional-festival-in-ngada/", "https://indonesiankomodotours.com/reba-festival-in-ngada/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["Rows of thatched houses framing the ngadhu/bhaga square", "Elder receiving guests at the entrance", "Inerie's cone rising directly behind the village roofline"],
+      "commons_search_terms": ["Bena village Ngada", "Bena traditional village Flores", "Ngadhu bhaga Bena"]
+    },
+    {
+      "name": "Luba",
+      "data_ids": ["p-luba"],
+      "what_it_is": "A small, quieter Ngada megalithic village a few hundred metres from Bena, home to four clans with ngadhu and bhaga shrines carved with horse, buffalo and snake motifs.",
+      "why_it_matters": "Luba offers the same megalithic-village theme as Bena with far fewer visitors -- a useful counterpoint in the brochure narrative (the 'undiscovered neighbour') and a lower-friction possible checkpoint or rest stop.",
+      "history_culture": "Same general adat protocol as Bena: greet the elders, small donation, sign the guest book. Carved shrine decoration (animal motifs) is a distinguishing detail from Bena's plainer posts.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, immediately adjacent to Bena",
+        "fees_protocol": "same protocol as Bena: donation and guest book, village-council agreement needed for an organised checkpoint",
+        "sleep": "homestay per repo tag (unverified independently in this search pass)",
+        "water_resupply": "unreliable",
+        "best_time": "daytime",
+        "hazards": "none specific beyond general village etiquette"
+      },
+      "facts": [
+        {
+          "fact": "Luba is a small four-clan Ngada village a short walk from Bena, with carved ngadhu/bhaga shrines depicting horses, buffalo and snakes; it receives markedly fewer visitors than Bena.",
+          "source_urls": ["repo:data/pois.geojson#p-luba"],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": ["Carved animal-motif shrine detail", "Quiet village lane with no other visitors", "View back toward Bena's rooftops"],
+      "commons_search_terms": ["Luba village Ngada", "Luba Bajawa Flores"]
+    },
+    {
+      "name": "Tololela",
+      "data_ids": ["p-tololela"],
+      "what_it_is": "A Ngada megalithic village on a steep hillside (~650 m) in Manubhara, Jerebuu district, about 30 km from Bajawa -- less visited by tour groups than Bena, described by travellers as comparatively non-commercialised.",
+      "why_it_matters": "Tololela offers an overnight cultural-immersion option some sources describe as unavailable at Bena itself, and a hillside setting that photographs differently from the flatter Bena/Luba squares.",
+      "history_culture": "Sources describe roughly 31 traditional houses grouped around clan-pair ngadhu/bhaga shrines (reported clan counts vary by source, so treat exact numbers as indicative, not confirmed); the repo's own story flags the village location itself as needing on-the-ground confirmation. Overnight village homestays are described by at least one traveller account, contrasting with Bena's day-visit model.",
+      "practical": {
+        "altitude_m": 650,
+        "access": "road, ~30 km from Bajawa, steep approach",
+        "fees_protocol": "village-council permission expected before any organised group, including a race checkpoint",
+        "sleep": "homestay -- traveller accounts describe sleeping in the village with local families",
+        "water_resupply": "unreliable",
+        "best_time": "daytime arrival, overnight possible",
+        "hazards": "steep approach road/track"
+      },
+      "facts": [
+        {
+          "fact": "Tololela sits at roughly 650 m in Manubhara, Jerebuu district, about 30 km from Bajawa; multiple travel sources describe it as far less visited than Bena and open to overnight village stays.",
+          "source_urls": ["repo:data/pois.geojson#p-tololela", "https://wanderlog.com/place/details/5043575/tololela-traditional-village", "http://florestourism.com/districts/tololela/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["Two facing rows of houses on the hillside", "Villagers going about daily work, unposed", "Terraced approach path up the hill"],
+      "commons_search_terms": ["Tololela village Ngada", "Tololela Bajawa Flores"]
+    },
+    {
+      "name": "Gurusina",
+      "data_ids": ["p-gurusina", "n-gurusina"],
+      "what_it_is": "A Ngada megalithic village on Inerie's south-east flank, commonly cited as ~21 km from Bajawa, rebuilt after a fire on 13 August 2018 destroyed 27 of its 33 traditional houses and 6 sacred structures.",
+      "why_it_matters": "Gurusina is both a megalithic-village highlight and a cautionary story about how fragile these thatch-roofed compounds are -- a fire-discipline talking point for any rider briefing, and the anchor node for the new 'Inerie full circuit' option (Bena -> Gurusina -> Sewowoto/Ena Bhara beach -> Aimere).",
+      "history_culture": "On the evening of 13 August 2018, while much of the village was away watching a football match in a neighbouring settlement, an alleged electrical short circuit sparked a fire that burned 27 of 33 houses and 6 sacred ceremonial structures. Indonesia's Ministry of Education and Culture (Directorate of Belief and Traditional Affairs) began coordinating rebuilding within days, funding original-form-and-material reconstruction of all 27 houses and offering to help recreate lost heirlooms. The village has since been rebuilt using traditional materials and techniques, an act of cultural continuity rather than museum reconstruction. Reba festival at Gurusina reportedly follows Bena's into January.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, on Inerie's south-east flank; also the starting anchor for the Inerie full-circuit alternative toward Sewowoto/Ena Bhara beach",
+        "fees_protocol": "village-council permission expected; visitors asked to be mindful of fire risk around the rebuilt thatched houses",
+        "sleep": "homestay",
+        "water_resupply": "unreliable",
+        "best_time": "daytime; avoid open flames/stoves near the thatch",
+        "hazards": "fire risk in thatched structures -- explicit no-naked-flame briefing point"
+      },
+      "facts": [
+        {
+          "fact": "A fire on 13 August 2018 (alleged electrical short circuit) destroyed 27 of Gurusina's 33 traditional houses and 6 sacred structures while many residents were away at a football match; Indonesia's Ministry of Education and Culture began funding reconstruction of all 27 houses within days, using original materials and forms.",
+          "source_urls": ["https://www.thejakartapost.com/news/2018/08/14/fire-razes-gurusina-traditional-village-in-east-nusa-tenggara", "https://medium.com/@bondanpetra/a-restoration-for-gurusina-traditional-village-in-jerebuu-district-ngada-regency-east-nusa-1f16ce79f14b"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["Rebuilt thatched houses with fresh, unweathered roofing", "Ngadhu/bhaga shrine pairs in the compound", "View toward Inerie's summit from the village"],
+      "commons_search_terms": ["Kampung Adat Gurusina", "Gurusina village Ngada", "Gurusina fire traditional village"]
+    },
+    {
+      "name": "Inerie (2,245 m)",
+      "data_ids": ["p-inerie"],
+      "what_it_is": "A near-perfect stratovolcano cone south of Bajawa, at 2,245 m the highest point in Ngada and the visual anchor of the entire section -- visible from Bena, Luba and most of Jerebuu district. Not currently active.",
+      "why_it_matters": "Inerie is the section's single strongest landscape image and its structuring idea: villages beneath it orient their ngadhu/bhaga shrines toward its slope, treating the mountain less as scenery than as a presiding relative. It also anchors two route options -- a hike-a-bike shoulder traverse down to Aimere, and the longer 'Inerie full circuit' Ultra-variant loop via Gurusina and the Sewowoto/Ena Bhara coast.",
+      "history_culture": "Locally the ngadhu and bhaga shrines of the villages beneath Inerie face its slope, underlining the mountain's status as ancestral rather than purely scenic. Last reported activity was a smoke plume seen in June 1911; classed as not currently active, with no PVMBG alert bulletin specific to Inerie found as of a September 2026 search.",
+      "practical": {
+        "altitude_m": 2245,
+        "access": "trail; the standard summit hike starts from Watumeze village, ~15 km south of Bajawa",
+        "fees_protocol": "local guide strongly recommended (trail poorly marked, scree shifts underfoot; legal to hike independently but not advisable)",
+        "sleep": "none on the mountain; day hike from Bajawa/Watumeze",
+        "water_resupply": "none on the ascent -- carry all water, no shade on the climb",
+        "best_time": "pre-dawn start (leave Bajawa ~5:00, start hiking ~5:30-6:00) to summit before mid-morning cloud builds in; dry season",
+        "hazards": "steep loose scree and rock on the upper slope, >1,500 m elevation gain from the trailhead, no shade, cloud-in by mid-morning; the Bena-side shoulder descent toward Aimere is separately flagged as steep loose volcanic soil with exposure (5-10 km per the route concept's hike-a-bike inventory)"
+      },
+      "facts": [
+        {
+          "fact": "Inerie is 2,245 m, not currently active; its last reported activity was a smoke plume in June 1911, and no PVMBG alert bulletin specific to the volcano was found as of a September 2026 search.",
+          "source_urls": ["repo:data/pois.geojson#p-inerie", "https://en.wikipedia.org/wiki/Inierie", "https://www.gunungbagging.com/inerie/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The standard summit hike starts at Watumeze village (~15 km south of Bajawa) and takes about 2.5-4 hours to the top over steep, loose scree with more than 1,500 m of elevation gain and no shade; a local guide is strongly recommended, and starting before dawn (leaving Bajawa around 5:00) is advised because cloud typically builds in from mid-morning, obscuring the summit views over the Savu Sea and Bajawa.",
+          "source_urls": ["https://www.gunungbagging.com/inerie/", "https://theworldtravelguy.com/mount-inerie-hike/", "http://thespicerouteend.com/travel-flores-hiking-inerie-volcano-bajawa/"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["Symmetrical cone at dawn from Wolobobo or Bena", "Riders/hikers silhouetted on the scree slope", "Summit view over the Savu Sea and Bajawa plateau", "Ngadhu shrine post with Inerie behind it"],
+      "commons_search_terms": ["Inerie volcano Flores", "Gunung Inerie", "Mount Inerie Ngada"]
+    },
+    {
+      "name": "Sewowoto (Ena Bhara beach)",
+      "data_ids": ["n-sewowoto"],
+      "what_it_is": "A coastal hamlet and community-tourism beach at the foot of Inerie's southern slope, reached via Bajawa-Jerebuu-Waebela or Bajawa-Aimere-Waebela roads and then a roughly 30-minute walk or motorboat ride from Waebela; the low point of the proposed Inerie full-circuit option before the coast road back to Aimere.",
+      "why_it_matters": "It gives the Inerie full-circuit Ultra-variant a genuine coastal payoff -- white sand, a rock 'water-blow' feature where waves spray through gaps in the rock -- a contrast to the highland megalithic villages earlier in the loop, and a reason for stronger riders to choose the +40-60 km circuit option over the direct shoulder descent.",
+      "history_culture": "A community-tourism initiative (locally known association name found in the gazetteer but not independently confirmed) runs the beach access; it remains a low-infrastructure spot with food and lodging concentrated back in Aimere rather than at the beach itself.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road to Waebela (via Jerebuu or Aimere), then ~30 min on foot or by motorboat to the beach",
+        "fees_protocol": "none confirmed; community-tourism site",
+        "sleep": "none at the beach -- overnight visitors stay in Aimere",
+        "water_resupply": "unreliable/none",
+        "best_time": "daytime; caution on strong currents for swimming",
+        "hazards": "high waves and strong currents reported at the beach; no shade or facilities"
+      },
+      "facts": [
+        {
+          "fact": "Ena Bhara beach at Sewowoto is reached via a road to Waebela followed by about a 30-minute walk or motorboat trip; it has white sand, a wave-driven rock 'water-blow' feature, and no accommodation on site -- overnight visitors stay in nearby Aimere, where the available restaurants are named (e.g. Rumah Makan Agogo, Rumah Makan Singgalang).",
+          "source_urls": ["https://www.tripadvisor.com/Attraction_Review-g297730-d8720786-Reviews-Ena_Bhara_Beach-Bajawa_Flores_East_Nusa_Tenggara.html", "https://sandee.com/indonesia/east-nusa-tenggara/waebela/ena-bhara-beach"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["Waves spraying through the water-blow rocks", "White-sand beach with Inerie's slope rising inland", "Fishing boats or motorboat approach from Waebela"],
+      "commons_search_terms": ["Ena Bhara Beach", "Pantai Sewowoto", "Pantai Waebela Ngada"]
+    },
+    {
+      "name": "Aimere",
+      "data_ids": ["p-aimere-arak-coast", "n-aimere"],
+      "what_it_is": "South-coast port town of Ngada Regency, about an hour south of Bajawa, known both as an ASDP ferry port (to Waingapu on Sumba and to Kupang) and for small-scale household distilling of arak/moke from lontar palm sap.",
+      "why_it_matters": "Aimere closes the section with a genuine change of register -- from megalithic highlands to a working coastal port -- and gives the brochure a craft/culture beat (arak distilling) plus a logistics one (the Sumba/Kupang ferry link, relevant to any multi-island race concept).",
+      "history_culture": "Arak/moke production in Aimere district follows a traditional sequence: tapping lontar palm sap, fermentation, distillation over an open fire, then drying -- a household-scale livelihood passed down through generations, and the drink itself ('sopi' elsewhere in Flores) carries ritual and social significance at ceremonies across the island.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, ~1 hour south of Bajawa; ASDP ferry port",
+        "fees_protocol": "none for visiting; standard ferry ticketing for the Sumba/Kupang crossing",
+        "sleep": "homestay",
+        "water_resupply": "unreliable; basic resupply only",
+        "best_time": "year-round; ferry runs Tue/Fri to Waingapu (Sumba) per existing schedule data",
+        "hazards": "exact pier coordinates unverified in repo -- needs a field GPS fix per open questions"
+      },
+      "facts": [
+        {
+          "fact": "Aimere is Ngada Regency's south-coast ASDP ferry port, with sailings to Waingapu (Sumba, Tue/Fri) and to Kupang; the exact pier location is not confirmed and is placed approximately in the repo.",
+          "source_urls": ["repo:data/nodes.geojson#n-aimere"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Aimere district is noted for traditional household distilling of arak/moke from lontar palm sap (tapping, fermentation, open-fire distillation, drying), a livelihood and cultural practice passed down through generations.",
+          "source_urls": ["https://florespristinetour.com/aimere-local-alcohol-traditional-arak-distillery-in-flores/", "https://www.researchgate.net/publication/399717369_Traditional_Processing_of_Red_Moke_Arak_from_Lontar_Palm_Sap_in_Aimere_District_Ngada_Regency"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["Household arak still with smoke over an open fire", "Lontar palm groves along the coast road", "Ferry loading at the port, Sumba-bound"],
+      "commons_search_terms": ["Aimere Ngada", "Pelabuhan Aimere", "arak lontar Flores distillery"]
+    }
+  ],
+  "narrative_notes": "This section's arc reads well as a three-act brochure spread: (1) the climb from Riung's coast through the Mengeruda hot springs to Bajawa's highland resupply, (2) the megalithic heartland under Inerie -- Bena as the flagship checkpoint, Luba/Tololela/Gurusina as quieter, more textured neighbours, each with its own protocol and each rebuilding or living around fire risk (Gurusina) or day-visit-vs-homestay ambiguity (Bena), and (3) the descent to a working coast at Aimere, either directly via the steep Inerie shoulder hike-a-bike or, for the Ultra variant, the full circuit via Gurusina and the Sewowoto/Ena Bhara beach. Water is scarce outside Bajawa/Soa for the whole stretch -- every village entry above should be read alongside that constraint. Reba festival season (late Dec-Jan) is a double-edged brochure opportunity: spectacular but a scheduling conflict with any dry-season (Jun-Sep) race date, so it will not overlap the race window as currently scoped, and is better used as supplementary storytelling than a race-day feature.",
+  "corrections_to_data": [
+    "p-wolobobo: the free-text summary/story field says '(~1,700 m)' but the structured elevation_m field is 1468 -- these are internally inconsistent within the same record and should be reconciled (web sources found in this pass did not resolve which figure is right).",
+    "p-gurusina: the story field's claim that the stored coordinate computes to '~4 km from Bajawa' is stale relative to the coordinate currently on file (120.99098, -8.89624), which is ~11-12 km straight-line from Bajawa (120.970883, -8.79448) -- closer than the commonly cited ~21 km road distance, but not as close as the story text states. Worth a rewrite of that story paragraph now that n-gurusina/p-gurusina appear to share a reconciled position.",
+    "n-bena 'sleep: homestay' may not hold for Bena itself -- one independent travel account describes Bena as operating primarily as a day-visit destination (guest book + donation, no overnight programme), with organised village homestays more clearly documented for Tololela and Gurusina. Worth field-checking before advertising Bena as an overnight stop."
+  ],
+  "open_questions": [
+    "Is overnight homestay lodging actually available in Bena itself, or only in Luba/Tololela/Gurusina nearby? (see corrections above)",
+    "Exact Aimere pier coordinates still need a field GPS fix (carried over from the section's existing open question).",
+    "Village-council agreement status for Bena, Luba, Tololela and Gurusina as race checkpoints is unresolved -- this research pass found general visitor protocol but no race-specific agreement.",
+    "Safety of the Bena-side Inerie shoulder descent to Aimere with a loaded bike is unresolved; this pass found only unloaded-hiker/day-trekker trail descriptions from Watumeze, not the Bena-side shoulder route itself.",
+    "Whether Sewowoto/Ena Bhara's community-tourism arrangement (Pokdarwis) has any formal visitor fee or protocol was not confirmed independently of the repo's single gazetteer source."
+  ]
+}

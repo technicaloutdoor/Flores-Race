@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ meta.title }} — {{ meta.edition }}</title>
+<style>
+@font-face{font-family:"Playfair Display";font-weight:400;font-style:normal;src:url("fonts/playfair-display-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:400;font-style:italic;src:url("fonts/playfair-display-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:700;font-style:normal;src:url("fonts/playfair-display-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:900;font-style:normal;src:url("fonts/playfair-display-latin-900-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;src:url("fonts/inter-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url("fonts/inter-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url("fonts/inter-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:700;src:url("fonts/inter-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:500;src:url("fonts/barlow-condensed-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:600;src:url("fonts/barlow-condensed-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-weight:700;src:url("fonts/barlow-condensed-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400;font-style:normal;src:url("fonts/source-serif-4-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:400;font-style:italic;src:url("fonts/source-serif-4-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Source Serif 4";font-weight:600;font-style:normal;src:url("fonts/source-serif-4-latin-600-normal.woff2") format("woff2")}
+
+:root{
+  --ink:#1c1a17; --ink-2:#4a4640; --stone:#7a746b; --line:#d9d2c5; --paper:#fbf8f2; --sand:#efe6d6;
+  --verm:#c8102e; --teal:#1b998b; --amber:#e09f3e; --violet:#6f4a8e; --moss:#6b8e23; --slate:#4a6fa5; --rust:#9c4a1a;
+  --display:"Playfair Display",Georgia,serif; --serif:"Source Serif 4",Georgia,serif; --sans:"Inter",Helvetica,Arial,sans-serif; --cond:"Barlow Condensed","Inter",sans-serif;
+}
+@page{size:A4;margin:14mm 13mm 17mm 13mm;
+  @bottom-left{content:"{{ meta.title }} · {{ meta.edition }}";font:7.5pt/1 var(--sans);color:#8a837a}
+  @bottom-right{content:counter(page);font:8pt/1 var(--cond);color:#8a837a}
+}
+@page cover{margin:0; @bottom-left{content:none} @bottom-right{content:none}}
+@page opener{margin:0; @bottom-left{content:none} @bottom-right{content:none}}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink);font:10.2pt/1.45 var(--serif);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+p{margin:0 0 .75em;orphans:3;widows:3}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:700;line-height:1.08;color:var(--ink)}
+h2{font-size:26pt;letter-spacing:-.01em;margin-bottom:5mm}
+h3{font-size:15pt;margin:5mm 0 2mm}
+h4{font-family:var(--sans);font-weight:700;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--verm);margin:0 0 1.5mm}
+.kicker{font:600 8pt/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+.lede{font:italic 13pt/1.35 var(--display);color:var(--ink-2);margin:0 0 4mm}
+.small{font:8pt/1.4 var(--sans);color:var(--stone)}
+.page{break-before:page}
+.avoid{break-inside:avoid}
+img{max-width:100%;display:block}
+.rule{border:0;border-top:.6pt solid var(--line);margin:4mm 0}
+.num{font-family:var(--cond);font-weight:700;font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font:8.6pt/1.3 var(--sans)}
+th{text-align:left;font:600 7.4pt/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--stone);padding:1.4mm 1.5mm;border-bottom:.8pt solid var(--ink)}
+td{padding:1.5mm 1.5mm;border-bottom:.5pt solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--cond);font-size:9.5pt;font-weight:600;font-variant-numeric:tabular-nums}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5mm}
+.wide-narrow{display:grid;grid-template-columns:1.55fr 1fr;gap:7mm}
+
+/* cover */
+.cover{page:cover;position:relative;width:210mm;height:297mm;overflow:hidden;background:#141311;color:#fff;break-after:page}
+.cover img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.92}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,17,.15) 0%,rgba(20,19,17,.05) 35%,rgba(20,19,17,.72) 70%,rgba(20,19,17,.96) 100%)}
+.cover .text{position:absolute;left:16mm;right:16mm;bottom:20mm}
+.cover .kicker{color:#f2c9a0}
+.cover h1{font-size:64pt;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:.95;margin:3mm 0 4mm}
+.cover .sub{font:italic 15pt/1.3 var(--display);color:#f3ede3;max-width:150mm}
+.cover .tag{font:10pt/1.45 var(--serif);color:#d8d0c2;max-width:160mm;margin-top:5mm}
+.cover .band{position:absolute;left:16mm;right:16mm;top:14mm;display:flex;justify-content:space-between;font:600 8pt/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#f3ede3}
+.cover .status{position:absolute;left:16mm;right:16mm;bottom:9mm;font:7.5pt/1.3 var(--sans);color:#a79f92}
+
+/* stats tiles */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:2.5mm;margin:4mm 0}
+.tile{background:var(--sand);padding:2.5mm 3mm;border-radius:1mm}
+.tile .v{font:700 20pt/1 var(--cond);color:var(--ink)}
+.tile .l{font:600 7pt/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--stone);margin-top:1mm}
+
+/* rules list */
+.rules{counter-reset:r;margin:2mm 0 0;padding:0;list-style:none;columns:2;column-gap:7mm}
+.rules li{break-inside:avoid;margin-bottom:3mm;padding-left:9mm;position:relative;font-size:9.4pt}
+.rules li::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:0;top:-.5mm;font:700 15pt/1 var(--cond);color:var(--verm)}
+.rules b{font-family:var(--sans);font-weight:700;font-size:9pt;display:block}
+
+/* figures */
+figure{margin:0}
+figcaption{font:8pt/1.35 var(--sans);color:var(--stone);margin-top:1.5mm}
+.map{border:.5pt solid var(--line)}
+.optmap{max-height:104mm;width:auto;max-width:100%;margin:0 auto}
+.legend{display:flex;flex-wrap:wrap;gap:2mm 5mm;font:7.8pt/1.2 var(--sans);color:var(--ink-2);margin:2mm 0}
+.legend span::before{content:"";display:inline-block;width:8mm;height:0;border-top:2.2pt solid var(--c);margin-right:1.5mm;vertical-align:middle}
+.legend span.dash::before{border-top-style:dashed}
+
+/* section opener */
+.opener{page:opener;width:210mm;height:297mm;overflow:hidden;break-before:page;break-after:page;position:relative;background:#fff}
+.opener .head{background:var(--ink);color:#fff;padding:9mm 13mm 6mm;height:38mm;box-sizing:border-box;position:relative}
+.opener .head .no{position:absolute;right:13mm;top:6mm;font:700 40pt/1 var(--cond);color:var(--verm)}
+.opener .head .kicker{color:#cbbfae}
+.opener .head h2{color:#fff;font-size:24pt;margin:2mm 0 1.5mm;max-width:160mm}
+.opener .head .sub{font:italic 10.5pt/1.3 var(--display);color:#e6ded2;max-width:165mm}
+.opener .body{padding:5mm 13mm 0}
+.opener .anchors{font:600 8pt/1.3 var(--sans);letter-spacing:.06em;color:var(--ink-2);margin-bottom:3mm}
+.opener .strip{display:grid;grid-template-columns:repeat(6,1fr);gap:2mm;margin:3mm 0 2.5mm}
+.opener .strip div{background:var(--sand);padding:1.6mm 2.5mm;border-radius:.8mm}
+.opener .strip .v{font:700 14pt/1 var(--cond)}
+.opener .strip .l{font:600 6.5pt/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-top:.8mm}
+.opener .attrib{position:absolute;left:13mm;right:13mm;bottom:7mm;font:7pt/1.3 var(--sans);color:#a09889;display:flex;justify-content:space-between}
+
+/* section body */
+.sec-body .story{font-size:10pt}
+.sec-body .story p:first-of-type::first-letter{font:900 34pt/.8 var(--display);float:left;margin:1.5mm 2mm 0 0;color:var(--verm)}
+.side{background:var(--sand);padding:4mm 4.5mm;border-radius:1mm;font:8.6pt/1.4 var(--sans)}
+.side h4{margin-top:0}
+.side dl{margin:0}
+.side dt{font-weight:700;margin-top:2.2mm;color:var(--ink)}
+.side dd{margin:0;color:var(--ink-2)}
+.qs{margin:3mm 0 0;padding-left:4.5mm;font:9pt/1.4 var(--sans);color:var(--ink-2)}
+.qs li{margin-bottom:1.2mm}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:5mm}
+.places.two-up{grid-template-columns:repeat(2,1fr)}
+.place{break-inside:avoid}
+.place img{width:100%;aspect-ratio:1/1;object-fit:cover;border:.5pt solid var(--line)}
+.place.wide img{aspect-ratio:3/2}
+.place h5{font:700 9.5pt/1.2 var(--sans);margin:2mm 0 1mm}
+.place p{font:8.6pt/1.4 var(--serif);color:var(--ink-2);margin:0}
+.place .meta{font:7pt/1.3 var(--sans);color:var(--stone);margin-top:1mm}
+.opt-callout{border-left:2.5pt solid var(--c);padding:1.5mm 0 1.5mm 3.5mm;margin:3mm 0;font:8.8pt/1.4 var(--sans)}
+.opt-callout b{color:var(--c)}
+
+/* options */
+.opt-head{display:flex;align-items:baseline;gap:4mm;border-bottom:2pt solid var(--c);padding-bottom:2mm;margin-bottom:3mm}
+.opt-head h3{margin:0;font-size:17pt}
+.opt-head .kind{font:600 7.5pt/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.cmp{width:100%}
+.cmp td:first-child{color:var(--stone);font-weight:600}
+.cmp .opt{color:var(--c)}
+.cmp .main{color:var(--verm)}
+.considered{background:var(--sand);padding:4mm 5mm;border-radius:1mm;margin-top:5mm;font:9pt/1.45 var(--serif)}
+.considered h4{margin-top:0}
+
+/* hazards */
+.haz th,.haz td{font-size:8.2pt}
+.haz td:first-child{font-weight:700}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:4mm 6mm;margin-top:3mm}
+.card{break-inside:avoid;font:9pt/1.45 var(--serif)}
+.card b{font-family:var(--sans);font-size:9pt;display:block;margin-bottom:.8mm}
+.thread{display:grid;grid-template-columns:38mm 1fr;gap:4mm;padding:2.5mm 0;border-bottom:.5pt solid var(--line);break-inside:avoid}
+.thread .t{font:700 10pt/1.2 var(--display)}
+.thread .w{font:7.5pt/1.3 var(--sans);color:var(--stone);margin-top:.8mm}
+.thread p{margin:0;font-size:9.4pt}
+ol.etq{padding-left:5mm;font:9.2pt/1.45 var(--serif)}
+ol.etq li{margin-bottom:1.5mm}
+.list td:first-child{font-weight:700;width:30mm;font-size:8pt}
+.list td{font-size:8.2pt;line-height:1.35}
+
+/* photos appendix */
+.shot{break-inside:avoid;padding:1.6mm 0;border-bottom:.5pt solid var(--line);font:7.4pt/1.3 var(--sans)}
+.shot b{display:block;font-size:8pt}
+.places-page .place.wide img{aspect-ratio:3/2}
+.places-page .opt-callout{font-size:8.2pt;margin:2mm 0}
+.shot .terms{color:var(--stone)}
+.gpx td{font-family:var(--sans);font-size:8.2pt}
+code{font:8pt/1.3 "JetBrains Mono",Menlo,monospace;background:var(--sand);padding:0 .8mm;border-radius:.6mm}
+.toc{columns:2;column-gap:8mm;font:9pt/1.55 var(--sans);margin-top:3mm}
+.toc div{display:flex;justify-content:space-between;border-bottom:.4pt dotted var(--line);break-inside:avoid}
+.toc .n{color:var(--stone);white-space:nowrap;margin-left:2mm}
+.placeholder{background:repeating-linear-gradient(45deg,#f1ece3 0 6px,#e8e1d4 6px 12px);border:.5pt dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--stone);font:8.5pt var(--sans);text-align:center;padding:4mm}
+</style>
+</head>
+<body>
+
+{# ---------------------------------------------------------------- cover #}
+<section class="cover">
+  {% if img.sat.exists(cover.image) %}<img class="bg" src="{{ img.sat.path(cover.image) }}" alt="">{% endif %}
+  <div class="shade"></div>
+  <div class="band"><span>{{ meta.edition }}</span><span>Concept · unscouted</span></div>
+  <div class="text">
+    <div class="kicker">{{ cover.kicker }}</div>
+    <h1>{{ meta.title }}</h1>
+    <div class="sub">{{ meta.subtitle }}</div>
+    <div class="tag">{{ cover.tagline }}</div>
+    <div class="tag" style="margin-top:3mm;font-family:var(--cond);font-size:12pt;color:#f2c9a0">
+      <span class="num">{{ fmt_km(main.length_km) }} km</span> &nbsp;·&nbsp; <span class="num">+{{ fmt_int(main.ascent_m) }} m</span> &nbsp;·&nbsp; <span class="num">{{ main.unpaved_pct|round|int }}%</span> unpaved &nbsp;·&nbsp; <span class="num">10</span> sections &nbsp;·&nbsp; <span class="num">{{ n_checkpoints }}</span> cultural checkpoints
+    </div>
+  </div>
+  <div class="status">{{ meta.status }} {{ cover.image_caption }}</div>
+</section>
+
+{# ---------------------------------------------------------------- idea #}
+<section class="page">
+  <div class="kicker">The concept</div>
+  <h2>{{ idea.heading }}</h2>
+  <div class="two">
+    <div>{% for p in idea.paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    <div>
+      <h4>Design rules for the course</h4>
+      <ol class="rules" style="columns:1">
+        {% for t, x in idea.rules %}<li><b>{{ t }}</b>{{ x }}</li>{% endfor %}
+      </ol>
+    </div>
+  </div>
+  <hr class="rule">
+  <h4>In this brochure</h4>
+  <div class="toc">
+    <div><span>The course at a glance</span><span class="n">overview map, numbers, profile</span></div>
+    <div><span>Riding it on Ride with GPS</span><span class="n">GPX files and import</span></div>
+    {% for s in sections %}<div><span>{{ "%02d"|format(s.order) }} · {{ s.title }}</span><span class="n">km {{ fmt_int(s.stats.start_km) }}–{{ fmt_int(s.stats.end_km) }}</span></div>{% endfor %}
+    <div><span>Optional loops and alternatives</span><span class="n">{{ options_list|length }} options</span></div>
+    <div><span>Hazards and constraints</span><span class="n">dated volcano statuses</span></div>
+    <div><span>Cultural threads and protocol</span><span class="n">how to arrive as a guest</span></div>
+    <div><span>Logistics</span><span class="n">airports, ferries, hubs</span></div>
+    <div><span>Photographs to source</span><span class="n">shot-list per place</span></div>
+    <div><span>Data, method and sources</span><span class="n"></span></div>
+  </div>
+</section>
+
+{# ---------------------------------------------------------------- glance #}
+<section class="page">
+  <div class="kicker">Labuan Bajo → Larantuka</div>
+  <h2>{{ glance.heading }}</h2>
+  <p>{{ glance.intro }}</p>
+  <figure class="avoid">
+    {% if img.maps.exists('overview') %}<img class="map" src="{{ img.maps.path('overview') }}" alt="Overview map of the course">{% else %}<div class="placeholder" style="height:70mm">Overview map (rendered by pipeline/render_brochure_maps.py)</div>{% endif %}
+    <div class="legend"><span style="--c:var(--verm)">Main course</span>{% for o in options_list %}<span class="dash" style="--c:{{ o.color }}">{{ o.name }}</span>{% endfor %}</div>
+  </figure>
+  <div class="tiles">
+    <div class="tile"><div class="v">{{ fmt_km(main.length_km) }}</div><div class="l">km, main course</div></div>
+    <div class="tile"><div class="v">+{{ fmt_int(main.ascent_m) }}</div><div class="l">m climbing</div></div>
+    <div class="tile"><div class="v">{{ main.unpaved_pct|round|int }}%</div><div class="l">unpaved (estimate)</div></div>
+    <div class="tile"><div class="v">≈{{ main.hike_a_bike_km_est|round|int }}</div><div class="l">km hike-a-bike est.</div></div>
+    <div class="tile"><div class="v">{{ fmt_km(ultra.length_km) }}</div><div class="l">km Ultra</div></div>
+    <div class="tile"><div class="v">{{ fmt_km(ultra_plus.length_km) }}</div><div class="l">km Ultra+</div></div>
+  </div>
+  <table class="avoid">
+    <thead><tr><th>#</th><th>Section</th><th>Anchors</th><th class="n">km</th><th class="n">Climb m</th><th class="n">Course km</th><th>Hike-a-bike</th><th>Cultural checkpoints</th></tr></thead>
+    <tbody>
+    {% for s in sections %}
+      <tr><td class="num">{{ "%02d"|format(s.order) }}</td><td><b>{{ s.title }}</b></td><td class="small">{{ s.anchors_line }}</td><td class="n">{{ fmt_km(s.stats.length_km) }}</td><td class="n">{{ fmt_int(s.stats.ascent_m) }}</td><td class="n">{{ fmt_int(s.stats.start_km) }}–{{ fmt_int(s.stats.end_km) }}</td><td>{{ s.hab_expected }}</td><td class="small">{{ s.checkpoints }}</td></tr>
+    {% endfor %}
+    </tbody>
+    <tfoot><tr><td></td><td><b>Traverse</b></td><td></td><td class="n">{{ fmt_km(main.length_km) }}</td><td class="n">{{ fmt_int(main.ascent_m) }}</td><td></td><td></td><td></td></tr></tfoot>
+  </table>
+  <figure class="avoid" style="margin-top:4mm">
+    {% if img.profiles.exists(main.id) %}<img src="{{ img.profiles.path(main.id) }}" alt="Elevation profile of the main course">{% else %}<div class="placeholder" style="height:40mm">Full-course elevation profile</div>{% endif %}
+    <figcaption>Elevation profile of the main course, SRTM, smoothed. Lowest point sea level, highest {{ fmt_int(main.max_elev_m) }} m.</figcaption>
+  </figure>
+</section>
+
+{# ---------------------------------------------------------------- rwgps #}
+<section class="page">
+  <div class="kicker">Working with the course</div>
+  <h2>{{ rwgps.heading }}</h2>
+  <div class="two">
+    <div>{% for p in rwgps.paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    <div>
+      <h4>Files in exports/gpx</h4>
+      <table class="gpx">
+        <thead><tr><th>File</th><th class="n">km</th><th class="n">Climb m</th></tr></thead>
+        <tbody>
+        {% for r in manifest.routes %}<tr><td><code>{{ r.file }}</code>{% if r.file_with_pois %}<br><code>{{ r.file_with_pois }}</code>{% endif %}</td><td class="n">{{ fmt_km(r.length_km) }}</td><td class="n">{{ fmt_int(r.ascent_m) }}</td></tr>{% endfor %}
+        <tr><td><code>sections/…</code> one file per section (10)</td><td class="n"></td><td class="n"></td></tr>
+        <tr><td><code>options/…</code> one file per option ({{ manifest.options|length }})</td><td class="n"></td><td class="n"></td></tr>
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:3mm">Every file carries the anchors (and, where noted, points of interest) as waypoints with their cumulative kilometre, resupply, water and sleep status. Regenerate with <code>python3 pipeline/export_gpx.py</code>. Full instructions: <code>docs/ridewithgps.md</code>.</p>
+    </div>
+  </div>
+  {% if img.sat.exists('flores-mosaic') %}
+  <figure class="avoid" style="margin-top:6mm">
+    <img src="{{ img.sat.path('flores-mosaic') }}" alt="Flores from orbit" style="width:100%;aspect-ratio:3.45/1;object-fit:cover;border:.5pt solid var(--line)">
+    <figcaption>Flores from orbit, west to east: about 360 kilometres of volcanoes between two coasts. Copernicus Sentinel-2 composite of the least cloudy dry-season scenes of 2025 and 2026.</figcaption>
+  </figure>
+  {% endif %}
+</section>
+
+{# ---------------------------------------------------------------- sections #}
+{% for s in sections %}
+<section class="opener">
+  <div class="head">
+    <div class="no num">{{ "%02d"|format(s.order) }}</div>
+    <div class="kicker">Section {{ "%02d"|format(s.order) }} · km {{ fmt_int(s.stats.start_km) }} to {{ fmt_int(s.stats.end_km) }}</div>
+    <h2>{{ s.title }}</h2>
+    <div class="sub">{{ s.subtitle }}</div>
+  </div>
+  <div class="body">
+    <div class="anchors">{{ s.anchors_line }}</div>
+    {% if img.maps.exists(s.map_id) %}<img class="map" src="{{ img.maps.path(s.map_id) }}" alt="Map of section {{ s.order }}">{% else %}<div class="placeholder" style="height:139mm">Section map {{ "%02d"|format(s.order) }} (rendered by pipeline/render_brochure_maps.py)</div>{% endif %}
+    <div class="strip">
+      <div><div class="v">{{ fmt_km(s.stats.length_km) }}</div><div class="l">km</div></div>
+      <div><div class="v">+{{ fmt_int(s.stats.ascent_m) }}</div><div class="l">m climb</div></div>
+      <div><div class="v">−{{ fmt_int(s.stats.descent_m) }}</div><div class="l">m descent</div></div>
+      <div><div class="v">{{ fmt_int(s.stats.max_elev_m) }}</div><div class="l">m high point</div></div>
+      <div><div class="v">{{ s.stats.unpaved_pct|round|int if s.stats.unpaved_pct is not none else '–' }}%</div><div class="l">unpaved est.</div></div>
+      <div><div class="v">{{ s.hab_expected }}</div><div class="l">hike-a-bike</div></div>
+    </div>
+    {% if img.profiles.exists(s.id) %}<img src="{{ img.profiles.path(s.id) }}" alt="Elevation profile of section {{ s.order }}">{% else %}<div class="placeholder" style="height:50mm">Elevation profile</div>{% endif %}
+  </div>
+  <div class="attrib"><span>Terrain SRTM (USGS) · roads and coastline © OpenStreetMap contributors via Overture Maps · main course in vermilion, options dashed</span><span>Concept · unscouted</span></div>
+</section>
+<section class="sec-body">
+  <div class="kicker">Section {{ "%02d"|format(s.order) }} · {{ s.title }}</div>
+  <p class="lede">{{ s.lede }}</p>
+  <div class="wide-narrow">
+    <div class="story">{% for p in s.story %}<p>{{ p }}</p>{% endfor %}</div>
+    <aside class="side avoid">
+      <h4>Practical</h4>
+      <dl>
+        <dt>Water</dt><dd>{{ s.practical.water }}</dd>
+        <dt>Resupply</dt><dd>{{ s.practical.resupply }}</dd>
+        <dt>Sleep</dt><dd>{{ s.practical.sleep }}</dd>
+        <dt>Protocol</dt><dd>{{ s.practical.protocol }}</dd>
+        <dt>Hazards</dt><dd>{{ s.practical.hazards }}</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+<section class="page places-page">
+  <div class="kicker">Section {{ "%02d"|format(s.order) }} · places, seen from orbit</div>
+  <div class="places two-up" style="margin-top:3mm">
+    {% for pl in s.places %}
+    <figure class="place wide">
+      {% if pl.image and img.sat.exists(pl.image) %}<img src="{{ img.sat.path(pl.image) }}" alt="{{ pl.name }}">{% endif %}
+      <h5>{{ pl.name }}</h5>
+      <p>{{ pl.text }}</p>
+      {% set m = img.sat.meta(pl.image) %}{% if m %}<div class="meta">Sentinel-2 · {{ m.date }} · {{ m.box_km }} km box · contains modified Copernicus Sentinel data</div>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  <div class="two" style="margin-top:6mm">
+    <div>
+      <h4>For the scouts</h4>
+      <ul class="qs" style="margin-top:0">{% for q in s.scouting %}<li>{{ q }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      {% if s.options %}<h4>Options touching this section</h4>{% endif %}
+      {% for oid in s.options %}{% set o = options_by_id[oid] %}
+      <div class="opt-callout" style="--c:{{ o.color }}"><b>{{ o.name }}</b> — {{ o.summary }} <span class="num">{{ fmt_km(o.option.length_km) }} km</span> instead of <span class="num">{{ fmt_km(o.replaced.length_km) if o.replaced else '–' }} km</span>{% if o.delta_km is not none %} ({{ '%+.0f'|format(o.delta_km) }} km){% endif %}. See the options chapter.</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{# ---------------------------------------------------------------- options #}
+<section class="page">
+  <div class="kicker">Beyond the main line</div>
+  <h2>{{ options.heading }}</h2>
+  <div class="two">
+    <div>{% for p in options.intro %}<p>{{ p }}</p>{% endfor %}</div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th>Option</th><th>Kind</th><th class="n">km</th><th class="n">Climb</th><th class="n">Replaces km</th><th class="n">Δ km</th></tr></thead>
+        <tbody>
+        {% for o in options_list %}<tr><td style="color:{{ o.color }};font-weight:700">{{ o.name }}</td><td>{{ o.kind }}</td><td class="n">{{ fmt_km(o.option.length_km) }}</td><td class="n">{{ fmt_int(o.option.ascent_m) }}</td><td class="n">{{ fmt_km(o.replaced.length_km) if o.replaced else '–' }}</td><td class="n">{{ '%+.0f'|format(o.delta_km) if o.delta_km is not none else '–' }}</td></tr>{% endfor %}
+        </tbody>
+      </table>
+      <p class="small" style="margin-top:2mm">Ultra = main course with the Manggarai Timur interior and Bola coast loops ({{ fmt_km(ultra.length_km) }} km, +{{ fmt_int(ultra.ascent_m) }} m). Ultra+ adds the Inerie full circuit ({{ fmt_km(ultra_plus.length_km) }} km, +{{ fmt_int(ultra_plus.ascent_m) }} m).</p>
+    </div>
+  </div>
+  <div class="considered avoid">
+    <h4>Considered and not offered</h4>
+    {% for t, x in options.considered %}<p><b>{{ t }}.</b> {{ x }}</p>{% endfor %}
+  </div>
+</section>
+{% for o in options_list %}
+<section class="page">
+  <div class="opt-head" style="--c:{{ o.color }}"><span class="kind">{{ o.kind }} · sections {{ o.sections|join(', ') }}</span><h3>{{ o.name }}</h3></div>
+  {% if img.maps.exists('opt-' ~ o.id) %}<img class="map optmap" src="{{ img.maps.path('opt-' ~ o.id) }}" alt="Map of option {{ o.name }}">{% elif img.maps.exists(o.id) %}<img class="map optmap" src="{{ img.maps.path(o.id) }}" alt="Map of option {{ o.name }}">{% else %}<div class="placeholder" style="height:100mm">Option map (rendered by pipeline/render_brochure_maps.py)</div>{% endif %}
+  <div class="legend" style="margin-top:2mm"><span style="--c:{{ o.color }}">Option</span><span class="dash" style="--c:var(--verm)">Main course stretch it replaces</span></div>
+  <div class="two" style="margin-top:3mm">
+    <div>
+      <p><b>What it is.</b> {{ o.summary }}</p>
+      <p><b>Why.</b> {{ o.text.why }}</p>
+      <p><b>When.</b> {{ o.text.when }}</p>
+      <p><b>Risks.</b> {{ o.text.risks }}</p>
+    </div>
+    <div>
+      <table class="cmp">
+        <thead><tr><th></th><th class="n opt" style="--c:{{ o.color }};color:{{ o.color }}">Option</th><th class="n main">Main course</th></tr></thead>
+        <tbody>
+          <tr><td>Distance</td><td class="n">{{ fmt_km(o.option.length_km) }} km</td><td class="n">{{ fmt_km(o.replaced.length_km) if o.replaced else '–' }} km</td></tr>
+          <tr><td>Climbing</td><td class="n">+{{ fmt_int(o.option.ascent_m) }} m</td><td class="n">{{ '+' ~ fmt_int(o.replaced.ascent_m) if o.replaced else '–' }} m</td></tr>
+          <tr><td>High point</td><td class="n">{{ fmt_int(o.option.max_elev_m) }} m</td><td class="n">{{ fmt_int(o.replaced.max_elev_m) if o.replaced else '–' }} m</td></tr>
+          <tr><td>Unpaved (est.)</td><td class="n">{{ o.option.unpaved_pct|round|int if o.option.unpaved_pct is not none else '–' }}%</td><td class="n">{{ o.replaced.unpaved_pct|round|int if o.replaced and o.replaced.unpaved_pct is not none else '–' }}%</td></tr>
+          <tr><td>Hike-a-bike (est.)</td><td class="n">{{ o.option.hike_a_bike_km_est }} km</td><td class="n">{{ o.replaced.hike_a_bike_km_est if o.replaced else '–' }} km</td></tr>
+          <tr><td>Remoteness index (1–5, weighted)</td><td class="n">{{ o.option.remoteness_index_weighted }}</td><td class="n">{{ o.replaced.remoteness_index_weighted if o.replaced else '–' }}</td></tr>
+          <tr><td>Segments (hand sketches)</td><td class="n">{{ o.option.segments }} ({{ o.option.sketch_segments }})</td><td class="n">{{ o.replaced.segments if o.replaced else '–' }} ({{ o.replaced.sketch_segments if o.replaced else '–' }})</td></tr>
+        </tbody>
+      </table>
+      {% if img.profiles.exists(o.id) %}<img src="{{ img.profiles.path(o.id) }}" alt="Elevation profile of the option" style="margin-top:3mm">{% endif %}
+      <p class="small">GPX: <code>exports/gpx/{{ o.file }}</code> · segments {{ o.segments|join(', ') }}</p>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{# ---------------------------------------------------------------- hazards #}
+<section class="page">
+  <div class="kicker">Safety</div>
+  <h2>{{ hazards.heading }}</h2>
+  <p>{{ hazards.intro }}</p>
+  <table class="haz avoid">
+    <thead><tr><th>Volcano</th><th>Summit</th><th>Last confirmed status (dated)</th><th>Handling on the course</th></tr></thead>
+    <tbody>{% for v in hazards.volcanoes %}<tr><td>{{ v[0] }}</td><td class="num">{{ v[1] }}</td><td>{{ v[2] }}</td><td>{{ v[3] }}</td></tr>{% endfor %}</tbody>
+  </table>
+  <div class="cards">{% for t, x in hazards.other %}<div class="card"><b>{{ t }}</b>{{ x }}</div>{% endfor %}</div>
+</section>
+
+{# ---------------------------------------------------------------- culture #}
+<section class="page">
+  <div class="kicker">Story and protocol</div>
+  <h2>{{ culture.heading }}</h2>
+  <p>{{ culture.intro }}</p>
+  {% for t, w, x in culture.threads %}<div class="thread"><div><div class="t">{{ t }}</div><div class="w">{{ w }}</div></div><p>{{ x }}</p></div>{% endfor %}
+  <h3>Arriving as a guest</h3>
+  <ol class="etq">{% for e in culture.etiquette %}<li>{{ e }}</li>{% endfor %}</ol>
+</section>
+
+{# ---------------------------------------------------------------- logistics #}
+<section class="page">
+  <div class="kicker">Getting there, getting out, getting help</div>
+  <h2>{{ logistics.heading }}</h2>
+  <p>{{ logistics.intro }}</p>
+  <div class="two">
+    <div>
+      <h4>Airports</h4>
+      <table class="list"><tbody>{% for a, x in logistics.airports %}<tr><td>{{ a }}</td><td>{{ x }}</td></tr>{% endfor %}</tbody></table>
+      <h4 style="margin-top:4mm">Ferries</h4>
+      <table class="list"><tbody>{% for a, x in logistics.ferries %}<tr><td>{{ a }}</td><td>{{ x }}</td></tr>{% endfor %}</tbody></table>
+    </div>
+    <div>
+      <h4>Resupply and medical hubs</h4>
+      <table class="list"><tbody>{% for a, x in logistics.hubs %}<tr><td>{{ a }}</td><td>{{ x }}</td></tr>{% endfor %}</tbody></table>
+      <h4 style="margin-top:4mm">Money, phones, papers</h4>
+      <ul class="qs" style="margin-top:0">{% for m in logistics.money %}<li>{{ m }}</li>{% endfor %}</ul>
+      <h4 style="margin-top:4mm">Format</h4>
+      <table class="list"><tbody>{% for a, x in logistics.format %}<tr><td>{{ a }}</td><td>{{ x }}</td></tr>{% endfor %}</tbody></table>
+    </div>
+  </div>
+</section>
+
+{# ---------------------------------------------------------------- photos appendix #}
+<section class="page">
+  <div class="kicker">Appendix</div>
+  <h2>{{ photos.heading }}</h2>
+  <p>{{ photos.intro }}</p>
+  <div class="three">
+    {% for col in shots|batch((shots|length / 3)|round(0,'ceil')|int) %}<div>{% for sh in col %}<div class="shot"><b>{{ sh.place }} <span class="small">· {{ sh.topic }}</span></b>{{ sh.subjects }}<div class="terms">Search: {{ sh.terms }}</div></div>{% endfor %}</div>{% endfor %}
+  </div>
+</section>
+
+{# ---------------------------------------------------------------- sources #}
+<section class="page">
+  <div class="kicker">Colophon</div>
+  <h2>{{ sources.heading }}</h2>
+  <div class="two">
+    <div><h4>Data and method</h4>{% for d in sources.data %}<p style="font-size:9.2pt">{{ d }}</p>{% endfor %}</div>
+    <div>
+      <h4>Caveats</h4>{% for d in sources.caveats %}<p style="font-size:9.2pt">{{ d }}</p>{% endfor %}
+      <h4 style="margin-top:4mm">Satellite scenes used</h4>
+      <p class="small">{% for m in sat_scenes %}{{ m.slug }}: {{ m.scene }} ({{ m.date }}){% if not loop.last %} · {% endif %}{% endfor %}</p>
+      <h4 style="margin-top:4mm">Repository</h4>
+      <p class="small">{{ meta.repo }} — course data, pipeline, GPX exports, this brochure's source and the research files behind it (docs/brochure/research). Built {{ built }}.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

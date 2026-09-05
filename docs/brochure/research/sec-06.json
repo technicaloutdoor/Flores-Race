@@ -1,0 +1,279 @@
+{
+  "topic_id": "sec-06-ebulobo-nagekeo",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Mataloko: St. Yohanes Berchmans Seminary and the geothermal field",
+      "data_ids": ["p-mataloko-seminary", "p-mataloko-hot-spring", "n-mataloko"],
+      "what_it_is": "Mataloko is the Golewa district capital on the Trans-Flores highway, ~17 km east of Bajawa (Todabelu village cluster). Two things sit side by side there: St. Yohanes Berchmans, a European-style Catholic minor seminary built in the colonial era, and the Mataloko geothermal field -- more than 20 hot springs, fumaroles, mud pools and steaming ground across roughly 1,000 ha, with water reaching up to ~95 degC and a small geothermal power plant that has run since 1998.",
+      "why_it_matters": "It is the section's postcard opening: a whitewashed European seminary silhouette against volcanic steam, on a paved highway stretch that costs the rider little effort before the harder ground east of Boawae. The hot springs are a legitimate rider amenity (soak stop) as well as a photogenic set piece. It is also a reminder the plateau is geothermally live -- the same heat that feeds the springs is part of the volcanic belt Ebulobo sits on further east.",
+      "history_culture": "Geothermal exploration at Mataloko began under an Indonesia-Japan research partnership (1998-2002) on the northwest-southeast Waeluja fault; the plant has operated since 1998. Academic literature on the field also records that communities around several of the surrounding villages (Ulubelu, Ratogesa, Waeia, Malanuza, Dada Wea, Rada Bata, Were, Ekoroka, Todabelu, Radamasa, Mataloko) reported material and moral losses linked to the project -- a live local-goodwill issue worth being aware of for any checkpoint or filming near the plant itself, separate from the public hot springs used by visitors.",
+      "practical": {
+        "altitude_m": "~1,100-1,150 (Bajawa plateau)",
+        "access": "on the paved Trans-Flores highway; no hike-a-bike needed for the seminary or the main hot-spring pools",
+        "fees_protocol": "informal entry fee typical at the public hot-spring pools; the seminary is a working institution -- ask before photographing inside its grounds",
+        "sleep": "guesthouse (per node data); Kemah Tabor retreat house nearby",
+        "water_resupply": "reliable (per node data)",
+        "best_time": "dry season (Jun-Sep); early morning gives cooler air over the steaming ground for photos",
+        "hazards": "geothermal ground -- scalding pools/mud near active vents, stay on marked paths"
+      },
+      "facts": [
+        {
+          "fact": "The Mataloko geothermal field lies in Todabelu village, Golewa district, ~10 km ESE of Bajawa, with fumaroles, mud pools, steaming ground and acid-sulfate hot water; deep geothermometry implies reservoir temperatures around 288 degC.",
+          "source_urls": ["https://iopscience.iop.org/article/10.1088/1742-6596/1341/8/082042", "repo:data/pois.geojson#p-mataloko-hot-spring"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The geothermal plant has operated since 1998, following Indonesia-Japan exploration cooperation (1998-2002); communities in several surrounding villages have reported material and moral losses connected to the project.",
+          "source_urls": ["https://iopscience.iop.org/article/10.1088/1742-6596/1341/8/082042", "https://www.researchgate.net/publication/360046588_Geothermal_Direct_Use_Alternatives_in_Mataloko_to_Increase_Public_Acceptance"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "St. Yohanes Berchmans is a European-style Catholic minor seminary from the colonial era at Mataloko, on the Trans-Flores highway.",
+          "source_urls": ["https://lifestyle.bisnis.com/read/20221102/224/1593938/ada-seminari-bergaya-eropa-di-mataloko-flores-ini-sejarahnya", "repo:data/pois.geojson#p-mataloko-seminary"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Seminary facade with volcanic steam plumes rising behind it in the plateau haze",
+        "Rider soaking bare feet in a roadside hot pool, bike leaned nearby",
+        "Close detail of mineral-stained ground / steaming fumarole vents",
+        "Wide plateau shot: highway, seminary spire, geothermal plant pipework, farmland"
+      ],
+      "commons_search_terms": ["Mataloko seminary", "Seminari Mataloko", "Mataloko geothermal", "Ngada geothermal field", "Todabelu Flores"]
+    },
+    {
+      "name": "Wogo: old and new village, the megalith complex",
+      "data_ids": ["p-wogo"],
+      "what_it_is": "Wogo is one of the larger Ngada megalithic villages, in Golewa district about 20 km east of Bajawa (near Mataloko). 'New' Wogo sits on a sealed side road, a U-shaped compound of nine ngadhu-and-bhaga pairs (nine clan groups) with thatched houses facing a central ceremonial space. 'Old' Wogo, roughly 1-1.5 km further on foot, is the abandoned original site: rows of megalithic ancestor tombs where houses once stood, still used for ceremonies though no longer inhabited.",
+      "why_it_matters": "Wogo gives the section a genuine, less-visited traditional-village experience to sit alongside Ngada's famous villages already covered upstream (Bena, Luba, Tololela, Gurusina in Section 05) -- same ngadhu/bhaga architecture and clan structure, but a short walk to a real abandoned megalithic site rather than a living-village-only visit. It fits the brochure's cultural-experience pillar without repeating the section-05 villages.",
+      "history_culture": "Old Wogo's population outgrew the site and the community relocated collectively to present-day (new) Wogo; the old site's megalithic ancestor tombs remain in place on a long, narrow strip of land and still serve ceremonial functions. New Wogo keeps the same U-shaped layout, central ngadhu (male ancestor post) and bhaga (female ancestor house) pairs, and small ceremonial houses as Bena/Luba/Tololela.",
+      "practical": {
+        "altitude_m": "~1,100 (Bajawa plateau)",
+        "access": "sealed side road off the Trans-Flores highway to new Wogo; ~1-1.5 km on foot to old Wogo",
+        "fees_protocol": "village-council permission expected for a group visit (per repo data); a modest guest/entry contribution is standard at Ngada villages generally",
+        "sleep": "no on-site homestay identified; day visit from Mataloko/Bajawa lodging",
+        "water_resupply": "available at Mataloko, close by",
+        "best_time": "dry season; late afternoon light suits the thatched-roof silhouettes",
+        "hazards": "none specific; standard village-etiquette care (ask before photographing people/houses)"
+      },
+      "facts": [
+        {
+          "fact": "New Wogo has nine ngadhu-and-bhaga pairs, indicating nine family/clan groups in the compound, and lies in Golewa district about 20 km east of Bajawa.",
+          "source_urls": ["https://harindabama.com/2014/09/01/wogo-and-bena-a-tradition-preserved/", "repo:data/pois.geojson#p-wogo"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Old Wogo's remaining megalithic ancestor tombs lie about 1-1.5 km from new Wogo on a narrow strip of land where houses once stood; the site still serves ceremonial purposes.",
+          "source_urls": ["https://harindabama.com/2014/09/01/wogo-and-bena-a-tradition-preserved/", "https://www.roamindonesia.com/flores/flores-attractions/bajawa-traditional-villages/"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "New Wogo's ngadhu/bhaga row against a plateau sky",
+        "Row of old Wogo's megalithic tombs, overgrown, no houses left standing",
+        "Detail: thatched roof construction, umbrella-hut (bhaga) form",
+        "Wide shot of the U-shaped village compound with central ceremonial ground"
+      ],
+      "commons_search_terms": ["Wogo village Flores", "Wogo Ngada megalith", "ngadhu bhaga Flores", "Golewa traditional village"]
+    },
+    {
+      "name": "Boawae and Ebulobo volcano",
+      "data_ids": ["p-ebulobo", "n-boawae"],
+      "what_it_is": "Boawae is the main south-central town of Nagekeo Regency, on the Trans-Flores highway, directly on the northwest slope of Ebulobo -- an active 2,124-2,137 m stratovolcano (first recorded eruption 1830, most recent activity in the 1980s-2000s). PVMBG maintains a dedicated observation post at Ekowolo village with two seismic instruments; the mountain has held Level I (Normal) status through at least mid-2026.",
+      "why_it_matters": "Ebulobo is the visual and physical centrepiece of the section: a near-perfect cone rising straight off the highway, farmed almost to the treeline, that riders pass close beneath rather than merely glimpse. A summit side-trip is a real, guided hike-a-bike-adjacent option for time-rich riders or a pre-race scouting target, and the town's Etu ritual boxing (see below) makes Boawae a cultural stop in its own right, not just a volcano waypoint.",
+      "history_culture": "The standard trailhead for a summit attempt is Mulakoli village (~925 m): about 2 hours through forest, then a final 30-40 minute scramble to the rocky summit; a local guide is required both because the trail is hard to follow and because it is a condition set by the village. Best conditions are the dry season (roughly May-September) when trails are clear and dry. A magnitude-7.7 earthquake in the Flores region on 15 August 2026 triggered landslides in the peak areas of Ebulobo, Kelimutu and Anak Ranakah; Indonesia's national geological agency stated on its official account that ongoing visual and instrumental monitoring had not shown this translating into increased volcanic activity -- corroborating, from an official source, the claim the repository had flagged as unconfirmed. PVMBG's public status for Ebulobo remained Level I (Normal) in monitoring reports current to at least May 2026.",
+      "practical": {
+        "altitude_m": "2,124 (summit); Boawae town lower, on the highway",
+        "access": "town is on the paved Trans-Flores highway (reliable water, basic resupply per node data); summit hike starts from Mulakoli and requires a local guide",
+        "fees_protocol": "guide hire is a village requirement, not optional, for the summit trail",
+        "sleep": "homestay in Boawae (Paul's Homestay identified by name); basic losmen also present",
+        "water_resupply": "reliable in Boawae town (per node data)",
+        "best_time": "dry season, May-September, for both the road and the summit trail",
+        "hazards": "active volcano -- PVMBG Level I (Normal) as of the most recent public bulletins reviewed, but recheck MAGMA Indonesia / PVMBG before race day; post-August-2026-earthquake landslide debris reported on the upper slopes"
+      },
+      "facts": [
+        {
+          "fact": "Ebulobo (2,124 m) sits directly above Boawae in Boa Wae district, Nagekeo Regency; PVMBG monitors it from an observation post at Ekowolo village with two seismic instruments.",
+          "source_urls": ["https://www.geokepo.id/en/lokasi/nagekeo/gunung-ebulobo", "repo:data/pois.geojson#p-ebulobo"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The summit hike starts at Mulakoli village (~925 m): ~2 hours of forest trail then a final 30-40 minute climb to the rocky summit; a local guide is required. Best conditions are the dry season, May-September.",
+          "source_urls": ["https://go-volcano.com/indonesia-volcanoes/climbing-ebulobo/index.html", "https://www.gunungbagging.com/ebulobo/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Indonesia's national geological agency (Badan Geologi) confirmed via its official account that the 15 August 2026 M7.7 Flores earthquake triggered landslides in the peak areas of Ebulobo, Kelimutu and Anak Ranakah, and stated that ongoing visual/instrumental monitoring had not shown this to correspond with increased volcanic activity.",
+          "source_urls": ["https://x.com/badangeologi_/status/2089321489770352968"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Ebulobo's cone from the highway approach into Boawae, farmland climbing its lower slopes",
+        "Rider on the road with the volcano filling the frame behind",
+        "Summit-hike trailhead sign/guide at Mulakoli",
+        "Any visible landslide scarring on the upper slopes (post-Aug-2026 earthquake), if present, as a documentary/hazard-awareness shot"
+      ],
+      "commons_search_terms": ["Ebulobo volcano", "Gunung Ebulobo", "Boawae Nagekeo", "Ebulobo Flores"]
+    },
+    {
+      "name": "Etu: Nagekeo's ritual boxing tradition",
+      "data_ids": [],
+      "what_it_is": "Etu (literally 'fight'/'combat' in the local Nage language) is a ceremonial one-handed boxing contest practised across Nagekeo Regency, including at Boawae itself, as part of an annual harvest-thanksgiving cycle. Fighters wear Ta'i Kolo -- gloves of palm-fibre sticks bonded with palm-tree gum, sometimes with ground glass added, wrapped in cloth -- and may punch with only one hand; blood drawn in a match is treated as a blessing on the coming harvest.",
+      "why_it_matters": "It is a striking, rarely-filmed living tradition directly on the race's line at Boawae -- exactly the kind of real cultural experience the brochure wants, distinct from temple/village-house tourism. It also matters operationally: its season (see below) overlaps the likely dry-season race window, so it is worth checking as a potential cultural-checkpoint opportunity or, conversely, a logistics/crowd factor at Boawae if dates coincide.",
+      "history_culture": "Etu originated as war training for warriors and evolved into a harvest-thanksgiving ritual expressing courage, sportsmanship and communal unity. It runs as part of an annual customary ceremonial series, generally timed to the agricultural cycle in June-July, with matches recorded at Tadho, Boawae, Natanage, Natalea, Raja, Loa Gero, Dhereisa and Nunukae (July events specifically named in sources).",
+      "practical": {
+        "altitude_m": "n/a",
+        "access": "held in village grounds across Nagekeo, including Boawae, on an annual customary schedule rather than a fixed tourist calendar",
+        "fees_protocol": "a living ritual, not a staged tourist show; visiting during an actual match should go through village/adat consent, same as any cultural checkpoint",
+        "sleep": "as for Boawae (homestay/losmen)",
+        "water_resupply": "as for Boawae",
+        "best_time": "June-July, tied to the harvest cycle -- confirm exact dates locally each year",
+        "hazards": "a genuine contact sport with drawn blood as part of the ritual; a spectator consideration rather than a rider hazard"
+      },
+      "facts": [
+        {
+          "fact": "Etu is a traditional ceremonial one-handed boxing practice in Nagekeo, evolved from warrior training into a harvest-thanksgiving ritual; fighters wear Ta'i Kolo gloves made of palm-fibre sticks and palm-tree gum, sometimes with glass added, wrapped in cloth.",
+          "source_urls": ["https://en.wikipedia.org/wiki/Etu", "https://bpolbf.kemenpar.go.id/boplbf/news/etu-tradisi-tinju-adat-budaya-dan-identitas-lokal-nagekeo"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Etu events run as an annual customary series generally in June-July aligned with the agricultural cycle, with matches recorded at Tadho, Boawae, Natanage, Natalea, Raja, Loa Gero, Dhereisa and Nunukae.",
+          "source_urls": ["https://jurnal.utu.ac.id/jppolicy/article/view/13402", "https://en.wikipedia.org/wiki/Etu"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Ta'i Kolo palm-fibre glove detail",
+        "One-handed boxing stance mid-match, crowd circle around fighters",
+        "Village ceremonial ground set up for the event",
+        "Portrait of an elder/adat leader officiating"
+      ],
+      "commons_search_terms": ["Etu Nagekeo", "Tinju adat Etu", "Boawae boxing tradition", "Nage boxing ritual"]
+    },
+    {
+      "name": "Mbay and the Aesesa rice plain",
+      "data_ids": ["n-mbay", "p-aesesa-plains"],
+      "what_it_is": "Mbay is the administrative capital of Nagekeo Regency, on the north coast within Aesesa district, sitting on the Aesesa river plain -- the largest and most productive rice-growing lowland on Flores. It is the section's full-resupply town: shops, basic hotels, hospital-level services relative to the surrounding rural stretch.",
+      "why_it_matters": "After the volcano and highland villages, Mbay closes the section on a complete change of landscape: flat, green, irrigated sawah stretching to the coast, worked with visible government irrigation and climate-smart-agriculture programmes. It is the logistics anchor of the section (last certain full resupply before the alternative south-coast option) and, per the section story, the point where the shorter Ultra-variant alternative (direct to Nangaroro) branches off instead.",
+      "history_culture": "The Aesesa plain is fed by the Mbay Irrigation Area and is the subject of ongoing Climate Smart Agriculture (CSA) harvest programmes documented by the regency government, reflecting rice's continued central economic role for Nagekeo. Nagekeo as a whole is otherwise dry, with fresh water sometimes a genuine problem for residents -- a contrast worth noting against the lush look of the irrigated plain itself.",
+      "practical": {
+        "altitude_m": "low-lying coastal plain, near sea level",
+        "access": "on the Trans-Flores highway / north-coast road network; full resupply town",
+        "fees_protocol": "none specific; ordinary town",
+        "sleep": "hotel (per node data); named options include Wisma Keluarga (Jalan Kelimutu, wifi + parking), Hotel Samudera (behind the Aesesa district office, ~Rp200,000/night) and Hotel Ariesta (Rp150,000-250,000/night)",
+        "water_resupply": "reliable in town (per node data); the wider regency is otherwise dry and can be water-stressed",
+        "best_time": "dry season; expect real heat on the exposed lowland by mid-morning",
+        "hazards": "heat exposure on the flat, shadeless plain approach; standard town hazards otherwise"
+      },
+      "facts": [
+        {
+          "fact": "Mbay is the administrative capital of Nagekeo Regency, on the north coast of Flores, within Aesesa district, on the Aesesa river plain -- the island's largest rice-growing lowland.",
+          "source_urls": ["https://en.wikipedia.org/wiki/Mbay_(Indonesia)", "https://en.wikipedia.org/wiki/Nagekeo_Regency", "repo:data/nodes.geojson#n-mbay"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Nagekeo Regency is largely dry, and fresh water is sometimes a problem for inhabitants, even as the Aesesa plain around Mbay itself is irrigated for rice under a Climate Smart Agriculture programme.",
+          "source_urls": ["https://en.wikipedia.org/wiki/Nagekeo_Regency", "https://nagekeokab.go.id/?p=6602"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Named budget accommodation in Mbay includes Wisma Keluarga (Jalan Kelimutu), Hotel Samudera (behind the Aesesa district office, ~Rp200,000/night) and Hotel Ariesta (Rp150,000-250,000/night); Boawae's options are more basic, including Paul's Homestay.",
+          "source_urls": ["https://tripflores.com/hotel/6-rekomendasi-penginapan-murah-di-mbay-nagekeo/", "https://komodo-travel.com/blog/nagekeo-region-flores/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Aerial-feel wide shot over the flat green Aesesa rice plain",
+        "Rider on a causeway road between paddies, volcanoes on the horizon behind",
+        "Irrigation channel / canal detail feeding the sawah",
+        "Mbay town street, ordinary daily commerce, as the resupply beat"
+      ],
+      "commons_search_terms": ["Aesesa rice field Flores", "Mbay Nagekeo", "Nagekeo sawah", "Aesesa plain Flores"]
+    },
+    {
+      "name": "Marapokot: Mbay's port",
+      "data_ids": [],
+      "what_it_is": "Marapokot is the port serving Mbay, roughly 8 km north of town on the north coast. It handles ASDP ferry connections onward to Palue island and to Kewapante, a harbour near Maumere further east, and is otherwise a working fishing and farming settlement.",
+      "why_it_matters": "It is a small but real logistics and colour beat close to Mbay: boats, fish landings, a view back over Rii Taa island offshore, and a tangible sense of the north coast's maritime life to balance the section's inland volcano-and-plain character. Not currently in the repository's POI set -- flagged below as a candidate addition.",
+      "history_culture": "Community life around Marapokot is dominated by fishing and farming; local fishermen go out daily and farmers work the surrounding fields. It functions as Mbay's maritime gateway east and west along the north coast.",
+      "practical": {
+        "altitude_m": "sea level",
+        "access": "~8 km north of Mbay by road",
+        "fees_protocol": "none specific; a working port, not a tourist site",
+        "sleep": "use Mbay accommodation, 8 km away",
+        "water_resupply": "assume Mbay-level reliability; not separately confirmed",
+        "best_time": "morning, for fish-landing activity",
+        "hazards": "none specific identified"
+      },
+      "facts": [
+        {
+          "fact": "Marapokot, ~8 km north of Mbay, is the port for the town, with ASDP ferry links to Palue island and to Kewapante near Maumere; the surrounding community is dominated by fishing and farming.",
+          "source_urls": ["https://en.wikipedia.org/wiki/Mbay_(Indonesia)", "https://www.travel2flores.info/flores-east-to-west/central-flores/nagekeo/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Fishing boats drawn up on the beach at dawn",
+        "Ferry loading/unloading at the port",
+        "Fish being sorted/sold on the shore",
+        "View back toward Rii Taa island offshore"
+      ],
+      "commons_search_terms": ["Marapokot port", "Pelabuhan Marapokot", "Mbay harbour Flores"]
+    },
+    {
+      "name": "South coast alternative: Aimere to Nangaroro direct",
+      "data_ids": ["s-aimere-nangaroro-a", "n-nangaroro"],
+      "what_it_is": "The 'South coast direct' alternative (segment s-aimere-nangaroro-a, variant A) skips the Mataloko/Boawae/Mbay loop entirely, running the south coast from Aimere to Nangaroro instead -- 102.9 km with 3,704 m of climbing and descent, mostly on tertiary/residential-class roads with only a sliver of track and path (0.9 km hike-a-bike). Nangaroro itself is a Nagekeo district on the south coast bordering Ende: small farming-fishing villages (including Tonggo) on grey-stone beaches.",
+      "why_it_matters": "This is the shorter, less-remote option the section text calls out explicitly: it removes Ebulobo, Mataloko, Wogo and Mbay from the route in exchange for a more direct, more coastal, apparently more paved corridor. For the brochure it represents a real trade-off worth naming honestly -- a quieter, faster line for a shorter-format edition, at the cost of the section's signature volcano and highland-village content.",
+      "history_culture": "Tonggo, in Nangaroro district, is known locally for a grey-stone beach lined with coconut trees and thatched lopo-lopo shelters, reachable via a turn off the south-coast road; described as good for relaxing and for snorkeling/diving. The wider Nangaroro area is Nage-speaking farming and fishing country bordering Ende Regency.",
+      "practical": {
+        "altitude_m": "min 11 m, max 869 m along the alternative segment",
+        "access": "mostly tertiary/residential-class road per the network data; not primarily a track/footpath route despite crossing the spine",
+        "fees_protocol": "none specific beyond ordinary village courtesy",
+        "sleep": "homestay at Nangaroro (per node data); unreliable water there",
+        "water_resupply": "Aimere unreliable, Nangaroro unreliable (per node data) -- this alternative has weaker resupply than the Mbay route on both ends",
+        "best_time": "dry season",
+        "hazards": "long, hot exposed coastal riding; the segment is flagged 'concept'/not yet field-verified and is currently marked non-public in the data pending that check"
+      },
+      "facts": [
+        {
+          "fact": "The computed Aimere-to-Nangaroro direct alternative (variant A) is 102.87 km with 3,704 m ascent and 3,704 m descent, 71.5% of it estimated unpaved, but by road class overwhelmingly tertiary/residential rather than track or path (only ~0.9 km each of path and track); it is marked 'concept' status and not yet public in the data pending verification.",
+          "source_urls": ["repo:data/segments.geojson#s-aimere-nangaroro-a"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Tonggo, a village on the south coast in Nangaroro district, has a grey/rock-stone beach with coconut trees and traditional lopo-lopo shelters, reached via a turnoff from the south-coast road, and is noted for relaxing and for snorkeling/diving.",
+          "source_urls": ["https://fortuna.press/2025/07/08/tonggo-coast-rocks-in-nagekeo-flores/", "https://www.travel2flores.info/flores-east-to-west/central-flores/nagekeo/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Nangaroro is a Nagekeo Regency district bordering Ende, with Nage-speaking farming and fishing villages and grey-stone beaches; it functions in the route concept as an alternative south-coast crossing point from Boawae/Mbay toward Ende.",
+          "source_urls": ["repo:data/nodes.geojson#n-nangaroro"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "South-coast road hugging cliffs/hills with the sea visible below",
+        "Tonggo's grey-stone beach with coconut palms and a lopo-lopo shelter",
+        "Fishing village daily life at Nangaroro",
+        "Contrast shot: dry, sun-baked south coast vs. the green Aesesa plain of the Mbay option"
+      ],
+      "commons_search_terms": ["Tonggo beach Nagekeo", "Pantai Tonggo", "Nangaroro Flores", "Aimere south coast Flores"]
+    }
+  ],
+  "narrative_notes": "The section reads as two acts: a highland act (Mataloko's colonial seminary and steaming geothermal field, Wogo's living-and-abandoned megalithic village, Ebulobo looming over Boawae with its Etu boxing tradition) and a lowland closing act (the Aesesa rice plain flowing into full-resupply Mbay, with Marapokot's fishing port just offshore of the story). The south-coast alternative via Nangaroro is the section's honest trade-off: shorter and less remote, trading the volcano-and-village content for a more direct coastal line with weaker resupply at both ends. Etu's June-July season deserves a specific callout in any brochure copy near Boawae -- a genuinely rare, filmable cultural moment if race timing can be checked against it, one appreciable step beyond the temple/village-visit register of most Flores cultural tourism.",
+  "corrections_to_data": [
+    "p-ebulobo: the story/hazard_level text currently treats the 15 Aug 2026 M7.7-earthquake-triggered-landslide claim as unconfirmed, sourced only to social media. A search this pass found an official statement from Indonesia's national geological agency (Badan Geologi, PVMBG's parent body) on its own account corroborating exactly this claim -- landslides at Ebulobo, Kelimutu and Anak Ranakah peak areas from the 15 Aug 2026 M7.7 quake, with monitoring not showing increased volcanic activity as a result. Recommend updating p-ebulobo's confidence/citation for this specific claim from 'unconfirmed' to 'verified' with source https://x.com/badangeologi_/status/2089321489770352968, while keeping the standing advice to recheck PVMBG/MAGMA Indonesia status closer to race day.",
+    "No POI exists yet for Marapokot, Mbay's port (~8 km north, ASDP ferry to Palue and Kewapante); recommend adding a p-marapokot-port (category: port) POI near n-mbay given its resupply/logistics relevance.",
+    "No data entry exists for the Etu ritual boxing tradition at Boawae/Nagekeo. Given its brochure value and its June-July season potentially overlapping the dry-season race window, recommend a POI or cultural-note entry tied to n-boawae, plus an open question for the route-concept team on whether race dates could align with (or should deliberately avoid) an active Etu event."
+  ],
+  "open_questions": [
+    "Ridge-crossing footpaths between the coasts in this section remain unscouted (carried over from sections.json).",
+    "Mbay's town-centre coordinate is still a desk estimate, not a field GPS fix (carried over from sections.json).",
+    "Ebulobo's PVMBG alert level should be rechecked against MAGMA Indonesia in the weeks before race day, per the section's own note; this pass adds official corroboration of the Aug-2026 landslide claim but the alert level itself is time-sensitive and needs a fresh check nearer race day.",
+    "Etu's exact 2026-season dates (tied to the harvest cycle, not a fixed calendar date) were not found; worth a local enquiry if the race organisers want to either time a checkpoint around it or confirm the race window avoids disrupting it.",
+    "The Aimere-Nangaroro direct alternative (s-aimere-nangaroro-a) is marked non-public/concept in the data; its class_mix (mostly tertiary/residential roads) sits oddly next to its 71.5% unpaved-surface estimate and deserves a ground check before being offered as an equal alternative to the Mbay route."
+  ]
+}

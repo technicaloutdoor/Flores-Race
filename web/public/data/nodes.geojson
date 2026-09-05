@@ -357,6 +357,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          120.99098,
+          -8.89624
+        ]
+      },
+      "properties": {
+        "id": "n-gurusina",
+        "name": "Gurusina",
+        "kind": "checkpoint",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Ngada traditional village on the south-east flank of Inerie, rebuilt after the August 2018 fire; anchor for the Inerie full-circuit option (Bena -> Gurusina -> Sewowoto coast -> Aimere). Position from the Overture gazetteer entry 'Kampung Adat Gurusina', consistent with the curated POI p-gurusina.",
+        "confidence": "verified",
+        "sources": [
+          "map:overture (Kampung Adat Gurusina)",
+          "repo:data/pois.geojson#p-gurusina"
+        ],
+        "public": true,
+        "elevation_m": 392.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           120.42002,
           -8.81167
         ]
@@ -945,6 +971,31 @@
         ],
         "public": true,
         "elevation_m": 749.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.92718,
+          -8.92634
+        ]
+      },
+      "properties": {
+        "id": "n-sewowoto",
+        "name": "Sewowoto (Ena Bhara beach)",
+        "kind": "village",
+        "resupply": "none",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Coastal hamlet and community-tourism beach (Pokdarwis Ena Bhara) at the foot of Inerie's southern slope; the low point of the Inerie full-circuit option before the coast road back to Aimere. Position from the Overture gazetteer; no independent record yet.",
+        "confidence": "approximate",
+        "sources": [
+          "map:overture (Pokdarwis Ena Bhara-Sewowoto)"
+        ],
+        "public": true,
+        "elevation_m": 37.9
       }
     },
     {
