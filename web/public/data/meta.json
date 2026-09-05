@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-05T04:35:18Z",
-  "build_time": "2026-09-05T04:35:18Z",
-  "git_commit": "3eb4dc34300e372a0a44d3bd9f3aed7120ba8db5",
+  "generated_at": "2026-09-05T06:50:15Z",
+  "build_time": "2026-09-05T06:50:15Z",
+  "git_commit": "7065b31f907771115603a6c88459065b5197791e",
   "public_build": false,
   "counts": {
-    "nodes": 44,
+    "nodes": 46,
     "pois": 78,
-    "segments": 228,
+    "segments": 272,
     "sections": 10,
-    "routes": 4,
+    "routes": 5,
     "regencies": 8,
     "network_features": 43033
   },

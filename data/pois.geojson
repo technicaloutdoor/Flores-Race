@@ -305,17 +305,19 @@
         "local_name": "Gunung Ebulobo / Puncak Nage Keo",
         "category": "volcano",
         "summary": "An active stratovolcano (2,124-2,137 m) above Boawae in southern Nagekeo Regency; first recorded eruption 1830, most recent in the 1980s-2000s.",
-        "story": "Ebulobo rises directly behind Boawae, its slopes farmed almost to the treeline before giving way to bare volcanic rock near the summit. It is one of the handful of genuinely active volcanoes the route has to respect on the way east: PVMBG's most recent public bulletins (mid-2026) keep it at Level I (Normal). A social-media claim that a M7.7 Flores earthquake on 15 Aug 2026 triggered landslides on its upper slopes without any accompanying rise in eruptive activity could not be confirmed against an official source this pass -- an earthquake of that magnitude in Indonesia would be a major, globally reported event, and no corroborating BMKG or PVMBG bulletin was found -- so it is flagged here as unconfirmed rather than repeated as fact.\n\nFor route planning this means Ebulobo is currently safe to pass close to on the Boawae road per the standing Level I status, but that status, and the earthquake claim above, should both be rechecked against PVMBG's MAGMA Indonesia feed in the weeks before race day, and no route variant should linger on its upper slopes.",
+        "story": "Ebulobo rises directly behind Boawae, its slopes farmed almost to the treeline before giving way to bare volcanic rock near the summit. It is one of the handful of genuinely active volcanoes the route has to respect on the way east: PVMBG's most recent public bulletins (mid-2026) keep it at Level I (Normal). On 15 August 2026 a magnitude 7.7 earthquake struck offshore about 68 km north-north-west of Ende, killing at least 47 people and displacing about 2,000 in Nagekeo; Indonesia's geological agency reported landslides in the summit areas of Ebulobo, Kelimutu and Anak Ranakah with no rise in volcanic activity. The course rounds the base of the mountain; any summit side-trip is guided from Mulakoli and gated by the current alert level.",
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": false,
         "elevation_m": 2124,
-        "hazard_level": "PVMBG Level I (Normal) as of mid-2026 monitoring reports. A claim that a M7.7 Flores earthquake on 15 Aug 2026 triggered summit-area landslides here (sourced only to a single social-media post) could not be confirmed this pass and is inconsistent in scale with the file's own account of the consequences; treat that specific claim as unconfirmed pending a check against BMKG (bmkg.go.id) and MAGMA Indonesia (magma.esdm.go.id), and recheck the alert level itself before race day.",
+        "hazard_level": "PVMBG Level I (Normal) in the most recent public bulletins found (mid-2026). The M7.7 Flores earthquake of 15 Aug 2026 (epicentre about 68 km NNW of Ende at 10 km depth per USGS; at least 47 dead; about 2,000 evacuated in Nagekeo Regency; a tsunami warning issued and lifted the same day; more than 230 aftershocks, the strongest M6.2) is confirmed by USGS, BMKG and international press. Indonesia's geological agency (Badan Geologi) stated on its official account that the quake triggered landslides in the summit areas of Ebulobo, Kelimutu and Anak Ranakah without any rise in volcanic activity. Before race week: check aftershock advisories and road or bridge damage reports in Nagekeo, and recheck the alert level against MAGMA Indonesia.",
         "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Ebulobo",
           "https://www.gunungbagging.com/ebulobo/",
-          "map:overture"
+          "map:overture",
+          "https://x.com/badangeologi_/status/2089321489770352968",
+          "https://en.wikipedia.org/wiki/2026_Flores_earthquake"
         ],
         "public": true
       }
@@ -939,7 +941,7 @@
         "access": "trail",
         "hike_a_bike": true,
         "elevation_m": 1584,
-        "hazard_level": "PVMBG has held Lewotobi Laki-laki at an elevated alert level continuously since the deadly eruption sequence that began 3 Nov 2024 (Level IV/Awas at multiple points since, with the exclusion radius repeatedly widened as the crisis continued); a claim that it sat at a lower Level II until being raised to Level III only on 12 May 2026 is very likely inaccurate given that history and could not be confirmed this pass. Hundreds of eruptive events have been recorded through 2026, among the most active of any Indonesian volcano that year. Course design treats the whole Lewotobi complex as a no-go zone; the north-coast corridor (Concept A) is the primary route, with the Boru highway corridor (Concept B) usable only if PVMBG status allows. Reconfirm the exact current level and exclusion radius against MAGMA Indonesia (magma.esdm.go.id) before any route or checkpoint decision -- do not rely on a fixed level/date here.",
+        "hazard_level": "PVMBG alert history since the deadly eruption sequence that began 3 Nov 2024 (9-10 dead, more than 10,000 evacuated): Level IV (Awas) at several points in 2024-2025, most recently around 7 Sep 2025; lowered to Level II with a 4 km exclusion radius in early 2026; raised to Level III with a 5 km radius on 12 May 2026 after increased seismicity and inflation; held at Level III / 5 km with lahar warnings for named river corridors as of the week of 27 Aug-2 Sep 2026, with 778 eruptive events logged by MAGMA Indonesia in 2026 through 27 Aug (second most active volcano in Indonesia that year). Ash has repeatedly closed Frans Seda airport (Maumere) and blanketed the Trans-Flores through Talibura. Course design treats the whole Lewotobi complex as a no-go zone: the north-coast corridor (Concept A) is the primary route and the Boru highway corridor (Concept B) is opened only by a race-week go/no-go decision against the live PVMBG bulletin, with an abort rule agreed in advance. Re-check monthly and in race week; statuses here are dated.",
         "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Lewotobi",
@@ -1614,7 +1616,7 @@
         "name": "Seventeen Islands Marine Park",
         "local_name": "Taman Wisata Perairan Tujuh Belas Pulau",
         "category": "national-park",
-        "summary": "A marine park of more than twenty coral islets off Riung's north coast, reached by hired boat from the Riung pier; snorkelling, white-sand islets, flying foxes on Pulau Tembang.",
+        "summary": "A marine park of more than twenty coral islets off Riung's north coast, reached by hired boat from the Riung pier; snorkelling, white-sand islets, a large flying-fox colony reported on Pulau Ontoloe (older sources name Pulau Tembang; to be confirmed in the field).",
         "race_relevance": "highlight",
         "access": "boat",
         "hike_a_bike": false,

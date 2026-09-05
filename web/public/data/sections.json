@@ -111,7 +111,7 @@
       "coast",
       "savanna"
     ],
-    "story": "Liang Bua descends to Reo, an old north-coast port town with a market, a bank and a homestay -- the last reliable resupply before the section that most likely defines the whole race. From Reo the course follows dry, lontar-palm savanna toward Pota and Riung: small ports, few visitors, and, as far as the desk research can tell, no documented continuous track and no confirmed water source along the way. This is the section the route concept names explicitly as the water constraint of the whole course.\n\nRiung is the reward at the far end: a fishing port and gateway to the Seventeen Islands Marine Park, more than twenty coral islets reached by hired boat, with flying foxes on Pulau Tembang. Getting there honestly, though, means the north coast of Manggarai and Manggarai Timur has to be scouted before anything else on this course -- hence scouting priority 1, and the route concept's own open question 1: is there a continuous rideable or walkable corridor Reo to Pota to Riung, and where is the water.",
+    "story": "Liang Bua descends to Reo, an old north-coast port town with a market, a bank and a homestay -- the last reliable resupply before the section that most likely defines the whole race. From Reo the course follows dry, lontar-palm savanna toward Pota and Riung: small ports, few visitors, and a road that 2020s sources describe as existing the whole way (paved from Ruteng to Reo and Pota, then rough, potholed and landslide-prone via Buntal, Golo Lijung and Dampek to Riung) but whose condition for loaded bikes is unknown. Water is the real constraint: in August 2026 the villages along this corridor (Pota, Nangambaur, Golo Lijun, Nangambaling, posts in Sambi Rampas and Borong) were on emergency water trucking. This is the section the route concept names explicitly as the water constraint of the whole course.\n\nRiung is the reward at the far end: a fishing port and gateway to the Seventeen Islands Marine Park, more than twenty coral islets reached by hired boat, with flying foxes on Pulau Tembang. Getting there honestly, though, means the north coast of Manggarai and Manggarai Timur has to be scouted before anything else on this course -- hence scouting priority 1, and the route concept's own open question 1: is there a continuous rideable or walkable corridor Reo to Pota to Riung, and where is the water.",
     "highlight_pois": [
       "p-reo-port",
       "p-north-coast-savanna"
@@ -125,7 +125,8 @@
     "open_questions": [
       "Is there a continuous rideable/walkable corridor Reo→Pota→Riung along or near the north coast, and where is water?",
       "Where does the coastal track die between Pota and Riung, and what replaces it — beach walking, a headland footpath, or a boat portage?",
-      "Riung and Pota's coordinates are hand-placed/unverified; both need a field GPS fix."
+      "Riung and Pota's coordinates are hand-placed/unverified; both need a field GPS fix.",
+      "Pota-Riung road: rideable as a continuous line with loaded bikes, and where is water in August? (2026 sources confirm a rough road and an active dry-season water emergency.)"
     ],
     "public": true
   },
@@ -255,7 +256,8 @@
       "p-wolojita",
       "p-nggela",
       "p-koka-beach",
-      "p-wolotopo"
+      "p-wolotopo",
+      "p-paga-beach"
     ],
     "target_km": [
       130,

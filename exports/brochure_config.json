@@ -1,0 +1,169 @@
+{
+  "_comment": "Which routes and optional segments the GPX export and the brochure maps present. Segment ids refer to data/segments.geojson; the pipeline keeps them stable.",
+  "main_route": "r-traverse-remote",
+  "ultra_route": "r-ultra-remote",
+  "options": [
+    {
+      "id": "opt-manggarai-timur-interior",
+      "name": "Manggarai Timur interior loop",
+      "kind": "loop",
+      "sections": [
+        3,
+        4
+      ],
+      "segments": [
+        "s-ruteng-borong-b",
+        "s-borong-elar-b",
+        "s-elar-pota-b"
+      ],
+      "replaces": [
+        "s-ruteng-ranamese-b",
+        "s-ranamese-liang-bua-b",
+        "s-liang-bua-reo-b",
+        "s-reo-pota-b"
+      ],
+      "summary": "Ruteng to the south coast at Borong, the unscouted Elar interior, back to the north coast at Pota; skips Ranamese, Liang Bua and Reo.",
+      "option_km": 205.8,
+      "replaces_km": 170.9,
+      "delta_km": 34.9
+    },
+    {
+      "id": "opt-bola-coast",
+      "name": "Bola south-coast loop",
+      "kind": "loop",
+      "sections": [
+        10
+      ],
+      "segments": [
+        "s-maumere-bola-b",
+        "s-bola-watublapi-b"
+      ],
+      "replaces": [
+        "s-maumere-watublapi-b"
+      ],
+      "summary": "Maumere to the Bola coast on the south side of the Sikka isthmus before climbing back to Watublapi and Egon.",
+      "option_km": 46.1,
+      "replaces_km": 29.5,
+      "delta_km": 16.6
+    },
+    {
+      "id": "opt-inerie-circuit",
+      "name": "Inerie full circuit via Gurusina and the Sewowoto coast",
+      "kind": "loop",
+      "sections": [
+        5
+      ],
+      "segments": [
+        "s-bena-gurusina-a",
+        "s-gurusina-sewowoto-a",
+        "s-sewowoto-aimere-a"
+      ],
+      "replaces": [
+        "s-bena-aimere-c"
+      ],
+      "summary": "Round the whole cone: Bena to the rebuilt village of Gurusina, down the wild south flank to the sea at Sewowoto (Ena Bhara beach), then the coast road west to Aimere. Network-routed; the middle leg has the maximum remoteness index and is unscouted.",
+      "option_km": 35.1,
+      "replaces_km": 29.9,
+      "delta_km": 5.2
+    },
+    {
+      "id": "opt-wae-rebo-out-and-back",
+      "name": "Wae Rebo out-and-back",
+      "kind": "alternative",
+      "sections": [
+        2
+      ],
+      "segments": [
+        "s-denge-wae-rebo-b",
+        "s-denge-wae-rebo-b",
+        "s-denge-todo-a"
+      ],
+      "replaces": [
+        "s-denge-wae-rebo-b",
+        "s-wae-rebo-todo-c"
+      ],
+      "summary": "If the onward trail from Wae Rebo cannot be done with a bike: climb to the village, descend the same path to Denge, then ride the remote-profile road to Todo.",
+      "option_km": 60.9,
+      "replaces_km": 60.8,
+      "delta_km": 0.1
+    },
+    {
+      "id": "opt-boawae-nangaroro-direct",
+      "name": "Boawae to Nangaroro direct",
+      "kind": "alternative",
+      "sections": [
+        6,
+        7
+      ],
+      "segments": [
+        "s-boawae-nangaroro-c"
+      ],
+      "replaces": [
+        "s-boawae-mbay-b",
+        "s-mbay-nangaroro-b"
+      ],
+      "summary": "Skip Mbay and the Aesesa plain: cross from Boawae straight over to the south coast at Nangaroro. Shorter and less remote; a bad-weather or time-limit fallback.",
+      "option_km": 49.2,
+      "replaces_km": 118.6,
+      "delta_km": -69.4
+    },
+    {
+      "id": "opt-south-coast-aimere-nangaroro",
+      "name": "South coast direct: Aimere to Nangaroro",
+      "kind": "alternative",
+      "sections": [
+        6,
+        7
+      ],
+      "segments": [
+        "s-aimere-nangaroro-a"
+      ],
+      "replaces": [
+        "s-aimere-mataloko-b",
+        "s-mataloko-boawae-b",
+        "s-boawae-mbay-b",
+        "s-mbay-nangaroro-b"
+      ],
+      "summary": "Stay on the remote south coast of Ngada and Nagekeo instead of climbing back to the plateau: drops Mataloko, Ebulobo, Boawae and Mbay. High remoteness, heavy climbing per kilometre, water unknown.",
+      "option_km": 102.9,
+      "replaces_km": 197.6,
+      "delta_km": -94.7
+    },
+    {
+      "id": "opt-lewotobi-corridor",
+      "name": "Lewotobi southern corridor via Boru",
+      "kind": "alternative",
+      "sections": [
+        10
+      ],
+      "segments": [
+        "s-talibura-boru-a",
+        "s-boru-larantuka-a"
+      ],
+      "replaces": [
+        "s-talibura-larantuka-c"
+      ],
+      "summary": "South of the Lewotobi twins through Boru on and around the Trans-Flores corridor. Only usable if the volcano's alert level and exclusion radius allow it on race day; the north-coast line stays the primary.",
+      "option_km": 118.1,
+      "replaces_km": 95.9,
+      "delta_km": 22.2
+    }
+  ],
+  "considered_not_offered": [
+    {
+      "id": "kelimutu-blidit-ridge-link",
+      "segments": [
+        "s-kelimutu-blidit-a",
+        "s-kelimutu-blidit-d"
+      ],
+      "reason": "A Kelimutu to Egon highland link computes at 120-163 km with 4,700-7,300 m of climbing and would drop the Lio weaving villages, the Paga and Koka beaches, Sikka and Maumere; it contradicts the cultural priority, so it is recorded but not offered."
+    },
+    {
+      "id": "riung-mbay-north-coast",
+      "segments": [
+        "s-riung-mbay-a"
+      ],
+      "reason": "The coast road Riung to Mbay computes at 48 km with remoteness index 1 (a paved main road); it adds no adventure value and would only make sense inside a re-ordered Ngada section."
+    }
+  ]
+}
