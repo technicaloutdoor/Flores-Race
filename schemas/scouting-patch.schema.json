@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scouting-patch.schema.json",
+  "title": "Scouting patch (JSON Patch-like format)",
+  "description": "Field verdicts exported by the app in scout mode; applied by pipeline/apply_patch.py",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp"
+    },
+    "author": {
+      "type": "string",
+      "description": "Initials or name"
+    },
+    "segments": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "common.schema.json#/$defs/status"
+          },
+          "character": {
+            "$ref": "common.schema.json#/$defs/character"
+          },
+          "est_hab_km": {
+            "type": "number",
+            "minimum": 0
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "remoteness": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "water_points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resupply_notes": {
+            "type": "string"
+          },
+          "hazards": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cultural_notes": {
+            "type": "string"
+          },
+          "open_questions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scouting_append": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/ScoutingEntry"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "nodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "resupply": {
+            "type": "string",
+            "enum": [
+              "none",
+              "minimal",
+              "basic",
+              "full"
+            ]
+          },
+          "water": {
+            "type": "string",
+            "enum": [
+              "none",
+              "unreliable",
+              "reliable"
+            ]
+          },
+          "sleep": {
+            "type": "string",
+            "enum": [
+              "none",
+              "homestay",
+              "guesthouse",
+              "hotel"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "new_pois": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "Point"
+              },
+              "coordinates": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "required": [
+              "type",
+              "coordinates"
+            ],
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "type",
+          "geometry",
+          "properties"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "created",
+    "author"
+  ],
+  "additionalProperties": false
+}

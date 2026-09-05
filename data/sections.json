@@ -1,0 +1,346 @@
+[
+  {
+    "id": "sec-01-komodo-mbeliling",
+    "order": 1,
+    "title": "Komodo gate and the Mbeliling forest",
+    "subtitle": "Leaving the tourist town for the first farm tracks",
+    "from_node": "n-labuan-bajo",
+    "to_node": "n-werang",
+    "theme": [
+      "forest",
+      "highland",
+      "coast"
+    ],
+    "story": "Labuan Bajo starts the race as the gateway everyone already knows: Komodo dragons, dive boats and an international airport. The course turns its back on the harbour almost immediately and climbs into the Mbeliling forest reserve, roughly 15,000 hectares of Important Bird Area and the highest ground in West Manggarai at about 1,275 m -- habitat for the Flores hanging parrot, Flores monarch, Flores crow and Flores owl, none of them found anywhere else on Earth. Two waterfalls, Cunca Wulang and Cunca Rami, sit on or near the corridor as the first honest test of design rule 1: prefer the small farm track over the paved road, even when the road is scenic.\n\nThe section ends at Sano Nggoang, an elliptical caldera lake reported to be among the deepest volcanic lakes on Earth, with solfataras and hot springs steaming quietly on its south-east shore. Werang, the kecamatan capital just beyond it, is the first real resupply stop after the lake -- a parish church, a police post, a handful of kiosks. Neither the lake nor the forest track has been scouted yet; several node coordinates in this section (Denge, Dintor, Cunca Rami) are still flagged unverified in the desk data, which is exactly why this section opens the first scouting season rather than closing it.",
+    "highlight_pois": [
+      "p-komodo-np-gateway",
+      "p-mbeliling-forest",
+      "p-cunca-wulang",
+      "p-cunca-rami",
+      "p-sano-nggoang",
+      "p-wai-sano-volcano"
+    ],
+    "target_km": [
+      40,
+      60
+    ],
+    "hab_expected": "low",
+    "scouting_priority": 2,
+    "open_questions": [
+      "Is the Mbeliling forest track rideable end-to-end, or does it require dismounts near Cunca Wulang/Cunca Rami?",
+      "Cunca Rami's desk position and DEM elevation disagree by roughly 400 m; needs a field GPS fix.",
+      "Homestay capacity at Sano Nggoang for race-week volume is unconfirmed.",
+      "route-concept.md's 90-130 km target for this whole section assumed a much longer forest corridor than a geodesically plausible track can deliver: Labuan Bajo->Sano Nggoang is capped at ~58 km by the 1.3-2.5x-straight-line corridor rule, and Sano Nggoang->Werang is only ~1.5 km between two very close nodes (max ~1.8 km at the same corridor cap). Target lowered to [40,60] to match; route-concept.md should be revisited for this section."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-02-wae-rebo-south-coast",
+    "order": 2,
+    "title": "Wae Rebo and the south coast of Manggarai",
+    "subtitle": "The flagship cultural checkpoint, on foot with the bike",
+    "from_node": "n-werang",
+    "to_node": "n-iteng",
+    "theme": [
+      "culture",
+      "coast",
+      "highland"
+    ],
+    "story": "The course drops off the Sano Nggoang plateau to the quiet south coast at Dintor and Denge, then leaves the road entirely: the Wae Rebo trail is roughly 8-9 km and +700 m, walked with the bike on the same porters' path that carries every sack of rice and roof repair up to the village. Wae Rebo's seven cone-shaped mbaru niang houses, arranged in a circle around a ceremonial ground, won UNESCO's 2012 Asia-Pacific Award for Cultural Heritage Conservation; it is Flores' most photographed place and the clearest test of the whole project's promise that villages are hosts, not scenery. A fixed homestay and guest-fee system already exists for tourists, but a race-specific agreement with the village council is required before any checkpoint is confirmed -- nothing here happens without it.\n\nBeyond Wae Rebo the concept line continues over the ridge to Todo, the former seat of the Manggarai kingdom and home to the oldest standing mbaru niang in the regency; if the onward trail proves impassable with a loaded bike, variant B falls back to an out-and-back through Denge and a road link to Todo instead. Either way the section closes at Iteng, the practical resupply before the climb to Ruteng. This is a cultural-checkpoint section in the fullest sense: design rule 5 (villages are hosts, not scenery) and the route concept's own open questions both point here first.",
+    "highlight_pois": [
+      "p-wae-rebo",
+      "p-todo-village",
+      "p-satar-mese-coast"
+    ],
+    "target_km": [
+      100,
+      140
+    ],
+    "hab_expected": "high",
+    "scouting_priority": 1,
+    "open_questions": [
+      "Which villages will host cultural checkpoints, under what terms? (Wae Rebo and Todo council agreements not yet negotiated)",
+      "Is the Wae Rebo onward trail passable with a bike, or is it an out-and-back?",
+      "Dintor and Denge's coordinates are unverified desk placements; both need a field GPS fix."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-03-manggarai-highlands",
+    "order": 3,
+    "title": "Manggarai highlands",
+    "subtitle": "The roof of the west, and the deepest history on the island",
+    "from_node": "n-iteng",
+    "to_node": "n-liang-bua",
+    "theme": [
+      "highland",
+      "history"
+    ],
+    "story": "From Iteng the course climbs roughly 1,100 m to Ruteng, the coolest, most orderly town of the whole west region and its best full resupply: market, hospital, banks, many hotels, all in the shadow of the island's highest ground. Poco Mandasawu (2,370 m, the roof of Flores) and Poco Ranaka (2,350 m, with the 1987 lava dome Anak Ranakah) form the massif the road has to skirt on its way to Ranamese, a small crater lake at 1,220 m with a warung at the car park -- the highest, coldest rest stop on the whole course.\n\nThe descent north trades altitude for deep time: Liang Bua, the limestone cave where a joint Indonesian-Australian team excavated *Homo floresiensis* in 2003, still used by the local Manggarai community for ceremonies. It is the one checkpoint that turns the whole traverse into an argument about how old this island's story really is, long before Wae Rebo, before the Manggarai kingdom, before anyone now living. Cancar's spider-web rice fields sit a short, no-hike-a-bike side trip west of Ruteng if the schedule allows -- one of the few highlights on the whole course that costs nothing in effort to reach.",
+    "highlight_pois": [
+      "p-cancar-lingko",
+      "p-poco-mandasawu",
+      "p-poco-ranaka",
+      "p-ranamese-lake",
+      "p-liang-bua",
+      "p-ruteng-cathedral",
+      "p-ruteng-market",
+      "p-golo-curu",
+      "p-cunca-rede"
+    ],
+    "target_km": [
+      90,
+      130
+    ],
+    "hab_expected": "medium",
+    "scouting_priority": 3,
+    "open_questions": [
+      "Is there a farm-track alternative to the paved road over the Ranamese/Poco Ranaka pass, per design rule 1?",
+      "Does a more direct farm track exist between Ranamese and Liang Bua than the current desk sketch, which doubles back near Ruteng?"
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-04-north-coast",
+    "order": 4,
+    "title": "The forgotten north coast",
+    "subtitle": "Where the water and the track both run out",
+    "from_node": "n-liang-bua",
+    "to_node": "n-riung",
+    "theme": [
+      "coast",
+      "savanna"
+    ],
+    "story": "Liang Bua descends to Reo, an old north-coast port town with a market, a bank and a homestay -- the last reliable resupply before the section that most likely defines the whole race. From Reo the course follows dry, lontar-palm savanna toward Pota and Riung: small ports, few visitors, and, as far as the desk research can tell, no documented continuous track and no confirmed water source along the way. This is the section the route concept names explicitly as the water constraint of the whole course.\n\nRiung is the reward at the far end: a fishing port and gateway to the Seventeen Islands Marine Park, more than twenty coral islets reached by hired boat, with flying foxes on Pulau Tembang. Getting there honestly, though, means the north coast of Manggarai and Manggarai Timur has to be scouted before anything else on this course -- hence scouting priority 1, and the route concept's own open question 1: is there a continuous rideable or walkable corridor Reo to Pota to Riung, and where is the water.",
+    "highlight_pois": [
+      "p-reo-port",
+      "p-north-coast-savanna"
+    ],
+    "target_km": [
+      150,
+      200
+    ],
+    "hab_expected": "medium",
+    "scouting_priority": 1,
+    "open_questions": [
+      "Is there a continuous rideable/walkable corridor Reo\u2192Pota\u2192Riung along or near the north coast, and where is water?",
+      "Where does the coastal track die between Pota and Riung, and what replaces it \u2014 beach walking, a headland footpath, or a boat portage?",
+      "Riung and Pota's coordinates are hand-placed/unverified; both need a field GPS fix."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-05-ngada-inerie",
+    "order": 5,
+    "title": "Ngada: megaliths under Inerie",
+    "subtitle": "Cultural checkpoints under a near-perfect volcano",
+    "from_node": "n-riung",
+    "to_node": "n-aimere",
+    "theme": [
+      "culture",
+      "volcano",
+      "highland"
+    ],
+    "story": "The climb from Riung's coast to the Bajawa plateau (about 1,100 m) is the section's biggest single effort, passing the Mengeruda hot springs near Soa on the way up. Bajawa itself is full resupply -- hotels, market, ATMs -- before the course turns south into megalithic country: Bena (nine clans, paired ngadhu and bhaga ancestor shrines around a stone-terraced square), Luba, Tololela and Gurusina, the last of them rebuilt after a 2018 fire destroyed 27 of its 33 traditional houses. All four sit under Inerie, a near-perfect 2,245 m cone the villages beneath it treat less as scenery than as a presiding relative.\n\nEvery one of these villages is a proposed cultural checkpoint under design rule 5 (villages are hosts, not scenery), and every one needs an agreement with its village council before a single rider passes. The section closes with an honest hike-a-bike option: a steep, loose-soil traverse of Inerie's shoulder down to the arak-distilling coast at Aimere (5-10 km per the route concept's hike-a-bike inventory), with a full circuit of the mountain as an Ultra-variant alternative for those who want more.",
+    "highlight_pois": [
+      "p-mengeruda-hot-spring",
+      "p-bajawa-town",
+      "p-bena",
+      "p-luba",
+      "p-tololela",
+      "p-gurusina",
+      "p-inerie",
+      "p-aimere-arak-coast",
+      "p-wolobobo"
+    ],
+    "target_km": [
+      120,
+      170
+    ],
+    "hab_expected": "high",
+    "scouting_priority": 1,
+    "open_questions": [
+      "Which villages will host cultural checkpoints, under what terms? (Bena, Luba, Tololela, Gurusina)",
+      "Is the Bena\u2192Aimere Inerie-shoulder descent safe with a loaded bike?",
+      "Which ridge crossings between the coasts exist as footpaths here \u2014 the DEM and the track-network layer are the starting point.",
+      "Aimere's pier coordinates are unverified; needs a field GPS fix."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-06-ebulobo-nagekeo",
+    "order": 6,
+    "title": "Ebulobo and the Nagekeo plains",
+    "subtitle": "Back over the plateau, down to the rice plains",
+    "from_node": "n-aimere",
+    "to_node": "n-mbay",
+    "theme": [
+      "volcano",
+      "savanna"
+    ],
+    "story": "From Aimere the course climbs back to the plateau at Mataloko -- a European-style colonial seminary and a geothermal field of more than twenty hot springs -- past old Wogo's megalith complex a short walk off the road. Boawae, further east, sits directly on the northwest slope of Ebulobo, an active 2,124 m stratovolcano PVMBG held at Level I (Normal) through mid-2026, though the August 2026 M7.7 Flores earthquake triggered landslides on its upper slopes without raising the alert -- worth a recheck against MAGMA Indonesia in the weeks before race day rather than assumed settled.\n\nThe descent down the Aesesa valley to Mbay closes the section on the largest rice-growing lowland on Flores, the north coast's flattest and most productive stretch of the whole course. Mbay itself is full resupply, the administrative capital of Nagekeo Regency; a shorter, less remote Ultra-variant alternative skips it entirely, cutting directly from Boawae to Nangaroro on the south coast instead.",
+    "highlight_pois": [
+      "p-mataloko-seminary",
+      "p-mataloko-hot-spring",
+      "p-wogo",
+      "p-ebulobo",
+      "p-aesesa-plains"
+    ],
+    "target_km": [
+      110,
+      150
+    ],
+    "hab_expected": "low",
+    "scouting_priority": 3,
+    "open_questions": [
+      "Which ridge crossings between the coasts exist as footpaths here?",
+      "Recheck Ebulobo's PVMBG bulletin before race day.",
+      "Mbay's town-centre coordinate is unverified; needs a field GPS fix."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-07-blue-stone-coast",
+    "order": 7,
+    "title": "The blue-stone coast to Ende",
+    "subtitle": "Crossing the island's narrow waist",
+    "from_node": "n-mbay",
+    "to_node": "n-ende",
+    "theme": [
+      "coast",
+      "history"
+    ],
+    "story": "This is the narrowest waist of Flores, and the course uses it to cross back to the south coast at Nangaroro before following the shore east past Penggajawa's Blue Stone (Batu Biru) beach -- smooth, turquoise volcanic pebbles washed up from old lava flows, a classic overland-route photo stop -- into Ende, the largest town of central Flores under the active cone of Iya (PVMBG Level II/Waspada as of May 2026, with a 2 km exclusion radius the town's southern peninsula should respect as a standing rule).\n\nEnde carries the section's history: Sukarno's 1934-38 exile house on Jalan Perwira, and the seafront park where he is said to have shaped the outline of the Pancasila under a breadfruit tree. It is full resupply -- hospital, airport, market -- and the natural place for the course to reset before the signature section that follows. The narrow waist itself is one of the least-documented ridge crossings on the whole route; the concept's open question 6 about footpaths between the coasts applies here as much as anywhere.",
+    "highlight_pois": [
+      "p-nangapanda",
+      "p-penggajawa",
+      "p-ende-town",
+      "p-sukarno-exile-house",
+      "p-pancasila-tree",
+      "p-iya-volcano",
+      "p-ende-airport"
+    ],
+    "target_km": [
+      120,
+      160
+    ],
+    "hab_expected": "low",
+    "scouting_priority": 3,
+    "open_questions": [
+      "Which ridge crossings between the coasts exist as footpaths across this narrow waist?",
+      "Confirm the Maukaro/Nangaroro naming discrepancy in the desk data: route-concept.md groups them as south-coast alternatives, but the only documented 'Maukaro' is a north-coast Ende sub-district \u2014 the two are not the same place."
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-08-kelimutu-lio",
+    "order": 8,
+    "title": "Kelimutu and the Lio country",
+    "subtitle": "The one stop every rider is required to make",
+    "from_node": "n-ende",
+    "to_node": "n-koka",
+    "theme": [
+      "volcano",
+      "culture",
+      "highland"
+    ],
+    "story": "Ende climbs into the hills past Detusoko's cool rice terraces to Moni, the usual overnight base for a dawn ascent of Kelimutu -- three adjacent crater lakes at 1,639 m, each a different colour that shifts over months as the volcano's hydrothermal chemistry changes. In Lio belief the lakes are where souls go after death, sorted by how they lived; the mountain is treated as sacred ground, not scenery, and it is the one place in the entire course riders are *required* to stop, at dawn, before the crowds arrive. Standing safety rules apply regardless of PVMBG's alert level: no crater-rim approach, especially at Kawah II, and no camping in the craters.\n\nSouth of the summit the course runs through the ikat-weaving heart of the Lio people -- Wolojita and Nggela, where almost every household still keeps a back-strap loom -- before reaching the coast at Koka and Paga, twin south-coast beaches whose exact coordinates are still desk placements rather than field fixes. Nggela is named explicitly in the route concept as a proposed cultural checkpoint, alongside Wae Rebo and the Ngada villages, and needs the same council-level agreement before race day.",
+    "highlight_pois": [
+      "p-detusoko-rice-terraces",
+      "p-wologai",
+      "p-moni",
+      "p-kelimutu",
+      "p-kelimutu-np",
+      "p-jopu",
+      "p-wolojita",
+      "p-nggela",
+      "p-koka-beach",
+      "p-wolotopo"
+    ],
+    "target_km": [
+      130,
+      170
+    ],
+    "hab_expected": "medium",
+    "scouting_priority": 1,
+    "open_questions": [
+      "Which villages will host cultural checkpoints, under what terms? (Nggela in particular)",
+      "Confirm Paga and Koka's exact coordinates in the field; the two are less than 1 km apart in the desk data.",
+      "The Wolojita coastal road is known to be cut by landslides after heavy rain \u2014 how often, and what is the detour?"
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-09-sikka-portuguese",
+    "order": 9,
+    "title": "Sikka and the Portuguese south",
+    "subtitle": "Five centuries of Indo-Portuguese history, quietly kept",
+    "from_node": "n-koka",
+    "to_node": "n-maumere",
+    "theme": [
+      "culture",
+      "history",
+      "coast"
+    ],
+    "story": "The shortest section of the course bulges inland around a south-coast bay to reach Sikka village, seat of the old Sikka kingdom and site of a narrow wooden Baroque-style church built 1896-1899 -- the clearest single point of contact with five centuries of Indo-Portuguese history on the island, older and quieter than Larantuka's grander Semana Santa at the finish. Sikka is a working village and parish, not a museum: the expected register here is closer to visiting a family cemetery than a tourist site.\n\nLela follows, a secondary seat of the same Catholic mission, then Maumere -- Sikka Regency's capital and the largest town of the eastern half of the island, full resupply with an airport, a hospital and the Ledalero Seminary nearby, one of the largest Catholic seminaries in the world. Wuring, the Bajo stilt village built out over the tidal flats, sits a few kilometres west of the town centre on the way in -- a working fishing community, not a checkpoint, to be ridden through with respect rather than treated as a set-piece stop. The 1992 earthquake and tsunami that killed an estimated 2,000-2,500 people here is context for the whole north coast, not a route dependency.",
+    "highlight_pois": [
+      "p-sikka-village",
+      "p-sikka-church",
+      "p-lela",
+      "p-frans-seda-airport",
+      "p-wuring",
+      "p-maumere-1992"
+    ],
+    "target_km": [
+      60,
+      90
+    ],
+    "hab_expected": "low",
+    "scouting_priority": 3,
+    "open_questions": [
+      "Confirm Sikka village's exact coordinates in the field; the desk position was shifted from an inland kecamatan centroid to the coast.",
+      "Is a small courtesy donation at Sikka's church sufficient for a scheduled race stop, or does a checkpoint need its own arrangement with the parish?"
+    ],
+    "public": true
+  },
+  {
+    "id": "sec-10-egon-far-east",
+    "order": 10,
+    "title": "Egon and the far east",
+    "subtitle": "The crux logistics question of the whole race",
+    "from_node": "n-maumere",
+    "to_node": "n-larantuka",
+    "theme": [
+      "volcano",
+      "coast",
+      "culture"
+    ],
+    "story": "Watublapi's ikat-weaving hamlet -- a working craft cooperative rather than a customary adat village, and comparatively easy to arrange as a stop -- leads to Blidit, the trailhead for Mount Egon: an active 1,661-1,703 m stratovolcano with an acid crater lake and fumaroles, climbed through forest before opening onto volcanic upper slopes (4-6 km hike-a-bike per the route concept's inventory). It reawakened suddenly in 2004, forcing the evacuation of roughly 7,000 people, and PVMBG's Level I status today comes with a standing rule: no lingering near the fumaroles.\n\nBeyond Egon the course reaches the crux logistics question of the entire race: how to pass Lewotobi, whose twin volcanoes have erupted repeatedly since November 2024 with fatalities and a PVMBG Level III (Siaga) alert and 5 km exclusion radius still standing as of late August 2026. Concept A, the primary line, stays well outside that radius along the north coast through Waiterang and Talibura; concept B, the highway corridor via Boru, comes closer to the vents and is usable only if PVMBG status allows on race week itself, with a pre-agreed reroute and abort rule ready either way.\n\nThe finish is Larantuka, under Ile Mandiri (1,502 m) and the Portuguese-Catholic bookend to Sikka: the Semana Santa procession tradition has run continuously since the 16th century, the longest-standing thread the course carries. An optional final hike-a-bike up Ile Mandiri's flank (3-5 km) is on the table as a finishing 'sting in the tail', if it can be shown safe to schedule after thirteen days of fatigue.",
+    "highlight_pois": [
+      "p-watublapi-weaving",
+      "p-egon",
+      "p-waiterang",
+      "p-talibura",
+      "p-ledalero-seminary",
+      "p-lewotobi-laki-laki",
+      "p-lewotobi-perempuan",
+      "p-larantuka-heritage",
+      "p-larantuka-cathedral",
+      "p-kapela-tuan-ma",
+      "p-ile-mandiri"
+    ],
+    "target_km": [
+      150,
+      200
+    ],
+    "hab_expected": "high",
+    "scouting_priority": 2,
+    "open_questions": [
+      "What is the realistic corridor and the abort plan around Lewotobi, and what PVMBG status level would allow the Boru highway alternative?",
+      "Confirm current Egon trail condition and fumarole safety before committing riders.",
+      "Is the Ile Mandiri finale safe to schedule after thirteen days of race fatigue?",
+      "Blidit, Waiterang and Talibura's coordinates are approximate/unverified; all need a field GPS fix."
+    ],
+    "public": true
+  }
+]

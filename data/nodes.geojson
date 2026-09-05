@@ -1,0 +1,1154 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.857,
+          -8.843
+        ]
+      },
+      "properties": {
+        "id": "n-aimere",
+        "name": "Aimere",
+        "kind": "port",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "South-coast port of Ngada Regency, ~1 hour south of Bajawa; ASDP ferry to Waingapu (Sumba, Tue/Fri) and Kupang. Exact pier coordinates not found in sources; placed at a low-elevation coastal point inside Ngada near the described location.",
+        "confidence": "verified",
+        "sources": [
+          "https://kataomed.com/jadwal-kapal/jadwal-kapal-ferry-dari-pelabuhan-aimere-ke-pelabuhan-kupang-dan-waingapu",
+          "https://idalamat.com/alamat/477601/pelabuhan-aimere-ngada-nusa-tenggara-timur",
+          "https://id.wikipedia.org/wiki/Aimere,_Ngada",
+          "map:overture (Pelabuhan Aimere, Puskesmas, Polres, BRI cluster)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.970883,
+          -8.79448
+        ]
+      },
+      "properties": {
+        "id": "n-bajawa",
+        "name": "Bajawa",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Capital of Ngada Regency, cool highland town (~1,100-1,300 m) on the Trans-Flores highway; hotels, market, ATMs, some bike-ish parts. Coordinate is the mean of two independent web sources ~1.5 km apart.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q12473554",
+          "https://www.latlong.net/place/bajawa-ngada-regency-east-nusa-tenggara-indonesia-25095.html",
+          "https://en.wikipedia.org/wiki/Bajawa_Soa_Airport"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9857,
+          -8.8774
+        ]
+      },
+      "properties": {
+        "id": "n-bena",
+        "name": "Bena",
+        "kind": "checkpoint",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Ngada megalithic village 19 km south of Bajawa in Tiwuriwu village, Aimere district, at the foot of Inerie; proposed cultural checkpoint, agreement with the village council required before race day.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.megalithic.co.uk/article.php?sid=51992",
+          "https://www.komodowisata.com/places-to-visit-in-flores/bena-traditional-village-ngada-regency",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.44769,
+          -8.66223
+        ]
+      },
+      "properties": {
+        "id": "n-blidit",
+        "name": "Blidit",
+        "kind": "trailhead",
+        "resupply": "none",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Last village before the Egon volcano trail, reached from Waigete (about 19 km east of Maumere on the highway) via an 8-9 km side road. A trip report gives the trailhead elevation as 788 m; this point was found by sampling the DEM along the Waigete-Egon line and picking the spot where elevation matches (786 m at 6.3 km from Waigete) -- an unusually good independent check for a hand-derived position. (Earlier component-distance figures of 16 km + 8 km did not reconcile with the ~26.4 km straight-line distance from Maumere to this point; corrected above.)",
+        "confidence": "approximate",
+        "sources": [
+          "http://thespicerouteend.com/travel-flores-hike-egon-volcano-maumere/",
+          "map:dem-derived"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1644,
+          -8.7667
+        ]
+      },
+      "properties": {
+        "id": "n-boawae",
+        "name": "Boawae",
+        "kind": "town",
+        "resupply": "basic",
+        "water": "reliable",
+        "sleep": "homestay",
+        "notes": "Main south-central town of Nagekeo Regency, on the northwest slope of Ebulobo volcano, on the Trans-Flores highway. Position corrected ~13.0 km to the Kantor Camat Boawae / Polsek Boawae cluster (Overture Maps place theme) from an earlier desk estimate that landed well away from any Boawae-named place.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ebulobo",
+          "https://www.travel2flores.info/flores-east-to-west/central-flores/nagekeo/",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.29686,
+          -8.74635
+        ]
+      },
+      "properties": {
+        "id": "n-bola",
+        "name": "Bola",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "South-coast kecamatan capital, anchor of the optional 'Egon and the Bola coast' Ultra loop (Maumere -> Bola -> Watublapi -> Egon). Wikidata/GNS point (77 m) shifted ~1.5 km to a DEM-confirmed coastal flat (~1 m); that point in turn sat ~183 m into the sea against the geoBoundaries regency mask (a coastline-simplification artifact), so nudged onto the nearest on-land point.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q4192942",
+          "https://id.wikipedia.org/wiki/Bola,_Bola,_Sikka",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6075,
+          -8.81602
+        ]
+      },
+      "properties": {
+        "id": "n-borong",
+        "name": "Borong",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Capital of Manggarai Timur Regency, south-coast port town: market, hospital, banks, bus terminal, hotels (Gloria Hotel Toka Borong). Anchor for the Manggarai Timur interior loop (Ultra variant).",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Borong,_Flores",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.71139,
+          -8.52639
+        ]
+      },
+      "properties": {
+        "id": "n-boru",
+        "name": "Boru",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Wulanggitang kecamatan capital on the Trans-Flores highway between Maumere and Larantuka; a handful of roadside restaurants and the PVMBG Lewotobi volcano observation post are nearby. Relevant only to Alternative B (the highway corridor through the Lewotobi hazard zone) -- concept A routes the course north of Lewotobi instead. ~8 km from the Lewotobi vents; see p-lewotobi-laki-laki / p-lewotobi-perempuan hazard notes before any use of this node on race day.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q12477116",
+          "https://wickedadventures.com/flores-trekking-lewotobi/",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302,
+          -8.808
+        ]
+      },
+      "properties": {
+        "id": "n-denge",
+        "name": "Denge",
+        "kind": "trailhead",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Last village reachable by road/motorbike before the Wae Rebo trek (about 8 km, +700 m, 2.5-3 h on foot). Coordinates placed by interpolation from route descriptions (~6 km from Dintor, ~7-9 km from Wae Rebo) and cross-checked against the DEM; needs a field GPS fix.",
+        "confidence": "approximate",
+        "sources": [
+          "https://theworldtravelguy.com/wae-rebo-village/",
+          "https://discoverflores.guide/wae-rebo-village/",
+          "field:pending",
+          "map:overture (Waerebo.official homestay, Denge)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.759722,
+          -8.716111
+        ]
+      },
+      "properties": {
+        "id": "n-detusoko",
+        "name": "Detusoko",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "reliable",
+        "sleep": "homestay",
+        "notes": "Highland district capital ~33 km/1,100 km north of Ende on the road to Moni; cool air, green rice terraces, a tourism village (Detusoko Barat) with homestays.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.indonesia.travel/de/de/tourism-village/desa-wisata-detosoko-barat",
+          "https://www.letstravelntt.com/west-detusoko-village/",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.308,
+          -8.846
+        ]
+      },
+      "properties": {
+        "id": "n-dintor",
+        "name": "Dintor",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "South-coast village in Desa Satar Ruwuk on the Wae Nakeng-Nangalili-Borik-Dintor-Denge coastal track. Coordinates are a reasoned placement from route descriptions (no named source pin found); flagged for scouting.",
+        "confidence": "approximate",
+        "sources": [
+          "https://rizalbustami.blogspot.com/2019_06_16_archive.html",
+          "field:pending",
+          "map:overture (Wae Rebo Lodge, Dintor)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.77337,
+          -8.52474
+        ]
+      },
+      "properties": {
+        "id": "n-elar",
+        "name": "Elar",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Capital of Elar kecamatan, Manggarai Timur interior: camat office, health centre, schools only. Ultra-variant loop node between Borong and the north coast at Pota; tracks in this interior are unscouted.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q894053",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.65615,
+          -8.8381
+        ]
+      },
+      "properties": {
+        "id": "n-ende",
+        "name": "Ende",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Largest town of central Flores, capital of Ende Regency, on the south coast under Iya volcano; full resupply, hospital, airport, Sukarno's 1934-38 exile town. Natural Earth's populated-place point for Ende sits 2.81 km south of this pin; kept as-is since Ende spans several km and the discrepancy reads as a town-centroid-definition difference (this pin is the harbour/centre area) rather than a relocation error.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ende_(town)",
+          "https://latitude.to/map/id/indonesia/cities/ende"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.42002,
+          -8.81167
+        ]
+      },
+      "properties": {
+        "id": "n-iteng",
+        "name": "Iteng",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Capital of Satar Mese kecamatan, on the south coast (a beach point is tagged at the village itself). Has a market (pasar Iteng), a Catholic parish, a health centre and schools -- the practical resupply between Todo and Ruteng.",
+        "confidence": "verified",
+        "sources": [
+          "https://id.wikipedia.org/wiki/Iteng,_Satar_Mese,_Manggarai",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.82,
+          -8.769
+        ]
+      },
+      "properties": {
+        "id": "n-kelimutu",
+        "name": "Kelimutu",
+        "kind": "checkpoint",
+        "resupply": "none",
+        "water": "none",
+        "sleep": "none",
+        "notes": "Kelimutu National Park entrance gate (~1,234 m) and summit car park (~1,522 m), a 20-minute paved walk from the three crater lakes; the mandatory dawn checkpoint of the race. Booth opens 05:00.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.beenaroundtheglobe.com/kelimutu-national-park/",
+          "https://www.gunungbagging.com/kelimutu/",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.018125,
+          -8.795162
+        ]
+      },
+      "properties": {
+        "id": "n-koka",
+        "name": "Koka",
+        "kind": "checkpoint",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Twin-bay beach on the south coast, reached via an ~8 km side road off the Trans-Flores highway near Paga. No lodging found; day-stop / checkpoint only. Coordinates from a single beach-tourism source; DEM confirms a coastal position (~6 m).",
+        "confidence": "verified",
+        "sources": [
+          "https://beach-spot.com/beach/koka-beach/",
+          "https://mybestplacestovisit.com/asia/indonesia/flores/koka-beach/",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.87565,
+          -8.49393
+        ]
+      },
+      "properties": {
+        "id": "n-labuan-bajo",
+        "name": "Labuan Bajo",
+        "kind": "start",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Race start. Also the region's only airport (Komodo/Labuan Bajo Airport, IATA LBJ) and its busiest port (ferries, Komodo tour boats, Pelni). Fully geared tourist town: dive shops, ATMs, supermarkets, hospitals.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.travelmath.com/airport/LBJ",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.9797,
+          -8.3475
+        ]
+      },
+      "properties": {
+        "id": "n-larantuka",
+        "name": "Larantuka",
+        "kind": "finish",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Race finish town: capital of Flores Timur Regency, historic Portuguese-Catholic port under Ile Mandiri, host of the Semana Santa Holy Week procession. Also a port (ferries to Adonara, Solor, Lembata, Kupang) and near Gewayantana Airport (~9 km, see p-gewayantana-airport). One aggregator's decimal figure (-8.328844, 122.949401, 243 m -- clearly on the Ile Mandiri slope) was inconsistent with its own DMS figure on the same page; the DMS figure converts to this point, which the DEM confirms as coastal (13 m).",
+        "confidence": "verified",
+        "sources": [
+          "https://www.distancesto.com/coordinates/id/larantuka-latitude-longitude/history/110491.html",
+          "https://en.wikipedia.org/wiki/Larantuka",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.16611,
+          -8.72
+        ]
+      },
+      "properties": {
+        "id": "n-lela",
+        "name": "Lela",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Kecamatan capital between Sikka village and Maumere on the south-coast road; historic co-seat of the Sikka kingdom's Catholic mission. Coordinate is the Wikidata/GNS kecamatan centroid (139 m, a hillside position consistent with the road climbing away from the coast here).",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q26726835",
+          "https://e-journals2.unmul.ac.id/index.php/transform/article/download/111/114/1099",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4435,
+          -8.53082
+        ]
+      },
+      "properties": {
+        "id": "n-liang-bua",
+        "name": "Liang Bua",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "The village and limestone cave ~14 km NW of Ruteng where Homo floresiensis was found (2003). Small vendor stalls at the site; no lodging confirmed.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.megalithic.co.uk/article.php?sid=27554",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.052,
+          -8.824
+        ]
+      },
+      "properties": {
+        "id": "n-mataloko",
+        "name": "Mataloko",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "reliable",
+        "sleep": "guesthouse",
+        "notes": "Golewa district capital on the Trans-Flores highway ~17 km ESE of Bajawa; St. Yohanes Berchmans minor seminary (European-style, colonial era) and the Mataloko geothermal field (20+ hot springs). Kemah Tabor retreat house nearby.",
+        "confidence": "verified",
+        "sources": [
+          "https://lifestyle.bisnis.com/read/20221102/224/1593938/ada-seminari-bergaya-eropa-di-mataloko-flores-ini-sejarahnya",
+          "https://iopscience.iop.org/article/10.1088/1742-6596/1341/8/082042",
+          "map:overture (Mataloko government office)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.524,
+          -8.616
+        ]
+      },
+      "properties": {
+        "id": "n-maukaro",
+        "name": "Maukaro",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "North-coast sub-district (kecamatan) of Ende Regency, on the Flores Sea, bordering Nagekeo; fishing villages (a 'Kampung Nelayan Merah Putih' fisheries project is under way at Kobaleba beach). Nudged ~1.85 km to the Puskesmas Maukaro cluster (Overture Maps place theme). Route-concept.md groups 'Maukaro' with Nangaroro as a south-coast alternative toward Ende, but the only documented place of this name is this north-coast Ende sub-district; treated here as a north-coast alternative node per the task brief, flagged for the route designer to reconcile.",
+        "confidence": "verified",
+        "sources": [
+          "https://rri.co.id/ende/features/2093353/harapan-baru-nelayan-maukaro-dari-kampung-merah-putih",
+          "https://www.grandwisatahotel-ende.com/2020/02/maukaro-beach.html",
+          "https://regional.kompas.com/read/2026/08/18/145203378/puskesmas-maukaro-ende-rusak-akibat-gempa-pelayanan-dialihkan-ke-halaman",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.210411,
+          -8.624377
+        ]
+      },
+      "properties": {
+        "id": "n-maumere",
+        "name": "Maumere",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Capital of Sikka Regency and the largest town of the eastern half of the island: market, ATMs, hospital (RSUD dr. TC Hillers), bike-ish parts, hotels. Frans Seda Airport is 5 km out (see p-frans-seda-airport). Rebuilt after the 12 Dec 1992 earthquake and tsunami (see p-maumere-1992).",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Maumere",
+          "https://www.latlong.net/place/maumere-indonesia-1118.html"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2807,
+          -8.5756
+        ]
+      },
+      "properties": {
+        "id": "n-mbay",
+        "name": "Mbay",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Administrative capital of Nagekeo Regency, on the Aesesa coastal plain (the largest rice-growing lowland on Flores), north coast. Desk position corrected ~17.3 km from an earlier unverified placement to the Civic Center / RSU Aeramo hospital / Terminal Danga cluster of Mbay-named places (Overture Maps place theme, independent of the Wikipedia/blog sources below); still not a field GPS fix.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mbay_(Indonesia)",
+          "https://en.wikipedia.org/wiki/Nagekeo_Regency",
+          "https://komodo-travel.com/blog/nagekeo-region-flores/",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.822,
+          -8.751
+        ]
+      },
+      "properties": {
+        "id": "n-moni",
+        "name": "Moni",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "reliable",
+        "sleep": "guesthouse",
+        "notes": "Small highland hamlet at the foot of Kelimutu, ~50 km east of Ende; a dozen guesthouses and warungs, the usual overnight base for a dawn ascent to the crater lakes. An independent cross-check (Overture Maps place theme) finds a low-confidence cluster of Moni-named businesses (Daniel Lodge, Good Moni Cafe) averaging ~2.7 km east, toward the Kelimutu gate; Moni is a linear roadside village so this may reflect real village extent rather than a placement error. Left unmoved pending a real field/web check; if moved, the indicated target is roughly [121.847, -8.750].",
+        "confidence": "approximate",
+        "sources": [
+          "https://www.travelfish.org/location/indonesia/east_nusa_tenggara/flores/moni",
+          "https://theflyingnomads.com/moni-travel-guide-volcano-views-village-life-hidden-hot-springs-on-flores/"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.391667,
+          -8.786389
+        ]
+      },
+      "properties": {
+        "id": "n-nangaroro",
+        "name": "Nangaroro",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "South-coast district of Nagekeo Regency bordering Ende; farming and fishing villages (Tonggo etc.), grey-stone beaches; an alternative south-coast crossing from Boawae/Mbay toward Ende.",
+        "confidence": "verified",
+        "sources": [
+          "https://id.wikipedia.org/wiki/Nangaroro,_Nagekeo",
+          "https://podenura.berdesa.id/peta",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.848,
+          -8.843
+        ]
+      },
+      "properties": {
+        "id": "n-nggela",
+        "name": "Nggela",
+        "kind": "checkpoint",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Lio ikat-weaving village on a coastal ridge (~180 m) 21 km east of Ende town, 1 km inland from the south coast; end anchor of the Central region, proposed cultural checkpoint per route-concept design rule 5.",
+        "confidence": "approximate",
+        "sources": [
+          "http://asiantextilestudies.com/nggela-01.html",
+          "https://id.wikipedia.org/wiki/Nggela,_Wolojita,_Ende"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.056,
+          -8.766
+        ]
+      },
+      "properties": {
+        "id": "n-paga",
+        "name": "Paga",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "guesthouse",
+        "notes": "Small south-coast village directly on the Trans-Flores highway. Position corrected ~5.8 km east to a real 'Paga beach' / 'Paga Beach Bungalows' cluster (Overture Maps place theme); the earlier placement sat almost on top of Koka's coordinates (~0.5 km away), which this correction also resolves. Still needs a field GPS fix.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.lonelyplanet.com/indonesia/paga/attractions/pantai-paga/a/poi-sig/1525158/1321914",
+          "https://www.jurnalflores.co.id/travel/7769679284/pantai-paga-salah-satu-pantai-terbaik-di-nusa-tenggara-timur",
+          "field:pending",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.451672,
+          -8.797553
+        ]
+      },
+      "properties": {
+        "id": "n-penggajawa",
+        "name": "Penggajawa",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Coastal village in Nangapanda district, Ende Regency, on the Blue Stone (Batu Biru) beach, ~25 km west of Ende on the Bajawa-Ende road.",
+        "confidence": "approximate",
+        "sources": [
+          "https://www.tripadvisor.com/ShowUserReviews-g800614-d7186395-r462597189-Blue_Stone_Beach-Ende_Flores_East_Nusa_Tenggara.html",
+          "https://travel2unlimited.com/indonesia-flores-penggajawa-blue-stone-beach/"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.75786,
+          -8.34749
+        ]
+      },
+      "properties": {
+        "id": "n-pota",
+        "name": "Pota",
+        "kind": "port",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "North-coast village/port in Sambi Rampas kecamatan, Manggarai Timur: parish church, health centre, bank unit, schools. End of the west region's corridor; onward to Riung is the next agent's territory.",
+        "confidence": "verified",
+        "sources": [
+          "https://travel.kompas.com/read/2020/09/18/151200627/desa-pota-alternatif-tempat-wisata-melihat-komodo-di-flores?page=all",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5603,
+          -8.6406
+        ]
+      },
+      "properties": {
+        "id": "n-ranamese",
+        "name": "Ranamese",
+        "kind": "junction",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Junction/rest stop by Ranamese crater lake in the Ruteng Nature Recreation Park, ~16 km from Ruteng on the road toward Manggarai Timur. A warung is reported at the lakeside car park.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.asiatours.com/experiences/admire-the-beautiful-ranamese-lake-in-flores-island-indonesia.html",
+          "https://floresexotictours.id/things-to-do/ranamese-lake-east-manggarai-regency",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.49078,
+          -8.3096
+        ]
+      },
+      "properties": {
+        "id": "n-reo",
+        "name": "Reo",
+        "kind": "port",
+        "resupply": "basic",
+        "water": "reliable",
+        "sleep": "homestay",
+        "notes": "Old north-coast port town in Reok kecamatan: market, bank, gas station, health centre, mosque and church, a homestay (Reo Family Homestay). The port facility itself sits a few km west at the Wae Reo river mouth (see the matching POI).",
+        "confidence": "verified",
+        "sources": [
+          "https://id.wikipedia.org/wiki/Reo,_Reok,_Manggarai",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.029,
+          -8.419
+        ]
+      },
+      "properties": {
+        "id": "n-riung",
+        "name": "Riung",
+        "kind": "port",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "guesthouse",
+        "notes": "Fishing port and gateway village for the Seventeen Islands marine park; small shops and a market, several homestays/losmen serving divers and boat tourists. Coordinates hand-placed from the Riung Nature Reserve boundary and the north edge of Ngada Regency; needs a field GPS fix.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Flores",
+          "https://wikitravel.org/en/Riung",
+          "https://bbksdantt.ksdae.kehutanan.go.id/kawasan/show/?kawasan=riung",
+          "https://id.wikipedia.org/wiki/Riung,_Ngada",
+          "map:overture (Riung hotel and marine park office cluster)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.463,
+          -8.6127
+        ]
+      },
+      "properties": {
+        "id": "n-ruteng",
+        "name": "Ruteng",
+        "kind": "town",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Capital of Manggarai Regency, 1,168-1,188 m, cool highland town: hospital, market, banks, many hotels, served by Frans Sales Lega airport. Best full resupply of the whole west region.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ruteng",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.024,
+          -8.712
+        ]
+      },
+      "properties": {
+        "id": "n-sano-nggoang",
+        "name": "Sano Nggoang",
+        "local_name": "Wae Sano",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Small village on the shore of the Sano Nggoang caldera lake, in the kecamatan of the same name. Basic kiosks only; homestays exist for lake visitors but capacity is small and unconfirmed. Anchor placed on the lake shore; the kecamatan capital is Werang 8 km north.",
+        "confidence": "unverified",
+        "sources": [
+          "https://id.wikipedia.org/wiki/Sano_Nggoang,_Manggarai_Barat",
+          "map:overture",
+          "route designer"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.196971,
+          -8.749412
+        ]
+      },
+      "properties": {
+        "id": "n-sikka",
+        "name": "Sikka",
+        "local_name": "Kampung Sikka",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Seaside village on the south coast, seat of the old Sikka kingdom and site of the 1899 Portuguese-era church. Position corrected ~2.5 km to 'Gereja Tua, kampung Sikka' (the old church itself, Overture Maps place theme) -- a direct name match to the landmark this village is defined by -- from an earlier hand correction based on a Wikidata polygon centroid. Still needs a field GPS fix.",
+        "confidence": "verified",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q14150",
+          "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/",
+          "https://www.colonialvoyage.com/portuguese-influence-in-sikka-district-flores-island-indonesia/",
+          "field:pending",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.057901,
+          -8.708612
+        ]
+      },
+      "properties": {
+        "id": "n-soa",
+        "name": "Soa",
+        "kind": "airport",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Turelelo-Soa Airport (BJW), the airfield serving Bajawa, ~23.5 km north of Bajawa town; the Soa sub-district also holds the Mengeruda/Mangeruda hot springs.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bajawa_Soa_Airport",
+          "https://en.wikipedia.org/wiki/Soa_Airport",
+          "https://floresexotictours.id/things-to-do/soa-hot-spring-ngada"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.5174,
+          -8.5451
+        ]
+      },
+      "properties": {
+        "id": "n-talibura",
+        "name": "Talibura",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Easternmost and largest kecamatan of Sikka Regency, on the Flores Sea coast approaching the Flores Timur border; has a mangrove coast (Desa Darat Pantai). Two Wikidata entries for 'Talibura' disagree by several km and both landed inland/uphill on the DEM; this point is a hand correction to the nearest coastal flat matching the north-coast description. A later independent cross-check (Overture Maps place theme) adds a third disagreement: 'Kantor Camat Talibura' sits 8.61 km away and a conflicting school cluster ('SMP Negeri 1 Talibura') sits 2.48 km away, and the two candidates disagree with each other. Left unmoved rather than desk-guessing between three disagreeing candidates; needs a field GPS fix, not another desk correction. Update: an offline Overture cross-check found a coherent nine-point administrative/school/church cluster on the north coast (centred on Kantor Camat Talibura, ~4.6 km across); the anchor was moved to that cluster's centre and confidence raised from unverified to approximate.",
+        "confidence": "approximate",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q12518763",
+          "https://www.wikidata.org/wiki/Q12518765",
+          "field:pending",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.38159,
+          -8.73092
+        ]
+      },
+      "properties": {
+        "id": "n-todo",
+        "name": "Todo",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "none",
+        "notes": "Former seat of the Manggarai kingdom; day-trip village, no lodging found. Confirmed by five independent Overture/OSM points (church, clinic, tourism tag, school) clustered within 1.5 km.",
+        "confidence": "verified",
+        "sources": [
+          "https://pariwisata.manggaraikab.go.id/destinasi/kampung-todo/",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28417,
+          -8.77
+        ]
+      },
+      "properties": {
+        "id": "n-wae-rebo",
+        "name": "Wae Rebo",
+        "kind": "checkpoint",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Cultural checkpoint; UNESCO Asia-Pacific award village. All visitors sleep and eat inside the mbaru niang under the village's own homestay system -- a race stop here means income for the community by design. Requires an agreement with the village council (see cultural_protocol on the matching POI).",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Waerebo",
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.475,
+          -8.6065
+        ]
+      },
+      "properties": {
+        "id": "n-waiterang",
+        "name": "Waiterang",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "guesthouse",
+        "notes": "North-coast dive village east of Maumere (Waigete kecamatan), on the same stretch as the Wodong dive sites; a small dive resort operates here. No dedicated source pins Waiterang itself; position taken from two closely agreeing Wodong anchorage fixes 08°36.391'S 122°28.498'E / 08°36.124'S 122°28.692'E on the same bay.",
+        "confidence": "verified",
+        "sources": [
+          "http://www.wesailors.com/marina/profile/967/",
+          "https://divescover.com/dive-site/wodong-wreck/25606"
+        ],
+        "public": true,
+        "local_name": "Wairterang"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.313,
+          -8.698
+        ]
+      },
+      "properties": {
+        "id": "n-watublapi",
+        "name": "Watublapi",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Hillside ikat-weaving hamlet (Dusun Watublapi, Desa Kajowair, Kecamatan Hewokloang), about 18 km / 30 min inland-south-east of Maumere. No source gives coordinates for the hamlet itself; placed at the Hewokloang kecamatan centroid as a proxy (185 m, plausibly hillside). Needs a field GPS fix.",
+        "confidence": "approximate",
+        "sources": [
+          "https://www.flores-indonesia.com/weaving_village_maumere_watublapi.html",
+          "https://id.wikipedia.org/wiki/Kajowair,_Hewokloang,_Sikka",
+          "field:pending",
+          "map:overture (Paroki MBC Watublapi church cluster)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.01076,
+          -8.64864
+        ]
+      },
+      "properties": {
+        "id": "n-werang",
+        "name": "Werang",
+        "kind": "village",
+        "resupply": "basic",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "Capital of Sano Nggoang kecamatan: parish church (Santo Klaus), police post, camat office, schools. The practical resupply stop after the lake.",
+        "confidence": "verified",
+        "sources": [
+          "https://id.wikipedia.org/wiki/Gereja_Santo_Klaus,_Werang",
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.85,
+          -8.814444
+        ]
+      },
+      "properties": {
+        "id": "n-wolojita",
+        "name": "Wolojita",
+        "kind": "village",
+        "resupply": "minimal",
+        "water": "unreliable",
+        "sleep": "homestay",
+        "notes": "District (kecamatan) centre and ikat-weaving village on the south Lio coast, between Jopu and Nggela.",
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikivoyage.org/wiki/Ende",
+          "https://www.facebook.com/100092669870751/videos/wurumana-kampung-wolojita-budaya-adat-lio-ende-floreswurumanaendeliofypwolojita/1900733304048508/",
+          "map:overture"
+        ],
+        "public": true
+      }
+    }
+  ]
+}
