@@ -100,8 +100,11 @@ Two execution environments, deliberately separated:
 ```
 Flores-Race/
 ├── ARCHITECTURE.md              this document
+├── CLAUDE.md                    instructions the assistant loads at the start of every session
 ├── README.md                    quick start for the team
+├── .claude/                     agent brief, reusable workflow templates (see .claude/README.md)
 ├── docs/
+│   ├── DIARY.md                 project memory: state, decisions with reasoning, quirks, session log
 │   ├── data-model.md            field-by-field contract for data/ and the web bundle
 │   ├── route-concept.md         the course concept: sections, anchors, alternatives, hazards
 │   ├── scouting-protocol.md     how the field team records and submits verdicts

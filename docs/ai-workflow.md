@@ -30,3 +30,17 @@ Findings go back to the coding tier; the architecture only changes at the fronti
 
 Model identifiers, session links or vendor names in code comments, commit messages or generated data.
 The repository documents *tiers* and *roles*, not products.
+
+## Where the method lives in the repository
+
+* `CLAUDE.md`: loaded by the assistant at session start; points to the diary and states the tiering.
+* `docs/DIARY.md`: the project memory. Every session reads it first and updates it last.
+* `.claude/AGENT-BRIEF.md`: the preamble every delegated agent reads (rules, paths, network reality,
+  file ownership).
+* `.claude/workflows/`: reusable multi-agent templates (data verification, review and fix).
+
+## Budget lesson from session 1
+
+Web search is limited to roughly 200 queries per session. Curation agents spent all of it before the
+verification lenses ran. Spend searches on facts a partner would notice (dates, hazards, customs), and
+check coordinates offline with `pipeline/crosscheck_gazetteer.py` against the Overture extract.

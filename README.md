@@ -6,6 +6,14 @@ A static web app and Python pipeline to plan an ultra-distance adventure bike ra
 
 [Screenshot placeholder]
 
+
+## Project memory
+
+`docs/DIARY.md` is the running memory of the project: current state, every decision with its
+reasoning, environment quirks, open questions and a log of each working session. Read it before
+changing anything substantial; update it when you finish. `CLAUDE.md` tells the assistant to do the
+same automatically.
+
 ## Quick start
 
 ### For the team (web app only)
