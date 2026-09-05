@@ -222,6 +222,37 @@ export function cumulativeKmMarkers(
   return markers;
 }
 
+/**
+ * Interpolated [lon, lat] at `km` along the concatenated geometry of `segments` (same walk as
+ * `cumulativeKmMarkers`, generalised to one arbitrary target distance). Used by the elevation
+ * profile panel to move a marker on the map as the mouse moves along the chart. Clamps to the
+ * route's start/end for an out-of-range km rather than returning undefined, since a hover position
+ * derived from the same profile array should never actually land outside it except by a rounding
+ * hair; returns undefined only for an empty/zero-length input.
+ */
+export function coordAtKm(segments: SegmentFeature[], km: number): [number, number] | undefined {
+  let cumulativeKm = 0;
+  let lastCoord: Position | undefined;
+
+  for (const feature of segments) {
+    const coords = feature.geometry.coordinates;
+    for (let i = 0; i < coords.length - 1; i++) {
+      const a = coords[i];
+      const b = coords[i + 1];
+      if (!a || !b) continue;
+      const segKm = haversineKm(a, b);
+      lastCoord = b;
+      if (segKm === 0) continue;
+      if (km <= cumulativeKm + segKm) {
+        const t = Math.max(0, (km - cumulativeKm) / segKm);
+        return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+      }
+      cumulativeKm += segKm;
+    }
+  }
+  return lastCoord ? [lastCoord[0], lastCoord[1]] : undefined;
+}
+
 export type BBox = [number, number, number, number]; // [minLon, minLat, maxLon, maxLat]
 
 function eachPosition(geometry: Geometry, visit: (p: Position) => void): void {

@@ -75,6 +75,33 @@
         ],
         "public": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9803,
+          -8.7466
+        ]
+      },
+      "properties": {
+        "id": "p-inerie",
+        "name": "Inerie",
+        "category": "volcano",
+        "summary": "A near-perfect volcanic cone (2,245 m) rising above the Ngada megalithic villages; a hike-a-bike shoulder traverse is on the table for the Ultra variant.",
+        "story": "Inerie stands over Bena, Luba, Tololela and Gurusina like a stage backdrop — every one of the Ngada villages is arranged so a ceremony faces it. The **shoulder traverse** from the Bena side down to the arak-distilling coast at Aimere is steep, loose volcanic soil with real exposure; scouts have not yet confirmed it is safe with a loaded bike. See [the route concept](https://en.wikipedia.org/wiki/Inerie) for the full write-up.\n\nOpen questions before this goes in the course:\n- Is the shoulder descent safe with a bike, loaded, in the dry season?\n- Is a full circuit a safer substitute for the Ultra variant?",
+        "race_relevance": "highlight",
+        "access": "trail",
+        "hike_a_bike": true,
+        "elevation_m": 2245,
+        "hazard_level": "Dormant — no current PVMBG alert, but re-check before the race (status as of this writing is from memory, not a dated bulletin).",
+        "confidence": "unverified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Inerie"
+        ],
+        "public": true
+      }
     }
   ]
 }

@@ -30,16 +30,21 @@ function isSafeHref(href: string): boolean {
 const INLINE_RE =
   /\*\*([^*]+)\*\*|\*([^*]+)\*|_([^_]+)_|\[([^\]]+)\]\(([^)\s]+)\)/g;
 
-/** Splits one line/item of text into inline nodes. Recurses into matched spans (so a link's text
- * or a bold span can itself contain simple emphasis) — each recursive call only ever sees a
- * strictly shorter string, so this always terminates. */
+/** Splits one line/item of text into inline nodes. Recurses into matched spans, so a link's visible
+ * text can itself contain bold/italic, and a bold/italic span can itself contain a link — each
+ * recursive call only ever sees a strictly shorter string, so this always terminates. (Star-delimited
+ * spans can't nest inside each other — `**bold *and* italic**` — because both share the `*`
+ * delimiter and the content class excludes it; an acceptable limit for a *tiny* renderer.)
+ *
+ * Uses `matchAll` rather than a manual `exec` loop deliberately: `matchAll` clones the regex
+ * internally, so a recursive call (which shares the same module-level `INLINE_RE` constant) can't
+ * clobber an outer call's iteration position the way reusing one `/g` regex's mutable `lastIndex`
+ * across reentrant calls would. */
 export function parseInline(text: string): MdInline[] {
   const nodes: MdInline[] = [];
   let lastIndex = 0;
-  INLINE_RE.lastIndex = 0;
-  let match: RegExpExecArray | null;
 
-  while ((match = INLINE_RE.exec(text))) {
+  for (const match of text.matchAll(INLINE_RE)) {
     if (match.index > lastIndex) {
       nodes.push({ type: 'text', value: text.slice(lastIndex, match.index) });
     }

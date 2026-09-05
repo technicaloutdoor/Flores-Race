@@ -9,6 +9,7 @@
 
 import type {
   FeatureCollection,
+  LineString,
   Point,
 } from 'geojson';
 import type { GeoJSONSource, Map as MapLibreMap, MapGeoJSONFeature } from 'maplibre-gl';
@@ -30,6 +31,8 @@ const SOURCE = {
   nodes: 'src-nodes',
   pois: 'src-pois',
   kmMarkers: 'src-km-markers',
+  gpxImport: 'src-gpx-import',
+  hoverMarker: 'src-hover-marker',
 } as const;
 
 const LAYER = {
@@ -37,6 +40,7 @@ const LAYER = {
   regenciesLine: 'regencies-line',
   network: 'network-line',
   segmentsCasing: 'segments-casing',
+  segmentsCompare: 'segments-compare',
   segmentsSolid: 'segments-line-solid',
   segmentsDashed: 'segments-line-dashed',
   nodesHighlight: 'nodes-highlight',
@@ -46,6 +50,8 @@ const LAYER = {
   poisIcon: 'pois-icon',
   poisLabel: 'pois-label',
   kmMarkers: 'km-markers',
+  gpxImport: 'gpx-import-line',
+  hoverMarker: 'hover-marker',
 } as const;
 
 /** The first data layer added, above the basemap. `basemaps.ts` and `terrain.ts` insert their own
@@ -88,7 +94,9 @@ function statusColorExpression(): unknown[] {
 
 // --- Canvas-drawn icons ---------------------------------------------------------------------
 
-function categoryInitials(iconKey: string): string {
+/** One or two letters standing in for a POI category's icon (no icon font/sprite sheet — see file
+ * header). Exported so the sidebar legend can draw the same swatch the map uses. */
+export function categoryInitials(iconKey: string): string {
   const letters = iconKey
     .split('-')
     .map((part) => part[0]?.toUpperCase() ?? '')
@@ -274,6 +282,23 @@ export class MapLayers {
         'line-dasharray': [2, 1.6],
       },
     });
+
+    // Sibling-variant "compare" highlight (inspector: scout mode). A separate casing so it can
+    // coexist with the orange selection casing without either one overriding the other's colour.
+    this.map.addLayer(
+      {
+        id: LAYER.segmentsCompare,
+        type: 'line',
+        source: SOURCE.segments,
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: {
+          'line-color': '#39c2d1',
+          'line-width': ['case', ['boolean', ['feature-state', 'compare'], false], 8, 0],
+          'line-opacity': ['case', ['boolean', ['feature-state', 'compare'], false], 0.55, 0],
+        },
+      },
+      LAYER.segmentsSolid,
+    );
   }
 
   addNodes(data: NodesGeoJSON): void {
@@ -456,6 +481,78 @@ export class MapLayers {
         this.lastHovered = { source, id };
       }
     }
+  }
+
+  private lastCompared: ReadonlySet<string> = new Set();
+
+  /** Highlights sibling-variant segments the inspector's "compare" toggle picked (a cyan halo, see
+   * `LAYER.segmentsCompare`). Pass an empty set to clear. */
+  setCompare(ids: ReadonlySet<string>): void {
+    for (const id of this.lastCompared) {
+      if (!ids.has(id)) this.map.setFeatureState({ source: SOURCE.segments, id }, { compare: false });
+    }
+    for (const id of ids) {
+      this.map.setFeatureState({ source: SOURCE.segments, id }, { compare: true });
+    }
+    this.lastCompared = ids;
+  }
+
+  /** Draws an imported GPX track (scout mode, lib/gpx.ts `parseGpxTrack`) as a magenta line for
+   * visual comparison against the candidate segments. `null` removes it. */
+  setImportedGpx(points: [number, number][] | null): void {
+    const data: FeatureCollection<LineString, Record<string, never>> = {
+      type: 'FeatureCollection',
+      features: points && points.length >= 2
+        ? [{ type: 'Feature', geometry: { type: 'LineString', coordinates: points }, properties: {} }]
+        : [],
+    };
+    const existing = this.map.getSource(SOURCE.gpxImport);
+    if (existing && 'setData' in existing) {
+      (existing as GeoJSONSource).setData(data);
+      return;
+    }
+    this.map.addSource(SOURCE.gpxImport, { type: 'geojson', data });
+    this.map.addLayer({
+      id: LAYER.gpxImport,
+      type: 'line',
+      source: SOURCE.gpxImport,
+      layout: { 'line-cap': 'round', 'line-join': 'round' },
+      paint: {
+        'line-color': '#e83bd0',
+        'line-width': 3,
+        'line-dasharray': [1, 1],
+      },
+    });
+  }
+
+  clearImportedGpx(): void {
+    this.setImportedGpx(null);
+  }
+
+  /** A small circle that follows the mouse position on the elevation profile (bottom panel), so a
+   * scout can see where a km/elevation reading on the chart sits on the map. `null` hides it. */
+  setHoverMarker(coord: [number, number] | null): void {
+    const data: FeatureCollection<Point, Record<string, never>> = {
+      type: 'FeatureCollection',
+      features: coord ? [{ type: 'Feature', geometry: { type: 'Point', coordinates: coord }, properties: {} }] : [],
+    };
+    const existing = this.map.getSource(SOURCE.hoverMarker);
+    if (existing && 'setData' in existing) {
+      (existing as GeoJSONSource).setData(data);
+      return;
+    }
+    this.map.addSource(SOURCE.hoverMarker, { type: 'geojson', data });
+    this.map.addLayer({
+      id: LAYER.hoverMarker,
+      type: 'circle',
+      source: SOURCE.hoverMarker,
+      paint: {
+        'circle-radius': 6,
+        'circle-color': '#f4ecd8',
+        'circle-stroke-color': '#e8632b',
+        'circle-stroke-width': 2,
+      },
+    });
   }
 
   private setVisible(layerId: string, visible: boolean): void {

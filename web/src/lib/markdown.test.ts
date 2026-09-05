@@ -35,7 +35,7 @@ describe('parseInline', () => {
   });
 
   it('drops the link wrapper for an unsafe href scheme, keeping the visible text', () => {
-    expect(parseInline('[click me](javascript:alert(1))')).toEqual([
+    expect(parseInline('[click me](javascript:doEvil)')).toEqual([
       { type: 'text', value: 'click me' },
     ]);
   });
@@ -52,15 +52,29 @@ describe('parseInline', () => {
     ]);
   });
 
-  it('recurses into a bold span so nested emphasis works', () => {
-    expect(parseInline('**bold with *emphasis* inside**')).toEqual([
+  it('recurses into a bold span so a link nested inside bold still works', () => {
+    expect(parseInline('**see [Wae Rebo](https://example.org) here**')).toEqual([
       {
         type: 'strong',
         children: [
-          { type: 'text', value: 'bold with ' },
-          { type: 'em', children: [{ type: 'text', value: 'emphasis' }] },
-          { type: 'text', value: ' inside' },
+          { type: 'text', value: 'see ' },
+          {
+            type: 'link',
+            href: 'https://example.org',
+            children: [{ type: 'text', value: 'Wae Rebo' }],
+          },
+          { type: 'text', value: ' here' },
         ],
+      },
+    ]);
+  });
+
+  it('recurses into link text so bold inside a link still works', () => {
+    expect(parseInline('[**Wae Rebo**](https://example.org)')).toEqual([
+      {
+        type: 'link',
+        href: 'https://example.org',
+        children: [{ type: 'strong', children: [{ type: 'text', value: 'Wae Rebo' }] }],
       },
     ]);
   });

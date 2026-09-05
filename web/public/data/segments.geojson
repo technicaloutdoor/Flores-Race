@@ -59,7 +59,23 @@
         "sources": [
           "docs/route-concept.md"
         ],
-        "public": true
+        "public": true,
+        "resupply_notes": "Warung at the roughly-halfway point sells instant noodles and bottled water; no proper resupply between Labuan Bajo and Ruteng.",
+        "cultural_notes": "Passes within range of the Wae Rebo side trail; the village itself needs a separate council agreement (see p-wae-rebo).",
+        "scouting": [
+          {
+            "date": "2026-06-02",
+            "team": "RC",
+            "verdict": "partial",
+            "notes": "Drove the corridor by car; the middle third looked rideable gravel, first and last thirds unconfirmed by bike."
+          },
+          {
+            "date": "2026-07-14",
+            "team": "RC, MB",
+            "verdict": "go",
+            "notes": "Rode the full corridor. Steep but rideable; one 400m hike-a-bike pitch just before the Ruteng descent that wasn't visible on satellite imagery."
+          }
+        ]
       }
     },
     {
@@ -117,6 +133,72 @@
           "unpaved_pct": 80,
           "profile_ref": "s-ruteng-bajawa-a"
         },
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "public": true,
+        "resupply_notes": "No shops on this stretch; last reliable resupply is Ruteng, next is Bajawa.",
+        "scouting": [
+          {
+            "date": "2026-06-20",
+            "team": "MB",
+            "verdict": "partial",
+            "notes": "Desk-checked against Overture track data only; not yet ridden."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.889,
+            -8.487
+          ],
+          [
+            120.05,
+            -8.55
+          ],
+          [
+            120.22,
+            -8.62
+          ],
+          [
+            120.35,
+            -8.63
+          ],
+          [
+            120.478,
+            -8.611
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-labuanbajo-ruteng-b",
+        "name": "Labuan Bajo → Ruteng via Wae Rebo (hike-a-bike alternative)",
+        "from_node": "n-labuan-bajo",
+        "to_node": "n-ruteng",
+        "variant": "B",
+        "status": "needs-recheck",
+        "geometry_source": "concept-sketch",
+        "character": "hab",
+        "est_hab_km": 9,
+        "difficulty": 5,
+        "remoteness": 4,
+        "water_points": [
+          "spring below Wae Rebo, unconfirmed reliability"
+        ],
+        "resupply_notes": "None between Denge and Ruteng; carry two days of food.",
+        "hazards": [
+          "steep porters' path, exposed in places",
+          "onward trail past Wae Rebo unknown — may be out-and-back only"
+        ],
+        "cultural_notes": "Routes directly through Wae Rebo; requires the village council agreement described on p-wae-rebo before any race use.",
+        "open_questions": [
+          "Is the trail past Wae Rebo rideable/walkable through to Ruteng, or is this an out-and-back detour?"
+        ],
         "sources": [
           "docs/route-concept.md"
         ],

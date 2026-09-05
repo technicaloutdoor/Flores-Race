@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   bboxOf,
+  coordAtKm,
   cumulativeKmMarkers,
   haversineKm,
   routeSegments,
@@ -192,6 +193,33 @@ describe('segmentsInSection', () => {
   it('returns [] when the section anchors are not both on the chain', () => {
     const elsewhere: Section = { ...sections[0]!, from_node: 'n-a', to_node: 'n-nowhere' };
     expect(segmentsInSection(elsewhere, route, [segA, segB])).toEqual([]);
+  });
+});
+
+describe('coordAtKm', () => {
+  it('returns the start coordinate at km 0', () => {
+    expect(coordAtKm([segA], 0)).toEqual([120, -8]);
+  });
+
+  it('interpolates the midpoint of a single leg', () => {
+    const fullLength = haversineKm([120, -8], [120.1, -8.05]);
+    const [lon, lat] = coordAtKm([segA], fullLength / 2)!;
+    expect(lon).toBeCloseTo(120.05, 5);
+    expect(lat).toBeCloseTo(-8.025, 5);
+  });
+
+  it("continues into the next segment past the first one's length", () => {
+    const coord = coordAtKm([segA, segB], 15); // segA is ~12.3 km, so 15 km is into segB
+    expect(coord).toBeDefined();
+    expect(coord![0]).toBeGreaterThan(120.1); // past segA/segB's shared boundary
+  });
+
+  it('clamps to the final coordinate past the total length', () => {
+    expect(coordAtKm([segA], 9999)).toEqual([120.1, -8.05]);
+  });
+
+  it('returns undefined for an empty segment list', () => {
+    expect(coordAtKm([], 5)).toBeUndefined();
   });
 });
 

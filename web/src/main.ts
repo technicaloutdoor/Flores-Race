@@ -1,7 +1,5 @@
-// App shell: header controls, three content panels, and the map. This step wires the store, URL
-// sync, data loading and map layers together; the panels themselves (route list, inspector,
-// elevation profile) are filled in by the next step — for now they show simple placeholders that
-// prove the wiring works. See ARCHITECTURE.md §7.
+// App shell: header controls (mode, basemap, layers, search, story, share), the map, and the three
+// content panels (sidebar / inspector / profile). See ARCHITECTURE.md §7.
 
 import './style.css';
 import type { Map as MapLibreMap } from 'maplibre-gl';
@@ -15,18 +13,26 @@ import {
   type Mode,
   type BasemapId,
   type LayerVisibility,
+  type Selection,
 } from './state/store.ts';
 import { readInitialHashState, bindUrlSync, DEFAULT_VIEWPORT, type Viewport } from './state/url.ts';
 import { createMap } from './map/map.ts';
 import { setBasemap } from './map/basemaps.ts';
 import { setHillshadeVisible, setTerrain3D } from './map/terrain.ts';
 import { MapLayers } from './map/layers.ts';
-import { StaticFileStore } from './data/store.ts';
-import { routeSegments, routeStats } from './data/derive.ts';
-import { STATUS_META } from './data/types.ts';
+import { flyToBbox, flyToPoint } from './map/fit.ts';
+import { StaticFileStore, type Bundle } from './data/store.ts';
+import { bboxOf } from './data/derive.ts';
+import { STATUS_META, type SegmentFeature, type SegmentsGeoJSON } from './data/types.ts';
+import { visibleNodes, visiblePois, visibleSegments } from './data/visibility.ts';
+import { applyOverlayToSegment, overlayStore } from './state/overlay.ts';
+import { buildSearchIndex, searchItems, type SearchItem } from './lib/search.ts';
+import * as sidebar from './panels/sidebar.ts';
+import * as inspector from './panels/inspector.ts';
+import * as profile from './panels/profile.ts';
+import { createPlayButton, isStoryAvailable } from './panels/story.ts';
+import type { PanelContext } from './panels/context.ts';
 
-// Status colours live in one place (data/types.ts); expose them as CSS variables so style.css
-// never hardcodes a colour that could drift out of sync.
 for (const [status, meta] of Object.entries(STATUS_META)) {
   document.documentElement.style.setProperty(`--status-${status}`, meta.color);
 }
@@ -62,11 +68,17 @@ for (const mode of MODES) {
   opt.textContent = mode[0]!.toUpperCase() + mode.slice(1);
   modeSelect.appendChild(opt);
 }
-header.appendChild(labeledField('Mode', modeSelect));
-
-const routeSelect = document.createElement('select');
-routeSelect.appendChild(new Option('(no route)', ''));
-header.appendChild(labeledField('Route', routeSelect));
+const modeField = labeledField('Mode', modeSelect);
+const modeInfo = document.createElement('span');
+modeInfo.className = 'mode-info';
+modeInfo.textContent = '?';
+modeInfo.tabIndex = 0;
+modeInfo.title =
+  'Stakeholder: the vision, stats and stories. ' +
+  'Scout: everything, plus the track network and the scouting form. ' +
+  'Public: a teaser — sections only, no internal detail.';
+modeField.appendChild(modeInfo);
+header.appendChild(modeField);
 
 const basemapSelect = document.createElement('select');
 const BASEMAP_LABELS: Record<BasemapId, string> = {
@@ -95,6 +107,7 @@ const LAYER_LABELS: Record<keyof LayerVisibility, string> = {
   terrain3d: '3D terrain',
 };
 const layerCheckboxes = new Map<keyof LayerVisibility, HTMLInputElement>();
+const layerLabels = new Map<keyof LayerVisibility, HTMLLabelElement>();
 for (const key of LAYER_KEYS) {
   const label = document.createElement('label');
   const checkbox = document.createElement('input');
@@ -103,24 +116,120 @@ for (const key of LAYER_KEYS) {
   label.append(checkbox, document.createTextNode(LAYER_LABELS[key]));
   layerToggles.appendChild(label);
   layerCheckboxes.set(key, checkbox);
+  layerLabels.set(key, label);
 }
 header.appendChild(layerToggles);
 
+// --- Header search box (nodes + POIs + segments by name; keyboard navigable) -----------------
+
+const searchWrap = document.createElement('div');
+searchWrap.className = 'search-wrap';
+const searchInput = document.createElement('input');
+searchInput.type = 'search';
+searchInput.placeholder = 'Search…';
+searchInput.setAttribute('aria-label', 'Search nodes, POIs and segments by name');
+searchInput.setAttribute('role', 'combobox');
+searchInput.setAttribute('aria-expanded', 'false');
+const searchResults = document.createElement('ul');
+searchResults.className = 'search-results';
+searchResults.hidden = true;
+searchWrap.append(searchInput, searchResults);
+header.appendChild(searchWrap);
+
+let fullSearchIndex: SearchItem[] = [];
+let currentSearchResults: SearchItem[] = [];
+let searchActiveIndex = -1;
+
+function closeSearch(): void {
+  searchResults.hidden = true;
+  searchResults.replaceChildren();
+  searchInput.setAttribute('aria-expanded', 'false');
+  currentSearchResults = [];
+  searchActiveIndex = -1;
+}
+
+function renderSearchResults(): void {
+  searchResults.replaceChildren();
+  searchResults.hidden = currentSearchResults.length === 0;
+  searchInput.setAttribute('aria-expanded', String(currentSearchResults.length > 0));
+  currentSearchResults.forEach((item, i) => {
+    const li = document.createElement('li');
+    li.setAttribute('role', 'option');
+    li.className = i === searchActiveIndex ? 'active' : '';
+    li.setAttribute('aria-selected', String(i === searchActiveIndex));
+    const label = document.createElement('span');
+    label.textContent = item.label;
+    const meta = document.createElement('span');
+    meta.className = 'search-result-meta';
+    meta.textContent = item.meta;
+    li.append(label, meta);
+    li.addEventListener('mousedown', (e) => {
+      e.preventDefault(); // keep focus in the input so a later Escape still works
+      selectSearchResult(item);
+    });
+    searchResults.appendChild(li);
+  });
+}
+
+function coordForSearchItem(item: SearchItem): [number, number] | null {
+  if (item.type === 'node') return (routeStore.getNode(item.id)?.geometry.coordinates as [number, number]) ?? null;
+  if (item.type === 'poi') return (routeStore.getPoi(item.id)?.geometry.coordinates as [number, number]) ?? null;
+  return null;
+}
+
+function selectSearchResult(item: SearchItem): void {
+  store.patch({ selection: { type: item.type, id: item.id } });
+  const coord = coordForSearchItem(item);
+  if (coord) {
+    flyToPoint(map, coord, { zoom: 13 });
+  } else {
+    const segment = resolvedSegmentsById.get(item.id);
+    if (segment) flyToBbox(map, bboxOf([segment]), { padding: 80 });
+  }
+  searchInput.value = '';
+  closeSearch();
+}
+
+searchInput.addEventListener('input', () => {
+  const mode = store.getState().mode;
+  const pool = mode === 'public' ? fullSearchIndex.filter((i) => i.public) : fullSearchIndex;
+  currentSearchResults = searchItems(pool, searchInput.value);
+  searchActiveIndex = currentSearchResults.length ? 0 : -1;
+  renderSearchResults();
+});
+searchInput.addEventListener('keydown', (e) => {
+  if (currentSearchResults.length === 0) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    searchActiveIndex = Math.min(searchActiveIndex + 1, currentSearchResults.length - 1);
+    renderSearchResults();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    searchActiveIndex = Math.max(searchActiveIndex - 1, 0);
+    renderSearchResults();
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    const item = currentSearchResults[searchActiveIndex];
+    if (item) selectSearchResult(item);
+  } else if (e.key === 'Escape') {
+    closeSearch();
+  }
+});
+searchInput.addEventListener('blur', () => setTimeout(closeSearch, 150));
+
 header.appendChild(Object.assign(document.createElement('div'), { className: 'header-spacer' }));
+
+// `panelContext` is declared (as a hoisted `function`) further down this file, but is only ever
+// *called* later, from this button's click handler — by then the whole module has finished
+// initialising, so the forward reference is safe.
+const storyButton = createPlayButton(() => panelContext());
+header.appendChild(storyButton);
 
 const shareButton = document.createElement('button');
 shareButton.type = 'button';
 shareButton.className = 'btn';
 shareButton.textContent = 'Copy share link';
 header.appendChild(shareButton);
-
-const gpxButton = document.createElement('button');
-gpxButton.type = 'button';
-gpxButton.className = 'btn btn-accent';
-gpxButton.textContent = 'Export GPX';
-gpxButton.disabled = true;
-gpxButton.title = 'GPX export lands in a later step';
-header.appendChild(gpxButton);
 
 app.appendChild(header);
 
@@ -183,27 +292,41 @@ window.matchMedia('(max-width: 800px)').addEventListener('change', renderTabs);
 // --- Data store + map ------------------------------------------------------------------------
 
 const routeStore = new StaticFileStore();
+let bundle: Bundle | undefined;
+
+/** Resolves at zoom > 10 network default (BRIEF §6: "scout mode defaults network on above zoom 10")
+ * and forces the network layer off in public mode (it's hidden there, not just off by default). */
+function defaultLayersForMode(mode: Mode, zoom: number): LayerVisibility {
+  const layers: LayerVisibility = { ...DEFAULT_LAYERS };
+  if (mode === 'scout') layers.network = zoom > 10;
+  if (mode === 'public') layers.network = false;
+  return layers;
+}
 
 const initialHash = readInitialHashState();
-store.patch({
-  mode: initialHash.mode ?? store.getState().mode,
-  routeId: initialHash.routeId ?? store.getState().routeId,
-  selection: initialHash.selection ?? store.getState().selection,
-  basemap: initialHash.basemap ?? store.getState().basemap,
-  layers: initialHash.layers ?? store.getState().layers,
-});
 const initialViewport: Viewport = {
   center: initialHash.center ?? DEFAULT_VIEWPORT.center,
   zoom: initialHash.zoom ?? DEFAULT_VIEWPORT.zoom,
 };
+const initialMode = initialHash.mode ?? store.getState().mode;
+store.patch({
+  mode: initialMode,
+  routeId: initialHash.routeId ?? store.getState().routeId,
+  selection: initialHash.selection ?? store.getState().selection,
+  basemap: initialHash.basemap ?? (initialMode === 'scout' ? 'topo' : store.getState().basemap),
+  layers: initialHash.layers ?? defaultLayersForMode(initialMode, initialViewport.zoom),
+});
 
 /** Reflects store state onto the header controls. Needed both after the initial hash parse (the
  * controls above were built with hardcoded defaults) and on every later store change. */
 function syncControls(state: AppState): void {
   if (modeSelect.value !== state.mode) modeSelect.value = state.mode;
   if (basemapSelect.value !== state.basemap) basemapSelect.value = state.basemap;
-  if (routeSelect.value !== (state.routeId ?? '')) routeSelect.value = state.routeId ?? '';
   for (const [key, checkbox] of layerCheckboxes) checkbox.checked = state.layers[key];
+  const networkLabel = layerLabels.get('network');
+  if (networkLabel) networkLabel.hidden = state.mode === 'public';
+
+  storyButton.hidden = !isStoryAvailable(state.mode);
 }
 syncControls(store.getState());
 
@@ -246,6 +369,7 @@ map.on('load', () => {
   });
   applyLayerState(store.getState().layers);
   if (store.getState().layers.network) void ensureNetworkLoaded();
+  if (bundle) drawData();
 });
 
 map.on('moveend', () => urlHandle?.notifyViewportChange(floresMap.getViewport()));
@@ -256,121 +380,66 @@ function applyLayerState(layers: LayerVisibility): void {
   setTerrain3D(map, layers.terrain3d);
 }
 
-// --- Panel rendering (placeholders — the next step replaces these) ---------------------------
+// --- Segment overlay resolution (state/overlay.ts applied on top of the bundle) ---------------
 
-function renderLeftPanel(): void {
-  const state = store.getState();
-  const routes = routeStore.getRoutes();
-  panelLeft.replaceChildren();
-  const h = document.createElement('h2');
-  h.textContent = 'Routes & sections';
-  const p = document.createElement('p');
-  p.textContent = routes.length
-    ? `${routes.length} route variant(s) loaded. Full section list and story arrive in the next step.`
-    : 'Loading route bundle…';
-  panelLeft.append(h, p);
-  if (state.mode === 'public') {
-    const note = document.createElement('p');
-    note.textContent = 'Public mode: showing sections only.';
-    panelLeft.appendChild(note);
-  }
+let resolvedSegmentsById = new Map<string, SegmentFeature>();
+
+function recomputeResolvedSegments(): void {
+  if (!bundle) return;
+  const overlay = overlayStore.getState();
+  resolvedSegmentsById = new Map(
+    bundle.segments.features.map((f) => [
+      f.properties.id,
+      applyOverlayToSegment(f, overlay.segments[f.properties.id]),
+    ]),
+  );
 }
 
-function renderRightPanel(): void {
-  const state = store.getState();
-  panelRight.replaceChildren();
-  const h = document.createElement('h2');
-  h.textContent = 'Selection';
-  panelRight.appendChild(h);
-  const p = document.createElement('p');
-  if (!state.selection) {
-    p.textContent = 'Nothing selected. Click a segment, node or POI on the map.';
-  } else {
-    const { type, id } = state.selection;
-    p.textContent = `${type}: ${id}`;
-    if (type === 'segment') {
-      const segment = routeStore.getSegment(id);
-      if (segment) {
-        const meta = STATUS_META[segment.properties.status];
-        const dot = document.createElement('span');
-        dot.className = 'status-dot';
-        dot.style.background = meta.color;
-        const line = document.createElement('p');
-        line.append(dot, document.createTextNode(`${segment.properties.name} — ${meta.label}`));
-        panelRight.appendChild(p);
-        panelRight.appendChild(line);
-        return;
-      }
-    } else if (type === 'node') {
-      const node = routeStore.getNode(id);
-      if (node) p.textContent += ` — ${node.properties.name}`;
-    } else if (type === 'poi') {
-      const poi = routeStore.getPoi(id);
-      if (poi) p.textContent += ` — ${poi.properties.name}`;
-    }
-  }
-  panelRight.appendChild(p);
+function panelContext(): PanelContext {
+  return {
+    state: store.getState(),
+    routeStore,
+    bundleLoaded: Boolean(bundle),
+    map,
+    mapLayers,
+    actions: {
+      select: (selection: Selection | null) => store.patch({ selection }),
+      setRoute: (routeId: string | null) => store.patch({ routeId }),
+      setLayer: (key, value) => store.patch({ layers: { ...store.getState().layers, [key]: value } }),
+    },
+    getSegment: (id) => resolvedSegmentsById.get(id),
+    getAllSegments: () => [...resolvedSegmentsById.values()],
+  };
 }
 
-function renderBottomPanel(): void {
-  const state = store.getState();
-  panelBottom.replaceChildren();
-  const h = document.createElement('h2');
-  h.textContent = 'Elevation & progress';
-  panelBottom.appendChild(h);
-  const p = document.createElement('p');
-  const route = state.routeId ? routeStore.getRoute(state.routeId) : undefined;
-  if (!route) {
-    p.textContent = 'Select a route to see its profile and stats (full elevation chart arrives next).';
-  } else {
-    const segmentFeatures = route.segments
-      .map((id) => routeStore.getSegment(id))
-      .filter((s): s is NonNullable<typeof s> => Boolean(s));
-    const segments = routeSegments(route, segmentFeatures);
-    const stats = routeStats(segments);
-    p.textContent = `${route.name}: ${stats.length_km ?? 0} km, +${stats.ascent_m ?? 0} m, ${stats.hab_km} km hike-a-bike.`;
-  }
-  panelBottom.appendChild(p);
-}
+// --- Panel rendering -------------------------------------------------------------------------
 
 function renderPanels(): void {
-  renderLeftPanel();
-  renderRightPanel();
-  renderBottomPanel();
+  const ctx = panelContext();
+  sidebar.render(panelLeft, ctx);
+  inspector.render(panelRight, ctx);
+  profile.render(panelBottom, ctx);
 }
 
-// --- Bundle loading --------------------------------------------------------------------------
+// --- Map data (segments/nodes/pois filtered for the current mode, overlay-applied) ------------
 
-routeStore
-  .loadAll()
-  .then((bundle) => {
-    floresMap.setAttribution(bundle.meta.attribution);
-    routeSelect.replaceChildren(new Option('(no route)', ''));
-    for (const route of bundle.routes) {
-      routeSelect.appendChild(new Option(route.name, route.id));
-    }
-    if (store.getState().routeId) routeSelect.value = store.getState().routeId!;
+function segmentsGeoJSONFor(mode: Mode): SegmentsGeoJSON {
+  if (!bundle) return { type: 'FeatureCollection', features: [] };
+  const features = visibleSegments(bundle, mode).map((f) => resolvedSegmentsById.get(f.properties.id) ?? f);
+  return { type: 'FeatureCollection', features };
+}
 
-    function drawData(): void {
-      if (!mapLayers) return;
-      mapLayers.addRegencies(bundle.regencies);
-      mapLayers.addSegments(bundle.segments);
-      mapLayers.addNodes(bundle.nodes);
-      mapLayers.addPois(bundle.pois);
-      applyLayerState(store.getState().layers);
-      updateRouteMembership();
-      mapLayers.setSelection(store.getState().selection);
-    }
-
-    if (mapLayers) drawData();
-    else map.once('load', drawData);
-
-    renderPanels();
-  })
-  .catch((err: unknown) => {
-    console.error('Failed to load data bundle', err);
-    panelLeft.textContent = 'Failed to load the data bundle — see console.';
-  });
+function drawData(): void {
+  if (!mapLayers || !bundle) return;
+  const mode = store.getState().mode;
+  mapLayers.addRegencies(bundle.regencies);
+  mapLayers.addSegments(segmentsGeoJSONFor(mode));
+  mapLayers.addNodes({ type: 'FeatureCollection', features: visibleNodes(bundle, mode) });
+  mapLayers.addPois({ type: 'FeatureCollection', features: visiblePois(bundle, mode) });
+  applyLayerState(store.getState().layers);
+  updateRouteMembership();
+  mapLayers.setSelection(store.getState().selection);
+}
 
 function updateRouteMembership(): void {
   if (!mapLayers) return;
@@ -380,12 +449,40 @@ function updateRouteMembership(): void {
   mapLayers.setRouteMembership(ids);
 }
 
+// --- Bundle loading --------------------------------------------------------------------------
+
+routeStore
+  .loadAll()
+  .then((loaded) => {
+    bundle = loaded;
+    recomputeResolvedSegments();
+    fullSearchIndex = buildSearchIndex(loaded);
+    floresMap.setAttribution(loaded.meta.attribution);
+
+    if (mapLayers) drawData();
+    renderPanels();
+  })
+  .catch((err: unknown) => {
+    console.error('Failed to load data bundle', err);
+    panelLeft.replaceChildren();
+    const h = document.createElement('h2');
+    h.textContent = 'Routes & sections';
+    const p = document.createElement('p');
+    p.className = 'state state-error';
+    p.textContent = 'Failed to load the data bundle — see console.';
+    panelLeft.append(h, p);
+  });
+
 // --- Wire header controls to the store --------------------------------------------------------
 
-modeSelect.addEventListener('change', () => store.patch({ mode: modeSelect.value as Mode }));
-routeSelect.addEventListener('change', () =>
-  store.patch({ routeId: routeSelect.value || null }),
-);
+modeSelect.addEventListener('change', () => {
+  const mode = modeSelect.value as Mode;
+  store.patch({
+    mode,
+    layers: defaultLayersForMode(mode, map.getZoom()),
+    basemap: mode === 'scout' ? 'topo' : store.getState().basemap,
+  });
+});
 basemapSelect.addEventListener('change', () =>
   store.patch({ basemap: basemapSelect.value as BasemapId }),
 );
@@ -408,7 +505,13 @@ shareButton.addEventListener('click', () => {
   );
 });
 
-// --- Store subscription: the single place that reconciles UI + map to state --------------------
+// --- Store subscriptions: the single place that reconciles UI + map to state -------------------
+
+overlayStore.subscribe(() => {
+  recomputeResolvedSegments();
+  if (mapLayers && bundle) mapLayers.addSegments(segmentsGeoJSONFor(store.getState().mode));
+  renderPanels();
+});
 
 store.subscribe((state, previous) => {
   syncControls(state);
@@ -418,6 +521,7 @@ store.subscribe((state, previous) => {
     applyLayerState(state.layers);
     if (state.layers.network && !previous.layers.network) void ensureNetworkLoaded();
   }
+  if (state.mode !== previous.mode && bundle) drawData(); // mode changes which features are visible
   if (state.routeId !== previous.routeId) updateRouteMembership();
   if (state.selection !== previous.selection) mapLayers?.setSelection(state.selection);
 
