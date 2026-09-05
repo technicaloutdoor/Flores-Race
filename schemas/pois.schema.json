@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pois.schema.json",
+  "title": "Points of interest (GeoJSON FeatureCollection)",
+  "description": "Volcanoes, villages, beaches, heritage, hazards, and logistics points",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "FeatureCollection"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "Point"
+              },
+              "coordinates": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number"
+                },
+                "description": "[lon, lat]"
+              }
+            },
+            "required": [
+              "type",
+              "coordinates"
+            ],
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^p-[a-z0-9-]+$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "local_name": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "volcano",
+                  "crater-lake",
+                  "lake",
+                  "traditional-village",
+                  "beach",
+                  "hot-spring",
+                  "waterfall",
+                  "cave",
+                  "heritage",
+                  "viewpoint",
+                  "market",
+                  "port",
+                  "airport",
+                  "national-park",
+                  "weaving",
+                  "religious",
+                  "hazard",
+                  "forest",
+                  "savanna",
+                  "rice-terrace",
+                  "other"
+                ]
+              },
+              "summary": {
+                "type": "string",
+                "maxLength": 300
+              },
+              "story": {
+                "type": "string",
+                "description": "Markdown"
+              },
+              "race_relevance": {
+                "type": "string",
+                "enum": [
+                  "anchor",
+                  "highlight",
+                  "resupply",
+                  "hazard",
+                  "context"
+                ]
+              },
+              "access": {
+                "type": "string",
+                "enum": [
+                  "road",
+                  "track",
+                  "trail",
+                  "boat",
+                  "unknown"
+                ]
+              },
+              "hike_a_bike": {
+                "type": "boolean"
+              },
+              "cultural_protocol": {
+                "type": "string"
+              },
+              "elevation_m": {
+                "type": "number"
+              },
+              "hazard_level": {
+                "type": "string",
+                "description": "For hazard category; e.g., PVMBG alert level with date"
+              },
+              "confidence": {
+                "$ref": "common.schema.json#/$defs/confidence"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "public": {
+                "type": "boolean"
+              },
+              "image": {
+                "type": "string",
+                "description": "Optional illustration"
+              },
+              "image_credit": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "category",
+              "summary",
+              "race_relevance",
+              "access",
+              "confidence",
+              "sources"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "type",
+          "geometry",
+          "properties"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "type",
+    "features"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nodes.schema.json",
+  "title": "Anchor nodes (GeoJSON FeatureCollection)",
+  "description": "Anchor points: start, finish, checkpoints, towns, junctions with resupply and water information",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "FeatureCollection"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "Point"
+              },
+              "coordinates": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number"
+                },
+                "description": "[lon, lat]"
+              }
+            },
+            "required": [
+              "type",
+              "coordinates"
+            ],
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^n-[a-z0-9-]+$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "local_name": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "start",
+                  "finish",
+                  "checkpoint",
+                  "town",
+                  "village",
+                  "junction",
+                  "trailhead",
+                  "port",
+                  "airport"
+                ]
+              },
+              "resupply": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "minimal",
+                  "basic",
+                  "full"
+                ]
+              },
+              "water": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "unreliable",
+                  "reliable"
+                ]
+              },
+              "sleep": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "homestay",
+                  "guesthouse",
+                  "hotel"
+                ]
+              },
+              "notes": {
+                "type": "string"
+              },
+              "confidence": {
+                "$ref": "common.schema.json#/$defs/confidence"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "public": {
+                "type": "boolean"
+              },
+              "elevation_m": {
+                "type": "number",
+                "description": "Derived from DEM"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "kind",
+              "resupply",
+              "water",
+              "sleep",
+              "confidence",
+              "sources"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "type",
+          "geometry",
+          "properties"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "type",
+    "features"
+  ],
+  "additionalProperties": false
+}

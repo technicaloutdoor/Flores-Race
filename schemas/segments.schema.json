@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "segments.schema.json",
+  "title": "Candidate segments (GeoJSON FeatureCollection)",
+  "description": "Candidate segments between nodes with variants, status, and scouting history",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "FeatureCollection"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "LineString"
+              },
+              "coordinates": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "description": "Array of [lon, lat] points"
+              }
+            },
+            "required": [
+              "type",
+              "coordinates"
+            ],
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^s-[a-z0-9-]+$"
+              },
+              "name": {
+                "type": "string"
+              },
+              "from_node": {
+                "type": "string",
+                "pattern": "^n-[a-z0-9-]+$"
+              },
+              "to_node": {
+                "type": "string",
+                "pattern": "^n-[a-z0-9-]+$"
+              },
+              "variant": {
+                "type": "string",
+                "pattern": "^[A-Z]$"
+              },
+              "status": {
+                "$ref": "common.schema.json#/$defs/status"
+              },
+              "geometry_source": {
+                "$ref": "common.schema.json#/$defs/geometry_source"
+              },
+              "character": {
+                "$ref": "common.schema.json#/$defs/character"
+              },
+              "est_hab_km": {
+                "type": "number",
+                "minimum": 0
+              },
+              "difficulty": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "remoteness": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "direction_note": {
+                "type": "string"
+              },
+              "water_points": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "resupply_notes": {
+                "type": "string"
+              },
+              "hazards": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cultural_notes": {
+                "type": "string"
+              },
+              "open_questions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "scouting": {
+                "type": "array",
+                "items": {
+                  "$ref": "common.schema.json#/$defs/ScoutingEntry"
+                }
+              },
+              "stats": {
+                "$ref": "common.schema.json#/$defs/Stats"
+              },
+              "surface_mix": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "description": "Derived: {label: km}"
+              },
+              "class_mix": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "description": "Derived: {label: km}"
+              },
+              "route_profile": {
+                "type": "string",
+                "enum": [
+                  "remote",
+                  "rideable",
+                  "direct"
+                ]
+              },
+              "public": {
+                "type": "boolean"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "from_node",
+              "to_node",
+              "variant",
+              "status",
+              "geometry_source",
+              "character",
+              "est_hab_km",
+              "difficulty",
+              "remoteness",
+              "sources"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "type",
+          "geometry",
+          "properties"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "type",
+    "features"
+  ],
+  "additionalProperties": false
+}
