@@ -442,11 +442,21 @@ def dedupe_candidates(raw: list[RawCandidate], overlap_threshold: float = 0.85) 
 
 
 def next_letters(used: Iterable[str], n: int) -> list[str]:
-    """`n` fresh variant letters continuing after the highest letter in `used`."""
+    """`n` fresh variant letters continuing after the highest letter in `used`.
+
+    Raises ``ValueError`` rather than emitting characters past ``'Z'`` -- the ``variant`` field
+    is constrained to ``^[A-Z]$`` by ``schemas/segments.schema.json``, so silently returning e.g.
+    ``'['`` would only surface later as an opaque schema-validation failure in `validate_features`.
+    """
     start = 0
     for u in used:
         if u:
             start = max(start, ord(u[0].upper()) - ord("A") + 1)
+    if start + n > 26:
+        raise ValueError(
+            f"cannot allocate {n} variant letter(s) starting from "
+            f"{chr(ord('A') + start)!r}: only 26 letters (A-Z) exist"
+        )
     return [chr(ord("A") + start + i) for i in range(n)]
 
 
@@ -848,7 +858,16 @@ def generate_pair(
 
     no_path = not raw_all
     clusters = dedupe_candidates(raw_all)
-    letters = next_letters(used_letters_for_pair(existing_features, anchor_from.node_id, anchor_to.node_id), len(clusters))
+    try:
+        letters = next_letters(
+            used_letters_for_pair(existing_features, anchor_from.node_id, anchor_to.node_id),
+            len(clusters),
+        )
+    except ValueError as exc:
+        raise SystemExit(
+            f"more than 26 variants for pair {anchor_from.node_id}→{anchor_to.node_id}, "
+            f"aborting ({exc})"
+        ) from exc
 
     features = []
     for cluster, letter in zip(clusters, letters):

@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-09-05T03:18:58Z",
-  "git_commit": "b6640371bc4dcfbf62f041cb8da408534a39b3dc",
+  "generated_at": "2026-09-05T04:08:16Z",
+  "build_time": "2026-09-05T04:08:16Z",
+  "git_commit": "67f31bf4c4cae8f7744d9bfd10397dda531e6b98",
   "public_build": false,
   "counts": {
     "nodes": 44,
@@ -37,6 +38,13 @@
       "license": "CC BY 4.0",
       "url": "https://www.geoboundaries.org"
     }
+  ],
+  "attribution": [
+    "OpenStreetMap contributors, via Overture Maps (ODbL 1.0)",
+    "OpenTopoMap (CC BY-SA)",
+    "Esri World Imagery (Esri terms of use (attribution required))",
+    "SRTM (NASA/USGS), via AWS Terrain Tiles (Public domain)",
+    "geoBoundaries (CC BY 4.0)"
   ],
   "overture_release": "2026-08-19.0"
 }

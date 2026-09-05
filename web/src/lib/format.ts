@@ -38,4 +38,21 @@ export function formatInt(value: number | undefined): string {
   return Math.round(value).toLocaleString('en-US');
 }
 
+/** Rounds to the nearest `roundTo` and prefixes `~`, for a headline number built entirely (or
+ * mostly) from unscouted `concept`/`desk-checked` segments (ARCHITECTURE.md principle 3: "the UI
+ * never presents a guess as a fact"). `formatKm`'s one-decimal precision reads as measured; this
+ * is for the same value when it is still a desk estimate. */
+export function formatApproxKm(value: number | undefined, roundTo = 10): string {
+  if (value === undefined || !Number.isFinite(value)) return DASH;
+  const rounded = Math.round(value / roundTo) * roundTo;
+  return `~${rounded.toLocaleString('en-US')} km`;
+}
+
+/** Same rounding-and-tilde treatment as `formatApproxKm`, for a metres value (e.g. ascent). */
+export function formatApproxM(value: number | undefined, roundTo = 100): string {
+  if (value === undefined || !Number.isFinite(value)) return DASH;
+  const rounded = Math.round(value / roundTo) * roundTo;
+  return `~${rounded.toLocaleString('en-US')} m`;
+}
+
 export const EM_DASH = DASH;

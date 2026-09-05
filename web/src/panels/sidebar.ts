@@ -4,7 +4,7 @@
 import { SEGMENT_STATUSES, STATUS_META, POI_CATEGORY_META, type Status } from '../data/types.ts';
 import type { Section, SegmentFeature } from '../data/types.ts';
 import { routeStats, segmentsInSection, bboxOf } from '../data/derive.ts';
-import { formatKm, formatM, formatPct } from '../lib/format.ts';
+import { formatApproxKm, formatApproxM, formatKm, formatM, formatPct } from '../lib/format.ts';
 import { renderMarkdown } from '../lib/markdown.ts';
 import { sectionGpx, routeGpx, downloadGpx } from '../lib/gpx.ts';
 import { flyToBbox, flyToPoint } from '../map/fit.ts';
@@ -108,16 +108,52 @@ function renderSectionList(
   container.appendChild(list);
 }
 
+/** Share of the route/section's length that is still `concept` or `desk-checked` -- i.e. not yet
+ * checked against the ground by anyone. Used to decide whether the headline numbers should read
+ * as a desk estimate rather than a measured fact (ARCHITECTURE.md principle 3). */
+function unscoutedKmFraction(segments: SegmentFeature[]): number {
+  let total = 0;
+  let unscouted = 0;
+  for (const f of segments) {
+    const km = f.properties.stats?.length_km ?? 0;
+    total += km;
+    if (f.properties.status === 'concept' || f.properties.status === 'desk-checked') unscouted += km;
+  }
+  return total > 0 ? unscouted / total : 1;
+}
+
 function renderStatsTiles(segments: SegmentFeature[]): HTMLElement {
   const stats = routeStats(segments);
+  // Most of the course starts life as a hand-sketched/computed `concept` corridor sampled once
+  // against the DEM -- not a fact anyone has ridden or walked. Showing "1132.1 km" with the same
+  // one-decimal confidence as a GPS-measured track overstates it; round coarser and mark it as an
+  // estimate instead, until enough of the route has actually been scouted.
+  const isDeskEstimate = unscoutedKmFraction(segments) >= 0.5;
   const grid = el('div', 'stat-grid');
+  grid.classList.toggle('stat-grid-desk-estimate', isDeskEstimate);
   grid.append(
-    statTile('Total', formatKm(stats.length_km)),
-    statTile('Ascent', formatM(stats.ascent_m)),
+    statTile('Total', isDeskEstimate ? formatApproxKm(stats.length_km) : formatKm(stats.length_km)),
+    statTile('Ascent', isDeskEstimate ? formatApproxM(stats.ascent_m) : formatM(stats.ascent_m)),
     statTile('Hike-a-bike', formatKm(stats.hab_km)),
     statTile('Unpaved', formatPct(stats.unpaved_pct)),
   );
-  return grid;
+  const wrap = el('div', 'stat-tiles-wrap');
+  // Placed above the tiles, not just as a small caption below them: this is also the app's one
+  // always-visible statement that the selected route is still a "concept" -- a starting
+  // hypothesis, per docs/route-concept.md's own opening framing -- not only a note about number
+  // precision. A first-time viewer shouldn't have to learn the legend's dash/colour conventions
+  // to know that.
+  if (isDeskEstimate) {
+    wrap.appendChild(
+      el(
+        'p',
+        'stat-desk-estimate-note',
+        'Concept course — a starting hypothesis, not yet scouted. Numbers below are desk estimates and will tighten as segments are checked in the field.',
+      ),
+    );
+  }
+  wrap.appendChild(grid);
+  return wrap;
 }
 
 function renderStatusProgress(segments: SegmentFeature[]): HTMLElement {
@@ -195,7 +231,15 @@ function renderSectionRow(
 
   const isExpanded = expandedSectionId === section.id;
   header.classList.toggle('expanded', isExpanded);
-  header.addEventListener('click', () => {
+  // A plain <div> with a click handler is invisible to keyboard and screen-reader users; in
+  // `public` mode this section list is the *entire* left-panel content (see the early return
+  // above), so without this nobody using a keyboard or a screen reader could open a single
+  // section's story. Made a focusable, announced toggle button in place, rather than swapping in
+  // a real <button> (which would need its own reset of all the header's flex/typography styling).
+  header.tabIndex = 0;
+  header.setAttribute('role', 'button');
+  header.setAttribute('aria-expanded', String(isExpanded));
+  const toggleSection = (): void => {
     expandedSectionId = isExpanded ? null : section.id;
     if (ctx.mapLayers) {
       const target = sectionSegments.length
@@ -208,6 +252,12 @@ function renderSectionRow(
       flyToBbox(ctx.map, target, { padding: 70, duration: 1200 });
     }
     render(container, ctx);
+  };
+  header.addEventListener('click', toggleSection);
+  header.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault(); // stop Space from scrolling the panel
+    toggleSection();
   });
 
   if (isExpanded) {
@@ -282,6 +332,13 @@ function renderLegend(): HTMLElement {
     row.append(swatch, document.createTextNode(meta.label));
     poiGroup.appendChild(row);
   }
+  // The hazard ring is a colour, not a category (an active volcano stays category 'volcano') --
+  // see map/layers.ts HAZARD_RING_COLOR -- so it needs its own legend row, not one per category.
+  const hazardRow = el('span', 'legend-item');
+  const hazardSwatch = el('span', 'poi-swatch poi-swatch-hazard');
+  hazardRow.append(hazardSwatch, document.createTextNode('Active hazard (see hazard_level)'));
+  hazardRow.title = 'Any POI with a hazard_level (e.g. an active volcano) gets a red ring on the map, regardless of its category.';
+  poiGroup.appendChild(hazardRow);
   wrap.appendChild(poiGroup);
 
   return wrap;

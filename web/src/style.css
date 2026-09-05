@@ -132,6 +132,17 @@ select:hover,
   cursor: not-allowed;
 }
 
+/* Desktop default: unwrap the group so its children (basemap select, layer checkboxes) sit
+ * inline as direct flex items of `.app-header`, exactly as if they were never wrapped -- the
+ * <=800px media query below is the only place this actually collapses. See main.ts. */
+.map-settings-btn {
+  display: none;
+}
+
+.map-settings-group {
+  display: contents;
+}
+
 .layer-toggles {
   display: flex;
   flex-wrap: wrap;
@@ -179,6 +190,66 @@ select:hover,
   position: relative;
   min-width: 0;
   min-height: 0;
+}
+
+/* Persistent "Data & licenses" disclosure, independent of MapLibre's own attribution control
+ * (which is compact, easy to miss, and entirely absent under basemap=none) -- ARCHITECTURE.md
+ * §9. Top-left corner: top-right already holds NavigationControl, bottom-right holds the
+ * ScaleControl and MapLibre's own AttributionControl. */
+#attribution-button {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 5;
+  background: rgba(20, 16, 13, 0.85);
+  color: var(--color-text-dim);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+#attribution-button:hover,
+#attribution-button:focus-visible {
+  color: #fbf4e6;
+  border-color: var(--color-accent);
+}
+
+#attribution-panel {
+  position: absolute;
+  top: 2.4rem;
+  left: 0.6rem;
+  z-index: 5;
+  max-width: 22rem;
+  max-height: 60%;
+  overflow: auto;
+  background: rgba(20, 16, 13, 0.92);
+  color: var(--color-text-dim);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+}
+
+.attribution-panel-heading {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+  color: #fbf4e6;
+}
+
+#attribution-panel ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#attribution-panel li {
+  margin-bottom: 0.25rem;
+}
+
+#attribution-panel a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 #network-note {
@@ -288,6 +359,26 @@ select:hover,
     flex-wrap: wrap;
     height: auto;
     padding: 0.4rem 0.6rem;
+  }
+
+  /* Collapsed behind the "Map settings" button by default (see main.ts) so the header stays one
+   * compact row -- mode select and search remain visible without it -- and the map keeps the
+   * bulk of a small screen instead of being squeezed under several rows of controls. */
+  .map-settings-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .map-settings-group {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+  }
+
+  .map-settings-group[hidden] {
+    display: none;
   }
 
   .sheet-tabs {
@@ -679,6 +770,21 @@ select:hover,
   letter-spacing: 0.03em;
 }
 
+/* A route/section whose length is still mostly `concept`/`desk-checked` gets a visibly softer
+ * tile (dashed border) plus an explicit caption -- see sidebar.ts unscoutedKmFraction(). The
+ * numbers are a desk estimate, not a measured fact (ARCHITECTURE.md principle 3). */
+.stat-grid-desk-estimate .stat-tile {
+  border-style: dashed;
+  border-color: var(--color-text-dim);
+}
+
+.stat-desk-estimate-note {
+  margin: 0 0 0.6rem;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  font-style: italic;
+}
+
 .status-progress {
   margin: 0.6rem 0;
 }
@@ -732,6 +838,12 @@ select:hover,
   font-size: 0.55rem;
   font-weight: 700;
   flex: none;
+}
+
+.poi-swatch-hazard {
+  background: transparent;
+  border: 2px solid #c0392b;
+  box-shadow: inset 0 0 0 2px rgba(192, 57, 43, 0.28);
 }
 
 .legend-block {

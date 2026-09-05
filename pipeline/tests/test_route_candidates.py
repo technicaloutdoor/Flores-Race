@@ -168,6 +168,16 @@ def test_next_letters_continues_after_existing():
     assert rc.next_letters({"D"}, 1) == ["E"]
 
 
+def test_next_letters_raises_rather_than_overflow_past_z():
+    # 25 variants already used (A-Y): only one letter (Z) is left.
+    used = {chr(ord("A") + i) for i in range(25)}
+    assert rc.next_letters(used, 1) == ["Z"]
+    with pytest.raises(ValueError):
+        rc.next_letters(used, 2)  # would need Z and beyond
+    with pytest.raises(ValueError):
+        rc.next_letters({"Z"}, 1)  # nothing left after Z
+
+
 # ---------------------------------------------------------------------------
 # Anchor snapping
 # ---------------------------------------------------------------------------

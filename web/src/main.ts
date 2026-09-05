@@ -21,7 +21,7 @@ import { setBasemap } from './map/basemaps.ts';
 import { setHillshadeVisible, setTerrain3D } from './map/terrain.ts';
 import { MapLayers } from './map/layers.ts';
 import { flyToBbox, flyToPoint } from './map/fit.ts';
-import { StaticFileStore, type Bundle } from './data/store.ts';
+import { StaticFileStore, type Bundle, type MetaSource } from './data/store.ts';
 import { bboxOf } from './data/derive.ts';
 import { STATUS_META, type SegmentFeature, type SegmentsGeoJSON } from './data/types.ts';
 import { visibleNodes, visiblePois, visibleSegments } from './data/visibility.ts';
@@ -93,7 +93,32 @@ for (const id of BASEMAPS) {
   opt.textContent = BASEMAP_LABELS[id];
   basemapSelect.appendChild(opt);
 }
-header.appendChild(labeledField('Basemap', basemapSelect));
+
+// On a narrow (phone) viewport the basemap select and the layer checkboxes are the two header
+// items a rider glancing at the map least needs immediately (ARCHITECTURE.md principle 5, "a
+// phone in a village") -- they're collapsed behind this single disclosure button so mode and
+// search stay visible and the map gets the rest of the header's height back. `.map-settings-group`
+// in style.css makes this a no-op on wider screens (`display: contents`, so its children sit
+// inline in the header exactly as before) -- only the <=800px media query actually collapses it.
+const mapSettingsGroup = document.createElement('div');
+mapSettingsGroup.className = 'map-settings-group';
+mapSettingsGroup.id = 'map-settings-group';
+mapSettingsGroup.hidden = true;
+
+const mapSettingsToggle = document.createElement('button');
+mapSettingsToggle.type = 'button';
+mapSettingsToggle.className = 'btn map-settings-btn';
+mapSettingsToggle.textContent = 'Map settings';
+mapSettingsToggle.setAttribute('aria-expanded', 'false');
+mapSettingsToggle.setAttribute('aria-controls', mapSettingsGroup.id);
+mapSettingsToggle.addEventListener('click', () => {
+  const expanded = mapSettingsToggle.getAttribute('aria-expanded') === 'true';
+  mapSettingsToggle.setAttribute('aria-expanded', String(!expanded));
+  mapSettingsGroup.hidden = expanded;
+});
+header.append(mapSettingsToggle, mapSettingsGroup);
+
+mapSettingsGroup.appendChild(labeledField('Basemap', basemapSelect));
 
 const layerToggles = document.createElement('div');
 layerToggles.className = 'layer-toggles';
@@ -118,7 +143,7 @@ for (const key of LAYER_KEYS) {
   layerCheckboxes.set(key, checkbox);
   layerLabels.set(key, label);
 }
-header.appendChild(layerToggles);
+mapSettingsGroup.appendChild(layerToggles);
 
 // --- Header search box (nodes + POIs + segments by name; keyboard navigable) -----------------
 
@@ -238,6 +263,62 @@ app.appendChild(header);
 const mapContainer = document.createElement('div');
 mapContainer.id = 'map';
 app.appendChild(mapContainer);
+
+// A persistent "Data & licenses" surface, independent of MapLibre's own (small, compact, and
+// entirely absent under basemap=none) attribution control -- see ARCHITECTURE.md §9. The button
+// itself is always on screen; its panel lists every entry from meta.json's `sources` (Overture/
+// OSM, SRTM, geoBoundaries, and the basemap providers), populated once the bundle loads.
+const attributionButton = document.createElement('button');
+attributionButton.type = 'button';
+attributionButton.id = 'attribution-button';
+attributionButton.textContent = 'Data & licenses';
+attributionButton.setAttribute('aria-expanded', 'false');
+attributionButton.setAttribute('aria-controls', 'attribution-panel');
+
+const attributionPanel = document.createElement('div');
+attributionPanel.id = 'attribution-panel';
+attributionPanel.hidden = true;
+attributionPanel.setAttribute('role', 'region');
+attributionPanel.setAttribute('aria-label', 'Data sources and licenses');
+const attributionLoading = document.createElement('p');
+attributionLoading.className = 'state state-loading';
+attributionLoading.textContent = 'Loading sources…';
+attributionPanel.appendChild(attributionLoading);
+
+attributionButton.addEventListener('click', () => {
+  const expanded = attributionButton.getAttribute('aria-expanded') === 'true';
+  attributionButton.setAttribute('aria-expanded', String(!expanded));
+  attributionPanel.hidden = expanded;
+});
+
+mapContainer.append(attributionButton, attributionPanel);
+
+function renderAttributionPanel(sources: MetaSource[]): void {
+  attributionPanel.replaceChildren();
+  const heading = document.createElement('p');
+  heading.className = 'attribution-panel-heading';
+  heading.textContent = 'Data sources & licenses';
+  attributionPanel.appendChild(heading);
+  const list = document.createElement('ul');
+  for (const source of sources) {
+    const item = document.createElement('li');
+    const text = document.createElement('span');
+    text.textContent = `${source.name} — ${source.license}`;
+    item.appendChild(text);
+    if (source.url) {
+      item.appendChild(document.createTextNode(' ('));
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = source.url.replace(/^https?:\/\//, '');
+      item.appendChild(link);
+      item.appendChild(document.createTextNode(')'));
+    }
+    list.appendChild(item);
+  }
+  attributionPanel.appendChild(list);
+}
 
 const panelLeft = document.createElement('div');
 panelLeft.id = 'panel-left';
@@ -458,6 +539,7 @@ routeStore
     recomputeResolvedSegments();
     fullSearchIndex = buildSearchIndex(loaded);
     floresMap.setAttribution(loaded.meta.attribution);
+    renderAttributionPanel(loaded.meta.sources);
 
     if (mapLayers) drawData();
     renderPanels();
@@ -525,7 +607,18 @@ store.subscribe((state, previous) => {
   if (state.routeId !== previous.routeId) updateRouteMembership();
   if (state.selection !== previous.selection) mapLayers?.setSelection(state.selection);
 
-  renderPanels();
+  // Panels (sidebar/inspector/profile) only read mode/routeId/selection off the state -- notably
+  // never hoverId, which patches on every map `mousemove` (see mapLayers.setHover above, which
+  // already handles the hover highlight directly). Rebuilding the whole panel tree on every
+  // hover tick would tear down and redraw the section list, inspector and elevation profile SVG
+  // dozens of times a second while the cursor moves over the map, for no visible change.
+  if (
+    state.mode !== previous.mode ||
+    state.routeId !== previous.routeId ||
+    state.selection !== previous.selection
+  ) {
+    renderPanels();
+  }
 });
 
 urlHandle = bindUrlSync(

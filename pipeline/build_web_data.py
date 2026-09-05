@@ -247,18 +247,34 @@ def read_overture_release(overture_dir: Optional[Path]) -> Optional[str]:
     return manifest.get("release")
 
 
+def build_attribution(sources: list) -> list:
+    """Attribution strings for MapLibre's attribution control, in display order.
+
+    Matches `MetaJSON.attribution: string[]` in web/src/data/store.ts — every source
+    listed in `sources` must be credited somewhere in the running app (ARCHITECTURE.md
+    §9), not just the ones whose basemap already carries its own attribution string.
+    """
+    return [f'{source["name"]} ({source["license"]})' for source in sources]
+
+
 def build_meta(
     *,
     counts: dict,
     public_build: bool,
     overture_release: Optional[str],
 ) -> dict:
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     meta = {
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": generated_at,
+        # `build_time` is the field name the web app's MetaJSON type actually reads;
+        # kept alongside `generated_at` (which existing tests and tooling check) so
+        # neither producer nor consumer has to change its field name.
+        "build_time": generated_at,
         "git_commit": read_git_commit(REPO_ROOT),
         "public_build": public_build,
         "counts": counts,
         "sources": SOURCES,
+        "attribution": build_attribution(SOURCES),
     }
     if overture_release:
         meta["overture_release"] = overture_release

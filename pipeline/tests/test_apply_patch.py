@@ -143,6 +143,57 @@ def test_apply_patch_to_data_refuses_geometry_and_id_even_bypassing_schema():
     assert new["properties"]["id"] == "s-fx-start-mid1-a"
 
 
+def test_apply_patch_new_poi_reapplication_is_idempotent(tmp_path):
+    """Re-applying the same patch (a maintainer double-running the command, or the same PR's
+    patch reapplied across a rebase) must not create a second POI for the same real-world point."""
+    write_fixture(tmp_path)
+    patch_path = tmp_path / "patch.json"
+    common.write_json(patch_path, _valid_patch())
+
+    rc1 = apply_patch.main(
+        ["--patch", str(patch_path), "--data", str(tmp_path), "--schemas", str(SCHEMAS_DIR)]
+    )
+    assert rc1 == 0
+    rc2 = apply_patch.main(
+        ["--patch", str(patch_path), "--data", str(tmp_path), "--schemas", str(SCHEMAS_DIR)]
+    )
+    assert rc2 == 0
+
+    pois_fc = common.read_geojson(tmp_path / "pois.geojson")
+    matches = [f for f in pois_fc["features"] if f["properties"]["name"] == "Fixture Spring"]
+    assert len(matches) == 1
+
+
+def test_find_duplicate_poi_matches_same_name_and_nearby_point():
+    pois_fc = make_pois()
+    existing = pois_fc["features"][0]
+    existing["properties"]["name"] = "Spring near Ruteng"
+    existing["geometry"] = {"type": "Point", "coordinates": [120.46, -8.6]}
+    candidates = apply_patch._index_by_id(pois_fc)
+
+    # Same name, ~11 m away (0.0001 deg lon at this latitude) -> treated as the same place.
+    match = apply_patch._find_duplicate_poi(
+        "Spring near Ruteng", {"type": "Point", "coordinates": [120.4601, -8.6]}, candidates
+    )
+    assert match == existing["properties"]["id"]
+
+    # Same name, far away -> a different place, no match.
+    assert (
+        apply_patch._find_duplicate_poi(
+            "Spring near Ruteng", {"type": "Point", "coordinates": [121.5, -8.6]}, candidates
+        )
+        is None
+    )
+
+    # Different name, same point -> not assumed to be the same POI.
+    assert (
+        apply_patch._find_duplicate_poi(
+            "Unrelated Warung", {"type": "Point", "coordinates": [120.46, -8.6]}, candidates
+        )
+        is None
+    )
+
+
 def test_apply_patch_refuses_unknown_segment_id(tmp_path):
     write_fixture(tmp_path)
     patch = {

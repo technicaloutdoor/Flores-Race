@@ -91,10 +91,53 @@ function round(n: number, decimals: number): number {
 }
 
 /**
+ * Finds the `[startIdx, endIdx)` chain-position span for one section's `[from_node, to_node)`
+ * pair. A plain `chain.indexOf` on each end would always resolve to the *first* occurrence of
+ * that node id in the chain — wrong whenever the route revisits a node, which is a documented
+ * pattern (docs/route-concept.md section 02: "Wae Rebo as an out-and-back from Denge" revisits
+ * `n-denge` twice). Instead this looks for the *last* time `from_node` is visited before the
+ * *next* time `to_node` is reached at or after `searchFrom` — the boundary a human reading the
+ * chain would actually pick, and one that also correctly excludes an out-and-back detour from a
+ * *later* section that starts only once the detour has returned.
+ */
+function sectionSpan(
+  chain: string[],
+  fromNode: string,
+  toNode: string,
+  searchFrom: number,
+): { startIdx: number; endIdx: number } | undefined {
+  let endIdx = -1;
+  for (let i = searchFrom; i < chain.length; i++) {
+    if (chain[i] === toNode) {
+      endIdx = i;
+      break;
+    }
+  }
+  if (endIdx === -1) return undefined;
+
+  let startIdx = -1;
+  for (let i = searchFrom; i < endIdx; i++) {
+    if (chain[i] === fromNode) startIdx = i;
+  }
+  if (startIdx === -1) return undefined;
+  return { startIdx, endIdx };
+}
+
+/** Builds the node-chain for a route's (already gap-checked) resolved segments: `chain[i]` is the
+ * `from_node` of `segments[i]`, and the final element is the last segment's `to_node`. */
+function nodeChain(orderedSegments: SegmentFeature[]): string[] {
+  const chain = orderedSegments.map((f) => f.properties.from_node);
+  const last = orderedSegments[orderedSegments.length - 1];
+  if (last) chain.push(last.properties.to_node);
+  return chain;
+}
+
+/**
  * Finds which narrative section a segment falls under, by locating the segment's position in the
- * route's node chain and matching it against each section's [from_node, to_node) span. Returns
- * undefined if the route doesn't contain the segment, or no section's span covers it (e.g. a
- * fixture with incomplete sections).
+ * route's node chain and matching it against each section's `[from_node, to_node)` span, walked
+ * in section `order` so a repeated node id resolves to the occurrence at the right point along the
+ * route (see `sectionSpan`). Returns undefined if the route doesn't contain the segment, or no
+ * section's span covers it (e.g. a fixture with incomplete sections).
  */
 export function sectionForSegment(
   segmentId: string,
@@ -106,30 +149,29 @@ export function sectionForSegment(
   if (segIndex === -1) return undefined;
 
   const byId = new Map(segments.map((s) => [s.properties.id, s]));
-  // Node visited at the start of each chain position; chain[N] is the final to_node.
-  const chain: string[] = [];
+  const orderedFeatures: SegmentFeature[] = [];
   for (const id of route.segments) {
     const feature = byId.get(id);
     if (!feature) return undefined; // chain has a gap; can't safely locate anything past it
-    chain.push(feature.properties.from_node);
+    orderedFeatures.push(feature);
   }
-  const lastFeature = byId.get(route.segments[route.segments.length - 1] ?? '');
-  if (lastFeature) chain.push(lastFeature.properties.to_node);
+  const chain = nodeChain(orderedFeatures);
 
   const ordered = [...sections].sort((a, b) => a.order - b.order);
+  let cursor = 0;
   for (const section of ordered) {
-    const startIdx = chain.indexOf(section.from_node);
-    const endIdx = chain.indexOf(section.to_node);
-    if (startIdx === -1 || endIdx === -1) continue;
-    if (segIndex >= startIdx && segIndex < endIdx) return section;
+    const span = sectionSpan(chain, section.from_node, section.to_node, cursor);
+    if (!span) continue; // can't place this section on the chain at all; try the next one
+    if (segIndex >= span.startIdx && segIndex < span.endIdx) return section;
+    cursor = span.endIdx; // sections are walked in order, so later sections start no earlier
   }
   return undefined;
 }
 
 /**
  * Resolves the ordered slice of a route's (already-resolved) segments that fall inside one
- * section's `[from_node, to_node)` span, by the same node-chain logic as `sectionForSegment` run
- * in the other direction. Returns `[]` rather than throwing when the route has a gap or the
+ * section's `[from_node, to_node)` span, by the same node-chain logic as `sectionForSegment`
+ * (see `sectionSpan`). Returns `[]` rather than throwing when the route has a gap or the
  * section's anchors aren't both on this route's chain (e.g. a route that skips a section).
  */
 export function segmentsInSection(
@@ -140,14 +182,10 @@ export function segmentsInSection(
   const ordered = routeSegments(route, segments);
   if (ordered.length !== route.segments.length) return []; // a gap upstream; chain isn't trustworthy
 
-  const chain: string[] = ordered.map((f) => f.properties.from_node);
-  const last = ordered[ordered.length - 1];
-  if (last) chain.push(last.properties.to_node);
-
-  const startIdx = chain.indexOf(section.from_node);
-  const endIdx = chain.indexOf(section.to_node);
-  if (startIdx === -1 || endIdx === -1 || endIdx <= startIdx) return [];
-  return ordered.slice(startIdx, endIdx);
+  const chain = nodeChain(ordered);
+  const span = sectionSpan(chain, section.from_node, section.to_node, 0);
+  if (!span) return [];
+  return ordered.slice(span.startIdx, span.endIdx);
 }
 
 /** Alternative candidates for the same `from_node`/`to_node` pair — the variants a scout compares

@@ -48,6 +48,12 @@ ALLOWED_SEGMENT_FIELDS = {
 
 ALLOWED_NODE_FIELDS = {"resupply", "water", "sleep", "notes"}
 
+#: How close (metres) a `new_pois` entry with no explicit id has to be to an existing POI of the
+#: same (slugified) name before it is treated as the same real-world point rather than a new one.
+#: Re-applying the same scouting patch -- across a rebase, or a maintainer double-running the
+#: command -- must not silently create a second record for one place (see `_find_duplicate_poi`).
+DUPLICATE_POI_DISTANCE_M = 100.0
+
 
 # ---------------------------------------------------------------------------
 # Merge
@@ -68,6 +74,38 @@ def _generate_poi_id(name: str, existing_ids: set) -> str:
     return candidate
 
 
+def _point_coords(geometry: Optional[dict]) -> Optional[tuple]:
+    """`(lon, lat)` for a Point geometry, or `None` if it isn't one (or has no coordinates)."""
+    if not geometry or geometry.get("type") != "Point":
+        return None
+    coords = geometry.get("coordinates")
+    if not coords or len(coords) < 2:
+        return None
+    return float(coords[0]), float(coords[1])
+
+
+def _find_duplicate_poi(name: str, geometry: Optional[dict], candidates: dict) -> Optional[str]:
+    """Looks for an existing POI that is very likely the same real-world point as an unlabelled
+    `new_pois` entry: the same slugified name, within `DUPLICATE_POI_DISTANCE_M` of each other.
+    Without this check, re-applying the same patch (or the same PR's patch twice across a rebase)
+    generates a fresh id each time and silently duplicates the POI -- see apply_patch.py's
+    docstring and ARCHITECTURE.md section 2 ("git is the database")."""
+    slug = common.slugify(name or "")
+    point = _point_coords(geometry)
+    if not slug or point is None:
+        return None
+    lon, lat = point
+    for poi_id, feat in candidates.items():
+        other_point = _point_coords(feat.get("geometry"))
+        if other_point is None:
+            continue
+        if common.slugify(feat.get("properties", {}).get("name", "")) != slug:
+            continue
+        if common.haversine_m(lon, lat, other_point[0], other_point[1]) <= DUPLICATE_POI_DISTANCE_M:
+            return poi_id
+    return None
+
+
 def apply_patch_to_data(patch: dict, nodes_fc: dict, segments_fc: dict, pois_fc: dict) -> tuple:
     """Merge a patch into (copies of) the canonical data.
 
@@ -85,7 +123,7 @@ def apply_patch_to_data(patch: dict, nodes_fc: dict, segments_fc: dict, pois_fc:
     pois_by_id = _index_by_id(pois_fc)
 
     errors: list = []
-    diff = {"segments": {}, "nodes": {}, "new_pois": []}
+    diff = {"segments": {}, "nodes": {}, "new_pois": [], "new_pois_skipped_duplicates": []}
 
     for seg_id, changes in (patch.get("segments") or {}).items():
         feat = segments_by_id.get(seg_id)
@@ -132,16 +170,26 @@ def apply_patch_to_data(patch: dict, nodes_fc: dict, segments_fc: dict, pois_fc:
     used_new_ids: set = set()
     for poi in patch.get("new_pois") or []:
         props = dict(poi.get("properties") or {})
+        geometry = poi.get("geometry")
         poi_id = props.get("id")
         if poi_id is not None:
             if poi_id in pois_by_id or poi_id in used_new_ids:
                 errors.append(f"new_pois: id {poi_id!r} already exists (refused)")
                 continue
         else:
+            duplicate_id = _find_duplicate_poi(props.get("name", ""), geometry, pois_by_id)
+            if duplicate_id is not None:
+                # Same name, same place, no id of its own: almost certainly a re-application of a
+                # patch already merged (or the same PR applied twice). Skip rather than mint a
+                # second id for it, so applying a patch twice is a no-op, not a duplicate record.
+                diff["new_pois_skipped_duplicates"].append(
+                    {"name": props.get("name", "poi"), "matches_existing": duplicate_id}
+                )
+                continue
             poi_id = _generate_poi_id(props.get("name", "poi"), set(pois_by_id) | used_new_ids)
             props["id"] = poi_id
         used_new_ids.add(poi_id)
-        new_feature = {"type": "Feature", "geometry": poi.get("geometry"), "properties": props}
+        new_feature = {"type": "Feature", "geometry": geometry, "properties": props}
         pois_fc["features"].append(new_feature)
         pois_by_id[poi_id] = new_feature
         diff["new_pois"].append(poi_id)
@@ -171,6 +219,13 @@ def print_diff_summary(diff: dict, out=sys.stdout) -> None:
             print(f"    {key}: {value['old']!r} -> {value['new']!r}", file=out)
     for poi_id in diff["new_pois"]:
         print(f"  new POI: {poi_id}", file=out)
+    for skipped in diff.get("new_pois_skipped_duplicates", []):
+        print(
+            f"  WARNING: skipped new POI {skipped['name']!r} -- matches existing "
+            f"{skipped['matches_existing']!r} (already applied? patch is idempotent, not "
+            f"re-added)",
+            file=out,
+        )
 
 
 # ---------------------------------------------------------------------------

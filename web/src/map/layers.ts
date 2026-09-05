@@ -47,6 +47,7 @@ const LAYER = {
   nodesIcon: 'nodes-icon',
   nodesLabel: 'nodes-label',
   poisHighlight: 'pois-highlight',
+  poisHazardRing: 'pois-hazard-ring',
   poisIcon: 'pois-icon',
   poisLabel: 'pois-label',
   kmMarkers: 'km-markers',
@@ -82,6 +83,17 @@ function selectionHighlightPaint(): Record<string, unknown> {
     'circle-opacity': 0.3,
   };
 }
+
+/** Colour for the hazard ring drawn under any POI with a `hazard_level` (an active volcano, an
+ * exclusion zone, etc.) -- see `HAZARD_RING_FILTER`. Kept separate from `POI_CATEGORY_META`'s
+ * per-category colours: a POI's category (`volcano`, `crater-lake`, ...) drives its icon glyph,
+ * but hazard severity is a different, cross-cutting concern that must stay visible regardless of
+ * which category a POI author happened to pick (docs/route-concept.md's Lewotobi entry is
+ * category `volcano`, not `hazard`, and must look just as urgent as one that is). */
+const HAZARD_RING_COLOR = '#c0392b';
+
+/** Matches any POI carrying a non-empty `hazard_level`, independent of its `category`. */
+const HAZARD_RING_FILTER: MapLibreExpr = ['all', ['has', 'hazard_level'], ['!=', ['get', 'hazard_level'], '']];
 
 function statusColorExpression(): unknown[] {
   const expr: unknown[] = ['match', ['get', 'status']];
@@ -365,6 +377,22 @@ export class MapLayers {
       source: SOURCE.pois,
       paint: selectionHighlightPaint(),
     });
+    // A hazard's urgency must read from colour, not from the 1-2 letter icon glyph alone (which
+    // looks identical whether the category is 'hazard' or 'volcano') -- see HAZARD_RING_COLOR.
+    this.map.addLayer({
+      id: LAYER.poisHazardRing,
+      type: 'circle',
+      source: SOURCE.pois,
+      filter: HAZARD_RING_FILTER,
+      paint: {
+        'circle-radius': 11,
+        'circle-color': HAZARD_RING_COLOR,
+        'circle-opacity': 0.28,
+        'circle-stroke-width': 1.5,
+        'circle-stroke-color': HAZARD_RING_COLOR,
+        'circle-stroke-opacity': 0.9,
+      },
+    });
     this.map.addLayer({
       id: LAYER.poisIcon,
       type: 'symbol',
@@ -433,6 +461,7 @@ export class MapLayers {
     this.setVisible(LAYER.nodesIcon, layers.nodes);
     this.setVisible(LAYER.nodesLabel, layers.nodes);
     this.setVisible(LAYER.poisHighlight, layers.pois);
+    this.setVisible(LAYER.poisHazardRing, layers.pois);
     this.setVisible(LAYER.poisIcon, layers.pois);
     this.setVisible(LAYER.poisLabel, layers.pois);
   }

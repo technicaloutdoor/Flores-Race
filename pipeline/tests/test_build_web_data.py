@@ -57,6 +57,13 @@ def test_build_web_data_end_to_end(tmp_path, dem_dir, regencies_path):
     assert meta["public_build"] is False
     assert "generated_at" in meta
     assert isinstance(meta["sources"], list) and meta["sources"]
+    # web/src/data/store.ts's MetaJSON type requires `build_time` and `attribution` -- without
+    # these the web app's attribution control never shows the SRTM/geoBoundaries/Overture credit
+    # lines it is supposed to (ARCHITECTURE.md §9).
+    assert meta["build_time"] == meta["generated_at"]
+    assert isinstance(meta["attribution"], list) and meta["attribution"]
+    for source in meta["sources"]:
+        assert f'{source["name"]} ({source["license"]})' in meta["attribution"]
 
     nodes_fc = common.read_geojson(out_dir / "nodes.geojson")
     ruteng = next(f for f in nodes_fc["features"] if f["properties"]["id"] == "n-fx-mid2")

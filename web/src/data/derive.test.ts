@@ -223,6 +223,81 @@ describe('coordAtKm', () => {
   });
 });
 
+// Regression coverage for a route that revisits a node — the project's own documented example
+// (docs/route-concept.md section 02: "Wae Rebo as an out-and-back from Denge"). `n-denge` appears
+// twice in the chain: once on the way out, once on the way back before continuing to Todo.
+describe('sectionForSegment and segmentsInSection with a repeated node (out-and-back)', () => {
+  const outAndBackRoute: Route = {
+    id: 'r-oab',
+    name: 'Out-and-back test route',
+    audience: ['scout'],
+    anchors: ['n-werang', 'n-denge', 'n-waerebo', 'n-denge', 'n-todo'],
+    segments: ['s-werang-denge-a', 's-denge-waerebo-a', 's-waerebo-denge-a', 's-denge-todo-a'],
+    status: 'concept',
+    target_km_range: [15, 25],
+  };
+
+  const werangDenge = segment('s-werang-denge-a', 'n-werang', 'n-denge', [
+    [120, -8.6],
+    [120.05, -8.62],
+  ]);
+  const dengeWaerebo = segment('s-denge-waerebo-a', 'n-denge', 'n-waerebo', [
+    [120.05, -8.62],
+    [120.1, -8.7],
+  ]);
+  const waereboDenge = segment('s-waerebo-denge-a', 'n-waerebo', 'n-denge', [
+    [120.1, -8.7],
+    [120.05, -8.62],
+  ]);
+  const dengeTodo = segment('s-denge-todo-a', 'n-denge', 'n-todo', [
+    [120.05, -8.62],
+    [120.15, -8.6],
+  ]);
+  const outAndBackSegments = [werangDenge, dengeWaerebo, waereboDenge, dengeTodo];
+
+  // Represents "the leg after the out-and-back" — from the *second* (returning) visit to Denge.
+  const afterDetour: Section = {
+    id: 'sec-03-after-detour',
+    order: 1,
+    title: 'After the detour',
+    from_node: 'n-denge',
+    to_node: 'n-todo',
+    theme: ['culture'],
+    story: '...',
+    highlight_pois: [],
+    target_km: [5, 15],
+    hab_expected: 'low',
+    scouting_priority: 1,
+    open_questions: [],
+  };
+
+  it('does not attribute the outbound detour leg to a section that starts after the return', () => {
+    expect(
+      sectionForSegment('s-denge-waerebo-a', outAndBackRoute, [afterDetour], outAndBackSegments),
+    ).toBeUndefined();
+  });
+
+  it('does not attribute the return detour leg to a section that starts after the return', () => {
+    expect(
+      sectionForSegment('s-waerebo-denge-a', outAndBackRoute, [afterDetour], outAndBackSegments),
+    ).toBeUndefined();
+  });
+
+  it('attributes only the actual post-detour segment to the post-detour section', () => {
+    expect(
+      sectionForSegment('s-denge-todo-a', outAndBackRoute, [afterDetour], outAndBackSegments)?.id,
+    ).toBe('sec-03-after-detour');
+  });
+
+  it('segmentsInSection returns only the post-detour segment, not the whole detour', () => {
+    expect(
+      segmentsInSection(afterDetour, outAndBackRoute, outAndBackSegments).map(
+        (f) => f.properties.id,
+      ),
+    ).toEqual(['s-denge-todo-a']);
+  });
+});
+
 describe('siblingVariants', () => {
   it('finds other variants sharing the same from_node/to_node, excluding itself', () => {
     const segAVariantB = segment('s-a-b-b', 'n-a', 'n-b', [

@@ -31,6 +31,12 @@ export function createStore<T extends object>(initial: T): Store<T> {
     },
     patch(partial) {
       const previous = state;
+      // Bail out if nothing actually changed -- a high-frequency caller (e.g. a `mousemove`
+      // handler patching `hoverId` on every event) would otherwise notify every subscriber, on
+      // every tick, even when the value patched in is identical to what's already there.
+      const keys = Object.keys(partial) as (keyof T)[];
+      const changed = keys.some((key) => !Object.is(partial[key], previous[key]));
+      if (!changed) return;
       const next = { ...previous, ...partial };
       state = next;
       for (const listener of listeners) listener(state, previous);
