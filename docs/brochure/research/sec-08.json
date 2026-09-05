@@ -1,0 +1,353 @@
+{
+  "topic_id": "sec-08",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Wolotopo",
+      "data_ids": ["p-wolotopo"],
+      "what_it_is": "A Lio traditional (adat) village built onto a steep hillside on the coast about 12 km east of Ende, reached via the Wolowona market road.",
+      "why_it_matters": "The first cultural stop of the section, close enough to Ende to be a natural early-morning departure point. Households still weave ikat and keep traditional ceremonial houses in good repair, giving riders a first, low-friction taste of Lio adat life before the harder Wologai and Kelimutu stops.",
+      "history_culture": "Adat customs are strongly maintained; the village keeps traditional ceremonial houses alongside domestic ones. It functions as a lived-in working village, not a museum piece.",
+      "practical": {
+        "altitude_m": "Not recorded in data or DEM check; a low coastal hillside site, well below the Detusoko/Wologai highlands.",
+        "access": "Paved road from Ende (~12 km) via Wolowona market.",
+        "fees_protocol": "Visitors should be accompanied and expect a small courtesy donation; adat customs are strongly maintained.",
+        "sleep": "None — a day visit from Ende or en route to Detusoko.",
+        "water_resupply": "Ende, immediately before the climb.",
+        "best_time": "Morning, as the first stop out of Ende.",
+        "hazards": "None specific beyond normal steep-hillside village paths."
+      },
+      "facts": [
+        {
+          "fact": "Wolotopo is a Lio adat village built into a steep hillside on the south coast, ~12 km east of Ende via Wolowona market; households still practise ikat weaving and keep traditional ceremonial houses.",
+          "source_urls": ["repo:data/pois.geojson#p-wolotopo", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/flores/ende/1731"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Described independently as a large, lively village where adat is strongly maintained and traditional ceremonial houses are kept in good shape.",
+          "source_urls": ["http://florestourism.com/districts/wolotopo/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Village houses stepped up the hillside with the sea/valley behind",
+        "A weaver at a back-strap loom on a veranda",
+        "Traditional ceremonial house detail (roof, carving)",
+        "Wide shot of the coast road climbing away from Wolotopo toward Detusoko"
+      ],
+      "commons_search_terms": ["Wolotopo village Flores", "Kampung Wolotopo Ende", "Lio traditional house Ende"]
+    },
+    {
+      "name": "Detusoko Rice Terraces",
+      "data_ids": ["p-detusoko-rice-terraces"],
+      "what_it_is": "Green terraced rice fields around Detusoko village (~800 m), about 33 km north of Ende on the road to Moni, with cool highland air.",
+      "why_it_matters": "A working agricultural landscape rather than a tourist set-piece — the terraces are compared favourably to Ubud's famous rice terraces but are far less visited, fitting the brochure's remoteness and spectacular-views brief with almost no extra effort from riders already on the main road.",
+      "history_culture": "An active farming landscape of the Lio highlands; no specific ceremonial or historical designation beyond its agricultural role.",
+      "practical": {
+        "altitude_m": 800,
+        "access": "Roadside, directly on the Ende–Moni road at Detusoko (Detusoko Barat).",
+        "fees_protocol": "None — public roadside viewpoint.",
+        "sleep": "Village has basic lodging; most riders would continue to Moni.",
+        "water_resupply": "Small village shops/warungs at Detusoko.",
+        "best_time": "Daytime; a small river and suspension bridge add to the scene.",
+        "hazards": "None beyond normal road riding."
+      },
+      "facts": [
+        {
+          "fact": "Terraced rice fields around Detusoko village at ~800 m, on the Ende–Moni road; cool air and a working highland farming landscape.",
+          "source_urls": ["repo:data/pois.geojson#p-detusoko-rice-terraces", "https://www.letstravelntt.com/west-detusoko-village/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The terraces sit about 20 km from Moni on the road to Ende, with a small river and suspension bridge adding to the scene; described as comparable to Bali's Ubud terraces but with far fewer visitors.",
+          "source_urls": ["https://www.backindo.com/kelimutu-volcano-guide/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Terraced paddies in morning light with mist in the valley",
+        "Suspension bridge over the small river",
+        "Rider on the road with terraces falling away below",
+        "Farmers working the paddies (with consent)"
+      ],
+      "commons_search_terms": ["Detusoko rice terrace Flores", "Sawah Detusoko", "Detusoko Barat rice field"]
+    },
+    {
+      "name": "Wologai",
+      "data_ids": ["p-wologai"],
+      "what_it_is": "An ~800-year-old Lio traditional (adat) village in Detusoko district at ~1,000–1,045 m, built as a circular ring of houses around a stone-terraced ceremonial ground.",
+      "why_it_matters": "One of the oldest continuously inhabited Lio villages on Flores and structurally distinct from the twin-row Ngada villages further west — a genuine, quiet, far-less-visited alternative to Bena and Kelimutu that argues for depth over famous highlights in the brochure's cultural pitch.",
+      "history_culture": "Houses are said to trace back roughly 800 years; the circular plan rings a stepped stone ceremonial ground where clan rites and the annual thanksgiving ceremony (Nggua Ria) are held. A 2012 fire destroyed 22 of the village's traditional houses; 12 have been rebuilt since, with each stage of planning and construction — start to finish — accompanied by adat ceremonies and rituals.",
+      "practical": {
+        "altitude_m": 1045,
+        "access": "Road, in the hills above Detusoko.",
+        "fees_protocol": "Received by village elders; customary courtesies (betel nut offering, guest book) expected; group visits should be arranged in advance.",
+        "sleep": "None on-site; day visit from Detusoko/Moni.",
+        "water_resupply": "Detusoko or Moni.",
+        "best_time": "Cool, quiet at most hours; less crowded than Bena or Kelimutu.",
+        "hazards": "None specific; respect the ceremonial ground — do not enter uninvited."
+      },
+      "facts": [
+        {
+          "fact": "An ~800-year-old circular Lio village in Detusoko district (~1,000–1,045 m); houses ring a stepped, stone-walled ceremonial ground used for clan rites and the annual Nggua Ria thanksgiving ceremony.",
+          "source_urls": ["repo:data/pois.geojson#p-wologai", "https://www.mongabay.co.id/2017/04/02/wologai-kampung-adat-keren-yang-berusia-800-tahun/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A 2012 fire destroyed 22 traditional houses in Wologai; 12 new traditional houses have since been rebuilt, with construction from planning to completion accompanied by ceremonies/rituals at each stage.",
+          "source_urls": ["https://www.getlostsafely.com/en/wologai-800-years-old-traditional-village-in-flores/", "https://asitantt.org/destination/wologai-traditional-village/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Aerial or elevated view of the circular house ring around the ceremonial terrace",
+        "Stone-terraced ceremonial ground detail",
+        "A rebuilt traditional house next to an older one, if distinguishable",
+        "Village elder greeting visitors at the entrance"
+      ],
+      "commons_search_terms": ["Kampung Adat Wologai", "Wologai traditional village Flores", "Wologai Ende circular village"]
+    },
+    {
+      "name": "Moni",
+      "data_ids": ["p-moni"],
+      "what_it_is": "A small highland village at the foot of Kelimutu, essentially one road lined with homestays, warungs and cafes, with hidden hot springs nearby.",
+      "why_it_matters": "The last comfortable base before Kelimutu's mandatory dawn stop, and the section's main overnight/resupply node — riders sleep here, wake before dawn, and climb the last stretch to the crater rim.",
+      "history_culture": "A tourism-service village that grew around Kelimutu access; village charm comes from its scale (one main street) rather than monuments.",
+      "practical": {
+        "altitude_m": "Not given precisely in data; highland village at the base of Kelimutu (roughly 1,000 m by regional context, not independently confirmed).",
+        "access": "On the Trans-Flores highway between Detusoko and Kelimutu.",
+        "fees_protocol": "None — ordinary village.",
+        "sleep": "Multiple homestays/guesthouses: Geckos Homestay (bungalows ~450k IDR / ~28 EUR incl. breakfast), Rago's Homestay, Homestay Century Moni Waturaka, Villa Marcelinus, Bintang Lodge, Kelimutu Eco Lodge; book ahead in high season as options are limited.",
+        "water_resupply": "Good — warungs and guesthouses sell bottled water; last reliable resupply before the Kelimutu summit and before the remote weaving villages further south.",
+        "best_time": "Overnight stop before a pre-dawn departure for Kelimutu; also has hidden hot springs worth a soak.",
+        "hazards": "None specific."
+      },
+      "facts": [
+        {
+          "fact": "Moni is a small highland village with guesthouses, warungs and hidden hot springs; the usual overnight stop before a dawn ascent to the Kelimutu crater lakes.",
+          "source_urls": ["repo:data/pois.geojson#p-moni", "https://theflyingnomads.com/moni-travel-guide-volcano-views-village-life-hidden-hot-springs-on-flores/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Moni is essentially one main road lined with homestays and cafes; named guesthouses include Geckos Homestay, Rago's Homestay, Bintang Lodge, Rainbow Cafe and Kelimutu Eco Lodge, and rooms should be booked ahead in high season since options are limited.",
+          "source_urls": ["https://feastoftravel.com/what-to-do-in-moni-in-flores-indonesia/", "https://www.travelfish.org/accommodation/indonesia/east_nusa_tenggara/flores/moni/all"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Moni's main street at dusk with guesthouse lights on",
+        "Riders loading up before a pre-dawn departure",
+        "Hidden hot spring, steam rising in cool highland air",
+        "Rice terraces visible from village edge"
+      ],
+      "commons_search_terms": ["Moni village Flores", "Moni Ende Flores", "Moni Kelimutu village"]
+    },
+    {
+      "name": "Kelimutu National Park — the three lakes",
+      "data_ids": ["p-kelimutu", "p-kelimutu-np"],
+      "what_it_is": "Three adjacent crater lakes (1,639 m) on a single volcanic summit inside a ~5,300 ha montane-forest national park; each lake holds a different, independently shifting colour: Tiwu Ata Mbupu, Tiwu Nua Muri Kooh Tai and Tiwu Ata Polo.",
+      "why_it_matters": "The signature, mandatory stop of the entire race — riders must be at the viewpoint at dawn before the crowds. It is simultaneously the course's best view and its most sacred site: in Lio belief the lakes are where souls go after death, sorted by how they lived, so the visit is framed as a required pause, not a photo op to rush through.",
+      "history_culture": "The park protects Flores-endemic bird habitat around the summit and the approach trail from Moni. Each year on 14 August the Pati Ka Du'a Bapu Ata Mata ceremony — the climax of Kelimutu Lake Festival Week — sees Lio mosalaki (customary leaders) and villagers process to the crater rim to offer red rice, pork, betel nut, tobacco and moke (palm wine) to the ancestral spirits believed to inhabit the three craters, closing with a communal Gawi circle dance.",
+      "practical": {
+        "altitude_m": 1639,
+        "access": "Paved road to the car park; the final 1–2 km ends in stairs, so it is a short hike-a-bike, not a ridden section. Park hours are reported as 5:00 am–6:00 pm, timed around sunrise viewing.",
+        "fees_protocol": "Foreign-visitor entrance fee reported at IDR 150,000 on weekdays and IDR 225,000 on Saturdays/Sundays, consistent across multiple 2025–2026 sources (verify locally before race week — park fees are revised periodically). No descent to the shoreline, no camping in or near the craters, and no crater-rim approach — especially at Kawah II — regardless of the current PVMBG alert level.",
+        "sleep": "None at the summit; base overnight in Moni.",
+        "water_resupply": "None at the summit car park/viewpoint — carry water up from Moni.",
+        "best_time": "Dawn, before the tour-bus crowds arrive; this is the one required stop of the whole course.",
+        "hazards": "Volcanic/phreatic-eruption risk, particularly at Kawah II; PVMBG held the volcano at Level I (Normal) as of 5 Aug 2026, after a January 2026 report of a crater-wall landslide (Kawah II) was assessed as ordinary weathering rather than a precursor. Separately, monitoring reports (dates unclear in available sources) describe Crater II (Tiwu Nua Muri Kooh Tai) lake-water temperature rising from about 30.9°C to 32.6°C over roughly three weeks with a mild sulfur odor, without the alert level being raised above Normal. Reconfirm against MAGMA Indonesia / PVMBG immediately before race week given this is the one mandatory, dawn, crater-adjacent stop of the course."
+      },
+      "facts": [
+        {
+          "fact": "Three adjacent crater lakes at 1,639 m, each independently changing colour over months to years as hydrothermal chemistry shifts: Tiwu Ata Mbupu ('Lake of Old People'), Tiwu Nua Muri Kooh Tai ('Lake of Young Men and Maidens') and Tiwu Ata Polo ('Bewitched Lake'); in Lio belief the lakes are where souls go after death, sorted by how they lived.",
+          "source_urls": ["repo:data/pois.geojson#p-kelimutu", "https://en.wikipedia.org/wiki/Kelimutu"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Colour reports vary by check-in date and should not be presented as fixed: one source recorded all three lakes in shades of green (turquoise-green, light green, dark green) in early July 2026, while an early-2025 report had the middle lake turquoise-green and the third dark brown-red. The change is inherently unpredictable, driven by shifts in volcanic gas and dissolved-mineral chemistry.",
+          "source_urls": ["https://www.komodoluxury.com/blog/the-changing-color-of-kelimutu-lakes/", "https://www.tripadvisor.com/Attraction_Review-g800614-d6732518-Reviews-Kelimutu_Lake_Tri_Color_Lake-Ende_Flores_East_Nusa_Tenggara.html"],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "Foreign-visitor entrance fee reported as IDR 150,000 on weekdays and IDR 225,000 on weekends, with park hours 5:00 am–6:00 pm, consistently across several independent 2025–2026 travel sources.",
+          "source_urls": ["https://www.tripadvisor.com/ShowUserReviews-g800614-d6732518-r228287853-Kelimutu_Lake_Tri_Color_Lake-Ende_Flores_East_Nusa_Tenggara.html", "https://us.trip.com/travel-guide/attraction/ende/kelimutu-national-park-142270670/", "https://www.traveloka.com/en-en/destination/landmark/kelimutu-national-park-6106135"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The Pati Ka Du'a Bapu Ata Mata ceremony is held every 14 August, the culmination of Kelimutu Lake Festival Week: Lio mosalaki (customary leaders) lead offerings of red rice, pork, betel nut, tobacco and moke to the ancestral spirits believed to live in the three craters, ending in a communal Gawi dance.",
+          "source_urls": ["https://rri.co.id/en/archipelago/1771137/about.html", "https://www.mongabay.co.id/2023/09/03/ritual-pati-ka-kearifan-masyarakat-adat-lio-menjaga-kelestarian-danau-kelimutu/", "https://sejiva.id/pati-ka-dua-bapu-ata-mata-kelimutu-ancient-ritual/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Separate monitoring reports (exact dates unclear in the sources found) describe Crater II lake-water temperature rising from 30.9°C to 32.6°C over about three weeks with a mild sulfur odor, without PVMBG raising the alert level above Level I (Normal); this needs reconfirmation against current MAGMA Indonesia bulletins before race week.",
+          "source_urls": ["https://www.volcanodiscovery.com/kelimutu/news.html"],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": [
+        "Wide dawn shot of all three lakes together from the main viewpoint, empty of crowds",
+        "Close detail of one lake's mineral-stained shoreline and colour",
+        "Riders/bikes at the viewpoint at first light",
+        "Mist rising off the crater at sunrise",
+        "The stairs/final approach as a hike-a-bike moment"
+      ],
+      "commons_search_terms": ["Kelimutu crater lakes", "Danau Kelimutu", "Tiwu Ata Polo", "Kelimutu National Park sunrise"]
+    },
+    {
+      "name": "Jopu",
+      "data_ids": ["p-jopu"],
+      "what_it_is": "A Lio ikat-weaving village in Wolowaru district, on the road between Moni and Wolojita/Nggela, in hilly interior country.",
+      "why_it_matters": "The first of the coastal Lio weaving-village cluster reached south of Kelimutu, giving riders an accessible, lower-friction weaving stop before the more culturally sensitive Nggela.",
+      "history_culture": "Part of the same Lio weaving economy as Wolojita and Nggela, sharing the back-strap loom tradition. Village courtesies mirror those expected at Nggela.",
+      "practical": {
+        "altitude_m": "Not recorded in data; hilly interior country between Moni and the coast.",
+        "access": "Road, between Moni and Wolojita/Nggela.",
+        "fees_protocol": "Village courtesies as for Nggela — expect a guest book and small donation.",
+        "sleep": "None recorded; day stop.",
+        "water_resupply": "Small warungs likely; not independently confirmed — carry a reserve from Moni.",
+        "best_time": "Daytime, mid-route between Kelimutu and the coast.",
+        "hazards": "None specific."
+      },
+      "facts": [
+        {
+          "fact": "Jopu is a Lio ikat-weaving village in Wolowaru district, on the road between Moni and Wolojita/Nggela.",
+          "source_urls": ["repo:data/pois.geojson#p-jopu", "https://travel2unlimited.com/indonesia-flores-jopu-traitional-village/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Weavers in the coastal Lio villages of Jopu and Wolojita today mostly use chemical dyes rather than the traditional morinda-root and indigo process; some still demonstrate the natural-dye method to visiting guests.",
+          "source_urls": ["http://www.asiantextilestudies.com/nggt-03.html", "http://asiantextilestudies.com/nggt-02.html"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Weaver tying resist patterns before dyeing",
+        "Finished ikat cloth hung to dry or displayed",
+        "Village street with looms visible on verandas"
+      ],
+      "commons_search_terms": ["Jopu village Flores", "Jopu ikat weaving", "Wolowaru Flores"]
+    },
+    {
+      "name": "Wolojita",
+      "data_ids": ["p-wolojita"],
+      "what_it_is": "An ikat-weaving village and district (kecamatan) centre on the south Lio coast, between Jopu and Nggela, part of the same weavers' community.",
+      "why_it_matters": "A working district centre rather than a showcase village — practical resupply and a weaving stop, but also the section's known logistics weak point where the coastal road can be cut after heavy rain.",
+      "history_culture": "Shares the Lio ikat weaving tradition with Jopu and Nggela; functions as an administrative/market centre for the surrounding weaving villages.",
+      "practical": {
+        "altitude_m": "Not recorded in data.",
+        "access": "Road, between Jopu and Nggela on the south Lio coast.",
+        "fees_protocol": "Village courtesies as for Nggela.",
+        "sleep": "Not established; treat as a day stop.",
+        "water_resupply": "District centre — likely has basic shops/warungs (not independently confirmed this session).",
+        "best_time": "Daytime.",
+        "hazards": "A landslide is known to cut the coastal road here after heavy rain; frequency and detour options are unconfirmed (open question, see below — this session's search found no further detail)."
+      },
+      "facts": [
+        {
+          "fact": "Wolojita is an ikat-weaving village and district centre on the south Lio coast between Jopu and Nggela, part of the same weavers' community; the coastal road here is known to be cut by landslide after heavy rain.",
+          "source_urls": ["repo:data/pois.geojson#p-wolojita"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Market/district-centre street scene",
+        "Coastal road view showing exposure to landslide terrain",
+        "Weaver at work"
+      ],
+      "commons_search_terms": ["Wolojita Flores", "Kecamatan Wolojita Ende", "Wolojita ikat"]
+    },
+    {
+      "name": "Nggela",
+      "data_ids": ["p-nggela"],
+      "what_it_is": "A Lio ikat-weaving village on a coastal ridge (~180 m), 21 km east of Ende, reached by a single-track road through Jopu and Pora; one of the two or three villages that define Lio ikat weaving on Flores.",
+      "why_it_matters": "The most culturally significant ikat stop of the section and a named proposed cultural checkpoint in the route concept — almost every household still keeps a back-strap loom, and its cloth carries motifs collected internationally, but any race checkpoint here requires advance council-level agreement, the same as Wae Rebo and the Ngada villages.",
+      "history_culture": "Sits on a small plateau above the south coast with a single-track road as its only vehicle access. Guests are received by the village and expected to sign a guest book and pay a small entrance donation. Nggela is held up as the more 'traditional' end of the Lio weaving-village cluster, but even here very few genuinely naturally dyed cloths (using the multi-year morinda-root process) are produced today; weavers demonstrate the process to visiting guests to affirm the village's reputation even as most production in nearby Jopu and Wolojita has shifted to chemical dyes.",
+      "practical": {
+        "altitude_m": 180,
+        "access": "Single-track road through Jopu and Pora; no through-traffic corridor.",
+        "fees_protocol": "Guest book sign-in and a small entrance donation expected; any race checkpoint requires advance agreement with the village council, per route-concept design rule 5 (villages are hosts, not scenery).",
+        "sleep": "Homestay options exist locally but are not independently confirmed this session.",
+        "water_resupply": "Not independently confirmed; treat as minimal — carry a reserve from Moni or Ende.",
+        "best_time": "Daytime; weaving demonstrations are a daytime activity.",
+        "hazards": "Single-track access road; same landslide risk noted for the wider Wolojita coastal corridor may apply."
+      },
+      "facts": [
+        {
+          "fact": "Nggela sits on a coastal ridge at ~180 m, 21 km east of Ende, reached by a single-track road through Jopu and Pora; almost every household keeps a back-strap loom and its ikat is collected internationally as well as worn for local ceremonies.",
+          "source_urls": ["repo:data/pois.geojson#p-nggela", "http://asiantextilestudies.com/nggela-01.html", "https://threadsoflife.com/pages/flores"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Very few naturally dyed lawo (ikat cloths) are still produced in Nggela today because the morinda-root dyeing process takes at least two years; weavers there demonstrate the process to visiting guests, even as most production in the nearby coastal villages of Jopu and Wolojita has shifted to chemical dyes.",
+          "source_urls": ["http://asiantextilestudies.com/nggt-02.html", "http://www.asiantextilestudies.com/nggt-03.html"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Nggela is named in the route concept (design rule 5) as a village that must host the race by agreement, not by default — alongside Wae Rebo and the Ngada villages — with any checkpoint requiring advance agreement with the village council.",
+          "source_urls": ["repo:docs/route-concept.md"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Weaver demonstrating morinda-root dyeing",
+        "Finished ikat cloth with Nggela-specific motifs, displayed or worn",
+        "Village on its ridge with the coast visible below",
+        "The single-track access road through Jopu and Pora"
+      ],
+      "commons_search_terms": ["Nggela village Flores", "Kampung Nggela ikat", "Nggela weaving Ende"]
+    },
+    {
+      "name": "Koka Beach and Paga Beach",
+      "data_ids": ["p-koka-beach", "p-paga-beach"],
+      "what_it_is": "Twin south-coast beach stops: Koka, a pair of pale-sand coves separated by a small headland below Wolowiro village in Paga district (Sikka Regency); and Paga, a small roadside town on the Trans-Flores Highway with simple beachside restaurants, a few kilometres away.",
+      "why_it_matters": "The section's closing scenic payoff — turquoise water and white sand after days of volcanic highlands and weaving villages — and a practical lunch/rest stop on the way to Sikka. Koka is one of the most photographed beaches on Flores' south coast; Paga is the simpler, more functional roadside stop beside it.",
+      "history_culture": "No specific ceremonial or historical designation; both are natural/scenic stops rather than cultural sites.",
+      "practical": {
+        "altitude_m": "Sea level.",
+        "access": "Koka: ~2 km unpaved private access road off the Trans-Flores Highway at Wolowiro, through cocoa-tree forest; small per-vehicle fees at up to two checkpoints (roughly IDR 5,000–10,000 per motorbike, IDR 10,000–20,000 per car — well under $3 total). Paga: directly on the highway, no side road needed. Both sit roughly 48 km / 1h15 west of Maumere and about 1h30 east of Moni/Kelimutu by road.",
+        "fees_protocol": "Small entrance/access fees at Koka's checkpoints; no fee reported for Paga.",
+        "sleep": "Not established as an overnight stop; day rest/lunch en route to Sikka.",
+        "water_resupply": "Simple beachside warungs at both.",
+        "best_time": "Midday to afternoon light for the turquoise water; a natural lunch stop between Moni and Maumere.",
+        "hazards": "Unpaved final approach to Koka can be slower in shoulder-season rain; exact field coordinates for both beaches are still desk placements, not field-verified (they sit under 1 km apart in the current data)."
+      },
+      "facts": [
+        {
+          "fact": "Koka Beach is a pair of coves of pale sand and turquoise water separated by a small headland, ~8 km off the highway near Paga; one of the most photographed beaches on Flores' south coast.",
+          "source_urls": ["repo:data/pois.geojson#p-koka-beach", "https://beach-spot.com/beach/koka-beach/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Koka Beach sits below Wolowiro village in Paga district, Sikka Regency, about 48 km (roughly 1h15) west of Maumere and about 1h30 east of Moni/Kelimutu; the final approach is a ~2 km unpaved private road off the Trans-Flores Highway through cocoa forest, with small per-vehicle fees at up to two checkpoints.",
+          "source_urls": ["https://komodo-travel.com/blog/koka-beach-flores/", "https://mybestplacestovisit.com/asia/indonesia/flores/koka-beach/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Paga is a small town roughly midway between Moni and Maumere on the main road, with one or two simple beachside restaurants — a natural lunch stop distinct from and simpler than Koka's twin coves nearby.",
+          "source_urls": ["https://asiaforvisitors.com/indonesia/flores/paga-beach/", "repo:data/pois.geojson#p-paga-beach"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Aerial or headland view of Koka's twin coves",
+        "Turquoise water and pale sand close-up",
+        "Riders arriving at the beach after the highland stages",
+        "Paga's simple beachside restaurants and highway frontage"
+      ],
+      "commons_search_terms": ["Koka Beach Flores", "Pantai Koka", "Paga Beach Flores", "Paga Sikka Flores"]
+    }
+  ],
+  "narrative_notes": "This is the brochure's signature section and should be structured as a single narrative arc: adat villages close to Ende (Wolotopo) -> cool highland farmland (Detusoko terraces, Wologai) -> the overnight base and last real resupply (Moni) -> the mandatory sacred dawn stop (Kelimutu) -> a descent through the Lio weaving-village cluster (Jopu, Wolojita, Nggela), where the honest story is that most coastal production has shifted to chemical dyes and only Nggela still occasionally produces true naturally-dyed cloth -> a scenic, low-effort finish at Koka/Paga. The two headline safety/cultural facts to keep prominent and current are: (1) Kelimutu's standing safety rules apply regardless of alert level (no rim approach at Kawah II, no crater camping), and its current PVMBG status and any gas/temperature signal should be re-checked in the week before the race, not assumed from this file; (2) any checkpoint at Nggela (or Jopu/Wolojita) needs village-council agreement first, per route-concept design rule 5 — this is not yet secured.",
+  "corrections_to_data": [
+    "data/sections.json sec-08-kelimutu-lio's highlight_pois array omits p-paga-beach, even though Paga is named in the section title and story text and in docs/route-concept.md's section-08 row ('Paga/Koka'); recommend adding p-paga-beach to highlight_pois so both beaches of the pair are represented consistently.",
+    "p-kelimutu's hazard_level field (data/pois.geojson) already flags that its PVMBG status (5 Aug 2026, Level I) needs reconfirmation before race week; this session found an additional, date-ambiguous report of rising Crater II lake-water temperature and a mild sulfur odor that reinforces (but does not resolve) that flag — the data owner should re-verify against current MAGMA Indonesia bulletins rather than treat either report as final.",
+    "p-jopu, p-wolojita and p-nggela's summaries/cultural_protocol text emphasize ikat and (for Nggela) natural dyes without qualification; field/secondary sources suggest most present-day production in Jopu and Wolojita is chemically dyed, and even Nggela produces very little true natural-dye cloth today (the multi-year morinda process is mostly demonstrated, not sold at volume) — consider a small wording adjustment so brochure copy doesn't overstate this without over-correcting into cynicism."
+  ],
+  "open_questions": [
+    "Which villages will host cultural checkpoints, under what terms — Nggela in particular (carried from sections.json; unresolved by this session's searches).",
+    "Confirm Paga and Koka's exact coordinates in the field; the two are under 1 km apart in the desk data (carried from sections.json).",
+    "How often does the Wolojita coastal road get cut by landslide after heavy rain, and what is the detour? This session's search found no incident reports or frequency data — likely needs a local/regional-language source or field scouting.",
+    "Kelimutu's lake colours are inherently time-variant; whatever colour combination is stated in brochure copy should be re-checked against recent photos shortly before publication/race week rather than treated as fixed.",
+    "The exact date and current status of the Crater II lake-temperature/sulfur-odor report found this session is unclear from available sources; needs reconfirmation against MAGMA Indonesia before race week given Kelimutu is the one mandatory, crater-adjacent stop of the whole course."
+  ]
+}

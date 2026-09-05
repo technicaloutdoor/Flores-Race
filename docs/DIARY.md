@@ -15,19 +15,20 @@ Rules for keeping it useful:
 
 ---
 
-## 1. State of the project (updated 2026-09-05, session 1)
+## 1. State of the project (updated 2026-09-05, session 2)
 
 | Item | State |
 |---|---|
 | Repository | `technicaloutdoor/Flores-Race`, public. `main` holds only a stub README (created as a PR base; the repo was empty). |
-| Work branch | `claude/flores-bike-race-viz-e53qim`, 17 commits, all CI-green. Draft PR #1 open against `main`. |
+| Work branches | `claude/flores-bike-race-viz-e53qim` (session 1, draft PR #1 against `main`). Session 2 continues on `claude/flores-race-track-brochure-rx3rog`, branched from PR #1's head, with its own draft PR based on the PR #1 branch. |
 | Design docs | `ARCHITECTURE.md`, `docs/data-model.md`, `docs/route-concept.md`, `docs/ai-workflow.md`, `docs/adr/0001…0005`, `docs/scouting-protocol.md`, `docs/deployment.md`, `README.md`, `pipeline/README.md`. |
-| Data (`data/`) | 44 nodes, 78 POIs, 10 sections, 4 route variants, 228 segments (46 hand-sketched concept corridors, 182 network-routed candidates). Validation: 0 errors. Gazetteer cross-check: nodes 37 confirmed / 0 wrong; POIs 53 confirmed / 1 wrong (a known false positive). |
+| Data (`data/`) | 46 nodes (session 2 added `n-gurusina`, `n-sewowoto` for the Inerie circuit), 78 POIs, 10 sections, 5 route variants (session 2 added `r-ultra-plus`), 272 segments (46 sketches, 226 network-routed candidates; session 2 generated 44 for seven new anchor pairs). Validation: 0 errors. Gazetteer cross-check (session 1): nodes 37 confirmed / 0 wrong; POIs 53 confirmed / 1 wrong (a known false positive). |
 | Pipeline (`pipeline/`) | fetch_overture, fetch_dem + dem, fetch_boundaries, fetch_naturalearth, check_terrain_tiles, common, validate, build_network, route_candidates, build_profiles, build_web_data, apply_patch, crosscheck_gazetteer. 178 tests pass. |
 | Web app (`web/`) | Vite + TypeScript + MapLibre, three modes, 103 tests, typecheck and build clean, screenshots of all modes reviewed. |
 | CI | `validate.yml` (PR + push) green on every commit. `deploy.yml` needs GitHub Pages enabled by the owner (Settings → Pages → Source: GitHub Actions); not yet enabled. |
-| Course numbers (network-routed, remote profile, 10 m climbing threshold) | Traverse ≈1,340 km, ≈32,800 m climbing, 59% unpaved, ≈45 km estimated hike-a-bike. Ultra ≈1,390 km, ≈35,900 m. Hand-sketched corridors ≈1,220 km (their climbing figure is meaningless; the app shows n/a). |
-| Not committed (ephemeral) | Raw data caches: SRTM tiles (207 MB), Overture extract (≈90 MB of GeoJSONL), track graph (≈90 MB), screenshots. Recreate with `pipeline/bootstrap_cache.sh` into `.cache/`. |
+| Course numbers (network-routed, remote profile, 10 m climbing threshold; `exports/gpx/manifest.json`) | Traverse 1,331 km, 32,841 m climbing, 59% unpaved, ≈46 km estimated hike-a-bike. Ultra 1,382 km, 35,913 m. Ultra+ (with the Inerie circuit) 1,387 km, 35,768 m. Hand-sketched corridors ≈1,220 km (climbing meaningless; the app shows n/a). |
+| Exports and brochure (session 2) | `exports/gpx/` (main, Ultra, Ultra+, 10 sections, 7 options, manifest, README), `docs/ridewithgps.md`, `docs/brochure/` (PDF + HTML, `img/sat/` 28 Sentinel-2 crops + island mosaic, `img/maps/` and `img/profiles/` rendered by `pipeline/render_brochure_maps.py`, `research/` 13 desk-research files), `pipeline/export_gpx.py`, `pipeline/build_brochure.py`, `pipeline/brochure_content.py`, `pipeline/templates/brochure.html.j2`, `pipeline/html_to_pdf.mjs`. |
+| Not committed (ephemeral) | Raw data caches: SRTM tiles (207 MB), Overture extract (≈90 MB of GeoJSONL), track graph (≈90 MB), lossless map PNGs (`docs/brochure/img/maps/*.png`, ≈4 MB each; only JPEG copies are committed), screenshots. Recreate with `pipeline/bootstrap_cache.sh` into `.cache/` and re-run the map renderer. |
 | Ownership | Owner: rico@technicaloutdoor.com (GitHub `technicaloutdoor`). |
 
 ---
@@ -130,6 +131,42 @@ active; run `pipeline/crosscheck_gazetteer.py` after every curation pass.
 `.claude/workflows/` so that every new session starts with the same knowledge and the same agent
 method. Status: active (created at the owner's request at the end of session 1).
 
+**D-016 · 2026-09-05 · The course is delivered to Ride with GPS as GPX files, not pushed by automation.**
+The documented Ride with GPS API (v1) reads routes and creates trips from files but has no documented
+route-creation endpoint (older clients use an undocumented `POST /routes.json`); the sandbox blocks
+`ridewithgps.com` at the egress proxy and had no browser connector. So `pipeline/export_gpx.py` writes
+importable GPX (main course plain and with POIs, Ultra, Ultra+, one file per section, one per option)
+and `docs/ridewithgps.md` gives the two-minute import (Route planner → Import → Upload File). The maps
+in the brochure are the project's own renders, not planner screenshots, and say so. Alternatives
+rejected: an untested uploader against the undocumented endpoint; e-mail upload (creates activities,
+not routes). Status: active.
+
+**D-017 · 2026-09-05 · Optional tracks are first-class, each exported and compared against what it
+replaces.** `exports/brochure_config.json` lists every option with the segment ids it uses and the
+main-course ids it replaces; the exporter derives both sides' numbers (km, climbing, unpaved share,
+hike-a-bike, weighted remoteness) so the brochure can show honest deltas. Seven options: Manggarai
+Timur interior, Bola coast, Inerie full circuit (new, network-routed via new anchors `n-gurusina` and
+`n-sewowoto`), Wae Rebo out-and-back (+ a generated Denge → Todo leg), Boawae → Nangaroro direct,
+south coast direct Aimere → Nangaroro (new), Lewotobi corridor via Boru (generated, two legs). Two
+computed ideas were recorded but not offered (Kelimutu → Egon ridge link; Riung → Mbay coast road),
+with the reason in the config's `considered_not_offered`. `r-ultra-plus` was added to `routes.json`
+as the Ultra with the Inerie circuit. Status: active.
+
+**D-018 · 2026-09-05 · Illustrations come from open satellite data and the project's own
+cartography.** Every photo host (Wikimedia, Flickr, Unsplash, Pexels) and every tile server is blocked
+from the sandbox; the Sentinel-2 L2A cloud-optimised GeoTIFF bucket on AWS is not. The brochure
+therefore uses least-cloud Sentinel-2 true-colour crops of 28 places (scene chosen per target by the
+cloud fraction of the SCL band inside the box, dry seasons 2025–2026) plus an island mosaic, and maps
+rendered offline from SRTM relief and the Overture extract. Ground photographs are left as a
+shot-list appendix with Commons search terms, sourced from the research files. Status: active; replace
+or complement with real photographs and planner screenshots when a session with network can.
+
+**D-019 · 2026-09-05 · Brochure text is code, numbers are data.** `pipeline/brochure_content.py`
+holds the prose; every kilometre, metre and percentage is injected by `pipeline/build_brochure.py`
+from `exports/gpx/manifest.json`, so the document cannot drift from the data. HTML is printed to PDF
+with the sandbox's Chromium (`pipeline/html_to_pdf.mjs`); fonts are bundled woff2 files from npm
+(Fontsource) because Google Fonts' file host is blocked. Status: active.
+
 ---
 
 ## 4. Environment and tooling knowledge
@@ -158,6 +195,30 @@ Practical lessons:
 * Stop hooks nag about uncommitted files; commit in coherent units, not to silence the hook.
 * A full multi-agent build of this size took ≈3.4 h wall clock and ≈4.1 M agent tokens (20 agents,
   2 concurrent). Budget sessions accordingly.
+
+Session 2 additions:
+
+* **Reachable** in addition to the table: `sentinel-cogs.s3.us-west-2.amazonaws.com` (Sentinel-2 L2A
+  COGs, listable with `?list-type=2`; windowed reads work with rasterio when `GDAL_HTTP_PROXY` is set to
+  `$HTTPS_PROXY` and `GDAL_CURL_CA_BUNDLE`/`CURL_CA_BUNDLE` to the proxy CA bundle), `copernicus-dem-30m`
+  and `esa-worldcover` buckets, `naturalearth.s3.amazonaws.com`, `elevation-tiles-prod` terrarium PNGs,
+  `api.github.com`, `raw.githubusercontent.com`. **Blocked**: `ridewithgps.com`, Wikipedia/Wikimedia,
+  every photo host, every map API, `huggingface.co`, `fonts.gstatic.com` (font files; get woff2 via
+  `npm pack @fontsource/<family>` instead). `WebFetch` obeys the same allowlist.
+* No browser connector was attached to the session even though the owner had a browser side panel open
+  on Ride with GPS; a cloud session cannot see or drive a local browser tab. Say so early.
+* Chromium at `/opt/pw-browsers/chromium` prints A4 PDFs with `@page` margin boxes (page numbers) and
+  named pages working; drive it with the global `playwright` package (`NODE_PATH=/opt/node22/lib/node_modules`).
+  `pymupdf` (pip) renders pages to PNG for visual QA; `pypdf` is broken by the system `cryptography`.
+* The account's usage limit can end a session mid-run and kill every background agent at once (it
+  did, at 06:20 UTC). Background shell jobs (`nohup`) survive; agents do not. Keep agent work
+  resumable (files on disk, manifests) and prefer a few well-scoped agents to a wide fan-out.
+* `WebSearch` budget: 13 research agents at a hard cap of 9 searches each used ≈117 of the ≈200-search
+  session budget; capping per agent in the prompt works.
+* `route_candidates.py` for a new anchor pair: add the nodes, write a scratch `routes.json` with a
+  two-anchor route in the scratchpad, run with `--existing-segments data/segments.geojson --merge
+  --in-place` (no `--write-route`); ≈5 s per pair once the graph is built. The merge re-sorts the
+  feature list by id, so the git diff of `segments.geojson` is large even for 44 added features.
 
 ---
 
@@ -192,6 +253,31 @@ Data gaps: OpenStreetMap knows Flores' roads far better than its footpaths (trac
 of 15,193 km); most computed pairs have 0–25% track/path share. The remoteness layer shows where
 mapped tracks exist; the rest is field work.
 
+Session 2 (desk research, September 2026, sources and confidence labels in `docs/brochure/research/`):
+
+* **Lewotobi Laki-laki**: Level IV at times in 2024–2025 (last ≈7 Sep 2025), Level II / 4 km early
+  2026, Level III / 5 km from 12 May 2026, still Level III / 5 km with lahar warnings in the week of
+  27 Aug–2 Sep 2026; 778 eruptive events in 2026 by 27 Aug. Recorded in `p-lewotobi-laki-laki`.
+* **15 Aug 2026 M7.7 earthquake**, epicentre ≈68 km NNW of Ende: 47+ dead, ≈2,000 evacuated in
+  Nagekeo, 230+ aftershocks, tsunami warning lifted; Badan Geologi reported summit-area landslides on
+  Ebulobo, Kelimutu and Anak Ranakah without volcanic unrest. Recorded in `p-ebulobo`; a standalone
+  hazard entry is still missing.
+* **Iya** Level II / 2 km through June 2026; **Kelimutu** Level I with a June 2026 rise in the middle
+  lake's temperature (28→35 °C); **Egon**, **Ebulobo** Level I in the last public round-ups.
+* **North coast water**: emergency water trucking to Pota, Nangambaur, Golo Lijun, Nangambaling and
+  posts in Sambi Rampas and Borong in August 2026. A road exists Reo → Pota (paved) and Pota → Riung via
+  Buntal, Golo Lijung, Dampek (rough, potholed, landslide-prone); the open question is condition and water.
+* **Corrections applied**: `sec-04` story softened accordingly; `sec-08` highlight_pois gained
+  `p-paga-beach`; `p-seventeen-islands` now says the flying-fox colony is reported on Pulau Ontoloe
+  (older sources: Tembang). **Flagged, not applied**: `p-wolobobo` elevation text vs field (1,700 vs
+  1,468 m); `p-gurusina` story distance to Bajawa stale; `n-bena` may be day-visit only (beds at
+  Tololela/Gurusina); Poco Mandasawu/Ranaka elevations conflict across sources; Lio ikat summaries
+  overstate natural dyeing; Wuring may be mixed Bugis/Bajo; Sikka church builder's name disputed;
+  "Nangaroro/Maukaro" in the concept is a labelling error (Maukaro is a north-coast sub-district).
+* **Missing entries suggested**: Marapokot port (Mbay), Etu ritual boxing (Boawae, June–July), Blidit
+  hot spring, Mata Menge/So'a basin fossil site, Bukit Nilo statue near Lela, Buntal/Golo Lijung/Dampek
+  on the north coast.
+
 ---
 
 ## 6. Route design considerations
@@ -208,6 +294,13 @@ mapped tracks exist; the rest is field work.
   checkpoints; Wae Rebo onward trail; Inerie shoulder; Lewotobi corridor; ridge crossings) stands.
 * Ascent figures will only become trustworthy with ridden GPS tracks; keep the threshold decision
   (D-007) open until then.
+
+* Session 2: the options as routed add far less than the concept hoped (see `docs/route-concept.md`,
+  "Status after the brochure session"). The Inerie full circuit is the one new loop that adds cultural
+  value (Gurusina, the Sewowoto coast) at +5 km with far less estimated hike-a-bike than the shoulder
+  traverse; the south-coast Aimere → Nangaroro line is the one new alternative with real remoteness
+  (index 4) but it removes the whole Nagekeo highland act. A Kelimutu → Egon link and the Riung → Mbay
+  coast road were computed and set aside.
 
 ---
 
@@ -238,6 +331,17 @@ the cache).
 ---
 
 ## 8. Open questions and next steps (priority order)
+
+Session 2 additions (top of the list):
+
+0. **Import the GPX into Ride with GPS** (owner, two minutes per file; `docs/ridewithgps.md`) and
+   decide whether planner screenshots should replace the rendered maps in the brochure.
+0. **Ground photographs** for the brochure from Wikimedia Commons / Flickr CC using the shot-list
+   appendix; needs a session whose network can reach image hosts.
+0. **Apply the flagged data corrections** (above, §5) and add the suggested entries; re-run
+   `pipeline/crosscheck_gazetteer.py`.
+0. **Re-check volcano statuses** (Lewotobi, Iya, Kelimutu, Ebulobo, Egon) and 2026 earthquake damage in
+   Nagekeo before the next planning milestone.
 
 1. **Owner decisions:** make the repository private for the planning phase? Enable GitHub Pages
    (Settings → Pages → Source: GitHub Actions) and merge PR #1.
@@ -279,3 +383,31 @@ all modes at desktop and phone sizes; CI green on every commit.
 
 Left open: see §8. The hourly PR check-in routine created in this session will keep re-checking PR #1
 until it is merged or closed.
+
+### 2026-09-05 · Session 2 · course export and brochure (≈2.5 h, interrupted once by the usage limit)
+
+Asked: connect to Ride with GPS (the owner was logged in, in a local browser) and create the full
+track from `docs/route-concept.md` with adventure, remoteness, views and culture as priorities; then
+an illustrated PDF brochure with track screenshots, photos of the places and a clear explanation of the
+optional tracks; research everything as deeply as possible.
+
+Found first: no browser connector in the session, `ridewithgps.com` and every photo and tile host
+blocked at the egress proxy; the routed course data on the PR #1 branch; Sentinel-2 COGs, SRTM and the
+Overture extract reachable. Told the owner immediately what could and could not be done.
+
+Done, in order: branch fast-forwarded onto PR #1's head → `bootstrap_cache.sh` → two new anchors
+and seven new anchor pairs through `route_candidates.py` (44 candidates, in place, validated) →
+`r-ultra-plus` and `exports/brochure_config.json` → `pipeline/export_gpx.py` (main, Ultra, Ultra+,
+sections, options, manifest, README, profile JSONs) → `docs/ridewithgps.md` → 13 research agents
+(mid tier, 9 searches each; the first workflow attempt died with the usage limit after two topics and
+was re-run as plain agents without the critic stage) → Sentinel-2 crops and mosaic (mid-tier agent,
+resumed after the limit) → offline cartography script and renders (mid-tier agent) → sourced data
+corrections → brochure content, template, builder, PDF → README, route-concept status, this diary.
+
+Verified: `validate.py` 0 errors; `pytest` 171 passed, 7 skipped; every GPX parses; chain continuity
+(no gaps > 300 m); brochure pages inspected as rendered PNGs; no model or vendor names in committed
+files.
+
+Left open: see §8 (import into Ride with GPS, ground photographs, flagged corrections, status
+re-checks). The web app was not rebuilt (`web/public/data` is unchanged); a `build_web_data.py` run
+would pick up the new segments and routes.

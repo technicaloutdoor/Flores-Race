@@ -1,0 +1,239 @@
+{
+  "topic_id": "sec-01",
+  "searches_used": 8,
+  "places": [
+    {
+      "name": "Labuan Bajo",
+      "data_ids": ["n-labuan-bajo", "p-komodo-np-gateway"],
+      "what_it_is": "Race start: the harbour town on Flores' western tip that is the tourist and administrative gateway to Komodo National Park, plus the region's only international-capable airport (Komodo/Labuan Bajo Airport, IATA LBJ).",
+      "why_it_matters": "It is the one place on the whole course every rider and every reader already half-knows -- dragons, dive boats, an airport -- which is exactly why the brochure's first job is to show the course turning its back on it within a few kilometres, into forest the same visitors never see.",
+      "history_culture": "A fishing and trading port that grew fast on Komodo tourism; today a fully geared town (dive shops, ATMs, hospitals, supermarkets) rather than a traditional village, so no cultural protocol applies here -- Komodo National Park itself (dragons, Padar/Rinca islands) is a boat trip out of scope for a bike race and is context only, not on the route.",
+      "facts": [
+        {
+          "fact": "Labuan Bajo is the race start, the region's only airport town (IATA LBJ) and its busiest port (ferries, Komodo tour boats, Pelni), fully geared for tourism.",
+          "source_urls": ["repo:data/nodes.geojson#n-labuan-bajo", "https://www.travelmath.com/airport/LBJ"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Komodo National Park (separate from the bike route) introduced a consolidated 2026 entrance fee reported around IDR 650,000/person for Komodo + Padar Island (IDR 900,000 including Rinca), with a new 1,000-visitor-per-day quota and mandatory pre-booking from April 2026; domestic visitors pay a much lower tiered fee.",
+          "source_urls": ["https://divebooker.com/blog/komodo-national-park-entrance-fee-2026/", "https://www.komodoluxury.com/blog/komodo-national-park-entry-permit-2026/", "https://komodo-travel.com/blog/komodo-2026-changes/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Flores' dry season runs roughly May-September; August and September are the driest months in Labuan Bajo (rainfall in the low tens of mm, only 1-3 rain days/month), with daytime highs around 29 C and calm seas -- consistent with the race's planned dry-season window, though August is also the busiest tourist month in town.",
+          "source_urls": ["https://weather-and-climate.com/labuan-bajo-east-nusa-tenggara-id-August-averages", "https://weather-and-climate.com/labuan-bajo-east-nusa-tenggara-id-September-averages"],
+          "confidence": "likely"
+        }
+      ],
+      "practical": {
+        "access": "Start line at the airport/harbour town; fully paved streets in town.",
+        "altitude_m": "near sea level",
+        "best_time": "dry season, May-September; August-September driest but busiest in town",
+        "fees_protocol": "no fee to be in town; Komodo NP entry (separate boat excursion) not part of the ride",
+        "hazards": "ordinary town traffic only",
+        "sleep": "full range of hotels and guesthouses",
+        "water_resupply": "reliable, full resupply"
+      },
+      "photo_subjects": [
+        "harbour at sunset with liveaboard dive boats",
+        "riders and bikes at a start-line gathering with the bay behind them",
+        "airport arrivals / departures against hills",
+        "waterfront street market"
+      ],
+      "commons_search_terms": ["Labuan Bajo harbour", "Labuan Bajo Flores sunset", "Komodo Airport Labuan Bajo", "Labuan Bajo waterfront"]
+    },
+    {
+      "name": "Mbeliling forest",
+      "data_ids": ["p-mbeliling-forest"],
+      "what_it_is": "A roughly 15,000 ha (landscape estimates run larger, ~94,000 ha across five sub-districts) forest reserve and Important Bird Area west of Ruteng, the highest ground in West Manggarai at about 1,275 m.",
+      "why_it_matters": "This is the section's real subject: within the first 40-60 km the race leaves a tourist harbour and climbs into one of the last strongholds of four birds found nowhere else on Earth -- the honest, unglamorous version of 'remote' that the brochure can back up with a conservation NGO's own numbers.",
+      "history_culture": "Long the focus of BirdLife/Burung Indonesia conservation work; a birding ecolodge (Mbeliling Mountain Ecolodge) operates in the landscape and hosts visitors specifically to see the four Flores endemics near Puarlolo, close to Labuan Bajo.",
+      "facts": [
+        {
+          "fact": "Mbeliling forest reserve covers roughly 15,000 ha (BirdLife/Burung Indonesia gives a wider Mbeliling landscape figure of ~94,000 ha across five sub-districts), reaching about 1,275 m -- the highest ground in West Manggarai.",
+          "source_urls": ["repo:data/pois.geojson#p-mbeliling-forest", "https://burung.org/en/program/flores-program/", "https://www.gunungbagging.com/mbeliling/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The reserve holds all four Flores-endemic forest birds: the Flores hanging parrot (Wallace's hanging parrot, IUCN Endangered, population estimated 2,500-10,000), the Flores monarch, the Flores crow, and the Flores (scops) owl -- none found anywhere else on Earth.",
+          "source_urls": ["https://burung.org/en/program/flores-program/", "https://en.wikipedia.org/wiki/Flores_crow", "https://en.wikipedia.org/wiki/Wallace%27s_hanging_parrot"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A birding ecolodge (Mbeliling Mountain Ecolodge) operates in the area, and Puarlolo near Labuan Bajo is cited as a recognised access point for observing all four endemics.",
+          "source_urls": ["https://ecolodgesindonesia.com/mbeliling-mountain-ecolodge-the-place-to-be-during-lockdown/"],
+          "confidence": "unverified"
+        }
+      ],
+      "practical": {
+        "access": "farm-track and forest-trail network; the course prefers these over the paved Trans-Flores highway that also skirts the reserve",
+        "altitude_m": "up to ~1,275 m",
+        "best_time": "dry season for track condition; early morning for bird activity",
+        "fees_protocol": "no formal transit fee identified for the forest track itself (separate from paid waterfall sites within it)",
+        "hazards": "track not yet scouted; open question whether it is rideable end-to-end or needs dismounts near the two waterfalls",
+        "sleep": "one known ecolodge in the landscape; otherwise none on the track itself",
+        "water_resupply": "not scouted / unreliable"
+      },
+      "photo_subjects": [
+        "farm track cutting through cleared plots at the forest edge with the ridge behind",
+        "dense hill-forest canopy seen from a high point, mist in the valleys",
+        "a hanging parrot, monarch, crow or owl in the canopy",
+        "birders with scopes at dawn"
+      ],
+      "commons_search_terms": ["Mbeliling", "Gunung Mbeliling", "Wallace's hanging parrot", "Flores monarch bird", "Flores crow Corvus florensis"]
+    },
+    {
+      "name": "Cunca Wulang canyon",
+      "data_ids": ["p-cunca-wulang"],
+      "what_it_is": "A river canyon and waterfall (the \"moon waterfall\") near Wersawe/Wersawa village in the Mbeliling area, about 30 km east of Labuan Bajo, with deep swimming pools and cliff-jumping spots.",
+      "why_it_matters": "The first genuinely spectacular stop of the race, and an easy one -- no hike-a-bike -- so it works as an early, photogenic proof that the small-track design rule pays off immediately.",
+      "history_culture": "A popular informal swimming/cliff-jumping site for independent travellers and tour groups out of Labuan Bajo; run informally by the local village rather than a licensed canyoning operator.",
+      "facts": [
+        {
+          "fact": "Cunca Wulang sits about 30 km east of Labuan Bajo; reaching the waterfall is roughly a 4 km approach to Wersawe/Wersawa village followed by a ~45-minute hike, easy through rice fields and plantations before a steeper descent into rainforest at the canyon itself.",
+          "source_urls": ["https://www.roamindonesia.com/flores/flores-attractions/cunca-wulang-waterfall-and-canyon/", "https://eastcruisekomodo.co.id/cunca-wulang-waterfall-guide/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "A local village-collected entrance fee applies, commonly cited around IDR 30,000-100,000 per person depending on whether a guide or tour agency is used; as of the most recent reporting no professional canyoning operator has taken up the site, so cliff-jumping and swimming are informal.",
+          "source_urls": ["https://www.roamindonesia.com/flores/flores-attractions/cunca-wulang-waterfall-and-canyon/", "https://idetrips.com/cunca-wulang-waterfall/"],
+          "confidence": "likely"
+        }
+      ],
+      "practical": {
+        "access": "trail, no hike-a-bike required per course data",
+        "altitude_m": "~200 m",
+        "best_time": "dry season, for safer water levels",
+        "fees_protocol": "village-collected fee, roughly IDR 30,000-100,000 pp depending on guide",
+        "hazards": "river current and cliff-jumping pools; informal site, no lifeguard",
+        "sleep": "day visit only",
+        "water_resupply": "not a resupply point"
+      },
+      "photo_subjects": [
+        "turquoise canyon pool between sheer rock walls",
+        "a cliff jump into the pool",
+        "the approach trail through rice terraces",
+        "narrow river gorge with cascading water"
+      ],
+      "commons_search_terms": ["Cunca Wulang", "Cunca Wulang waterfall", "Cunca Wulang canyon Flores"]
+    },
+    {
+      "name": "Cunca Rami waterfall",
+      "data_ids": ["p-cunca-rami"],
+      "what_it_is": "A roughly 30 m waterfall deep inside the Mbeliling forest reserve near Wae Lolos village, reached by a steep forest trail.",
+      "why_it_matters": "The section's honest hike-a-bike test: a real jungle waterfall rather than a roadside attraction, and -- per the course's own desk data -- a place whose exact position is still unresolved, which is the point of opening a scouting season here rather than closing one.",
+      "history_culture": "Sits on the Trans-Flores highway corridor near the Roe/Wae Lolos junction; visited mostly as a guided day trip out of Labuan Bajo, often paired with Sano Nggoang lake.",
+      "facts": [
+        {
+          "fact": "Cunca Rami is reached from Wae Lolos village off the Trans-Flores highway corridor (about 30 km / 60-90 minutes' drive from Labuan Bajo), via a trail through the Mbeliling forest described as a steep, roughly 45-minute-to-1-hour downhill walk to the falls.",
+          "source_urls": ["https://www.getlostsafely.com/en/cunca-rami-waterfall/", "https://www.alltrails.com/trail/indonesia/east-nusa-tenggara/air-terjun-cunca-rami"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The course's own desk data flags Cunca Rami's position as approximate: local sources put its elevation around 1,200 m but the DEM sample at that fix reads roughly 800 m, so the location needs a field GPS fix before scouting.",
+          "source_urls": ["repo:data/pois.geojson#p-cunca-rami", "repo:data/sections.json#sec-01-komodo-mbeliling"],
+          "confidence": "verified"
+        }
+      ],
+      "practical": {
+        "access": "forest trail from Wae Lolos, hike-a-bike per course data (access: trail, hike_a_bike: true)",
+        "altitude_m": "disputed -- ~1,200 m per local sources vs ~800 m by DEM at the current desk fix; needs field GPS",
+        "best_time": "dry season",
+        "fees_protocol": "village-level trail access, guide customary",
+        "hazards": "steep, uneven jungle descent",
+        "sleep": "none on site",
+        "water_resupply": "not a resupply point"
+      },
+      "photo_subjects": [
+        "waterfall dropping into a forest pool between rock walls",
+        "the steep descending jungle trail",
+        "riders carrying bikes on the forest trail (hike-a-bike)"
+      ],
+      "commons_search_terms": ["Cunca Rami waterfall", "Air Terjun Cunca Rami", "Cunca Rami Flores"]
+    },
+    {
+      "name": "Sano Nggoang crater lake and Wai Sano volcano",
+      "data_ids": ["n-sano-nggoang", "p-sano-nggoang", "p-wai-sano-volcano"],
+      "what_it_is": "An elliptical caldera lake at the western end of Flores -- by several tourism and geoscience sources the largest crater lake in East Nusa Tenggara and among the deepest volcanic lakes on Earth -- with active solfataras and hot springs on its south-east shore, held in the Wai Sano volcanic complex.",
+      "why_it_matters": "The section's payoff view: after a forest climb and two waterfalls, the road tips over into a huge, still, steaming caldera that most Komodo-focused visitors never see -- the first proof for riders that Flores is, as the course concept puts it, 'a chain of volcanoes wearing a coastline.' It is also, honestly, a live land-rights flashpoint the race should be aware of and stay well clear of taking a side in.",
+      "history_culture": "The lake gives its name to Wae Sano village (about 285 households) on its shore, which has been the centre of a contested geothermal exploration project since Flores was designated a national 'geothermal island' priority area; international financiers have twice pulled back citing failures of free, prior and informed consent with the Indigenous Manggarai community, while local government has said it will seek alternative funding to continue.",
+      "facts": [
+        {
+          "fact": "Sano Nggoang is described as the largest volcanic/crater lake in East Nusa Tenggara (area estimates around 5,500 ha), sitting at roughly 750 m elevation with a floor reported up to about 500-600 m below the surface -- among the deepest volcanic lakes in the world if that figure holds; two solfataras and hot springs (hottest recorded water around 81 C) sit on its south-east shore, fed by the still-active Wai Sano volcanic system.",
+          "source_urls": ["repo:data/pois.geojson#p-sano-nggoang", "https://www.mongabay.co.id/2022/03/06/sano-nggoang-danau-kawah-terdalam-di-dunia/", "https://www.indonesia-tourism.com/east-nusa-tenggara/sano_nggoang.html", "https://ejurnal.itats.ac.id/jemt/article/view/1189/0"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The Global Volcanism Program lists no confirmed Holocene eruption for Wai Sano and it does not appear on a routinely published PVMBG alert-level list (checked 2026); Wai Sano's summit is given as about 903 m.",
+          "source_urls": ["repo:data/pois.geojson#p-wai-sano-volcano", "https://volcano.si.edu/volcano.cfm?vn=264060"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Wae Sano village on the lakeshore (about 285 households, some 36 km from Labuan Bajo) has been the site of a contested geothermal exploration project since Indonesia designated Flores a 'Geothermal Island'; the World Bank withdrew funding for exploratory drilling there in December 2023 and KfW acknowledged in November 2024 that free-prior-informed-consent standards had not been sufficiently respected, recommending suspension -- reporting through 2026 finds the project still suspended amid sustained Indigenous Manggarai resistance, though the West Manggarai regency government has said it will pursue alternative funding to continue it.",
+          "source_urls": ["https://news.mongabay.com/2026/01/flores-geothermal-ambitions-collide-with-justice-culture-local-resistance/", "https://news.mongabay.com/short-article/2026/04/indonesian-geothermal-projects-stall-amid-indigenous-concerns-over-justice/", "https://th.boell.org/en/2026/06/30/geothermal-island"],
+          "confidence": "verified"
+        }
+      ],
+      "practical": {
+        "access": "rough road around the lakeshore; anchor placed on the shoreline",
+        "altitude_m": "~750 m (lake surface); Wai Sano volcano summit ~903 m",
+        "best_time": "dry season for road/track condition",
+        "fees_protocol": "no park entrance fee identified; be aware of, but do not engage with, the live geothermal land-rights dispute centred on the host village",
+        "hazards": "no confirmed Holocene eruption / no routine PVMBG alert found for Wai Sano; solfataras and hot springs on the south-east shore are active geothermal features to respect rather than casual bathing spots",
+        "sleep": "small homestays for lake visitors exist but capacity for race-week volume is unconfirmed",
+        "water_resupply": "unreliable; basic kiosks only"
+      },
+      "photo_subjects": [
+        "the whole elliptical lake from a high rim viewpoint at dawn",
+        "steam rising off a solfatara on the south-east shore",
+        "a canoe or fisherman on the still water",
+        "forested caldera rim silhouette"
+      ],
+      "commons_search_terms": ["Sano Nggoang", "Danau Sano Nggoang", "Wae Sano lake Flores", "Sano Nggoang crater lake"]
+    },
+    {
+      "name": "Werang",
+      "data_ids": ["n-werang"],
+      "what_it_is": "The kecamatan (sub-district) capital of Sano Nggoang, about 8 km north of the lake -- a parish church (Santo Klaus), a boarding school, a police post and camat office, and the section's first real resupply after Labuan Bajo.",
+      "why_it_matters": "The modest, working end of the section: not a tourist stop but a functioning highland parish town, which is exactly the kind of honest resupply the brochure should show rather than dress up.",
+      "history_culture": "Home to the Catholic parish of Santo Klaus (Gereja Paroki Santo Klaus, Werang) under the Diocese of Labuan Bajo, and the St. Klaus Catholic boarding school (SMPK/SMAK St. Klaus), established 2003, whose students board on site; local reporting in 2025 described the parish hosting a visiting bishop with schoolgirls of different faiths taking part, cited locally as a small portrait of religious tolerance in the district.",
+      "facts": [
+        {
+          "fact": "Werang is the capital of Sano Nggoang kecamatan: parish church (Santo Klaus), police post, camat office and schools -- the practical resupply stop after the lake, about 8 km north of the Sano Nggoang shoreline anchor.",
+          "source_urls": ["repo:data/nodes.geojson#n-werang", "https://id.wikipedia.org/wiki/Gereja_Santo_Klaus,_Werang"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The St. Klaus Catholic boarding school in Werang (established 2003) runs an annex guesthouse that serves as the village's homestay/lodging option for visitors.",
+          "source_urls": ["https://www.facebook.com/SMAK.St.KLAUS.WERANG/", "https://www.semuabis.com/gereja-paroki-st-klaus-werang-0852-3718-5053"],
+          "confidence": "unverified"
+        }
+      ],
+      "practical": {
+        "access": "road, 8 km north of the Sano Nggoang lakeshore anchor",
+        "altitude_m": "not in repo data (highland village near a 750 m lake)",
+        "best_time": "dry season",
+        "fees_protocol": "no fee; courteous sign-in at the camat/police post is prudent practice, not a mandated cultural checkpoint (unlike the Wae Rebo-type checkpoints later on the course)",
+        "hazards": "none specific noted",
+        "sleep": "homestay / St. Klaus boarding-school guesthouse annex",
+        "water_resupply": "unreliable; basic resupply (kiosks, church, police post, schools)"
+      },
+      "photo_subjects": [
+        "the parish church spire against highland hills",
+        "the boarding-school compound and schoolchildren",
+        "a roadside kiosk/warung",
+        "the farm track approach into the village"
+      ],
+      "commons_search_terms": ["Werang Flores", "Gereja Santo Klaus Werang", "Sano Nggoang Manggarai Barat"]
+    }
+  ],
+  "narrative_notes": "Section 1 is a controlled descent from cliche into the real course: Labuan Bajo gives the brochure its one instantly recognisable image (harbour, dragons, dive boats) and then the route turns inland within a few kilometres, onto farm track, and climbs through the Mbeliling forest -- a modest-sounding reserve that happens to hold all four birds found only on Flores. Two waterfalls give it contrasting textures: Cunca Wulang is an easy, swimmable canyon reachable without a dismount; Cunca Rami is a genuine forest hike-a-bike whose exact position the desk data itself admits is unresolved. The section's real climax is Sano Nggoang, a huge, quiet caldera lake that is visually the payoff of the whole opening day -- but also, honestly, the site of a live and well-documented Indigenous land-rights dispute over a geothermal project (World Bank and KfW both pulled back over consent failures); the brochure can name this as texture and remoteness-with-consequences without editorialising or treating it as a race checkpoint. The section ends unglamorously and correctly at Werang, a working parish town, not a resort. Overall this section carries the course's lowest scouting confidence of the ones checked here: several node positions are still flagged unverified, and homestay capacity at the lake for race-week volume is an open commercial question, not just a romantic one.",
+  "open_questions": [
+    "Is the Mbeliling forest track rideable end-to-end, or does it require dismounts near Cunca Wulang/Cunca Rami? (carried from sections.json; unresolved by web search, needs field scouting.)",
+    "Cunca Rami's desk position and DEM elevation disagree by roughly 400 m; needs a field GPS fix. (carried from sections.json.)",
+    "Homestay capacity at Sano Nggoang for race-week volume is unconfirmed; the only lodging found in search was the general 'homestays exist for lake visitors' claim, no operator or bed count. (carried from sections.json.)",
+    "The Wae Sano geothermal dispute is active and reported into 2026 with no clear resolution; organizers should track its status close to race week in case it affects goodwill, access or road use around the lake -- this is a new finding from web search, not just a data-quality question.",
+    "sections.json's own open question describes the Sano Nggoang to Werang leg as '~1.5 km between two very close nodes', but the straight-line distance between the current n-sano-nggoang and n-werang coordinates computes to about 7.2 km, and the routed segment s-sano-nggoang-werang-b is 22.43 km -- the '1.5 km' figure looks like it was mixed up with the longitude-only difference (0.013 deg ~ 1.46 km) and is worth a second look by whoever set that target-km note, independent of any web source."
+  ],
+  "corrections_to_data": []
+}

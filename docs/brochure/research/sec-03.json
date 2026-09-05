@@ -1,0 +1,239 @@
+{
+  "topic_id": "sec-03",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Iteng / Satar Mese south coast",
+      "data_ids": ["n-iteng", "p-satar-mese-coast"],
+      "what_it_is": "The section's start line: a quiet south-coast village that is the seat of Satar Mese district, sitting at the bottom of the ~1,100 m climb up to Ruteng.",
+      "why_it_matters": "It is the hinge between the Wae Rebo/Todo corridor and the highland climb -- the last low, warm, coastal air riders feel before the course commits to altitude. There is little tourist infrastructure here, which is itself the point: this is a working-village stretch, not a sight, and it sets up the contrast with cool, orderly Ruteng an hour or two later.",
+      "history_culture": "Iteng is the administrative centre of Satar Mese district, Manggarai Regency (2023 population ~1,235). No specific cultural-checkpoint protocol is recorded for the village itself; it functions as a through-point, not a destination.",
+      "practical": {
+        "altitude_m": "near sea level at the coast, climbing to ~1,100 m gained en route to Ruteng",
+        "access": "road; paved/unpaved mix typical of Manggarai secondary roads, unverified for this specific stretch",
+        "fees_protocol": "none known; ordinary village courtesy",
+        "sleep": "no homestay confirmed at Iteng itself; nearest reliable beds are in Ruteng after the climb",
+        "water_resupply": "small village warungs only; not a resupply point of note -- carry water before the climb",
+        "best_time": "dry season (roughly May-October) for reliable road surfaces on the climb",
+        "hazards": "long, sustained climb (~1,100 m) from the coast to Ruteng; heat at the coastal start, cold at the top"
+      },
+      "facts": [
+        {
+          "fact": "Iteng is the seat of Satar Mese district, Manggarai Regency, on the south coast of the regency; 2023 population about 1,235 (611 male, 624 female), village area 1.63 km^2.",
+          "source_urls": ["https://id.wikipedia.org/wiki/Iteng,_Satar_Mese,_Manggarai"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The course climbs roughly 1,100 m from Iteng to Ruteng.",
+          "source_urls": ["repo:data/sections.json#sec-03-manggarai-highlands"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["rice paddies and coastline near Iteng at dawn", "the road switchbacking up out of the coastal plain toward the highlands", "everyday village life -- market stalls, motorbikes, church"],
+      "commons_search_terms": ["Satar Mese Manggarai", "Iteng Flores", "Manggarai south coast rice terraces"]
+    },
+    {
+      "name": "Ruteng (highland capital: cathedral, market, Golo Curu)",
+      "data_ids": ["n-ruteng", "p-ruteng-cathedral", "p-ruteng-market", "p-golo-curu"],
+      "what_it_is": "The Manggarai highland capital at roughly 1,200 m: a compact, cool, walkable Catholic hill town with the best full resupply of the whole west region -- market, hospital, banks, many hotels -- overlooked by the Golo Curu viewpoint hill and centred on a large cathedral.",
+      "why_it_matters": "Ruteng is the psychological and logistical reset point of the highland section: after the coastal climb, riders get cold air, real food, a bed, and a wide panorama over red rooftops and rice terraces from Golo Curu before the course turns toward the volcanic massif and Cancar. Its Catholic character -- the most visibly religious town on the most Catholic island of Indonesia's most Catholic province -- is a cultural contrast worth telling in the brochure against the animist/customary-law villages (Wae Rebo, Todo) just behind the riders.",
+      "history_culture": "The Diocese of Ruteng's cathedral, Santa Maria Assumpta and Santo Yosef, was consecrated in 2002 and seats 2,500; its parish network reaches across the whole Manggarai highlands. Golo Curu hill (Karot, Langke Rembong) carries a Marian grotto (Gua Maria Golo Curu) and functions as both a pilgrimage site and the town's recreational viewpoint -- the name is said to derive from 'golo' (hill/village) and 'Curu' (a tribe once resident there).",
+      "practical": {
+        "altitude_m": 1200,
+        "access": "road; Ruteng sits directly on the Trans-Flores highway, the island's main paved road",
+        "fees_protocol": "none for the town itself; Golo Curu and the cathedral are open public/religious sites",
+        "sleep": "many hotels and homestays -- Chacha Homestay, Sun Rice Homestay, D-Rima Homestay, Mama's Homestay, Hobbit Hill Homestay (on the road out toward Liang Bua), among others",
+        "water_resupply": "full resupply: central market (Pasar Inpres Ruteng), shops, pharmacies, bottled water widely available",
+        "best_time": "year-round livable given altitude/climate (16-24C), but dry season (roughly May-September/October) gives the most reliable onward road conditions",
+        "hazards": "none specific to the town; cold nights relative to the coast (pack for it)"
+      },
+      "facts": [
+        {
+          "fact": "Ruteng sits at roughly 1,200 m elevation with a notably cool climate (about 16-24C) compared to the coast.",
+          "source_urls": ["https://www.kupi.com/en-ae/explore/indonesia/ruteng", "https://www.tiket.com/en-us/hotel/indonesia/city/manggarai-108001534490356081"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Ruteng Cathedral (Santa Maria Assumpta and Santo Yosef) was consecrated in 2002 and seats 2,500 people.",
+          "source_urls": ["repo:data/pois.geojson#p-ruteng-cathedral", "https://id.wikipedia.org/wiki/Katedral_Ruteng", "https://gcatholic.org/churches/asia/3536"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Golo Curu is a hilltop park/viewpoint just outside the town centre with a Marian grotto and panoramic views over Ruteng's rooftops and surrounding rice terraces.",
+          "source_urls": ["repo:data/pois.geojson#p-golo-curu", "https://www.springhillruteng.com/nearby/golo-curu", "https://www.hipwee.com/narasi/mari-ke-golo-curu-bukit-ziarah-bukan-bukit-cinta/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Ruteng's central market (Pasar Inpres Ruteng) is the best full resupply point of the whole west region of Flores for the race.",
+          "source_urls": ["repo:data/pois.geojson#p-ruteng-market", "repo:data/sections.json#sec-03-manggarai-highlands"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["Golo Curu grotto with Ruteng and rice terraces below at golden hour", "Ruteng Cathedral facade and plaza", "the morning market -- produce stalls, colour, activity", "cool-highland light contrasted with the hot coast just descended"],
+      "commons_search_terms": ["Ruteng Flores", "Golo Curu", "Katedral Ruteng", "Pasar Ruteng", "Ruteng cathedral Flores"]
+    },
+    {
+      "name": "Cancar spider-web rice fields (Lingko Cara)",
+      "data_ids": ["p-cancar-lingko"],
+      "what_it_is": "A hillside viewpoint near Cancar village, a short detour west of Ruteng, over a communal rice-field system (lingko) whose concentric, pie-sliced plots resolve from above into a spider's web -- one of Flores's most photographed sights and, per the route concept, one of the few highlights on the entire course reachable with no hike-a-bike at all.",
+      "why_it_matters": "It is pure visual payoff for almost no effort: a short paved/gravel side trip and a brief walk up a viewing hill deliver the single most recognisable aerial-style image of Manggarai farming culture. It also carries a real cultural story -- the lodok land-allocation system -- so it earns its place as more than a drone shot; it is a live working landscape, not a preserved diorama.",
+      "history_culture": "Lingko is the traditional Manggarai communal land system: a field is divided outward from a single centre point, the lodok, into wedge-shaped plots whose width reflects each family's standing in the community rather than a fence line or survey. Ceremonies and ritual offerings historically took place at the lodok during planting and harvest.",
+      "practical": {
+        "altitude_m": "unspecified in data; highland terrain similar to Ruteng (~1,000-1,200 m range)",
+        "access": "road to the base, then a short walk (roughly 10 minutes) up a viewing hill beside a telecoms tower",
+        "fees_protocol": "small entrance fee reported in the range of Rp 15,000-30,000 per person, supporting the local community; no special cultural protocol beyond normal courtesy",
+        "sleep": "day-trip only from Ruteng; no lodging noted at Cancar itself",
+        "water_resupply": "none of note at the site; resupply in Ruteng before or after",
+        "best_time": "harvest/planting season (reports point to around April-May) gives the most photogenic paddies; otherwise any dry-season day for a clear view",
+        "hazards": "none specific; short walk on a hillside path"
+      },
+      "facts": [
+        {
+          "fact": "Cancar's spider-web rice fields (lingko) are viewed from a hill beside a telecoms tower a short distance from Cancar village on the Ruteng-Bajawa corridor; reported distances from Ruteng vary by source (repo data: ~17 km; some tour operators cite ~25 km) -- worth confirming on the ground.",
+          "source_urls": ["repo:data/pois.geojson#p-cancar-lingko", "https://discoverykomodoadventure.com/cancar-spider-web-rice-fields/", "https://flightstokomodo.com/spider-web-rice-fields-tour/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The lingko system divides a communal field from a central point (the lodok) into wedge-shaped plots whose size reflects each family's standing in the community; ceremonies were historically held at the lodok at planting and harvest.",
+          "source_urls": ["repo:data/pois.geojson#p-cancar-lingko", "https://www.atlasobscura.com/places/spider-web-rice-fields", "https://www.tourfloreskomodo.com/lingko-spider-web-rice-fields-exploring/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A small entrance fee applies, reported in the range of roughly Rp 15,000-30,000 per person (sources vary), reached by about a 10-minute walk from the road to the viewing hill.",
+          "source_urls": ["https://forevervacation.com/komodo/spider-rice-fields", "https://www.tripadvisor.com/Attraction_Review-g677681-d3675759-Reviews-Lingko_Spider_Web_Rice_Fields_Walking_Tours-Ruteng_Flores_East_Nusa_Tenggara.html"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["aerial/high-angle shot of the full spider-web pattern from the viewing hill", "close-up of a lodok centre point and radiating paddy edges", "farmers working the fields at ground level for scale/contrast with the aerial pattern"],
+      "commons_search_terms": ["Cancar rice field", "Lingko Cara", "spider web rice field Flores", "lingko Manggarai"]
+    },
+    {
+      "name": "Poco Mandasawu and Poco Ranaka massif",
+      "data_ids": ["p-poco-mandasawu", "p-poco-ranaka"],
+      "what_it_is": "The volcanic roof of Flores south-east of Ruteng: Poco Mandasawu, the island's highest point, paired with Poco Ranaka and its 1987 lava dome Anak Ranakah -- the wall of high ground the course has to skirt on the way to Ranamese.",
+      "why_it_matters": "This is the honest hike-a-bike terrain the whole race concept is built around: a genuine high-altitude volcanic massif with no confirmed historical eruption on Mandasawu itself, largely absent from the tourist brochures that fixate on Kelimutu and Inerie further east. For a brochure selling remoteness and earned views, this is the section's clearest claim to real mountain adventure rather than a roadside sight.",
+      "history_culture": "Both peaks are part of the wider Ranakah volcanic complex. Anak Ranakah, the 1987 lava dome on Poco Ranaka, last showed a diffuse steam plume in 2011; no PVMBG alert-level elevation is on record since. An oft-cited 'March 1991 eruption' date traces to a single non-primary source and could not be corroborated against the Smithsonian's Global Volcanism Program in this pass (GVP's indexed reports for Ranakah found in this search were from 1988 and 2024, not 1991) -- treat that date as unconfirmed, consistent with the caveat already recorded in the repo.",
+      "practical": {
+        "altitude_m": "Poco Mandasawu 2,370 m (repo, Wikipedia-sourced); Poco Ranaka 2,350 m (repo) -- note some tourism/park sources give different figures for both peaks (see corrections)",
+        "access": "trail; hike-a-bike terrain, not rideable",
+        "fees_protocol": "likely a Ruteng Nature Recreation Park entry arrangement for trail access; not separately confirmed this pass",
+        "sleep": "none on the massif; base from Ruteng or a Ranamese-area stop",
+        "water_resupply": "none on the massif; carry in from Ruteng or Ranamese",
+        "best_time": "dry season for trail conditions and views; cold at altitude year-round",
+        "hazards": "altitude, exposed trail, weather-dependent visibility; no active-eruption hazard currently on record for either peak, but treat the 1991 date and current unrest status as unconfirmed until checked directly against volcano.si.edu"
+      },
+      "facts": [
+        {
+          "fact": "Poco Mandasawu (2,370 m) is the highest point on Flores; a lava dome of the Ranakah volcanic complex with no confirmed eruption in the historical record.",
+          "source_urls": ["repo:data/pois.geojson#p-poco-mandasawu", "https://en.wikipedia.org/wiki/Poco_Mandasawu"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Poco Ranaka (repo: 2,350 m) carries the 1987 lava dome Anak Ranakah, with a diffuse steam plume reported in 2011 and no raised PVMBG alert level on record since.",
+          "source_urls": ["repo:data/pois.geojson#p-poco-ranaka", "https://www.volcanodiscovery.com/ranakah.html"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Independent tourism/park sources give conflicting elevations for this massif: one Ruteng Nature Recreation Park source lists Poco Mandasawu at 2,400 m and Poco Ranaka (Ranakah) at 2,140 m; a hiking-trip-report source (gunungbagging.com) puts the summit trail to Poco Ranaka ending at 2,286 m. These do not match the repo's 2,370 m / 2,350 m figures and were not reconciled this pass.",
+          "source_urls": ["https://ayoketamannasional.kehutanan.go.id/en/list-destinasi/taman-wisata-alam-ruteng", "https://www.gunungbagging.com/poco-ranakah/", "https://en.wikipedia.org/wiki/Ranakah"],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "A search of the Smithsonian Global Volcanism Program's indexed reports for Ranakah in this pass surfaced entries from August 1988 and November-December 2024, not a 1991 report -- this does not confirm or refute the commonly cited 'March 1991' eruption date, it simply did not appear in the results retrieved.",
+          "source_urls": ["https://volcano.si.edu/showreport.cfm?doi=10.5479%2Fsi.GVP.SEAN198808-264071", "https://volcano.si.edu/showreport.cfm?wvar=GVP.WVAR20241127-264071"],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": ["the massif skyline from the Ruteng-Ranamese road", "hike-a-bike riders on an exposed volcanic trail with cloud below", "Anak Ranakah's dome shape against the older Ranakah edifice"],
+      "commons_search_terms": ["Poco Mandasawu", "Ranakah volcano", "Poco Ranaka Flores", "Gunung Ranaka"]
+    },
+    {
+      "name": "Ranamese lake, Cunca Rede waterfall and the Ruteng Nature Recreation Park",
+      "data_ids": ["n-ranamese", "p-ranamese-lake", "p-cunca-rede"],
+      "what_it_is": "A small, deep crater lake at 1,220 m with a warung at the car park -- the highest, coldest rest stop on the whole course -- sitting inside the large Ruteng Nature Recreation Park (Taman Wisata Alam Ruteng) alongside the Cunca Rede waterfall, between the Poco Mandasawu/Poco Ranaka massif and the descent to Liang Bua.",
+      "why_it_matters": "Ranamese is the concentrated 'earned view' payoff of the highland section: cold air, still water, dense rainforest, and a hot meal at altitude after the hike-a-bike terrain around it -- a genuine wilderness rest stop rather than a roadside attraction, with a short walk to a waterfall as a bonus for anyone with time in hand.",
+      "history_culture": "The lake and waterfall sit inside one of the largest Nature Recreation Parks (TWA) in Indonesia, reported at roughly 32,246 ha, encompassing seven peaks including Poco Mandasawu and Poco Ranaka. The park supports trekking, birdwatching and waterfall visits as marked activities.",
+      "practical": {
+        "altitude_m": 1220,
+        "access": "road to the car park at Ranamese; a maintained trail leads to Cunca Rede waterfall nearby",
+        "fees_protocol": "a national-park-style entry ticket is plausible given TWA status; not separately confirmed this pass",
+        "sleep": "day-stop only; no lodging at the lake itself",
+        "water_resupply": "a warung at the Ranamese car park -- the only resupply between Ruteng and Liang Bua on this stretch",
+        "best_time": "dry season for trail conditions; expect cold temperatures at altitude year-round",
+        "hazards": "cold/wet conditions at altitude, forest trail underfoot to the waterfall"
+      },
+      "facts": [
+        {
+          "fact": "Ranamese lake is a small (~5 ha), 21 m deep crater lake at 1,220 m in the Ruteng Nature Recreation Park, about 16 km from Ruteng, with a warung at the car park.",
+          "source_urls": ["repo:data/pois.geojson#p-ranamese-lake", "https://www.asiatours.com/experiences/admire-the-beautiful-ranamese-lake-in-flores-island-indonesia.html", "https://floresexotictours.id/things-to-do/ranamese-lake-east-manggarai-regency"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The Ruteng Nature Recreation Park covers roughly 32,245.6 ha and encompasses seven peaks including Poco Mandasawu and Poco Ranaka; marked activities include trekking, waterfall views and birdwatching.",
+          "source_urls": ["https://ayoketamannasional.kehutanan.go.id/en/list-destinasi/taman-wisata-alam-ruteng", "https://www.tripadvisor.com/Attraction_Review-g677681-d3676062-Reviews-Ranamese_Lake_Walking_Tour-Ruteng_Flores_East_Nusa_Tenggara.html"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Cunca Rede is a waterfall in the same park near Golo Lusang and Ranamese lake, about 16 km from Ruteng on the road toward Manggarai Timur, reached on a trail rather than by road.",
+          "source_urls": ["repo:data/pois.geojson#p-cunca-rede", "https://pariwisata.manggaraikab.go.id/golo-lusang/"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["still water of Ranamese lake with rainforest reflection, early morning mist", "the warung at the car park -- the highest rest stop on the course", "Cunca Rede falls dropping through dense forest"],
+      "commons_search_terms": ["Ranamese lake", "Danau Ranamese", "Cunca Rede waterfall", "Taman Wisata Alam Ruteng", "Golo Lusang"]
+    },
+    {
+      "name": "Liang Bua cave",
+      "data_ids": ["n-liang-bua", "p-liang-bua"],
+      "what_it_is": "A single, wide limestone chamber north-west of Ruteng where a joint Indonesian-Australian team discovered the remains of Homo floresiensis (\"the hobbit\") in 2003 -- the deep-time checkpoint of the whole race, still used by the local Manggarai community for ceremonies.",
+      "why_it_matters": "It reframes the entire traverse: Liang Bua is not a scenic stop but an argument about how old this island's human story really is -- tens of thousands of years before Wae Rebo, before the Manggarai kingdom, before anyone now living. For a brochure built on cultural depth alongside adventure, it is the single strongest 'this is real, this matters globally' fact on the west half of the course, and it is a working, still-used site rather than a sealed museum piece.",
+      "history_culture": "The 2003 excavation, on an expedition looking for evidence of early human migration toward Australia, instead found a nearly complete skeleton (LB1) of a small-bodied hominin with a chimpanzee-sized brain, alongside stone tools and remains of pygmy elephants and giant rats; more than 100 H. floresiensis fossils have since been recovered at the site. A 2016 re-dating study (dating volcanic-ash and calcite layers directly above and below the fossils) pushed the species' known disappearance back from an earlier estimate of about 12,000 years to roughly 50,000 years ago, with the dated bones themselves ranging about 60,000-100,000 years old and associated stone tools going back to around 190,000 years. The cave remains an active ceremonial site for the local Manggarai community.",
+      "practical": {
+        "altitude_m": "unspecified; roughly 14 km NW of Ruteng, similar highland elevation range",
+        "access": "road to the site; the excavation area inside the cave is open to guided visitors",
+        "fees_protocol": "entrance fee reported inconsistently across sources -- figures from Rp 30,000 to Rp 80,000 per person appear, with an optional Rp 50,000 donation mentioned by one source; a local guide is typically included or provided at the entrance; confirm current pricing on the ground. As an active Manggarai ceremonial site, visitors should follow guide instructions and treat the cave with the same respect as a living cultural site, not a tourist ruin.",
+        "sleep": "day trip from Ruteng; no lodging at the site itself, though at least one homestay (Hobbit Hill Homestay) sits on the road between Ruteng and Liang Bua",
+        "water_resupply": "none at the site; resupply in Ruteng before the visit",
+        "best_time": "any dry-season day; the site is described as a day-trip stop, typically combined with Cancar",
+        "hazards": "none specific beyond normal cave-site footing; respect required as a still-used ceremonial space"
+      },
+      "facts": [
+        {
+          "fact": "Homo floresiensis was excavated at Liang Bua in September 2003 by a joint Indonesian-Australian team (associated with archaeologist Mike Morwood); more than 100 fossils of the species have since been recovered, including the near-complete skeleton LB1.",
+          "source_urls": ["repo:data/pois.geojson#p-liang-bua", "https://australian.museum/learn/science/human-evolution/homo-floresiensis/", "https://www.nhm.ac.uk/discover/homo-floresiensis-hobbit.html"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A 2016 re-dating study pushed the species' known disappearance from an earlier estimate of about 12,000 years ago back to roughly 50,000 years ago, with the dated hominin bones ranging about 60,000-100,000 years old and associated stone tools attributed to the species going back to around 190,000 years.",
+          "source_urls": ["https://www.si.edu/newsdesk/releases/smithsonian-and-international-team-scientists-reveal-new-evidence-pushing-back-time-disappe", "https://www.science.org/content/article/hobbit-was-separate-species-human-new-dating-reveals", "repo:data/pois.geojson#p-liang-bua"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The site has a small onsite museum/visitor centre (educational panels, photographs and replica bones/fossil casts) and the excavation area inside the cave itself is open to guided visitors; a local guide meets visitors at the entrance.",
+          "source_urls": ["https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/flores/ruteng/1724", "https://floresfantastictours.com/day-trip-to-liang-bua-cave-lingko/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Reported entrance fees for Liang Bua vary widely by source, from about Rp 30,000 to Rp 80,000 per person, with one source citing an optional Rp 50,000 donation for certain activities -- pricing should be confirmed on the ground rather than quoted precisely in the brochure.",
+          "source_urls": ["https://mmbkomodotour.com/liang-bua-cave/", "https://topkomodotour.com/liang-bua-hobit-cave-of-flores/"],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": ["wide shot of the cave chamber's high ceiling and light shaft (cathedral-like interior)", "the marked excavation area/pit inside the cave", "the small onsite museum's fossil-cast displays", "a guide explaining the site to visitors at the entrance"],
+      "commons_search_terms": ["Liang Bua", "Homo floresiensis", "Liang Bua cave Flores", "hobbit cave Flores"]
+    }
+  ],
+  "narrative_notes": "This section is the course's clearest before/after contrast: warm, informal south coast at Iteng, to cool, orderly, deeply Catholic Ruteng, to raw volcanic hike-a-bike terrain on Poco Mandasawu/Poco Ranaka, to a still, cold crater-lake rest stop at Ranamese, to the single deepest-time fact on the entire race at Liang Bua -- all inside roughly 90-130 km. Cancar's spider-web fields are the one 'free' spectacular view on the whole course (no hike-a-bike), which is worth calling out explicitly in brochure copy as a contrast to how hard-won most other highlights are. The Ruteng stop doubles as the natural full-resupply anchor of the whole west region, which is also a brochure-relevant safety/logistics fact (organisers can promise real beds and real food here, unlike most of the rest of the course).",
+  "corrections_to_data": [
+    "Poco Mandasawu / Poco Ranaka elevations: independent tourism/park sources (Ruteng Nature Recreation Park official page; gunungbagging.com trip report) give figures that conflict with the repo's 2,370 m / 2,350 m (seen: 2,400 m for Mandasawu, 2,140 m for Ranaka from one park source; trail to Poco Ranaka summit ending at 2,286 m per a hiking trip report). Repo confidence is currently 'verified' via Wikipedia for both; recommend a scouting-priority note to reconcile which figure is authoritative before printing exact numbers in the brochure.",
+    "Poco Ranaka's oft-cited 'March 1991' eruption date remains unconfirmed against the Global Volcanism Program in this pass (the GVP reports surfaced were from 1988 and 2024, not 1991) -- this corroborates rather than resolves the caveat already recorded in data/pois.geojson#p-poco-ranaka; no change recommended, just flagging that the uncertainty persists.",
+    "Cancar's distance from Ruteng: repo summary says '~17 km'; several current tour-operator sources say '~25 km'. Minor, but worth a ground check since it affects side-trip time budgeting."
+  ],
+  "open_questions": [
+    "Which elevation figures for Poco Mandasawu and Poco Ranaka should the brochure use, given conflicting sources? (see corrections_to_data)",
+    "Is there a farm-track alternative to the paved road over the Ranamese/Poco Ranaka pass, per design rule 1? (carried over from data/sections.json; not resolved by this research pass -- it requires ground scouting, not desk search)",
+    "Does a more direct farm track exist between Ranamese and Liang Bua than the current desk sketch, which doubles back near Ruteng? (carried over from data/sections.json; same caveat)",
+    "What is the actual current (2025-2026) entrance fee and opening-hours regime at Liang Bua, and is a guide mandatory or optional? Sources disagree (Rp 30,000-80,000) and no official hours were found this pass.",
+    "Is there a confirmed park entry fee for Ranamese lake / Cunca Rede within the Ruteng Nature Recreation Park, and is a permit needed for the Poco Mandasawu/Poco Ranaka hike-a-bike trail?"
+  ]
+}

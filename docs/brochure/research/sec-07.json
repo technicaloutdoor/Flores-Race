@@ -1,0 +1,517 @@
+{
+  "topic_id": "sec-07",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Mbay to Nangaroro: crossing the island's waist",
+      "data_ids": [
+        "n-mbay",
+        "n-nangaroro",
+        "s-mbay-nangaroro-b"
+      ],
+      "what_it_is": "The section's opening leg: a ~56 km crossing from the north-coast rice plains at Mbay south over the narrowest part of Flores to the south-coast village of Nangaroro, the computed 'remote' network candidate (variant B) rather than a scouted route.",
+      "why_it_matters": "This is the narrowest waist of the island, so the crossing is short in map distance but works hard in terrain: the computed candidate carries 1,739 m of climbing over 55.8 km with 83% unpaved surface, between 14.7 m and 663 m elevation. It is also one of the least field-verified links in the whole course -- the route-concept document flags it explicitly as an open ridge-crossing question, and general south-coast travel writing describes the wider Ende-Nangaroro-Aegela road corridor as asphalt 'somewhat damaged in places' rather than confirming this specific cross-island link.",
+      "history_culture": "No cultural sites are logged on this leg; it is transit between the Aesesa lowland (Mbay) and the Nagekeo/Ende south coast.",
+      "practical": {
+        "altitude_m": "14.7-662.8 (segment min/max per pipeline DEM sampling)",
+        "access": "Computed OSM-derived network candidate, mixed unclassified/tertiary/track roads, 83% unpaved; not field-verified. A parallel, shorter but less remote Boawae-to-Nangaroro alternative exists per route-concept.md (section 06 alternative B).",
+        "fees_protocol": "none known",
+        "sleep": "Mbay: hotel (full resupply). Nangaroro: homestay only.",
+        "water_resupply": "Mbay reliable; Nangaroro unreliable -- carry water for the crossing.",
+        "best_time": "no specific seasonal guidance found beyond general Flores dry-season (Apr-Oct) preference",
+        "hazards": "Unverified track sections per the segment's own open_questions; a loaded bike should not assume rideability without scouting."
+      },
+      "facts": [
+        {
+          "fact": "The computed route segment Mbay->Nangaroro is 55.81 km with 1,739 m ascent, 1,760 m descent, 83% unpaved, and is explicitly flagged as unverified against ground conditions.",
+          "source_urls": [
+            "repo:data/segments.geojson#s-mbay-nangaroro-b"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Nangaroro kecamatan (Nagekeo Regency) covers about 243 sq km on the south coast; the district's access road is reported as newly completed asphalt hotmix in older travel-writing, and the broader Ende-Nangaroro-Aegela-Raja road corridor is asphalt but damaged in places over roughly 75 km.",
+          "source_urls": [
+            "https://www.travel2flores.info/flores-east-to-west/central-flores/nagekeo/",
+            "https://travel.kompas.com/read/2015/08/23/130400427/Menjelajahi.Bumi.Flores.dari.Barat.ke.Timur.?page=all"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Aesesa rice plains near Mbay giving way to forested hills",
+        "the ridge crossing itself -- switchback dirt road with island-waist views to both coasts",
+        "descent to the south coast with the Savu Sea opening up"
+      ],
+      "commons_search_terms": [
+        "Nagekeo Regency Flores",
+        "Mbay Flores Indonesia",
+        "Nangaroro"
+      ]
+    },
+    {
+      "name": "Maukaro (naming clarification, not on this route)",
+      "data_ids": [
+        "n-maukaro"
+      ],
+      "what_it_is": "A north-coast sub-district (kecamatan) of Ende Regency on the Flores Sea, distinct from and not adjacent to the south-coast Nangaroro crossing this section actually uses.",
+      "why_it_matters": "route-concept.md's short-form section table ('Mbay -> Nangaroro/Maukaro') reads as if the two names label the same south-coast waypoint, but the only documented 'Maukaro' is this north-coast fishing sub-district bordering Nagekeo -- geographically a poor fit for a stop between Mbay and Penggajawa. This confirms the open question already logged in sections.json rather than resolving it in the route's favour: the section's own POI/anchor list correctly uses only Nangaroro, and 'Maukaro' should be treated as a labelling error in the prose, not a real waypoint on this leg.",
+      "history_culture": "Fishing villages; a 'Kampung Nelayan Merah Putih' fisheries project under way at Kobaleba beach. A May-2025-dated Puskesmas Maukaro was reported earthquake-damaged in an August 2026 news item, with services relocated to the yard -- i.e. this is an active, populated, currently-documented place, reinforcing that it is a real but wrong-coast namesake.",
+      "practical": {
+        "altitude_m": "not established",
+        "access": "north-coast road network, not on the Mbay-Nangaroro-Penggajawa-Ende line",
+        "fees_protocol": "none known",
+        "sleep": "not established",
+        "water_resupply": "not established",
+        "best_time": "not established",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "Maukaro is a north-coast Ende Regency sub-district on the Flores Sea bordering Nagekeo, with fishing villages and an active fisheries development project at Kobaleba beach; its Puskesmas (health clinic) was reported earthquake-damaged in August 2026 with services moved to the yard.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-maukaro"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "route-concept.md's section-07 summary groups 'Nangaroro/Maukaro' as if interchangeable south-coast options; no source found supports a south-coast place called Maukaro distinct from this north-coast sub-district.",
+          "source_urls": [
+            "repo:docs/route-concept.md",
+            "repo:data/sections.json#sec-07-blue-stone-coast"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [],
+      "commons_search_terms": [
+        "Maukaro Ende Regency"
+      ]
+    },
+    {
+      "name": "Nangaroro",
+      "data_ids": [
+        "n-nangaroro"
+      ],
+      "what_it_is": "A south-coast farming-and-fishing district of Nagekeo Regency, the first waypoint after the waist crossing and the course's most basic resupply of the section.",
+      "why_it_matters": "It is the pivot between the empty interior crossing and the developed coast road to Ende, and the last homestay-only stop before Penggajawa (no accommodation) and Ende (full resupply) -- riders need to plan sleep and water around this gap deliberately.",
+      "history_culture": "Farming and fishing villages (including Tonggo) on grey-stone beaches; no specific cultural sites logged. General south-coast travel writing describes the beach as clean sand and clear water with small, flat, distinctively shaped shoreline rocks.",
+      "practical": {
+        "altitude_m": "near sea level (coastal)",
+        "access": "road (Overture Maps place data), asphalt per general travel accounts",
+        "fees_protocol": "none known",
+        "sleep": "homestay",
+        "water_resupply": "unreliable -- carry water in from Mbay or plan to reach Penggajawa/Ende",
+        "best_time": "no specific guidance beyond general dry-season preference",
+        "hazards": "exposed, low-elevation coastal riding; heat (see Ende entry for regional heat notes)"
+      },
+      "facts": [
+        {
+          "fact": "Nangaroro is a south-coast district of Nagekeo Regency bordering Ende, with farming and fishing villages including Tonggo and grey-stone beaches; used as an alternative south-coast crossing point from Boawae/Mbay toward Ende.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-nangaroro"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "General south-coast Flores travel writing describes Nangaroro's beach as clean-sand with clear water and small, flat shoreline rocks distinct from Penggajawa's larger blue-green pebbles.",
+          "source_urls": [
+            "https://www.floreseditorial.com/wisata/39716055291/menjelajahi-surga-tersembunyi-di-the-heart-of-flores-10-pantai-cantik-di-nagekeo-dengan-panorama-yang-bikin-takjub?page=2",
+            "https://travelingyuk.com/pantai-selatan-pulau-flores/185439/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "grey-stone beach with fishing boats",
+        "homestay life in a working farming/fishing village",
+        "coast road hugging the shoreline toward Nangapanda"
+      ],
+      "commons_search_terms": [
+        "Nangaroro",
+        "Nagekeo Regency coast"
+      ]
+    },
+    {
+      "name": "Nangapanda",
+      "data_ids": [
+        "p-nangapanda"
+      ],
+      "what_it_is": "A south-coast district and fishing village of Ende Regency about 20 km west of Ende town, on the Bajawa-Ende road, giving its name to one half of the Ende-language dialect split.",
+      "why_it_matters": "It anchors the linguistic and administrative identity of the coast the course rides through between Penggajawa and Ende -- useful context for captioning the blue-stone-beach stretch, though it carries no separate highlight of its own.",
+      "history_culture": "The Ende language (spoken around this stretch of coast) is documented as split into two dialect areas named for Nangapanda and Maukaro districts -- an administrative/linguistic split, not evidence the two places are geographically adjacent.",
+      "practical": {
+        "altitude_m": "near sea level (coastal)",
+        "access": "road, on the Bajawa-Ende route",
+        "fees_protocol": "none known",
+        "sleep": "not established in data; nearest confirmed options are Nangaroro (homestay) or Ende (hotel)",
+        "water_resupply": "not established",
+        "best_time": "not established",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "Nangapanda is a south-coast district and fishing village of Ende Regency about 20 km west of Ende town on the road from Bajawa; the Ende-language dialect area is split between Nangapanda and Maukaro.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-nangapanda"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "fishing village daily life",
+        "coast road signage toward Ende"
+      ],
+      "commons_search_terms": [
+        "Nangapanda Ende Regency"
+      ]
+    },
+    {
+      "name": "Penggajawa Blue Stone Beach (Pantai Batu Biru / Batu Hijau)",
+      "data_ids": [
+        "p-penggajawa",
+        "n-penggajawa",
+        "s-nangaroro-penggajawa-b",
+        "s-penggajawa-ende-b"
+      ],
+      "what_it_is": "A pebble beach in Penggajawa village, Nangapanda district, Ende Regency, about 25 km west of Ende on the Bajawa-Ende road: smooth blue-green volcanic pebbles that are a classic overland-route photo stop and a small local export trade.",
+      "why_it_matters": "This is the section's headline highlight and its best brochure image: a beach entirely made of polished blue-turquoise (locally also 'batu hijau', green stone, when wet) pebbles rather than sand, unlike anywhere else on the course. It also carries a real livelihood story -- hand-harvesting for an export trade -- which gives the highlight a human as well as scenic angle. No accommodation exists here, so it is a stop, not a sleep point.",
+      "history_culture": "The stones' origin is described locally rather than settled geologically: accounts say they wash down from inland mountains via the area's rivers and are smoothed by sea currents, while other local tellings hold the stones come from the seafloor and are pushed ashore by waves -- sources agree the exact origin is not firmly established. Residents hand-harvest stones by size/quality standard using traditional manual methods (no heavy equipment) to sell to collectors, who export them abroad -- an active small trade, not just a tourist curiosity. Locally the site appears under two names in different sources: 'Batu Biru' (Blue Stone, used in course data) and 'Batu Hijau' (Green Stone, used on Indonesian Wikipedia) -- both refer to the same beach; the colour genuinely shifts between blue and green depending on whether the stones are wet.",
+      "practical": {
+        "altitude_m": "near sea level (12-38 m across the adjoining segments)",
+        "access": "road, on the Bajawa-Ende trunk road, ~25 km west of Ende",
+        "fees_protocol": "none found; informal, community-harvested beach, no visitor fee reported",
+        "sleep": "none -- nearest sleep is Nangaroro (homestay, west) or Ende (hotel, east)",
+        "water_resupply": "unreliable per course data -- treat as a scenic stop only, not a resupply",
+        "best_time": "daylight for photography; stones show colour best when wet from surf or recent rain",
+        "hazards": "exposed coastal road; loose pebble surface at the beach itself is not for riding on"
+      },
+      "facts": [
+        {
+          "fact": "Penggajawa Blue Stone Beach is in Penggajawa village, Nangapanda district, Ende Regency, ~25 km west of Ende on the Bajawa-Ende road; smooth blue-turquoise volcanic pebbles washed up from old lava flows.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-penggajawa",
+            "https://www.tripadvisor.com/ShowUserReviews-g800614-d7186395-r462597189-Blue_Stone_Beach-Ende_Flores_East_Nusa_Tenggara.html"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Local accounts differ on the exact origin of the stones (river-transported from inland mountains vs. seafloor-origin pushed ashore by waves); the beach is also documented under the alternate Indonesian name 'Batu Hijau' (Green Stone), the colour shifting between blue and green depending on wetness.",
+          "source_urls": [
+            "https://id.wikipedia.org/wiki/Pantai_Batu_Hijau_Penggajawa",
+            "https://www.detik.com/bali/wisata/d-7617615/blue-stone-beach-di-ende-keindahan-alam-yang-belum-terjamah"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Residents hand-harvest the stones to established size/quality standards for sale to collectors, who export them abroad; harvesting is manual, without heavy equipment.",
+          "source_urls": [
+            "https://www.detik.com/bali/wisata/d-7617615/blue-stone-beach-di-ende-keindahan-alam-yang-belum-terjamah",
+            "https://mytrip.co.id/article/pantai-penggajawa-ende-flores-ntt"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "close-up of wet blue-green pebbles catching light",
+        "wide shot of the pebble shoreline against the Savu Sea",
+        "a local hand-sorting stones for the export trade",
+        "cyclists/bikes posed on the pebble beach as an overland-route landmark shot"
+      ],
+      "commons_search_terms": [
+        "Pantai Batu Biru Penggajawa",
+        "Pantai Batu Hijau Penggajawa",
+        "Blue Stone Beach Ende"
+      ]
+    },
+    {
+      "name": "Ende (town)",
+      "data_ids": [
+        "p-ende-town",
+        "n-ende"
+      ],
+      "what_it_is": "The capital of Ende Regency and largest town of central Flores, on the south coast beneath Iya volcano; the section's full-resupply endpoint and the natural place to reset before the Kelimutu/Lio-heartland section that follows.",
+      "why_it_matters": "It combines everything a race stop needs (hospital, airport, market, hotels) with a genuinely strong story -- Sukarno's four-year exile here shaped the town's identity as a place of national historical memory, and it sits at a real hazard boundary under an active volcano the course must respect.",
+      "history_culture": "Native population is a mix of Lio (most numerous, historically inland and to the north/east of the regency), Ende, and Nage peoples; Lio culture (traditional houses, ikat weaving, adat ceremony) is present in villages close to town such as Wolotopo. The town's main traditional market is Pasar Mbongawani, where traders commonly wear woven sarongs (lawo) and local produce such as ubi Nuabosi (a native tuber) is sold; a newly built market hall (Pasar Mbongawani Lama) was handed over from the national Ministry of Public Works to the regency government on 10 August 2026. No source found specifically frames Mbongawani as a 'Sunday market' -- it reads in the sources as Ende's regular/general town market rather than a weekly event, and no separate Bajo community in Ende town itself was confirmed by search (flagged as an open question below).",
+      "practical": {
+        "altitude_m": "near sea level (coastal town)",
+        "access": "road (full network), airport (see p-ende-airport)",
+        "fees_protocol": "none for the town generally; see individual heritage sites",
+        "sleep": "hotel, full resupply",
+        "water_resupply": "reliable",
+        "best_time": "year-round town stop; avoid scheduling anything on the southern peninsula without a current Iya volcano check (see hazards)",
+        "hazards": "Iya volcano immediately south of town at PVMBG Level II (Waspada) as of at least June 2026 -- 2 km exclusion radius around the active crater; also general tropical heat on the exposed coastal approach from Penggajawa."
+      },
+      "facts": [
+        {
+          "fact": "Ende Regency had 260,605 residents at the 2010 census, 270,763 at 2020, and an official mid-2024 estimate of 281,371; the town of Ende itself had 87,269 residents at the 2020 census and an estimated 89,519 at mid-2024.",
+          "source_urls": [
+            "https://en.wikipedia.org/wiki/Ende_(town)",
+            "https://en.wikipedia.org/wiki/Ende_Regency"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Ende General Hospital (RSUD) is on Jl. Prof. Dr. W.Z. Yohanes, Kel. Paupire, Kec. Ende Tengah.",
+          "source_urls": [
+            "https://floreshomestay.org/healthcare/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Bicycle shops/dealers are listed in Ende town on Jl. Kemakmuran (Kel. Mbongawani, Kec. Ende Selatan) and Jl. Kelimutu (Kel. Rukunlima, Kec. Ende Selatan), including a shop named Toko Fernando; these are directory listings, not confirmed current or full-service for a touring/race bike.",
+          "source_urls": [
+            "https://dimana.id/toko/sepeda/ende/nusa-tenggara-timur",
+            "https://id.top10place.com/toko-fernando-1185520162.html"
+          ],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "Ende Regency's native population is drawn mainly from the Lio, Ende, and Nage peoples, with Lio the most numerous and traditionally settled inland and to the north/east.",
+          "source_urls": [
+            "https://id.wikipedia.org/wiki/Kabupaten_Ende"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Pasar Mbongawani is Ende town's main traditional market; a new market hall (Pasar Mbongawani Lama) was handed over from the Ministry of Public Works to the Ende regency government on 10 August 2026.",
+          "source_urls": [
+            "https://indonesiasatu.co/detail/kementerian-pu-serah-terima-pasar-mbongawani-lama-ke-pemda-ende"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "Ende harbourfront with fishing boats and Iya volcano behind",
+        "Pasar Mbongawani market scene -- woven sarongs, local produce",
+        "town streets with Lio traditional weaving for sale",
+        "hospital/resupply infrastructure as a practical race-logistics image"
+      ],
+      "commons_search_terms": [
+        "Ende Flores",
+        "Ende town Nusa Tenggara Timur",
+        "Pasar Mbongawani"
+      ]
+    },
+    {
+      "name": "Iya volcano",
+      "data_ids": [
+        "p-iya-volcano"
+      ],
+      "what_it_is": "An active 637 m stratovolcano immediately south of Ende on the town's southern peninsula, last erupted January 1969, currently at PVMBG Level II (Waspada).",
+      "why_it_matters": "It is the section's standing hazard: any course or checkpoint decision near Ende's southern peninsula needs a live status check, not a one-off. Fresh reporting confirms the alert has not escalated since the May 2026 bulletin already on file -- it held at Level II through at least June 2026 -- which is reassuring but does not replace a check at scouting/race time.",
+      "history_culture": "Small by Flores standards but sits directly against the town it threatens. Alert history: raised from Level II (Waspada) to Level III (Siaga) on 5 November 2024; downgraded back to Level II (Waspada) on 8 January 2025; still listed at Level II as of 29 May 2026 (one of 22 Indonesian volcanoes at that alert level that day); mid-June 2026 observation reports thin white crater steam reaching 50-100 m from the summit, continuously monitored from the Gunung Iya observation post.",
+      "practical": {
+        "altitude_m": 637,
+        "access": "trail (crater area)",
+        "fees_protocol": "PVMBG/Geological Agency recommendation: avoid activity within 2 km of the active crater",
+        "sleep": "n/a",
+        "water_resupply": "n/a",
+        "best_time": "n/a -- status-dependent, not season-dependent",
+        "hazards": "PVMBG Level II (Waspada) as of the most recent found report (June 2026); status has fluctuated between Waspada and Siaga in the last two years -- always recheck against MAGMA Indonesia before any route or checkpoint decision near Ende's southern peninsula."
+      },
+      "facts": [
+        {
+          "fact": "Iya is a 637 m active stratovolcano immediately south of Ende, last erupted January 1969; PVMBG raised it to Level III (Siaga) on 5 November 2024 and downgraded it back to Level II (Waspada) on 8 January 2025.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-iya-volcano",
+            "https://www.antaranews.com/berita/4445873/pvmbg-naikkan-status-gunung-iya-di-ende-ke-level-iii",
+            "https://regional.kompas.com/read/2025/01/10/172702778/status-gunung-iya-diturunkan-dari-level-siaga-ke-waspada"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "As of 29 May 2026 Iya remained at Level II (Waspada), and mid-June 2026 monitoring reported thin white crater steam plumes of 50-100 m -- confirming the alert has not escalated since the season's May 2026 bulletin already recorded, though continuous rechecking against MAGMA Indonesia is still advised given the volcano's recent history of level changes.",
+          "source_urls": [
+            "https://mounture.com/berita/daftar-22-gunung-api-berstatus-waspada-di-indonesia-per-29-mei-2026-berikut-sebarannya/",
+            "https://flores.tribunnews.com/ende/61600/status-waspada-gunung-iya-ende-1-kali-gempa-vulkanik-dalam-5-tektonik-jauh"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Ende town with Iya's cone rising behind the harbour",
+        "the southern peninsula and exclusion-zone approach",
+        "steam/plume shot if conditions allow (respect the 2 km radius)"
+      ],
+      "commons_search_terms": [
+        "Mount Iya",
+        "Gunung Iya Ende",
+        "Iya volcano Flores"
+      ]
+    },
+    {
+      "name": "Sukarno's Exile House (Rumah Pengasingan Bung Karno)",
+      "data_ids": [
+        "p-sukarno-exile-house"
+      ],
+      "what_it_is": "The house on Jalan Perwira, Ende, where Sukarno lived under Dutch colonial exile from January 1934 to 1938 with his wife Inggit Garnasih; a museum of his belongings and daily life since 1954.",
+      "why_it_matters": "It is the section's strongest cultural anchor: a nationally significant historic site that turns Ende's mandatory resupply stop into a genuine brochure highlight, paired naturally with the nearby contemplation park.",
+      "history_culture": "Built in 1927 in a plain Dutch-colonial style, owned by Haji Abdulah Ambuwaru; the house has two bedrooms, a small library, and a meditation room Sukarno used, largely unchanged. Collections on display include family and personal photographs, ceramics, and a monkey-headed walking cane, among other belongings. Open daily 08:00-16:00 WITA; no formal entrance ticket -- visitors are asked for a voluntary donation via a donation box rather than a fixed fee.",
+      "practical": {
+        "altitude_m": "near sea level",
+        "access": "road, central Ende (Jalan Perwira)",
+        "fees_protocol": "free entry, voluntary donation box",
+        "sleep": "n/a (day visit within Ende)",
+        "water_resupply": "n/a",
+        "best_time": "daytime, 08:00-16:00 WITA opening hours",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "The exile house on Jalan Perwira, built in 1927 and owned by Haji Abdulah Ambuwaru, held Sukarno and his wife Inggit Garnasih from January 1934 to 1938; it has been a museum of his belongings since 1954, with two bedrooms, a small library, and a meditation room preserved largely unchanged.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-sukarno-exile-house"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The museum is open daily 08:00-16:00 WITA with free entry via a voluntary donation box; the collection includes family and personal photographs, ceramics and a monkey-headed cane.",
+          "source_urls": [
+            "https://flores.tribunnews.com/2024/05/30/mengunjungi-rumah-pengasingan-bung-karno-di-ende-lokasi-rute-dan-jam-buka",
+            "https://astinsoekanto.com/rumah-pengasingan-bung-karno-di-ende/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "the colonial-era house facade on Jalan Perwira",
+        "preserved interior -- meditation room, library corner",
+        "period photographs and personal effects on display"
+      ],
+      "commons_search_terms": [
+        "Rumah Pengasingan Bung Karno Ende",
+        "Sukarno exile house Ende"
+      ]
+    },
+    {
+      "name": "Bung Karno Contemplation Park / Pancasila breadfruit tree (Taman Renungan Bung Karno)",
+      "data_ids": [
+        "p-pancasila-tree"
+      ],
+      "what_it_is": "A seafront park in Ende where Sukarno is said to have worked out the outline of the Pancasila -- Indonesia's five founding principles -- under a breadfruit tree while looking out at the sea during his 1934-38 exile.",
+      "why_it_matters": "Paired with the exile house a short walk away, this gives Ende's mandatory stop a story of national origin-myth weight, not just a heritage plaque -- a strong narrative and visual complement to the town's practical resupply role.",
+      "history_culture": "The tree standing today was planted in 1980 (the original having since died or been replaced) and is noted for having five branches, echoing the five Pancasila principles. The site is consistently paired in local telling with the nearby exile house as the two central stops of Ende's Sukarno heritage trail.",
+      "practical": {
+        "altitude_m": "near sea level (seafront park)",
+        "access": "road, central Ende seafront",
+        "fees_protocol": "public park, no fee found",
+        "sleep": "n/a",
+        "water_resupply": "n/a",
+        "best_time": "daytime; seafront setting suits golden-hour photography",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "The park's breadfruit tree, said to mark where Sukarno contemplated the Pancasila's five principles during his 1934-38 exile, was planted in 1980 and has five branches.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-pancasila-tree"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "the five-branched breadfruit tree against the seafront",
+        "commemorative plaque/monument in the park",
+        "wide shot combining park, sea, and Iya's silhouette"
+      ],
+      "commons_search_terms": [
+        "Taman Renungan Bung Karno",
+        "Pancasila tree Ende"
+      ]
+    },
+    {
+      "name": "H. Hasan Aroeboesman Airport",
+      "data_ids": [
+        "p-ende-airport"
+      ],
+      "what_it_is": "Ende's Class II domestic airport (IATA ENE, ICAO WATE), in Tetandara, Kecamatan Ende Selatan, about 2 km southeast of the town centre.",
+      "why_it_matters": "It is the section's air-evacuation and resupply-chain anchor -- the practical safety net behind the town's hospital and hotel stop, relevant to race medical/logistics planning even though riders will not use it directly.",
+      "history_culture": "Domestic-only, runway/apron classification 3C, overseen by the Denpasar-region civil aviation authority (Otoritas Bandar Udara Wilayah IV).",
+      "practical": {
+        "altitude_m": 15,
+        "access": "road, ~2 km southeast of Ende centre",
+        "fees_protocol": "n/a (not a rider stop)",
+        "sleep": "n/a",
+        "water_resupply": "n/a",
+        "best_time": "n/a",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "H. Hasan Aroeboesman Airport is Ende's Class II domestic airport in Tetandara, Kecamatan Ende Selatan, ~2 km southeast of town, with runway/apron classification 3C, under the Denpasar regional civil aviation authority.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-ende-airport",
+            "https://hubud.kemenhub.go.id/upbu/h-hasan-aroeboesman"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Scheduled routes include Wings Air to Kupang (El Tari) and Labuan Bajo (Komodo), and Susi Air to Sabu (Tardamu); daily service also runs to/from Denpasar (Bali).",
+          "source_urls": [
+            "repo:data/pois.geojson#p-ende-airport",
+            "https://hubud.kemenhub.go.id/upbu/h-hasan-aroeboesman/data/rute-penerbangan/keberangkatan"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "small regional terminal building",
+        "aircraft on the apron with coastal backdrop"
+      ],
+      "commons_search_terms": [
+        "H. Hasan Aroeboesman Airport",
+        "Ende Airport ENE"
+      ]
+    },
+    {
+      "name": "Wolotopo (bonus: within section bbox, borders section 8)",
+      "data_ids": [
+        "p-wolotopo"
+      ],
+      "what_it_is": "A Lio traditional village built into a steep hillside on the south coast about 12 km east of Ende via Wolowona market; found inside this section's bounding box though not on its highlight_pois list.",
+      "why_it_matters": "It falls just east of Ende within the searched bbox and is a strong cultural-immersion candidate the route designer may want to consider pulling forward or cross-referencing with section 8, since ikat weaving and ceremonial houses here are still actively maintained.",
+      "history_culture": "Households still practise ikat weaving and keep traditional ceremonial houses; adat (customary) rules are strongly maintained.",
+      "practical": {
+        "altitude_m": "hillside, exact figure not established",
+        "access": "road, via Wolowona market east of Ende",
+        "fees_protocol": "visitors should be accompanied and expect a small courtesy donation, per adat custom",
+        "sleep": "not established",
+        "water_resupply": "not established",
+        "best_time": "not established",
+        "hazards": "none logged"
+      },
+      "facts": [
+        {
+          "fact": "Wolotopo is a Lio traditional village built into a steep hillside ~12 km east of Ende via Wolowona market, with active ikat weaving and ceremonial houses; adat custom is strongly maintained and visitors should be accompanied, with a small courtesy donation expected.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-wolotopo"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "hillside village architecture",
+        "ikat weaving in progress",
+        "ceremonial houses"
+      ],
+      "commons_search_terms": [
+        "Wolotopo village Ende",
+        "Lio traditional village Flores"
+      ]
+    }
+  ],
+  "narrative_notes": "The section's real spine is the contrast between an unverified, empty interior crossing (Mbay-Nangaroro) and a well-documented, story-rich coastal finish (Penggajawa's blue-stone beach into Sukarno's Ende). Brochure copy can lean on the pebble beach for the single best photograph of the section and on the exile-house/Pancasila-tree pairing for the section's cultural payoff, while being upfront that the waist crossing itself is scouting-priority terrain, not a confirmed road. Ende's practical strength (hospital, airport, market, hotels) is real and well-sourced; its bike-shop and 'Bajo community' claims are the section's weakest links and should not be stated as fact without field confirmation.",
+  "corrections_to_data": [
+    "Iya volcano status update: PVMBG held Iya at Level II (Waspada) through at least mid-June 2026 (thin white steam plumes 50-100 m, no escalation), consistent with but more current than the May 2026 bulletin on file; the note's caution to recheck MAGMA Indonesia before any route/checkpoint decision still stands given the volcano's Nov-2024/Jan-2025 history of level changes.",
+    "Confirms (does not resolve in the route's favour) the Maukaro/Nangaroro open question already logged in sections.json: Maukaro is verifiably a north-coast Ende Regency sub-district, unrelated to this section's actual south-coast waypoint Nangaroro; route-concept.md's 'Nangaroro/Maukaro' phrasing appears to be a labelling error, not an alternate name for the same place.",
+    "Penggajawa Blue Stone Beach also appears under the Indonesian name 'Pantai Batu Hijau Penggajawa' (Green Stone Beach) on Indonesian Wikipedia -- same site, colour genuinely shifts blue/green when wet; worth noting alongside the existing 'Batu Biru' name if the data model wants an alternate-name field.",
+    "No source found confirms a distinct 'Sunday market' framing for Ende -- the town's main market (Pasar Mbongawani) reads as a general/daily market, not a weekly event; treat 'Ende's Sunday market' as an unconfirmed brief assumption unless corrected by a local source."
+  ],
+  "open_questions": [
+    "Ridge-crossing footpaths across the Mbay-Nangaroro waist remain unverified on the ground (route-concept.md's open question 6); no web source found confirms or details this specific link beyond the general, older Ende-Nangaroro-Aegela road corridor description.",
+    "No source found for a Bajo (sea-nomad) community within Ende town itself; documented Ende Regency ethnic groups are Lio, Ende, and Nage. If a Bajo presence is wanted for the brochure's 'Bajo/Lio mix' framing, it needs a dedicated local source or field confirmation before being stated as fact.",
+    "Ende bike-shop information is directory-listing grade only (names/streets, no confirmation of current operation or capability to service a touring/race bike) -- field-verify before printing as a race-logistics fact.",
+    "Homestay names and specific water-source locations in Nangaroro and Penggajawa were not found by search; the course data's 'unreliable' water tags for both villages stand unconfirmed by an independent source and should be scouted."
+  ]
+}

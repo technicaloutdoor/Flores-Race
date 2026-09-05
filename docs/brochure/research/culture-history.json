@@ -1,0 +1,478 @@
+{
+  "topic_id": "culture-history",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Liang Bua",
+      "data_ids": ["p-liang-bua"],
+      "what_it_is": "A single wide limestone cave chamber in a forested hillside ~14 km NW of Ruteng, still used by the local Manggarai community for ceremonies.",
+      "why_it_matters": "The deep-time hook of the whole race: the place a small-bodied human relative that lived in isolation on Flores for hundreds of thousands of years was found, long before any village, kingdom or church the route passes.",
+      "history_culture": "On 2 September 2003 a joint Indonesian-Australian excavation recovered a near-complete skeleton (LB1) of an adult female roughly 1.06 m tall from deep cave sediments, alongside stone tools and bones of pygmy elephants (Stegodon) and giant rats. Named Homo floresiensis and nicknamed 'the hobbit', the find upended assumptions about how recently small-bodied, small-brained hominins survived. A 2016 re-dating of the stratigraphy revised the youngest secure Liang Bua skeletal remains to roughly 60,000-100,000 years old (down from an earlier ~18,000-year estimate), removing the likelihood of prolonged direct overlap with modern humans at this site. The same 2016 research season, working at Mata Menge in the So'a Basin about 70 km east, reported a jaw and teeth from at least one adult (possibly juveniles too) of an earlier, smaller-jawed form, in a fluvial sandstone layer dated by argon and fission-track methods on bracketing volcanic ash to approximately 700,000 years -- pushing the lineage's presence on Flores back roughly 600,000 years before the Liang Bua skeleton and showing the small body size was already established that early.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road to the cave mouth, short walk in",
+        "fees_protocol": "no cultural-checkpoint protocol documented in project data; a working excavation/heritage site rather than a village, but still used by the local community for ceremonies -- treat with the same courtesy as a living site",
+        "sleep": "Ruteng (full resupply) is the natural overnight base",
+        "water_resupply": "Ruteng",
+        "best_time": "daylight; cave interior is shaded",
+        "hazards": "none specific beyond normal cave/trail footing"
+      },
+      "facts": [
+        {
+          "fact": "The Homo floresiensis skeleton (LB1) was excavated at Liang Bua on 2 September 2003 by a joint Indonesian-Australian team; the individual was an adult female standing about 1.06 m tall.",
+          "source_urls": ["https://www.nhm.ac.uk/discover/homo-floresiensis-hobbit.html", "https://en.wikipedia.org/wiki/Homo_floresiensis"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A 2016 re-dating of the Liang Bua stratigraphy revised the youngest secure Homo floresiensis skeletal remains to about 60,000-100,000 years old.",
+          "source_urls": ["https://www.pbs.org/newshour/amp/science/fossils-suggest-ancestors-of-indonesian-hobbits-were-even-shorter", "https://www.ucl.ac.uk/human-evolution/news/2016/jun/homo-floresiensis-has-been-uncovered-700000-year-old-site-mata-menge-flores-indonesia"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "At Mata Menge in the So'a Basin, about 70 km east of Liang Bua, jaw and tooth fossils of an early hominin (associated with the Homo floresiensis lineage) were recovered from a sediment layer dated to approximately 700,000 years, using argon-argon and fission-track dating on bracketing volcanic deposits combined with uranium-series/ESR dating of the teeth.",
+          "source_urls": ["https://www.ucl.ac.uk/human-evolution/news/2016/jun/homo-floresiensis-has-been-uncovered-700000-year-old-site-mata-menge-flores-indonesia"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["the cave mouth and chamber interior", "the forested approach path", "interpretive signage/excavation trench markers if present"],
+      "commons_search_terms": ["Liang Bua cave Flores", "Homo floresiensis excavation site"]
+    },
+    {
+      "name": "Mata Menge and the So'a Basin",
+      "data_ids": [],
+      "what_it_is": "An open-air fossil-bearing sedimentary site in the So'a Basin, about 70 km east of Liang Bua, where fluvial sandstone layers preserve hominin and Stegodon (pygmy elephant) fossils far older than the Liang Bua cave sequence.",
+      "why_it_matters": "Extends the race's deep-time story: the small-bodied hominin lineage was already on Flores roughly 700,000 years ago, not just in the tens of thousands of years the Liang Bua skeleton represents. A companion site to Liang Bua for the same narrative thread, not currently an anchor in the route data.",
+      "history_culture": "Announced in 2016, the Mata Menge finds (a jaw fragment and teeth, from at least one adult) came from a stream-deposited sandstone layer dated to approximately 700,000 years old by multiple independent methods on the surrounding volcanic ash. The fossils are smaller-jawed than the Liang Bua skeleton, suggesting the diminutive body form was established very early in the lineage's history on the island, likely from an ancestral Homo erectus population that reached Flores and evolved in isolation.",
+      "practical": {
+        "altitude_m": null,
+        "access": "not currently in the route's node/POI data -- open question for scouting",
+        "fees_protocol": "unknown; likely a low-key rural site rather than a managed visitor attraction",
+        "sleep": "nearest resupply towns are Bajawa or Aimere on the current route corridor",
+        "water_resupply": "unknown -- not scouted",
+        "best_time": "unassessed",
+        "hazards": "unassessed"
+      },
+      "facts": [
+        {
+          "fact": "Mata Menge fossils (jaw and teeth of an early hominin linked to the Homo floresiensis lineage) were recovered from a sandstone layer in the So'a Basin dated to approximately 700,000 years old.",
+          "source_urls": ["https://www.ucl.ac.uk/human-evolution/news/2016/jun/homo-floresiensis-has-been-uncovered-700000-year-old-site-mata-menge-flores-indonesia"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["open savanna/river-terrace landscape of the So'a Basin", "any excavation or museum display of fossil casts if reachable"],
+      "commons_search_terms": ["Soa Basin Flores", "Mata Menge fossil site"]
+    },
+    {
+      "name": "Ngada megalithic villages (Bena, Luba, Tololela, Gurusina, Wogo)",
+      "data_ids": ["p-bena", "p-luba", "p-tololela", "p-gurusina", "p-wogo"],
+      "what_it_is": "A cluster of Ngada clan villages on the Bajawa plateau, each built around twin-row houses facing a stone-terraced square holding paired ngadhu and bhaga ancestor shrines, one pair per clan.",
+      "why_it_matters": "The clearest living megalithic culture on the route: an adat (customary law) social structure made physically visible in the village layout, still functioning, still the reason people gather for the annual Reba festival.",
+      "history_culture": "A ngadhu is a carved wooden post topped with a small thatched roof, planted in the ground and representing a clan's founding male ancestor; a bhaga is a small house-shaped structure standing for the female ancestor. Every clan in a Ngada village maintains its own ngadhu-bhaga pair, and the number of pairs in the central square is a direct count of the clans that make up the village. Reba is the Ngada New Year festival, held from December into January (peak in January), when clans dance, feast and renew the ties the ngadhu and bhaga represent; villages stagger their celebrations rather than holding Reba on the same day; Bena traditionally opens the season around 27 December, with Nage, Gurusina, Langa, Luba, Tololela and others following through to mid-January. Gurusina lost 27 of its 33 traditional houses and six sacred structures to a fire on 13 August 2018 (much of the village was away at a football match) and has since rebuilt with the same materials and forms rather than modernising -- a fire-discipline lesson the project already flags for any rider briefing.",
+      "practical": {
+        "altitude_m": 650,
+        "access": "road (Bena, Luba, Wogo, Gurusina); Tololela ~650 m on a steep hillside, less visited",
+        "fees_protocol": "guest book and a small entrance donation at each village; greet the elders on arrival; village-council permission is expected for any organised group and would need explicit race-checkpoint agreement",
+        "sleep": "Bajawa (full resupply, ~1,100-1,300 m) is the base for all four/five villages",
+        "water_resupply": "Bajawa",
+        "best_time": "Reba season (late Dec-mid Jan) is culturally the richest time but falls outside the proposed dry-season race window (late Jun-Sep); outside Reba the villages still function as living settlements",
+        "hazards": "thatched-roof fire risk (per the 2018 Gurusina fire); otherwise none specific"
+      },
+      "facts": [
+        {
+          "fact": "A ngadhu is a carved, roofed wooden post representing a clan's male ancestor; a bhaga is a small house-shaped structure representing the female ancestor -- each clan in a village maintains one pair.",
+          "source_urls": ["https://www.komodowisata.com/people-culture/ngada-tribe-culture"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Reba, the Ngada New Year festival, runs from roughly December to February with its peak in January; villages hold their ceremonies on different days across that window rather than together, with Bena traditionally starting around 27 December.",
+          "source_urls": ["https://observerid.com/reba-traditional-festival-in-ngada/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "A fire on 13 August 2018 destroyed 27 of Gurusina's 33 traditional houses and six sacred structures; the village has since rebuilt using traditional materials and techniques.",
+          "source_urls": ["https://www.thejakartapost.com/news/2018/08/14/fire-razes-gurusina-traditional-village-in-east-nusa-tenggara.html"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["ngadhu and bhaga pairs across the village square", "stone megalithic tombs in the central courtyard", "Inerie volcano framing Bena from the ridge", "Reba dancers in traditional dress (seasonal)"],
+      "commons_search_terms": ["Bena village Flores", "Ngada ngadhu bhaga", "Gurusina traditional village"]
+    },
+    {
+      "name": "Wae Rebo and Todo (mbaru niang and the Manggarai kingdom)",
+      "data_ids": ["p-wae-rebo", "p-todo-village"],
+      "what_it_is": "Wae Rebo: seven cone-roofed mbaru niang communal houses in a circle at ~1,100-1,200 m, reachable only on foot. Todo: the lower-lying, road-accessible village where Manggarai oral history places the seat of the old Manggarai kingdom and its oldest standing mbaru niang.",
+      "why_it_matters": "The flagship cultural checkpoint of the whole race (Wae Rebo) paired with the place that explains where the architectural form and the kingdom itself began (Todo) -- honest hike-a-bike, a living homestay economy, and a genealogy that predates colonial Flores.",
+      "history_culture": "Mbaru niang are steep, multi-level conical thatched houses, each historically sheltering several families across four internal floors used for living space, storage and ceremonial/seed-keeping functions. Wae Rebo's seven houses won UNESCO's 2012 Asia-Pacific Award for Cultural Heritage Conservation for rebuilding in traditional style rather than switching to tin roofing, as many other Manggarai villages did; the climb in is a roughly three-hour porters' path from Denge with no vehicle access at all. Todo, close to the Ruteng-Labuan Bajo highway, is where Manggarai tradition places the kingdom's first throne and keeps what is said to be the regency's oldest mbaru niang.",
+      "practical": {
+        "altitude_m": 1200,
+        "access": "Wae Rebo: foot only (hike-a-bike, concept ~8-9 km, +700 m from Denge); Todo: road, short climb off the highway",
+        "fees_protocol": "Wae Rebo has a fixed homestay/guest-fee system and a welcome ceremony for every visitor; a race-specific council agreement is still required. Todo expects elder greeting, donation and guest book; no race-checkpoint agreement negotiated yet",
+        "sleep": "Wae Rebo has homestays inside the mbaru niang themselves; Todo is a day-trip village, not set up for overnight stays",
+        "water_resupply": "Denge (trailhead) and Iteng",
+        "best_time": "dry season for the trail underfoot; arrive before dark given the porters'-path terrain",
+        "hazards": "steep, sometimes slippery trail; no rescue infrastructure on the Wae Rebo climb"
+      },
+      "facts": [
+        {
+          "fact": "UNESCO gave Wae Rebo its Asia-Pacific Award for Cultural Heritage Conservation in 2012 for the community's traditional-style rebuilding of its mbaru niang houses.",
+          "source_urls": ["https://en.wikipedia.org/wiki/Waerebo"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["the seven mbaru niang in their circle from the ridge above Wae Rebo", "the porters' trail through cloud forest", "Todo's oldest mbaru niang and drum house"],
+      "commons_search_terms": ["Wae Rebo village Flores", "mbaru niang Manggarai", "Todo village Manggarai"]
+    },
+    {
+      "name": "Cancar lingko and Manggarai culture (lodok, caci, Penti, songke)",
+      "data_ids": ["p-cancar-lingko"],
+      "what_it_is": "The spider-web communal rice fields at Cancar, viewed from a hillside near Ruteng, plus the wider Manggarai cultural complex the fields symbolise: whip-fighting, harvest festival and clan-motif weaving.",
+      "why_it_matters": "A single viewpoint that reads as a diagram of the whole Manggarai social order -- land, kinship and ritual combat and cloth all keyed to the same idea of a shared centre and a family's rightful share.",
+      "history_culture": "Lingko is the Manggarai communal land system: a field is divided outward from a single centre point, the lodok, into pie-slice plots whose width reflects each family's standing in the community rather than a survey line. Caci is Manggarai ritual whip-and-shield combat -- the name derives from 'ca' (one) and 'ci' (test) -- fought by young men with a buffalo-hide whip and a bamboo-and-hide shield, traditionally both a rite of passage into manhood and, historically, a way to settle inter-village disputes; it is the centrepiece performance of Penti, the harvest-thanksgiving festival that marks the end of the agricultural year. Songke is the black-ground, supplementary-weft cloth Manggarai women weave, its geometric motifs referencing the lingko field pattern itself, the clan drum house (mbaru gendang), a spider-web/star pattern read from the Ruteng highland sky, and chickens (which carry ritual importance in Manggarai custom).",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, viewpoint beside a telecoms tower -- no hike-a-bike required",
+        "fees_protocol": "small viewpoint fee typical; the fields themselves are working farmland, not a managed cultural site",
+        "sleep": "Ruteng",
+        "water_resupply": "Ruteng",
+        "best_time": "daylight, ideally when paddies are flooded/green for the clearest web pattern from height",
+        "hazards": "none specific"
+      },
+      "facts": [
+        {
+          "fact": "In the lingko system a communal field is divided from a single centre point (the lodok) into wedge-shaped plots, sized according to each family's standing in the community.",
+          "source_urls": ["https://adityawacana.id/ojs/index.php/jpf/en/article/download/126/121"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Caci is a Manggarai whip-and-shield ritual combat performed by young men, traditionally a rite of passage and a historical means of settling village disputes; it is staged as part of Penti, the post-harvest thanksgiving festival.",
+          "source_urls": ["https://www.booooooom.com/submissions/manggarai-warriors-caci-whip-fights-in-flores-indonesia/", "https://komodopadartour.com/2026/02/03/penti-the-sacred-harvest-celebration-of-manggarai/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Songke, the black-ground Manggarai ikat cloth, carries motifs that reference the lingko rice-field pattern, the clan drum house (mbaru gendang), a spider/star pattern from the Ruteng-highland sky, and chickens.",
+          "source_urls": ["https://www.researchgate.net/publication/343966962_Exploring_Motifs_In_Towe_Songke_Manggaraian_Ethnic_Woven_Fabric_In_Mathematics_Perspective"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["the lingko web pattern from the viewing hill", "caci fighters mid-strike (seasonal/ceremonial, not guaranteed)", "songke cloth on a loom or worn at a ceremony"],
+      "commons_search_terms": ["Cancar lingko rice field", "caci whip fighting Manggarai", "songke Manggarai weaving"]
+    },
+    {
+      "name": "Kelimutu -- the resting place of souls",
+      "data_ids": ["p-kelimutu", "p-kelimutu-np"],
+      "what_it_is": "Three adjacent crater lakes on one volcanic summit (1,639 m), each an independently shifting colour, held by the Lio people as the destination of souls after death.",
+      "why_it_matters": "The race's one mandatory, non-negotiable stop, and the clearest expression on the whole route of Flores' volcanic geography read as sacred geography rather than scenery.",
+      "history_culture": "In Lio belief the three craters sort the dead by how they lived: Tiwu Ata Mbupu ('Lake of Old People') receives the souls of parents and elders who lived well; the middle lake (recorded in sources as Tiwu Nua Muri Kooh Tai / Tiwu Ko'o Fai Nuwa Muri, with spelling that varies between transliterations) receives the souls of young people who died with their lives still ahead of them; Tiwu Ata Polo ('Bewitched/Evil Lake') receives the souls of those who did wrong in life. The lakes' colours shift over months to years with the volcano's hydrothermal chemistry, and local belief reads calm blues and greens as settled, happy spirits and reds and blacks as anger or unrest among them. Each year around 14 August the Lio community holds Pati Ka (in full, Pati Ka Du'a Bapu Ata Mata) -- an offering ceremony to feed the ancestral spirits and keep the human and spirit worlds in balance.",
+      "practical": {
+        "altitude_m": 1639,
+        "access": "road to the car park, then a short paved path ending in stairs -- treated as a brief hike-a-bike, not a ridden section",
+        "fees_protocol": "national-park entrance fee; no descent to the shoreline, no camping in or near the craters; visit at dawn only per the standing safety rule",
+        "sleep": "Moni (village at the foot of Kelimutu, guesthouses and hot springs)",
+        "water_resupply": "Moni",
+        "best_time": "dawn, for both light quality and to beat the crowds -- and this is a rider requirement, not just a recommendation",
+        "hazards": "PVMBG held Kelimutu at Level I (Normal) as of 5 Aug 2026; recheck alert status before race week; phreatic-eruption risk keeps the standing no-rim-approach rule in force regardless of alert level"
+      },
+      "facts": [
+        {
+          "fact": "Lio belief holds that Kelimutu's three craters are the final resting place of the dead, sorted by how they lived: elders and the good-living in Tiwu Ata Mbupu, young people in the middle lake, and those who did evil in Tiwu Ata Polo.",
+          "source_urls": ["https://gowithguide.com/indonesia/tour/nusa-tenggara-timur-kelimutu-lakes-ritual-of-providing-offerings-to-ancestors-5953"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Pati Ka (Pati Ka Du'a Bapu Ata Mata), an annual offering ceremony to feed the ancestral spirits, is held by the Lio community around 14 August each year.",
+          "source_urls": ["https://gowithguide.com/indonesia/tour/nusa-tenggara-timur-kelimutu-lakes-ritual-of-providing-offerings-to-ancestors-5953"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["all three lakes from the main viewpoint at dawn", "the colour contrast between adjacent craters", "mist/cloud below the summit at first light"],
+      "commons_search_terms": ["Kelimutu crater lakes", "Kelimutu three colored lakes Flores"]
+    },
+    {
+      "name": "Wologai and Wolotopo -- Lio traditional villages",
+      "data_ids": ["p-wologai", "p-wolotopo"],
+      "what_it_is": "Two Lio villages in the hills and coastal slopes east of Ende: Wologai, a circular ~800-year-old settlement around a stone-terraced ceremonial ground, and Wolotopo, a steep hillside village on the south coast where ikat weaving and ceremonial houses are still kept.",
+      "why_it_matters": "The quieter counterweight to Kelimutu and the famous weaving villages further along -- Lio adat life away from the tourist path, which the project's own route concept argues is worth including precisely because it is less visited.",
+      "history_culture": "Wologai's houses ring a stepped, stone-walled ceremonial ground rather than the twin-row layout of Ngada villages; the annual thanksgiving ceremony Nggua Ria is still held there. Wolotopo, on a steep hillside on the south coast, keeps ikat weaving and traditional ceremonial houses as living practice rather than performance.",
+      "practical": {
+        "altitude_m": 1045,
+        "access": "road (Wologai in Detusoko district, ~1,000-1,045 m; Wolotopo via Wolowona market, ~12 km east of Ende)",
+        "fees_protocol": "Wologai: elders receive guests, customary courtesies including a betel-nut offering and guest book, group visits arranged in advance. Wolotopo: adat customs strongly maintained, visitors should be accompanied, small courtesy donation expected",
+        "sleep": "Ende (full resupply) or Detusoko for Wologai",
+        "water_resupply": "Ende, Detusoko",
+        "best_time": "daylight, by prior arrangement",
+        "hazards": "none specific"
+      },
+      "facts": [],
+      "photo_subjects": ["Wologai's circular stone-terraced ceremonial ground", "Wolotopo's hillside houses above the south coast", "a backstrap loom in use at Wolotopo"],
+      "commons_search_terms": ["Wologai traditional village Flores", "Wolotopo village Ende"]
+    },
+    {
+      "name": "Nggela, Jopu and Wolojita -- Lio ikat weaving villages",
+      "data_ids": ["p-nggela", "p-jopu", "p-wolojita"],
+      "what_it_is": "A cluster of Lio villages on the south coast and its access road east of Ende, together defining Lio ikat weaving: Nggela on a small coastal plateau, Jopu in the hills between Moni and Wolojita, Wolojita a weaving-village district centre.",
+      "why_it_matters": "One of the three living weaving traditions the race crosses (with Manggarai songke and Sikka ikat), and a direct income line for villages otherwise reached only by the small trickle of overland tourists who make it this far.",
+      "history_culture": "Almost every household in Nggela still keeps a back-strap loom; the cloth -- hand-spun cotton, natural dyes, resist-tied motifs specific to the village -- is collected internationally as well as worn locally for ceremonies. Jopu and Wolojita sit in the same weaving-village cluster along the road toward Nggela, sharing techniques and, in places, a weavers' community.",
+      "practical": {
+        "altitude_m": 180,
+        "access": "single-track road through Jopu and Pora into Nggela; road access for Jopu and Wolojita",
+        "fees_protocol": "guest book and small entrance donation expected at Nggela; village courtesies apply the same way at Jopu and Wolojita; a race checkpoint needs advance village-council agreement, as for any Lio adat village",
+        "sleep": "Moni or Ende",
+        "water_resupply": "Moni, Ende",
+        "best_time": "daylight; coastal road at Wolojita has been cut by landslide after heavy rain",
+        "hazards": "landslide risk on the coastal road near Wolojita after heavy rain"
+      },
+      "facts": [],
+      "photo_subjects": ["a weaver at a back-strap loom", "finished ikat cloth with Lio motifs drying or displayed", "Nggela's plateau above the coast"],
+      "commons_search_terms": ["Nggela ikat weaving Flores", "Lio ikat Nggela Jopu"]
+    },
+    {
+      "name": "Watublapi -- Sikka ikat weaving",
+      "data_ids": ["p-watublapi-weaving"],
+      "what_it_is": "A hillside hamlet about 18 km south-east of Maumere where Sikkanese weavers spin, dye and hand-weave ikat cotton cloth, with demonstrations for visitors.",
+      "why_it_matters": "The third living weaving tradition on the route (with Manggarai songke and Lio ikat), and the easiest of the three to arrange as a checkpoint since it runs closer to a working craft cooperative than an adat village requiring council permission.",
+      "history_culture": "The Watublapi process runs the full ikat sequence in view of visitors: hand-spinning raw cotton into thread, dyeing it with indigo, morinda root and other plant dyes over days or weeks, tying and re-dyeing sections to create the resist patterns that give ikat its name, then weaving on a body-tensioned backstrap loom largely unchanged for centuries.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road",
+        "fees_protocol": "groups welcomed for demonstrations and cloth sales; ask before photographing weavers at work; a small purchase is the customary way to support the community and generally expected of visiting groups",
+        "sleep": "Maumere",
+        "water_resupply": "Maumere",
+        "best_time": "daylight, weaving demonstrations run during normal working hours",
+        "hazards": "none specific"
+      },
+      "facts": [],
+      "photo_subjects": ["thread being dyed", "resist-tying in progress", "a completed panel on a backstrap loom"],
+      "commons_search_terms": ["Watublapi ikat weaving Flores", "Sikka ikat Maumere"]
+    },
+    {
+      "name": "Larantuka -- Semana Santa, Tuan Ma and Tuan Ana",
+      "data_ids": ["p-larantuka-heritage", "p-kapela-tuan-ma", "p-larantuka-cathedral"],
+      "what_it_is": "The Portuguese-Catholic port town at Flores' eastern tip, seat of the historic Kingdom of Larantuka and host of Semana Santa (Holy Week), the race's finish town.",
+      "why_it_matters": "The bookend, five centuries deep, to Sikka village in the west: the fullest living expression of Flores' Portuguese-Catholic story, and the town under Ile Mandiri where the race ends.",
+      "history_culture": "Tradition holds that the Semana Santa devotion began after a statue of the Virgin Mary (Tuan Ma) was found on Larantuka's beach around 1510, thought to have come from a wrecked Portuguese ship; the Kingdom of Larantuka itself converted to Catholicism in the 1500s under Dominican missionaries and Portuguese traders. For more than 500 years the Confreria (Confreria de Rosari, a lay religious brotherhood tracing its form directly to that period) has organised Holy Week alongside the church and the old palace household. During Semana Santa the statues of Tuan Ma (Our Lady, normally kept at Kapela Tuan Ma) and Tuan Ana (the body of Christ) are carried from their respective chapels to Reinha Rosari Cathedral and paraded through the town in candlelit processions, with Sesta Vera (Good Friday) as the ritual peak; local sources describe the tradition as unbroken since the 16th century, surviving Dutch Protestant rule, Japanese occupation and Indonesian independence, though no independent source was found ranking it against comparable Catholic ritual traditions elsewhere in the region. More than 80% of Flores' roughly 2 million people are Catholic, with over 2,700 Catholic churches on the island -- among the highest Catholic-population shares of any island in Indonesia.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road; the finish town, harbour and airport-served",
+        "fees_protocol": "cathedral and chapels are open places of worship -- ordinary church courtesy applies; Holy Week itself draws large pilgrim crowds and is outside the proposed dry-season race window",
+        "sleep": "Larantuka (full resupply, finish town)",
+        "water_resupply": "Larantuka",
+        "best_time": "any time for the town and cathedral; Semana Santa itself falls at Easter, months before the race's late-June-September window",
+        "hazards": "none specific to the heritage sites"
+      },
+      "facts": [
+        {
+          "fact": "Tradition holds that the Tuan Ma statue was found on Larantuka's beach around 1510, believed to have come from a wrecked Portuguese ship, and this discovery is treated as the origin of the Semana Santa devotion.",
+          "source_urls": ["https://en.gotravelaindonesia.com/Santa's-Semana-Procession/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "The Confreria (Confreria de Rosari), a lay religious brotherhood, has organised Larantuka's Holy Week processions alongside the church and the old palace household for more than 500 years.",
+          "source_urls": ["https://windonesia.com/article/five-centuries-of-semana-santa-in-larantuka"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "During Semana Santa the statues of Tuan Ma and Tuan Ana are carried from their chapels to Reinha Rosari Cathedral and processed through the town, with Good Friday (Sesta Vera) as the ritual peak.",
+          "source_urls": ["https://en.gotravelaindonesia.com/Santa's-Semana-Procession/"],
+          "confidence": "likely"
+        },
+        {
+          "fact": "More than 80% of Flores' roughly 2 million people are Catholic, and the island has more than 2,700 Catholic churches -- among the highest Catholic-population shares of any island in Indonesia.",
+          "source_urls": ["https://www.ncregister.com/cna/cna-20251129-flores-seminarians"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["candlelit Holy Week procession (seasonal, Easter only)", "Reinha Rosari Cathedral exterior", "Kapela Tuan Ma waterfront chapel", "Larantuka harbour with Ile Mandiri behind"],
+      "commons_search_terms": ["Larantuka Semana Santa", "Reinha Rosari Cathedral Larantuka", "Tuan Ma Larantuka"]
+    },
+    {
+      "name": "Solor Fort (Lohayong)",
+      "data_ids": ["p-solor-fort"],
+      "what_it_is": "The ruined 16th-century Portuguese fort at Lohayong on Solor island, across the strait from Larantuka -- context for the race's Portuguese-heritage story, not on the course itself.",
+      "why_it_matters": "The seed of the Portuguese-Catholic presence that later flowered at Larantuka and Sikka: the earliest permanent European foothold in this part of the Lesser Sundas.",
+      "history_culture": "Portuguese Dominican friars first settled at Lohayong on Solor around 1557 to trade and evangelise; in 1561 they built a wooden stockade for protection against slave-raiding fleets from Makassar, and in 1566 Dominican friar António da Cruz replaced it with a stone fort to protect the newly founded convent from attacks by fleets from Java. The fort complex grew to include a friars' dormitory, a seminary (fifty pupils by 1600), and the church of Nossa Senhora da Piedade for the Portuguese community, with a native village and the church of São João Baptista built alongside it. This settlement, not Larantuka, was the Portuguese Dominicans' first fixed base in the region, and its congregation and mission later relocated influence toward Larantuka as Dutch pressure on Solor grew.",
+      "practical": {
+        "altitude_m": null,
+        "access": "boat from Larantuka across the strait to Solor; not part of the race course",
+        "fees_protocol": "ruin site, no visitor protocol documented",
+        "sleep": "Larantuka (day trip)",
+        "water_resupply": "Larantuka",
+        "best_time": "daylight, sea conditions permitting",
+        "hazards": "boat crossing depends on sea conditions"
+      },
+      "facts": [
+        {
+          "fact": "Portuguese Dominican friars settled at Lohayong on Solor around 1557, building a wooden stockade in 1561 and replacing it with a stone fort in 1566 under Frei António da Cruz.",
+          "source_urls": ["https://www.colonialvoyage.com/portuguese-solor-lesser-sunda-islands/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["the fort ruins", "the strait between Solor and Larantuka with Ile Mandiri visible"],
+      "commons_search_terms": ["Solor Fort Lohayong", "Benteng Lohayong Solor"]
+    },
+    {
+      "name": "Sikka village, its 1899 church, and Lela",
+      "data_ids": ["p-sikka-village", "p-sikka-church", "p-lela"],
+      "what_it_is": "The seaside village that gave Sikka Regency its name, capital of the pre-colonial Sikka kingdom, its narrow wooden Baroque-style church, and the nearby secondary mission town of Lela.",
+      "why_it_matters": "The quieter, older counterpart to Larantuka's grand Semana Santa: the first point on the route where Portuguese-era Catholicism visibly took root on Flores' south coast, still a living village and parish rather than a museum.",
+      "history_culture": "Sikka's rulers converted to Catholicism under Portuguese and Dominican influence in the 16th-17th centuries and retained real local authority into the 20th century, long after the Portuguese themselves had been displaced from Flores by the Dutch; the royal Ximenes da Silva line has living descendants in the area today. The Sikka Old Church was built in the 1890s by Pastor Yohanes Engbers together with the Sikka king Yoseph Mbako Ximenes Da Silva, with construction largely finished in 1889 but the building first used for Mass on Christmas Eve, 24 December 1899; it is built in a narrow wooden Baroque style with teak columns and an interior band of traditional ikat design.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road",
+        "fees_protocol": "a working village and parish, not a museum: greet before photographing, treat the church and old royal graves with normal place-of-worship courtesy; no fixed guest-fee system, a small courtesy donation at the church is customary",
+        "sleep": "Lela or Maumere",
+        "water_resupply": "Lela, Maumere",
+        "best_time": "daylight; church open at normal hours",
+        "hazards": "none specific"
+      },
+      "facts": [
+        {
+          "fact": "Sikka's church was built in the 1890s by Pastor Yohanes Engbers with the Sikka king Yoseph Mbako Ximenes Da Silva, with the building largely complete in 1889 but first used for Mass on Christmas Eve, 24 December 1899.",
+          "source_urls": ["https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/"],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": ["the wooden church facade and teak-column interior", "Sikka village on its south-coast curve", "the old royal graves"],
+      "commons_search_terms": ["Sikka old church Flores", "Gereja Tua Sikka"]
+    },
+    {
+      "name": "Ledalero Seminary",
+      "data_ids": ["p-ledalero-seminary"],
+      "what_it_is": "St Paul's Major Seminary, a hilltop Catholic seminary about 9 km inland from Maumere, founded in 1937 by the Divine Word Missionaries (SVD).",
+      "why_it_matters": "A concrete marker of how deep Catholic institutional life runs on this end of the island -- one of the largest seminaries in the world sits a short ride from the race route, not in a national capital but in rural Flores.",
+      "history_culture": "Founded in 1937, Ledalero has grown into one of the largest Catholic seminaries anywhere, training priests not only for Flores and Indonesia but for missions elsewhere; its scale is repeatedly cited by Catholic press as evidence of the exceptional vocations culture of this part of Indonesia.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road",
+        "fees_protocol": "an active seminary, not a tourist attraction -- visit with the same restraint as any working religious institution",
+        "sleep": "Maumere",
+        "water_resupply": "Maumere",
+        "best_time": "daylight",
+        "hazards": "none specific"
+      },
+      "facts": [
+        {
+          "fact": "Ledalero's St Paul's Major Seminary was founded in 1937 by the Divine Word Missionaries (SVD) and is cited as one of the largest Catholic seminaries in the world.",
+          "source_urls": ["https://catholicweekly.com.au/fr-flader-the-worlds-largest-seminary/", "https://www.ncregister.com/cna/cna-20251129-flores-seminarians"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["the seminary buildings on their hilltop", "seminarians in daily life if permitted"],
+      "commons_search_terms": ["Ledalero seminary Maumere", "St Paul Seminary Ledalero"]
+    },
+    {
+      "name": "Ende -- Sukarno's exile and the Pancasila tree",
+      "data_ids": ["p-ende-town", "p-sukarno-exile-house", "p-pancasila-tree"],
+      "what_it_is": "The largest town of central Flores under Iya volcano, where Indonesia's future first president lived in Dutch-imposed exile from 1934 to 1938, and the seafront park said to hold the tree under which he shaped the Pancasila.",
+      "why_it_matters": "A history hook that reaches past the island itself into the founding philosophy of the Indonesian republic -- gives the mandatory Ende resupply stop a story worth more than the resupply.",
+      "history_culture": "Sukarno was exiled by the Dutch colonial government to a plain colonial-style house on Jalan Perwira (built 1927, owned by Haji Abdulah Ambuwaru), arriving with his wife Inggit Garnasih in January 1934 and staying until 1938; the house, a museum since 1954, preserves two bedrooms, a small library and a meditation room largely unchanged. Ende's exile years are told alongside the nearby Bung Karno Contemplation Park, a seafront park where Sukarno is said to have worked out the outline of Pancasila (Indonesia's five founding principles) while looking out at the sea beneath a breadfruit (sukun) tree; the current tree, planted in 1980, has five branches, echoing the five principles.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road, full resupply town",
+        "fees_protocol": "museum entrance fee at the exile house; the park is open public space",
+        "sleep": "Ende (full resupply, hospital, airport)",
+        "water_resupply": "Ende",
+        "best_time": "daylight",
+        "hazards": "none specific"
+      },
+      "facts": [
+        {
+          "fact": "Sukarno was exiled to a house on Jalan Perwira in Ende from January 1934 to 1938 under the Dutch colonial government; the house has been a museum of his belongings since 1954.",
+          "source_urls": ["https://tourisminfo.nttprov.go.id/2025/08/11/rumah-pengasingan-bung-karno-di-ende-jejak-sang-proklamator-di-tanah-flores/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The breadfruit tree at Ende's Bung Karno Contemplation Park, said to be where Sukarno contemplated the ideas that became Pancasila, was planted in 1980 (replacing the original) and has five branches.",
+          "source_urls": ["https://travel.kompas.com/read/2022/05/31/220300327/taman-renungan-bung-karno-di-ende-ntt-tempat-lahirnya-pancasila?page=all"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["the exile house interior", "the five-branched breadfruit tree at the seafront park", "Iya volcano behind the town"],
+      "commons_search_terms": ["Sukarno exile house Ende", "Taman Renungan Bung Karno Ende"]
+    },
+    {
+      "name": "Wuring -- the Bajo sea people",
+      "data_ids": ["p-wuring"],
+      "what_it_is": "A Bajo stilt village built out over the tidal flats at the edge of Maumere bay, one of Flores' few Bajo settlements, passed on the way into Maumere.",
+      "why_it_matters": "A complete change of register from the hill-farming cultures the route has crossed for a thousand kilometres: the Bajo are historically nomadic sea people, and Wuring is a rare foothold of that culture on an island otherwise dominated by highland communities.",
+      "history_culture": "The Bajo -- often called 'sea gypsies' -- are found in small seafaring communities scattered across the Indonesian archipelago; Wuring's houses stand on stilts over mudflat with no dry ground at high tide, linked by plank walkways rather than streets, boats pulled up beneath the houses and nets drying on the walkways. It is a working fishing community, not a set-piece cultural checkpoint, and the route treats it accordingly: pass through with respect, stop briefly, without assuming the village has agreed to host anyone the way an adat checkpoint village has.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road along the bay edge",
+        "fees_protocol": "no guest-book/donation system -- a working community on shared walkways: ride slowly, ask before photographing people or house interiors, do not treat as a checkpoint without separate community agreement",
+        "sleep": "Maumere",
+        "water_resupply": "Maumere",
+        "best_time": "daylight, avoid peak low-tide mudflat exposure if seeking clean photographs",
+        "hazards": "narrow shared walkways, tidal timing"
+      },
+      "facts": [],
+      "photo_subjects": ["stilt houses over the tidal flat", "boats and nets on the walkways", "the Bajo village against Maumere bay"],
+      "commons_search_terms": ["Wuring stilt village Maumere", "Bajo sea nomads Flores"]
+    },
+    {
+      "name": "Komodo National Park",
+      "data_ids": ["p-komodo-np-gateway"],
+      "what_it_is": "The Komodo and Rinca island park off the race's start town of Labuan Bajo -- context for the start, not on the Flores-island route itself, but the reason most riders and readers will already know the name of the race's gateway.",
+      "why_it_matters": "Gives the brochure's opening chapter a globally recognised anchor (the world's largest living lizard) even though the race itself stays on Flores; frames Labuan Bajo as more than an airport town.",
+      "history_culture": "Komodo National Park was inscribed as a UNESCO World Heritage Site in 1991, protecting the only place on Earth the Komodo dragon (Varanus komodoensis) lives in the wild. Population counts vary by method and year: UNESCO cites around 5,700 individuals; Indonesia's Ministry of Environment and Forestry ecological surveys put the population fluctuating between roughly 2,430 and 3,022 individuals over 2015-2019, and more recent rough estimates for the species overall run 2,400-5,000.",
+      "practical": {
+        "altitude_m": null,
+        "access": "boat from Labuan Bajo harbour; not part of the bike route",
+        "fees_protocol": "national park entrance/conservation fees; ranger-guided visits only",
+        "sleep": "Labuan Bajo",
+        "water_resupply": "Labuan Bajo",
+        "best_time": "any time; boat trips typically depart early morning",
+        "hazards": "wild Komodo dragons are dangerous animals; rangers only, no unguided approach"
+      },
+      "facts": [
+        {
+          "fact": "Komodo National Park was declared a UNESCO World Heritage Site in 1991.",
+          "source_urls": ["https://whc.unesco.org/en/list/609/"],
+          "confidence": "verified"
+        },
+        {
+          "fact": "Komodo dragon population counts vary by source and method: UNESCO cites around 5,700 individuals, while Indonesia's Ministry of Environment and Forestry ecological surveys recorded the population fluctuating between about 2,430 and 3,022 individuals over 2015-2019.",
+          "source_urls": ["https://whc.unesco.org/en/soc/4177/"],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": ["a Komodo dragon on Komodo or Rinca island", "Labuan Bajo harbour with liveaboard boats", "the park's savanna hills from the water"],
+      "commons_search_terms": ["Komodo dragon Komodo Island", "Komodo National Park Labuan Bajo"]
+    },
+    {
+      "name": "Entering a traditional village -- general protocol",
+      "data_ids": ["p-bena"],
+      "what_it_is": "The shared etiquette that applies, with local variation, at every traditional/adat village on the route (Bena, Luba, Tololela, Gurusina, Wogo, Wae Rebo, Todo, Wologai, Wolotopo, Nggela, Jopu, Wolojita) -- the practical backbone of the brief's repeated instruction that villages are hosts, not scenery.",
+      "why_it_matters": "This is the operating principle behind every cultural checkpoint in the route concept: without agreed protocol, there is no checkpoint, only unwanted intrusion. Brochure copy should set this expectation for riders before they arrive at any village.",
+      "history_culture": "Across Flores' traditional villages, a broadly consistent visitor protocol has evolved out of adat custom and, more recently, organised tourism: entering usually means being received by elders or a village representative, signing a guest/visitor book (often alongside or in place of a formal entry ticket), and making a donation -- amount often informal or by suggestion rather than fixed, especially at smaller, less-touristed villages. Betel nut (sirih pinang: areca nut, betel leaf and lime, chewed together) carries deep hospitality meaning in eastern Indonesia; a visitor offering or accepting a betel-nut quid is a traditional gesture of good faith that opens honest, friendly conversation, and Wologai's protocol note in the project's own data specifically names a betel-nut offering as an expected courtesy. Modest dress (shoulders and knees covered, a sarong or scarf on hand) is expected, especially near shrine or ceremonial areas, and permission should be asked before photographing individuals or ceremonial structures -- most people are happy to allow it once asked. Beyond the entry formalities, visitors are generally free to walk through a village but should not enter dwellings or ceremonial buildings without a specific invitation.",
+      "practical": {
+        "altitude_m": null,
+        "access": "n/a -- applies at every traditional-village stop",
+        "fees_protocol": "guest book + donation (amount often informal), betel-nut courtesy where offered, modest dress, ask before photographing people or entering buildings, no entry to ceremonial structures without invitation",
+        "sleep": "varies by village -- see individual village entries",
+        "water_resupply": "varies by village",
+        "best_time": "daylight, and by prior arrangement wherever a race-checkpoint agreement is in force",
+        "hazards": "none -- a courtesy/relationship risk (jeopardising future access) rather than a physical one"
+      },
+      "facts": [
+        {
+          "fact": "Betel nut (areca nut with betel leaf and lime) is a traditional hospitality gesture across eastern Indonesia; offering or sharing it is understood to open honest, friendly conversation between guest and host.",
+          "source_urls": ["https://steemit.com/aceh/@ayahkasih/tradisi-mengunyah-sirih-pinang-or-betel-nut-chewing-traditions-bilingual"],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": ["a guest book being signed", "a betel-nut offering exchanged", "riders in modest dress greeting village elders"],
+      "commons_search_terms": ["sirih pinang betel nut Indonesia", "traditional village guest book Flores"]
+    }
+  ],
+  "narrative_notes": "The thread runs oldest to newest and can be told as one continuous story: deep time at Liang Bua and Mata Menge (Homo floresiensis, 700,000 to 60,000 years ago) gives way to the living megalithic present of Ngada (ngadhu/bhaga, Reba) and Manggarai (mbaru niang, lingko/lodok, caci, Penti, songke), then to Lio belief made physical at Kelimutu and its weaving villages, then to five centuries of Portuguese-Catholic contact bookended by Sikka in the west and Larantuka in the east (with Solor Fort as the seed and Ledalero as the modern institutional flowering), then to the 20th-century republic at Sukarno's Ende exile, with the Bajo at Wuring and the Komodo dragons at the western gate as two counter-notes -- one a different people entirely, one a different kind of fame. Every traditional-village stop shares one etiquette backbone (guest book, donation, betel nut, modest dress, ask before photographing), which is worth stating once, clearly, rather than repeating at each village.",
+  "corrections_to_data": [
+    "No POI exists yet for Mata Menge / the So'a Basin fossil site, though route-concept.md names it explicitly as part of the deep-time thread and it is scientifically the stronger of the two Homo floresiensis dating stories (~700,000 years vs. Liang Bua's 60,000-100,000). Consider adding a POI (category likely 'other' or a new 'heritage'/'fossil-site' value) once coordinates can be sourced without a coordinate-lookup search.",
+    "p-solor-fort's story field can be upgraded past field:pending on the 1566 stone-fort date: an independent academic/historical source (colonialvoyage.com, drawing on Portuguese colonial records) corroborates 1561 wooden stockade -> 1566 stone fort under Frei Antonio da Cruz, consistent with what the current sources already imply. Confidence could reasonably move from 'unverified' toward 'likely' on that specific date, though the site remains field:pending overall.",
+    "Kelimutu's middle-lake name appears in outside sources with different transliteration/word order ('Tiwu Nua Muri Kooh Tai' in project data vs. 'Tiwu Ko'o Fai Nuwa Muri' / 'Nuwa Muri Kooh Fai' elsewhere) -- likely just spelling variation across Indonesian-language sources, not a factual conflict, but worth a note if a Lio-language authority is ever consulted."
+  ],
+  "open_questions": [
+    "Should Mata Menge / So'a Basin be added as a scoutable anchor near the Bajawa/Aimere corridor, given it strengthens the deep-time narrative arm more than Liang Bua alone?",
+    "Is there a documented, fixed fee/donation range across the Ngada and Lio adat villages that a rider briefing could state as a number range, or does it genuinely vary too much village to village to standardize?",
+    "Penti and Reba both fall well outside the proposed dry-season race window (late Jun-Sep) -- is there any village-specific ceremony or lighter seasonal marker that does fall inside the race window worth telling riders about, or should the brochure be explicit that the race misses these festivals by design?"
+  ]
+}

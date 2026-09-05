@@ -1,0 +1,287 @@
+{
+  "topic_id": "logistics",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Komodo Airport, Labuan Bajo",
+      "data_ids": ["p-labuan-bajo-airport", "n-labuan-bajo"],
+      "what_it_is": "The race's arrival/start gateway (IATA LBJ): the only airport in West Manggarai and the busiest in the region.",
+      "why_it_matters": "Defines crew, media and rider-repatriation logistics for the start; also the fallback exit for a scratched rider anywhere in the west half of the course.",
+      "history_culture": "Grew rapidly with Labuan Bajo's dive- and Komodo-tourism boom; still small enough that flight schedules shift with the tourist season.",
+      "practical": {
+        "altitude_m": null,
+        "access": "road into Labuan Bajo town",
+        "fees_protocol": null,
+        "sleep": "full range of hotels in town",
+        "water_resupply": "full resupply in town",
+        "best_time": "dry season (Apr-Oct) has the most flight capacity; Jun-Aug is also the busiest and priciest window",
+        "hazards": null
+      },
+      "facts": [
+        {"fact": "As of mid-2026, 8 airlines fly to Labuan Bajo from about 10 airports worldwide, and 8 airlines fly out to about 12 airports; Wings Air, Super Air Jet, AirAsia and Batik Air operate most flights.", "source_urls": ["https://www.flightconnections.com/flights-to-labuan-bajo-lbj", "https://www.flightconnections.com/flights-from-labuan-bajo-lbj"], "confidence": "likely"},
+        {"fact": "Domestic routes: Denpasar (Bali) is the busiest link at 4-6 flights/day (~1 hour), plus Jakarta (5 airlines: AirAsia, Batik Air, Citilink, Garuda, Super Air Jet) and Praya/Lombok; Wings Air also flies Labuan Bajo-Ende direct.", "source_urls": ["https://www.flightconnections.com/flights-to-labuan-bajo-lbj"], "confidence": "likely"},
+        {"fact": "Kuala Lumpur is the longest-haul direct international route (~3h40m). Jetstar Asia ended its twice-weekly Singapore-Labuan Bajo service on 31 July 2025; Scoot announced a twice-weekly Singapore replacement targeted for launch between Oct 2025 and Mar 2026, subject to regulatory approval.", "source_urls": ["https://boatique-charters.com/singapore-komodo-flight-update-2025/"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Komodo Airport terminal and apron", "arriving/departing propeller aircraft with hills behind"],
+      "commons_search_terms": ["Komodo Airport Labuan Bajo", "Bandara Komodo"]
+    },
+    {
+      "name": "H. Hasan Aroeboesman Airport, Ende",
+      "data_ids": ["p-ende-airport", "n-ende"],
+      "what_it_is": "Ende's airport (IATA ENE), ~2 km from town centre; the region's main air-evacuation point for central Flores.",
+      "why_it_matters": "Nearest airport to the Kelimutu/Lio section (08) of the course; a realistic medevac and crew-change point roughly at race mid-distance.",
+      "history_culture": null,
+      "practical": {
+        "altitude_m": 15,
+        "access": "road, ~2 km from town",
+        "fees_protocol": null,
+        "sleep": "hotels in Ende (n-ende: full resupply, reliable water, hotel sleep)",
+        "water_resupply": "full resupply in Ende town",
+        "best_time": null,
+        "hazards": null
+      },
+      "facts": [
+        {"fact": "Wings Air is effectively the only scheduled operator at Ende, flying to Kupang and Labuan Bajo; some sources also list TransNusa and occasional Bali (Denpasar) service via Kupang.", "source_urls": ["https://www.flightconnections.com/flights-from-ende-ene", "https://komodo-travel.com/practical/flores-airports/"], "confidence": "likely"},
+        {"fact": "Wings Air suspended flights on the Maumere-Ende-Larantuka cluster of routes during periods of Lewotobi eruption activity, evidence that regional flight schedules are exposed to the same volcanic hazard as the course's section 10.", "source_urls": ["https://www.detik.com/bali/nusra/d-8122213/wings-air-rute-maumere-ende-larantuka-batal-terbang-akibat-erupsi-lewotobi"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["Ende airport apron with Iya volcano backdrop"],
+      "commons_search_terms": ["H Hasan Aroeboesman Airport", "Bandara Ende"]
+    },
+    {
+      "name": "Frans Seda Airport, Maumere",
+      "data_ids": ["p-frans-seda-airport", "n-maumere"],
+      "what_it_is": "Maumere's airport (IATA MOF), ~5 km from town; nearest scheduled-flight gateway to the Sikka end of the course.",
+      "why_it_matters": "Logistics and medevac point for sections 09-10; likely rider/crew changeover point near the race's last quarter.",
+      "history_culture": null,
+      "practical": {
+        "altitude_m": null,
+        "access": "road, ~5 km from Maumere centre",
+        "fees_protocol": null,
+        "sleep": "hotels in Maumere",
+        "water_resupply": "full resupply in Maumere (market, ATMs)",
+        "best_time": null,
+        "hazards": "flights on this route periodically suspended during active Lewotobi eruption phases"
+      },
+      "facts": [
+        {"fact": "Wings Air and Nam Air are the scheduled operators; Nam Air and Wings Air both fly non-stop from Kupang, Wings Air also connects Labuan Bajo and Makassar.", "source_urls": ["https://www.flightconnections.com/flights-to-maumere-mof", "https://komodo-travel.com/practical/flores-airports/"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Frans Seda Airport terminal", "small turboprop on the Maumere apron"],
+      "commons_search_terms": ["Frans Seda Airport Maumere", "Bandara Frans Seda"]
+    },
+    {
+      "name": "Gewayantana Airport, Larantuka",
+      "data_ids": ["p-gewayantana-airport", "n-larantuka"],
+      "what_it_is": "Larantuka's airport (IATA LKA), ~9-15 km from town in Tiwatobi village; the finish town's air gateway.",
+      "why_it_matters": "Finish-line logistics: rider/crew departures, medevac for the eastern end of the course, closest airport to the Lewotobi hazard zone the route must skirt.",
+      "history_culture": null,
+      "practical": {
+        "altitude_m": null,
+        "access": "road, 9-15 km from Larantuka",
+        "fees_protocol": null,
+        "sleep": "hotels in Larantuka",
+        "water_resupply": "full resupply in Larantuka",
+        "best_time": null,
+        "hazards": "same eruption-driven flight suspensions as Ende/Maumere"
+      },
+      "facts": [
+        {"fact": "Search results confirmed Larantuka's cluster (Ende-Maumere-Larantuka) shares Wings Air service and the same eruption-driven suspensions, but did not surface Gewayantana-specific route detail beyond what is already in data/pois.geojson (verified via Wikipedia and an airport directory).", "source_urls": ["https://www.detik.com/bali/nusra/d-8122213/wings-air-rute-maumere-ende-larantuka-batal-terbang-akibat-erupsi-lewotobi"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Gewayantana Airport", "coastal approach near Ile Mandiri"],
+      "commons_search_terms": ["Gewayantana Airport", "Bandara Gewayantana Larantuka"]
+    },
+    {
+      "name": "Turelelo-Soa Airport, Bajawa",
+      "data_ids": ["p-soa-airfield", "n-bajawa"],
+      "what_it_is": "The airfield serving Bajawa (IATA BJW), ~23.5 km north of town in Soa sub-district.",
+      "why_it_matters": "A secondary medevac/crew option near the Ngada megalith section (05) if Ende or Labuan Bajo are too far.",
+      "history_culture": null,
+      "practical": {"altitude_m": null, "access": "road, ~23.5 km from Bajawa", "fees_protocol": null, "sleep": "hotels in Bajawa", "water_resupply": "full resupply in Bajawa", "best_time": null, "hazards": null},
+      "facts": [
+        {"fact": "Not independently re-searched this session; data/pois.geojson already lists this as verified (Wikipedia, two articles) with scheduled flights to Kupang and Ende. No new source added.", "source_urls": ["https://en.wikipedia.org/wiki/Bajawa_Soa_Airport"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["Soa airstrip with plateau backdrop"],
+      "commons_search_terms": ["Soa Airport Bajawa", "Bandara Turelelo Soa"]
+    },
+    {
+      "name": "Labuan Bajo harbour and the Sape ferry",
+      "data_ids": ["p-labuan-bajo-harbour"],
+      "what_it_is": "The town's main pier/Pelni terminal; also the ASDP ferry link west across the Sape Strait to Sape, Sumbawa (the classic overland Bali-Flores backpacker route).",
+      "why_it_matters": "A crew/logistics alternative to flying gear or a bike box in from Bali/Sumbawa; also the working port behind the tourist-boat harbour.",
+      "history_culture": null,
+      "practical": {"altitude_m": null, "access": "in Labuan Bajo town", "fees_protocol": null, "sleep": "town hotels", "water_resupply": "full resupply", "best_time": null, "hazards": null},
+      "facts": [
+        {"fact": "This session's ferry search returned good detail on the Larantuka-side ASDP network but did not surface a current Labuan Bajo-Sape timetable; that route is well documented elsewhere (it is the standard Bali-Flores overland ferry) but is left unverified here rather than guessed at.", "source_urls": ["https://www.rome2rio.com/s/Labuan-Bajo/Larantuka"], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["Labuan Bajo harbour at sunset with Komodo tour boats"],
+      "commons_search_terms": ["Labuan Bajo harbour", "Pelabuhan Labuan Bajo"]
+    },
+    {
+      "name": "Aimere ferry port",
+      "data_ids": ["n-aimere"],
+      "what_it_is": "South-coast port of Ngada Regency, ~1 hour from Bajawa; ASDP ferry to Waingapu (Sumba) and to Kupang.",
+      "why_it_matters": "Ferry option for crew/gear movement near section 05/06 of the course; also the logical jump-off if an Ultra epilogue via Sumba were ever considered.",
+      "history_culture": "Arak-distilling coast, per route-concept.md.",
+      "practical": {"altitude_m": null, "access": "road from Bajawa (~1h)", "fees_protocol": null, "sleep": "homestay", "water_resupply": "basic (water unreliable)", "best_time": null, "hazards": "water unreliable locally"},
+      "facts": [
+        {"fact": "Already verified in data/nodes.geojson (n-aimere): ASDP ferry to Waingapu (Tue/Fri) and to Kupang. Not re-searched independently this session; this session's ferry search focused on the Larantuka side per the brief.", "source_urls": ["https://kataomed.com/jadwal-kapal/jadwal-kapal-ferry-dari-pelabuhan-aimere-ke-pelabuhan-kupang-dan-waingapu"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["Aimere pier with ferry loading"],
+      "commons_search_terms": ["Pelabuhan Aimere"]
+    },
+    {
+      "name": "Larantuka port and inter-island ferries",
+      "data_ids": ["n-larantuka", "p-larantuka-heritage"],
+      "what_it_is": "The finish town's port: ASDP ferries across the narrow Larantuka Strait to Adonara and Solor, and onward multi-stop routes to Lewoleba (Lembata) and Kupang (West Timor).",
+      "why_it_matters": "A ferry epilogue to Adonara/Lembata is explicitly floated in route-concept.md as one way to extend an Ultra variant; also the practical route for spectators/media/riders' onward travel after the finish, since there is no direct ferry to Labuan Bajo.",
+      "history_culture": "Larantuka is the Portuguese-Catholic Semana Santa town; the strait crossing to Adonara/Solor has been a fixed feature of Flores Timur life for centuries.",
+      "practical": {"altitude_m": null, "access": "in Larantuka town", "fees_protocol": null, "sleep": "hotels in Larantuka", "water_resupply": "full resupply", "best_time": null, "hazards": null},
+      "facts": [
+        {"fact": "KMP Ile Labalekan runs Kupang-Lewoleba-Adonara-Larantuka, departing Kupang's Bolok terminal at 10:00, reaching Lewoleba the next morning, then continuing to Adonara and Larantuka before returning to Kupang.", "source_urls": ["https://kupang.tribunnews.com/bisnis/966158/jadwal-kapal-ferry-asdp-kupang-ntt-hari-ini-rabu-3-juni-kupang-lewoleba-adonara-_-larantuka-pp"], "confidence": "likely"},
+        {"fact": "KMP Ile Mandiri runs a Baranusa-Lewoleba-Solor-Larantuka rotation (departs ~02:00), also serving Adonara on the same multi-day loop out toward Kalabahi (Alor).", "source_urls": ["https://kupang.tribunnews.com/bisnis/975359/jadwal-kapal-ferry-asdp-kupang-hari-ini-rabu-kmp-ile-mandiri-baranusa-adonara-jam-6-sore"], "confidence": "likely"},
+        {"fact": "There is no direct ferry from Larantuka to Labuan Bajo; a surface route goes via Kupang and takes roughly 2 days 17 hours including transfers, confirming that inter-town gear/crew logistics along the finish end of the course should default to flights, not ferries.", "source_urls": ["https://www.rome2rio.com/s/Larantuka/Labuan-Bajo"], "confidence": "likely"},
+        {"fact": "ASDP schedules on this coast are frequently disrupted: a search hit shows Kupang-Larantuka-Aimere sailings cancelled outright on at least one occasion, underscoring that published timetables should be treated as indicative, not guaranteed, for race planning.", "source_urls": ["https://kupang.tribunnews.com/provinsi-ntt/972114/asdp-kupang-batalkan-pelayaran-kapal-ferry-rute-kupang-larantuka-hingga-aimere"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Larantuka waterfront with ferries and Ile Mandiri behind", "Adonara strait crossing"],
+      "commons_search_terms": ["Pelabuhan Larantuka", "Larantuka ferry Adonara"]
+    },
+    {
+      "name": "Trans-Flores Highway",
+      "data_ids": [],
+      "what_it_is": "The single paved road spanning Flores end to end, used by the course only as short links between sections, never as the course itself.",
+      "why_it_matters": "The road figure anchors the brochure's core comparison: the highway needs far more distance to cross the island than a straight line would suggest, which is the seed of the race's own claim to reach 1,200-1,400+ km off-highway.",
+      "history_culture": null,
+      "practical": {"altitude_m": null, "access": "the island's one continuous paved corridor, Labuan Bajo-Ruteng-Bajawa-Ende-Moni-Maumere-Larantuka", "fees_protocol": null, "sleep": null, "water_resupply": null, "best_time": "dry season (Apr-Oct); highland/rainy-season stretches (Nov-Mar) can be difficult", "hazards": "slow, winding mountain road; rarely a flat or straight stretch over 100 m; some central-highland sections degrade in the rainy season"},
+      "facts": [
+        {"fact": "Sources differ on exact length: one guide gives ~500 km Labuan Bajo-Maumere by road versus ~250 km straight-line; another gives ~660 km of asphalt for a ~375 km direct distance end-to-end. Both describe the same phenomenon the concept doc cites (~670 km actual road length across the island) but the two figures are not identical, so the highway's precise length should be read as approximate, not a single settled number.", "source_urls": ["https://discoverflores.guide/the-complete-trans-flores-highway-road-trip-itinerary-your-ultimate-guide-to-exploring-indonesias-hidden-gem/", "https://mijnreiservaring.nl/en/asia/indonesia-en/flores-itinerary/"], "confidence": "likely"},
+        {"fact": "The road is mostly asphalt and generally in good condition, but average driving speed is only around 35 km/h because of continuous bends and mountainous terrain; central-highland stretches can be more difficult in the Nov-Mar wet season.", "source_urls": ["https://www.travel2flores.info/planning/transport/", "https://mijnreiservaring.nl/en/asia/indonesia-en/flores-itinerary/"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Trans-Flores highway switchbacks through highlands", "roadside market stall on the highway"],
+      "commons_search_terms": ["Trans Flores Highway", "Jalan Trans Flores"]
+    },
+    {
+      "name": "Labuan Bajo (resupply hub and start town)",
+      "data_ids": ["n-labuan-bajo", "p-labuan-bajo-airport", "p-labuan-bajo-harbour"],
+      "what_it_is": "Race start town: fully geared for international tourism, with the region's only hospital-grade private facility.",
+      "why_it_matters": "The best-equipped town on the whole course; the natural place to stage bikes, spares and a pre-race medical check.",
+      "history_culture": "Boomed from a fishing village into the Komodo dive/tour gateway over the last two decades.",
+      "practical": {"altitude_m": null, "access": "road/air/sea", "fees_protocol": null, "sleep": "hotels, full range", "water_resupply": "full resupply, supermarkets", "best_time": "Jun-Aug busiest and priciest; Apr-May and Sep-Oct similar weather with fewer crowds", "hazards": null},
+      "facts": [
+        {"fact": "Siloam Hospitals Labuan Bajo, a 3-storey private hospital on Jl. Gabriel Gampur, is the only hospital facility in Labuan Bajo/West Manggarai Regency.", "source_urls": ["https://www.siloamhospitals.com/rumah-sakit/siloam-hospitals-labuan-bajo"], "confidence": "verified"},
+        {"fact": "Labuan Bajo has many motorbike/scooter rental outlets (e.g. Bajo Rental) but the search did not find a dedicated pedal-bicycle shop; rental and repair infrastructure in town is built around motorbikes and dive/tour gear, not cycling.", "source_urls": ["https://www.tripadvisor.com/Attraction_Review-g1777483-d13007332-Reviews-Bajo_Rental-Labuan_Bajo_Flores_East_Nusa_Tenggara.html", "https://cycloscope.net/bicycle-touring-flores-indonesia/"], "confidence": "likely"},
+        {"fact": "Telkomsel is repeatedly cited as the most reliable operator for Flores/remote-island coverage (Opensignal's 2026 report gives it a Coverage Experience score of 8.6/10 nationally); Indosat/IM3 is a cheaper second choice that is solid in towns and tourist areas but weaker off the beaten track. SIM cards are easiest bought at airport kiosks.", "source_urls": ["https://www.esim-now.com/en/guide/indonesia-network-coverage", "https://www.traveltomtom.net/destinations/asia/indonesia/best-indonesian-sim-card-for-tourist"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Labuan Bajo waterfront at sunset", "Siloam Hospital building", "motorbike rental row"],
+      "commons_search_terms": ["Labuan Bajo town", "Labuan Bajo waterfront"]
+    },
+    {
+      "name": "Ruteng (resupply hub)",
+      "data_ids": ["n-ruteng"],
+      "what_it_is": "Cool highland town (1,168-1,188 m), Manggarai Regency capital; the best full resupply in the western region per data/nodes.geojson.",
+      "why_it_matters": "First major resupply/medical point after leaving Labuan Bajo (end of sections 02-03).",
+      "history_culture": "Catholic hill town; near the Cancar lingko spider-web rice fields.",
+      "practical": {"altitude_m": 1178, "access": "on Trans-Flores highway", "fees_protocol": null, "sleep": "many hotels", "water_resupply": "full resupply, banks, market", "best_time": null, "hazards": "cool nights at altitude"},
+      "facts": [
+        {"fact": "Ruteng has a general regional hospital (RSUD Ruteng) in Watu, Langke Rembong district.", "source_urls": ["http://wisata.nttprov.go.id/index.php/sarana-pendukung/rumah-sakit"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Ruteng town in the hills", "Cancar lingko fields nearby"],
+      "commons_search_terms": ["Ruteng town Flores", "Cancar spider web rice field"]
+    },
+    {
+      "name": "Bajawa (resupply hub)",
+      "data_ids": ["n-bajawa", "p-soa-airfield"],
+      "what_it_is": "Cool highland Ngada Regency capital on the Trans-Flores highway near the megalithic villages.",
+      "why_it_matters": "Main resupply and medical point for the section 05 cultural checkpoints (Bena, Luba, Tololela, Gurusina).",
+      "history_culture": "Gateway to the Ngada megalithic villages under Inerie volcano.",
+      "practical": {"altitude_m": null, "access": "on Trans-Flores highway", "fees_protocol": null, "sleep": "hotels", "water_resupply": "full resupply, market, ATMs", "best_time": null, "hazards": null},
+      "facts": [
+        {"fact": "Bajawa has a general regional hospital on Jl. Diponegoro, Trikora.", "source_urls": ["http://wisata.nttprov.go.id/index.php/sarana-pendukung/rumah-sakit"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Bajawa hillside town with Inerie volcano behind"],
+      "commons_search_terms": ["Bajawa town Ngada", "Inerie volcano Bajawa"]
+    },
+    {
+      "name": "Ende (resupply hub)",
+      "data_ids": ["n-ende", "p-ende-airport"],
+      "what_it_is": "Largest town of central Flores, Ende Regency capital, on the south coast under Iya volcano.",
+      "why_it_matters": "Full resupply and medical point roughly at the course's midpoint, gateway to the signature Kelimutu section.",
+      "history_culture": "Sukarno's 1934-38 exile town, said to have conceived the Pancasila under a breadfruit tree there.",
+      "practical": {"altitude_m": null, "access": "on Trans-Flores highway, coastal, airport ~2 km", "fees_protocol": null, "sleep": "hotels", "water_resupply": "full resupply", "best_time": null, "hazards": "under Iya volcano"},
+      "facts": [
+        {"fact": "Ende General Hospital (RSUD) is on Jl. Prof. Dr. W.Z. Yohanes.", "source_urls": ["http://wisata.nttprov.go.id/index.php/sarana-pendukung/rumah-sakit"], "confidence": "likely"},
+        {"fact": "A Tripadvisor forum thread discusses renting a (motor)bike from Ende toward Labuan Bajo, evidence that one-way rental/logistics between Ende and the west is an established, if informal, practice -- but no dedicated cycle shop was found.", "source_urls": ["https://www.tripadvisor.com/ShowTopic-g297729-i10153-k10238449-Rental_bike_from_Ende_to_Labuan_Bajo_Komodo-Flores_East_Nusa_Tenggara.html"], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["Ende waterfront with Iya volcano", "Sukarno exile house"],
+      "commons_search_terms": ["Ende town Flores", "Gunung Iya Ende"]
+    },
+    {
+      "name": "Maumere (resupply hub)",
+      "data_ids": ["n-maumere", "p-frans-seda-airport"],
+      "what_it_is": "Sikka Regency capital, largest town of eastern Flores; rebuilt after the 1992 earthquake/tsunami.",
+      "why_it_matters": "Last major full-resupply/medical town before the Egon-Lewotobi-Larantuka finish stretch (sections 09-10).",
+      "history_culture": "Devastated by the 12 Dec 1992 earthquake and tsunami; rebuilt since.",
+      "practical": {"altitude_m": null, "access": "on Trans-Flores highway, coastal, airport ~5 km", "fees_protocol": null, "sleep": "hotels", "water_resupply": "full resupply, market, ATMs", "best_time": null, "hazards": "earthquake/tsunami history; Lewotobi corridor further east"},
+      "facts": [
+        {"fact": "Regional General Hospital Dr. TC Hillers is on Jl. Wairklau, Kota Uneng, Alok district, Maumere.", "source_urls": ["http://wisata.nttprov.go.id/index.php/sarana-pendukung/rumah-sakit"], "confidence": "likely"},
+        {"fact": "Maumere has one larger rental/repair station serving overland motorbike travellers -- more limited than Labuan Bajo's cluster -- and again no dedicated pedal-cycle shop surfaced in search.", "source_urls": ["https://cycloscope.net/bicycle-touring-flores-indonesia/"], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["Maumere waterfront", "TC Hillers hospital", "Wuring stilt village nearby"],
+      "commons_search_terms": ["Maumere town Flores", "Maumere 1992 tsunami"]
+    },
+    {
+      "name": "Larantuka (resupply hub, hospital)",
+      "data_ids": ["n-larantuka", "p-gewayantana-airport"],
+      "what_it_is": "Race finish town, Flores Timur Regency capital, under Ile Mandiri.",
+      "why_it_matters": "Finish-line medical and resupply base.",
+      "history_culture": "Semana Santa Holy Week procession tradition, continuous since the 16th century.",
+      "practical": {"altitude_m": null, "access": "on Trans-Flores highway, coastal, airport 9-15 km, port", "fees_protocol": null, "sleep": "hotels", "water_resupply": "full resupply", "best_time": null, "hazards": "Lewotobi volcanic activity to the west, on the approach"},
+      "facts": [
+        {"fact": "RSUD Larantuka is on Jl. Sudirman, Larantuka.", "source_urls": ["http://wisata.nttprov.go.id/index.php/sarana-pendukung/rumah-sakit"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Larantuka waterfront under Ile Mandiri", "Semana Santa procession imagery (if licensing permits)"],
+      "commons_search_terms": ["Larantuka town", "Semana Santa Larantuka"]
+    },
+    {
+      "name": "Komodo National Park gateway",
+      "data_ids": ["p-komodo-np-gateway"],
+      "what_it_is": "The marine/national park surrounding Labuan Bajo, gateway attraction for the race's start town; not itself on the course but shapes the town's tourist economy, pricing and crowding.",
+      "why_it_matters": "Explains why Labuan Bajo is expensive and crowded in peak months, and gives the brochure a hook on entry-fee/visitor-cap changes that also affect general Indonesia travel costs riders and crew will face.",
+      "history_culture": "UNESCO World Heritage site for komodo dragons and marine biodiversity.",
+      "practical": {"altitude_m": null, "access": "boat from Labuan Bajo", "fees_protocol": "pre-booking increasingly required in high season", "sleep": null, "water_resupply": null, "best_time": "Jul-Oct is described as the busiest, most booked-out window", "hazards": null},
+      "facts": [
+        {"fact": "Sources give differing 2026 entrance-fee figures -- one cites a park entrance fee of IDR 650,000 per person, another an IDR 250,000/person/day marine park fee (~USD 15) -- indicating the fee structure has multiple components (entrance, marine park, activity- and boat-specific charges) rather than one flat number; treat any single figure quoted in the brochure as indicative and to be reconfirmed close to race date.", "source_urls": ["https://www.komodoresort.com/blog/komodo-national-park-entrance-fees/", "https://divebooker.com/blog/komodo-national-park-entrance-fee-2026/"], "confidence": "likely"},
+        {"fact": "Reported plan: from 1 April 2026 the park operates under a 1,000-visitor-per-day quota with mandatory pre-booking; slots in the July-October high season are said to book out 3-6 months ahead.", "source_urls": ["https://komodo-travel.com/blog/komodo-2026-changes/"], "confidence": "likely"},
+        {"fact": "Indonesia's Visa on Arrival / e-VOA is currently listed at IDR 500,000 (~USD 35) for 30 days, but a proposed 2026 increase would raise it to roughly USD 42 (e-VOA) or USD 56 (airport VOA) -- not yet confirmed as final at time of writing, so brochure copy should say 'check current fee before travel' rather than quote one number as settled.", "source_urls": ["https://www.techloy.com/indonesia-visa-on-arrival-fee-increase-2026/", "https://ekaputratour.com/indonesia-visa-on-arrival-2026-requirements-cost-extend"], "confidence": "likely"},
+        {"fact": "Labuan Bajo/Komodo's dry season runs roughly April-October; June-August is consistently described as the busiest and highest-priced window, with April-May and September-October offering similar weather with fewer crowds and better rates.", "source_urls": ["https://kanhaliveaboard.com/post/best-time-to-visit-labuan-bajo-komodo-season-guide-2025-2026/", "https://labuanbajoluxury.com/best-time-visit-labuan-bajo/"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Komodo dragon on Rinca/Komodo island", "Padar Island viewpoint", "pink beach"],
+      "commons_search_terms": ["Komodo National Park", "Padar Island", "Komodo dragon"]
+    },
+    {
+      "name": "Silk Road Mountain Race (reference format)",
+      "data_ids": [],
+      "what_it_is": "The Kyrgyzstan ultra-distance bikepacking race the Flores race deliberately borrows its format from: single stage, fixed route, self-supported, staffed checkpoints, generous time limit.",
+      "why_it_matters": "Gives the brochure a credible, existing benchmark for what kind of event this is and roughly how big a field and how hard a course to expect, without inventing Flores-specific numbers before scouting is done.",
+      "history_culture": "Founded by Nelson Trees; one of the originating races of the modern self-supported ultra-distance bikepacking-race genre alongside the Tour Divide/Trans Am lineage; the organisers also run the Atlas and Hellenic Mountain Races on the same model.",
+      "practical": {"altitude_m": null, "access": null, "fees_protocol": "entirely self-supported: no third-party support or private resupply; riders carry or buy everything from commercially available services along the route", "sleep": null, "water_resupply": null, "best_time": null, "hazards": null},
+      "facts": [
+        {"fact": "Distance and climbing vary by year: recent editions are cited around 1,900 km / 30,000 m of climbing, and the 2026 edition specifically at about 2,052 km with roughly 35,362 m of elevation gain.", "source_urls": ["https://www.themountainraces.cc/silk-road-mountain-race", "https://www.bikehugger.com/posts/silk-road-mountain-race/"], "confidence": "likely"},
+        {"fact": "Riders are given a time limit commonly described as 14 days, with most finishers taking roughly 8-14 days.", "source_urls": ["https://www.cyclist.co.uk/in-depth/mountains-of-heaven-silk-road-mountain-race", "https://expeditionportal.com/the-silk-road-mountain-race/"], "confidence": "likely"},
+        {"fact": "The race is fully self-supported (no 3rd-party or private resupply) and requires riders to pass through staffed checkpoints named in the race manual; recent editions have run 3 staffed checkpoints.", "source_urls": ["https://www.themountainraces.cc/about", "https://www.apidura.com/journal/nelson-trees-this-is-the-silk-road-mountain-race/"], "confidence": "likely"},
+        {"fact": "Field size has varied by year; the 2019 edition is cited as having 135 riders start.", "source_urls": ["https://road.cc/content/news/232254-silk-road-inspired-ultracycling-race-announced"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["No Flores-specific imagery -- if used in the brochure, credit as a reference-format callout rather than a Flores photo"],
+      "commons_search_terms": ["Silk Road Mountain Race"]
+    }
+  ],
+  "narrative_notes": "The brochure's honest hook is the contrast between a thin, well-serviced spine (five small airports, a paved highway, hospitals and full resupply in six towns) and how quickly that infrastructure thins once the route leaves it: no dedicated bike shops were found anywhere on the island (only motorbike/scooter rental and repair), ferry schedules on the eastern side are explicitly unreliable/cancellable, and the Lewotobi eruption has already interrupted scheduled flights on the Ende-Maumere-Larantuka cluster -- the same corridor the course's most dangerous section must skirt. Visa and Komodo NP fees are both in flux for 2026 (proposed increases, new quota/pre-booking rules); the brochure should quote current, checkable figures rather than freeze a number that may already be stale by race week. Homestay pricing and culture, and Labuan Bajo's exact busiest-month ranking, were not independently confirmed this session (search budget spent on higher-priority items); route-concept.md's own claim that August is the safest weather bet but also the busiest month is consistent with what was found (Jun-Aug busiest) but not verified with a dedicated search.",
+  "corrections_to_data": [
+    "None required. All existing data/pois.geojson and data/nodes.geojson entries checked against search results were consistent (Ende, Maumere, Larantuka, Bajawa/Soa airports; Aimere ferry; town resupply/water/sleep tiers). No coordinate or classification errors found."
+  ],
+  "open_questions": [
+    "Labuan Bajo-Sape ferry: current ASDP schedule/frequency not found this session; needs a dedicated search or a direct ASDP source.",
+    "Homestay typical nightly price and booking culture on Flores (outside Labuan Bajo hotels) -- not searched; floreshomestay.org and floressustainabletravel.blog surfaced as leads worth reading directly.",
+    "No dedicated bicycle shop (as opposed to motorbike rental) was found in Labuan Bajo, Ende or Maumere -- confirm with a scouting-team ground check whether any exists, since the concept doc's own POI notes call Maumere's resupply 'bike-ish parts' only.",
+    "Both the Indonesia visa-on-arrival fee increase and the Komodo NP fee/quota changes for 2026 were described in sources as proposed or recently changed -- reconfirm both against official government/park sources close to race date rather than trusting any figure in this file as final.",
+    "Trans-Flores highway total length has two materially different figures in the sources found (~500 km vs ~660 km of asphalt); reconcile against the route-concept.md figure (~670 km) with an official source if the brochure needs one precise number."
+  ]
+}

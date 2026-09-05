@@ -1,0 +1,289 @@
+{
+  "topic_id": "hazards",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Lewotobi Laki-laki",
+      "data_ids": ["p-lewotobi-laki-laki"],
+      "what_it_is": "The more active of Flores Timur's twin volcanoes (1,584 m), in continuous eruptive crisis since 3 Nov 2024; the crux hazard of the whole course.",
+      "why_it_matters": "Defines a no-go zone across section 10 (Maumere-Larantuka); the reroute/abort decision for race day hinges on its PVMBG status.",
+      "history_culture": "First fatal eruption of the current crisis on 3 Nov 2024; the volcano has remained one of the most active in Indonesia through 2026.",
+      "practical": {
+        "altitude_m": 1584,
+        "access": "no-go zone for the race; do not approach",
+        "fees_protocol": "PVMBG/MAGMA Indonesia status must be rechecked in the weeks before race day, not assumed from any past bulletin",
+        "sleep": "n/a",
+        "water_resupply": "n/a",
+        "best_time": "n/a",
+        "hazards": ["pyroclastic/ash fall", "lahars (rain-triggered even after eruptions stop)", "exclusion-radius enforcement", "ash disrupting the highway and both regional airports"]
+      },
+      "facts": [
+        {"fact": "Erupted 3 Nov 2024 at 23:57 local time with a lava/ash column; alert status was raised to Level IV (Awas) that same night.", "source_urls": ["https://watchers.news/2024/11/03/lewotobi-volcano-eruption-november-2024/", "https://www.aljazeera.com/news/2024/11/4/at-least-10-dead-as-indonesias-laki-laki-volcano-erupts-burns-homes"], "confidence": "verified"},
+        {"fact": "The 3 Nov 2024 eruption killed 9-10 people (reports vary 9 vs 10), affected 7 villages and forced evacuation of over 10,000 residents to camps in Konga, Lewolaga and Tietehena villages; volcanic material fell up to 6 km from the crater.", "source_urls": ["https://www.aljazeera.com/news/2024/11/4/at-least-10-dead-as-indonesias-laki-laki-volcano-erupts-burns-homes", "https://www.pbs.org/newshour/world/eruption-of-indonesias-mount-lewotobi-laki-laki-forces-evacuations-and-flight-cancelations"], "confidence": "verified"},
+        {"fact": "Repeated eruptions continued through Nov 2024 (multiple events 5-18 Nov alone) and into 2025; an 8 km-high ash cloud on 21 Mar 2025 forced flight cancellations.", "source_urls": ["https://www.aljazeera.com/news/2025/3/21/indonesian-volcano-sends-ash-cloud-8km-high-some-flights-cancelled"], "confidence": "verified"},
+        {"fact": "Since January 2025 the volcano has erupted 471 times (count as reported mid-2025); a further alert-status action was recorded 17 Jun 2025.", "source_urls": ["https://en.tempo.co/read/2118451/mount-lewotobi-erupts-this-morning-spewing-volcanic-ash"], "confidence": "likely"},
+        {"fact": "PVMBG raised the alert to Level III on/around 12 May 2026 after a rise in seismicity and inflation.", "source_urls": ["https://watchers.news/2026/05/12/pvmbg-raises-lewotobi-laki-laki-to-level-iii-after-seismicity-and-inflation-increase-indonesia/"], "confidence": "verified"},
+        {"fact": "Late Aug 2026: nine eruptions in seven days; PVMBG flags an outlasting lahar risk (mud/debris flows) even as ash output eases.", "source_urls": ["https://www.techtimes.com/articles/325893/20260828/lewotobi-laki-laki-fires-ninth-eruption-in-seven-days-lahar-risk-outlasts-ash.htm"], "confidence": "likely"},
+        {"fact": "As of the week of 27 Aug-2 Sep 2026, PVMBG holds the alert at Level III with a 5 km public exclusion radius from the crater; daily ash plumes of 200-700 m (one to 2.5 km) drifting NW/W/SW were still being reported.", "source_urls": ["https://watchers.news/2026/09/04/the-weekly-volcanic-activity-report-august-27-september-2-2026/"], "confidence": "verified"},
+        {"fact": "Ash from the eruptions has repeatedly closed Frans Xavier Seda Airport, Maumere (about 84 km west of the volcano) -- one closure ran from 17 Jul 2024 with flights not resuming until 16 Dec 2024 -- and has covered the Trans-Flores highway in Talibura district (Sikka) and villages in Ile Bura and Titehena districts (Flores Timur), reducing visibility for road users.", "source_urls": ["https://jakartaglobe.id/news/volcanic-ash-from-lewotobi-shuts-down-maumere-airport", "https://en.antaranews.com/news/302385/frans-seda-airport-yet-to-reoperate-following-mt-lewotobis-eruption", "https://www.metrotvnews.com/play/kj2CEXaY-jalan-trans-flores-diselimuti-abu-vulkanik-imbas-erupsi-gunung-lewotobi"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["distant ash plume from a safe vantage on the north-coast corridor (never closer than the exclusion radius)", "evacuation-camp or resettlement scenes (use only pre-existing press imagery, do not stage)", "ash-dusted Trans-Flores tarmac"],
+      "commons_search_terms": ["Lewotobi Laki-laki eruption 2024", "Mount Lewotobi ash plume"]
+    },
+    {
+      "name": "Lewotobi Perempuan",
+      "data_ids": ["p-lewotobi-perempuan"],
+      "what_it_is": "The taller (1,703 m) of the Flores Timur twin volcanoes, 2.1 km south-east of Laki-laki; managed by PVMBG as one hazard complex with its sibling.",
+      "why_it_matters": "Extends the effective no-go footprint of section 10; any exclusion-radius or reroute decision must treat both cones together.",
+      "history_culture": "Part of the same 2024-2026 eruptive crisis; less frequently the source of individual eruptive events than Laki-laki but co-monitored.",
+      "practical": {
+        "altitude_m": 1703,
+        "access": "no-go zone for the race",
+        "fees_protocol": "recheck jointly with Laki-laki before any route decision",
+        "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a",
+        "hazards": ["same complex as Lewotobi Laki-laki: ash fall, lahars, exclusion radius"]
+      },
+      "facts": [
+        {"fact": "PVMBG monitors and reports on Lewotobi Perempuan jointly with Laki-laki as a single volcanic complex; no independent alert-level figure distinct from Laki-laki was found this pass.", "source_urls": ["https://en.wikipedia.org/wiki/Lewotobi"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["the twin-cone skyline from the north coast"],
+      "commons_search_terms": ["Lewotobi Perempuan"]
+    },
+    {
+      "name": "Ebulobo",
+      "data_ids": ["p-ebulobo"],
+      "what_it_is": "Active stratovolcano (2,124-2,137 m) directly above Boawae in Nagekeo Regency, on the section 06 route.",
+      "why_it_matters": "The course rounds its base; alert level and any post-earthquake landslide risk need a pre-race check.",
+      "history_culture": "First recorded eruption 1830; most recent activity in the 1980s-2000s window; farmed slopes almost to the treeline.",
+      "practical": {"altitude_m": 2124, "access": "route passes at its base, not to the summit", "fees_protocol": "confirm PVMBG level before race week", "sleep": "n/a", "water_resupply": "n/a", "best_time": "dry season", "hazards": ["volcanic (currently low)", "possible earthquake-triggered slope instability nearby, unconfirmed -- see corrections"]},
+      "facts": [
+        {"fact": "As of 2024 nationwide PVMBG status round-ups, Ebulobo was listed among volcanoes at Level I (Normal); no 2026-specific bulletin for Ebulobo was found in this pass.", "source_urls": ["https://www.esdm.go.id/id/media-center/arsip-berita/h-4-lebaran-2024-5-gunung-status-siaga-17-status-waspada-dan-46-status-normal"], "confidence": "likely"},
+        {"fact": "A M7.7 earthquake struck Flores on 15 Aug 2026 with its epicentre about 68 km NNW of Ende -- in the same Nagekeo/Ende area as Ebulobo -- killing at least 47 people and damaging or destroying over 350 houses in Nagekeo regency; whether this event caused any landslide specifically on Ebulobo's slopes was not confirmed in this pass (see the 2026 Flores earthquake entry).", "source_urls": ["https://watchers.news/2026/08/14/major-m7-7-earthquake-hits-flores-region-indonesia-tsunami-potential-reported/", "https://www.aljazeera.com/news/2026/8/15/at-least-two-killed-as-magnitude-7-7-quake-hits-indonesia"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Ebulobo's cone behind Boawae's farmed slopes"],
+      "commons_search_terms": ["Ebulobo volcano", "Gunung Ebulobo"]
+    },
+    {
+      "name": "Iya",
+      "data_ids": ["p-iya-volcano"],
+      "what_it_is": "Small but close-range active stratovolcano (637 m) immediately south of Ende town, on the section 07/08 approach to Ende.",
+      "why_it_matters": "Sits right against the town the route resupplies through; its proximity to a population centre makes even a modest eruption disruptive to logistics.",
+      "history_culture": "Last confirmed eruption January 1969.",
+      "practical": {"altitude_m": 637, "access": "route passes near Ende, not up the cone", "fees_protocol": "2 km public stay-away from the active crater as of the last bulletin found", "sleep": "n/a", "water_resupply": "Ende town, full resupply", "best_time": "dry season", "hazards": ["seismic unrest recorded May 2026, status not reconfirmed since"]},
+      "facts": [
+        {"fact": "PVMBG recorded a M2.1 earthquake near Iya on 16 May 2026 and a rise in seismicity through 17 May 2026; Alert Level held at Level II (Waspada), public advised to stay 2 km from the active crater.", "source_urls": ["https://volcano.si.edu/volcano.cfm?vn=264110"], "confidence": "verified"},
+        {"fact": "No bulletin more recent than mid-2026 was found in this pass; the Level II status should be reconfirmed against MAGMA Indonesia before race week.", "source_urls": ["https://volcano.si.edu/volcano.cfm?vn=264110"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Iya's cone from Ende's waterfront"],
+      "commons_search_terms": ["Gunung Iya Ende"]
+    },
+    {
+      "name": "Egon",
+      "data_ids": ["p-egon"],
+      "what_it_is": "Active stratovolcano (1,661-1,703 m, sources disagree) east of Maumere with a crater lake, climbed from Blidit village; on the section 10 route.",
+      "why_it_matters": "An optional ascent is part of the course concept; its alert level gates whether that climb is offered.",
+      "history_culture": "Quiet for most of a century before reawakening in 2004; frequent phreatic (steam-driven) activity since, last notable emission cited 2008.",
+      "practical": {"altitude_m": 1661, "access": "trail from Blidit village", "fees_protocol": "check current level before any ascent is offered", "sleep": "n/a", "water_resupply": "n/a", "best_time": "dry season, early morning", "hazards": ["phreatic eruption risk near the crater lake"]},
+      "facts": [
+        {"fact": "2024 nationwide PVMBG round-ups listed Egon among Level I (Normal) volcanoes; no independently reconfirmed 2026 status was found in this pass beyond the file's existing note of a significant increase in earthquake activity separately reported by regional media.", "source_urls": ["https://www.esdm.go.id/id/media-center/arsip-berita/h-4-lebaran-2024-5-gunung-status-siaga-17-status-waspada-dan-46-status-normal"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Egon's crater lake and fumaroles"],
+      "commons_search_terms": ["Mount Egon Flores"]
+    },
+    {
+      "name": "Inerie",
+      "data_ids": ["p-inerie"],
+      "what_it_is": "Near-perfect stratovolcano cone (2,245 m) south of Bajawa, the highest peak in Ngada and visual anchor of the megalithic-village section (05).",
+      "why_it_matters": "Not currently classed as active; the main risk on this section is the hike-a-bike traverse terrain, not volcanic hazard.",
+      "history_culture": "Last reported smoke June 1911.",
+      "practical": {"altitude_m": 2245, "access": "shoulder traverse or full circuit, hike-a-bike", "fees_protocol": "none volcano-specific found", "sleep": "n/a", "water_resupply": "villages at the base", "best_time": "dry season", "hazards": ["none volcanic currently on record; standard mountain hazards for the hike-a-bike option"]},
+      "facts": [
+        {"fact": "No PVMBG bulletin for Inerie was found as of this pass (Sep 2026); it is not part of the routine active-alert lists returned in the volcano-status searches run for this topic.", "source_urls": ["https://en.wikipedia.org/wiki/Inierie"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Inerie's symmetrical cone behind the Ngada villages"],
+      "commons_search_terms": ["Gunung Inerie"]
+    },
+    {
+      "name": "Kelimutu",
+      "data_ids": ["p-kelimutu", "p-kelimutu-np"],
+      "what_it_is": "Three adjacent, differently-coloured crater lakes (1,639 m) on one summit; the race's single mandatory dawn stop (section 08).",
+      "why_it_matters": "The one place riders are required to stop is also a live hazard site (gas, crater-wall instability) -- the standing safety rule (no rim approach, no camping) must hold regardless of alert level.",
+      "history_culture": "Sacred in Lio belief as the resting place of souls; a Jan 2026 crater-wall landslide at Kawah II was assessed by PVMBG as ordinary weathering, not a precursor to unrest.",
+      "practical": {"altitude_m": 1639, "access": "road/trail from Moni, dawn visit only", "fees_protocol": "no crater-rim approach, especially Kawah II; no camping in the craters, regardless of alert level", "sleep": "Moni village, below the summit", "water_resupply": "Moni", "best_time": "dawn, dry season for clear views", "hazards": ["gas", "crater-wall instability", "cold and wind at altitude before dawn"]},
+      "facts": [
+        {"fact": "PVMBG reported a significant rise in the water temperature of Crater II (Tiwu Ko'ofai Nuwamuri) through June 2026 (28.4 C on 9 Jun to 35 C on 30 Jun); despite this the Alert Level remained at Level I (Normal) and the public was advised not to approach any of the three craters.", "source_urls": ["https://volcano.si.edu/volcano.cfm?vn=264140"], "confidence": "verified"},
+        {"fact": "A Jan 2026 landslide on the Kawah II crater wall was assessed by PVMBG as weathering rather than a sign of unrest, with status held at Normal.", "source_urls": ["https://kumparan.com/kumparannews/ramai-dinding-kawah-kelimutu-longsor-pvmbg-pelapukan-status-tetap-normal-27vXuub2aTy"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["the three lakes at dawn from the viewpoint", "steam/mist over the craters"],
+      "commons_search_terms": ["Kelimutu crater lakes", "Danau Kelimutu"]
+    },
+    {
+      "name": "Wai Sano volcano",
+      "data_ids": ["p-wai-sano-volcano"],
+      "what_it_is": "Composite volcano/caldera complex at the western end of Flores holding Sano Nggoang crater lake and hot springs; on the section 01 route.",
+      "why_it_matters": "Background context only for the race's opening section; no active-monitoring concern identified.",
+      "history_culture": "No confirmed Holocene eruption on record.",
+      "practical": {"altitude_m": 903, "access": "road to the lakeshore", "fees_protocol": "none found", "sleep": "n/a", "water_resupply": "Werang area", "best_time": "dry season", "hazards": ["none volcanic currently on record"]},
+      "facts": [
+        {"fact": "Global Volcanism Program lists no confirmed Holocene eruption for this feature, and it does not appear on the routinely published PVMBG active-volcano alert lists found in this pass.", "source_urls": ["https://volcano.si.edu/volcano.cfm?vn=264060"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Sano Nggoang crater lake with steam from the hot springs"],
+      "commons_search_terms": ["Sano Nggoang lake"]
+    },
+    {
+      "name": "Ile Mandiri",
+      "data_ids": ["p-ile-mandiri"],
+      "what_it_is": "Dormant volcano (1,502 m) rising directly behind Larantuka, the race finish town; an optional hike-a-bike finale is on the concept table.",
+      "why_it_matters": "As the finish-town backdrop its status matters mainly for the optional summit sting, not for course avoidance.",
+      "history_culture": "The defining skyline feature of every view of Larantuka.",
+      "practical": {"altitude_m": 1502, "access": "trail, optional hike-a-bike from Larantuka", "fees_protocol": "none volcano-specific found", "sleep": "Larantuka", "water_resupply": "Larantuka, full resupply (finish town)", "best_time": "dry season", "hazards": ["none volcanic currently on record; standard hike-a-bike terrain hazards"]},
+      "facts": [
+        {"fact": "No PVMBG alert-level bulletin for Ile Mandiri was found in this pass; it is classed as dormant rather than actively monitored in the sources already in the data file.", "source_urls": ["https://www.gunungbagging.com/ili-mandiri/"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Ile Mandiri behind Larantuka's waterfront and Semana Santa processions"],
+      "commons_search_terms": ["Ile Mandiri Larantuka"]
+    },
+    {
+      "name": "Rokatenda (Palue)",
+      "data_ids": ["p-palue-rokatenda"],
+      "what_it_is": "Active stratovolcano (875 m) forming the entire island of Palue off Sikka's north coast; offshore, not on the course.",
+      "why_it_matters": "Background hazard context for the north-coast sections (04-07): a reminder that the wider region, not just Lewotobi, is volcanically active.",
+      "history_culture": "A 2013 eruption killed several people on Palue.",
+      "practical": {"altitude_m": 875, "access": "boat from the Flores north coast; not part of the course", "fees_protocol": "n/a for the race", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["history of episodic unrest; commonly held at elevated alert in recent years"]},
+      "facts": [
+        {"fact": "Rokatenda has a history of episodic unrest including a fatal eruption in 2013; it has commonly been held at an elevated PVMBG alert level (Waspada/Level II) in recent years, but a 2026-specific reconfirmation was not found in this pass.", "source_urls": ["https://en.wikipedia.org/wiki/Paluweh"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["Palue island's volcanic cone seen from the Flores north coast"],
+      "commons_search_terms": ["Paluweh Rokatenda"]
+    },
+    {
+      "name": "Malaria and dengue in East Nusa Tenggara",
+      "data_ids": [],
+      "what_it_is": "Mosquito-borne disease risk that is island-wide but concentrated on the coasts and lowlands, lower in the cool highlands.",
+      "why_it_matters": "Directly shapes the rider briefing: prophylaxis advice, repellent and net use, and symptom awareness for a multi-day event with limited medical evacuation.",
+      "history_culture": "NTT (which includes Flores) is consistently among the highest-malaria-burden provinces in Indonesia outside Papua.",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "rider briefing on prevention; nets at checkpoints; know nearest hospital (Maumere, Ende, Bajawa, Ruteng, Larantuka)", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["malaria (Anopheles)", "dengue (Aedes, day-biting)"]},
+      "facts": [
+        {"fact": "NTT was the second most malaria-affected province in Indonesia with 15,812 cases in 2022, and ranked third nationally by Annual Parasite Incidence after Papua and West Papua.", "source_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8075045/", "https://baktinews.bakti.or.id/artikel/pengendalian-nyamuk-anopheles-penular-malaria-di-nusa-tenggara-timur"], "confidence": "likely"},
+        {"fact": "As of late Sep 2023, NTT recorded about 5,300 malaria cases for that year with 3 deaths, concentrated in Southwest Sumba, East Sumba and Sikka (Sikka is a Flores regency on the race route, sections 08-09).", "source_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8075045/"], "confidence": "likely"},
+        {"fact": "On mainland Flores specifically, Kupang City (off-island) and six Flores districts have received official malaria-elimination-area certification, indicating uneven risk across the island rather than uniform high incidence everywhere.", "source_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8075045/"], "confidence": "likely"},
+        {"fact": "No specific Kemenkes or WHO prophylaxis-drug recommendation (e.g. doxycycline/atovaquone-proguanil/chloroquine) for NTT/Flores travellers was found in this pass; standard travel-medicine practice is to confirm current national guidance with a travel clinic given resistance patterns vary by region and change over time -- do not publish a specific drug recommendation from this research alone.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["mosquito net over a checkpoint bed", "rider briefing materials (staged, not a real clinical scene)"],
+      "commons_search_terms": ["Anopheles mosquito net Indonesia"]
+    },
+    {
+      "name": "Dry-season climate: coasts vs. highlands (June-September)",
+      "data_ids": [],
+      "what_it_is": "The race's target window (late Jun-Sep) sits inside Flores' dry, cooler south-east monsoon season, but coast and highland conditions differ sharply.",
+      "why_it_matters": "Sets the medical and clothing plan: heat management on the coasts, and cold-weather layers for the Ruteng/Bajawa/Kelimutu highlands, especially before dawn.",
+      "history_culture": "n/a",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "n/a", "sleep": "n/a", "water_resupply": "n/a", "best_time": "late Jun-Sep, the driest and coolest months", "hazards": ["heat and dehydration on the coasts", "cold before dawn in the highlands (Ruteng, Bajawa, Kelimutu)", "steady ESE trade wind"]},
+      "facts": [
+        {"fact": "Flores' dry season runs roughly June-September (widened to April-September regionally), driven by the south-east monsoon/trade wind; July and August are the coolest and driest months.", "source_urls": ["https://www.climatestotravel.com/climate/indonesia/flores"], "confidence": "likely"},
+        {"fact": "August is commonly cited as the driest month, with only about 2 days of measurable rain; coastal annual rainfall runs roughly 1,300-1,400 mm, notably lower than inland/highland areas.", "source_urls": ["https://www.climatestotravel.com/climate/indonesia/flores"], "confidence": "likely"},
+        {"fact": "During the June-August SE monsoon, night/early-morning minimum temperatures on the coast can drop to about 19-20 C, while inland highland towns run noticeably cooler still (a commonly cited Ruteng average is around 16 C).", "source_urls": ["https://www.climatestotravel.com/climate/indonesia/flores"], "confidence": "likely"},
+        {"fact": "These figures come from general travel-climate compilations, not a BMKG station dataset; no direct BMKG page was retrieved in this pass -- treat exact numbers as indicative rather than a station record.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["dry savanna coastal light vs. misty highland morning", "sunrise haze over the SE trade wind coast"],
+      "commons_search_terms": ["Flores Indonesia dry season landscape"]
+    },
+    {
+      "name": "1992 Flores earthquake and tsunami",
+      "data_ids": [],
+      "what_it_is": "The 12 December 1992 Mw 7.7 earthquake and tsunami that devastated Maumere and the north-east coast -- the historical benchmark disaster of the race region.",
+      "why_it_matters": "Grounds the rider-manual awareness note on section 09 (Maumere); no route dependency, but essential brochure/safety context for the coast the race passes through.",
+      "history_culture": "One of the deadliest tsunamis in Indonesian history before 2004; reshaped Maumere and wiped out Riang-Kroko village and much of Babi island's population.",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "n/a", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["historical, not a route dependency; general coastal-tsunami awareness"]},
+      "facts": [
+        {"fact": "The earthquake measured Mw 7.7 (some sources cite Ms 7.5) and struck 12 December 1992; total deaths/missing are put at roughly 2,080, including about 1,490 in and around Maumere and about 700 on Babi island.", "source_urls": ["https://en.wikipedia.org/wiki/1992_Flores_earthquake_and_tsunami", "https://legacy.itic.ioc-unesco.org/legacy.itic.ioc-unesco.org/indexecb6.html?option=com_content&view=article&id=1101&Itemid=3127"], "confidence": "verified"},
+        {"fact": "Tsunami run-up reached an exceptional 26.2 m at Riang-Kroko village on the NE cape of Flores, destroying it completely; local reports describe waves up to about 25 m at Maumere itself. The first wave arrived within about two minutes of the shock on parts of the coast.", "source_urls": ["https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/93EO00381", "https://www.researchgate.net/publication/234349420_The_Flores_Island_tsunamis"], "confidence": "verified"},
+        {"fact": "The tsunami was unusually large for the earthquake's magnitude; researchers attribute part of the amplification to a submarine landslide rather than the earthquake rupture alone.", "source_urls": ["https://www.researchgate.net/publication/234349420_The_Flores_Island_tsunamis"], "confidence": "likely"}
+      ],
+      "photo_subjects": ["archival/press imagery of 1992 Maumere aftermath (do not stage recreations)", "present-day Maumere waterfront for contrast"],
+      "commons_search_terms": ["1992 Flores earthquake Maumere"]
+    },
+    {
+      "name": "2026 Flores earthquake (15 August)",
+      "data_ids": [],
+      "what_it_is": "A separate, recent M7.7 earthquake struck offshore Flores on 15 Aug 2026, epicentre about 68 km NNW of Ende, killing at least 47 and prompting a since-lifted tsunami warning.",
+      "why_it_matters": "Directly relevant to race planning: it struck the Nagekeo/Ende area the course crosses (sections 06-08) only weeks before this research pass, and the data file already flags an unconfirmed claim that it triggered slope instability near Ebulobo -- this event is real and should be tracked as an open safety item, distinct from the 1992 quake.",
+      "history_culture": "The most significant seismic event on Flores since the 1992 disaster, occurring during the same season this brochure documents.",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "check for aftershock advisories, road/bridge damage reports and any standing evacuation orders in Nagekeo before route-planning near Boawae/Ebulobo", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["aftershocks (230+ recorded, strongest M6.2)", "structural damage to housing and roads in Nagekeo regency", "possible slope instability near affected volcanic terrain, not yet independently confirmed for any specific peak"]},
+      "facts": [
+        {"fact": "M7.7 earthquake, 15 Aug 2026 at 05:58 local time, epicentre about 68 km NNW of Ende at 10 km depth (USGS); killed at least 47 people, destroyed at least 157 houses and damaged nearly 200 more, and forced about 2,000 villagers in Nagekeo regency into temporary shelters.", "source_urls": ["https://watchers.news/2026/08/14/major-m7-7-earthquake-hits-flores-region-indonesia-tsunami-potential-reported/", "https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638"], "confidence": "verified"},
+        {"fact": "More than 230 aftershocks were recorded on the day, the strongest M6.2; BMKG issued a tsunami warning for East Nusa Tenggara, West Nusa Tenggara and South Sulawesi coasts, later lifted after monitoring showed the threat had passed, having recorded a minor wave of about 0.94 m at Maurole (Ende regency).", "source_urls": ["https://watchers.news/2026/08/14/major-m7-7-earthquake-hits-flores-region-indonesia-tsunami-potential-reported/"], "confidence": "verified"},
+        {"fact": "USGS estimated over half a million people on Flores felt very strong shaking, with moderate-to-strong shaking felt by several million more across the wider region.", "source_urls": ["https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["press imagery of earthquake damage in Nagekeo (do not stage)", "current condition of Trans-Flores road/bridges in the affected stretch, if scouted"],
+      "commons_search_terms": ["2026 Flores earthquake"]
+    },
+    {
+      "name": "Trans-Flores highway: landslide-prone stretches",
+      "data_ids": [],
+      "what_it_is": "The single highway artery linking the sections; certain stretches are chronically exposed to landslides and, currently, volcanic-ash-reduced visibility.",
+      "why_it_matters": "The route plan already treats the highway as short links only, never at night in towns; this hazard reinforces why, and flags where extra caution or a scouted alternative is needed.",
+      "history_culture": "n/a",
+      "practical": {"altitude_m": null, "access": "use only for short links per the route concept", "fees_protocol": "avoid at night in towns; treat ash-affected stretches (Talibura, Ile Bura, Titehena in the Lewotobi-affected zone) as reduced-visibility hazards during active eruptive phases", "sleep": "n/a", "water_resupply": "n/a", "best_time": "daylight, dry season", "hazards": ["landslides (wet-season risk carried into early dry season on cut slopes)", "volcanic-ash-reduced visibility near Lewotobi", "traffic"]},
+      "facts": [
+        {"fact": "The Trans-Flores highway through Talibura district (Sikka regency) was reported blanketed in volcanic ash from Lewotobi Laki-laki eruptions, disrupting visibility for road users; villages in the adjoining Ile Bura and Titehena districts (Flores Timur) were also affected by ash and debris.", "source_urls": ["https://www.metrotvnews.com/play/kj2CEXaY-jalan-trans-flores-diselimuti-abu-vulkanik-imbas-erupsi-gunung-lewotobi"], "confidence": "likely"},
+        {"fact": "No specific inventory of chronic landslide-prone kilometre-stretches of the Trans-Flores (independent of the current volcanic crisis) was found in the searches run for this topic; this remains a scouting-priority item rather than a documented fact.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["ash- or mud-covered highway stretch", "cut-slope terrain typical of the highway's mountain sections"],
+      "commons_search_terms": ["Trans Flores highway"]
+    },
+    {
+      "name": "Saltwater crocodiles on Flores' coasts",
+      "data_ids": [],
+      "what_it_is": "Crocodylus porosus, historically present across the Lesser Sunda islands including Flores; recent records suggest local recolonisation of some Flores coasts.",
+      "why_it_matters": "Relevant wherever the course meets estuaries, mangroves or river mouths on the coastal sections (especially the north coast, section 04, and any south-coast river crossings); standard advice is to avoid wading/swimming at dawn/dusk in tidal, brackish or river-mouth water.",
+      "history_culture": "A documented fatal attack occurred in West Manggarai Regency, Flores.",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "no swimming or wading in river mouths, mangroves or estuaries, especially at dawn/dusk; ask locally before any water crossing on the coast", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["crocodile attack at river mouths, estuaries and mangroves"]},
+      "facts": [
+        {"fact": "A peer-reviewed case report documents a fatal saltwater crocodile attack in West Manggarai Regency, Flores (on the race's opening sections' coast).", "source_urls": ["https://www.researchgate.net/publication/279806646_DETAILS_OF_FATAL_SALTWATER_CROCODILE_ATTACK_IN_WEST_MANGGARAI_REGENCY_FLORES_EAST_NUSA_TENGGARA_PROVINCE_INDONESIA_WITH_NOTES_ON_CURRENT_AND_HISTORICAL_DISTRIBUTION"], "confidence": "verified"},
+        {"fact": "Recent attacks/sightings are recorded on Flores in 2012 and 2015 (among other Lesser Sunda islands with more frequent records, notably Timor); researchers note this may reflect the species recolonising parts of Flores after mid-20th-century hide-hunting reduced it across the region.", "source_urls": ["https://www.researchgate.net/publication/336799204_Notes_on_the_Current_Status_of_the_Saltwater_Crocodile_Crocodylus_porosus_within_East_Nusa_Tenggara_Province_Indonesia"], "confidence": "likely"},
+        {"fact": "A compiled study of public attack records across East Nusa Tenggara 2009-2018 found 100 attacks, 60% fatal, 84% of victims male, and 75% occurring during fishing activity -- province-wide figures, with Flores contributing a minority of cases relative to Timor.", "source_urls": ["https://www.researchgate.net/publication/349111616_Saltwater_crocodile_Crocodylus_porosus_attacks_in_East_Nusa_Tenggara_Indonesia"], "confidence": "verified"}
+      ],
+      "photo_subjects": ["mangrove/river-mouth landscape on the north coast (no crocodile close-ups needed for a safety note)"],
+      "commons_search_terms": ["Crocodylus porosus Nusa Tenggara"]
+    },
+    {
+      "name": "Village dogs",
+      "data_ids": [],
+      "what_it_is": "Free-roaming dogs are common in Flores villages along the whole route.",
+      "why_it_matters": "A routine bikepacking hazard everywhere on course; standard mitigation (do not sprint away, use voice command/water bottle, carry a stick if chased persistently, check rabies pre-exposure vaccination status) belongs in the rider manual.",
+      "history_culture": "n/a",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "standard bikepacking dog advice in the rider briefing", "sleep": "n/a", "water_resupply": "n/a", "best_time": "n/a", "hazards": ["dog chases/bites; rabies risk present in parts of Indonesia generally"]},
+      "facts": [
+        {"fact": "No Flores- or NTT-specific dog-bite or rabies dataset was retrieved in this pass; this entry reflects the general, well-established bikepacking-in-rural-Indonesia hazard already named in the route concept rather than a newly sourced statistic.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["a village lane scene, dogs incidental, not the subject"],
+      "commons_search_terms": ["Flores village street"]
+    },
+    {
+      "name": "Heat illness on the coasts",
+      "data_ids": [],
+      "what_it_is": "Heat and dehydration risk on the low-lying coastal and savanna stretches, sharpened by the dry season's clear skies and the ESE trade wind's drying effect.",
+      "why_it_matters": "Directly informs the route-concept mitigation already on record (route the coasts for early/late hours, medical plan) and the mandatory-carry water-capacity rule for section 04/06.",
+      "history_culture": "n/a",
+      "practical": {"altitude_m": null, "access": "n/a", "fees_protocol": "medical plan for heat illness; schedule coastal riding for early/late hours where possible", "sleep": "n/a", "water_resupply": "per node water field; mandatory carry capacity on the north coast and Nagekeo interior", "best_time": "early morning/late afternoon on the coasts", "hazards": ["heat exhaustion/heat stroke", "dehydration", "sun exposure on savanna stretches with little shade"]},
+      "facts": [
+        {"fact": "No Flores-specific heat-illness incidence data was found in this pass; the hazard is carried from the existing route-concept hazard table (coasts, sec 04/06 water scarcity) and general dry-season temperature/rainfall figures already sourced above rather than a newly found statistic.", "source_urls": [], "confidence": "unverified"}
+      ],
+      "photo_subjects": ["shimmering heat haze on an open savanna road", "riders resting in shade at midday"],
+      "commons_search_terms": ["Flores savanna coast road"]
+    }
+  ],
+  "narrative_notes": "The single biggest live-safety story for this brochure is Lewotobi: it has been erupting almost continuously since 3 Nov 2024, and as of the most recent bulletin found (week of 27 Aug-2 Sep 2026) PVMBG holds it at Level III with a 5 km exclusion radius -- lower than the Level IV/Awas the data file's existing hazard_level text worried might still apply. That is a materially better (less severe) status than the file's own caveat anticipated, but it is a fast-moving situation and the file's instruction to reconfirm before any route decision is exactly right and should stand. Separately, an unrelated M7.7 earthquake struck Flores itself on 15 Aug 2026 (epicentre near Ende/Nagekeo, 47+ dead) -- a genuinely new, serious event that the existing pois.geojson only reflects through one hedged, unconfirmed sentence on the Ebulobo entry; it deserves fuller, confirmed treatment (see corrections_to_data). Malaria/dengue, climate, the 1992 quake, crocodiles, dogs and heat are all real but comparatively well-worn hazards with less news-cycle urgency; keep them in the rider manual register rather than the headline of the brochure's hazard story.",
+  "corrections_to_data": [
+    "p-lewotobi-laki-laki hazard_level text: the file flags as 'very likely inaccurate' a claim of Level II->III on 12 May 2026; this research confirms the 12 May 2026 Level III rise IS a real, sourced event (watchers.news), and as of the week of 27 Aug-2 Sep 2026 PVMBG was still holding Level III with a 5 km exclusion radius (not Level IV) -- update the hazard_level text to state Level III/5km as the last-confirmed status, dated, rather than leaving it as an unresolved doubt.",
+    "The M7.7 earthquake of 15 Aug 2026 is CONFIRMED real (Al Jazeera, NBC News, Wikipedia 'article 2026 Flores earthquake', watchers.news): epicentre ~68 km NNW of Ende, 47+ dead, ~2,000 evacuated in Nagekeo regency, tsunami warning issued then lifted. The p-ebulobo hazard_level text currently treats the quake's existence itself as unconfirmed sourced only to social media -- it should instead cite the confirmed earthquake facts and narrow the open question strictly to whether it caused landslides specifically on Ebulobo's slopes (not found in this pass either way).",
+    "Consider a new hazard-category POI (or a course-wide hazard note, not tied to one POI) for the 2026 Flores earthquake itself, since it is a standalone, dated, race-relevant event distinct from both Lewotobi and the 1992 disaster and currently has no entry of its own."
+  ],
+  "open_questions": [
+    "Current (post-Sep 2026) PVMBG alert levels for Ebulobo, Egon and Rokatenda were not found dated later than 2024-2025 general round-ups; recheck all three against MAGMA Indonesia directly before race week, as the file itself already flags.",
+    "Whether the 15 Aug 2026 M7.7 earthquake caused any confirmed landslide or slope damage specifically on Ebulobo, or on any Trans-Flores stretch the course would use, is unresolved -- worth a targeted follow-up search or a scouting-team question once ground reports are available.",
+    "No official Kemenkes/WHO malaria chemoprophylaxis drug recommendation specific to NTT/Flores travellers was found; get sourced from a travel-medicine authority before publishing specific drug advice in the rider manual.",
+    "No inventory of specific chronic (non-volcanic) landslide-prone kilometre stretches of the Trans-Flores highway was found; this stays a scouting-priority question, consistent with the route-concept doc's own open questions."
+  ]
+}

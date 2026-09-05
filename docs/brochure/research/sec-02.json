@@ -1,0 +1,372 @@
+{
+  "topic_id": "sec-02",
+  "searches_used": 9,
+  "places": [
+    {
+      "name": "Werang",
+      "data_ids": [
+        "n-werang"
+      ],
+      "what_it_is": "Capital of Sano Nggoang sub-district (kecamatan), the last practical resupply village before the course drops off the plateau toward the south coast.",
+      "why_it_matters": "The point where pavement and predictable services run out and the remote south-coast/Wae Rebo corridor begins. A small, ordinary highland town rather than a tourist stop, which is itself part of the honesty of the route.",
+      "practical": {
+        "access": "road (sealed link off the Sano Nggoang lake area)",
+        "sleep": "homestay",
+        "water_resupply": "unreliable -- carry capacity, do not assume taps run",
+        "best_time": "dry season (Jun-Sep) for the whole section",
+        "fees_protocol": "no special protocol; ordinary village services (parish, camat office, police post, schools)",
+        "hazards": ""
+      },
+      "history_culture": "Seat of Sano Nggoang kecamatan; the Catholic parish church Gereja Santo Klaus anchors the village and, per a 2025 profile of the parish, the community includes visible interfaith participation (a Muslim group taking part in welcoming the visiting bishop) -- a small but real illustration of West Manggarai as a mixed-faith frontier, not a monoculture.",
+      "facts": [
+        {
+          "fact": "Werang is the capital of Sano Nggoang kecamatan, with a parish church (Gereja Santo Klaus), a police post, the camat (sub-district head) office and schools.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-werang",
+            "https://id.wikipedia.org/wiki/Gereja_Santo_Klaus,_Werang"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A 2025 article on the Santo Klaus parish describes local interfaith participation in welcoming the visiting bishop, coloring Werang as a mixed-faith community rather than a purely Catholic enclave.",
+          "source_urls": [
+            "https://www.katolikana.com/2025/05/12/putri-muslim-sambut-uskup-potret-toleransi-dan-harapan-di-paroki-werang/"
+          ],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": [
+        "Gereja Santo Klaus church facade",
+        "village street with volcanic highland backdrop",
+        "parish school children / everyday village life",
+        "the road dropping off the plateau toward the coast"
+      ],
+      "commons_search_terms": [
+        "Werang Flores",
+        "Sano Nggoang",
+        "Gereja Santo Klaus Werang",
+        "Manggarai Barat village"
+      ]
+    },
+    {
+      "name": "Dintor",
+      "data_ids": [
+        "n-dintor"
+      ],
+      "what_it_is": "South-coast village in Desa Satar Ruwuk, on the coastal track between Werang and Denge; the region's Pantai Dintor beach is a local, lightly-visited attraction.",
+      "why_it_matters": "A stretch of quiet, largely undeveloped south coast that almost no visitor to Flores sees, dropped into between two demanding inland legs -- pure remoteness-and-views value before the course turns back uphill for the Wae Rebo trek.",
+      "practical": {
+        "access": "road (rough, narrow, unpaved coastal/mountain track)",
+        "sleep": "none",
+        "water_resupply": "unreliable, minimal",
+        "best_time": "dry season",
+        "fees_protocol": "none known",
+        "hazards": "narrow, rough track; no lodging or services if something goes wrong"
+      },
+      "history_culture": "",
+      "facts": [
+        {
+          "fact": "Pantai Dintor (Dintor beach) lies in Desa Satar Ruwuk, Satar Mese Barat district, known locally for white sand and views across to Pulau Mules.",
+          "source_urls": [
+            "https://www.jurnalflores.co.id/travel/77610058619/pantai-dintor-pantai-eksotis-tersembunyi-di-flores-manggarai-ntt",
+            "https://www.victorynews.id/pariwisata/33113286374/yukkunjungi-destinasi-wisata-pantai-dintor-di-manggarai-ntt-dijamin-indah-dan-mempesona"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Dintor has minimal resupply and no lodging; its node coordinates are a desk placement from route descriptions, not yet field-verified.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-dintor"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The Ruteng/Todo-Denge road via Dintor is described by trekking-logistics guides as a narrow mountain road, roughly 1.5-2 hours by vehicle from Ruteng, distinct from and rougher than the main sealed Trans-Flores highway.",
+          "source_urls": [
+            "https://komodotrip.com/wae-rebo-from-labuan-bajo-guide/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "white-sand Pantai Dintor with Pulau Mules offshore",
+        "small fishing boats pulled up on the beach",
+        "the coastal dirt track hugging cliffs",
+        "coastal village life"
+      ],
+      "commons_search_terms": [
+        "Pantai Dintor",
+        "Dintor beach Flores",
+        "Satar Ruwuk Manggarai",
+        "Pulau Mules"
+      ]
+    },
+    {
+      "name": "Denge",
+      "data_ids": [
+        "n-denge"
+      ],
+      "what_it_is": "The last village reachable by road/motorbike before the Wae Rebo trek; the trekkers' staging post with rice-field homestays.",
+      "why_it_matters": "The literal edge of the road network for this section -- everything beyond Denge toward Wae Rebo moves on foot or on someone's back, which is the honest core of the whole cultural-checkpoint idea.",
+      "practical": {
+        "access": "road to Denge, then trail only",
+        "sleep": "homestay (simple, in the rice fields)",
+        "water_resupply": "unreliable",
+        "best_time": "dry season; trail becomes slippery in rain",
+        "fees_protocol": "none beyond ordinary homestay payment",
+        "hazards": "trail from here is steep and can be slippery in wet conditions"
+      },
+      "history_culture": "",
+      "facts": [
+        {
+          "fact": "Denge is the trailhead for Wae Rebo: about 8 km and roughly +700 m on foot, most trekkers taking about 2.5-3 hours uphill through rainforest.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-denge",
+            "https://theworldtravelguy.com/wae-rebo-village/",
+            "https://therovingbalys.com/2025/10/30/wae-rebo-village-trek/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "From Denge, the rough final stretch to the actual trailhead (Pos 1) is usually covered by motorbike taxi (ojek), about 10-15 minutes, since it is too narrow and rough for cars.",
+          "source_urls": [
+            "https://theworldtravelguy.com/wae-rebo-village/",
+            "https://komodotrip.com/wae-rebo-from-labuan-bajo-guide/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Denge has a simple homestay with around 9 rooms and basic amenities in the village's rice fields, used by trekkers before and after the Wae Rebo hike.",
+          "source_urls": [
+            "https://www.merapitours.com/indonesie/flores-komodo-en-alor/denge/wae-rebo-homestay"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Labuan Bajo to Denge is commonly quoted as a 4-5 hour drive because of poor road conditions on the final approach.",
+          "source_urls": [
+            "https://theworldtravelguy.com/wae-rebo-village/",
+            "https://komodotrip.com/wae-rebo-from-labuan-bajo-guide/"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "rice-field homestay at dusk with highland backdrop",
+        "porters and guides loading gear for the trek",
+        "trailhead signage / Pos 1",
+        "rainforest canopy on the ascent"
+      ],
+      "commons_search_terms": [
+        "Denge village Flores",
+        "Wae Rebo trek trailhead",
+        "Wae Rebo trail Denge"
+      ]
+    },
+    {
+      "name": "Wae Rebo",
+      "data_ids": [
+        "n-wae-rebo",
+        "p-wae-rebo"
+      ],
+      "what_it_is": "A traditional Manggarai village of seven cone-roofed mbaru niang houses at roughly 1,100-1,200 m, reachable only on foot; winner of UNESCO's 2012 Asia-Pacific Award for Cultural Heritage Conservation.",
+      "why_it_matters": "The course's flagship cultural checkpoint: no road has ever reached it, every visitor arrives the same way the village's own rice and roof repairs do, and it is one of the most photographed and recognisable images of Flores -- the clearest test of the whole project's promise that villages are hosts, not scenery.",
+      "practical": {
+        "altitude_m": "~1100-1200",
+        "access": "trail only (hike-a-bike, no road ever)",
+        "sleep": "homestay inside the mbaru niang, welcome ceremony expected on arrival",
+        "water_resupply": "unreliable",
+        "best_time": "dry season (Jun-Sep); the trail is steep and reportedly very slippery in rain",
+        "fees_protocol": "village council agreement required before any race checkpoint is confirmed; the existing tourist system (welcome ceremony, homestay fee, guest donation) cannot simply be assumed for a race",
+        "hazards": "landslide-prone trail in wet season; loaded-bike hike-a-bike the whole way"
+      },
+      "history_culture": "Oral tradition holds Wae Rebo was founded by Empo Maro, an ancestor said to have journeyed from Minangkabau in West Sumatra, guided to the site by a dream instructing him to build on the flat forest land. The seven mbaru niang stand in a circle around a ceremonial ground and are traditionally said to represent the seven mountain peaks encircling the village, believed to protect its prosperity. Built from wood, bamboo and palm-fibre/lontar thatch without nails, the houses were restored by the community itself in the traditional style rather than being allowed to lapse into tin roofing -- the achievement UNESCO recognised in 2012.",
+      "facts": [
+        {
+          "fact": "Wae Rebo's seven mbaru niang houses stand in a circle around a ceremonial ground at roughly 1,100-1,200 m, reachable only on foot; oral tradition holds the village was founded by an ancestor, Empo Maro, said to have come from Minangkabau in West Sumatra.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-wae-rebo",
+            "https://indonesiajuara.asia/en/blog/the-origin-story-of-wae-rebo/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "In 2012 Wae Rebo won the UNESCO Asia-Pacific Award for Cultural Heritage Conservation, recognising the community's self-directed restoration of the mbaru niang using traditional materials and technique rather than modern roofing.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-wae-rebo",
+            "https://en.wikipedia.org/wiki/Waerebo",
+            "https://pariwisata.manggaraikab.go.id/destinasi/wae-rebo-the-most-beautiful-village-in-the-world/"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "The seven houses are traditionally said to reflect the seven mountain peaks encircling the village, believed to protect its prosperity; the houses are built of wood, bamboo and palm-fibre/lontar thatch without nails.",
+          "source_urls": [
+            "https://www.spacejakarta.com/en/blogs/indonesia/menyusuri-wae-rebo-desa-tujuh-rumah-di-atas-awan-yang-menyimpan-galaksi-di-langitnya",
+            "https://www.indonesia.travel/us/en/travel-ideas/culture/sarat-dengan-kearifan-lokal-inilah-wae-rebo-desa-di-atas-awan"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Current tourist contributions run roughly IDR 350,000 per person for an overnight package (meals plus one night in a mbaru niang); a separate Wae Lu'u welcome-ceremony donation of about IDR 50,000 per person is customary, and a porter, if needed, costs about IDR 200,000. Package/day-trip pricing varies by operator (roughly IDR 150,000-500,000 depending on inclusions).",
+          "source_urls": [
+            "https://indonesiajuara.asia/en/blog/how-much-does-it-cost-to-visit-wae-rebo/",
+            "https://idetrips.com/wae-rebo-village/"
+          ],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "The trail is subject to wet-season landslides; 2025-2026 travel-review snippets describe intermittent closures followed by ad hoc repairs (e.g. a bamboo bridge over a slide) reopening the path, with no single authoritative current-status source.",
+          "source_urls": [
+            "https://www.alltrails.com/trail/indonesia/east-nusa-tenggara/wae-rebo",
+            "https://www.tripadvisor.com/Attraction_Review-g297729-d3308087-Reviews-Wae_Rebo_Village-Flores_East_Nusa_Tenggara.html"
+          ],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "There is no fixed daily visitor quota at present; reported day traffic ranges from a handful of visitors up to roughly 100 in peak season.",
+          "source_urls": [
+            "https://londonerinsydney.com/13-tips-for-visiting-wae-rebo-village-in-flores-indonesia/",
+            "https://www.komodotouristic.com/wae-rebo-traditional-village/"
+          ],
+          "confidence": "unverified"
+        }
+      ],
+      "photo_subjects": [
+        "the seven mbaru niang in morning mist, shot from the ridge overlook on arrival",
+        "the Wae Lu'u welcome ceremony",
+        "interior of a mbaru niang (levels, sacred drum, hearth)",
+        "weavers working on the veranda",
+        "porters carrying loads / bikes up the forest trail",
+        "sunrise or sunset light over the surrounding peaks"
+      ],
+      "commons_search_terms": [
+        "Wae Rebo",
+        "Waerebo village",
+        "mbaru niang",
+        "Wae Rebo Flores",
+        "Waerebo Manggarai"
+      ]
+    },
+    {
+      "name": "Todo",
+      "data_ids": [
+        "n-todo",
+        "p-todo-village"
+      ],
+      "what_it_is": "Former seat of the Manggarai kingdom (traditionally dated to around the 17th century) and home to Niang Todo, said to be the oldest standing mbaru niang in the regency.",
+      "why_it_matters": "The deep-history counterweight to Wae Rebo: the same conical-house architecture and living-village protocol, but reached by a short climb off the highway rather than a day's hike -- the natural place in the race to slow down for the origin story of Manggarai itself rather than for a trek.",
+      "practical": {
+        "access": "road (short climb off the main Ruteng-Labuan Bajo corridor)",
+        "sleep": "none (day-trip village)",
+        "water_resupply": "unreliable",
+        "best_time": "dry season",
+        "fees_protocol": "living village -- guests received by elders on arrival, a small donation and the guest book are expected; no race-specific cultural-checkpoint agreement negotiated yet",
+        "hazards": ""
+      },
+      "history_culture": "Local tradition places the seat of the Manggarai kingdom at Todo, with many former Manggarai rulers said to trace their line to the village; the kingdom is traditionally dated to around the 17th century. Niang Todo, the drum house at its centre, is described as the oldest standing Manggarai clan house, built to the same five-level cone-roofed mbaru niang form as Wae Rebo's houses (successive levels for living, storing the harvest, and finally storing heirlooms). Guides tell visitors that a sacred drum inside the house is, by local belief, covered in human skin -- an oral-tradition detail that is part of the founding lore rather than a verifiable historical fact.",
+      "facts": [
+        {
+          "fact": "Local tradition places the seat of the Manggarai kingdom, traditionally dated to around the 17th century, at Todo; many former Manggarai rulers are said to trace their line to the village.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-todo-village",
+            "https://indahnesia.id/journal/wisata-adat-kampung-todo",
+            "https://pariwisata.manggaraikab.go.id/destinasi/kampung-todo/"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Niang Todo is described as the oldest standing Manggarai clan house; like Wae Rebo's houses it is a five-level cone-roofed mbaru niang, the levels used in turn for living, storing harvest, and finally storing heirlooms.",
+          "source_urls": [
+            "https://indahnesia.id/journal/wisata-adat-kampung-todo",
+            "https://en.wikipedia.org/wiki/Mbaru_Niang"
+          ],
+          "confidence": "likely"
+        },
+        {
+          "fact": "Local belief holds that a sacred drum inside the house is covered in human skin, a detail told by guides as part of the village's founding lore.",
+          "source_urls": [
+            "https://bajoexplore.com/blog/todo-traditional-village/"
+          ],
+          "confidence": "unverified"
+        },
+        {
+          "fact": "Todo requires no hike-a-bike: it sits a short climb off the main Ruteng-Labuan Bajo corridor and is reached by road, unlike Wae Rebo.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-todo-village"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "photo_subjects": [
+        "Niang Todo exterior against the highland backdrop",
+        "village elders receiving guests / guest book ceremony",
+        "interior detail of the drum house (if permitted)",
+        "the ridgeline view back toward Wae Rebo's mountains"
+      ],
+      "commons_search_terms": [
+        "Kampung Todo Manggarai",
+        "Todo village Flores",
+        "Niang Todo",
+        "Manggarai traditional house"
+      ]
+    },
+    {
+      "name": "Iteng (Satar Mese south coast)",
+      "data_ids": [
+        "n-iteng",
+        "p-satar-mese-coast"
+      ],
+      "what_it_is": "Capital of Satar Mese kecamatan on the south coast, with a beach point at the village itself; the section's practical resupply between Todo and the climb toward Ruteng.",
+      "why_it_matters": "The unglamorous but essential close of the section: real food, water and a market after two remote, low-resupply days, on a quiet stretch of south coast that almost no visitor itinerary to Flores includes.",
+      "practical": {
+        "access": "road",
+        "sleep": "none confirmed",
+        "water_resupply": "unreliable",
+        "best_time": "n/a",
+        "fees_protocol": "none known",
+        "hazards": ""
+      },
+      "history_culture": "",
+      "facts": [
+        {
+          "fact": "Iteng is the capital of Satar Mese sub-district, with a market (pasar Iteng), a Catholic parish, a health centre and schools -- the practical resupply between Todo and the climb to Ruteng.",
+          "source_urls": [
+            "repo:data/nodes.geojson#n-iteng",
+            "https://id.wikipedia.org/wiki/Iteng,_Satar_Mese,_Manggarai"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "fact": "A beach point sits at the village itself, part of the quiet, largely undeveloped south coast of Satar Mese linking the Wae Rebo/Todo corridor to the highland climb.",
+          "source_urls": [
+            "repo:data/pois.geojson#p-satar-mese-coast"
+          ],
+          "confidence": "likely"
+        }
+      ],
+      "photo_subjects": [
+        "pasar Iteng market stalls",
+        "south-coast beach at the village",
+        "the road climbing away from the coast toward the highlands",
+        "parish church"
+      ],
+      "commons_search_terms": [
+        "Iteng Manggarai",
+        "Satar Mese Flores",
+        "Iteng village Flores"
+      ]
+    }
+  ],
+  "narrative_notes": "Section 2 is the course's cultural centrepiece and its highest-stakes negotiation, in that order. Werang is the last ordinary highland town before the road network thins out; the coastal dip through Dintor and Denge is genuine, little-seen south-coast Flores, present mainly to stage the Wae Rebo trek rather than as a destination in itself (Dintor's and Denge's own node coordinates are still desk placements, flagged for a field GPS fix). Wae Rebo itself is the flagship: the honest hike-a-bike (~8-9 km, +700 m, most independent trekking sources agree with the data's own estimate, one 2025 source alone gives a shorter ~4.5-5 km/+600 m figure that looks like an outlier or a different start point), the UNESCO-recognised architecture, and a tourist homestay/fee system that cannot simply be inherited for a race -- the village council agreement is a precondition, not a detail, exactly as section notes and the route concept's open questions both flag. From Wae Rebo the concept line continues over the ridge to Todo (variant C in the data), the historical seat of the Manggarai kingdom and home to the regency's oldest mbaru niang, reachable by road with no further hike-a-bike -- this is deliberately the 'slow down for history' stop rather than a second trek. No public trekking source describes an on-foot Wae Rebo-to-Todo ridge trail as a standard tourist route (public guides all describe driving Ruteng-Todo-Denge and trekking Denge-Wae Rebo-Denge out-and-back), which is consistent with the concept's own uncertainty about whether that onward trail is passable with a loaded bike; variant B (an out-and-back through Denge with a road link to Todo) should be treated as the working assumption until scouted otherwise. Iteng closes the section as the plain, necessary resupply before the climb to Ruteng. Wider Manggarai cultural threads worth carrying into the brochure copy for this stretch, even though they are not tied to a single anchor here, are the caci whip-and-shield dance (performed at harvest festivals such as Penti, weddings and other ceremonies) and songke ikat-weave sarongs -- both are Manggarai-wide traditions the route concept already flags as narrative threads to carry through the whole course.",
+  "open_questions": [
+    "Which villages will host cultural checkpoints, under what terms? Wae Rebo and Todo council agreements are not yet negotiated (from data/sections.json).",
+    "Is the Wae Rebo onward trail to Todo passable with a loaded bike, or does the course need an out-and-back through Denge (variant B)? No public trekking source describes a standard on-foot Wae Rebo-Todo route; all describe driving via Todo/Dintor to Denge and trekking Denge-Wae Rebo-Denge, which weakly supports treating variant B as the default until scouted.",
+    "Dintor and Denge's coordinates are unverified desk placements; both need a field GPS fix (from data/sections.json).",
+    "Current landslide/closure status of the Wae Rebo trail should be reconfirmed close to any scouting or race date -- 2025-2026 snippets describe intermittent wet-season closures and informal repairs (e.g. a bamboo bridge) with no single authoritative current-status source.",
+    "Entrance-fee and ceremony-donation amounts for Wae Rebo vary by tour operator and season (roughly IDR 150,000-500,000 depending on package); a race-specific fee structure will need to be negotiated with the village council rather than assumed from tourist pricing."
+  ],
+  "corrections_to_data": [
+    "One 2025 source (therovingbalys.com) gives the Denge-Wae Rebo trek as roughly 4.5-5 km / +600 m, versus the ~8-9 km / +700 m in data/sections.json and most other independent sources (theworldtravelguy.com, discoverflores.guide, komodotrip.com); the majority figure is consistent with the existing data and should stand pending a field GPS track log."
+  ]
+}
