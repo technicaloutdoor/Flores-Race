@@ -32,8 +32,8 @@ Commit the diary together with the work it describes.
 - **Small fast tier:** schemas and types from a written contract, documentation from an outline,
   data formatting and merging, file inventories, screenshots.
 Use the Agent tool's `model` parameter to pick the tier; omit it (inherit) only for judgement work.
-Use the Workflow tool for fan-outs with verification stages (templates in `.claude/workflows/`); a
-single Agent for one well-scoped job. Give every agent an explicit list of files it owns; `data/` is
+Use the Workflow tool for fan-outs with verification stages (templates in `.claude/workflows/`,
+pass the tier values as `args.tiers`); a single Agent for one well-scoped job. Give every agent an explicit list of files it owns; `data/` is
 edited by one agent at a time. Details: `docs/ai-workflow.md`, `.claude/README.md`.
 
 ## Project map

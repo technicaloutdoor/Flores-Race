@@ -231,7 +231,9 @@ fiction: prefer honest gaps over invented geometry); agents in parallel on the s
 the ownership rule, but watch the `pipeline/requirements.txt` appends).
 
 Reusable assets in the repository: `.claude/AGENT-BRIEF.md` (agent preamble), `.claude/workflows/`
-(verification and review-fix templates), `pipeline/bootstrap_cache.sh` (recreate the cache).
+(verification and review-fix templates; they take the model tier values as `args.tiers` at
+invocation because no repository file may name a model), `pipeline/bootstrap_cache.sh` (recreate
+the cache).
 
 ---
 
