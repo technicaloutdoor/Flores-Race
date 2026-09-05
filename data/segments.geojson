@@ -7,8 +7,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.994,
-            -8.95
+            120.857,
+            -8.843
+          ],
+          [
+            120.874447,
+            -8.874082
           ],
           [
             120.891894,
@@ -39,14 +43,14 @@
             -8.764947
           ],
           [
-            120.998,
-            -8.741
+            121.052,
+            -8.824
           ]
         ]
       },
       "properties": {
         "id": "s-aimere-mataloko-a",
-        "name": "Aimere \u2192 Mataloko",
+        "name": "Aimere → Mataloko",
         "from_node": "n-aimere",
         "to_node": "n-mataloko",
         "variant": "A",
@@ -107,7 +111,7 @@
       },
       "properties": {
         "id": "s-bajawa-bena-a",
-        "name": "Bajawa \u2192 Bena (via Luba, Tololela, Gurusina)",
+        "name": "Bajawa → Bena (via Luba, Tololela, Gurusina)",
         "from_node": "n-bajawa",
         "to_node": "n-bena",
         "variant": "A",
@@ -122,7 +126,7 @@
         ],
         "resupply_notes": "Bena has minimal resupply (homestay economy); real resupply is Bajawa before or Aimere after.",
         "hazards": [
-          "Fire risk in the thatched-roof villages (Gurusina burned in 2018) \u2014 rider briefing should cover stove/flame discipline"
+          "Fire risk in the thatched-roof villages (Gurusina burned in 2018) — rider briefing should cover stove/flame discipline"
         ],
         "cultural_notes": "Ngada megalithic villages: Bena (nine clans, ngadhu/bhaga shrines), Luba (four clans, quieter), Tololela (steep hillside, fewer visitors), Gurusina (rebuilt after the 2018 fire). Cultural-checkpoint agreements required with each village council before race day (design rule 5).",
         "open_questions": [
@@ -178,14 +182,14 @@
             -8.936943
           ],
           [
-            120.994,
-            -8.95
+            120.857,
+            -8.843
           ]
         ]
       },
       "properties": {
         "id": "s-bena-aimere-a",
-        "name": "Bena \u2192 Aimere (Inerie shoulder, HAB)",
+        "name": "Bena → Aimere (Inerie shoulder, HAB)",
         "from_node": "n-bena",
         "to_node": "n-aimere",
         "variant": "A",
@@ -200,11 +204,11 @@
         ],
         "resupply_notes": "Aimere is a basic south-coast port resupply.",
         "hazards": [
-          "Steep, loose volcanic soil on the shoulder descent; exposure in places (route-concept HAB inventory: 5\u201310 km)"
+          "Steep, loose volcanic soil on the shoulder descent; exposure in places (route-concept HAB inventory: 5–10 km)"
         ],
         "cultural_notes": "Inerie is treated by the villages beneath it less as scenery than as a presiding relative; the ngadhu/bhaga shrines of Bena and Luba face its slope.",
         "open_questions": [
-          "Is the Bena\u2192Aimere descent safe with a loaded bike? (route-concept open question 4, priority 1)"
+          "Is the Bena→Aimere descent safe with a loaded bike? (route-concept open question 4, priority 1)"
         ],
         "public": true,
         "sources": [
@@ -256,14 +260,14 @@
             -8.943486
           ],
           [
-            120.994,
-            -8.95
+            120.857,
+            -8.843
           ]
         ]
       },
       "properties": {
         "id": "s-bena-aimere-b",
-        "name": "Bena \u2192 Aimere (Inerie full circuit, Ultra)",
+        "name": "Bena → Aimere (Inerie full circuit, Ultra)",
         "from_node": "n-bena",
         "to_node": "n-aimere",
         "variant": "B",
@@ -340,7 +344,7 @@
       },
       "properties": {
         "id": "s-blidit-waiterang-a",
-        "name": "Blidit \u2192 Waiterang (Egon ascent and descent, HAB)",
+        "name": "Blidit → Waiterang (Egon ascent and descent, HAB)",
         "from_node": "n-blidit",
         "to_node": "n-waiterang",
         "variant": "A",
@@ -357,7 +361,7 @@
         "hazards": [
           "Active fumaroles at the crater; PVMBG Level I (Normal) as of mid-2026 monitoring reports, but a safety briefing (no lingering near fumaroles) is required before any ascent"
         ],
-        "cultural_notes": "Egon is this section's hike-a-bike centrepiece, in the same register as Kelimutu and Inerie further west (route-concept HAB inventory: 4\u20136 km from Blidit).",
+        "cultural_notes": "Egon is this section's hike-a-bike centrepiece, in the same register as Kelimutu and Inerie further west (route-concept HAB inventory: 4–6 km from Blidit).",
         "open_questions": [
           "Confirm current trail condition and fumarole safety before committing riders."
         ],
@@ -414,7 +418,7 @@
       },
       "properties": {
         "id": "s-boawae-mbay-a",
-        "name": "Boawae \u2192 Mbay (Aesesa valley)",
+        "name": "Boawae → Mbay (Aesesa valley)",
         "from_node": "n-boawae",
         "to_node": "n-mbay",
         "variant": "A",
@@ -467,7 +471,7 @@
       },
       "properties": {
         "id": "s-boawae-nangaroro-b",
-        "name": "Boawae \u2192 Nangaroro (direct, skips Mbay)",
+        "name": "Boawae → Nangaroro (direct, skips Mbay)",
         "from_node": "n-boawae",
         "to_node": "n-nangaroro",
         "variant": "B",
@@ -477,9 +481,9 @@
         "est_hab_km": 0,
         "difficulty": 3,
         "remoteness": 4,
-        "direction_note": "Route-level alternative to the two-hop Boawae\u2192Mbay\u2192Nangaroro corridor, not a same-endpoint variant of a single segment: shorter and less remote per the route concept, but skips Mbay's resupply and the Aesesa plain entirely.",
+        "direction_note": "Route-level alternative to the two-hop Boawae→Mbay→Nangaroro corridor, not a same-endpoint variant of a single segment: shorter and less remote per the route concept, but skips Mbay's resupply and the Aesesa plain entirely.",
         "water_points": [
-          "Unconfirmed \u2014 this line has not been desk-checked against any track source"
+          "Unconfirmed — this line has not been desk-checked against any track source"
         ],
         "resupply_notes": "None between Boawae and Nangaroro on this line.",
         "hazards": [
@@ -528,14 +532,14 @@
             -8.677342
           ],
           [
-            122.311111,
-            -8.668611
+            122.313,
+            -8.698
           ]
         ]
       },
       "properties": {
         "id": "s-bola-watublapi-a",
-        "name": "Bola \u2192 Watublapi",
+        "name": "Bola → Watublapi",
         "from_node": "n-bola",
         "to_node": "n-watublapi",
         "variant": "A",
@@ -611,7 +615,7 @@
       },
       "properties": {
         "id": "s-borong-elar-a",
-        "name": "Borong \u2192 Elar (Manggarai Timur interior)",
+        "name": "Borong → Elar (Manggarai Timur interior)",
         "from_node": "n-borong",
         "to_node": "n-elar",
         "variant": "A",
@@ -622,7 +626,7 @@
         "difficulty": 4,
         "remoteness": 5,
         "water_points": [
-          "Not documented at all \u2014 the real scouting work"
+          "Not documented at all — the real scouting work"
         ],
         "resupply_notes": "Elar: camat office, health centre, schools only.",
         "hazards": [
@@ -644,8 +648,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.23,
-            -8.74
+            120.302,
+            -8.808
           ],
           [
             120.244715,
@@ -683,7 +687,7 @@
       },
       "properties": {
         "id": "s-denge-wae-rebo-a",
-        "name": "Denge \u2192 Wae Rebo (porters' trail, HAB)",
+        "name": "Denge → Wae Rebo (porters' trail, HAB)",
         "from_node": "n-denge",
         "to_node": "n-wae-rebo",
         "variant": "A",
@@ -736,7 +740,7 @@
       },
       "properties": {
         "id": "s-detusoko-moni-a",
-        "name": "Detusoko \u2192 Moni",
+        "name": "Detusoko → Moni",
         "from_node": "n-detusoko",
         "to_node": "n-moni",
         "variant": "A",
@@ -766,8 +770,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.2,
-            -8.79
+            120.308,
+            -8.846
           ],
           [
             120.171078,
@@ -794,14 +798,14 @@
             -8.727704
           ],
           [
-            120.23,
-            -8.74
+            120.302,
+            -8.808
           ]
         ]
       },
       "properties": {
         "id": "s-dintor-denge-a",
-        "name": "Dintor \u2192 Denge (Wae Rebo trailhead)",
+        "name": "Dintor → Denge (Wae Rebo trailhead)",
         "from_node": "n-dintor",
         "to_node": "n-denge",
         "variant": "A",
@@ -870,7 +874,7 @@
       },
       "properties": {
         "id": "s-elar-pota-a",
-        "name": "Elar \u2192 Pota (rejoining the north coast)",
+        "name": "Elar → Pota (rejoining the north coast)",
         "from_node": "n-elar",
         "to_node": "n-pota",
         "variant": "A",
@@ -885,7 +889,7 @@
         ],
         "resupply_notes": "Pota (see s-pota-riung-a) is the next resupply.",
         "open_questions": [
-          "Same as the Borong\u2192Elar leg: unscouted.",
+          "Same as the Borong→Elar leg: unscouted.",
           "Redrawn to a plausible corridor between the real endpoints (was a geometry bug swinging 30-60 km toward a different part of the course). The corrected interior loop (Ruteng->Borong->Elar->Pota) now totals ~198 km against a ~179 km direct alternative (Ruteng->Ranamese->Liang Bua->Reo->Pota) -- a real but modest +19 km, not the +120-160 km route-concept.md estimates for this loop. That estimate cannot be met while every segment also stays within a geodesically plausible 1.3-2.5x-straight-line corridor; route-concept.md should be revisited for this loop."
         ],
         "public": true,
@@ -935,7 +939,7 @@
       },
       "properties": {
         "id": "s-ende-detusoko-a",
-        "name": "Ende \u2192 Detusoko",
+        "name": "Ende → Detusoko",
         "from_node": "n-ende",
         "to_node": "n-detusoko",
         "variant": "A",
@@ -1005,7 +1009,7 @@
       },
       "properties": {
         "id": "s-iteng-ruteng-a",
-        "name": "Iteng \u2192 Ruteng",
+        "name": "Iteng → Ruteng",
         "from_node": "n-iteng",
         "to_node": "n-ruteng",
         "variant": "A",
@@ -1070,7 +1074,7 @@
       },
       "properties": {
         "id": "s-kelimutu-wolojita-a",
-        "name": "Kelimutu \u2192 Wolojita",
+        "name": "Kelimutu → Wolojita",
         "from_node": "n-kelimutu",
         "to_node": "n-wolojita",
         "variant": "A",
@@ -1132,7 +1136,7 @@
       },
       "properties": {
         "id": "s-koka-sikka-a",
-        "name": "Koka \u2192 Sikka (inland of the bay)",
+        "name": "Koka → Sikka (inland of the bay)",
         "from_node": "n-koka",
         "to_node": "n-sikka",
         "variant": "A",
@@ -1194,14 +1198,14 @@
             -8.648086
           ],
           [
-            120.011,
-            -8.655
+            120.024,
+            -8.712
           ]
         ]
       },
       "properties": {
         "id": "s-labuan-bajo-sano-nggoang-a",
-        "name": "Labuan Bajo \u2192 Sano Nggoang via Mbeliling forest",
+        "name": "Labuan Bajo → Sano Nggoang via Mbeliling forest",
         "from_node": "n-labuan-bajo",
         "to_node": "n-sano-nggoang",
         "variant": "A",
@@ -1260,7 +1264,7 @@
       },
       "properties": {
         "id": "s-lela-maumere-a",
-        "name": "Lela \u2192 Maumere",
+        "name": "Lela → Maumere",
         "from_node": "n-lela",
         "to_node": "n-maumere",
         "variant": "A",
@@ -1337,7 +1341,7 @@
       },
       "properties": {
         "id": "s-liang-bua-reo-a",
-        "name": "Liang Bua \u2192 Reo",
+        "name": "Liang Bua → Reo",
         "from_node": "n-liang-bua",
         "to_node": "n-reo",
         "variant": "A",
@@ -1363,8 +1367,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.998,
-            -8.741
+            121.052,
+            -8.824
           ],
           [
             121.027237,
@@ -1402,7 +1406,7 @@
       },
       "properties": {
         "id": "s-mataloko-boawae-a",
-        "name": "Mataloko \u2192 Boawae (via Wogo)",
+        "name": "Mataloko → Boawae (via Wogo)",
         "from_node": "n-mataloko",
         "to_node": "n-boawae",
         "variant": "A",
@@ -1472,7 +1476,7 @@
       },
       "properties": {
         "id": "s-maumere-bola-a",
-        "name": "Maumere \u2192 Bola (Bola coast loop)",
+        "name": "Maumere → Bola (Bola coast loop)",
         "from_node": "n-maumere",
         "to_node": "n-bola",
         "variant": "A",
@@ -1486,7 +1490,7 @@
           "Unreliable in Bola"
         ],
         "resupply_notes": "Bola: minimal resupply, south-coast kecamatan capital.",
-        "cultural_notes": "Ultra-variant loop named in the route concept: Maumere\u2192Bola\u2192Watublapi\u2192Egon instead of the direct Maumere\u2192Watublapi hop (+50\u201370 km).",
+        "cultural_notes": "Ultra-variant loop named in the route concept: Maumere→Bola→Watublapi→Egon instead of the direct Maumere→Watublapi hop (+50–70 km).",
         "public": true,
         "sources": [
           "docs/route-concept.md"
@@ -1530,14 +1534,14 @@
             -8.708108
           ],
           [
-            122.311111,
-            -8.668611
+            122.313,
+            -8.698
           ]
         ]
       },
       "properties": {
         "id": "s-maumere-watublapi-a",
-        "name": "Maumere \u2192 Watublapi",
+        "name": "Maumere → Watublapi",
         "from_node": "n-maumere",
         "to_node": "n-watublapi",
         "variant": "A",
@@ -1551,7 +1555,7 @@
           "Unreliable in Watublapi"
         ],
         "resupply_notes": "Watublapi: minimal, homestays, ikat-weaving cooperative.",
-        "cultural_notes": "Watublapi is Sikka's ikat-weaving hamlet; protocol is closer to a working craft cooperative than a customary adat community \u2014 comparatively easy to arrange as a stop (p-watublapi-weaving).",
+        "cultural_notes": "Watublapi is Sikka's ikat-weaving hamlet; protocol is closer to a working craft cooperative than a customary adat community — comparatively easy to arrange as a stop (p-watublapi-weaving).",
         "public": true,
         "sources": [
           "docs/route-concept.md"
@@ -1607,7 +1611,7 @@
       },
       "properties": {
         "id": "s-mbay-nangaroro-a",
-        "name": "Mbay \u2192 Nangaroro (crossing the island's waist)",
+        "name": "Mbay → Nangaroro (crossing the island's waist)",
         "from_node": "n-mbay",
         "to_node": "n-nangaroro",
         "variant": "A",
@@ -1622,7 +1626,7 @@
         ],
         "resupply_notes": "Nangaroro: basic resupply, farming/fishing villages.",
         "open_questions": [
-          "Which ridge crossings between coasts exist as footpaths here \u2014 this is the narrowest waist of the island (route-concept open question 6)."
+          "Which ridge crossings between coasts exist as footpaths here — this is the narrowest waist of the island (route-concept open question 6)."
         ],
         "public": true,
         "sources": [
@@ -1655,7 +1659,7 @@
       },
       "properties": {
         "id": "s-moni-kelimutu-a",
-        "name": "Moni \u2192 Kelimutu (dawn checkpoint)",
+        "name": "Moni → Kelimutu (dawn checkpoint)",
         "from_node": "n-moni",
         "to_node": "n-kelimutu",
         "variant": "A",
@@ -1672,7 +1676,7 @@
         "hazards": [
           "Standing safety rules apply regardless of alert level: no crater-rim approach (especially Kawah II, phreatic-eruption risk), no camping in the craters; PVMBG held Kelimutu at Level I/Normal as of 5 Aug 2026"
         ],
-        "cultural_notes": "Kelimutu is the one non-negotiable stop of the race: riders required at the viewpoint at dawn. Paved to the car park, then stairs \u2014 treated as a short hike-a-bike, not a ridden section. In Lio belief the three lakes are where souls go after death.",
+        "cultural_notes": "Kelimutu is the one non-negotiable stop of the race: riders required at the viewpoint at dawn. Paved to the car park, then stairs — treated as a short hike-a-bike, not a ridden section. In Lio belief the three lakes are where souls go after death.",
         "public": true,
         "sources": [
           "docs/route-concept.md",
@@ -1724,7 +1728,7 @@
       },
       "properties": {
         "id": "s-nangaroro-penggajawa-a",
-        "name": "Nangaroro \u2192 Penggajawa (Blue Stone beach)",
+        "name": "Nangaroro → Penggajawa (Blue Stone beach)",
         "from_node": "n-nangaroro",
         "to_node": "n-penggajawa",
         "variant": "A",
@@ -1786,7 +1790,7 @@
       },
       "properties": {
         "id": "s-nggela-koka-a",
-        "name": "Nggela \u2192 Koka (via Paga)",
+        "name": "Nggela → Koka (via Paga)",
         "from_node": "n-nggela",
         "to_node": "n-koka",
         "variant": "A",
@@ -1799,7 +1803,7 @@
         "water_points": [
           "Unreliable; a beach resort or two near Koka/Paga"
         ],
-        "resupply_notes": "Paga and Koka are day-stop/checkpoint only \u2014 no confirmed lodging.",
+        "resupply_notes": "Paga and Koka are day-stop/checkpoint only — no confirmed lodging.",
         "cultural_notes": "Koka and Paga are twin south-coast beaches; both nodes' coordinates are unverified and flagged for a field GPS fix.",
         "open_questions": [
           "Confirm Paga and Koka's exact coordinates in the field; the two are less than 1 km apart in the desk data."
@@ -1839,7 +1843,7 @@
       },
       "properties": {
         "id": "s-penggajawa-ende-a",
-        "name": "Penggajawa \u2192 Ende",
+        "name": "Penggajawa → Ende",
         "from_node": "n-penggajawa",
         "to_node": "n-ende",
         "variant": "A",
@@ -1852,11 +1856,11 @@
         "water_points": [
           "Reliable in Ende"
         ],
-        "resupply_notes": "Ende: full resupply, hospital, airport \u2014 the largest town of central Flores.",
+        "resupply_notes": "Ende: full resupply, hospital, airport — the largest town of central Flores.",
         "hazards": [
           "Iya volcano sits immediately south of the town (PVMBG Level II/Waspada, 2 km exclusion radius as of May 2026); no route dependency but worth a standing check"
         ],
-        "cultural_notes": "Ende is Sukarno's 1934\u201338 exile town: the exile house (p-sukarno-exile-house) and the Contemplation Park breadfruit tree (p-pancasila-tree) where he is said to have shaped the Pancasila.",
+        "cultural_notes": "Ende is Sukarno's 1934–38 exile town: the exile house (p-sukarno-exile-house) and the Contemplation Park breadfruit tree (p-pancasila-tree) where he is said to have shaped the Pancasila.",
         "public": true,
         "sources": [
           "docs/route-concept.md",
@@ -1905,14 +1909,18 @@
             -8.339943
           ],
           [
-            120.985,
-            -8.403
+            121.025413,
+            -8.414059
+          ],
+          [
+            121.029,
+            -8.419
           ]
         ]
       },
       "properties": {
         "id": "s-pota-riung-a",
-        "name": "Pota \u2192 Riung",
+        "name": "Pota → Riung",
         "from_node": "n-pota",
         "to_node": "n-riung",
         "variant": "A",
@@ -1927,10 +1935,10 @@
         ],
         "resupply_notes": "Riung has small shops and a market; nothing named en route.",
         "hazards": [
-          "Same savanna/heat/water constraints as the Reo\u2013Pota leg; coastal headlands where the track may die (route-concept HAB inventory)"
+          "Same savanna/heat/water constraints as the Reo–Pota leg; coastal headlands where the track may die (route-concept HAB inventory)"
         ],
         "open_questions": [
-          "Where does the coastal track die between Pota and Riung, and what replaces it \u2014 beach walking, a headland footpath, or a boat portage?"
+          "Where does the coastal track die between Pota and Riung, and what replaces it — beach walking, a headland footpath, or a boat portage?"
         ],
         "public": true,
         "sources": [
@@ -1983,7 +1991,7 @@
       },
       "properties": {
         "id": "s-ranamese-liang-bua-a",
-        "name": "Ranamese \u2192 Liang Bua",
+        "name": "Ranamese → Liang Bua",
         "from_node": "n-ranamese",
         "to_node": "n-liang-bua",
         "variant": "A",
@@ -2053,7 +2061,7 @@
       },
       "properties": {
         "id": "s-reo-pota-a",
-        "name": "Reo \u2192 Pota (north coast savanna)",
+        "name": "Reo → Pota (north coast savanna)",
         "from_node": "n-reo",
         "to_node": "n-pota",
         "variant": "A",
@@ -2071,7 +2079,7 @@
           "Heat, dry lontar-palm savanna, no confirmed shade or water sources along this stretch"
         ],
         "open_questions": [
-          "Is there a continuous rideable/walkable corridor Reo\u2192Pota\u2192Riung along or near the north coast, and where is water? (route-concept open question 1, priority 1)"
+          "Is there a continuous rideable/walkable corridor Reo→Pota→Riung along or near the north coast, and where is water? (route-concept open question 1, priority 1)"
         ],
         "public": true,
         "sources": [
@@ -2085,8 +2093,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.985,
-            -8.403
+            121.029,
+            -8.419
+          ],
+          [
+            121.111494,
+            -8.427461
           ],
           [
             121.194432,
@@ -2128,7 +2140,7 @@
       },
       "properties": {
         "id": "s-riung-soa-a",
-        "name": "Riung \u2192 Soa (Mengeruda hot springs)",
+        "name": "Riung → Soa (Mengeruda hot springs)",
         "from_node": "n-riung",
         "to_node": "n-soa",
         "variant": "A",
@@ -2203,7 +2215,7 @@
       },
       "properties": {
         "id": "s-ruteng-borong-a",
-        "name": "Ruteng \u2192 Borong (Manggarai Timur interior loop)",
+        "name": "Ruteng → Borong (Manggarai Timur interior loop)",
         "from_node": "n-ruteng",
         "to_node": "n-borong",
         "variant": "A",
@@ -2217,7 +2229,7 @@
           "Reliable in Borong (regency capital)"
         ],
         "resupply_notes": "Borong: full resupply, market, hospital, banks, hotels.",
-        "cultural_notes": "Ultra-variant loop, named in the route concept as an alternative to the direct Liang Bua\u2192Reo\u2192Pota corridor: Ruteng\u2192Borong\u2192Elar\u2192Pota (+120\u2013160 km, very remote, unknown tracks).",
+        "cultural_notes": "Ultra-variant loop, named in the route concept as an alternative to the direct Liang Bua→Reo→Pota corridor: Ruteng→Borong→Elar→Pota (+120–160 km, very remote, unknown tracks).",
         "open_questions": [
           "Unscouted; the whole loop needs a first field trip before it can be more than a concept sketch.",
           "Redrawn to a plausible corridor between the real endpoints (was a geometry bug swinging 30-60 km toward a different part of the course). The corrected interior loop (Ruteng->Borong->Elar->Pota) now totals ~198 km against a ~179 km direct alternative (Ruteng->Ranamese->Liang Bua->Reo->Pota) -- a real but modest +19 km, not the +120-160 km route-concept.md estimates for this loop. That estimate cannot be met while every segment also stays within a geodesically plausible 1.3-2.5x-straight-line corridor; route-concept.md should be revisited for this loop."
@@ -2273,7 +2285,7 @@
       },
       "properties": {
         "id": "s-ruteng-ranamese-a",
-        "name": "Ruteng \u2192 Ranamese (Poco Ranaka flank)",
+        "name": "Ruteng → Ranamese (Poco Ranaka flank)",
         "from_node": "n-ruteng",
         "to_node": "n-ranamese",
         "variant": "A",
@@ -2288,7 +2300,7 @@
         ],
         "resupply_notes": "None beyond the Ranamese warung; last real resupply is Ruteng.",
         "hazards": [
-          "Road climbs past 1,400\u20131,500 m on the Poco Ranaka flank; cold and wet at dawn even in the dry season"
+          "Road climbs past 1,400–1,500 m on the Poco Ranaka flank; cold and wet at dawn even in the dry season"
         ],
         "open_questions": [
           "Is there a farm-track alternative to the paved road over this pass, per design rule 1 (prefer the small track)?"
@@ -2306,8 +2318,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            120.011,
-            -8.655
+            120.024,
+            -8.712
           ],
           [
             120.007066,
@@ -2341,7 +2353,7 @@
       },
       "properties": {
         "id": "s-sano-nggoang-werang-a",
-        "name": "Sano Nggoang lakeshore \u2192 Werang",
+        "name": "Sano Nggoang lakeshore → Werang",
         "from_node": "n-sano-nggoang",
         "to_node": "n-werang",
         "variant": "A",
@@ -2391,7 +2403,7 @@
       },
       "properties": {
         "id": "s-sikka-lela-a",
-        "name": "Sikka \u2192 Lela",
+        "name": "Sikka → Lela",
         "from_node": "n-sikka",
         "to_node": "n-lela",
         "variant": "A",
@@ -2457,7 +2469,7 @@
       },
       "properties": {
         "id": "s-soa-bajawa-a",
-        "name": "Soa \u2192 Bajawa",
+        "name": "Soa → Bajawa",
         "from_node": "n-soa",
         "to_node": "n-bajawa",
         "variant": "A",
@@ -2483,8 +2495,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            122.558,
-            -8.452
+            122.5174,
+            -8.5451
           ],
           [
             122.610322,
@@ -2534,7 +2546,7 @@
       },
       "properties": {
         "id": "s-talibura-larantuka-a",
-        "name": "Talibura \u2192 Larantuka (north-coast corridor, concept A)",
+        "name": "Talibura → Larantuka (north-coast corridor, concept A)",
         "from_node": "n-talibura",
         "to_node": "n-larantuka",
         "variant": "A",
@@ -2568,8 +2580,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            122.558,
-            -8.452
+            122.5174,
+            -8.5451
           ],
           [
             122.62364,
@@ -2607,7 +2619,7 @@
       },
       "properties": {
         "id": "s-talibura-larantuka-b",
-        "name": "Talibura \u2192 Larantuka (highway corridor via Boru, concept B)",
+        "name": "Talibura → Larantuka (highway corridor via Boru, concept B)",
         "from_node": "n-talibura",
         "to_node": "n-larantuka",
         "variant": "B",
@@ -2676,7 +2688,7 @@
       },
       "properties": {
         "id": "s-todo-iteng-a",
-        "name": "Todo \u2192 Iteng",
+        "name": "Todo → Iteng",
         "from_node": "n-todo",
         "to_node": "n-iteng",
         "variant": "A",
@@ -2749,7 +2761,7 @@
       },
       "properties": {
         "id": "s-wae-rebo-todo-a",
-        "name": "Wae Rebo \u2192 Todo (onward ridge trail, concept)",
+        "name": "Wae Rebo → Todo (onward ridge trail, concept)",
         "from_node": "n-wae-rebo",
         "to_node": "n-todo",
         "variant": "A",
@@ -2814,7 +2826,7 @@
       },
       "properties": {
         "id": "s-wae-rebo-todo-b",
-        "name": "Wae Rebo \u2192 Todo (out-and-back via Denge)",
+        "name": "Wae Rebo → Todo (out-and-back via Denge)",
         "from_node": "n-wae-rebo",
         "to_node": "n-todo",
         "variant": "B",
@@ -2824,13 +2836,13 @@
         "est_hab_km": 9,
         "difficulty": 4,
         "remoteness": 4,
-        "direction_note": "Fallback alternative: descend the porters' trail back to Denge the way you came (same HAB as the ascent), then take the Denge\u2013Todo road east.",
+        "direction_note": "Fallback alternative: descend the porters' trail back to Denge the way you came (same HAB as the ascent), then take the Denge–Todo road east.",
         "water_points": [
           "Denge kiosks on the way back down"
         ],
         "resupply_notes": "Same as variant A once past Denge; Todo itself has no lodging.",
         "hazards": [
-          "Adds real distance and a full trail re-descent \u2014 only use if the onward trail (variant A) is confirmed impassable"
+          "Adds real distance and a full trail re-descent — only use if the onward trail (variant A) is confirmed impassable"
         ],
         "cultural_notes": "Safety fallback named explicitly in the route concept for section 02.",
         "open_questions": [
@@ -2876,14 +2888,14 @@
             -8.48757
           ],
           [
-            122.558,
-            -8.452
+            122.5174,
+            -8.5451
           ]
         ]
       },
       "properties": {
         "id": "s-waiterang-talibura-a",
-        "name": "Waiterang \u2192 Talibura",
+        "name": "Waiterang → Talibura",
         "from_node": "n-waiterang",
         "to_node": "n-talibura",
         "variant": "A",
@@ -2913,8 +2925,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            122.311111,
-            -8.668611
+            122.313,
+            -8.698
+          ],
+          [
+            122.321005,
+            -8.655766
           ],
           [
             122.32901,
@@ -2948,7 +2964,7 @@
       },
       "properties": {
         "id": "s-watublapi-blidit-a",
-        "name": "Watublapi \u2192 Blidit (Egon trailhead)",
+        "name": "Watublapi → Blidit (Egon trailhead)",
         "from_node": "n-watublapi",
         "to_node": "n-blidit",
         "variant": "A",
@@ -3010,14 +3026,14 @@
             -8.655658
           ],
           [
-            120.2,
-            -8.79
+            120.308,
+            -8.846
           ]
         ]
       },
       "properties": {
         "id": "s-werang-dintor-a",
-        "name": "Werang \u2192 Dintor",
+        "name": "Werang → Dintor",
         "from_node": "n-werang",
         "to_node": "n-dintor",
         "variant": "A",
@@ -3068,7 +3084,7 @@
       },
       "properties": {
         "id": "s-wolojita-nggela-a",
-        "name": "Wolojita \u2192 Nggela",
+        "name": "Wolojita → Nggela",
         "from_node": "n-wolojita",
         "to_node": "n-nggela",
         "variant": "A",
