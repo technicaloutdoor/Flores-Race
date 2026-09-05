@@ -645,7 +645,14 @@ store.subscribe((state, previous) => {
   }
   if (state.mode !== previous.mode && bundle) drawData(); // mode changes which features are visible
   if (state.routeId !== previous.routeId) updateRouteMembership();
-  if (state.selection !== previous.selection) mapLayers?.setSelection(state.selection);
+  if (state.selection !== previous.selection) {
+    // A real search/section/map-feature click -- the user has moved on from the first view, so a
+    // later container resize (see `maybeFitIsland` above) must no longer snap the camera back to
+    // the island fit. (The initial hash's own `sel=`, if any, is applied before this listener is
+    // even registered, so it never reaches here.)
+    autoFitIsland = false;
+    mapLayers?.setSelection(state.selection);
+  }
 
   // Panels (sidebar/inspector/profile) only read mode/routeId/selection off the state -- notably
   // never hoverId, which patches on every map `mousemove` (see mapLayers.setHover above, which
