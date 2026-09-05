@@ -91,6 +91,18 @@ function round(n: number, decimals: number): number {
 }
 
 /**
+ * True when every one of `segments` has `geometry_source: 'concept-sketch'` — a hand-drawn corridor
+ * that was never routed over the track network or traced in the field, so a climbing total sampled
+ * from the DEM along it would be crossing terrain the corridor doesn't actually follow. A route that
+ * mixes sketched segments with network-routed or traced ones keeps its ascent number; only a route
+ * that is *entirely* sketched hides it (sidebar.ts, ARCHITECTURE.md §2 — never present a guess as a
+ * fact). Returns `false` for an empty list — there's nothing to call sketch-only about it.
+ */
+export function isConceptSketchOnly(segments: readonly SegmentFeature[]): boolean {
+  return segments.length > 0 && segments.every((f) => f.properties.geometry_source === 'concept-sketch');
+}
+
+/**
  * Finds the `[startIdx, endIdx)` chain-position span for one section's `[from_node, to_node)`
  * pair. A plain `chain.indexOf` on each end would always resolve to the *first* occurrence of
  * that node id in the chain — wrong whenever the route revisits a node, which is a documented

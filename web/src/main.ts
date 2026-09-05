@@ -20,11 +20,11 @@ import { createMap } from './map/map.ts';
 import { setBasemap } from './map/basemaps.ts';
 import { setHillshadeVisible, setTerrain3D } from './map/terrain.ts';
 import { MapLayers } from './map/layers.ts';
-import { flyToBbox, flyToPoint } from './map/fit.ts';
+import { flyToBbox, flyToPoint, fitIsland } from './map/fit.ts';
 import { StaticFileStore, type Bundle, type MetaSource } from './data/store.ts';
 import { bboxOf } from './data/derive.ts';
 import { STATUS_META, type SegmentFeature, type SegmentsGeoJSON } from './data/types.ts';
-import { visibleNodes, visiblePois, visibleSegments } from './data/visibility.ts';
+import { visibleNodes, visiblePois, visibleSegments, defaultRouteId, routeAllowedForMode } from './data/visibility.ts';
 import { applyOverlayToSegment, overlayStore } from './state/overlay.ts';
 import { buildSearchIndex, searchItems, type SearchItem } from './lib/search.ts';
 import * as sidebar from './panels/sidebar.ts';
@@ -384,7 +384,22 @@ function defaultLayersForMode(mode: Mode, zoom: number): LayerVisibility {
   return layers;
 }
 
+/** The `routeId` to carry into a switch to `mode`: the current selection, unless it's no longer
+ * allowed there (data/visibility.ts's `routeAllowedForMode`), in which case the first route `mode`
+ * does allow (`defaultRouteId`) -- the same rule the initial-load default above applies. A
+ * deliberate "(no route)" selection (`routeId === null`) is always allowed and is left alone. Used
+ * by both the mode <select> and a hash-driven mode change, so a `mode=` edited straight into the
+ * URL gets the same correction as picking a mode from the menu. */
+function nextRouteIdForMode(mode: Mode): string | null {
+  const routes = bundle?.routes ?? [];
+  const currentRouteId = store.getState().routeId;
+  return routeAllowedForMode(routes, currentRouteId, mode) ? currentRouteId : defaultRouteId(routes, mode);
+}
+
 const initialHash = readInitialHashState();
+// Mirrors state/url.ts's own rule for a "real" viewport (both halves present, not just one) --
+// only then does the URL's c/z win over the first-view island fit below.
+const hasHashViewport = initialHash.center !== undefined && initialHash.zoom !== undefined;
 const initialViewport: Viewport = {
   center: initialHash.center ?? DEFAULT_VIEWPORT.center,
   zoom: initialHash.zoom ?? DEFAULT_VIEWPORT.zoom,
@@ -420,6 +435,22 @@ window.__mapIdle = new Promise<void>((resolve) => {
   map.once('idle', () => resolve());
 });
 
+// The first-view island fit (map/fit.ts's `fitIsland`) has to survive more than just the map's own
+// 'load' -- the header's height (and so the map row's share of the grid) can still change *after*
+// that, most commonly while the web fonts are still swapping in, and MapLibre's own container
+// ResizeObserver re-fires 'resize' each time. Re-running the fit on every 'resize' keeps the whole
+// island framed through all of that, right up until the user actually takes the camera themselves
+// (a real drag/scroll/pinch -- `movestart`'s `originalEvent` is only set for those, never for our
+// own `fitBounds`/`flyTo` calls), at which point it stops for good.
+let autoFitIsland = !hasHashViewport;
+function maybeFitIsland(): void {
+  if (autoFitIsland) fitIsland(map);
+}
+map.on('resize', maybeFitIsland);
+map.on('movestart', (e) => {
+  if (e.originalEvent) autoFitIsland = false;
+});
+
 let mapLayers: MapLayers | undefined;
 const networkNote = document.createElement('div');
 networkNote.id = 'network-note';
@@ -438,6 +469,7 @@ async function ensureNetworkLoaded(): Promise<void> {
 }
 
 map.on('load', () => {
+  maybeFitIsland(); // no-op once hasHashViewport, or after the user has taken the camera themselves
   mapContainer.appendChild(networkNote);
   setBasemap(map, store.getState().basemap);
   mapLayers = new MapLayers(map);
@@ -541,6 +573,13 @@ routeStore
     floresMap.setAttribution(loaded.meta.attribution);
     renderAttributionPanel(loaded.meta.sources);
 
+    // The URL hash named no route (routeId is still the initial `null`) -- open on the first route
+    // routes.json itself allows for the current mode (data/visibility.ts's `defaultRouteId`; see
+    // also the `modeSwitchPatch` helper below, which keeps this true across a later mode change).
+    if (store.getState().routeId === null) {
+      store.patch({ routeId: defaultRouteId(loaded.routes, store.getState().mode) });
+    }
+
     if (mapLayers) drawData();
     renderPanels();
   })
@@ -561,6 +600,7 @@ modeSelect.addEventListener('change', () => {
   const mode = modeSelect.value as Mode;
   store.patch({
     mode,
+    routeId: nextRouteIdForMode(mode),
     layers: defaultLayersForMode(mode, map.getZoom()),
     basemap: mode === 'scout' ? 'topo' : store.getState().basemap,
   });
@@ -625,7 +665,15 @@ urlHandle = bindUrlSync(
   store,
   () => floresMap.getViewport(),
   (partial, viewport) => {
-    store.patch(partial);
+    // A hash edit that changes `mode` without also naming a `route=` needs the same routeId
+    // correction as picking a mode from the <select> (nextRouteIdForMode above) -- otherwise the
+    // previous mode's route could stay selected even once it's no longer in this mode's audience.
+    // An explicit `route=` in the same hash always wins, so this only fills in what's missing.
+    const resolved: Partial<AppState> =
+      partial.mode !== undefined && partial.routeId === undefined
+        ? { ...partial, routeId: nextRouteIdForMode(partial.mode) }
+        : partial;
+    store.patch(resolved);
     if (viewport) map.jumpTo({ center: viewport.center, zoom: viewport.zoom });
   },
 );

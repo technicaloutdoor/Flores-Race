@@ -4,6 +4,7 @@ import {
   coordAtKm,
   cumulativeKmMarkers,
   haversineKm,
+  isConceptSketchOnly,
   routeSegments,
   routeStats,
   sectionForSegment,
@@ -295,6 +296,31 @@ describe('sectionForSegment and segmentsInSection with a repeated node (out-and-
         (f) => f.properties.id,
       ),
     ).toEqual(['s-denge-todo-a']);
+  });
+});
+
+describe('isConceptSketchOnly', () => {
+  it('is true when every segment is a hand-sketched corridor', () => {
+    // segA/segB both default to 'concept-sketch' (see the `segment()` fixture helper above).
+    expect(isConceptSketchOnly([segA, segB])).toBe(true);
+  });
+
+  it('is false when even one segment is routed or traced', () => {
+    const routed = segment('s-routed', 'n-a', 'n-b', [[120, -8], [120.1, -8.05]], {
+      geometry_source: 'overture-route',
+    });
+    expect(isConceptSketchOnly([segA, routed])).toBe(false);
+  });
+
+  it('is false when every segment is routed (nothing to hide)', () => {
+    const routed = segment('s-routed', 'n-a', 'n-b', [[120, -8], [120.1, -8.05]], {
+      geometry_source: 'overture-route',
+    });
+    expect(isConceptSketchOnly([routed])).toBe(false);
+  });
+
+  it('is false for an empty list', () => {
+    expect(isConceptSketchOnly([])).toBe(false);
   });
 });
 

@@ -116,8 +116,10 @@ export function fieldRow(label: string, value: string): HTMLElement | null {
   return row;
 }
 
-export function statTile(label: string, value: string): HTMLElement {
+/** `title`, when given, becomes the tile's tooltip (e.g. explaining why a value reads 'n/a'). */
+export function statTile(label: string, value: string, title?: string): HTMLElement {
   const tile = el('div', 'stat-tile');
   tile.append(el('div', 'stat-value', value), el('div', 'stat-label', label));
+  if (title) tile.title = title;
   return tile;
 }

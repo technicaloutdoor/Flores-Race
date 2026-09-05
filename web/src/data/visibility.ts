@@ -36,3 +36,30 @@ export function visibleSections(bundle: Bundle, mode: Mode): Section[] {
 export function visibleRoutes(bundle: Bundle, mode: Mode): Route[] {
   return bundle.routes.filter((r) => r.audience.includes(mode));
 }
+
+/**
+ * The route the app opens on when nothing has picked one yet: the *first* route, in `routes`'
+ * own order (routes.json's editorial order — network-routed variants before their hand-sketched
+ * counterparts, Traverse before Ultra), whose `audience` includes `mode`. Returns `null` only if no
+ * route allows `mode` at all. Used both for the initial view (no `route=` in the URL hash) and to
+ * pick a replacement when a mode switch makes the current selection ineligible — see
+ * `routeAllowedForMode` and main.ts.
+ */
+export function defaultRouteId(routes: readonly Route[], mode: Mode): string | null {
+  return routes.find((r) => r.audience.includes(mode))?.id ?? null;
+}
+
+/**
+ * True when `routeId` is either `null` (a deliberate "no route" choice, which a mode switch should
+ * never override) or names a route in `routes` whose `audience` includes `mode`. False means a mode
+ * switch just made the current route ineligible, and the caller should fall back to
+ * `defaultRouteId`.
+ */
+export function routeAllowedForMode(
+  routes: readonly Route[],
+  routeId: string | null,
+  mode: Mode,
+): boolean {
+  if (routeId === null) return true;
+  return routes.some((r) => r.id === routeId && r.audience.includes(mode));
+}

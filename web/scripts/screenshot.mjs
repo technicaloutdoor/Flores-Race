@@ -21,12 +21,18 @@ const VIEWPORTS = [
   { name: 'mobile', width: 390, height: 844 },
 ];
 
-// r-traverse is visible in every mode (its `audience` includes stakeholder, scout and public — see
-// data/routes.json), so selecting it exercises the sidebar's route-stats-and-sections view in all
-// three screenshots. The `sel` id is the first segment of that route's ordered `segments` list, so
-// the inspector (and the elevation profile) always has something real to draw.
-const ROUTE_ID = 'r-traverse';
+// No `route=` is pinned here on purpose: the app now picks its own default (the first route in
+// routes.json whose audience includes the current mode -- see data/visibility.ts's
+// `defaultRouteId`), and these screenshots are meant to show that real default, not override it.
+// `SEL_ID` still names a concrete segment id so the inspector (and the elevation profile) always
+// has something real to draw, regardless of which route ends up selected.
 const SEL_ID = 's-labuan-bajo-sano-nggoang-a';
+
+// r-traverse is the hand-sketched "concept corridor" Traverse variant, visible in every mode (its
+// `audience` includes stakeholder, scout and public -- see data/routes.json) but not the default
+// for stakeholder/scout (they default to r-traverse-remote, the network-routed variant). One extra
+// desktop shot with it explicitly selected keeps the sketch-corridor view covered too.
+const EXTRA_ROUTE_ID = 'r-traverse';
 
 // Expected in this build sandbox (BRIEF "Sandbox network reality"): tile servers, MapLibre demo
 // glyphs, and our own network.geojson.gz (deliberately absent from the fixture) all fail to load.
@@ -71,41 +77,56 @@ async function main() {
   /** @type {Array<{ label: string, errors: string[] }>} */
   const failures = [];
 
+  /** Opens `label` at `viewport` and `hash`, waits for the map to settle, and saves a PNG. */
+  async function shoot(label, viewport, hash) {
+    const context = await browser.newContext({
+      viewport: { width: viewport.width, height: viewport.height },
+    });
+    const page = await context.newPage();
+    const errors = [];
+
+    page.on('console', (msg) => {
+      if (msg.type() !== 'error') return;
+      const text = msg.text();
+      if (!isIgnorable(text)) errors.push(`console: ${text}`);
+    });
+    page.on('pageerror', (err) => {
+      errors.push(`pageerror: ${err.message ?? String(err)}`);
+    });
+
+    const url = `${baseURL}#${hash}`;
+    await page.goto(url, { waitUntil: 'load' });
+    await page.waitForFunction(() => window.__mapIdle !== undefined, undefined, {
+      timeout: 15000,
+    });
+    await page.evaluate(() => window.__mapIdle);
+    await page.waitForTimeout(300); // let the last paint settle
+
+    const filePath = path.join(OUT_DIR, `${label}.png`);
+    await page.screenshot({ path: filePath });
+    console.log(`Saved ${filePath}`);
+
+    if (errors.length) failures.push({ label, errors });
+    await context.close();
+  }
+
   try {
     for (const mode of MODES) {
       for (const viewport of VIEWPORTS) {
-        const label = `${mode}-${viewport.name}`;
-        const context = await browser.newContext({
-          viewport: { width: viewport.width, height: viewport.height },
-        });
-        const page = await context.newPage();
-        const errors = [];
-
-        page.on('console', (msg) => {
-          if (msg.type() !== 'error') return;
-          const text = msg.text();
-          if (!isIgnorable(text)) errors.push(`console: ${text}`);
-        });
-        page.on('pageerror', (err) => {
-          errors.push(`pageerror: ${err.message ?? String(err)}`);
-        });
-
-        const url = `${baseURL}#mode=${mode}&base=none&z=8&c=121.4,-8.6&route=${ROUTE_ID}&sel=${SEL_ID}`;
-        await page.goto(url, { waitUntil: 'load' });
-        await page.waitForFunction(() => window.__mapIdle !== undefined, undefined, {
-          timeout: 15000,
-        });
-        await page.evaluate(() => window.__mapIdle);
-        await page.waitForTimeout(300); // let the last paint settle
-
-        const filePath = path.join(OUT_DIR, `${label}.png`);
-        await page.screenshot({ path: filePath });
-        console.log(`Saved ${filePath}`);
-
-        if (errors.length) failures.push({ label, errors });
-        await context.close();
+        // No `z=`/`c=` either: with neither in the hash, the app fits the whole island itself on
+        // load (map/fit.ts's `fitIsland`) -- these screenshots are the check that it actually does.
+        await shoot(`${mode}-${viewport.name}`, viewport, `mode=${mode}&base=none&sel=${SEL_ID}`);
       }
     }
+
+    // One extra desktop shot with the hand-sketched "concept corridor" Traverse variant explicitly
+    // selected (see EXTRA_ROUTE_ID above) -- stakeholder/scout otherwise only ever see the
+    // network-routed default, and the sketch-corridor view is worth keeping covered too.
+    await shoot(
+      'stakeholder-desktop-concept-sketch',
+      VIEWPORTS.find((v) => v.name === 'desktop'),
+      `mode=stakeholder&base=none&route=${EXTRA_ROUTE_ID}&sel=${SEL_ID}`,
+    );
   } finally {
     await browser.close();
     await server.close();

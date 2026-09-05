@@ -3,7 +3,7 @@
 
 import { SEGMENT_STATUSES, STATUS_META, POI_CATEGORY_META, type Status } from '../data/types.ts';
 import type { Section, SegmentFeature } from '../data/types.ts';
-import { routeStats, segmentsInSection, bboxOf } from '../data/derive.ts';
+import { routeStats, segmentsInSection, bboxOf, isConceptSketchOnly } from '../data/derive.ts';
 import { formatApproxKm, formatApproxM, formatKm, formatM, formatPct } from '../lib/format.ts';
 import { renderMarkdown } from '../lib/markdown.ts';
 import { sectionGpx, routeGpx, downloadGpx } from '../lib/gpx.ts';
@@ -122,6 +122,13 @@ function unscoutedKmFraction(segments: SegmentFeature[]): number {
   return total > 0 ? unscouted / total : 1;
 }
 
+// A guessed climb is worse than none: sketched corridors are hand-drawn, never routed over the
+// track network or traced in the field, so a DEM-sampled ascent along one is climbing the corridor
+// was never actually shown to follow. Shown as the Ascent tile's tooltip (below) and folded into
+// the concept note when that note is already on screen.
+const ASCENT_SKETCH_TOOLTIP =
+  'Climbing is only computed for network-routed or traced geometry; sketched corridors cross terrain freely';
+
 function renderStatsTiles(segments: SegmentFeature[]): HTMLElement {
   const stats = routeStats(segments);
   // Most of the course starts life as a hand-sketched/computed `concept` corridor sampled once
@@ -129,11 +136,18 @@ function renderStatsTiles(segments: SegmentFeature[]): HTMLElement {
   // one-decimal confidence as a GPS-measured track overstates it; round coarser and mark it as an
   // estimate instead, until enough of the route has actually been scouted.
   const isDeskEstimate = unscoutedKmFraction(segments) >= 0.5;
+  // A route that is *entirely* sketched corridors has no real elevation-following geometry to
+  // climb along at all -- showing any ascent number, even rounded as an estimate, would present a
+  // guess as a fact. A route that mixes sketched and network-routed/traced segments keeps its
+  // number (it's a real, if partial, measurement).
+  const sketchOnly = isConceptSketchOnly(segments);
   const grid = el('div', 'stat-grid');
   grid.classList.toggle('stat-grid-desk-estimate', isDeskEstimate);
   grid.append(
     statTile('Total', isDeskEstimate ? formatApproxKm(stats.length_km) : formatKm(stats.length_km)),
-    statTile('Ascent', isDeskEstimate ? formatApproxM(stats.ascent_m) : formatM(stats.ascent_m)),
+    sketchOnly
+      ? statTile('Ascent', 'n/a', ASCENT_SKETCH_TOOLTIP)
+      : statTile('Ascent', isDeskEstimate ? formatApproxM(stats.ascent_m) : formatM(stats.ascent_m)),
     statTile('Hike-a-bike', formatKm(stats.hab_km)),
     statTile('Unpaved', formatPct(stats.unpaved_pct)),
   );
@@ -144,13 +158,13 @@ function renderStatsTiles(segments: SegmentFeature[]): HTMLElement {
   // precision. A first-time viewer shouldn't have to learn the legend's dash/colour conventions
   // to know that.
   if (isDeskEstimate) {
-    wrap.appendChild(
-      el(
-        'p',
-        'stat-desk-estimate-note',
-        'Concept course — a starting hypothesis, not yet scouted. Numbers below are desk estimates and will tighten as segments are checked in the field.',
-      ),
-    );
+    let note =
+      'Concept course — a starting hypothesis, not yet scouted. Numbers below are desk estimates and will tighten as segments are checked in the field.';
+    if (sketchOnly) {
+      note +=
+        ' Every segment here is a hand-sketched corridor rather than a routed or traced line, so ascent is not shown — sketched corridors cross terrain freely and climbing can only be computed for network-routed or traced geometry.';
+    }
+    wrap.appendChild(el('p', 'stat-desk-estimate-note', note));
   }
   wrap.appendChild(grid);
   return wrap;
