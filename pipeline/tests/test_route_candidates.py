@@ -375,7 +375,7 @@ def test_build_geometry_orients_reverse_edges_and_dedupes_joints(G):
     # n4 -> n1 direction uses the reverse copies of the trunk-A edges; coords are stored
     # in the ORIGINAL u->v order by build_network.load_graph, so this checks the fix-up.
     edges = rc.path_edges(G, ["n4", "n3", "n2", "n1"], lambda d: d["length_m"])
-    coords = rc.build_geometry(G, edges)
+    coords = rc.build_geometry(G, edges, simplify_m=0)
     assert coords[0] == [120.03, -8.5]
     assert coords[-1] == [120.0, -8.5]
     # 3 hops of 2 points each, joints deduplicated -> 4 points, not 6

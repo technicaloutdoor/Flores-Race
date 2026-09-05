@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-05T04:08:16Z",
-  "build_time": "2026-09-05T04:08:16Z",
-  "git_commit": "67f31bf4c4cae8f7744d9bfd10397dda531e6b98",
+  "generated_at": "2026-09-05T04:35:18Z",
+  "build_time": "2026-09-05T04:35:18Z",
+  "git_commit": "3eb4dc34300e372a0a44d3bd9f3aed7120ba8db5",
   "public_build": false,
   "counts": {
     "nodes": 44,
     "pois": 78,
-    "segments": 46,
+    "segments": 228,
     "sections": 10,
-    "routes": 2,
+    "routes": 4,
     "regencies": 8,
     "network_features": 43033
   },
@@ -46,5 +46,5 @@
     "SRTM (NASA/USGS), via AWS Terrain Tiles (Public domain)",
     "geoBoundaries (CC BY 4.0)"
   ],
-  "overture_release": "2026-08-19.0"
+  "network_source": "network-web"
 }

@@ -5,18 +5,25 @@ The pipeline is a sequence of Python scripts that fetch open data, build a routa
 ## Quick overview
 
 ```
-fetch_*.py          Download open data from S3 and GitHub
+fetch_*.py           Download open data from S3 and GitHub
     ↓
-build_network.py    Turn Overture segments + connectors into a routable graph
+build_network.py     Turn Overture segments + connectors into a routable graph
     ↓
-build_profiles.py   Sample elevation profiles and compute segment stats
+route_candidates.py  Propose candidate segments along a route's anchors (human picks/merges)
     ↓
-validate.py         Check data integrity (schema + referential)
+build_profiles.py    Sample elevation profiles and compute segment stats
     ↓
-build_web_data.py   Simplify geometry for the web and write the bundle
+validate.py          Check data integrity (schema + referential)
     ↓
-web/public/data/    Generated files, committed or built in CI
+build_web_data.py     Simplify geometry for the web and write the bundle
+    ↓
+web/public/data/      Generated files, committed or built in CI
 ```
+
+`route_candidates.py` is a design-time aid, not something every rebuild re-runs: a human
+runs it (optionally with `--merge`) to add or refresh candidate segments in `data/
+segments.geojson`, reviews/scouts them, then the rest of the pipeline (`build_profiles.py`
+onward) runs against that canonical, human-approved `data/` exactly as before.
 
 ## Raw data locations and caching
 
@@ -177,7 +184,47 @@ python3 pipeline/build_network.py \
 
 ---
 
-### 6. `build_profiles.py` — Sample elevation and compute segment stats
+### 6. `route_candidates.py` — Propose candidate segments
+
+**Purpose:** For each consecutive pair of anchors in a route, propose up to `--k` alternative segments from the routable graph (`build_network.py`'s `graph.json.gz`) under three cost profiles (`remote`, `rideable`, `direct`), and optionally merge the survivors into `data/segments.geojson` for a human to review and scout. This is a design-time tool a maintainer runs when planning or revising a route, not part of every rebuild.
+
+```bash
+python3 pipeline/route_candidates.py \
+  --graph data/.cache/network/graph.json.gz \
+  --nodes data/nodes.geojson \
+  --routes data/routes.json \
+  --route-id r-traverse \
+  --existing-segments data/segments.geojson \
+  --out data/.cache/candidates \
+  --k 2 \
+  --merge \
+  --write-route r-traverse
+```
+
+**Options:**
+- `--graph` (required) — `graph.json.gz` from `build_network.py`.
+- `--nodes`, `--routes`, `--route-id` — Resolve the ordered anchor list from a route's `anchors` (use together), **or** `--anchors "lon,lat[,label];..."` for quick, ad hoc testing without touching `data/`.
+- `--water` — Overture `water.geojsonl`, for `water_points` on generated candidates.
+- `--snap-km` (default: 2.5) — Max distance to snap an anchor to the nearest graph node.
+- `--k` (default: 2) — Alternative candidates per profile per anchor pair.
+- `--existing-segments` — `segments.geojson` to read existing variant letters from (candidates continue the lettering) and, with `--merge`, to merge into.
+- `--merge` — Merge new candidates into `--existing-segments` instead of writing a standalone file; replaces only stale, regenerable computed candidates for pairs this run touched (never a hand trace, a scouted segment, or an untouched pair).
+- `--in-place` — With `--merge`, overwrite `--existing-segments`/`--routes` directly instead of writing under `--out`.
+- `--out` (required) — Output directory.
+- `--write-route ROUTE_ID` — Also chain the best candidate per pair (by profile precedence, falling back to the existing hand sketch) into a new route variant, written to `routes.candidates.json`.
+
+**Output:**
+- `segments.candidates.geojson` (or the merged `segments.geojson`, with `--in-place`) — New/merged candidate segment Features (`geometry_source: "overture-route"`, `status: "concept"`).
+- `routes.candidates.json` — Only with `--write-route`.
+- `candidates_report.md` — Per-pair straight-line distance vs. each profile's length/ascent/track+path share, off-network anchors, and chained-route totals.
+
+**Notes:**
+- Every emitted segment is validated against `schemas/segments.schema.json` before anything is written.
+- The `ascent_m`/`descent_m` figures in `candidates_report.md` come from `build_network.py`'s own per-edge elevation computation, not `build_profiles.py`'s smoothed, threshold-accumulated stats — expect `build_profiles.py`'s numbers for the same geometry (see below) to differ, usually lower.
+
+---
+
+### 7. `build_profiles.py` — Sample elevation and compute segment stats
 
 **Purpose:** For every segment, sample the DEM along its geometry, smooth, and compute ascent, descent, length, and % unpaved.
 
@@ -187,7 +234,8 @@ python3 pipeline/build_profiles.py \
   --data data \
   --out data/.cache/profiles \
   --step-m 50 \
-  --max-profile-points 500
+  --max-profile-points 500 \
+  --ascent-threshold-m 10
 ```
 
 **Options:**
@@ -197,6 +245,7 @@ python3 pipeline/build_profiles.py \
 - `--in-place` — Write back into `--data` instead of `--out` (only for maintainers; the default is to preserve the canonical source).
 - `--step-m` (default: 50) — Sample DEM every N metres.
 - `--max-profile-points` (default: 500) — Decimate profiles to this many points for the web.
+- `--ascent-threshold-m` (default: 10) — Minimum confirmed elevation reversal (metres), after smoothing, before a climb/descent is banked into `ascent_m`/`descent_m` (a hysteresis accumulator — see the module docstring for why this exists and how the default was chosen). Pass `0` to sum every consecutive difference with no threshold, e.g. to compare against the old behaviour.
 
 **Output:**
 - `segments.geojson` — Copy of input with `stats` fields filled (length_km, ascent_m, descent_m, min/max_elev, unpaved_pct, profile_ref).
@@ -204,13 +253,13 @@ python3 pipeline/build_profiles.py \
 - `profiles.json` — `{ "<segment_id>": [[km, elevation], ...], "<route_id>": [...] }` for elevation display.
 
 **Notes:**
-- Applies a 5-sample median filter then 5-sample moving average to SRTM heights to kill noise before computing ascent/descent.
+- Applies a 5-sample median filter then 5-sample moving average to SRTM heights, then the ascent threshold above, to kill noise before computing ascent/descent — see the module docstring: smoothing alone still leaves several metres of residual wobble that, summed over a long profile, reads as tens of thousands of metres of phantom climbing.
 - Never overwrites the canonical `data/` unless `--in-place` is passed (reproducible derivations policy).
 - Bathymetry (values < 0) is clamped to 0 for on-land profiles.
 
 ---
 
-### 7. `validate.py` — Validate data integrity
+### 8. `validate.py` — Validate data integrity
 
 **Purpose:** Check the canonical data in `data/` against JSON Schemas and referential integrity (unique ids, segment endpoints match nodes, routes chain segments, etc.).
 
@@ -234,7 +283,7 @@ python3 pipeline/validate.py \
 
 ---
 
-### 8. `build_web_data.py` — Bundle for the web app
+### 9. `build_web_data.py` — Bundle for the web app
 
 **Purpose:** Orchestrate the final bundle: validate, fill elevation_m, simplify geometry, and write `web/public/data/`.
 
@@ -242,7 +291,7 @@ python3 pipeline/validate.py \
 python3 pipeline/build_web_data.py \
   --dem-dir data/.cache/dem \
   --regencies data/.cache/boundaries/flores_regencies.geojson \
-  --overture-dir data/.cache/overture \
+  --network-web data/.cache/network/network_web.geojson.gz \
   --out web/public/data \
   --public-build
 ```
@@ -250,7 +299,8 @@ python3 pipeline/build_web_data.py \
 **Options:**
 - `--dem-dir` (required) — Path to DEM tiles.
 - `--regencies` (required) — Regency GeoJSON.
-- `--overture-dir` — Path to Overture extract (optional; skips `network.geojson.gz` if absent).
+- `--network-web` — Path to `build_network.py`'s `network_web.geojson` or `.geojson.gz` export (gzip detected by content, so either name works). Preferred network source when present: keeps its `id`/`class`/`subclass`/`surface`/`surface_source`/`name`/`remoteness`/`km` properties, simplifying geometry to `NETWORK_WEB_TOLERANCE_M` (~8 m) only if the file is not already coarser than that.
+- `--overture-dir` — Path to a raw `fetch_overture.py` extract; used **only** when `--network-web` is absent (or its path doesn't exist) — reduces the raw segments in place instead (no `remoteness`/`surface_source`, the pre-`build_network.py`-export behaviour). Skips `network.geojson.gz` entirely if neither option yields a file.
 - `--out` (default: `web/public/data`) — Output directory.
 - `--data` (default: `data`) — Path to canonical data.
 - `--schemas` (default: `schemas`) — Path to schemas.
@@ -263,8 +313,8 @@ python3 pipeline/build_web_data.py \
 - `sections.json`, `routes.json` — With computed stats.
 - `profiles.json` — Elevation profiles (one per segment and route).
 - `regencies.geojson` — Simplified regency outlines (~30 m tolerance).
-- `network.geojson.gz` — Overture network (simplified, gzipped) if available.
-- `meta.json` — Build metadata (timestamp, Overture version, sources, license strings, counts).
+- `network.geojson.gz` — Track network (simplified, gzipped), from `--network-web` or `--overture-dir` (see above); absent if neither is available.
+- `meta.json` — Build metadata (timestamp, Overture version, sources, license strings, counts, and `network_source`: `"network-web"` or `"overture-dir"`, whichever produced `network.geojson.gz`).
 
 **Notes:**
 - The only script that writes to `web/public/data/`.
@@ -273,7 +323,7 @@ python3 pipeline/build_web_data.py \
 
 ---
 
-### 9. `apply_patch.py` — Apply scouting feedback
+### 10. `apply_patch.py` — Apply scouting feedback
 
 **Purpose:** Apply a scouting patch (exported by scouts from the web app) to the canonical data, merging scouting-owned fields.
 
@@ -300,26 +350,6 @@ python3 pipeline/apply_patch.py \
 
 ---
 
-### 10. `route_candidates.py` — Propose candidate segments (planned)
-
-**Purpose:** For each consecutive anchor pair, propose up to k alternatives from the Overture graph using different cost profiles (remote, rideable, direct).
-
-**Status:** Planned (to be implemented; see ARCHITECTURE.md, section 6).
-
-```bash
-# Placeholder invocation
-python3 pipeline/route_candidates.py \
-  --graph data/.cache/network/network.graphml \
-  --anchors data/nodes.geojson \
-  --routes data/routes.json \
-  --dem-dir data/.cache/dem \
-  --out data/.cache/candidates \
-  --k 3 \
-  --profiles remote,rideable,direct
-```
-
----
-
 ## Execution order
 
 **Typical development workflow:**
@@ -331,28 +361,40 @@ python3 pipeline/fetch_boundaries.py --out data/.cache/boundaries
 python3 pipeline/fetch_naturalearth.py --out data/.cache/naturalearth
 python3 pipeline/fetch_overture.py --out data/.cache/overture --bbox 119.70,-9.00,123.10,-8.00 --release latest
 
-# 2. Build the network and profiles
+# 2. Build the routable network
 python3 pipeline/build_network.py \
   --overture-dir data/.cache/overture \
   --dem-dir data/.cache/dem \
   --regencies data/.cache/boundaries/flores_regencies.geojson \
   --out data/.cache/network
 
+# 3. Propose/refresh candidate segments (design-time; skip once a route is settled)
+python3 pipeline/route_candidates.py \
+  --graph data/.cache/network/graph.json.gz \
+  --nodes data/nodes.geojson \
+  --routes data/routes.json \
+  --route-id r-traverse \
+  --existing-segments data/segments.geojson \
+  --out data/.cache/candidates \
+  --merge --in-place
+
+# 4. Compute elevation profiles for the (human-approved) segments/routes
 python3 pipeline/build_profiles.py \
   --dem-dir data/.cache/dem \
-  --out data/.cache/profiles
+  --out data/.cache/profiles \
+  --ascent-threshold-m 10
 
-# 3. Validate
+# 5. Validate
 python3 pipeline/validate.py --data data --schemas schemas
 
-# 4. Build the web bundle
+# 6. Build the web bundle
 python3 pipeline/build_web_data.py \
   --dem-dir data/.cache/dem \
   --regencies data/.cache/boundaries/flores_regencies.geojson \
-  --overture-dir data/.cache/overture \
+  --network-web data/.cache/network/network_web.geojson.gz \
   --out web/public/data
 
-# 5. Run the web app
+# 7. Run the web app
 cd web && npm install && npm run dev
 ```
 
@@ -368,7 +410,7 @@ python3 pipeline/validate.py --data data --schemas schemas
 python3 pipeline/build_web_data.py \
   --dem-dir data/.cache/dem \
   --regencies data/.cache/boundaries/flores_regencies.geojson \
-  --overture-dir data/.cache/overture \
+  --network-web data/.cache/network/network_web.geojson.gz \
   --out web/public/data
 
 # 3. Commit and open a PR

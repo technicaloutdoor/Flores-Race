@@ -846,6 +846,18 @@ select:hover,
   box-shadow: inset 0 0 0 2px rgba(192, 57, 43, 0.28);
 }
 
+/* Faint-to-bold gradient standing in for the network layer's remoteness-driven line width/opacity
+   (map/layers.ts networkWidthExpression/networkOpacityExpression) -- #a97c50 is
+   NETWORK_TRACK_COLOR there, keep the two in sync. */
+.network-swatch {
+  display: inline-block;
+  width: 1.6rem;
+  height: 0.5rem;
+  border-radius: 2px;
+  background: linear-gradient(to right, rgba(169, 124, 80, 0.22), rgba(169, 124, 80, 0.9));
+  flex: none;
+}
+
 .legend-block {
   margin-top: 1rem;
   border-top: 1px solid var(--color-border);

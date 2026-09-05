@@ -58,8 +58,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.994,
-          -8.95
+          120.851,
+          -8.83
         ]
       },
       "properties": {
@@ -70,9 +70,10 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
-          "https://www.travelfish.org/transport/indonesia/east_nusa_tenggara/sumba/waingapu/all"
+          "https://www.travelfish.org/transport/indonesia/east_nusa_tenggara/sumba/waingapu/all",
+          "map:overture (Pantai Aimere)"
         ],
         "public": true
       }
@@ -121,10 +122,11 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "Guests are received by the village elders; a small entrance donation and signing the guest book are expected. A race checkpoint requires a prior agreement with the village adat council on numbers, timing and conduct.",
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.megalithic.co.uk/article.php?sid=51992",
-          "https://www.komodowisata.com/places-to-visit-in-flores/bena-traditional-village-ngada-regency"
+          "https://www.komodowisata.com/places-to-visit-in-flores/bena-traditional-village-ngada-regency",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -187,8 +189,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.026,
-          -8.617
+          119.9976,
+          -8.6259
         ]
       },
       "properties": {
@@ -199,11 +201,12 @@
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": true,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.pixeoapp.com/photo-spots/asia/indonesia/cunca-rami-waterfall/",
           "https://www.zeotrip.com/attraction/indonesia/flores/cunca-rami-waterfalls/",
-          "map:overture"
+          "map:overture",
+          "map:overture (Air Terjun Cunca Rami, water:waterfall)"
         ],
         "public": true
       }
@@ -225,10 +228,11 @@
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://pariwisata.manggaraikab.go.id/golo-lusang/",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -238,8 +242,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          119.975,
-          -8.58
+          119.9964,
+          -8.5433
         ]
       },
       "properties": {
@@ -250,9 +254,10 @@
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
-          "https://www.roamindonesia.com/flores/flores-attractions/cunca-wulang-waterfall-and-canyon/"
+          "https://www.roamindonesia.com/flores/flores-attractions/cunca-wulang-waterfall-and-canyon/",
+          "map:overture (Cunca Wulang, water:waterfall)"
         ],
         "public": true
       }
@@ -469,11 +474,12 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.hipwee.com/narasi/mari-ke-golo-curu-bukit-ziarah-bukan-bukit-cinta/",
           "https://casadecapulet.com/best-viewpoints-labuan-bajo/",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -483,8 +489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.951,
-          -8.826
+          120.991,
+          -8.896
         ]
       },
       "properties": {
@@ -497,10 +503,11 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "Village-council permission expected; visitors are asked to be mindful of fire risk around the rebuilt thatched houses.",
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.thejakartapost.com/news/2018/08/14/fire-razes-gurusina-traditional-village-in-east-nusa-tenggara.html",
-          "https://medium.com/@bondanpetra/a-restoration-for-gurusina-traditional-village-in-jerebuu-district-ngada-regency-east-nusa-1f16ce79f14b"
+          "https://medium.com/@bondanpetra/a-restoration-for-gurusina-traditional-village-in-jerebuu-district-ngada-regency-east-nusa-1f16ce79f14b",
+          "map:overture (Kampung Adat Gurusina)"
         ],
         "public": true
       }
@@ -557,10 +564,11 @@
         "hike_a_bike": true,
         "elevation_m": 2245,
         "hazard_level": "Not currently active; last reported smoke June 1911. No PVMBG bulletin found for Inerie as of Sep 2026 search.",
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Inierie",
-          "https://www.gunungbagging.com/inerie/"
+          "https://www.gunungbagging.com/inerie/",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -743,10 +751,11 @@
         "race_relevance": "context",
         "access": "boat",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Komodo_National_Park",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -874,12 +883,13 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.ncregister.com/cna/cna-20251129-flores-seminarians",
           "https://catholicweekly.com.au/fr-flader-the-worlds-largest-seminary/",
           "map:overture",
-          "field:pending"
+          "field:pending",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1042,11 +1052,12 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "verified",
         "sources": [
           "https://iopscience.iop.org/article/10.1088/1742-6596/1341/8/082042",
           "https://www.jurnalflores.co.id/travel/7768895964/mataloko-kepingan-wisata-religi-paling-cocok-buat-meditasi-dan-healing-di-ngada-ntt",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1056,8 +1067,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.998,
-          -8.741
+          121.052,
+          -8.824
         ]
       },
       "properties": {
@@ -1069,9 +1080,10 @@
         "race_relevance": "context",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
-          "https://lifestyle.bisnis.com/read/20221102/224/1593938/ada-seminari-bergaya-eropa-di-mataloko-flores-ini-sejarahnya"
+          "https://lifestyle.bisnis.com/read/20221102/224/1593938/ada-seminari-bergaya-eropa-di-mataloko-flores-ini-sejarahnya",
+          "map:overture (Mataloko)"
         ],
         "public": true
       }
@@ -1121,11 +1133,12 @@
         "race_relevance": "highlight",
         "access": "trail",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.gunungbagging.com/mbeliling/",
           "https://burung.org/en/program/flores-program/",
-          "https://forevervacation.com/komodo/mbeliling-mountain"
+          "https://forevervacation.com/komodo/mbeliling-mountain",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1135,8 +1148,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.995,
-          -8.7
+          121.0869,
+          -8.7085
         ]
       },
       "properties": {
@@ -1148,10 +1161,11 @@
         "race_relevance": "highlight",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://en.wikipedia.org/wiki/Mengurada_Hot_Spring",
-          "https://floresexotictours.id/things-to-do/soa-hot-spring-ngada"
+          "https://floresexotictours.id/things-to-do/soa-hot-spring-ngada",
+          "map:overture (Soa Mengeruda Hot Spring)"
         ],
         "public": true
       }
@@ -1275,11 +1289,12 @@
         "race_relevance": "anchor",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.lonelyplanet.com/indonesia/paga/attractions/pantai-paga/a/poi-sig/1525158/1321914",
           "field:pending",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1440,10 +1455,11 @@
         "access": "road",
         "hike_a_bike": false,
         "elevation_m": 1220,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://www.asiatours.com/experiences/admire-the-beautiful-ranamese-lake-in-flores-island-indonesia.html",
-          "https://floresexotictours.id/things-to-do/ranamese-lake-east-manggarai-regency"
+          "https://floresexotictours.id/things-to-do/ranamese-lake-east-manggarai-regency",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1466,11 +1482,12 @@
         "race_relevance": "resupply",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://kupang.antaranews.com/berita/22372/pelabuhan-reo",
           "https://www.beritasatu.com/nusantara/879443/pelabuhan-kedindi-reo-dinilai-layak-jadi-pelabuhan-export-terbesar-kedua-di-ntt",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1533,8 +1550,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.033,
-          -8.636
+          120.02,
+          -8.72
         ]
       },
       "properties": {
@@ -1552,7 +1569,8 @@
         "sources": [
           "https://www.mongabay.co.id/2022/03/06/sano-nggoang-danau-kawah-terdalam-di-dunia/",
           "https://authentic-indonesia.com/blog/sano-nggoang-lake-flores-the-deepest-volcanic-lake/",
-          "https://volcano.si.edu/volcano.cfm?vn=264060"
+          "https://volcano.si.edu/volcano.cfm?vn=264060",
+          "map:overture (Wai Sano place) ; volcano.si.edu Wai Sano"
         ],
         "public": true
       }
@@ -1587,8 +1605,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.978,
-          -8.397
+          121.0275,
+          -8.4208
         ]
       },
       "properties": {
@@ -1600,10 +1618,11 @@
         "race_relevance": "highlight",
         "access": "boat",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/flores/riung/2115",
-          "https://www.torntackies.com/17-islands-marine-park-riung-flores/"
+          "https://www.torntackies.com/17-islands-marine-park-riung-flores/",
+          "map:overture (Taman Wisata Alam Laut 17 Pulau Riung office)"
         ],
         "public": true
       }
@@ -1656,12 +1675,13 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "A working village and parish, not a museum; greet before photographing, and treat the church and the old royal graves with the same courtesy expected in any active place of worship. No fixed guest-fee system found; a small courtesy donation at the church is customary.",
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://spiceislandsblog.com/2022/10/16/flores-the-portuguese-church-in-sikka/",
           "https://www.colonialvoyage.com/portuguese-influence-in-sikka-district-flores-island-indonesia/",
           "https://www.lonelyplanet.com/indonesia/nusa-tenggara/flores/attractions/sikka/a/poi-sig/1592606/356586",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1752,8 +1772,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.558,
-          -8.452
+          122.5174,
+          -8.5451
         ]
       },
       "properties": {
@@ -1764,11 +1784,12 @@
         "race_relevance": "context",
         "access": "road",
         "hike_a_bike": false,
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.wikidata.org/wiki/Q12518763",
           "https://www.wikidata.org/wiki/Q12518765",
-          "field:pending"
+          "field:pending",
+          "map:overture"
         ],
         "public": true
       }
@@ -1807,8 +1828,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.93,
-          -8.86
+          120.9612,
+          -8.8407
         ]
       },
       "properties": {
@@ -1824,9 +1845,11 @@
         "confidence": "unverified",
         "sources": [
           "https://wanderlog.com/place/details/5043575/tololela-traditional-village",
-          "http://florestourism.com/districts/tololela/"
+          "http://florestourism.com/districts/tololela/",
+          "map:overture (Tololela Homestay)"
         ],
-        "public": true
+        "public": true,
+        "story": "Open question: confirm village location on the ground."
       }
     },
     {
@@ -1862,8 +1885,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.038,
-          -8.641
+          120.0177,
+          -8.7396
         ]
       },
       "properties": {
@@ -1875,13 +1898,14 @@
         "race_relevance": "context",
         "access": "trail",
         "hike_a_bike": true,
-        "elevation_m": 907,
+        "elevation_m": 903,
         "hazard_level": "No confirmed Holocene eruption (Global Volcanism Program); not found on a routinely published PVMBG alert-level list (checked 2026).",
         "confidence": "approximate",
         "sources": [
           "https://volcano.si.edu/volcano.cfm?vn=264060",
           "https://peakvisor.com/peak/gunung-wai-sano.html",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture (Gunung Wai Sano, land:volcano)"
         ],
         "public": true
       }
@@ -1918,8 +1942,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          122.311111,
-          -8.668611
+          122.313,
+          -8.698
         ]
       },
       "properties": {
@@ -1933,11 +1957,12 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "Ask before photographing weavers at work; a small purchase of cloth is the customary way to support the community and is generally expected of visiting groups.",
-        "confidence": "unverified",
+        "confidence": "approximate",
         "sources": [
           "https://www.flores-indonesia.com/weaving_village_maumere_watublapi.html",
           "https://getlost.id/2021/07/27/melihat-proses-pembuatan-tenun-ikat-di-kampung-watublapi/",
-          "field:pending"
+          "field:pending",
+          "map:overture (Paroki MBC Watublapi church cluster)"
         ],
         "public": true
       }
@@ -1960,11 +1985,12 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "Village-council permission expected for a group visit.",
-        "confidence": "unverified",
+        "confidence": "verified",
         "sources": [
           "https://diytravelhq.com/bena-wogo-villages/",
           "https://www.roamindonesia.com/flores/flores-attractions/bajawa-traditional-villages/",
-          "map:overture"
+          "map:overture",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }
@@ -1974,8 +2000,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.939,
-          -8.799
+          120.9805,
+          -8.835
         ]
       },
       "properties": {
@@ -1988,11 +2014,12 @@
         "access": "road",
         "hike_a_bike": false,
         "elevation_m": 1468,
-        "confidence": "approximate",
+        "confidence": "verified",
         "sources": [
           "https://authentic-indonesia.com/blog/wolobobo-hill-with-the-land-above-the-clouds-charm-of-flores/",
           "https://www.photohound.co/spot/wolobobo-viewpoint-1008060",
-          "map:dem-derived"
+          "map:dem-derived",
+          "map:overture (Wolobobo Hills, Puncak Gunung Wolobobo, Kawah Wolobobo)"
         ],
         "public": true
       }
@@ -2002,8 +2029,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.768,
-          -8.716
+          121.8233,
+          -8.7085
         ]
       },
       "properties": {
@@ -2021,7 +2048,8 @@
         "confidence": "approximate",
         "sources": [
           "https://www.mongabay.co.id/2017/04/02/wologai-kampung-adat-keren-yang-berusia-800-tahun/",
-          "https://ecolodgesindonesia.com/the-uniqueness-of-the-wologai-traditional-village/"
+          "https://ecolodgesindonesia.com/the-uniqueness-of-the-wologai-traditional-village/",
+          "map:overture (Kampung Tradisional Wologai; Desa Wologai Timur office)"
         ],
         "public": true
       }
@@ -2097,11 +2125,12 @@
         "access": "road",
         "hike_a_bike": false,
         "cultural_protocol": "A working fishing community on narrow shared walkways; ride slowly, ask before photographing people or the insides of houses, and do not treat it as a checkpoint without the community's separate agreement.",
-        "confidence": "unverified",
+        "confidence": "verified",
         "sources": [
           "https://almiratrip.com/explore-wuring-a-fishing-village-on-east-of-flores-island/",
           "https://www.duniart.com/wuring/",
-          "field:pending"
+          "field:pending",
+          "map:overture (gazetteer cross-check)"
         ],
         "public": true
       }

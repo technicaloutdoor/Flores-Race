@@ -95,6 +95,54 @@ const HAZARD_RING_COLOR = '#c0392b';
 /** Matches any POI carrying a non-empty `hazard_level`, independent of its `category`. */
 const HAZARD_RING_FILTER: MapLibreExpr = ['all', ['has', 'hazard_level'], ['!=', ['get', 'hazard_level'], '']];
 
+/** Overture `class` values that are tracks/paths a rider actually uses off-road, as opposed to a
+ * formal (if sometimes rough) road -- see build_network.py's KEEP_CLASSES. Drives the network
+ * layer's colour; kept as a plain list (not a Set) because it goes straight into a MapLibre `in`
+ * expression below. */
+const NETWORK_TRACK_CLASSES = ['track', 'path', 'footway', 'steps', 'pedestrian', 'cycleway'];
+
+/** Network layer colours by class group. Duplicated as literals in style.css's `.network-swatch`
+ * legend gradient (see sidebar.ts renderLegend) -- keep the two in sync, same convention as
+ * HAZARD_RING_COLOR below. */
+const NETWORK_TRACK_COLOR = '#a97c50';
+const NETWORK_ROAD_COLOR = '#9a8f7e';
+
+/** Colour by class group (tracks/paths vs formal roads) -- independent of remoteness, which
+ * drives width/opacity instead (see networkWidthExpression/networkOpacityExpression). */
+function networkColorExpression(): unknown[] {
+  return [
+    'case',
+    ['in', ['get', 'class'], ['literal', NETWORK_TRACK_CLASSES]],
+    NETWORK_TRACK_COLOR,
+    NETWORK_ROAD_COLOR,
+  ];
+}
+
+/** `remoteness` (1..5, from build_network.py's compute_remoteness -- see --network-web in
+ * build_web_data.py) is only on edges that came through the graph build; a network layer built
+ * straight from a raw Overture extract (the --overture-dir fallback) has no such property. `case`
+ * (not `coalesce`) so the two are visibly different styles, not a blend: with remoteness, a track
+ * far from any main road or settlement should read as clearly more prominent than one running
+ * next to a village, so a scout's eye is drawn to the parts of the network that matter most for
+ * self-sufficiency plan. Without it, the old flat style (kept as today) is unchanged. */
+function networkWidthExpression(): unknown[] {
+  return [
+    'case',
+    ['has', 'remoteness'],
+    ['interpolate', ['linear'], ['get', 'remoteness'], 1, 0.6, 5, 3.2],
+    1,
+  ];
+}
+
+function networkOpacityExpression(): unknown[] {
+  return [
+    'case',
+    ['has', 'remoteness'],
+    ['interpolate', ['linear'], ['get', 'remoteness'], 1, 0.22, 5, 0.85],
+    0.55,
+  ];
+}
+
 function statusColorExpression(): unknown[] {
   const expr: unknown[] = ['match', ['get', 'status']];
   for (const [status, meta] of Object.entries(STATUS_META)) {
@@ -229,15 +277,9 @@ export class MapLayers {
         source: SOURCE.network,
         minzoom: 9,
         paint: {
-          'line-color': [
-            'match',
-            ['get', 'surface'],
-            'paved',
-            '#9a8f7e',
-            '#a97c50',
-          ] as MapLibreExpr,
-          'line-width': 1,
-          'line-opacity': 0.55,
+          'line-color': networkColorExpression() as MapLibreExpr,
+          'line-width': networkWidthExpression() as MapLibreExpr,
+          'line-opacity': networkOpacityExpression() as MapLibreExpr,
         },
       },
       this.map.getLayer(LAYER.segmentsCasing) ? LAYER.segmentsCasing : undefined,

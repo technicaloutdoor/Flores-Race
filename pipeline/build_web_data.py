@@ -11,10 +11,35 @@ Orchestrates the whole pipeline into the generated web bundle
        measured before anything gets simplified for display.
     3. Fill node.elevation_m from the DEM.
     4. Simplify segment geometry to ~5 m for the web copy, regency polygons
-       to ~30 m, and (if an Overture extract is available) the raw track
-       network to ~8 m, gzipped.
+       to ~30 m, and the track network (see below) to ~8 m, gzipped.
     5. Write nodes/pois/segments/regencies.geojson, sections/routes/
        profiles/meta.json (and network.geojson.gz if available) to --out.
+
+The track network layer (``network.geojson.gz``) comes from one of two
+places, in priority order:
+
+* ``--network-web`` -- a ``network_web.geojson`` or ``.geojson.gz`` export
+  already produced by ``build_network.py`` (one LineString per Overture
+  segment, with ``id``/``class``/``subclass``/``surface``/
+  ``surface_source``/``name``/``remoteness``/``km`` -- the graph build has
+  already classified surfaces and computed remoteness, so this is strictly
+  richer than what this script can derive from a raw Overture extract).
+  Those properties are kept as-is; geometry is simplified to
+  ``NETWORK_WEB_TOLERANCE_M`` only if the file is not already coarser than
+  that (see ``is_already_coarser_than`` -- re-simplifying an
+  already-reduced export at the same or a finer tolerance would do
+  essentially nothing and just cost time).
+* ``--overture-dir`` -- used only when ``--network-web`` is absent (or the
+  path it names does not exist): reduces a raw ``fetch_overture.py``
+  segment extract in place (subtype filter, property reduction, geometry
+  simplified to ``NETWORK_WEB_TOLERANCE_M``), the original behaviour before
+  ``build_network.py`` had its own web export. No remoteness or
+  ``surface_source`` is available this way unless the extract happens to
+  carry it already.
+
+Whichever path is used, ``meta.json`` records it as ``network_source``
+(``"network-web"`` or ``"overture-dir"``) alongside ``counts.network_features``,
+so it is clear which source produced the network layer in a given build.
 
 ``--public-build`` drops anything not opted into the public site (nodes,
 pois, segments: ``public`` != true; sections: ``public`` != true; routes:
@@ -186,6 +211,93 @@ def build_network_bundle(path: Path, tolerance_m: float = NETWORK_WEB_TOLERANCE_
     return {"type": "FeatureCollection", "features": features_out}
 
 
+#: Properties build_network.py's network_web export carries per segment
+#: (see build_network.py's own module docstring, "network_web.geojson").
+#: Kept as-is when building the web network layer from that file -- richer
+#: than what build_network_bundle() can derive from a raw Overture extract
+#: (surface_source and remoteness in particular require the graph build).
+NETWORK_WEB_KEPT_PROPS = [
+    "id",
+    "class",
+    "subclass",
+    "surface",
+    "surface_source",
+    "name",
+    "remoteness",
+    "km",
+]
+
+
+def read_network_web_file(path: Path) -> dict:
+    """Read a build_network.py ``network_web.geojson`` export, gzip-
+    compressed or plain. Detected by content (the gzip magic bytes), not by
+    filename suffix, so either ``network_web.geojson`` or
+    ``network_web.geojson.gz`` (or any other name pointing at one of the
+    two) works."""
+    with open(path, "rb") as f:
+        magic = f.read(2)
+    opener = gzip.open if magic == b"\x1f\x8b" else open
+    with opener(path, "rt", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def mean_vertex_spacing_m(fc: dict) -> Optional[float]:
+    """Average distance between consecutive vertices across every
+    LineString in a FeatureCollection (metres), weighted by edge count
+    (not by feature). None if there is nothing to measure."""
+    total_len_m = 0.0
+    total_edges = 0
+    for feat in fc.get("features", []):
+        geometry = feat.get("geometry") or {}
+        if geometry.get("type") != "LineString":
+            continue
+        coords = geometry.get("coordinates") or []
+        if len(coords) < 2:
+            continue
+        total_len_m += common.geodesic_length_m(coords)
+        total_edges += len(coords) - 1
+    if total_edges == 0:
+        return None
+    return total_len_m / total_edges
+
+
+def is_already_coarser_than(fc: dict, tolerance_m: float) -> bool:
+    """True when a FeatureCollection's vertices are, on average, already at
+    least ``tolerance_m`` apart. Douglas-Peucker simplification only removes
+    a point when it deviates from a longer chord by less than the
+    tolerance; once points are this far apart already, a pass at the same
+    (or a finer) tolerance would remove essentially nothing, so it is
+    skipped rather than spending time reprojecting and simplifying a whole
+    network for no real reduction."""
+    spacing = mean_vertex_spacing_m(fc)
+    return spacing is not None and spacing >= tolerance_m
+
+
+def build_network_bundle_from_network_web(
+    network_web_fc: dict, tolerance_m: float = NETWORK_WEB_TOLERANCE_M
+) -> tuple:
+    """Build the web network layer directly from a build_network.py
+    ``network_web`` export: keep its properties (see
+    NETWORK_WEB_KEPT_PROPS) as-is, and simplify geometry to ``tolerance_m``
+    only if the file is not already coarser (see is_already_coarser_than).
+
+    Returns (network_fc, already_coarser) -- the second element is recorded
+    for logging/meta only, it does not change the output.
+    """
+    already_coarser = is_already_coarser_than(network_web_fc, tolerance_m)
+    features_out = []
+    for feat in network_web_fc.get("features", []):
+        props = feat.get("properties") or {}
+        new_props = {k: props[k] for k in NETWORK_WEB_KEPT_PROPS if k in props}
+        geometry = feat.get("geometry")
+        if already_coarser:
+            geometry = common.round_geometry(geometry)
+        else:
+            geometry = common.simplify_geometry(geometry, tolerance_m)
+        features_out.append({"type": "Feature", "geometry": geometry, "properties": new_props})
+    return {"type": "FeatureCollection", "features": features_out}, already_coarser
+
+
 def write_network_gz(path: Path, network_fc: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(network_fc, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
@@ -262,6 +374,7 @@ def build_meta(
     counts: dict,
     public_build: bool,
     overture_release: Optional[str],
+    network_source: Optional[str] = None,
 ) -> dict:
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     meta = {
@@ -278,6 +391,12 @@ def build_meta(
     }
     if overture_release:
         meta["overture_release"] = overture_release
+    if network_source:
+        # Which of the two network.geojson.gz code paths produced the file
+        # this build wrote (see module docstring) -- "network-web" (from
+        # build_network.py's own export, richer properties) or
+        # "overture-dir" (reduced straight from a raw Overture extract).
+        meta["network_source"] = network_source
     return meta
 
 
@@ -298,8 +417,20 @@ def build_arg_parser() -> argparse.ArgumentParser:
         "--overture-dir",
         default=None,
         help="Directory holding a fetch_overture.py extract "
-        "(segment.geojsonl or segments.geojson). If it doesn't exist or "
-        "holds no segments file, network.geojson.gz is skipped.",
+        "(segment.geojsonl or segments.geojson). Used only when "
+        "--network-web is absent. If it doesn't exist or holds no "
+        "segments file, network.geojson.gz is skipped.",
+    )
+    parser.add_argument(
+        "--network-web",
+        default=None,
+        help="Path to a build_network.py network_web.geojson or "
+        ".geojson.gz export. Preferred over --overture-dir when given "
+        "(and present): keeps its id/class/subclass/surface/"
+        "surface_source/name/remoteness/km properties, simplifying "
+        "geometry only if the file is not already coarser than "
+        "NETWORK_WEB_TOLERANCE_M. Falls back to --overture-dir when this "
+        "path is not given or does not exist.",
     )
     parser.add_argument(
         "--out",
@@ -320,6 +451,7 @@ def main(argv: Optional[list] = None) -> int:
     schemas_dir = Path(args.schemas)
     out_dir = Path(args.out) if args.out else (REPO_ROOT / "web" / "public" / "data")
     overture_dir = Path(args.overture_dir) if args.overture_dir else None
+    network_web_path = Path(args.network_web) if args.network_web else None
 
     # 1. Validate.
     report = validate.validate_data(data_dir, schemas_dir)
@@ -366,14 +498,28 @@ def main(argv: Optional[list] = None) -> int:
         kept_ids |= {r["id"] for r in routes_out}
         profiles = {k: v for k, v in profiles.items() if k in kept_ids}
 
-    # 7. Overture network layer (optional).
+    # 7. Track network layer (optional): prefer --network-web (richer,
+    # already-classified properties from build_network.py); fall back to
+    # reducing a raw --overture-dir extract only when it is absent.
     network_fc = None
-    if overture_dir is not None:
+    network_source = None
+    if network_web_path is not None and network_web_path.exists():
+        network_web_fc = read_network_web_file(network_web_path)
+        network_fc, already_coarser = build_network_bundle_from_network_web(network_web_fc)
+        network_source = "network-web"
+        note = "kept as-is (already coarser than target tolerance)" if already_coarser else "simplified to target tolerance"
+        print(f"network.geojson.gz from --network-web {network_web_path} ({note})")
+        write_network_gz(out_dir / "network.geojson.gz", network_fc)
+    elif network_web_path is not None:
+        print(f"--network-web given but not found at {network_web_path}, falling back to --overture-dir")
+
+    if network_fc is None and overture_dir is not None:
         segments_path = find_overture_segments_file(overture_dir)
         if segments_path is None:
             print(f"no Overture segments file found under {overture_dir}, skipping network.geojson.gz")
         else:
             network_fc = build_network_bundle(segments_path)
+            network_source = "overture-dir"
             write_network_gz(out_dir / "network.geojson.gz", network_fc)
 
     # 8. Write the bundle.
@@ -400,6 +546,7 @@ def main(argv: Optional[list] = None) -> int:
         counts=counts,
         public_build=bool(args.public_build),
         overture_release=read_overture_release(overture_dir),
+        network_source=network_source,
     )
     common.write_json(out_dir / "meta.json", meta)
 

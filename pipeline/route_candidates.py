@@ -119,10 +119,10 @@ PROFILES: dict[str, dict[str, Any]] = {
             "track": 1.0, "path": 1.0, "footway": 1.0, "cycleway": 1.0, "pedestrian": 1.0,
             "steps": 1.0,
             "unclassified": 1.2, "residential": 1.2, "service": 1.2, "living_street": 1.2,
-            "tertiary": 1.6, "secondary": 3.0, "primary": 4.0, "trunk": 6.0,
+            "tertiary": 1.5, "secondary": 2.2, "primary": 2.8, "trunk": 4.0,
         },
         "default_class_multiplier": 1.2,  # unknown/other classes: treat like the middle tier
-        "remoteness_coeff": 0.08,  # multiplier *= 1 - coeff * (remoteness - 1)
+        "remoteness_coeff": 0.06,  # multiplier *= 1 - coeff * (remoteness - 1)
         "paved_surface_multiplier": 1.3,  # applied when surface == "paved"
         "paved_surface_exempt_classes": ("track", "path"),
         "grade_threshold_pct": 10.0,  # multiplier *= 1 + coeff * max(0, grade - threshold)
@@ -138,7 +138,7 @@ PROFILES: dict[str, dict[str, Any]] = {
             "track": 1.0, "path": 1.4, "footway": 2.0, "cycleway": 1.0, "pedestrian": 1.0,
             "steps": 4.0,
             "unclassified": 1.2, "residential": 1.2, "service": 1.2, "living_street": 1.2,
-            "tertiary": 1.6, "secondary": 3.0, "primary": 4.0, "trunk": 6.0,
+            "tertiary": 1.5, "secondary": 2.2, "primary": 2.8, "trunk": 4.0,
         },
         "default_class_multiplier": 1.2,
         "remoteness_coeff": 0.04,
@@ -154,6 +154,10 @@ PROFILES: dict[str, dict[str, Any]] = {
 }
 
 PROFILE_ORDER = ("remote", "rideable", "direct")
+
+# A computed route chain (--write-route) never adopts a candidate longer than this many
+# times the pair's shortest candidate; see `choose_route_segment`.
+MAX_DETOUR_RATIO = 2.0
 PROFILE_PRECEDENCE = {name: i for i, name in enumerate(PROFILE_ORDER)}
 
 
@@ -482,14 +486,28 @@ def _orient_hop_coords(G: "nx.MultiDiGraph", u: str, v: str, data: dict) -> list
     return list(reversed(coords)) if d_start_v < d_start_u else coords
 
 
-def build_geometry(G: "nx.MultiDiGraph", edges: list[tuple]) -> list[list[float]]:
-    """Concatenated, joint-deduplicated, 6-decimal coordinates, oriented start -> end."""
+# Candidate geometry is simplified to this tolerance (metres) before it is written. Overture
+# ways are densely digitised; at 5 m nothing a scout could see on a map changes, while the
+# committed segments file shrinks several-fold and diffs stay reviewable.
+SIMPLIFY_M = 5.0
+
+
+def build_geometry(G: "nx.MultiDiGraph", edges: list[tuple], simplify_m: float = SIMPLIFY_M) -> list[list[float]]:
+    """Concatenated, joint-deduplicated coordinates oriented start -> end, then
+    Douglas-Peucker simplified to `simplify_m` metres (topology preserving) and rounded
+    to 6 decimals. `simplify_m <= 0` disables simplification."""
     out: list[list[float]] = []
     for (u, v, _key, data) in edges:
         pts = [[round(x, 6), round(y, 6)] for x, y in _orient_hop_coords(G, u, v, data)]
         if out and out[-1] == pts[0]:
             pts = pts[1:]
         out.extend(pts)
+    if simplify_m > 0 and len(out) > 2:
+        # 1 degree of latitude is ~111.32 km; at Flores' latitude a degree of longitude is
+        # ~1% shorter, which is irrelevant at a 5 m tolerance.
+        tol_deg = simplify_m / 111_320.0
+        simplified = LineString(out).simplify(tol_deg, preserve_topology=True)
+        out = [[round(x, 6), round(y, 6)] for x, y in simplified.coords]
     return out
 
 
@@ -666,6 +684,37 @@ def _strip_n_prefix(node_id: str) -> str:
     return node_id[2:] if node_id.startswith("n-") else node_id
 
 
+# An anchor whose snapped graph node lies farther than this from its true coordinate gets a
+# straight connector leg so the segment starts/ends exactly at the node (see below).
+ANCHOR_LEG_MIN_M = 25.0
+
+
+def _leg_m(a: list[float], b: list[float]) -> float:
+    """Haversine distance in metres between two [lon, lat] points."""
+    r = 6_371_000.0
+    la1, lo1, la2, lo2 = map(math.radians, (a[1], a[0], b[1], b[0]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(h))
+
+
+def attach_anchor_legs(coords: list[list[float]], anchor_from: Anchor, anchor_to: Anchor) -> tuple[list[list[float]], float]:
+    """Prepend/append the anchors' true coordinates when the snapped graph node is more than
+    `ANCHOR_LEG_MIN_M` away. A candidate then starts and ends exactly at its nodes (the
+    validator requires 300 m, and route chains must meet), and the off-network approach --
+    a village centre 600 m from the nearest mapped way, say -- is visible as a straight leg
+    rather than silently dropped. Returns the coordinates and the added length in metres."""
+    added = 0.0
+    start = [round(anchor_from.lon, 6), round(anchor_from.lat, 6)]
+    end = [round(anchor_to.lon, 6), round(anchor_to.lat, 6)]
+    if coords and _leg_m(start, coords[0]) > ANCHOR_LEG_MIN_M:
+        added += _leg_m(start, coords[0])
+        coords = [start] + coords
+    if coords and _leg_m(end, coords[-1]) > ANCHOR_LEG_MIN_M:
+        added += _leg_m(end, coords[-1])
+        coords = coords + [end]
+    return coords, added
+
+
 def build_feature(
     anchor_from: Anchor,
     anchor_to: Anchor,
@@ -676,11 +725,12 @@ def build_feature(
     water_points: list[tuple[str, float, float]],
 ) -> tuple[dict, dict]:
     stats = aggregate_stats(edges)
+    geometry_coords, leg_m = attach_anchor_legs(build_geometry(G, edges), anchor_from, anchor_to)
+    stats["length_m"] += leg_m
     length_km = stats["length_m"] / 1000.0
     hab_km = est_hab_km(edges)
     difficulty = compute_difficulty(length_km, stats["ascent_m"], hab_km)
     character = compute_character(edges)
-    geometry_coords = build_geometry(G, edges)
     wpts = find_water_points(geometry_coords, water_points)
 
     seg_id = f"s-{_strip_n_prefix(anchor_from.node_id)}-{_strip_n_prefix(anchor_to.node_id)}-{variant.lower()}"
@@ -782,10 +832,17 @@ def load_existing_segments(path: Optional[Path]) -> list[dict]:
 
 
 def used_letters_for_pair(existing_features: list[dict], from_node: str, to_node: str) -> set[str]:
+    """Variant letters already taken for a pair by features that will SURVIVE a merge.
+
+    Regenerable computed candidates (see `is_regenerable`) are excluded on purpose: a
+    re-run replaces them, so their letters are free again and identical candidates get
+    identical ids run after run. That keeps `routes.json` references written by an earlier
+    `--write-route` valid when another route sharing the same anchor pairs is regenerated.
+    """
     out = set()
     for f in existing_features:
         p = f["properties"]
-        if p.get("from_node") == from_node and p.get("to_node") == to_node:
+        if p.get("from_node") == from_node and p.get("to_node") == to_node and not is_regenerable(f):
             v = p.get("variant")
             if v:
                 out.add(v)
@@ -886,11 +943,33 @@ def generate_pair(
 
 def choose_route_segment(pair: PairResult, existing_features: list[dict]) -> tuple[Optional[str], str]:
     """The segment id to use for one pair in the computed route chain, and a short note.
+
     Cluster order already follows profile precedence then length (see `dedupe_candidates`),
-    so the first feature is the best 'remote' candidate, or the best 'rideable'/'direct' one
-    if 'remote' produced nothing for this pair.
+    so the first feature is the best 'remote' candidate. A remote candidate is only
+    adopted, however, when it stays within `MAX_DETOUR_RATIO` times the length of the
+    pair's shortest ('direct') candidate: the remote cost profile can otherwise send a
+    pair on an enormous loop (a 144 km wander for a 50 km hop was observed on the north
+    coast), which is not a proposal a scout can use. Beyond that ratio the next candidate
+    in precedence order that respects the cap is taken, and as a last resort the shortest
+    computed candidate. The note says which rule fired so the report stays honest.
     """
     if pair.features:
+        direct = (pair.profile_summary or {}).get("direct") or {}
+        direct_km = direct.get("length_km")
+        if direct_km:
+            cap_km = MAX_DETOUR_RATIO * direct_km
+            for feat in pair.features:
+                props = feat["properties"]
+                if props["stats"]["length_km"] <= cap_km:
+                    note = f"computed ({props['route_profile']})"
+                    if feat is not pair.features[0]:
+                        note += f"; best remote candidate skipped, longer than {MAX_DETOUR_RATIO:g}x direct"
+                    return props["id"], note
+            shortest = min(pair.features, key=lambda f: f["properties"]["stats"]["length_km"])
+            return shortest["properties"]["id"], (
+                f"computed ({shortest['properties']['route_profile']}); shortest candidate, "
+                f"every candidate exceeds {MAX_DETOUR_RATIO:g}x direct"
+            )
         best = pair.features[0]
         return best["properties"]["id"], f"computed ({best['properties']['route_profile']})"
     fallback = existing_variant(existing_features, pair.anchor_from.node_id, pair.anchor_to.node_id, "A")

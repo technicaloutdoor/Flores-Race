@@ -341,5 +341,17 @@ function renderLegend(): HTMLElement {
   poiGroup.appendChild(hazardRow);
   wrap.appendChild(poiGroup);
 
+  // The track network layer (zoom 9+, see map/layers.ts setNetwork): colour is road class
+  // (tracks/paths vs formal roads), and line weight/opacity scale with remoteness where the graph
+  // build computed it -- a faint line is close to a main road or settlement, a bold one is not.
+  const networkGroup = el('div', 'legend-group');
+  const networkRow = el('span', 'legend-item');
+  const networkSwatch = el('span', 'network-swatch');
+  networkRow.append(networkSwatch, document.createTextNode('Network: brighter = more remote'));
+  networkRow.title =
+    'Track network layer (visible from zoom 9): colour by road class (tracks/paths vs formal roads); line weight and opacity increase with remoteness, where known.';
+  networkGroup.appendChild(networkRow);
+  wrap.appendChild(networkGroup);
+
   return wrap;
 }
