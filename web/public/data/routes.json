@@ -1,0 +1,46 @@
+[
+  {
+    "id": "r-traverse",
+    "name": "Traverse (fixture)",
+    "tagline": "A minimal two-segment stand-in for the real course.",
+    "description": "Placeholder route used to exercise the app before the pipeline bundle exists.",
+    "audience": [
+      "stakeholder",
+      "scout",
+      "public"
+    ],
+    "anchors": [
+      "n-labuan-bajo",
+      "n-ruteng",
+      "n-bajawa"
+    ],
+    "segments": [
+      "s-labuanbajo-ruteng-a",
+      "s-ruteng-bajawa-a"
+    ],
+    "status": "concept",
+    "target_km_range": [
+      1120,
+      1540
+    ],
+    "time_limit_days": 14,
+    "notes": "Fixture data — the real route-concept spans 10 sections, not 1.",
+    "stats": {
+      "length_km": 126.5,
+      "ascent_m": 1700,
+      "descent_m": 650,
+      "min_elev_m": 20,
+      "max_elev_m": 1180,
+      "unpaved_pct": 72.1,
+      "hab_km": 4,
+      "segments_by_status": {
+        "concept": 1,
+        "desk-checked": 1,
+        "scouted-go": 0,
+        "scouted-no-go": 0,
+        "needs-recheck": 0,
+        "confirmed": 0
+      }
+    }
+  }
+]

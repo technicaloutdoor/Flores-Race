@@ -1,0 +1,56 @@
+{
+  "build_time": "2026-09-05T01:09:36.838Z",
+  "git_commit": "fixture",
+  "sources": [
+    {
+      "name": "Overture Maps",
+      "url": "https://overturemaps.org",
+      "license": "ODbL (OSM-derived)"
+    },
+    {
+      "name": "SRTM (AWS Terrain Tiles)",
+      "url": "https://registry.opendata.aws/terrain-tiles/",
+      "license": "Public domain"
+    },
+    {
+      "name": "geoBoundaries",
+      "url": "https://www.geoboundaries.org",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Natural Earth",
+      "url": "https://www.naturalearthdata.com",
+      "license": "Public domain"
+    },
+    {
+      "name": "OpenTopoMap",
+      "url": "https://opentopomap.org",
+      "license": "CC BY-SA"
+    },
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL"
+    },
+    {
+      "name": "Esri World Imagery",
+      "url": "https://www.esri.com",
+      "license": "Esri terms"
+    }
+  ],
+  "counts": {
+    "nodes": 3,
+    "pois": 3,
+    "segments": 2,
+    "sections": 1,
+    "routes": 1,
+    "regencies": 8
+  },
+  "attribution": [
+    "© OpenStreetMap contributors",
+    "© OpenTopoMap (CC-BY-SA)",
+    "Esri, Maxar, Earthstar Geographics",
+    "SRTM (NASA/USGS)",
+    "geoBoundaries (CC BY 4.0)"
+  ]
+}

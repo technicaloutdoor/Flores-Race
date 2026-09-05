@@ -455,3 +455,55 @@ export const POI_CATEGORY_META: Record<POICategory, POICategoryMeta> = {
   'rice-terrace': { label: 'Rice Terrace', icon: 'rice-terrace' },
   other: { label: 'Other', icon: 'other' },
 };
+
+export interface ConfidenceMeta {
+  label: string;
+  description: string;
+  color: string;
+}
+
+/** A stakeholder must never mistake a guess for a fact (ARCHITECTURE.md §2) — every panel that
+ * shows a POI, node or segment shows this badge prominently, never just in a tooltip. */
+export const CONFIDENCE_META: Record<Confidence, ConfidenceMeta> = {
+  verified: {
+    label: 'Verified',
+    description: 'Checked against two independent sources or a field GPS fix.',
+    color: '#2e9e5b',
+  },
+  approximate: {
+    label: 'Approximate',
+    description: 'One source, or a well-known place located by hand within ~1 km.',
+    color: '#e0a100',
+  },
+  unverified: {
+    label: 'Unverified',
+    description: 'From memory or a single weak source — must be checked.',
+    color: '#c0392b',
+  },
+};
+
+export interface ThemeMeta {
+  label: string;
+  color: string;
+}
+
+export const THEME_META: Record<Theme, ThemeMeta> = {
+  volcano: { label: 'Volcano', color: '#c0392b' },
+  highland: { label: 'Highland', color: '#6b8f47' },
+  coast: { label: 'Coast', color: '#2f7f95' },
+  culture: { label: 'Culture', color: '#b07d3f' },
+  forest: { label: 'Forest', color: '#3f7d4a' },
+  savanna: { label: 'Savanna', color: '#c9a45c' },
+  history: { label: 'History', color: '#8a6d3b' },
+};
+
+export interface HabExpectationMeta {
+  label: string;
+  color: string;
+}
+
+export const HAB_EXPECTATION_META: Record<HabExpectation, HabExpectationMeta> = {
+  low: { label: 'Low HAB', color: '#2e9e5b' },
+  medium: { label: 'Medium HAB', color: '#e0a100' },
+  high: { label: 'High HAB', color: '#c0392b' },
+};

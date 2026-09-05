@@ -1,0 +1,127 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.889,
+            -8.487
+          ],
+          [
+            120.02,
+            -8.52
+          ],
+          [
+            120.18,
+            -8.56
+          ],
+          [
+            120.32,
+            -8.6
+          ],
+          [
+            120.478,
+            -8.611
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-labuanbajo-ruteng-a",
+        "name": "Labuan Bajo → Ruteng via the Manggarai hills",
+        "from_node": "n-labuan-bajo",
+        "to_node": "n-ruteng",
+        "variant": "A",
+        "status": "concept",
+        "geometry_source": "concept-sketch",
+        "character": "mixed",
+        "est_hab_km": 3,
+        "difficulty": 3,
+        "remoteness": 3,
+        "water_points": [
+          "warung roughly halfway"
+        ],
+        "hazards": [],
+        "open_questions": [
+          "Is the Wae Rebo side trail rideable to the junction?"
+        ],
+        "stats": {
+          "length_km": 66.5,
+          "ascent_m": 1400,
+          "descent_m": 350,
+          "min_elev_m": 20,
+          "max_elev_m": 1180,
+          "unpaved_pct": 65,
+          "profile_ref": "s-labuanbajo-ruteng-a"
+        },
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.478,
+            -8.611
+          ],
+          [
+            120.63,
+            -8.66
+          ],
+          [
+            120.78,
+            -8.71
+          ],
+          [
+            120.9,
+            -8.75
+          ],
+          [
+            120.999,
+            -8.771
+          ]
+        ]
+      },
+      "properties": {
+        "id": "s-ruteng-bajawa-a",
+        "name": "Ruteng → Bajawa via the north coast detour",
+        "from_node": "n-ruteng",
+        "to_node": "n-bajawa",
+        "variant": "A",
+        "status": "desk-checked",
+        "geometry_source": "concept-sketch",
+        "character": "gravel",
+        "est_hab_km": 1,
+        "difficulty": 2,
+        "remoteness": 4,
+        "water_points": [],
+        "hazards": [
+          "long dry stretch, carry extra water"
+        ],
+        "open_questions": [
+          "Confirm rideable corridor Reo -> Pota -> Riung."
+        ],
+        "stats": {
+          "length_km": 60,
+          "ascent_m": 300,
+          "descent_m": 300,
+          "min_elev_m": 900,
+          "max_elev_m": 1150,
+          "unpaved_pct": 80,
+          "profile_ref": "s-ruteng-bajawa-a"
+        },
+        "sources": [
+          "docs/route-concept.md"
+        ],
+        "public": true
+      }
+    }
+  ]
+}

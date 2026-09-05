@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sec-01-manggarai",
+    "order": 1,
+    "title": "Komodo gate to the Manggarai highlands",
+    "subtitle": "Labuan Bajo to Bajawa, the opening climb",
+    "from_node": "n-labuan-bajo",
+    "to_node": "n-bajawa",
+    "theme": [
+      "highland",
+      "culture"
+    ],
+    "story": "Leaving the tourist town of Labuan Bajo, the course climbs into the Manggarai hills past Wae Rebo, through the cool hill town of Ruteng, and on to the Ngada plateau under Inerie.",
+    "highlight_pois": [
+      "p-wae-rebo",
+      "p-ranamese",
+      "p-bena"
+    ],
+    "target_km": [
+      190,
+      230
+    ],
+    "hab_expected": "medium",
+    "scouting_priority": 1,
+    "open_questions": [
+      "Wae Rebo onward trail rideability",
+      "North coast water points"
+    ],
+    "public": true
+  }
+]

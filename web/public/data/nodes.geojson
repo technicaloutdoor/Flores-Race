@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.999,
+          -8.771
+        ]
+      },
+      "properties": {
+        "id": "n-bajawa",
+        "name": "Bajawa",
+        "kind": "checkpoint",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "guesthouse",
+        "notes": "Ngada plateau town under Inerie volcano.",
+        "confidence": "verified",
+        "sources": [
+          "map:overture"
+        ],
+        "public": true,
+        "elevation_m": 1100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.889,
+          -8.487
+        ]
+      },
+      "properties": {
+        "id": "n-labuan-bajo",
+        "name": "Labuan Bajo",
+        "kind": "start",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Race start; Komodo gateway town with international flights.",
+        "confidence": "verified",
+        "sources": [
+          "map:overture"
+        ],
+        "public": true,
+        "elevation_m": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.478,
+          -8.611
+        ]
+      },
+      "properties": {
+        "id": "n-ruteng",
+        "name": "Ruteng",
+        "kind": "checkpoint",
+        "resupply": "full",
+        "water": "reliable",
+        "sleep": "hotel",
+        "notes": "Manggarai highland town, 1,100 m, cool climate.",
+        "confidence": "verified",
+        "sources": [
+          "map:overture"
+        ],
+        "public": true,
+        "elevation_m": 1100
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9308,
+          -8.7847
+        ]
+      },
+      "properties": {
+        "id": "p-bena",
+        "name": "Bena",
+        "category": "traditional-village",
+        "summary": "Megalithic Ngada village with ngadhu and bhaga shrines, under the cone of Inerie.",
+        "race_relevance": "highlight",
+        "access": "road",
+        "cultural_protocol": "Village council agreement required for a race checkpoint.",
+        "elevation_m": 800,
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Bena,_Indonesia"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5289,
+          -8.6417
+        ]
+      },
+      "properties": {
+        "id": "p-ranamese",
+        "name": "Ranamese Crater Lake",
+        "category": "crater-lake",
+        "summary": "Crater lake near Poco Ranaka, en route between Ruteng and the north coast.",
+        "race_relevance": "highlight",
+        "access": "road",
+        "elevation_m": 1230,
+        "confidence": "approximate",
+        "sources": [
+          "map:overture"
+        ],
+        "public": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3597,
+          -8.7566
+        ]
+      },
+      "properties": {
+        "id": "p-wae-rebo",
+        "name": "Wae Rebo",
+        "category": "traditional-village",
+        "summary": "Cone-shaped mbaru niang houses reached by a ~9 km forest trail; UNESCO Asia-Pacific heritage award.",
+        "race_relevance": "highlight",
+        "access": "trail",
+        "hike_a_bike": true,
+        "cultural_protocol": "Guests received by elders; small donation and guest book expected; village council agreement required for the race.",
+        "elevation_m": 1200,
+        "confidence": "verified",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Wae_Rebo"
+        ],
+        "public": true
+      }
+    }
+  ]
+}
