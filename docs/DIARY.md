@@ -21,7 +21,7 @@ Rules for keeping it useful:
 |---|---|
 | Repository | `technicaloutdoor/Flores-Race`, public. `main` holds only a stub README (created as a PR base; the repo was empty). |
 | Work branch | `claude/flores-bike-race-viz-e53qim`, 17 commits, all CI-green. Draft PR #1 open against `main`. |
-| Design docs | `ARCHITECTURE.md`, `docs/data-model.md`, `docs/route-concept.md`, `docs/ai-workflow.md`, `docs/adr/0001…0005`, `docs/scouting-protocol.md`, `docs/deployment.md`, `README.md`, `pipeline/README.md`. |
+| Design docs | `ARCHITECTURE.md`, `docs/data-model.md`, `docs/route-concept.md`, `docs/ai-workflow.md`, `docs/adr/0001…0005`, `docs/scouting-protocol.md`, `docs/deployment.md`, `README.md`, `pipeline/README.md`, `docs/REBUILD-PROMPT.md` (self-contained prompt to rebuild or continue the project with any capable coding assistant). |
 | Data (`data/`) | 44 nodes, 78 POIs, 10 sections, 4 route variants, 228 segments (46 hand-sketched concept corridors, 182 network-routed candidates). Validation: 0 errors. Gazetteer cross-check: nodes 37 confirmed / 0 wrong; POIs 53 confirmed / 1 wrong (a known false positive). |
 | Pipeline (`pipeline/`) | fetch_overture, fetch_dem + dem, fetch_boundaries, fetch_naturalearth, check_terrain_tiles, common, validate, build_network, route_candidates, build_profiles, build_web_data, apply_patch, crosscheck_gazetteer. 178 tests pass. |
 | Web app (`web/`) | Vite + TypeScript + MapLibre, three modes, 103 tests, typecheck and build clean, screenshots of all modes reviewed. |
@@ -279,3 +279,18 @@ all modes at desktop and phone sizes; CI green on every commit.
 
 Left open: see §8. The hourly PR check-in routine created in this session will keep re-checking PR #1
 until it is merged or closed.
+
+### 2026-09-17 · Session 2 · rebuild prompt (short)
+
+Asked: read everything discussed and write a complete prompt that lets another coding assistant
+rebuild a similar project, including the link and access to build it online.
+
+Done: `docs/REBUILD-PROMPT.md` drafted by the top tier from the whole session (access and online
+build, mission, principles, layout, data contract, pipeline behaviours and gotchas, app behaviour,
+course concept with the corrected coordinates, verification method, working method and tiers,
+environment gotchas, definition of done, hand-back); then a six-lens completeness workflow on the mid
+tier (architecture, data contract, pipeline, web app, course and facts, method and access) compared
+the draft against the repository and one integrator folded the confirmed gaps in. Routine PR check-in
+kept running: PR #1 unchanged, CI green, no comments.
+
+Left: owner decisions from §8 unchanged (private repository, enable Pages, merge).
