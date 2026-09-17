@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "routes.schema.json",
+  "title": "Route variants (Array)",
+  "description": "Route variants as ordered lists of segment ids and their computed statistics",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^r-[a-z0-9-]+$"
+      },
+      "name": {
+        "type": "string"
+      },
+      "tagline": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "audience": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "stakeholder",
+            "scout",
+            "public"
+          ]
+        }
+      },
+      "anchors": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^n-[a-z0-9-]+$"
+        }
+      },
+      "segments": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^s-[a-z0-9-]+$"
+        }
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "concept",
+          "in-scouting",
+          "confirmed"
+        ]
+      },
+      "target_km_range": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "number"
+        },
+        "description": "[min, max]"
+      },
+      "time_limit_days": {
+        "type": "number"
+      },
+      "notes": {
+        "type": "string"
+      },
+      "stats": {
+        "type": "object",
+        "properties": {
+          "length_km": {
+            "type": "number"
+          },
+          "ascent_m": {
+            "type": "number"
+          },
+          "descent_m": {
+            "type": "number"
+          },
+          "min_elev_m": {
+            "type": "number"
+          },
+          "max_elev_m": {
+            "type": "number"
+          },
+          "unpaved_pct": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "profile_ref": {
+            "type": "string"
+          },
+          "hab_km": {
+            "type": "number"
+          },
+          "segments_by_status": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "audience",
+      "anchors",
+      "segments",
+      "status",
+      "target_km_range"
+    ],
+    "additionalProperties": false
+  }
+}

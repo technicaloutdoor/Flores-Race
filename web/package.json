@@ -1,0 +1,27 @@
+{
+  "name": "flores-race-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Flores Race Planner — static planning app (Vite + TypeScript + MapLibre GL JS)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "screenshot": "node scripts/screenshot.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.24.0"
+  },
+  "devDependencies": {
+    "@types/geojson": "7946.0.16",
+    "@types/node": "22.15.0",
+    "playwright": "1.56.0",
+    "typescript": "5.9.3",
+    "vite": "6.4.3",
+    "vitest": "3.2.7"
+  }
+}

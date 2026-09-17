@@ -1,0 +1,58 @@
+name: Validate
+
+# Runs on every pull request and every push (see ARCHITECTURE.md §4 repository layout, and
+# docs/deployment.md "validate.yml"). Two independent jobs so a pipeline-only or web-only change
+# gets a fast, focused failure: pipeline validates data/ against schemas/ (no network access
+# needed -- it never touches the DEM, Overture or geoBoundaries fetchers); web typechecks, tests
+# and builds the app against the bundle already committed under web/public/data/.
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  pipeline:
+    name: Pipeline data validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Validate data/ against schemas/
+        run: python3 pipeline/validate.py --data data --schemas schemas
+
+  web:
+    name: Web typecheck, test and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install web dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: web
+        run: npm run typecheck
+
+      - name: Unit tests
+        working-directory: web
+        run: npm test
+
+      - name: Build (GitHub Pages base path)
+        working-directory: web
+        env:
+          VITE_BASE: /Flores-Race/
+        run: npm run build

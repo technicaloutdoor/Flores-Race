@@ -1,0 +1,94 @@
+name: Deploy
+
+# Publishes web/dist to GitHub Pages on every push to main (and on demand via workflow_dispatch).
+# Deliberately does NOT run the data-fetch pipeline (fetch_overture.py / fetch_dem.py / ...): the
+# committed web/public/data/ bundle (see ARCHITECTURE.md §4, §6 -- "small generated files
+# committed, large ones built in CI") is the source of truth for what gets deployed, so this
+# workflow needs no DEM tiles, no Overture extract and no S3 access. That also means it will
+# happily deploy a stale bundle if nobody re-ran build_web_data.py locally after editing data/ --
+# the "bundle present" check below only catches a *missing* bundle, not a stale one.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Validate, test and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Committed web data bundle is present
+        run: |
+          if [ ! -f web/public/data/segments.geojson ]; then
+            echo "::error file=web/public/data/segments.geojson::Missing. This workflow deploys the" \
+              "bundle already committed by pipeline/build_web_data.py -- it does not fetch the raw" \
+              "DEM or Overture data itself. Run 'python3 pipeline/build_web_data.py --dem-dir ... " \
+              "--regencies ... --out web/public/data' locally and commit the result before deploying."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Validate data/ against schemas/
+        run: python3 pipeline/validate.py --data data --schemas schemas
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install web dependencies
+        working-directory: web
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: web
+        run: npm run typecheck
+
+      - name: Unit tests
+        working-directory: web
+        run: npm test
+
+      - name: Build (GitHub Pages base path)
+        working-directory: web
+        env:
+          VITE_BASE: /Flores-Race/
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

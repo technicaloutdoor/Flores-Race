@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-09-05T04:35:18Z",
+  "build_time": "2026-09-05T04:35:18Z",
+  "git_commit": "3eb4dc34300e372a0a44d3bd9f3aed7120ba8db5",
+  "public_build": false,
+  "counts": {
+    "nodes": 44,
+    "pois": 78,
+    "segments": 228,
+    "sections": 10,
+    "routes": 4,
+    "regencies": 8,
+    "network_features": 43033
+  },
+  "sources": [
+    {
+      "name": "OpenStreetMap contributors, via Overture Maps",
+      "license": "ODbL 1.0",
+      "url": "https://overturemaps.org"
+    },
+    {
+      "name": "OpenTopoMap",
+      "license": "CC BY-SA",
+      "url": "https://opentopomap.org"
+    },
+    {
+      "name": "Esri World Imagery",
+      "license": "Esri terms of use (attribution required)",
+      "url": "https://www.esri.com"
+    },
+    {
+      "name": "SRTM (NASA/USGS), via AWS Terrain Tiles",
+      "license": "Public domain",
+      "url": "https://www2.jpl.nasa.gov/srtm/"
+    },
+    {
+      "name": "geoBoundaries",
+      "license": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  ],
+  "attribution": [
+    "OpenStreetMap contributors, via Overture Maps (ODbL 1.0)",
+    "OpenTopoMap (CC BY-SA)",
+    "Esri World Imagery (Esri terms of use (attribution required))",
+    "SRTM (NASA/USGS), via AWS Terrain Tiles (Public domain)",
+    "geoBoundaries (CC BY 4.0)"
+  ],
+  "network_source": "network-web"
+}
